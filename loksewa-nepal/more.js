@@ -1,9 +1,9 @@
 const currentPage = location.pathname.split("/").pop();
 const pages = [
   { title: "Set 1 Quiz", link: "set1.html" },
-  { title: "Set 2 Quiz", link: "/loksewa-nepal/set2.html" },
-  { title: "Set 3 Quiz", link: "/loksewa-nepal/set3.html" },
-  { title: "Set 4 Quiz", link: "/loksewa-nepal/set4.html" },
+  { title: "Set 2 Quiz", link: "set2.html" },
+  { title: "Set 3 Quiz", link: "set3.html" },
+  { title: "Set 4 Quiz", link: "set4.html" },
   { title: "Set 5 Quiz", link: "/loksewa-nepal/set5.html" },
   { title: "Set 6 Quiz", link: "/loksewa-nepal/set6.html" },
   { title: "Set 7 Quiz", link: "/loksewa-nepal/set7.html" },
