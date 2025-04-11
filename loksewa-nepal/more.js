@@ -10,7 +10,7 @@ const pages = [
   { title: "Set 8 Quiz", link: "/loksewa-nepal/set8.html" },
   { title: "Set 9 Quiz", link: "/loksewa-nepal/set9.html" },
   { title: "Set 10 Quiz", link: "/loksewa-nepal/set10.html" },
-  { title: "Set 11 Quiz", link: "/loksewa-nepal/set11.html" },
+  { title: "Set 11 Quiz", link: "/loksewa-nepal/set11.html" }
 ];
 
 // Get the current page's category from the URL
