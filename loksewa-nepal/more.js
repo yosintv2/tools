@@ -1,6 +1,6 @@
 const currentPage = location.pathname.split("/").pop();
 const pages = [
-  { title: "Set 1 Quiz", link: "/loksewa-nepal/set1.html" },
+  { title: "Set 1 Quiz", link: "set1.html" },
   { title: "Set 2 Quiz", link: "/loksewa-nepal/set2.html" },
   { title: "Set 3 Quiz", link: "/loksewa-nepal/set3.html" },
   { title: "Set 4 Quiz", link: "/loksewa-nepal/set4.html" },
