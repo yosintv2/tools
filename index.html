@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Lok Sewa Quiz</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #000;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #fff !important;
+    }
+
+    .nav-link:hover {
+      color: #007bff !important;
+    }
+
+    /* Hover effect on dropdown toggle */
+    .navbar .dropdown:hover .nav-link {
+      background-color: #222;
+      color: #00bfff !important;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover effect on dropdown items */
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #f8f9fa;
+      transform: translateX(5px);
+      transition: all 0.2s ease-in-out;
+      color: #007bff;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-menu {
+      min-width: 250px;
+      /* Removed scroll styles to show full dropdown */
+    }
+
+    @media (min-width: 992px) {
+      .navbar .dropdown-menu {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .header {
+      background-color: #f8f9fa;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+
+    footer .footer-links {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer .footer-links li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    footer .footer-links a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    footer .footer-links a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+ <a class="navbar-brand" href="#">
+      <img src="https://www.nicepng.com/png/detail/793-7936442_book-logo-png-books-logo-black-png.png" alt="" width="30" height="25" class="d-inline-block align-text-top">
+     Free Online Quiz
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Always visible menu items -->
+          <li class="nav-item"><a class="nav-link" href="#loksewa">Lok Sewa Nepal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gk">General Knowledge</a></li>
+          <li class="nav-item"><a class="nav-link" href="#personality">Sports</a></li>
+          <li class="nav-item"><a class="nav-link" href="#language">Language</a></li>
+          <li class="nav-item"><a class="nav-link" href="#health">Health & Wellness</a></li>
+          <li class="nav-item"><a class="nav-link" href="#health">Current Affairs</a></li>
+          
+          
+          <!-- Dropdown for more topics -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="moreTopicsDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              More Topics
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreTopicsDropdown">
+              <a class="dropdown-item" href="#history">World History</a>
+              <a class="dropdown-item" href="#entertainment">Entertainment</a>
+              <a class="dropdown-item" href="#programming">Programming & Tech</a>
+              <a class="dropdown-item" href="#exams">Competitive Exams</a>
+              <a class="dropdown-item" href="#culture">Travel & Culture</a>
+              <a class="dropdown-item" href="#funfacts">Riddle & Fun Facts</a>
+              <a class="dropdown-item" href="#finance">Finance & Business</a>
+              <a class="dropdown-item" href="#weird">Personality</a>
+              <a class="dropdown-item" href="#weird">Weird & Unusual</a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <h3> Ultimate Online Quiz Platform  </h3>
+    <p>Learn, Compete & Have Fun !</p>
+  </header>
+
+ 
+
+ <!-- Desired Category -->
+    <div class="container mt-4" id="emojis">
+    <h2 id="nepal" class="text-center mb-4"></h2>
+    </div>
+    
+    
+    
+<!-- Division Starts-->
+<div class="container mt-6">
+ <div class="row">
+ 
+        <div class="col-md-4 mb-3">
+            <a href="/set1.html" class="btn btn-primary w-100">Lok Sewa Nepal </a>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set2.html" class="btn btn-primary w-100">General Knowledge </a>
+        </div>
+        
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set3.html" class="btn btn-primary w-100">Sports </a>
+        </div>
+        
+                <div class="col-md-4 mb-3">
+            <a href="/set1.html" class="btn btn-primary w-100">Language </a>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set2.html" class="btn btn-primary w-100">Health & Wellness </a>
+        </div>
+        
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set3.html" class="btn btn-primary w-100">Current Affairs </a>
+        </div>
+        
+                <div class="col-md-4 mb-3">
+            <a href="/set1.html" class="btn btn-primary w-100"> World History </a>
+        </div>
+        
+
+        <div class="col-md-4 mb-3">
+            <a href="/set2.html" class="btn btn-primary w-100"> Entertainment </a>
+        </div>
+        
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set2.html" class="btn btn-primary w-100">Programming & Tech </a>
+        </div>
+        
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set3.html" class="btn btn-primary w-100">Competitive Exams </a>
+        </div>
+        
+                <div class="col-md-4 mb-3">
+            <a href="/set1.html" class="btn btn-primary w-100"> Travel & Culture </a>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set2.html" class="btn btn-primary w-100"> Riddle & Fun facts </a>
+        </div>
+        
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set3.html" class="btn btn-primary w-100"> Finance & Business </a>
+        </div>
+        
+                <div class="col-md-4 mb-3">
+            <a href="/set1.html" class="btn btn-primary w-100">Personality </a>
+        </div>
+        
+        
+        <div class="col-md-4 mb-3">
+            <a href="/set3.html" class="btn btn-primary w-100">Weird & Unusual  </a>
+        </div>
+        
+        
+        
+</div>
+</div> 
+<!-- Division Ends-->
+
+
+<!-- SEO Content Section -->
+
+
+        <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h2 class="card-title">Lok Sewa Exam in Nepal</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    The Lok Sewa Exam in Nepal, also known as the Public Service Commission (PSC) Exam, is a competitive exam 
+                    conducted by the Public Service Commission of Nepal. It is a crucial examination for individuals aspiring 
+                    to work in government jobs within Nepal. The exam is held to select qualified candidates for various 
+                    administrative, clerical, technical, and professional positions in government ministries, departments, 
+                    and public institutions.
+                </p>
+                <h3 class="mt-4">Key Features of the Lok Sewa Exam:</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Eligibility:</strong> Candidates must meet certain educational qualifications and age limits, which vary depending on the specific job category.</li>
+                    <li class="list-group-item"><strong>Examination Levels:</strong>
+                        <ul>
+                            <li>Preliminary Exam: A written test consisting of general knowledge and subject-specific questions.</li>
+                            <li>Main Exam: A more in-depth written test that includes essay-type questions and subject-based papers.</li>
+                            <li>Interview: After passing the written exams, candidates must go through a personal interview round.</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item"><strong>Subjects:</strong> The exams cover a wide range of subjects, including general knowledge, current affairs, and specialized topics related to the specific job category.</li>
+                    <li class="list-group-item"><strong>Job Categories:</strong> The Lok Sewa Exam is for various posts, such as administrative officers, revenue officers, engineers, health professionals, and teachers in government institutions.</li>
+                </ul>
+                <h3 class="mt-4">Importance of Lok Sewa Exam:</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">It provides a structured and fair method for selecting skilled professionals for government jobs.</li>
+                    <li class="list-group-item">Successful candidates get the opportunity to work in various sectors of Nepal’s public administration, offering job security and various benefits.</li>
+                </ul>
+                <h3 class="mt-4">Why the Lok Sewa Exam is Popular:</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>1. Job Security:</strong> Government jobs in Nepal are highly regarded for their stability, offering lifelong employment and benefits such as pensions and health insurance.</li>
+                    <li class="list-group-item"><strong>2. Attractive Benefits and Perks:</strong> Includes fixed salaries, annual increments, and subsidies for housing, travel, and education.</li>
+                    <li class="list-group-item"><strong>3. Respect and Prestige:</strong> Government employees are respected for their role in public service and national development.</li>
+                    <li class="list-group-item"><strong>4. Wide Range of Opportunities:</strong> The exam opens doors to diverse roles across sectors such as administration, health, education, engineering, and law enforcement.</li>
+                    <li class="list-group-item"><strong>5. Steady Career Growth:</strong> Offers clear paths for advancement through promotions, training, and development.</li>
+                </ul>
+                <h3 class="mt-4">Top Jobs Under Lok Sewa Exam:</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>1. Gazetted First Class Officer:</strong> Senior administrative officers involved in policy-making and governance. Highly prestigious with excellent salary packages.</li>
+                    <li class="list-group-item"><strong>2. Administrative Officer:</strong> Oversees budgeting, planning, and coordination in government offices. Respected and well-compensated roles.</li>
+                    <li class="list-group-item"><strong>3. Revenue Officer:</strong> Manages tax collection and government revenue. Offers high salaries and significant influence in economic matters.</li>
+                    <li class="list-group-item"><strong>4. Police Officer:</strong> Maintains law and order, investigates crimes, and ensures public safety. Highly respected with stable careers.</li>
+                    <li class="list-group-item"><strong>5. Engineer (Civil, Mechanical, Electrical):</strong> Works on public infrastructure projects with attractive pay and the opportunity to contribute to national development.</li>
+                    <li class="list-group-item"><strong>6. Teacher:</strong> Educates students at secondary and higher secondary levels in government schools. Offers job security and pensions.</li>
+                    <li class="list-group-item"><strong>7. Doctors and Health Professionals:</strong> Serve in government hospitals and health institutions. Highly respected with competitive salaries.</li>
+                    <li class="list-group-item"><strong>8. Diplomatic Services:</strong> Represent Nepal in international affairs. Offers prestigious roles and global exposure.</li>
+                    <li class="list-group-item"><strong>9. Public Prosecutor:</strong> Represents the government in legal cases, ensuring justice and the rule of law. Stable and respected careers.</li>
+                    <li class="list-group-item"><strong>10. Finance Officer:</strong> Manages government budgets and financial reporting. High responsibility with competitive pay.</li>
+                </ul>
+                <p class="mt-4">
+                    In conclusion, the Lok Sewa Exam provides a pathway to stable, respected, and fulfilling careers in Nepal’s public sector. The wide range of opportunities, along with the attractive benefits and career growth prospects, makes it one of the most sought-after exams in Nepal.
+                </p>
+            </div>
+        </div>
+        
+         <!-- Add Images -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://www.getemoji.online/image1.jpg" alt="Kaomojis Collection" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="https://www.getemoji.online/image2.jpg" alt="Fun Kaomojis in Action" class="img-fluid">
+        </div>
+    </div>
+    
+    
+    </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p>&copy; 2024 Lok Sewa Nepal Quiz. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
