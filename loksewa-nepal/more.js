@@ -25,7 +25,7 @@ function renderRandomPages() {
     .sort(() => 0.5 - Math.random())
     .slice(0, 3);
 
-  const container = document.getElementById("random-pages-container");
+  const container = document.getElementById("more-container");
   if (container) {
     container.innerHTML = randomPages.map(p => `
       <div class="col-md-4 mb-3">
@@ -39,7 +39,7 @@ function renderRandomPages() {
 function renderRelatedPages() {
   const relatedPages = pages.filter(p => p.category === currentPageCategory && p.link !== `/${currentPage}`);
 
-  const container = document.getElementById("related-pages-container");
+  const container = document.getElementById("more-container");
   if (container) {
     container.innerHTML = relatedPages.map(p => `
       <div class="col-md-4 mb-3">
