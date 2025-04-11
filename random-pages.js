@@ -18,7 +18,7 @@ const currentPage = location.pathname.split("/").pop();
 
     const randomPages = otherPages
       .sort(() => 0.5 - Math.random())
-      .slice(0, 9);
+      .slice(0, 3);
 
     const container = document.getElementById("random-pages-container");
 
