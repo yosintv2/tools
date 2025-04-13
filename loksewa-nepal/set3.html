@@ -96,7 +96,7 @@
 
   <!-- Header -->
   <header class="header">
-    <h3> Lok Sewa Nepal Quiz  - Set 3 </h3>
+    <h3> Lok Sewa Nepal Quiz  - Set 4 </h3>
     <p>Learn, Compete & Have Fun !</p>
    </header>
 
@@ -112,39 +112,40 @@
 <!-- Quiz Content Starts -->
 <div class="container mt-5 quiz-container">
 
+
 <div class="question">
-  <p>Who was the first elected Prime Minister of Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q1')">a) King Tribhuvan</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q1')">b) B.P. Koirala</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q1')">c) Tanka Prasad Acharya</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q1')">d) Krishna Prasad Bhattarai</button>
+  <p>What is the main source of revenue for the Government of Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q1')">a) Customs duty</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q1')">b) Foreign grants</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q1')">c) VAT</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q1')">d) Donations</button>
   <p id="feedback-q1"></p>
 </div>
 
 <div class="question">
-  <p>Which is the biggest valley in Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q2')">a) Kathmandu Valley</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q2')">b) Pokhara Valley</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q2')">c) Dang Valley</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q2')">d) Surkhet Valley</button>
+  <p>Which sector contributes the most to Nepal’s GDP?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q2')">a) Agriculture</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q2')">b) Industry</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q2')">c) Services</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q2')">d) Mining</button>
   <p id="feedback-q2"></p>
 </div>
 
 <div class="question">
-  <p>Which treaty ended the Anglo-Nepal War?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q3')">a) Treaty of Peace</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q3')">b) Treaty of Gorkha</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q3')">c) Sugauli Treaty</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q3')">d) Treaty of Kathmandu</button>
+  <p>Which plan introduced the concept of periodic planning in Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q3')">a) Fifth Plan</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q3')">b) First Plan</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q3')">c) Third Plan</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q3')">d) Tenth Plan</button>
   <p id="feedback-q3"></p>
 </div>
 
 <div class="question">
-  <p>Which is the oldest national park of Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q4')">a) Makalu-Barun</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q4')">b) Rara</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q4')">c) Bardiya</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q4')">d) Chitwan National Park</button>
+  <p>Which body prepares the annual budget in Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q4')">a) Nepal Rastra Bank</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q4')">b) National Planning Commission</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q4')">c) Ministry of Finance</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q4')">d) Office of the President</button>
   <p id="feedback-q4"></p>
 </div>
 
@@ -164,44 +165,43 @@
   
   
   <div class="question">
-  <p>Which is the second-highest mountain in Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q5')">a) Kanchenjunga</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q5')">b) Dhaulagiri</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q5')">c) Lhotse</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q5')">d) Manaslu</button>
+  <p>What is the full form of GDP?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q5')">a) General Domestic Product</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q5')">b) Gross Domestic Product</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q5')">c) Gross Development Percentage</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q5')">d) Government Domestic Planning</button>
   <p id="feedback-q5"></p>
 </div>
 
 <div class="question">
-  <p>Which Nepalese king started the postal service?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q6')">a) King Prithvi Narayan Shah</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q6')">b) King Rana Bahadur Shah</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q6')">c) King Mahendra</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q6')">d) King Surendra</button>
+  <p>What is Nepal Rastra Bank’s main function?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q6')">a) Collecting taxes</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q6')">b) Issuing currency</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q6')">c) Giving loans to public</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q6')">d) Planning infrastructure</button>
   <p id="feedback-q6"></p>
 </div>
 
 <div class="question">
-  <p>Which district is known as the 'District of Lakes'?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q7')">a) Nuwakot</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q7')">b) Chitwan</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q7')">c) Kaski</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q7')">d) Rasuwa</button>
+  <p>Which of these is a major export product of Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q7')">a) Automobiles</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q7')">b) Iron ore</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q7')">c) Handicrafts</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q7')">d) Crude oil</button>
   <p id="feedback-q7"></p>
 </div>
 
 <div class="question">
-  <p>Which country does Nepal share the shortest border with?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q8')">a) China</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q8')">b) India</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q8')">c) Bhutan</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q8')">d) Bangladesh</button>
+  <p>Which year did Nepal officially become a member of the World Trade Organization (WTO)?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q8')">a) 1995</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q8')">b) 2000</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q8')">c) 2004</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q8')">d) 2010</button>
   <p id="feedback-q8"></p>
 </div>
 
 
-  
-       <center>
+     <center>
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
         crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
@@ -215,45 +215,44 @@
       </script>
       </center>
   
-  
-  <div class="question">
-  <p>Which is the only UNESCO natural world heritage site in Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q9')">a) Sagarmatha National Park</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q9')">b) Lumbini</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q9')">c) Pashupatinath</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q9')">d) Chitwan National Park</button>
+<div class="question">
+  <p>Which of the following is Nepal’s largest hydropower project (as of now)?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q9')">a) Upper Tamakoshi</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q9')">b) Chameliya</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q9')">c) Kaligandaki A</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q9')">d) Trishuli</button>
   <p id="feedback-q9"></p>
 </div>
 
 <div class="question">
-  <p>Which king introduced the “Abolishment of Sati Pratha” in Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q10')">a) Tribhuvan</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q10')">b) Mahendra</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q10')">c) Rajendra</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q10')">d) Surendra</button>
+  <p>Which is Nepal’s major trading partner?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q10')">a) China</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q10')">b) Bangladesh</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q10')">c) USA</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q10')">d) India</button>
   <p id="feedback-q10"></p>
 </div>
 
 <div class="question">
-  <p>Which Terai district is known for sugarcane production?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q11')">a) Chitwan</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q11')">b) Sarlahi</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q11')">c) Rupandehi</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q11')">d) Dhanusha</button>
+  <p>What does the Human Development Index (HDI) measure?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q11')">a) Economic strength only</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q11')">b) Literacy rate only</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q11')">c) Health, education and income</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q11')">d) Infrastructure development</button>
   <p id="feedback-q11"></p>
 </div>
 
 <div class="question">
-  <p>Which Nepalese historical figure founded the Gorkha Kingdom?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q12')">a) Drabya Shah</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q12')">b) Ram Shah</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q12')">c) Narabhupal Shah</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q12')">d) Prithvi Narayan Shah</button>
+  <p>What is the role of the National Planning Commission of Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q12')">a) Manage education system</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q12')">b) Regulate banks</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q12')">c) Prepare national development plans</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q12')">d) Print currency</button>
   <p id="feedback-q12"></p>
 </div>
 
 
-       <center>
+     <center>
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
         crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
@@ -267,69 +266,71 @@
       </script>
       </center>
   
-  
   <div class="question">
-  <p>Which place is known as the 'Switzerland of Nepal'?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q13')">a) Ilam</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q13')">b) Jumla</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q13')">c) Palpa</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'd', 'q13')">d) Jiri</button>
+  <p>Remittance contributes what approximate percentage of Nepal’s GDP?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q13')">a) 10%</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q13')">b) 20%</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q13')">c) 30%</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q13')">d) 40%</button>
   <p id="feedback-q13"></p>
 </div>
 
 <div class="question">
-  <p>When was Kathmandu declared the capital of Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q14')">a) 1768</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q14')">b) 1769</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q14')">c) 1801</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'b', 'q14')">d) 1816</button>
+  <p>What is the currency of Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q14')">a) Rupee</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q14')">b) Taka</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q14')">c) Dollar</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q14')">d) Yen</button>
   <p id="feedback-q14"></p>
 </div>
 
 <div class="question">
-  <p>Which is the youngest national park of Nepal?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q15')">a) Makalu-Barun</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q15')">b) Shey Phoksundo</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q15')">c) Banke National Park</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'c', 'q15')">d) Bardiya</button>
+  <p>Which program was launched to alleviate poverty in Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q15')">a) Food for Work</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q15')">b) Education for All</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q15')">c) Clean Energy Program</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q15')">d) Forest User Groups</button>
   <p id="feedback-q15"></p>
 </div>
 
 <div class="question">
-  <p>Which is the largest district of Nepal by area?</p>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q16')">a) Dolpa</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q16')">b) Humla</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q16')">c) Taplejung</button>
-  <button class="btn btn-outline-primary btn-option" onclick="checkAnswer(this, 'a', 'q16')">d) Jumla</button>
+  <p>What is the role of cooperative organizations in Nepal?</p>
+  <button class="btn btn-outline-primary btn-option" data-answer="a" onclick="checkAnswer(this, 'a', 'q16')">a) Banking services for large companies</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="b" onclick="checkAnswer(this, 'b', 'q16')">b) Social security funding</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="c" onclick="checkAnswer(this, 'c', 'q16')">c) Microfinance and local development</button>
+  <button class="btn btn-outline-primary btn-option" data-answer="d" onclick="checkAnswer(this, 'd', 'q16')">d) Political campaigns</button>
   <p id="feedback-q16"></p>
 </div>
 
-  
       
-</div> 
-<!-- Quiz Content Ends -->
 
-    <!-- Quiz logic -->
+<!-- Quiz Content Ends --> 
+</div> 
+
+ 
+      
+      
+<!-- Quiz logic -->
     <script>
         function checkAnswer(button, selectedOption, questionId) {
             const correctAnswers = {      
                 
-  q1: 'b',
-  q2: 'c',
-  q3: 'c',
-  q4: 'd',
-  q5: 'a',
-  q6: 'b',
-  q7: 'c',
-  q8: 'a',
-  q9: 'd',
-  q10: 'c',
-  q11: 'b',
-  q12: 'a',
-  q13: 'd',
-  q14: 'b',
-  q15: 'c',
-  q16: 'a'
+ q1: "c", // VAT is the main source of revenue for Nepal
+  q2: "c", // Services sector contributes the most to Nepal’s GDP
+  q3: "b", // First Plan introduced periodic planning in Nepal
+  q4: "c", // Ministry of Finance prepares the annual budget
+  q5: "b", // GDP = Gross Domestic Product
+  q6: "b", // Nepal Rastra Bank's main role is issuing currency
+  q7: "c", // Handicrafts are a major export product
+  q8: "c", // Nepal joined WTO in 2004
+  q9: "a", // Upper Tamakoshi is Nepal's largest hydropower project
+  q10: "d", // India is Nepal’s major trading partner
+  q11: "c", // HDI measures health, education, and income
+  q12: "c", // National Planning Commission prepares development plans
+  q13: "c", // Remittance contributes about 30% of Nepal's GDP
+  q14: "a", // Currency of Nepal is Rupee
+  q15: "a", // "Food for Work" was launched to alleviate poverty
+  q16: "c"  // Cooperatives support microfinance and local development
 
                 
             };
@@ -401,6 +402,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="more.js"></script>
+
+
+<div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;"><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+<script type="text/javascript">sc_online_i(1712421,"ffffff","ffffff");</script><noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript></div>
+
       
 </body>
 </html>
