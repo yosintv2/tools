@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>デジタル時計</title>
+
+  <!-- ✅ SEO メタタグ -->
+  <meta name="description" content="日本語と英語に対応したリアルタイムのデジタル時計。12時間制で美しいデザイン。">
+  <meta name="keywords" content="デジタル時計,日本語時計,英語時計,リアルタイム,12時間制,時計アプリ">
+  <meta name="author" content="あなたの名前">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="デジタル時計">
+  <meta property="og:description" content="リアルタイムで表示される、美しい日本語と英語のデジタル時計。12時間制に対応。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://your-domain.example.com">
+  <meta property="og:image" content="https://your-domain.example.com/clock-thumbnail.jpg">
+
+  <!-- ✅ Twitterカード -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="デジタル時計">
+  <meta name="twitter:description" content="日本語と英語に対応した、リアルタイムの美しいデジタル時計。">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    .lang-selector {
+      width: 100%;
+      background: #ffffff;
+      padding: 10px 20px;
+      text-align: right;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .lang-selector select {
+      font-size: 1rem;
+      padding: 5px 10px;
+    }
+
+    .clock-container {
+      margin-top: 40px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .clock {
+      font-size: 5rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      color: #1a1a1a;
+    }
+
+    .seconds {
+      color: #6366f1;
+    }
+
+    .period {
+      font-size: 2rem;
+      margin-left: 10px;
+      color: #4a4a4a;
+    }
+
+    .date, .timezone {
+      margin-top: 10px;
+      font-size: 1.3rem;
+      color: #555;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    article {
+      max-width: 800px;
+      padding: 20px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    article h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    article p {
+      margin-top: 1rem;
+    }
+
+    article ul {
+      padding-left: 1.2em;
+    }
+
+    @media (max-width: 768px) {
+      .clock { font-size: 3.5rem; }
+      .period { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🌐 言語選択 -->
+  <div class="lang-selector">
+    <label for="lang">🌐 Language:
+      <select id="lang">
+        <option value="ja" selected>日本語</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- 🕒 時計本体 -->
+  <div class="clock-container">
+    <h1 id="title">デジタル時計</h1>
+    <div class="clock" id="clock">
+      <span class="time" id="time">12:00:00</span>
+      <span class="period" id="period">AM</span>
+    </div>
+    <div class="date" id="date">2025年1月1日</div>
+    <div class="timezone" id="timezone">タイムゾーン</div>
+  </div>
+
+  <!-- 📰 SEO用記事 -->
+  <article id="seo-article">
+    <h2>リアルタイムで表示される日本語のデジタル時計</h2>
+    <p>このページでは、インターネット上で誰でも簡単に使えるシンプルでクリーンな「デジタル時計」を提供しています。12時間制に対応しており、現在の時刻と日付をリアルタイムで表示します。</p>
+
+    <h2>特徴とメリット</h2>
+    <ul>
+      <li>⏰ リアルタイムで更新される正確な時刻</li>
+      <li>📱 PC・スマホ両対応のレスポンシブデザイン</li>
+      <li>🇯🇵 日本語に完全対応</li>
+      <li>🕛 12時間表示で午前・午後を区別</li>
+      <li>🌐 自動でローカルタイムゾーンを検出</li>
+    </ul>
+
+    <h2>おすすめの使い方</h2>
+    <p>このデジタル時計は、勉強中・仕事中・在宅ワーク時・プレゼンテーション中など、様々な場面で活用できます。美しいデザインで邪魔にならず、時間の管理がしやすくなります。</p>
+
+    <h2>SEO対策済みで日本向け最適化</h2>
+    <p>このページは日本語で構成され、検索エンジンに適したメタ情報と構造化データを含んでいます。Google日本で「デジタル時計」「オンライン時計」「リアルタイム時計」などのキーワードで上位表示を目指しています。</p>
+  </article>
+
+  <!-- ⏱️ JavaScript 時計更新 & 言語切替 -->
+  <script>
+    const langSelect = document.getElementById('lang');
+    const title = document.getElementById('title');
+    const timeEl = document.getElementById('time');
+    const periodEl = document.getElementById('period');
+    const dateEl = document.getElementById('date');
+    const timezoneEl = document.getElementById('timezone');
+    const article = document.getElementById('seo-article');
+
+    let currentLang = 'ja';
+
+    function updateClock() {
+      const now = new Date();
+      const timeOptions = {
+        hour12: true,
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit'
+      };
+      const dateOptions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      };
+
+      const timeString = now.toLocaleTimeString(currentLang === 'ja' ? 'ja-JP' : 'en-US', timeOptions);
+      const dateString = now.toLocaleDateString(currentLang === 'ja' ? 'ja-JP' : 'en-US', dateOptions);
+      const timezoneString = Intl.DateTimeFormat(currentLang === 'ja' ? 'ja-JP' : 'en-US', {
+        timeZoneName: 'short'
+      }).format(now).split(' ')[1];
+
+      const [timePart, period] = timeString.split(' ');
+      const [hh, mm, ss] = timePart.split(':');
+      timeEl.innerHTML = `${hh}:${mm}:<span class="seconds">${ss}</span>`;
+      periodEl.textContent = period || '';
+
+      dateEl.textContent = dateString;
+      timezoneEl.textContent = currentLang === 'ja'
+        ? `タイムゾーン: ${timezoneString}`
+        : `Timezone: ${timezoneString}`;
+    }
+
+    langSelect.addEventListener('change', () => {
+      currentLang = langSelect.value;
+      document.documentElement.lang = currentLang;
+      title.textContent = currentLang === 'ja' ? 'デジタル時計' : 'Digital Clock';
+      article.style.display = currentLang === 'ja' ? 'block' : 'none';
+      updateClock();
+    });
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
