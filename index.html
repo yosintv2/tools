@@ -6,55 +6,140 @@
   <title>デジタル時計</title>
 
   <!-- ✅ SEO メタタグ -->
-  <meta name="description" content="日本語と英語に対応したリアルタイムのデジタル時計。12時間制で美しいデザイン。">
-  <meta name="keywords" content="デジタル時計,日本語時計,英語時計,リアルタイム,12時間制,時計アプリ">
+  <meta name="description" content="日本語で表示されるリアルタイムのデジタル時計。12時間制、美しいデザインで今の時間をわかりやすく表示。">
+  <meta name="keywords" content="デジタル時計,日本語時計,リアルタイム,時計アプリ,オンライン時計">
   <meta name="author" content="あなたの名前">
   <meta name="robots" content="index, follow">
 
   <!-- ✅ Open Graph -->
   <meta property="og:title" content="デジタル時計">
-  <meta property="og:description" content="リアルタイムで表示される、美しい日本語と英語のデジタル時計。12時間制に対応。">
+  <meta property="og:description" content="日本語でリアルタイム表示される、シンプルで美しいデジタル時計。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:url" content="https://your-domain.example.com">
+  <meta property="og:url" content="https://your-domain.example.com/digital.html">
   <meta property="og:image" content="https://your-domain.example.com/clock-thumbnail.jpg">
 
   <!-- ✅ Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="デジタル時計">
-  <meta name="twitter:description" content="日本語と英語に対応した、リアルタイムの美しいデジタル時計。">
+  <meta name="twitter:description" content="日本語対応、リアルタイムで今の時刻を表示するデジタル時計アプリ。">
 
   <style>
+    :root {
+      --bg-color: #f4f4f9;
+      --text-color: #1a1a1a;
+      --card-bg: #fff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark {
+      --bg-color: #1a1a1a;
+      --text-color: #f0f0f0;
+      --card-bg: #2a2a2a;
+      --shadow: rgba(0, 0, 0, 0.5);
+    }
+
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f4f9;
+      background: var(--bg-color);
+      color: var(--text-color);
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
       min-height: 100vh;
+      transition: background 0.3s, color 0.3s;
+      overflow-x: hidden;
     }
 
-    .lang-selector {
+    header {
       width: 100%;
-      background: #ffffff;
-      padding: 10px 20px;
-      text-align: right;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: var(--card-bg);
+      box-shadow: 0 2px 6px var(--shadow);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      z-index: 999;
     }
 
-    .lang-selector select {
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .menu-toggle {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 1001;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .menu-toggle:hover {
+      background-color: #4338ca;
+    }
+
+    .slide-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 260px;
+      height: 100vh;
+      background-color: var(--card-bg);
+      box-shadow: -4px 0 20px var(--shadow);
+      padding: 60px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+
+    .slide-menu.active {
+      right: 0;
+    }
+
+    .slide-menu button,
+    .slide-menu a {
+      background: none;
+      border: none;
       font-size: 1rem;
-      padding: 5px 10px;
+      padding: 10px 14px;
+      text-align: left;
+      color: var(--text-color);
+      cursor: pointer;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+
+    .slide-menu button:hover,
+    .slide-menu a:hover {
+      background-color: rgba(100, 100, 255, 0.1);
     }
 
     .clock-container {
-      margin-top: 40px;
-      background: #fff;
+      margin-top: 120px;
+      background: var(--card-bg);
       padding: 40px;
       border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px var(--shadow);
       text-align: center;
     }
 
@@ -64,7 +149,6 @@
       display: flex;
       justify-content: center;
       align-items: baseline;
-      color: #1a1a1a;
     }
 
     .seconds {
@@ -74,33 +158,27 @@
     .period {
       font-size: 2rem;
       margin-left: 10px;
-      color: #4a4a4a;
     }
 
     .date, .timezone {
       margin-top: 10px;
       font-size: 1.3rem;
-      color: #555;
-    }
-
-    h1 {
-      font-size: 2rem;
     }
 
     article {
       max-width: 800px;
+      margin: 40px 20px;
       padding: 20px;
+      background: var(--card-bg);
+      box-shadow: 0 4px 20px var(--shadow);
+      border-radius: 12px;
+      color: var(--text-color);
       line-height: 1.8;
-      color: #333;
     }
 
     article h2 {
-      font-size: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    article p {
-      margin-top: 1rem;
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
     }
 
     article ul {
@@ -114,29 +192,33 @@
   </style>
 </head>
 <body>
-  <!-- 🌐 言語選択 -->
-  <div class="lang-selector">
-    <label for="lang">🌐 Language:
-      <select id="lang">
-        <option value="ja" selected>日本語</option>
-        <option value="en">English</option>
-      </select>
-    </label>
+
+  <!-- ✅ ヘッダー -->
+  <header>
+    <h1>デジタル時計</h1>
+  </header>
+
+  <!-- ✅ メニューボタン -->
+  <button class="menu-toggle" id="menuBtn">☰</button>
+
+  <!-- ✅ スライドメニュー -->
+  <div id="slideMenu" class="slide-menu">
+    <button onclick="toggleDarkMode()">🌙 ダークモード切替</button>
+    <a href="/analog.html">🕰 アナログ時計</a>
   </div>
 
-  <!-- 🕒 時計本体 -->
+  <!-- ✅ 時計本体 -->
   <div class="clock-container">
-    <h1 id="title">デジタル時計</h1>
     <div class="clock" id="clock">
-      <span class="time" id="time">12:00:00</span>
-      <span class="period" id="period">AM</span>
+      <span class="time" id="time">--:--:--</span>
+      <span class="period" id="period">--</span>
     </div>
-    <div class="date" id="date">2025年1月1日</div>
-    <div class="timezone" id="timezone">タイムゾーン</div>
+    <div class="date" id="date">読み込み中...</div>
+    <div class="timezone" id="timezone">タイムゾーン取得中...</div>
   </div>
 
-  <!-- 📰 SEO用記事 -->
-  <article id="seo-article">
+  <!-- ✅ SEO用記事 -->
+  <article>
     <h2>リアルタイムで表示される日本語のデジタル時計</h2>
     <p>このページでは、インターネット上で誰でも簡単に使えるシンプルでクリーンな「デジタル時計」を提供しています。12時間制に対応しており、現在の時刻と日付をリアルタイムで表示します。</p>
 
@@ -144,7 +226,6 @@
     <ul>
       <li>⏰ リアルタイムで更新される正確な時刻</li>
       <li>📱 PC・スマホ両対応のレスポンシブデザイン</li>
-      <li>🇯🇵 日本語に完全対応</li>
       <li>🕛 12時間表示で午前・午後を区別</li>
       <li>🌐 自動でローカルタイムゾーンを検出</li>
     </ul>
@@ -156,57 +237,37 @@
     <p>このページは日本語で構成され、検索エンジンに適したメタ情報と構造化データを含んでいます。Google日本で「デジタル時計」「オンライン時計」「リアルタイム時計」などのキーワードで上位表示を目指しています。</p>
   </article>
 
-  <!-- ⏱️ JavaScript 時計更新 & 言語切替 -->
+  <!-- ✅ JavaScript -->
   <script>
-    const langSelect = document.getElementById('lang');
-    const title = document.getElementById('title');
-    const timeEl = document.getElementById('time');
-    const periodEl = document.getElementById('period');
-    const dateEl = document.getElementById('date');
-    const timezoneEl = document.getElementById('timezone');
-    const article = document.getElementById('seo-article');
-
-    let currentLang = 'ja';
-
     function updateClock() {
       const now = new Date();
-      const timeOptions = {
-        hour12: true,
-        hour: 'numeric',
-        minute: '2-digit',
-        second: '2-digit'
-      };
-      const dateOptions = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      };
-
-      const timeString = now.toLocaleTimeString(currentLang === 'ja' ? 'ja-JP' : 'en-US', timeOptions);
-      const dateString = now.toLocaleDateString(currentLang === 'ja' ? 'ja-JP' : 'en-US', dateOptions);
-      const timezoneString = Intl.DateTimeFormat(currentLang === 'ja' ? 'ja-JP' : 'en-US', {
-        timeZoneName: 'short'
-      }).format(now).split(' ')[1];
+      const timeString = now.toLocaleTimeString('ja-JP', { hour12: true });
+      const dateString = now.toLocaleDateString('ja-JP', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      const timezoneString = Intl.DateTimeFormat('ja-JP', { timeZoneName: 'short' }).format(now).split(' ')[1];
 
       const [timePart, period] = timeString.split(' ');
       const [hh, mm, ss] = timePart.split(':');
-      timeEl.innerHTML = `${hh}:${mm}:<span class="seconds">${ss}</span>`;
-      periodEl.textContent = period || '';
 
-      dateEl.textContent = dateString;
-      timezoneEl.textContent = currentLang === 'ja'
-        ? `タイムゾーン: ${timezoneString}`
-        : `Timezone: ${timezoneString}`;
+      document.getElementById('time').innerHTML = `${hh}:${mm}:<span class="seconds">${ss}</span>`;
+      document.getElementById('period').textContent = period || '';
+      document.getElementById('date').textContent = dateString;
+      document.getElementById('timezone').textContent = `タイムゾーン: ${timezoneString}`;
     }
 
-    langSelect.addEventListener('change', () => {
-      currentLang = langSelect.value;
-      document.documentElement.lang = currentLang;
-      title.textContent = currentLang === 'ja' ? 'デジタル時計' : 'Digital Clock';
-      article.style.display = currentLang === 'ja' ? 'block' : 'none';
-      updateClock();
-    });
+    const menuBtn = document.getElementById('menuBtn');
+    const slideMenu = document.getElementById('slideMenu');
+
+    function toggleMenu() {
+      slideMenu.classList.toggle('active');
+      menuBtn.textContent = slideMenu.classList.contains('active') ? '✖' : '☰';
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      toggleMenu();
+    }
 
     setInterval(updateClock, 1000);
     updateClock();
