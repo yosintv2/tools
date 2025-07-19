@@ -5,20 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japanese Vocabulary Flashcards</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       background: linear-gradient(135deg, #f3e7ff 0%, #d4e4ff 100%);
-      font-family: 'Noto Sans JP', sans-serif;
+      font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
-    .flashcard {
+    .flashcard-container {
+      position: relative;
       width: 350px;
       height: 450px;
+    }
+    .flashcard {
+      width: 100%;
+      height: 100%;
       perspective: 1000px;
       position: absolute;
+      top: 0;
+      left: 0;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: transform 0.5s ease, opacity 0.5s ease;
     }
+    .flashcard.slide-in-left { transform: translateX(-100%); opacity: 0; }
+    .flashcard.slide-in-right { transform: translateX(100%); opacity: 0; }
+    .flashcard.active { transform: translateX(0); opacity: 1; }
     .flashcard-inner {
       position: relative;
       width: 100%;
@@ -41,7 +56,7 @@
       border-radius: 20px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
       background: linear-gradient(145deg, #ffffff, #f1f5f9);
-      padding: 1rem;
+      padding: 1.5rem;
     }
     .flashcard-back {
       transform: rotateY(180deg);
@@ -53,206 +68,230 @@
     .dragging {
       transition: none;
     }
-    .progress {
-      font-size: 1rem;
-      color: #4a5568;
+    .progress-container {
+      width: 350px;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 4px;
       margin-top: 1rem;
-      text-align: center;
     }
+    .progress-bar {
+      height: 100%;
+      background: #6b7280;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+    .swipe-hint {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: rgba(107, 114, 128, 0.5);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .swipe-hint.left { left: -50px; }
+    .swipe-hint.right { right: -50px; }
+    .show-hint .swipe-hint { opacity: 1; }
   </style>
 </head>
-<body class="flex items-center justify-center h-screen">
+<body>
   <div class="flex flex-col items-center">
-    <div id="flashcard-container" class="relative w-[350px] h-[450px]" role="region" aria-label="Flashcard">
+    <div id="flashcard-container" class="flashcard-container" role="region" aria-label="Flashcard deck">
       <!-- Flashcards will be dynamically inserted here -->
+      <div class="swipe-hint left" aria-hidden="true">←</div>
+      <div class="swipe-hint right" aria-hidden="true">→</div>
     </div>
-    <div id="progress" class="progress" aria-live="polite"></div>
+    <div class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
   </div>
   <script>
     const flashcards = [
       {
-        front: '<span class="text-3xl font-bold">携帯電話</span><br><span class="text-xl">けいたい でんわ</span><br><span class="text-lg text-gray-600">(keitai denwa)</span>',
-        back: '<span class="text-2xl">Mobile phone</span><br><em class="text-gray-600">Note</em>: Refers to a cell phone or smartphone.'
+        front: '<span class="text-4xl font-bold">携帯電話</span><br><span class="text-xl mt-2">けいたい でんわ</span><br><span class="text-lg text-gray-600 mt-1">(keitai denwa)</span>',
+        back: '<span class="text-2xl">Mobile phone</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to a cell phone or smartphone.'
       },
       {
-        front: '<span class="text-3xl font-bold">お得な特典</span><br><span class="text-xl">おとく な とくてん</span><br><span class="text-lg text-gray-600">(otoku na tokuten)</span>',
-        back: '<span class="text-2xl">Special offer / Good deal</span><br><em class="text-gray-600">Note</em>: Often used in marketing for discounts or bonuses.'
+        front: '<span class="text-4xl font-bold">お得な特典</span><br><span class="text-xl mt-2">おとく な とくてん</span><br><span class="text-lg text-gray-600 mt-1">(otoku na tokuten)</span>',
+        back: '<span class="text-2xl">Special offer / Good deal</span><br><em class="text-gray-600 mt-2">Note</em>: Often used in marketing for discounts or bonuses.'
       },
       {
-        front: '<span class="text-3xl font-bold">最大</span><br><span class="text-xl">さいだい</span><br><span class="text-lg text-gray-600">(saidai)</span>',
-        back: '<span class="text-2xl">Maximum</span><br><em class="text-gray-600">Note</em>: Adjective for the largest or highest amount.'
+        front: '<span class="text-4xl font-bold">最大</span><br><span class="text-xl mt-2">さいだい</span><br><span class="text-lg text-gray-600 mt-1">(saidai)</span>',
+        back: '<span class="text-2xl">Maximum</span><br><em class="text-gray-600 mt-2">Note</em>: Adjective for the largest or highest amount.'
       },
       {
-        front: '<span class="text-3xl font-bold">新規契約</span><br><span class="text-xl">しんき けいやく</span><br><span class="text-lg text-gray-600">(shinki keiyaku)</span>',
-        back: '<span class="text-2xl">New contract</span><br><em class="text-gray-600">Note</em>: Refers to signing up for a new service agreement.'
+        front: '<span class="text-4xl font-bold">新規契約</span><br><span class="text-xl mt-2">しんき けいやく</span><br><span class="text-lg text-gray-600 mt-1">(shinki keiyaku)</span>',
+        back: '<span class="text-2xl">New contract</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to signing up for a new service agreement.'
       },
       {
-        front: '<span class="text-3xl font-bold">記載</span><br><span class="text-xl">きさい</span><br><span class="text-lg text-gray-600">(kisai)</span>',
-        back: '<span class="text-2xl">Mention / Description</span><br><em class="text-gray-600">Note</em>: Noun for written details or entries.'
+        front: '<span class="text-4xl font-bold">記載</span><br><span class="text-xl mt-2">きさい</span><br><span class="text-lg text-gray-600 mt-1">(kisai)</span>',
+        back: '<span class="text-2xl">Mention / Description</span><br><em class="text-gray-600 mt-2">Note</em>: Noun for written details or entries.'
       },
       {
-        front: '<span class="text-3xl font-bold">共有</span><br><span class="text-xl">きょうゆう</span><br><span class="text-lg text-gray-600">(kyouyuu)</span>',
-        back: '<span class="text-2xl">Sharing</span><br><em class="text-gray-600">Note</em>: Noun/verb for sharing resources or information.'
+        front: '<span class="text-4xl font-bold">共有</span><br><span class="text-xl mt-2">きょうゆう</span><br><span class="text-lg text-gray-600 mt-1">(kyouyuu)</span>',
+        back: '<span class="text-2xl">Sharing</span><br><em class="text-gray-600 mt-2">Note</em>: Noun/verb for sharing resources or information.'
       },
       {
-        front: '<span class="text-3xl font-bold">適用条件</span><br><span class="text-xl">てきよう じょうけん</span><br><span class="text-lg text-gray-600">(tekiyoo jouken)</span>',
-        back: '<span class="text-2xl">Terms of application</span><br><em class="text-gray-600">Note</em>: Conditions that must be met for a rule or offer to apply.'
+        front: '<span class="text-4xl font-bold">適用条件</span><br><span class="text-xl mt-2">てきよう じょうけん</span><br><span class="text-lg text-gray-600 mt-1">(tekiyoo jouken)</span>',
+        back: '<span class="text-2xl">Terms of application</span><br><em class="text-gray-600 mt-2">Note</em>: Conditions that must be met for a rule or offer to apply.'
       },
       {
-        front: '<span class="text-3xl font-bold">条件</span><br><span class="text-xl">じょうけん</span><br><span class="text-lg text-gray-600">(jouken)</span>',
-        back: '<span class="text-2xl">Condition</span><br><em class="text-gray-600">Note</em>: Noun for a requirement or prerequisite.'
+        front: '<span class="text-4xl font-bold">条件</span><br><span class="text-xl mt-2">じょうけん</span><br><span class="text-lg text-gray-600 mt-1">(jouken)</span>',
+        back: '<span class="text-2xl">Condition</span><br><em class="text-gray-600 mt-2">Note</em>: Noun for a requirement or prerequisite.'
       },
       {
-        front: '<span class="text-3xl font-bold">月々</span><br><span class="text-xl">つきづき</span><br><span class="text-lg text-gray-600">(tsukizuki)</span>',
-        back: '<span class="text-2xl">Monthly</span><br><em class="text-gray-600">Note</em>: Adverb for recurring monthly payments or actions.'
+        front: '<span class="text-4xl font-bold">月々</span><br><span class="text-xl mt-2">つきづき</span><br><span class="text-lg text-gray-600 mt-1">(tsukizuki)</span>',
+        back: '<span class="text-2xl">Monthly</span><br><em class="text-gray-600 mt-2">Note</em>: Adverb for recurring monthly payments or actions.'
       },
       {
-        front: '<span class="text-3xl font-bold">乗り換え</span><br><span class="text-xl">のりかえ</span><br><span class="text-lg text-gray-600">(norikae)</span>',
-        back: '<span class="text-2xl">Switching (carriers, etc.)</span><br><em class="text-gray-600">Note</em>: Often used for changing service providers.'
+        front: '<span class="text-4xl font-bold">乗り換え</span><br><span class="text-xl mt-2">のりかえ</span><br><span class="text-lg text-gray-600 mt-1">(norikae)</span>',
+        back: '<span class="text-2xl">Switching (carriers, etc.)</span><br><em class="text-gray-600 mt-2">Note</em>: Often used for changing service providers.'
       },
       {
-        front: '<span class="text-3xl font-bold">当該期間</span><br><span class="text-xl">とうがい きかん</span><br><span class="text-lg text-gray-600">(tougai kikan)</span>',
-        back: '<span class="text-2xl">Relevant period</span><br><em class="text-gray-600">Note</em>: The specific time frame related to an agreement.'
+        front: '<span class="text-4xl font-bold">当該期間</span><br><span class="text-xl mt-2">とうがい きかん</span><br><span class="text-lg text-gray-600 mt-1">(tougai kikan)</span>',
+        back: '<span class="text-2xl">Relevant period</span><br><em class="text-gray-600 mt-2">Note</em>: The specific time frame related to an agreement.'
       },
       {
-        front: '<span class="text-3xl font-bold">名義</span><br><span class="text-xl">めいぎ</span><br><span class="text-lg text-gray-600">(meigi)</span>',
-        back: '<span class="text-2xl">Name (on a contract/account)</span><br><em class="text-gray-600">Note</em>: Refers to the registered name for an account.'
+        front: '<span class="text-4xl font-bold">名義</span><br><span class="text-xl mt-2">めいぎ</span><br><span class="text-lg text-gray-600 mt-1">(meigi)</span>',
+        back: '<span class="text-2xl">Name (on a contract/account)</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to the registered name for an account.'
       },
       {
-        front: '<span class="text-3xl font-bold">契約変更</span><br><span class="text-xl">けいやく へんこう</span><br><span class="text-lg text-gray-600">(keiyaku henkou)</span>',
-        back: '<span class="text-2xl">Contract change</span><br><em class="text-gray-600">Note</em>: Modifying an existing service agreement.'
+        front: '<span class="text-4xl font-bold">契約変更</span><br><span class="text-xl mt-2">けいやく へんこう</span><br><span class="text-lg text-gray-600 mt-1">(keiyaku henkou)</span>',
+        back: '<span class="text-2xl">Contract change</span><br><em class="text-gray-600 mt-2">Note</em>: Modifying an existing service agreement.'
       },
       {
-        front: '<span class="text-3xl font-bold">自動更新</span><br><span class="text-xl">じどう こうしん</span><br><span class="text-lg text-gray-600">(jidou koushin)</span>',
-        back: '<span class="text-2xl">Auto-renewal</span><br><em class="text-gray-600">Note</em>: Automatic extension of a contract.'
+        front: '<span class="text-4xl font-bold">自動更新</span><br><span class="text-xl mt-2">じどう こうしん</span><br><span class="text-lg text-gray-600 mt-1">(jidou koushin)</span>',
+        back: '<span class="text-2xl">Auto-renewal</span><br><em class="text-gray-600 mt-2">Note</em>: Automatic extension of a contract.'
       },
       {
-        front: '<span class="text-3xl font-bold">機種</span><br><span class="text-xl">きしゅ</span><br><span class="text-lg text-gray-600">(kishu)</span>',
-        back: '<span class="text-2xl">Device model</span><br><em class="text-gray-600">Note</em>: Refers to a specific type of phone or device.'
+        front: '<span class="text-4xl font-bold">機種</span><br><span class="text-xl mt-2">きしゅ</span><br><span class="text-lg text-gray-600 mt-1">(kishu)</span>',
+        back: '<span class="text-2xl">Device model</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to a specific type of phone or device.'
       },
       {
-        front: '<span class="text-3xl font-bold">月額料金</span><br><span class="text-xl">げつがく りょうきん</span><br><span class="text-lg text-gray-600">(getsugaku ryoukin)</span>',
-        back: '<span class="text-2xl">Monthly fee</span><br><em class="text-gray-600">Note</em>: Recurring cost for a service.'
+        front: '<span class="text-4xl font-bold">月額料金</span><br><span class="text-xl mt-2">げつがく りょうきん</span><br><span class="text-lg text-gray-600 mt-1">(getsugaku ryoukin)</span>',
+        back: '<span class="text-2xl">Monthly fee</span><br><em class="text-gray-600 mt-2">Note</em>: Recurring cost for a service.'
       },
       {
-        front: '<span class="text-3xl font-bold">一括請求</span><br><span class="text-xl">いっかつ せいきゅう</span><br><span class="text-lg text-gray-600">(ikkatsu seikyuu)</span>',
-        back: '<span class="text-2xl">Lump-sum billing</span><br><em class="text-gray-600">Note</em>: Charging the total amount at once.'
+        front: '<span class="text-4xl font-bold">一括請求</span><br><span class="text-xl mt-2">いっかつ せいきゅう</span><br><span class="text-lg text-gray-600 mt-1">(ikkatsu seikyuu)</span>',
+        back: '<span class="text-2xl">Lump-sum billing</span><br><em class="text-gray-600 mt-2">Note</em>: Charging the total amount at once.'
       },
       {
-        front: '<span class="text-3xl font-bold">定額</span><br><span class="text-xl">ていがく</span><br><span class="text-lg text-gray-600">(teigaku)</span>',
-        back: '<span class="text-2xl">Fixed amount / Flat rate</span><br><em class="text-gray-600">Note</em>: A consistent, unchanging fee.'
+        front: '<span class="text-4xl font-bold">定額</span><br><span class="text-xl mt-2">ていがく</span><br><span class="text-lg text-gray-600 mt-1">(teigaku)</span>',
+        back: '<span class="text-2xl">Fixed amount / Flat rate</span><br><em class="text-gray-600 mt-2">Note</em>: A consistent, unchanging fee.'
       },
       {
-        front: '<span class="text-3xl font-bold">日割り計算</span><br><span class="text-xl">ひわり けいさん</span><br><span class="text-lg text-gray-600">(hiwari keisan)</span>',
-        back: '<span class="text-2xl">Pro-rated calculation</span><br><em class="text-gray-600">Note</em>: Billing adjusted for partial periods.'
+        front: '<span class="text-4xl font-bold">日割り計算</span><br><span class="text-xl mt-2">ひわり けいさん</span><br><span class="text-lg text-gray-600 mt-1">(hiwari keisan)</span>',
+        back: '<span class="text-2xl">Pro-rated calculation</span><br><em class="text-gray-600 mt-2">Note</em>: Billing adjusted for partial periods.'
       },
       {
-        front: '<span class="text-3xl font-bold">端末</span><br><span class="text-xl">たんまつ</span><br><span class="text-lg text-gray-600">(tanmatsu)</span>',
-        back: '<span class="text-2xl">Terminal / Device</span><br><em class="text-gray-600">Note</em>: Refers to a phone or other hardware.'
+        front: '<span class="text-4xl font-bold">端末</span><br><span class="text-xl mt-2">たんまつ</span><br><span class="text-lg text-gray-600 mt-1">(tanmatsu)</span>',
+        back: '<span class="text-2xl">Terminal / Device</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to a phone or other hardware.'
       },
       {
-        front: '<span class="text-3xl font-bold">加入</span><br><span class="text-xl">かにゅう</span><br><span class="text-lg text-gray-600">(kanyuu)</span>',
-        back: '<span class="text-2xl">Subscription / Joining</span><br><em class="text-gray-600">Note</em>: Signing up for a service.'
+        front: '<span class="text-4xl font-bold">加入</span><br><span class="text-xl mt-2">かにゅう</span><br><span class="text-lg text-gray-600 mt-1">(kanyuu)</span>',
+        back: '<span class="text-2xl">Subscription / Joining</span><br><em class="text-gray-600 mt-2">Note</em>: Signing up for a service.'
       },
       {
-        front: '<span class="text-3xl font-bold">契約回線</span><br><span class="text-xl">けいやく かいせん</span><br><span class="text-lg text-gray-600">(keiyaku kaisen)</span>',
-        back: '<span class="text-2xl">Contract line / Subscription line</span><br><em class="text-gray-600">Note</em>: A specific phone or data line under contract.'
+        front: '<span class="text-4xl font-bold">契約回線</span><br><span class="text-xl mt-2">けいやく かいせん</span><br><span class="text-lg text-gray-600 mt-1">(keiyaku kaisen)</span>',
+        back: '<span class="text-2xl">Contract line / Subscription line</span><br><em class="text-gray-600 mt-2">Note</em>: A specific phone or data line under contract.'
       },
       {
-        front: '<span class="text-3xl font-bold">データ量到達</span><br><span class="text-xl">データ りょう とうたつ</span><br><span class="text-lg text-gray-600">(deeta ryou toutatsu)</span>',
-        back: '<span class="text-2xl">Data volume reached</span><br><em class="text-gray-600">Note</em>: When the data limit is hit.'
+        front: '<span class="text-4xl font-bold">データ量到達</span><br><span class="text-xl mt-2">データ りょう とうたつ</span><br><span class="text-lg text-gray-600 mt-1">(deeta ryou toutatsu)</span>',
+        back: '<span class="text-2xl">Data volume reached</span><br><em class="text-gray-600 mt-2">Note</em>: When the data limit is hit.'
       },
       {
-        front: '<span class="text-3xl font-bold">解約</span><br><span class="text-xl">かいやく</span><br><span class="text-lg text-gray-600">(kaiyaku)</span>',
-        back: '<span class="text-2xl">Cancellation / Contract termination</span><br><em class="text-gray-600">Note</em>: Ending a service agreement.'
+        front: '<span class="text-4xl font-bold">解約</span><br><span class="text-xl mt-2">かいやく</span><br><span class="text-lg text-gray-600 mt-1">(kaiyaku)</span>',
+        back: '<span class="text-2xl">Cancellation / Contract termination</span><br><em class="text-gray-600 mt-2">Note</em>: Ending a service agreement.'
       },
       {
-        front: '<span class="text-3xl font-bold">事務手数料</span><br><span class="text-xl">じむ てすうりょう</span><br><span class="text-lg text-gray-600">(jimu tesuuryou)</span>',
-        back: '<span class="text-2xl">Administrative fee / Handling fee</span><br><em class="text-gray-600">Note</em>: Cost for processing paperwork.'
+        front: '<span class="text-4xl font-bold">事務手数料</span><br><span class="text-xl mt-2">じむ てすうりょう</span><br><span class="text-lg text-gray-600 mt-1">(jimu tesuuryou)</span>',
+        back: '<span class="text-2xl">Administrative fee / Handling fee</span><br><em class="text-gray-600 mt-2">Note</em>: Cost for processing paperwork.'
       },
       {
-        front: '<span class="text-3xl font-bold">通信速度</span><br><span class="text-xl">つうしん そくど</span><br><span class="text-lg text-gray-600">(tsuushin sokudo)</span>',
-        back: '<span class="text-2xl">Communication speed / Data speed</span><br><em class="text-gray-600">Note</em>: Rate of data transfer.'
+        front: '<span class="text-4xl font-bold">通信速度</span><br><span class="text-xl mt-2">つうしん そくど</span><br><span class="text-lg text-gray-600 mt-1">(tsuushin sokudo)</span>',
+        back: '<span class="text-2xl">Communication speed / Data speed</span><br><em class="text-gray-600 mt-2">Note</em>: Rate of data transfer.'
       },
       {
-        front: '<span class="text-3xl font-bold">取得</span><br><span class="text-xl">しゅとく</span><br><span class="text-lg text-gray-600">(shutoku)</span>',
-        back: '<span class="text-2xl">Acquisition / Obtaining</span><br><em class="text-gray-600">Note</em>: Gaining possession or rights.'
+        front: '<span class="text-4xl font-bold">取得</span><br><span class="text-xl mt-2">しゅとく</span><br><span class="text-lg text-gray-600 mt-1">(shutoku)</span>',
+        back: '<span class="text-2xl">Acquisition / Obtaining</span><br><em class="text-gray-600 mt-2">Note</em>: Gaining possession or rights.'
       },
       {
-        front: '<span class="text-3xl font-bold">定期契約</span><br><span class="text-xl">ていき けいやく</span><br><span class="text-lg text-gray-600">(teiki keiyaku)</span>',
-        back: '<span class="text-2xl">Fixed-term contract</span><br><em class="text-gray-600">Note</em>: Agreement with a set duration.'
+        front: '<span class="text-4xl font-bold">定期契約</span><br><span class="text-xl mt-2">ていき けいやく</span><br><span class="text-lg text-gray-600 mt-1">(teiki keiyaku)</span>',
+        back: '<span class="text-2xl">Fixed-term contract</span><br><em class="text-gray-600 mt-2">Note</em>: Agreement with a set duration.'
       },
       {
-        front: '<span class="text-3xl font-bold">無制限</span><br><span class="text-xl">むせいげん</span><br><span class="text-lg text-gray-600">(museigen)</span>',
-        back: '<span class="text-2xl">Unlimited</span><br><em class="text-gray-600">Note</em>: No cap or restriction, e.g., on data usage.'
+        front: '<span class="text-4xl font-bold">無制限</span><br><span class="text-xl mt-2">むせいげん</span><br><span class="text-lg text-gray-600 mt-1">(museigen)</span>',
+        back: '<span class="text-2xl">Unlimited</span><br><em class="text-gray-600 mt-2">Note</em>: No cap or restriction, e.g., on data usage.'
       },
       {
-        front: '<span class="text-3xl font-bold">一括</span><br><span class="text-xl">いっかつ</span><br><span class="text-lg text-gray-600">(ikkatsu)</span>',
-        back: '<span class="text-2xl">Lump sum / All at once</span><br><em class="text-gray-600">Note</em>: Paying or doing something in one go.'
+        front: '<span class="text-4xl font-bold">一括</span><br><span class="text-xl mt-2">いっかつ</span><br><span class="text-lg text-gray-600 mt-1">(ikkatsu)</span>',
+        back: '<span class="text-2xl">Lump sum / All at once</span><br><em class="text-gray-600 mt-2">Note</em>: Paying or doing something in one go.'
       },
       {
-        front: '<span class="text-3xl font-bold">回線・回線数</span><br><span class="text-xl">かいせん・かいせんすう</span><br><span class="text-lg text-gray-600">(kaisen / kaisen suu)</span>',
-        back: '<span class="text-2xl">Line(s) / Number of lines</span><br><em class="text-gray-600">Note</em>: Refers to phone or data connections.'
+        front: '<span class="text-4xl font-bold">回線・回線数</span><br><span class="text-xl mt-2">かいせん・かいせんすう</span><br><span class="text-lg text-gray-600 mt-1">(kaisen / kaisen suu)</span>',
+        back: '<span class="text-2xl">Line(s) / Number of lines</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to phone or data connections.'
       },
       {
-        front: '<span class="text-3xl font-bold">通話料・通話量</span><br><span class="text-xl">つうわりょう</span><br><span class="text-lg text-gray-600">(tsuuwaryou)</span>',
-        back: '<span class="text-2xl">Call charges / Call volume</span><br><em class="text-gray-600">Note</em>: Cost or amount of phone calls.'
+        front: '<span class="text-4xl font-bold">通話料・通話量</span><br><span class="text-xl mt-2">つうわりょう</span><br><span class="text-lg text-gray-600 mt-1">(tsuuwaryou)</span>',
+        back: '<span class="text-2xl">Call charges / Call volume</span><br><em class="text-gray-600 mt-2">Note</em>: Cost or amount of phone calls.'
       },
       {
-        front: '<span class="text-3xl font-bold">分割</span><br><span class="text-xl">ぶんかつ</span><br><span class="text-lg text-gray-600">(bunkatsu)</span>',
-        back: '<span class="text-2xl">Installment / Split payment</span><br><em class="text-gray-600">Note</em>: Paying in parts over time.'
+        front: '<span class="text-4xl font-bold">分割</span><br><span class="text-xl mt-2">ぶんかつ</span><br><span class="text-lg text-gray-600 mt-1">(bunkatsu)</span>',
+        back: '<span class="text-2xl">Installment / Split payment</span><br><em class="text-gray-600 mt-2">Note</em>: Paying in parts over time.'
       },
       {
-        front: '<span class="text-3xl font-bold">三親等</span><br><span class="text-xl">さんしんとう</span><br><span class="text-lg text-gray-600">(sanshintou)</span>',
-        back: '<span class="text-2xl">Third degree of kinship</span><br><em class="text-gray-600">Note</em>: Legal term for family relationships.'
+        front: '<span class="text-4xl font-bold">三親等</span><br><span class="text-xl mt-2">さんしんとう</span><br><span class="text-lg text-gray-600 mt-1">(sanshintou)</span>',
+        back: '<span class="text-2xl">Third degree of kinship</span><br><em class="text-gray-600 mt-2">Note</em>: Legal term for family relationships.'
       },
       {
-        front: '<span class="text-3xl font-bold">使用料・使用量</span><br><span class="text-xl">しようりょう</span><br><span class="text-lg text-gray-600">(shiyouryou)</span>',
-        back: '<span class="text-2xl">Usage fee / Usage amount</span><br><em class="text-gray-600">Note</em>: Cost or amount of service used.'
+        front: '<span class="text-4xl font-bold">使用料・使用量</span><br><span class="text-xl mt-2">しようりょう</span><br><span class="text-lg text-gray-600 mt-1">(shiyouryou)</span>',
+        back: '<span class="text-2xl">Usage fee / Usage amount</span><br><em class="text-gray-600 mt-2">Note</em>: Cost or amount of service used.'
       },
       {
-        front: '<span class="text-3xl font-bold">不正</span><br><span class="text-xl">ふせい</span><br><span class="text-lg text-gray-600">(fusei)</span>',
-        back: '<span class="text-2xl">Fraud / Improper</span><br><em class="text-gray-600">Note</em>: Illegal or unethical actions.'
+        front: '<span class="text-4xl font-bold">不正</span><br><span class="text-xl mt-2">ふせい</span><br><span class="text-lg text-gray-600 mt-1">(fusei)</span>',
+        back: '<span class="text-2xl">Fraud / Improper</span><br><em class="text-gray-600 mt-2">Note</em>: Illegal or unethical actions.'
       },
       {
-        front: '<span class="text-3xl font-bold">契約者</span><br><span class="text-xl">けいやくしゃ</span><br><span class="text-lg text-gray-600">(keiyakusha)</span>',
-        back: '<span class="text-2xl">Contract holder / Subscriber</span><br><em class="text-gray-600">Note</em>: Person who signed the contract.'
+        front: '<span class="text-4xl font-bold">契約者</span><br><span class="text-xl mt-2">けいやくしゃ</span><br><span class="text-lg text-gray-600 mt-1">(keiyakusha)</span>',
+        back: '<span class="text-2xl">Contract holder / Subscriber</span><br><em class="text-gray-600 mt-2">Note</em>: Person who signed the contract.'
       },
       {
-        front: '<span class="text-3xl font-bold">継続利用期間</span><br><span class="text-xl">けいぞく りよう きかん</span><br><span class="text-lg text-gray-600">(keizoku riyou kikan)</span>',
-        back: '<span class="text-2xl">Continuous usage period</span><br><em class="text-gray-600">Note</em>: Duration of uninterrupted service use.'
+        front: '<span class="text-4xl font-bold">継続利用期間</span><br><span class="text-xl mt-2">けいぞく りよう きかん</span><br><span class="text-lg text-gray-600 mt-1">(keizoku riyou kikan)</span>',
+        back: '<span class="text-2xl">Continuous usage period</span><br><em class="text-gray-600 mt-2">Note</em>: Duration of uninterrupted service use.'
       },
       {
-        front: '<span class="text-3xl font-bold">手数料</span><br><span class="text-xl">てすうりょう</span><br><span class="text-lg text-gray-600">(tesuuryou)</span>',
-        back: '<span class="text-2xl">Fee / Commission</span><br><em class="text-gray-600">Note</em>: General term for service charges.'
+        front: '<span class="text-4xl font-bold">手数料</span><br><span class="text-xl mt-2">てすうりょう</span><br><span class="text-lg text-gray-600 mt-1">(tesuuryou)</span>',
+        back: '<span class="text-2xl">Fee / Commission</span><br><em class="text-gray-600 mt-2">Note</em>: General term for service charges.'
       },
       {
-        front: '<span class="text-3xl font-bold">割引適用</span><br><span class="text-xl">わりびき てきよう</span><br><span class="text-lg text-gray-600">(waribiki tekiyoo)</span>',
-        back: '<span class="text-2xl">Discount application</span><br><em class="text-gray-600">Note</em>: Applying a price reduction.'
+        front: '<span class="text-4xl font-bold">割引適用</span><br><span class="text-xl mt-2">わりびき てきよう</span><br><span class="text-lg text-gray-600 mt-1">(waribiki tekiyoo)</span>',
+        back: '<span class="text-2xl">Discount application</span><br><em class="text-gray-600 mt-2">Note</em>: Applying a price reduction.'
       },
       {
-        front: '<span class="text-3xl font-bold">加算</span><br><span class="text-xl">かさん</span><br><span class="text-lg text-gray-600">(kasan)</span>',
-        back: '<span class="text-2xl">Addition / Extra charge</span><br><em class="text-gray-600">Note</em>: Adding an extra cost or amount.'
+        front: '<span class="text-4xl font-bold">加算</span><br><span class="text-xl mt-2">かさん</span><br><span class="text-lg text-gray-600 mt-1">(kasan)</span>',
+        back: '<span class="text-2xl">Addition / Extra charge</span><br><em class="text-gray-600 mt-2">Note</em>: Adding an extra cost or amount.'
       },
       {
-        front: '<span class="text-3xl font-bold">データ容量</span><br><span class="text-xl">データ ようりょう</span><br><span class="text-lg text-gray-600">(deeta youryou)</span>',
-        back: '<span class="text-2xl">Data capacity</span><br><em class="text-gray-600">Note</em>: Amount of data available for use.'
+        front: '<span class="text-4xl font-bold">データ容量</span><br><span class="text-xl mt-2">データ ようりょう</span><br><span class="text-lg text-gray-600 mt-1">(deeta youryou)</span>',
+        back: '<span class="text-2xl">Data capacity</span><br><em class="text-gray-600 mt-2">Note</em>: Amount of data available for use.'
       },
       {
-        front: '<span class="text-3xl font-bold">永年</span><br><span class="text-xl">えいねん</span><br><span class="text-lg text-gray-600">(einen)</span>',
-        back: '<span class="text-2xl">Perpetual / Long-term</span><br><em class="text-gray-600">Note</em>: Something lasting indefinitely.'
+        front: '<span class="text-4xl font-bold">永年</span><br><span class="text-xl mt-2">えいねん</span><br><span class="text-lg text-gray-600 mt-1">(einen)</span>',
+        back: '<span class="text-2xl">Perpetual / Long-term</span><br><em class="text-gray-600 mt-2">Note</em>: Something lasting indefinitely.'
       },
       {
-        front: '<span class="text-3xl font-bold">別途</span><br><span class="text-xl">べっと</span><br><span class="text-lg text-gray-600">(betsuto)</span>',
-        back: '<span class="text-2xl">Separately / Additional</span><br><em class="text-gray-600">Note</em>: Extra or separate cost/action.'
+        front: '<span class="text-4xl font-bold">別途</span><br><span class="text-xl mt-2">べっと</span><br><span class="text-lg text-gray-600 mt-1">(betsuto)</span>',
+        back: '<span class="text-2xl">Separately / Additional</span><br><em class="text-gray-600 mt-2">Note</em>: Extra or separate cost/action.'
       },
       {
-        front: '<span class="text-3xl font-bold">翌月</span><br><span class="text-xl">よくげつ</span><br><span class="text-lg text-gray-600">(yokugetsu)</span>',
-        back: '<span class="text-2xl">Next month</span><br><em class="text-gray-600">Note</em>: The following month in a sequence.'
+        front: '<span class="text-4xl font-bold">翌月</span><br><span class="text-xl mt-2">よくげつ</span><br><span class="text-lg text-gray-600 mt-1">(yokugetsu)</span>',
+        back: '<span class="text-2xl">Next month</span><br><em class="text-gray-600 mt-2">Note</em>: The following month in a sequence.'
       }
     ];
 
-    let currentCardIndex = 0;
+    let currentCardIndex = parseInt(localStorage.getItem('currentCardIndex')) || 0;
 
     function createFlashcard(index) {
       const card = flashcards[index];
@@ -260,36 +299,31 @@
       div.className = 'flashcard';
       div.innerHTML = `
         <div class="flashcard-inner">
-          <div class="flashcard-front p-6 text-center" aria-label="Japanese term">${card.front}</div>
-          <div class="flashcard-back p-6 text-center" aria-label="English translation">${card.back}</div>
+          <div class="flashcard-front p-6 text-center" aria-label="Japanese term: ${card.front.replace(/<[^>]+>/g, '')}">${card.front}</div>
+          <div class="flashcard-back p-6 text-center" aria-label="English translation: ${card.back.replace(/<[^>]+>/g, '')}">${card.back}</div>
         </div>
       `;
       div.dataset.index = index;
+      div.tabIndex = 0;
       return div;
     }
 
-    function showCard(index) {
+    function showCard(index, direction = 'none') {
       const container = document.getElementById('flashcard-container');
-      container.style.opacity = '0';
-      setTimeout(() => {
-        container.innerHTML = '';
-        if (index >= 0 && index < flashcards.length) {
-          const card = createFlashcard(index);
-          container.appendChild(card);
-          if (index > 0) {
-            const prevCard = createFlashcard(index - 1);
-            prevCard.classList.add('hidden');
-            container.appendChild(prevCard);
-          }
-          if (index < flashcards.length - 1) {
-            const nextCard = createFlashcard(index + 1);
-            nextCard.classList.add('hidden');
-            container.appendChild(nextCard);
-          }
-          document.getElementById('progress').textContent = `Card ${index + 1} of ${flashcards.length}`;
-        }
-        container.style.opacity = '1';
-      }, 300);
+      container.innerHTML = `
+        <div class="swipe-hint left" aria-hidden="true">←</div>
+        <div class="swipe-hint right" aria-hidden="true">→</div>
+      `;
+      if (index >= 0 && index < flashcards.length) {
+        const card = createFlashcard(index);
+        card.className = `flashcard ${direction === 'left' ? 'slide-in-right' : direction === 'right' ? 'slide-in-left' : ''}`;
+        setTimeout(() => card.className = 'flashcard active', 10);
+        container.appendChild(card);
+        document.getElementById('progress-bar').style.width = `${((index + 1) / flashcards.length) * 100}%`;
+        localStorage.setItem('currentCardIndex', index);
+      }
+      container.classList.add('show-hint');
+      setTimeout(() => container.classList.remove('show-hint'), 3000);
     }
 
     function handleSwipe(element, callback) {
@@ -304,12 +338,13 @@
         if (isDragging) {
           const currentX = e.touches[0].clientX;
           const deltaX = currentX - startX;
-          element.style.transform = `translateX(${deltaX}px)`;
+          element.querySelector('.flashcard.active').style.transform = `translateX(${deltaX}px)`;
         }
       });
       element.addEventListener('touchend', e => {
         element.classList.remove('dragging');
-        element.style.transform = '';
+        const activeCard = element.querySelector('.flashcard.active');
+        if (activeCard) activeCard.style.transform = '';
         const endX = e.changedTouches[0].clientX;
         const endY = e.changedTouches[0].clientY;
         const deltaX = endX - startX;
@@ -327,12 +362,13 @@
         const onMouseMove = e => {
           if (isDragging) {
             const deltaX = e.clientX - startX;
-            element.style.transform = `translateX(${deltaX}px)`;
+            element.querySelector('.flashcard.active').style.transform = `translateX(${deltaX}px)`;
           }
         };
         const onMouseUp = e => {
           element.classList.remove('dragging');
-          element.style.transform = '';
+          const activeCard = element.querySelector('.flashcard.active');
+          if (activeCard) activeCard.style.transform = '';
           const deltaX = e.clientX - startX;
           const deltaY = e.clientY - startY;
           if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
@@ -357,12 +393,28 @@
       });
 
       handleSwipe(container, direction => {
+        const currentCard = container.querySelector('.flashcard.active');
+        if (currentCard) currentCard.classList.remove('flipped');
         if (direction === 'left' && currentCardIndex < flashcards.length - 1) {
           currentCardIndex++;
-          showCard(currentCardIndex);
+          showCard(currentCardIndex, 'left');
         } else if (direction === 'right' && currentCardIndex > 0) {
           currentCardIndex--;
-          showCard(currentCardIndex);
+          showCard(currentCardIndex, 'right');
+        }
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft' && currentCardIndex > 0) {
+          const currentCard = container.querySelector('.flashcard.active');
+          if (currentCard) currentCard.classList.remove('flipped');
+          currentCardIndex--;
+          showCard(currentCardIndex, 'right');
+        } else if (e.key === 'ArrowRight' && currentCardIndex < flashcards.length - 1) {
+          const currentCard = container.querySelector('.flashcard.active');
+          if (currentCard) currentCard.classList.remove('flipped');
+          currentCardIndex++;
+          showCard(currentCardIndex, 'left');
         }
       });
     });
