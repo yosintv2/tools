@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Vocabulary Flashcards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f3e7ff 0%, #d4e4ff 100%);
+      font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .flashcard-container {
+      position: relative;
+      width: 350px;
+      height: 450px;
+    }
+    .flashcard {
+      width: 100%;
+      height: 100%;
+      perspective: 1000px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .flashcard.slide-in-left { transform: translateX(-100%); opacity: 0; }
+    .flashcard.slide-in-right { transform: translateX(100%); opacity: 0; }
+    .flashcard.active { transform: translateX(0); opacity: 1; }
+    .flashcard-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform-style: preserve-3d;
+    }
+    .flashcard.flipped .flashcard-inner {
+      transform: rotateY(180deg) scale(0.95);
+    }
+    .flashcard-front, .flashcard-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
+      padding: 1.5rem;
+    }
+    .flashcard-back {
+      transform: rotateY(180deg);
+      background: linear-gradient(145deg, #e2e8f0, #ffffff);
+    }
+    .hidden {
+      display: none;
+    }
+    .dragging {
+      transition: none;
+    }
+    .progress {
+      font-size: 1rem;
+      color: #4a5568;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .swipe-hint {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: rgba(107, 114, 128, 0.5);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .swipe-hint.left { left: -50px; }
+    .swipe-hint.right { right: -50px; }
+    .show-hint .swipe-hint { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="flex flex-col items-center">
+    <div id="flashcard-container" class="flashcard-container" role="region" aria-label="Flashcard deck">
+      <!-- Flashcards will be dynamically inserted here -->
+      <div class="swipe-hint left" aria-hidden="true">←</div>
+      <div class="swipe-hint right" aria-hidden="true">→</div>
+    </div>
+    <div id="progress" class="progress" aria-live="polite"></div>
+  </div>
+  <script>
+    const flashcards = [
+      {
+        front: '<span class="text-4xl font-bold">保管</span><br><span class="text-xl mt-2">ほかん</span><br><span class="text-lg text-gray-600 mt-1">(hokan)</span>',
+        back: '<span class="text-2xl">Storage / Safekeeping</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to keeping items or data securely.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">接続</span><br><span class="text-xl mt-2">せつぞく</span><br><span class="text-lg text-gray-600 mt-1">(setsuzoku)</span>',
+        back: '<span class="text-2xl">Connection</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to linking devices or networks.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">残額</span><br><span class="text-xl mt-2">ざんがく</span><br><span class="text-lg text-gray-600 mt-1">(zangaku)</span>',
+        back: '<span class="text-2xl">Remaining balance</span><br><em class="text-gray-600 mt-2">Note</em>: The amount left in an account or payment.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">電源</span><br><span class="text-xl mt-2">でんげん</span><br><span class="text-lg text-gray-600 mt-1">(dengen)</span>',
+        back: '<span class="text-2xl">Power supply / Power</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to the source of electrical power.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">内訳</span><br><span class="text-xl mt-2">うちわけ</span><br><span class="text-lg text-gray-600 mt-1">(uchiwake)</span>',
+        back: '<span class="text-2xl">Breakdown (of cost, etc.)</span><br><em class="text-gray-600 mt-2">Note</em>: Detailed itemization of expenses.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">口座振替</span><br><span class="text-xl mt-2">こうざふりかえ</span><br><span class="text-lg text-gray-600 mt-1">(kouzafurikae)</span>',
+        back: '<span class="text-2xl">Bank transfer / Direct debit</span><br><em class="text-gray-600 mt-2">Note</em>: Automatic payment from a bank account.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">位置情報</span><br><span class="text-xl mt-2">いちじょうほう</span><br><span class="text-lg text-gray-600 mt-1">(ichijouhou)</span>',
+        back: '<span class="text-2xl">Location information</span><br><em class="text-gray-600 mt-2">Note</em>: Data about a device’s geographic location.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">初回</span><br><span class="text-xl mt-2">しょかい</span><br><span class="text-lg text-gray-600 mt-1">(shokai)</span>',
+        back: '<span class="text-2xl">First time / First instance</span><br><em class="text-gray-600 mt-2">Note</em>: The initial occurrence of an event or payment.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">限度額</span><br><span class="text-xl mt-2">げんどがく</span><br><span class="text-lg text-gray-600 mt-1">(gendogaku)</span>',
+        back: '<span class="text-2xl">Credit limit / Limit amount</span><br><em class="text-gray-600 mt-2">Note</em>: Maximum allowable amount for credit or usage.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">回復</span><br><span class="text-xl mt-2">かいふく</span><br><span class="text-lg text-gray-600 mt-1">(kaifuku)</span>',
+        back: '<span class="text-2xl">Recovery</span><br><em class="text-gray-600 mt-2">Note</em>: Restoring to a previous state, e.g., data or service.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">店頭</span><br><span class="text-xl mt-2">てんとう</span><br><span class="text-lg text-gray-600 mt-1">(tentou)</span>',
+        back: '<span class="text-2xl">At store / In-store</span><br><em class="text-gray-600 mt-2">Note</em>: Transactions or services at a physical shop.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">個別</span><br><span class="text-xl mt-2">こべつ</span><br><span class="text-lg text-gray-600 mt-1">(kobetsu)</span>',
+        back: '<span class="text-2xl">Individual / Separate</span><br><em class="text-gray-600 mt-2">Note</em>: Pertaining to a single item or person.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">音声</span><br><span class="text-xl mt-2">おんせい</span><br><span class="text-lg text-gray-600 mt-1">(onsei)</span>',
+        back: '<span class="text-2xl">Voice / Audio</span><br><em class="text-gray-600 mt-2">Note</em>: Refers to sound or voice services in telecom.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">下取り</span><br><span class="text-xl mt-2">したどり</span><br><span class="text-lg text-gray-600 mt-1">(shitadori)</span>',
+        back: '<span class="text-2xl">Trade-in</span><br><em class="text-gray-600 mt-2">Note</em>: Exchanging an old device for credit toward a new one.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">書面</span><br><span class="text-xl mt-2">しょめん</span><br><span class="text-lg text-gray-600 mt-1">(shomen)</span>',
+        back: '<span class="text-2xl">Written document / Paper form</span><br><em class="text-gray-600 mt-2">Note</em>: Official paperwork or forms.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">緊急速報</span><br><span class="text-xl mt-2">きんきゅうそくほう</span><br><span class="text-lg text-gray-600 mt-1">(kinkyusokuhou)</span>',
+        back: '<span class="text-2xl">Emergency alert</span><br><em class="text-gray-600 mt-2">Note</em>: Urgent notifications, e.g., for disasters.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">応援</span><br><span class="text-xl mt-2">おうえん</span><br><span class="text-lg text-gray-600 mt-1">(ouen)</span>',
+        back: '<span class="text-2xl">Support / Cheer</span><br><em class="text-gray-600 mt-2">Note</em>: Assistance or encouragement, often in campaigns.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">持続</span><br><span class="text-xl mt-2">じぞく</span><br><span class="text-lg text-gray-600 mt-1">(jizoku)</span>',
+        back: '<span class="text-2xl">Continuation / Sustained</span><br><em class="text-gray-600 mt-2">Note</em>: Maintaining or continuing a service or state.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">災害</span><br><span class="text-xl mt-2">さいがい</span><br><span class="text-lg text-gray-600 mt-1">(saigai)</span>',
+        back: '<span class="text-2xl">Disaster</span><br><em class="text-gray-600 mt-2">Note</em>: Natural or man-made catastrophic events.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">税込み</span><br><span class="text-xl mt-2">ぜいこみ</span><br><span class="text-lg text-gray-600 mt-1">(zeikomi)</span>',
+        back: '<span class="text-2xl">Tax included</span><br><em class="text-gray-600 mt-2">Note</em>: Price including consumption tax.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">状態</span><br><span class="text-xl mt-2">じょうたい</span><br><span class="text-lg text-gray-600 mt-1">(joutai)</span>',
+        back: '<span class="text-2xl">Condition / Status</span><br><em class="text-gray-600 mt-2">Note</em>: The state of a device, account, or service.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">拒否</span><br><span class="text-xl mt-2">きょひ</span><br><span class="text-lg text-gray-600 mt-1">(kyohi)</span>',
+        back: '<span class="text-2xl">Refusal / Rejection</span><br><em class="text-gray-600 mt-2">Note</em>: Declining a service or request.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">実質</span><br><span class="text-xl mt-2">じっしつ</span><br><span class="text-lg text-gray-600 mt-1">(jisshitsu)</span>',
+        back: '<span class="text-2xl">Substantial / Effective</span><br><em class="text-gray-600 mt-2">Note</em>: Actual cost or value after discounts.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">回避</span><br><span class="text-xl mt-2">かいひ</span><br><span class="text-lg text-gray-600 mt-1">(kaihi)</span>',
+        back: '<span class="text-2xl">Avoidance</span><br><em class="text-gray-600 mt-2">Note</em>: Preventing or evading an issue or cost.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">確認</span><br><span class="text-xl mt-2">かくにん</span><br><span class="text-lg text-gray-600 mt-1">(kakunin)</span>',
+        back: '<span class="text-2xl">Confirmation / Check</span><br><em class="text-gray-600 mt-2">Note</em>: Verifying details or status.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">異なる</span><br><span class="text-xl mt-2">ことなる</span><br><span class="text-lg text-gray-600 mt-1">(kotonaru)</span>',
+        back: '<span class="text-2xl">Different</span><br><em class="text-gray-600 mt-2">Note</em>: Varying or distinct, e.g., in plans or devices.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">転送</span><br><span class="text-xl mt-2">てんそう</span><br><span class="text-lg text-gray-600 mt-1">(tensou)</span>',
+        back: '<span class="text-2xl">Forwarding / Transfer</span><br><em class="text-gray-600 mt-2">Note</em>: Redirecting calls or data.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">対応</span><br><span class="text-xl mt-2">たいおう</span><br><span class="text-lg text-gray-600 mt-1">(taiou)</span>',
+        back: '<span class="text-2xl">Support / Handling</span><br><em class="text-gray-600 mt-2">Note</em>: Addressing customer needs or issues.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">実際</span><br><span class="text-xl mt-2">じっさい</span><br><span class="text-lg text-gray-600 mt-1">(jissai)</span>',
+        back: '<span class="text-2xl">Actual / In reality</span><br><em class="text-gray-600 mt-2">Note</em>: The real or practical situation.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">保留</span><br><span class="text-xl mt-2">ほりゅう</span><br><span class="text-lg text-gray-600 mt-1">(horyuu)</span>',
+        back: '<span class="text-2xl">On hold / Pending</span><br><em class="text-gray-600 mt-2">Note</em>: Awaiting further action or decision.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">過失</span><br><span class="text-xl mt-2">かしつ</span><br><span class="text-lg text-gray-600 mt-1">(kashitsu)</span>',
+        back: '<span class="text-2xl">Negligence / Fault</span><br><em class="text-gray-600 mt-2">Note</em>: Failure to fulfill a responsibility.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">決済</span><br><span class="text-xl mt-2">けっさい</span><br><span class="text-lg text-gray-600 mt-1">(kessai)</span>',
+        back: '<span class="text-2xl">Payment / Settlement</span><br><em class="text-gray-600 mt-2">Note</em>: Completing a financial transaction.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">削除</span><br><span class="text-xl mt-2">さくじょ</span><br><span class="text-lg text-gray-600 mt-1">(sakujo)</span>',
+        back: '<span class="text-2xl">Deletion / Removal</span><br><em class="text-gray-600 mt-2">Note</em>: Erasing data or canceling a service.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">有害</span><br><span class="text-xl mt-2">ゆうがい</span><br><span class="text-lg text-gray-600 mt-1">(yuugai)</span>',
+        back: '<span class="text-2xl">Harmful</span><br><em class="text-gray-600 mt-2">Note</em>: Causing damage or negative effects.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">税抜き</span><br><span class="text-xl mt-2">ぜいぬき</span><br><span class="text-lg text-gray-600 mt-1">(zeinuki)</span>',
+        back: '<span class="text-2xl">Tax excluded</span><br><em class="text-gray-600 mt-2">Note</em>: Price before adding consumption tax.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">ご自身</span><br><span class="text-xl mt-2">ごじしん</span><br><span class="text-lg text-gray-600 mt-1">(gojishin)</span>',
+        back: '<span class="text-2xl">Yourself / On your own</span><br><em class="text-gray-600 mt-2">Note</em>: Referring to the individual user or customer.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">保証</span><br><span class="text-xl mt-2">ほしょう</span><br><span class="text-lg text-gray-600 mt-1">(hoshou)</span>',
+        back: '<span class="text-2xl">Warranty / Guarantee</span><br><em class="text-gray-600 mt-2">Note</em>: Assurance for device or service quality.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">高性能</span><br><span class="text-xl mt-2">こうせいのう</span><br><span class="text-lg text-gray-600 mt-1">(kouseinou)</span>',
+        back: '<span class="text-2xl">High performance</span><br><em class="text-gray-600 mt-2">Note</em>: Superior capability, e.g., of a device.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">違法</span><br><span class="text-xl mt-2">いほう</span><br><span class="text-lg text-gray-600 mt-1">(ihou)</span>',
+        back: '<span class="text-2xl">Illegal</span><br><em class="text-gray-600 mt-2">Note</em>: Against the law or regulations.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">取扱説明書</span><br><span class="text-xl mt-2">とりあつかいせつめいしょ</span><br><span class="text-lg text-gray-600 mt-1">(toriatsukaisetsumeisho)</span>',
+        back: '<span class="text-2xl">User manual / Instruction manual</span><br><em class="text-gray-600 mt-2">Note</em>: Guide for using a device or service.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">予約</span><br><span class="text-xl mt-2">よやく</span><br><span class="text-lg text-gray-600 mt-1">(yoyaku)</span>',
+        back: '<span class="text-2xl">Reservation / Booking</span><br><em class="text-gray-600 mt-2">Note</em>: Securing a service or appointment in advance.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">犯罪</span><br><span class="text-xl mt-2">はんざい</span><br><span class="text-lg text-gray-600 mt-1">(hanzai)</span>',
+        back: '<span class="text-2xl">Crime</span><br><em class="text-gray-600 mt-2">Note</em>: Illegal activities subject to legal action.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">充電</span><br><span class="text-xl mt-2">じゅうでん</span><br><span class="text-lg text-gray-600 mt-1">(juuden)</span>',
+        back: '<span class="text-2xl">Charging</span><br><em class="text-gray-600 mt-2">Note</em>: Replenishing a device’s battery.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">不良</span><br><span class="text-xl mt-2">ふりょう</span><br><span class="text-lg text-gray-600 mt-1">(furyou)</span>',
+        back: '<span class="text-2xl">Defect / Malfunction</span><br><em class="text-gray-600 mt-2">Note</em>: A fault or issue in a device or service.'
+      },
+      {
+        front: '<span class="text-4xl font-bold">履歴</span><br><span class="text-xl mt-2">りれき</span><br><span class="text-lg text-gray-600 mt-1">(rireki)</span>',
+        back: '<span class="text-2xl">History / Record</span><br><em class="text-gray-600 mt-2">Note</em>: Log of past actions or transactions.'
+      }
+    ];
+
+    let currentCardIndex = parseInt(localStorage.getItem('currentCardIndex')) || 0;
+
+    function createFlashcard(index) {
+      const card = flashcards[index];
+      const div = document.createElement('div');
+      div.className = 'flashcard';
+      div.innerHTML = `
+        <div class="flashcard-inner">
+          <div class="flashcard-front p-6 text-center" aria-label="Japanese term: ${card.front.replace(/<[^>]+>/g, '')}">${card.front}</div>
+          <div class="flashcard-back p-6 text-center" aria-label="English translation: ${card.back.replace(/<[^>]+>/g, '')}">${card.back}</div>
+        </div>
+      `;
+      div.dataset.index = index;
+      div.tabIndex = 0;
+      return div;
+    }
+
+    function showCard(index, direction = 'none') {
+      const container = document.getElementById('flashcard-container');
+      container.innerHTML = `
+        <div class="swipe-hint left" aria-hidden="true">←</div>
+        <div class="swipe-hint right" aria-hidden="true">→</div>
+      `;
+      if (index >= 0 && index < flashcards.length) {
+        const card = createFlashcard(index);
+        card.className = `flashcard ${direction === 'left' ? 'slide-in-right' : direction === 'right' ? 'slide-in-left' : ''}`;
+        setTimeout(() => card.className = 'flashcard active', 10);
+        container.appendChild(card);
+        document.getElementById('progress').textContent = `Card ${index + 1} of ${flashcards.length}`;
+        localStorage.setItem('currentCardIndex', index);
+      }
+      container.classList.add('show-hint');
+      setTimeout(() => container.classList.remove('show-hint'), 3000);
+    }
+
+    function handleSwipe(element, callback) {
+      let startX, startY, isDragging = false;
+      element.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        isDragging = true;
+        element.classList.add('dragging');
+      });
+      element.addEventListener('touchmove', e => {
+        if (isDragging) {
+          const currentX = e.touches[0].clientX;
+          const deltaX = currentX - startX;
+          element.querySelector('.flashcard.active').style.transform = `translateX(${deltaX}px)`;
+        }
+      });
+      element.addEventListener('touchend', e => {
+        element.classList.remove('dragging');
+        const activeCard = element.querySelector('.flashcard.active');
+        if (activeCard) activeCard.style.transform = '';
+        const endX = e.changedTouches[0].clientX;
+        const endY = e.changedTouches[0].clientY;
+        const deltaX = endX - startX;
+        const deltaY = endY - startY;
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+          callback(deltaX > 0 ? 'right' : 'left');
+        }
+        isDragging = false;
+      });
+      element.addEventListener('mousedown', e => {
+        startX = e.clientX;
+        startY = e.clientY;
+        isDragging = true;
+        element.classList.add('dragging');
+        const onMouseMove = e => {
+          if (isDragging) {
+            const deltaX = e.clientX - startX;
+            element.querySelector('.flashcard.active').style.transform = `translateX(${deltaX}px)`;
+          }
+        };
+        const onMouseUp = e => {
+          element.classList.remove('dragging');
+          const activeCard = element.querySelector('.flashcard.active');
+          if (activeCard) activeCard.style.transform = '';
+          const deltaX = e.clientX - startX;
+          const deltaY = e.clientY - startY;
+          if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+            callback(deltaX > 0 ? 'right' : 'left');
+          }
+          isDragging = false;
+          document.removeEventListener('mousemove', onMouseMove);
+          document.removeEventListener('mouseup', onMouseUp);
+        };
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showCard(currentCardIndex);
+
+      const container = document.getElementById('flashcard-container');
+      container.addEventListener('click', e => {
+        const card = e.target.closest('.flashcard');
+        if (card) card.classList.toggle('flipped');
+      });
+
+      handleSwipe(container, direction => {
+        const currentCard = container.querySelector('.flashcard.active');
+        if (currentCard) currentCard.classList.remove('flipped');
+        if (direction === 'left' && currentCardIndex < flashcards.length - 1) {
+          currentCardIndex++;
+          showCard(currentCardIndex, 'left');
+        } else if (direction === 'right' && currentCardIndex > 0) {
+          currentCardIndex--;
+          showCard(currentCardIndex, 'right');
+        }
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft' && currentCardIndex > 0) {
+          const currentCard = container.querySelector('.flashcard.active');
+          if (currentCard) currentCard.classList.remove('flipped');
+          currentCardIndex--;
+          showCard(currentCardIndex, 'right');
+        } else if (e.key === 'ArrowRight' && currentCardIndex < flashcards.length - 1) {
+          const currentCard = container.querySelector('.flashcard.active');
+          if (currentCard) currentCard.classList.remove('flipped');
+          currentCardIndex++;
+          showCard(currentCardIndex, 'left');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
