@@ -1,347 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Japanese Verb Conjugation Flashcards</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f0f4f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
-            touch-action: none; /* Prevent default touch behaviors like zooming */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Japanese Verb Conjugation Flashcards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #4b5563, #1e40af);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      user-select: none;
+    }
 
-        .container {
-            width: 100%;
-            max-width: 400px;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
+    .container {
+      width: 100%;
+      max-width: 400px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 20px 0;
+    }
 
-        .flashcard {
-            width: 300px;
-            height: 400px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            perspective: 1000px;
-            cursor: pointer;
-            user-select: none;
-            z-index: 10;
-        }
+    .status {
+      margin-bottom: 12px;
+      font-size: 18px;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      font-weight: 600;
+      user-select: none;
+    }
 
-        .flashcard-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
+    .flashcard {
+      width: 330px;
+      max-width: 90vw;
+      height: 440px;
+      background: linear-gradient(135deg, #ffffff, #e2e8f0);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      user-select: none;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      box-sizing: border-box;
+      color: #1e293b;
+      font-weight: 700;
+      font-size: 28px;
+      text-align: center;
+      line-height: 1.4;
+    }
 
-        .flashcard.flipped .flashcard-inner {
-            transform: rotateY(180deg);
-        }
+    .meaning {
+      margin-top: 25px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #1f2937;
+      line-height: 1.6;
+    }
 
-        .flashcard-front, .flashcard-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 15px;
-        }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 330px;
+      margin-top: 20px;
+    }
 
-        .flashcard-front {
-            background: #ffffff;
-        }
+    button {
+      flex: 1;
+      padding: 12px 0;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      background: #2563eb;
+      color: white;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.5);
+    }
 
-        .flashcard-back {
-            background: #e6f3ff;
-            transform: rotateY(180deg);
-        }
+    button:disabled {
+      background: #94a3b8;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
 
-        .flashcard h2 {
-            margin: 0;
-            font-size: 24px;
-            color: #333;
-        }
+    button:hover:not(:disabled) {
+      background: #1d4ed8;
+    }
 
-        .flashcard p {
-            margin: 10px 0 0;
-            font-size: 18px;
-            color: #555;
-        }
-
-        .flashcard.swipe-left {
-            transform: translateX(-150%) rotate(-15deg);
-            transition: transform 0.5s ease-out;
-            opacity: 0;
-        }
-
-        .flashcard.swipe-right {
-            transform: translateX(150%) rotate(15deg);
-            transition: transform 0.5s ease-out;
-            opacity: 0;
-        }
-
-        .flashcard.inactive {
-            display: none;
-        }
-
-        .flashcard.dragging {
-            transition: none;
-        }
-
-        .status {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 16px;
-            color: #333;
-            z-index: 5;
-        }
-
-        @media (max-width: 480px) {
-            .flashcard {
-                width: 90%;
-                height: 60vh;
-            }
-
-            .flashcard h2 {
-                font-size: 20px;
-            }
-
-            .flashcard p {
-                font-size: 16px;
-            }
-        }
-    </style>
+    @media (max-width: 480px) {
+      .flashcard {
+        width: 92vw;
+        height: 70vh;
+        font-size: 20px;
+        padding: 20px;
+      }
+      .meaning {
+        font-size: 18px;
+      }
+      .buttons {
+        max-width: 92vw;
+      }
+      button {
+        font-size: 14px;
+      }
+      .status {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="status">Card 1 of 45</div>
-        <div class="flashcard" id="card-0">
-            <div class="flashcard-inner">
-                <div class="flashcard-front">
-                    <h2>Basic Forms: ～る</h2>
-                </div>
-                <div class="flashcard-back">
-                    <p>सुत्नु (to sleep)</p>
-                </div>
-            </div>
-        </div>
+  <div class="container" role="main" aria-label="Japanese Verb Conjugation Flashcards">
+    <div class="status" aria-live="polite" aria-atomic="true">Card 1 of 45</div>
+    <div class="flashcard" id="flashcard" tabindex="0" aria-label="Flashcard showing Japanese verb conjugation">
+      <div class="category-ending"></div>
+      <div class="meaning"></div>
     </div>
 
-    <script>
-        const flashcardsData = [
-            { category: "Basic Forms", ending: "～る", meaning: "सुत्नु (to sleep)" },
-            { category: "Basic Forms", ending: "～ます", meaning: "सुत्छु (I sleep)" },
-            { category: "Basic Forms", ending: "～ない", meaning: "सुत्दिन (I don’t sleep)" },
-            { category: "Basic Forms", ending: "～ません", meaning: "सुत्दिन (I don’t sleep - polite)" },
-            { category: "Basic Forms", ending: "～た", meaning: "सुतें (I slept)" },
-            { category: "Basic Forms", ending: "～ました", meaning: "सुतें (I slept - polite)" },
-            { category: "Basic Forms", ending: "～なかった", meaning: "सुतिन (I didn’t sleep)" },
-            { category: "Basic Forms", ending: "～ませんでした", meaning: "सुतिन (I didn’t sleep - polite)" },
-            { category: "Te-form & Progressive", ending: "～て", meaning: "सुतेर (sleeping / and…)" },
-            { category: "Te-form & Progressive", ending: "～ている", meaning: "सुतिरहेको छु (I am sleeping)" },
-            { category: "Te-form & Progressive", ending: "～ていた", meaning: "सुतिरहेको थिएँ (I was sleeping)" },
-            { category: "Te-form & Progressive", ending: "～ていない", meaning: "सुतिरहेको छैन (I am not sleeping)" },
-            { category: "Te-form & Progressive", ending: "～ていなかった", meaning: "सुतिरहेको थिइन (I was not sleeping)" },
-            { category: "Volitional / Desire / Command", ending: "～よう", meaning: "सुतौँ (Let’s sleep)" },
-            { category: "Volitional / Desire / Command", ending: "～ましょう", meaning: "सुतौँ (Let’s sleep - polite)" },
-            { category: "Volitional / Desire / Command", ending: "～たい", meaning: "सुत्न चाहन्छु (I want to sleep)" },
-            { category: "Volitional / Desire / Command", ending: "～たくない", meaning: "सुत्न मन छैन (I don’t want to sleep)" },
-            { category: "Volitional / Desire / Command", ending: "～ろ（～よ）", meaning: "सुत! (Sleep! command)" },
-            { category: "Volitional / Desire / Command", ending: "～なさい", meaning: "सुत्नुस् (Please sleep)" },
-            { category: "Volitional / Desire / Command", ending: "～るな", meaning: "न सुत! (Don’t sleep!)" },
-            { category: "Conditional / Hypothetical / Purpose", ending: "～れば", meaning: "सुते भने (If I sleep)" },
-            { category: "Conditional / Hypothetical / Purpose", ending: "～たら", meaning: "सुतें भने (When I slept)" },
-            { category: "Conditional / Hypothetical / Purpose", ending: "～と", meaning: "सुत्दा (When/if I sleep)" },
-            { category: "Conditional / Hypothetical / Purpose", ending: "～前に", meaning: "सुत्नु अघि (Before sleeping)" },
-            { category: "Conditional / Hypothetical / Purpose", ending: "～たあとで", meaning: "सुतिसकेपछि (After sleeping)" },
-            { category: "Conditional / Hypothetical / Purpose", ending: "～ために", meaning: "सुत्नका लागि (In order to sleep)" },
-            { category: "Obligation / Permission / Possibility", ending: "～なければならない", meaning: "सुत्नै पर्छ (Must sleep)" },
-            { category: "Obligation / Permission / Possibility", ending: "～なければいけない", meaning: "सुत्नै पर्छ (Must sleep)" },
-            { category: "Obligation / Permission / Possibility", ending: "～なきゃ", meaning: "सुत्नै पर्छ (Must sleep - casual)" },
-            { category: "Obligation / Permission / Possibility", ending: "～なくてはいけない", meaning: "सुत्नै पर्छ (Must sleep)" },
-            { category: "Obligation / Permission / Possibility", ending: "～なくてもいい", meaning: "सुत्न नपर्ने (Don’t have to sleep)" },
-            { category: "Potential / Passive / Causative", ending: "～られる（可能）", meaning: "सुत्न सक्छु (Can sleep)" },
-            { category: "Potential / Passive / Causative", ending: "～られる（受け身）", meaning: "सुतियो (Was slept)" },
-            { category: "Potential / Passive / Causative", ending: "～させる（使役）", meaning: "सुत्न लगाइयो (Made to sleep)" },
-            { category: "Potential / Passive / Causative", ending: "～させられる（使役受け身）", meaning: "सुत्न बाध्य भयो (Was made to sleep)" },
-            { category: "Experience / Just Before / Just After", ending: "～たことがある", meaning: "कहिल्यै सुतिसकेको (Have slept before)" },
-            { category: "Experience / Just Before / Just After", ending: "～たばかり", meaning: "भर्खर सुतें (Just slept)" },
-            { category: "Experience / Just Before / Just After", ending: "～るところ", meaning: "सुत्न लाग्दै छु (About to sleep)" },
-            { category: "Experience / Just Before / Just After", ending: "～ているところ", meaning: "सुतिरहेको छु (In the middle of sleeping)" },
-            { category: "Experience / Just Before / Just After", ending: "～たところ", meaning: "भर्खर सुतिसकेको छु (Just finished sleeping)" },
-            { category: "Polite / Honorific / Humble", ending: "お～になる（尊敬語）", meaning: "(उनी/उहाँ) सुत्नुभयो (Honorific)" },
-            { category: "Polite / Honorific / Humble", ending: "ご～なさる（尊敬語）", meaning: "(उनी/उहाँ) सुत्नुभयो (Respectful)" },
-            { category: "Polite / Honorific / Humble", ending: "お～します", meaning: "म सुत्छु (Humble polite)" },
-            { category: "Polite / Honorific / Humble", ending: "～させていただく", meaning: "म सुत्न अनुमति माग्दैछु (Humbly allowed to sleep)" }
-        ];
+    <div class="buttons">
+      <button id="prevBtn" aria-label="Previous card">Previous</button>
+      <button id="nextBtn" aria-label="Next card">Next</button>
+    </div>
+  </div>
 
-        let currentCardIndex = 0;
-        let isDragging = false;
-        let startX = 0;
-        let currentX = 0;
-        let animating = false;
+  <script>
+    const flashcardsData = [
+      { category: "Basic Forms", ending: "～る", meaning: "सुत्नु (to sleep)" },
+      { category: "Basic Forms", ending: "～ます", meaning: "सुत्छु (I sleep)" },
+      { category: "Basic Forms", ending: "～ない", meaning: "सुत्दिन (I don’t sleep)" },
+      { category: "Basic Forms", ending: "～ません", meaning: "सुत्दिन (I don’t sleep - polite)" },
+      { category: "Basic Forms", ending: "～た", meaning: "सुतें (I slept)" },
+      { category: "Basic Forms", ending: "～ました", meaning: "सुतें (I slept - polite)" },
+      { category: "Basic Forms", ending: "～なかった", meaning: "सुतिन (I didn’t sleep)" },
+      { category: "Basic Forms", ending: "～ませんでした", meaning: "सुतिन (I didn’t sleep - polite)" },
+      { category: "Te-form & Progressive", ending: "～て", meaning: "सुतेर (sleeping / and…)" },
+      { category: "Te-form & Progressive", ending: "～ている", meaning: "सुतिरहेको छु (I am sleeping)" },
+      { category: "Te-form & Progressive", ending: "～ていた", meaning: "सुतिरहेको थिएँ (I was sleeping)" },
+      { category: "Te-form & Progressive", ending: "～ていない", meaning: "सुतिरहेको छैन (I am not sleeping)" },
+      { category: "Te-form & Progressive", ending: "～ていなかった", meaning: "सुतिरहेको थिइन (I was not sleeping)" },
+      { category: "Volitional / Desire / Command", ending: "～よう", meaning: "सुतौँ (Let’s sleep)" },
+      { category: "Volitional / Desire / Command", ending: "～ましょう", meaning: "सुतौँ (Let’s sleep - polite)" },
+      { category: "Volitional / Desire / Command", ending: "～たい", meaning: "सुत्न चाहन्छु (I want to sleep)" },
+      { category: "Volitional / Desire / Command", ending: "～たくない", meaning: "सुत्न मन छैन (I don’t want to sleep)" },
+      { category: "Volitional / Desire / Command", ending: "～ろ（～よ）", meaning: "सुत! (Sleep! command)" },
+      { category: "Volitional / Desire / Command", ending: "～なさい", meaning: "सुत्नुस् (Please sleep)" },
+      { category: "Volitional / Desire / Command", ending: "～るな", meaning: "न सुत! (Don’t sleep!)" },
+      { category: "Conditional / Hypothetical / Purpose", ending: "～れば", meaning: "सुते भने (If I sleep)" },
+      { category: "Conditional / Hypothetical / Purpose", ending: "～たら", meaning: "सुतें भने (When I slept)" },
+      { category: "Conditional / Hypothetical / Purpose", ending: "～と", meaning: "सुत्दा (When/if I sleep)" },
+      { category: "Conditional / Hypothetical / Purpose", ending: "～前に", meaning: "सुत्नु अघि (Before sleeping)" },
+      { category: "Conditional / Hypothetical / Purpose", ending: "～たあとで", meaning: "सुतिसकेपछि (After sleeping)" },
+      { category: "Conditional / Hypothetical / Purpose", ending: "～ために", meaning: "सुत्नका लागि (In order to sleep)" },
+      { category: "Obligation / Permission / Possibility", ending: "～なければならない", meaning: "सुत्नै पर्छ (Must sleep)" },
+      { category: "Obligation / Permission / Possibility", ending: "～なければいけない", meaning: "सुत्नै पर्छ (Must sleep)" },
+      { category: "Obligation / Permission / Possibility", ending: "～なきゃ", meaning: "सुत्नै पर्छ (Must sleep - casual)" },
+      { category: "Obligation / Permission / Possibility", ending: "～なくてはいけない", meaning: "सुत्नै पर्छ (Must sleep)" },
+      { category: "Obligation / Permission / Possibility", ending: "～なくてもいい", meaning: "सुत्न नपर्ने (Don’t have to sleep)" },
+      { category: "Potential / Passive / Causative", ending: "～られる（可能）", meaning: "सुत्न सक्छु (Can sleep)" },
+      { category: "Potential / Passive / Causative", ending: "～られる（受け身）", meaning: "सुतियो (Was slept)" },
+      { category: "Potential / Passive / Causative", ending: "～させる（使役）", meaning: "सुत्न लगाइयो (Made to sleep)" },
+      { category: "Potential / Passive / Causative", ending: "～させられる（使役受け身）", meaning: "सुत्न बाध्य भयो (Was made to sleep)" },
+      { category: "Experience / Just Before / Just After", ending: "～たことがある", meaning: "कहिल्यै सुतिसकेको (Have slept before)" },
+      { category: "Experience / Just Before / Just After", ending: "～たばかり", meaning: "भर्खर सुतें (Just slept)" },
+      { category: "Experience / Just Before / Just After", ending: "～るところ", meaning: "सुत्न लाग्दै छु (About to sleep)" },
+      { category: "Experience / Just Before / Just After", ending: "～ているところ", meaning: "सुतिरहेको छु (In the middle of sleeping)" },
+      { category: "Experience / Just Before / Just After", ending: "～たところ", meaning: "भर्खर सुतिसकेको छु (Just finished sleeping)" },
+      { category: "Polite / Honorific / Humble", ending: "お～になる（尊敬語）", meaning: "(उनी/उहाँ) सुत्नुभयो (Honorific)" },
+      { category: "Polite / Honorific / Humble", ending: "ご～なさる（尊敬語）", meaning: "(उनी/उहाँ) सुत्नुभयो (Respectful)" },
+      { category: "Polite / Honorific / Humble", ending: "お～します", meaning: "म सुत्छु (Humble polite)" },
+      { category: "Polite / Honorific / Humble", ending: "～させていただく", meaning: "म सुत्न अनुमति माग्दैछु (Humbly allowed to sleep)" }
+    ];
 
-        // Dynamically create flashcards
-        const container = document.querySelector('.container');
-        flashcardsData.forEach((card, index) => {
-            const flashcard = document.createElement('div');
-            flashcard.classList.add('flashcard');
-            flashcard.id = `card-${index}`;
-            if (index !== 0) flashcard.classList.add('inactive');
-            flashcard.innerHTML = `
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <h2>${card.category}: ${card.ending}</h2>
-                    </div>
-                    <div class="flashcard-back">
-                        <p>${card.meaning}</p>
-                    </div>
-                </div>
-            `;
-            container.appendChild(flashcard);
-        });
+    const flashcard = document.getElementById('flashcard');
+    const categoryEndingDiv = flashcard.querySelector('.category-ending');
+    const meaningDiv = flashcard.querySelector('.meaning');
+    const status = document.querySelector('.status');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-        function updateStatus() {
-            document.querySelector('.status').textContent = `Card ${currentCardIndex + 1} of ${flashcardsData.length}`;
-        }
+    let currentIndex = 0;
 
-        function flipCard() {
-            if (animating || isDragging) return;
-            const currentCard = document.getElementById(`card-${currentCardIndex}`);
-            currentCard.classList.toggle('flipped');
-        }
+    function loadCard(index) {
+      const card = flashcardsData[index];
+      categoryEndingDiv.textContent = `${card.category}: ${card.ending}`;
+      meaningDiv.textContent = card.meaning;
+      status.textContent = `Card ${index + 1} of ${flashcardsData.length}`;
+      updateButtons();
+    }
 
-        function nextCard() {
-            if (animating || currentCardIndex >= flashcardsData.length - 1) return;
-            animating = true;
-            const currentCard = document.getElementById(`card-${currentCardIndex}`);
-            currentCard.classList.add('swipe-right');
-            setTimeout(() => {
-                currentCard.classList.add('inactive');
-                currentCard.classList.remove('swipe-right');
-                currentCard.classList.remove('flipped');
-                currentCard.style.transform = 'translate(-50%, -50%)';
-                currentCard.style.opacity = '1';
-                currentCardIndex++;
-                document.getElementById(`card-${currentCardIndex}`).classList.remove('inactive');
-                updateStatus();
-                animating = false;
-            }, 500);
-        }
+    function updateButtons() {
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === flashcardsData.length - 1;
+    }
 
-        function prevCard() {
-            if (animating || currentCardIndex <= 0) return;
-            animating = true;
-            const currentCard = document.getElementById(`card-${currentCardIndex}`);
-            currentCard.classList.add('swipe-left');
-            setTimeout(() => {
-                currentCard.classList.add('inactive');
-                currentCard.classList.remove('swipe-left');
-                currentCard.classList.remove('flipped');
-                currentCard.style.transform = 'translate(-50%, -50%)';
-                currentCard.style.opacity = '1';
-                currentCardIndex--;
-                document.getElementById(`card-${currentCardIndex}`).classList.remove('inactive');
-                updateStatus();
-                animating = false;
-            }, 500);
-        }
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        loadCard(currentIndex);
+      }
+    });
 
-        // Swipe detection
-        function handleTouchStart(e) {
-            if (animating) return;
-            isDragging = true;
-            startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
-            currentX = startX;
-            const currentCard = document.getElementById(`card-${currentCardIndex}`);
-            currentCard.classList.add('dragging');
-            currentCard.addEventListener('touchmove', handleTouchMove, { passive: false });
-            currentCard.addEventListener('touchend', handleTouchEnd);
-            currentCard.addEventListener('mousemove', handleTouchMove);
-            currentCard.addEventListener('mouseup', handleTouchEnd);
-        }
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < flashcardsData.length - 1) {
+        currentIndex++;
+        loadCard(currentIndex);
+      }
+    });
 
-        function handleTouchMove(e) {
-            if (!isDragging) return;
-            e.preventDefault();
-            const currentCard = document.getElementById(`card-${currentCardIndex}`);
-            currentX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
-            const deltaX = currentX - startX;
-            const rotation = deltaX / 10;
-            currentCard.style.transform = `translate(${deltaX}px, -50%) rotate(${rotation}deg)`;
-            currentCard.style.opacity = 1 - Math.abs(deltaX) / 300;
-        }
+    // Keyboard support for buttons
+    prevBtn.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        prevBtn.click();
+      }
+    });
 
-        function handleTouchEnd() {
-            if (!isDragging) return;
-            isDragging = false;
-            const currentCard = document.getElementById(`card-${currentCardIndex}`);
-            currentCard.classList.remove('dragging');
-            currentCard.removeEventListener('touchmove', handleTouchMove);
-            currentCard.removeEventListener('touchend', handleTouchEnd);
-            currentCard.removeEventListener('mousemove', handleTouchMove);
-            currentCard.removeEventListener('mouseup', handleTouchEnd);
-            const deltaX = currentX - startX;
-            const threshold = 100;
+    nextBtn.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        nextBtn.click();
+      }
+    });
 
-            if (Math.abs(deltaX) < threshold) {
-                currentCard.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-out';
-                currentCard.style.transform = 'translate(-50%, -50%)';
-                currentCard.style.opacity = '1';
-                setTimeout(() => {
-                    currentCard.style.transition = '';
-                }, 300);
-                return;
-            }
-
-            if (deltaX > threshold) {
-                nextCard();
-            } else if (deltaX < -threshold) {
-                prevCard();
-            }
-        }
-
-        // Click/tap to flip
-        document.querySelectorAll('.flashcard').forEach(card => {
-            card.addEventListener('click', (e) => {
-                if (!isDragging) flipCard();
-            });
-            card.addEventListener('touchstart', handleTouchStart, { passive: false });
-            card.addEventListener('mousedown', handleTouchStart);
-        });
-
-        // Prevent default touchmove behavior for the document
-        document.addEventListener('touchmove', (e) => {
-            if (isDragging) e.preventDefault();
-        }, { passive: false });
-
-        updateStatus();
-    </script>
+    // Initialize first card
+    loadCard(currentIndex);
+  </script>
 </body>
 </html>
