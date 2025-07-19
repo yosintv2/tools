@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -10,17 +10,141 @@
       background: #f3f4f6;
       padding: 2rem;
       text-align: center;
-      /* Prevent zoom on double tap for iOS Safari */
+      margin: 0;
+      overflow-x: hidden;
       touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
     }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #2563eb;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1rem 0;
+      z-index: 1002;
+      user-select: none;
+    }
+
+    /* Hamburger button */
+    #menuToggle {
+      position: fixed;
+      top: 1.25rem;
+      right: 1rem;
+      z-index: 1003;
+      width: 35px;
+      height: 28px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #menuToggle div {
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      transition: 0.4s;
+    }
+
+    /* Overlay behind menu: transparent, no background, no pointer events */
+    #menuOverlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: transparent; /* fully transparent */
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none; /* clicks pass through */
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+    }
+    #menuOverlay.open {
+      opacity: 0;
+      visibility: visible;
+      pointer-events: none;
+    }
+
+#sidePanel {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 280px;
+  height: 100vh;
+  background: #2563eb;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.25);
+  padding: 1.5rem 1rem 1rem 1rem;
+  transition: right 0.3s ease, visibility 0s linear 0.3s;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  visibility: hidden; /* hide initially */
+}
+
+#sidePanel.open {
+  right: 0;
+  visibility: visible;
+  transition-delay: 0s; /* show immediately */
+}
+
+
+    /* Close button */
+    #sidePanel button.close-btn {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      align-self: flex-end;
+      cursor: pointer;
+      user-select: none;
+      margin-bottom: 1rem;
+      padding: 0;
+      line-height: 1;
+    }
+    #sidePanel button.close-btn:hover {
+      color: #bbb;
+    }
+
+    /* Nav items */
+    #sidePanel a.level-link,
+    #sidePanel button.level-btn {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.75rem 0.5rem;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 0.3rem;
+      transition: background-color 0.25s;
+      user-select: none;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+    #sidePanel a.level-link:hover,
+    #sidePanel button.level-btn:hover {
+      background-color: #1e40af;
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Card styles */
     .card {
       background: white;
       border-radius: 1rem;
       padding: 2rem;
       max-width: 350px;
-      margin: auto;
+      margin: 7rem auto 2rem;
       box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-      height: 460px; /* a bit taller to fit progress */
+      height: 460px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -54,6 +178,10 @@
       background: #2563eb;
       color: white;
       user-select: none;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background: #1e40af;
     }
     .related {
       margin-top: 2rem;
@@ -77,6 +205,31 @@
 </head>
 <body>
 
+  <header>Kanji Flashcard</header>
+
+  <!-- Hamburger menu -->
+  <div id="menuToggle" aria-label="Open navigation menu" role="button" tabindex="0">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="menuOverlay" tabindex="-1"></div>
+
+  <!-- Side nav panel -->
+  <nav id="sidePanel" aria-hidden="true" role="navigation" aria-label="Kanji level navigation">
+    <button class="close-btn" aria-label="Close navigation menu">&times;</button>
+
+    <a href="/n5" target="_blank" rel="noopener" class="level-link" title="N5 Kanji"> JLPT N5</a>
+    <a href="/n4" target="_blank" rel="noopener" class="level-link" title="N4 Kanji"> JLPT N4</a>
+
+    <a href="/n3" target="_blank" rel="noopener" class="level-link" title="N3 Kanji"> JLPT N3</a>
+    <a href="/n2" target="_blank" rel="noopener" class="level-link" title="N2 Kanji"> JLPT N2</a>
+    <a href="/n1" target="_blank" rel="noopener" class="level-link" title="N1 Kanji"> JLPT N1</a>
+  </nav>
+
+  <!-- Flashcard -->
   <div class="card" id="card">
     <div class="kanji" id="kanji">食</div>
     <div class="reading" id="reading">たべる / ショク</div>
@@ -94,7 +247,7 @@
 
   <script>
     const flashcards = [
-  {
+        {
     kanji: "会",
     reading: "あう / カイ",
     meaning: "to meet",
@@ -1099,14 +1252,12 @@
   }
     ];
 
-    // Load currentIndex from localStorage or start at 0
+    // Load saved index
     let currentIndex = 0;
     const savedIndex = localStorage.getItem('kanjiFlashcardIndex');
     if (savedIndex !== null && !isNaN(savedIndex)) {
       const idx = parseInt(savedIndex, 10);
-      if (idx >= 0 && idx < flashcards.length) {
-        currentIndex = idx;
-      }
+      if (idx >= 0 && idx < flashcards.length) currentIndex = idx;
     }
 
     function updateCard() {
@@ -1123,10 +1274,7 @@
         relatedList.appendChild(li);
       });
 
-      // Update progress indicator
       document.getElementById('progress').textContent = `Kanji ${currentIndex + 1} of ${flashcards.length}`;
-
-      // Save current index to localStorage
       localStorage.setItem('kanjiFlashcardIndex', currentIndex);
     }
 
@@ -1140,9 +1288,48 @@
       updateCard();
     }
 
-    updateCard(); // initialize
+    function goToLevel(level) {
+      const idx = flashcards.findIndex(card => card.level === level);
+      if (idx !== -1) {
+        currentIndex = idx;
+        updateCard();
+        toggleMenu();
+      } else {
+        alert(`No kanji found for ${level}`);
+      }
+    }
 
-    // Optional: Disable double tap zoom on iOS Safari by preventing double taps in JS
+    // Menu toggle logic
+    const menuToggle = document.getElementById('menuToggle');
+    const sidePanel = document.getElementById('sidePanel');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const closeBtn = sidePanel.querySelector('button.close-btn');
+
+    function toggleMenu() {
+      const open = sidePanel.classList.toggle('open');
+      // We don't show overlay, so keep it hidden & pointer-events none always
+      menuOverlay.classList.remove('open');
+      sidePanel.setAttribute('aria-hidden', !open);
+      if (open) {
+        sidePanel.focus();
+      }
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+    menuToggle.addEventListener('keydown', e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggleMenu();
+      }
+    });
+
+    closeBtn.addEventListener('click', toggleMenu);
+
+    // No closing menu on clicking overlay, because overlay is transparent and pointer-events:none
+
+    updateCard();
+
+    // Disable double tap zoom on iOS Safari
     let lastTouch = 0;
     document.addEventListener('touchend', function(event) {
       const now = Date.now();
@@ -1151,7 +1338,6 @@
       }
       lastTouch = now;
     }, false);
-
   </script>
 
 </body>
