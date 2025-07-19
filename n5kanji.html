@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese N5 Kanji Flashcards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f3e7ff 0%, #d4e4ff 100%);
+      font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .filter-buttons button {
+      background: #6b7280;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .filter-buttons button:hover {
+      background: #4b5563;
+    }
+    .filter-buttons button.active {
+      background: #3b82f6;
+    }
+    .flashcard-container {
+      position: relative;
+      width: 350px;
+      height: 450px;
+    }
+    .flashcard {
+      width: 100%;
+      height: 100%;
+      perspective: 1000px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .flashcard.slide-in-left { transform: translateX(-100%); opacity: 0; }
+    .flashcard.slide-in-right { transform: translateX(100%); opacity: 0; }
+    .flashcard.active { transform: translateX(0); opacity: 1; }
+    .flashcard-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform-style: preserve-3d;
+    }
+    .flashcard.flipped .flashcard-inner {
+      transform: rotateY(180deg) scale(0.95);
+    }
+    .flashcard-front, .flashcard-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
+      padding: 1.5rem;
+    }
+    .flashcard-back {
+      transform: rotateY(180deg);
+      background: linear-gradient(145deg, #e2e8f0, #ffffff);
+    }
+    .error-message {
+      color: #dc2626;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .progress {
+      font-size: 1rem;
+      color: #4a5568;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .swipe-hint {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: rgba(107, 114, 128, 0.5);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .swipe-hint.left { left: -50px; }
+    .swipe-hint.right { right: -50px; }
+    .show-hint .swipe-hint { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="flex flex-col items-center">
+    <div class="filter-buttons" role="tablist">
+      <button data-category="all" class="active" role="tab" aria-selected="true">All</button>
+      <button data-category="numbers" role="tab" aria-selected="false">Numbers</button>
+      <button data-category="time" role="tab" aria-selected="false">Time</button>
+      <button data-category="people" role="tab" aria-selected="false">People</button>
+      <button data-category="directions" role="tab" aria-selected="false">Directions</button>
+      <button data-category="nature" role="tab" aria-selected="false">Nature</button>
+      <button data-category="school" role="tab" aria-selected="false">School</button>
+      <button data-category="family" role="tab" aria-selected="false">Family</button>
+      <button data-category="daily_life" role="tab" aria-selected="false">Daily Life</button>
+      <button data-category="miscellaneous" role="tab" aria-selected="false">Miscellaneous</button>
+    </div>
+    <div id="flashcard-container" class="flashcard-container" role="region" aria-label="Flashcard deck">
+      <div class="swipe-hint left" aria-hidden="true">←</div>
+      <div class="swipe-hint right" aria-hidden="true">→</div>
+    </div>
+    <div id="progress" class="progress" aria-live="polite"></div>
+    <div id="error-message" class="error-message" aria-live="assertive"></div>
+  </div>
+  <script>
+    // Mock JSON API response (simulating https://api.example.com/n5-kanji)
+    const mockApiResponse = JSON.stringify([
+      // Numbers
+      { category: 'numbers', front: '<span class="text-5xl font-bold">一</span><br><span class="text-xl mt-2">いち / ひと(つ)</span><br><span class="text-lg text-gray-600 mt-1">(ichi / hito(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 一個, 一人</span>', back: '<span class="text-2xl">One</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 一冊の本 issatsu no hon - One book</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">二</span><br><span class="text-xl mt-2">に / ふた(つ)</span><br><span class="text-lg text-gray-600 mt-1">(ni / futa(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 二人, 二階</span>', back: '<span class="text-2xl">Two</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 二人で行く futari de iku - Go with two people</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">三</span><br><span class="text-xl mt-2">さん / み(つ)</span><br><span class="text-lg text-gray-600 mt-1">(san / mi(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 三月, 三時</span>', back: '<span class="text-2xl">Three</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 三時に会う sanji ni au - Meet at three o\'clock</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">四</span><br><span class="text-xl mt-2">し / よ(つ)</span><br><span class="text-lg text-gray-600 mt-1">(shi / yo(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 四人, 四月</span>', back: '<span class="text-2xl">Four</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 四日間 yokka kan - Four days</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">五</span><br><span class="text-xl mt-2">ご / いつ(つ)</span><br><span class="text-lg text-gray-600 mt-1">(go / itsu(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 五円, 五時</span>', back: '<span class="text-2xl">Five</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 五時に寝る goji ni neru - Sleep at five o\'clock</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">六</span><br><span class="text-xl mt-2">ろく / む(つ)</span><br><span class="text-lg text-gray-600 mt-1">(roku / mu(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 六日, 六十</span>', back: '<span class="text-2xl">Six</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 六時に起きる rokuji ni okiru - Wake up at six</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">七</span><br><span class="text-xl mt-2">しち / なな(つ)</span><br><span class="text-lg text-gray-600 mt-1">(shichi / nana(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 七時, 七月</span>', back: '<span class="text-2xl">Seven</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 七日旅行 shichinichi ryokou - Seven-day trip</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">八</span><br><span class="text-xl mt-2">はち / や(つ)</span><br><span class="text-lg text-gray-600 mt-1">(hachi / ya(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 八日, 八十</span>', back: '<span class="text-2xl">Eight</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 八時から始まる hachiji kara hajimaru - Start from eight</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">九</span><br><span class="text-xl mt-2">きゅう / ここの(つ)</span><br><span class="text-lg text-gray-600 mt-1">(kyuu / kokono(tsu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 九月, 九人</span>', back: '<span class="text-2xl">Nine</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 九時に食べる kuji ni taberu - Eat at nine</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">十</span><br><span class="text-xl mt-2">じゅう / とお</span><br><span class="text-lg text-gray-600 mt-1">(juu / tou)</span><br><span class="text-sm text-gray-500 mt-2">Related: 十円, 十分</span>', back: '<span class="text-2xl">Ten</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 十冊の本 jussatsu no hon - Ten books</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">百</span><br><span class="text-xl mt-2">ひゃく / もも</span><br><span class="text-lg text-gray-600 mt-1">(hyaku / momo)</span><br><span class="text-sm text-gray-500 mt-2">Related: 百円, 百人</span>', back: '<span class="text-2xl">Hundred</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 百円で買う hyakuen de kau - Buy for 100 yen</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">千</span><br><span class="text-xl mt-2">せん / ち</span><br><span class="text-lg text-gray-600 mt-1">(sen / chi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 千円, 千年</span>', back: '<span class="text-2xl">Thousand</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 千円持つ senen motsu - Have 1000 yen</span>' },
+      { category: 'numbers', front: '<span class="text-5xl font-bold">万</span><br><span class="text-xl mt-2">まん</span><br><span class="text-lg text-gray-600 mt-1">(man)</span><br><span class="text-sm text-gray-500 mt-2">Related: 十万, 万年筆</span>', back: '<span class="text-2xl">Ten Thousand</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 万円払う juumanen harau - Pay 100,000 yen</span>' },
+      // Time
+      { category: 'time', front: '<span class="text-5xl font-bold">日</span><br><span class="text-xl mt-2">にち / ひ</span><br><span class="text-lg text-gray-600 mt-1">(nichi / hi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 日曜日, 毎日</span>', back: '<span class="text-2xl">Day, Sun, Japan</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 毎日走る mainichi hashiru - Run every day</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">月</span><br><span class="text-xl mt-2">げつ / つき</span><br><span class="text-lg text-gray-600 mt-1">(getsu / tsuki)</span><br><span class="text-sm text-gray-500 mt-2">Related: 月曜日, 三月</span>', back: '<span class="text-2xl">Month, Moon</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 一月は寒い ichigatsu wa samui - January is cold</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">年</span><br><span class="text-xl mt-2">ねん / とし</span><br><span class="text-lg text-gray-600 mt-1">(nen / toshi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 毎年, 去年</span>', back: '<span class="text-2xl">Year</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 去年旅行した kyonen ryokou shita - Traveled last year</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">時</span><br><span class="text-xl mt-2">じ / とき</span><br><span class="text-lg text-gray-600 mt-1">(ji / toki)</span><br><span class="text-sm text-gray-500 mt-2">Related: 時間, 時計</span>', back: '<span class="text-2xl">Time, Hour</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 時間がない jikan ga nai - No time</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">分</span><br><span class="text-xl mt-2">ぶん / ふん</span><br><span class="text-lg text-gray-600 mt-1">(bun / fun)</span><br><span class="text-sm text-gray-500 mt-2">Related: 十分, 分かる</span>', back: '<span class="text-2xl">Minute, Part</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 十分待つ juppun matsu - Wait ten minutes</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">今</span><br><span class="text-xl mt-2">こん / いま</span><br><span class="text-lg text-gray-600 mt-1">(kon / ima)</span><br><span class="text-sm text-gray-500 mt-2">Related: 今日, 今月</span>', back: '<span class="text-2xl">Now</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 今忙しい ima isogashii - Now is busy</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">半</span><br><span class="text-xl mt-2">はん / なか(ば)</span><br><span class="text-lg text-gray-600 mt-1">(han / naka(ba))</span><br><span class="text-sm text-gray-500 mt-2">Related: 半分, 半日</span>', back: '<span class="text-2xl">Half</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 半日働く hannichi hataraku - Work half a day</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">毎</span><br><span class="text-xl mt-2">まい / ごと(に)</span><br><span class="text-lg text-gray-600 mt-1">(mai / goto(ni))</span><br><span class="text-sm text-gray-500 mt-2">Related: 毎日, 毎月</span>', back: '<span class="text-2xl">Every</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 毎朝走る maiasa hashiru - Run every morning</span>' },
+      { category: 'time', front: '<span class="text-5xl font-bold">午</span><br><span class="text-xl mt-2">ご / うま</span><br><span class="text-lg text-gray-600 mt-1">(go / uma)</span><br><span class="text-sm text-gray-500 mt-2">Related: 午前, 午後</span>', back: '<span class="text-2xl">Noon</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 午後に会う gogo ni au - Meet in the afternoon</span>' },
+      // People
+      { category: 'people', front: '<span class="text-5xl font-bold">人</span><br><span class="text-xl mt-2">じん / ひと</span><br><span class="text-lg text-gray-600 mt-1">(jin / hito)</span><br><span class="text-sm text-gray-500 mt-2">Related: 人間, 日本人</span>', back: '<span class="text-2xl">Person</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 人が多い hito ga ooi - Many people</span>' },
+      { category: 'people', front: '<span class="text-5xl font-bold">子</span><br><span class="text-xl mt-2">し / こ</span><br><span class="text-lg text-gray-600 mt-1">(shi / ko)</span><br><span class="text-sm text-gray-500 mt-2">Related: 子供, 女子</span>', back: '<span class="text-2xl">Child</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 子供が遊ぶ kodomo ga asobu - Children play</span>' },
+      { category: 'people', front: '<span class="text-5xl font-bold">女</span><br><span class="text-xl mt-2">じょ / おんな</span><br><span class="text-lg text-gray-600 mt-1">(jo / onna)</span><br><span class="text-sm text-gray-500 mt-2">Related: 女人, 女の子</span>', back: '<span class="text-2xl">Woman</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 女の人に会う onna no hito ni au - Meet a woman</span>' },
+      { category: 'people', front: '<span class="text-5xl font-bold">男</span><br><span class="text-xl mt-2">だん / おとこ</span><br><span class="text-lg text-gray-600 mt-1">(dan / otoko)</span><br><span class="text-sm text-gray-500 mt-2">Related: 男人, 男の子</span>', back: '<span class="text-2xl">Man</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 男の人が来た otoko no hito ga kita - A man came</span>' },
+      { category: 'people', front: '<span class="text-5xl font-bold">友</span><br><span class="text-xl mt-2">ゆう / とも</span><br><span class="text-lg text-gray-600 mt-1">(yuu / tomo)</span><br><span class="text-sm text-gray-500 mt-2">Related: 友達, 友好</span>', back: '<span class="text-2xl">Friend</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 友達と話す tomodachi to hanasu - Talk with a friend</span>' },
+      // Directions
+      { category: 'directions', front: '<span class="text-5xl font-bold">上</span><br><span class="text-xl mt-2">じょう / うえ</span><br><span class="text-lg text-gray-600 mt-1">(jou / ue)</span><br><span class="text-sm text-gray-500 mt-2">Related: 上げる, 以上</span>', back: '<span class="text-2xl">Above, Up</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 机の上に tsukue no ue ni - On the desk</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">下</span><br><span class="text-xl mt-2">か / した</span><br><span class="text-lg text-gray-600 mt-1">(ka / shita)</span><br><span class="text-sm text-gray-500 mt-2">Related: 下げる, 以下</span>', back: '<span class="text-2xl">Below, Down</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 床の下に yuka no shita ni - Under the floor</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">中</span><br><span class="text-xl mt-2">ちゅう / なか</span><br><span class="text-lg text-gray-600 mt-1">(chuu / naka)</span><br><span class="text-sm text-gray-500 mt-2">Related: 中学, 中央</span>', back: '<span class="text-2xl">Inside, Middle</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 箱の中に hako no naka ni - Inside the box</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">外</span><br><span class="text-xl mt-2">がい / そと</span><br><span class="text-lg text-gray-600 mt-1">(gai / soto)</span><br><span class="text-sm text-gray-500 mt-2">Related: 外国, 外出</span>', back: '<span class="text-2xl">Outside</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 外で遊ぶ soto de asobu - Play outside</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">右</span><br><span class="text-xl mt-2">う / みぎ</span><br><span class="text-lg text-gray-600 mt-1">(u / migi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 右側, 右手</span>', back: '<span class="text-2xl">Right</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 右に曲がる migi ni magaru - Turn right</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">左</span><br><span class="text-xl mt-2">さ / ひだり</span><br><span class="text-lg text-gray-600 mt-1">(sa / hidari)</span><br><span class="text-sm text-gray-500 mt-2">Related: 左側, 左手</span>', back: '<span class="text-2xl">Left</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 左を見る hidari o miru - Look left</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">前</span><br><span class="text-xl mt-2">ぜん / まえ</span><br><span class="text-lg text-gray-600 mt-1">(zen / mae)</span><br><span class="text-sm text-gray-500 mt-2">Related: 名前, 前日</span>', back: '<span class="text-2xl">In Front, Before</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 駅の前に eki no mae ni - In front of the station</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">後</span><br><span class="text-xl mt-2">ご / あと</span><br><span class="text-lg text-gray-600 mt-1">(go / ato)</span><br><span class="text-sm text-gray-500 mt-2">Related: 後ろ, 後で</span>', back: '<span class="text-2xl">Behind, Later</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 後で話す ato de hanasu - Talk later</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">北</span><br><span class="text-xl mt-2">ほく / きた</span><br><span class="text-lg text-gray-600 mt-1">(hoku / kita)</span><br><span class="text-sm text-gray-500 mt-2">Related: 北海道, 北口</span>', back: '<span class="text-2xl">North</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 北に行く kita ni iku - Go north</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">南</span><br><span class="text-xl mt-2">なん / みなみ</span><br><span class="text-lg text-gray-600 mt-1">(nan / minami)</span><br><span class="text-sm text-gray-500 mt-2">Related: 南口, 南米</span>', back: '<span class="text-2xl">South</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 南に旅行する minami ni ryokou suru - Travel south</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">東</span><br><span class="text-xl mt-2">とう / ひがし</span><br><span class="text-lg text-gray-600 mt-1">(tou / higashi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 東京, 東口</span>', back: '<span class="text-2xl">East</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 東に住む higashi ni sumu - Live in the east</span>' },
+      { category: 'directions', front: '<span class="text-5xl font-bold">西</span><br><span class="text-xl mt-2">せい / にし</span><br><span class="text-lg text-gray-600 mt-1">(sei / nishi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 西口, 西洋</span>', back: '<span class="text-2xl">West</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 西に行く nishi ni iku - Go west</span>' },
+      // Nature
+      { category: 'nature', front: '<span class="text-5xl font-bold">山</span><br><span class="text-xl mt-2">さん / やま</span><br><span class="text-lg text-gray-600 mt-1">(san / yama)</span><br><span class="text-sm text-gray-500 mt-2">Related: 山川, 登山</span>', back: '<span class="text-2xl">Mountain</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 山に登る yama ni noboru - Climb the mountain</span>' },
+      { category: 'nature', front: '<span class="text-5xl font-bold">川</span><br><span class="text-xl mt-2">せん / かわ</span><br><span class="text-lg text-gray-600 mt-1">(sen / kawa)</span><br><span class="text-sm text-gray-500 mt-2">Related: 川岸, 川上</span>', back: '<span class="text-2xl">River</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 川で泳ぐ kawa de oyogu - Swim in the river</span>' },
+      { category: 'nature', front: '<span class="text-5xl font-bold">水</span><br><span class="text-xl mt-2">すい / みず</span><br><span class="text-lg text-gray-600 mt-1">(sui / mizu)</span><br><span class="text-sm text-gray-500 mt-2">Related: 水道, 飲水</span>', back: '<span class="text-2xl">Water</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 水を飲む mizu o nomu - Drink water</span>' },
+      { category: 'nature', front: '<span class="text-5xl font-bold">火</span><br><span class="text-xl mt-2">か / ひ</span><br><span class="text-lg text-gray-600 mt-1">(ka / hi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 火曜日, 火事</span>', back: '<span class="text-2xl">Fire</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 火を消す hi o kesu - Put out the fire</span>' },
+      { category: 'nature', front: '<span class="text-5xl font-bold">木</span><br><span class="text-xl mt-2">ぼく / き</span><br><span class="text-lg text-gray-600 mt-1">(boku / ki)</span><br><span class="text-sm text-gray-500 mt-2">Related: 木曜日, 木々</span>', back: '<span class="text-2xl">Tree, Wood</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 木の下に ki no shita ni - Under the tree</span>' },
+      { category: 'nature', front: '<span class="text-5xl font-bold">土</span><br><span class="text-xl mt-2">ど / つち</span><br><span class="text-lg text-gray-600 mt-1">(do / tsuchi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 土曜日, 土地</span>', back: '<span class="text-2xl">Soil, Earth</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 土を掘る tsuchi o horu - Dig the earth</span>' },
+      { category: 'nature', front: '<span class="text-5xl font-bold">天</span><br><span class="text-xl mt-2">てん / あまつ</span><br><span class="text-lg text-gray-600 mt-1">(ten / amatsu)</span><br><span class="text-sm text-gray-500 mt-2">Related: 天气, 天津</span>', back: '<span class="text-2xl">Heavens, Sky</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 天を見る ten o miru - Look at the sky</span>' },
+      { category: 'nature', front: '<span class="text-5xl font-bold">雨</span><br><span class="text-xl mt-2">う / あめ</span><br><span class="text-lg text-gray-600 mt-1">(u / ame)</span><br><span class="text-sm text-gray-500 mt-2">Related: 雨天, 雨水</span>', back: '<span class="text-2xl">Rain</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 雨が降る ame ga furu - It rains</span>' },
+      // School
+      { category: 'school', front: '<span class="text-5xl font-bold">学</span><br><span class="text-xl mt-2">がく / まな(ぶ)</span><br><span class="text-lg text-gray-600 mt-1">(gaku / mana(bu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 学校, 学生</span>', back: '<span class="text-2xl">Study, Learning</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 学校に行く gakkou ni iku - Go to school</span>' },
+      { category: 'school', front: '<span class="text-5xl font-bold">校</span><br><span class="text-xl mt-2">こう</span><br><span class="text-lg text-gray-600 mt-1">(kou)</span><br><span class="text-sm text-gray-500 mt-2">Related: 学校, 高校</span>', back: '<span class="text-2xl">School</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 高校生だ koukousei da - I am a high school student</span>' },
+      { category: 'school', front: '<span class="text-5xl font-bold">生</span><br><span class="text-xl mt-2">せい / い(きる)</span><br><span class="text-lg text-gray-600 mt-1">(sei / i(kiru))</span><br><span class="text-sm text-gray-500 mt-2">Related: 学生, 先生</span>', back: '<span class="text-2xl">Life, Student</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 学生です gakusei desu - I am a student</span>' },
+      { category: 'school', front: '<span class="text-5xl font-bold">先</span><br><span class="text-xl mt-2">せん / さき</span><br><span class="text-lg text-gray-600 mt-1">(sen / saki)</span><br><span class="text-sm text-gray-500 mt-2">Related: 先生, 先行</span>', back: '<span class="text-2xl">Before, Ahead</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 先生に聞く sensei ni kiku - Ask the teacher</span>' },
+      { category: 'school', front: '<span class="text-5xl font-bold">本</span><br><span class="text-xl mt-2">ほん / もと</span><br><span class="text-lg text-gray-600 mt-1">(hon / moto)</span><br><span class="text-sm text-gray-500 mt-2">Related: 本屋, 日本</span>', back: '<span class="text-2xl">Book</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 本を読む hon o yomu - Read a book</span>' },
+      // Family
+      { category: 'family', front: '<span class="text-5xl font-bold">母</span><br><span class="text-xl mt-2">ぼ / はは</span><br><span class="text-lg text-gray-600 mt-1">(bo / haha)</span><br><span class="text-sm text-gray-500 mt-2">Related: 母親, 祖母</span>', back: '<span class="text-2xl">Mother</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 母が料理する haha ga ryouri suru - Mother cooks</span>' },
+      { category: 'family', front: '<span class="text-5xl font-bold">父</span><br><span class="text-xl mt-2">ふ / ちち</span><br><span class="text-lg text-gray-600 mt-1">(fu / chichi)</span><br><span class="text-sm text-gray-500 mt-2">Related: 父親, 祖父</span>', back: '<span class="text-2xl">Father</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 父と話す chichi to hanasu - Talk with father</span>' },
+      // Daily Life
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">見</span><br><span class="text-xl mt-2">けん / み(る)</span><br><span class="text-lg text-gray-600 mt-1">(ken / mi(ru))</span><br><span class="text-sm text-gray-500 mt-2">Related: 見学, 見物</span>', back: '<span class="text-2xl">See</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: テレビを見る terebi o miru - Watch TV</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">出</span><br><span class="text-xl mt-2">しゅつ / で(る)</span><br><span class="text-lg text-gray-600 mt-1">(shutsu / de(ru))</span><br><span class="text-sm text-gray-500 mt-2">Related: 出口, 外出</span>', back: '<span class="text-2xl">Exit, Leave</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 家を出る ie o deru - Leave the house</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">行</span><br><span class="text-xl mt-2">こう / い(く)</span><br><span class="text-lg text-gray-600 mt-1">(kou / i(ku))</span><br><span class="text-sm text-gray-500 mt-2">Related: 銀行, 旅行</span>', back: '<span class="text-2xl">Go, Journey</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 学校に行く gakkou ni iku - Go to school</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">食</span><br><span class="text-xl mt-2">しょく / た(べる)</span><br><span class="text-lg text-gray-600 mt-1">(shoku / ta(beru))</span><br><span class="text-sm text-gray-500 mt-2">Related: 食事, 食品</span>', back: '<span class="text-2xl">Eat, Food</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 食事を取る shokuji o toru - Have a meal</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">聞</span><br><span class="text-xl mt-2">ぶん / き(く)</span><br><span class="text-lg text-gray-600 mt-1">(bun / ki(ku))</span><br><span class="text-sm text-gray-500 mt-2">Related: 聞き手, 新聞</span>', back: '<span class="text-2xl">Hear, Listen</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 音楽を聞く ongaku o kiku - Listen to music</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">書</span><br><span class="text-xl mt-2">しょ / か(く)</span><br><span class="text-lg text-gray-600 mt-1">(sho / kaku)</span><br><span class="text-sm text-gray-500 mt-2">Related: 書店, 図書</span>', back: '<span class="text-2xl">Write</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 手紙を書く tegami o kaku - Write a letter</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">話</span><br><span class="text-xl mt-2">わ / はな(す)</span><br><span class="text-lg text-gray-600 mt-1">(wa / hana(su))</span><br><span class="text-sm text-gray-500 mt-2">Related: 話者, 会話</span>', back: '<span class="text-2xl">Talk, Tale</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 日本語を話す nihongo o hanasu - Speak Japanese</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">読</span><br><span class="text-xl mt-2">どく / よ(む)</span><br><span class="text-lg text-gray-600 mt-1">(doku / yo(mu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 読書, 朗読</span>', back: '<span class="text-2xl">Read</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 新聞を読む shinbun o yomu - Read the newspaper</span>' },
+      { category: 'daily_life', front: '<span class="text-5xl font-bold">休</span><br><span class="text-xl mt-2">きゅう / やす(む)</span><br><span class="text-lg text-gray-600 mt-1">(kyuu / yasu(mu))</span><br><span class="text-sm text-gray-500 mt-2">Related: 休日, 休息</span>', back: '<span class="text-2xl">Rest, Day Off</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 休日に遊ぶ kyuujitsu ni asobu - Play on a holiday</span>' },
+      // Miscellaneous
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">国</span><br><span class="text-xl mt-2">こく / くに</span><br><span class="text-lg text-gray-600 mt-1">(koku / kuni)</span><br><span class="text-sm text-gray-500 mt-2">Related: 外国, 日本国</span>', back: '<span class="text-2xl">Country</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 国に帰る kuni ni kaeru - Return to the country</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">大</span><br><span class="text-xl mt-2">だい / おお(きい)</span><br><span class="text-lg text-gray-600 mt-1">(dai / oo(kii))</span><br><span class="text-sm text-gray-500 mt-2">Related: 大学, 大人</span>', back: '<span class="text-2xl">Large, Big</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 大きい家 ookii ie - Big house</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">長</span><br><span class="text-xl mt-2">ちょう / なが(い)</span><br><span class="text-lg text-gray-600 mt-1">(chou / naga(i))</span><br><span class="text-sm text-gray-500 mt-2">Related: 長い, 校長</span>', back: '<span class="text-2xl">Long, Leader</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 長い川 nagai kawa - Long river</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">間</span><br><span class="text-xl mt-2">かん / あいだ</span><br><span class="text-lg text-gray-600 mt-1">(kan / aida)</span><br><span class="text-sm text-gray-500 mt-2">Related: 時間, 人間</span>', back: '<span class="text-2xl">Interval, Space</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 間に立つ aida ni tatsu - Stand in between</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">金</span><br><span class="text-xl mt-2">きん / かね</span><br><span class="text-lg text-gray-600 mt-1">(kin / kane)</span><br><span class="text-sm text-gray-500 mt-2">Related: 金曜日, 金色</span>', back: '<span class="text-2xl">Gold, Money</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 金を払う kane o harau - Pay money</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">円</span><br><span class="text-xl mt-2">えん / まる(い)</span><br><span class="text-lg text-gray-600 mt-1">(en / maru(i))</span><br><span class="text-sm text-gray-500 mt-2">Related: 百円, 円高</span>', back: '<span class="text-2xl">Yen, Circle</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 千円払う senen harau - Pay a thousand yen</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">高</span><br><span class="text-xl mt-2">こう / たか(い)</span><br><span class="text-lg text-gray-600 mt-1">(kou / taka(i))</span><br><span class="text-sm text-gray-500 mt-2">Related: 高校, 高山</span>', back: '<span class="text-2xl">Tall, High, Expensive</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 高い山 takai yama - High mountain</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">小</span><br><span class="text-xl mt-2">しょう / ちい(さい)</span><br><span class="text-lg text-gray-600 mt-1">(shou / chii(sai))</span><br><span class="text-sm text-gray-500 mt-2">Related: 小学校, 小さい</span>', back: '<span class="text-2xl">Small, Little</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 小さい犬 chiisai inu - Small dog</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">気</span><br><span class="text-xl mt-2">き / いき</span><br><span class="text-lg text-gray-600 mt-1">(ki / iki)</span><br><span class="text-sm text-gray-500 mt-2">Related: 気分, 天気</span>', back: '<span class="text-2xl">Spirit, Mind, Air</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 気分がいい kibun ga ii - Feel good</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">白</span><br><span class="text-xl mt-2">はく / しろ(い)</span><br><span class="text-lg text-gray-600 mt-1">(haku / shiro(i))</span><br><span class="text-sm text-gray-500 mt-2">Related: 白色, 白紙</span>', back: '<span class="text-2xl">White</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 白い服 shiroi fuku - White clothes</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">車</span><br><span class="text-xl mt-2">しゃ / くるま</span><br><span class="text-lg text-gray-600 mt-1">(sha / kuruma)</span><br><span class="text-sm text-gray-500 mt-2">Related: 電車, 自動車</span>', back: '<span class="text-2xl">Car, Wheel</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 車に乗る kuruma ni noru - Ride a car</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">電</span><br><span class="text-xl mt-2">でん</span><br><span class="text-lg text-gray-600 mt-1">(den)</span><br><span class="text-sm text-gray-500 mt-2">Related: 電車, 電話</span>', back: '<span class="text-2xl">Electricity</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 電話を使う denwa o tsukau - Use the phone</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">名</span><br><span class="text-xl mt-2">めい / な</span><br><span class="text-lg text-gray-600 mt-1">(mei / na)</span><br><span class="text-sm text-gray-500 mt-2">Related: 名前, 有名</span>', back: '<span class="text-2xl">Name</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 名前を書く namae o kaku - Write the name</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">語</span><br><span class="text-xl mt-2">ご / かた(る)</span><br><span class="text-lg text-gray-600 mt-1">(go / kata(ru))</span><br><span class="text-sm text-gray-500 mt-2">Related: 日本語, 英語</span>', back: '<span class="text-2xl">Word, Language</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 日本語を学ぶ nihongo o manabu - Learn Japanese</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">何</span><br><span class="text-xl mt-2">か / なに</span><br><span class="text-lg text-gray-600 mt-1">(ka / nani)</span><br><span class="text-sm text-gray-500 mt-2">Related: 何か, 何時</span>', back: '<span class="text-2xl">What</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 何を食べる nani o taberu - What to eat</span>' },
+      { category: 'miscellaneous', front: '<span class="text-5xl font-bold">入</span><br><span class="text-xl mt-2">にゅう / い(る)</span><br><span class="text-lg text-gray-600 mt-1">(nyuu / i(ru))</span><br><span class="text-sm text-gray-500 mt-2">Related: 入口, 入学</span>', back: '<span class="text-2xl">Enter</span><br><em class="text-gray-600 mt-2">Note</em>: N5 Kanji<br><span class="text-lg mt-2">Example: 部屋に入る heya ni hairu - Enter the room</span>' }
+    ]);
+
+    let flashcards = [];
+    let currentCategory = 'all';
+    let currentCardIndex = 0;
+    let filteredFlashcards = [];
+
+    function createFlashcard(card, index) {
+      const div = document.createElement('div');
+      div.className = 'flashcard';
+      div.innerHTML = `
+        <div class="flashcard-inner">
+          <div class="flashcard-front p-6 text-center" aria-label="Japanese kanji: ${card.front.replace(/<[^>]+>/g, '')}">${card.front}</div>
+          <div class="flashcard-back p-6 text-center" aria-label="English meaning and example: ${card.back.replace(/<[^>]+>/g, '')}">${card.back}</div>
+        </div>
+      `;
+      div.dataset.index = index;
+      div.tabIndex = 0;
+      return div;
+    }
+
+    function showCard(index, direction = 'none') {
+      const container = document.getElementById('flashcard-container');
+      const errorMessage = document.getElementById('error-message');
+      if (filteredFlashcards.length === 0) {
+        container.innerHTML = '';
+        errorMessage.textContent = 'No flashcards available for this category.';
+        return;
+      }
+      errorMessage.textContent = '';
+      const card = createFlashcard(filteredFlashcards[index], index);
+      if (direction === 'left') {
+        card.classList.add('slide-in-right');
+      } else if (direction === 'right') {
+        card.classList.add('slide-in-left');
+      }
+      container.innerHTML = `
+        <div class="swipe-hint left" aria-hidden="true">←</div>
+        <div class="swipe-hint right" aria-hidden="true">→</div>
+      `;
+      container.appendChild(card);
+      setTimeout(() => card.classList.add('active'), 10);
+      document.getElementById('progress').textContent = `Card ${index + 1} of ${filteredFlashcards.length}`;
+      localStorage.setItem(`currentCardIndex_${currentCategory}`, index);
+    }
+
+    function filterFlashcards(category) {
+      currentCategory = category;
+      filteredFlashcards = category === 'all' ? flashcards : flashcards.filter(card => card.category === category);
+      currentCardIndex = parseInt(localStorage.getItem(`currentCardIndex_${category}`)) || 0;
+      if (currentCardIndex >= filteredFlashcards.length) currentCardIndex = 0;
+      showCard(currentCardIndex);
+    }
+
+    function handleSwipe(direction) {
+      const prevIndex = currentCardIndex;
+      if (direction === 'left') {
+        currentCardIndex = (currentCardIndex + 1) % filteredFlashcards.length;
+      } else if (direction === 'right') {
+        currentCardIndex = (currentCardIndex - 1 + filteredFlashcards.length) % filteredFlashcards.length;
+      }
+      showCard(currentCardIndex, direction);
+    }
+
+    // Initialize flashcards
+    try {
+      flashcards = JSON.parse(mockApiResponse);
+      filterFlashcards('all');
+      document.getElementById('flashcard-container').classList.add('show-hint');
+      setTimeout(() => document.getElementById('flashcard-container').classList.remove('show-hint'), 3000);
+    } catch (error) {
+      document.getElementById('error-message').textContent = 'Failed to load flashcards. Please try again later.';
+    }
+
+    // Event listeners for filter buttons
+    document.querySelectorAll('.filter-buttons button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.filter-buttons button').forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+        button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
+        filterFlashcards(button.dataset.category);
+      });
+    });
+
+    // Swipe detection
+    let touchStartX = 0;
+    let touchEndX = 0;
+    document.getElementById('flashcard-container').addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    document.getElementById('flashcard-container').addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 50) handleSwipe('left');
+      if (touchEndX - touchStartX > 50) handleSwipe('right');
+    });
+
+    // Flip card on click
+    document.getElementById('flashcard-container').addEventListener('click', e => {
+      const flashcard = e.target.closest('.flashcard');
+      if (flashcard) flashcard.classList.toggle('flipped');
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') handleSwipe('right');
+      if (e.key === 'ArrowRight') handleSwipe('left');
+      if (e.key === ' ') {
+        e.preventDefault();
+        const flashcard = document.querySelector('.flashcard.active');
+        if (flashcard) flashcard.classList.toggle('flipped');
+      }
+    });
+  </script>
+</body>
+</html>
