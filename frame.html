@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Framed Photo Uploader</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -22,11 +22,11 @@
   <div class="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-6 sm:p-8">
     <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">Frame Your Photo</h2>
 
+    <!-- Upload -->
     <input type="file" id="uploadInput" accept="image/*" class="block mx-auto mb-6 text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-500 file:text-white hover:file:bg-blue-600">
 
-    <canvas id="canvas" width="1200" height="1200" class="rounded-lg shadow-md bg-gray-200 mx-auto"></canvas>
-
-    <div class="controls flex flex-wrap justify-center gap-3 sm:gap-4 mt-6">
+    <!-- Moved Controls BEFORE Canvas -->
+    <div class="controls flex flex-wrap justify-center gap-3 sm:gap-4 mb-6">
       <button onclick="move(0, -10)" aria-label="Move image up" title="Move Up" class="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
       </button>
@@ -47,9 +47,17 @@
       </button>
     </div>
 
-    <button id="downloadBtn" class="mt-6 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition hidden">Download Framed Photo</button>
-  </div>
+    <!-- Canvas -->
+    <canvas id="canvas" width="1200" height="1200" class="rounded-lg shadow-md bg-gray-200 mx-auto"></canvas>
 
+    <!-- Download -->
+
+
+<button id="downloadBtn" style="width: 100%; padding: 12px; font-size: 16px; margin-top: 10px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer;">
+  Download Iframed Photo
+</button>
+
+  <!-- Script -->
   <script>
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d', { alpha: true, desynchronized: false });
@@ -83,7 +91,7 @@
     uploadInput.addEventListener('change', e => {
       const file = e.target.files[0];
       if (!file) return;
-      uploadInput.disabled = true; // Disable input during load
+      uploadInput.disabled = true;
       const reader = new FileReader();
       reader.onload = () => {
         const img = new Image();
