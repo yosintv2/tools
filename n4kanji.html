@@ -1122,53 +1122,6 @@
 
     updateCard(); // initialize
 
-    let lastTouch = 0;
-document.addEventListener('touchstart', function(event) {
-  const now = new Date().getTime();
-  if (now - lastTouch <= 300) {
-    event.preventDefault(); // disables double tap zoom
-  }
-  lastTouch = now;
-}, { passive: false });
-
-    
-// Assume you have an array `kanjiList` with all kanji objects
-
-// Get saved index or start at 0
-let currentIndex = parseInt(localStorage.getItem('kanjiIndex')) || 0;
-
-// Function to show kanji card
-function showKanji(index) {
-  const kanji = kanjiList[index];
-  if (!kanji) {
-    alert("You've reached the end of the list!");
-    return;
-  }
-  // Your code to display kanji data here...
-  
-  // Save current index
-  localStorage.setItem('kanjiIndex', index);
-}
-
-// Next button
-document.getElementById('nextBtn').addEventListener('click', () => {
-  if (currentIndex < kanjiList.length - 1) {
-    currentIndex++;
-    showKanji(currentIndex);
-  }
-});
-
-// Prev button
-document.getElementById('prevBtn').addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    showKanji(currentIndex);
-  }
-});
-
-// On page load
-showKanji(currentIndex);
-
   </script>
 
 </body>
