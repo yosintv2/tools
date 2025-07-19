@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Kanji Flashcards</title>
   <style>
     body {
@@ -10,6 +10,8 @@
       background: #f3f4f6;
       padding: 2rem;
       text-align: center;
+      /* Prevent zoom on double tap for iOS Safari */
+      touch-action: manipulation;
     }
     .card {
       background: white;
@@ -18,7 +20,7 @@
       max-width: 350px;
       margin: auto;
       box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-      height: 420px;
+      height: 460px; /* a bit taller to fit progress */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -33,6 +35,12 @@
       margin-top: 1rem;
       font-size: 1.2rem;
     }
+    .progress {
+      margin-top: 1rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #555;
+    }
     .buttons {
       margin-top: 2rem;
     }
@@ -45,6 +53,7 @@
       cursor: pointer;
       background: #2563eb;
       color: white;
+      user-select: none;
     }
     .related {
       margin-top: 2rem;
@@ -68,10 +77,11 @@
 </head>
 <body>
 
-  <div class="card">
+  <div class="card" id="card">
     <div class="kanji" id="kanji">食</div>
     <div class="reading" id="reading">たべる / ショク</div>
     <div class="meaning" id="meaning">to eat</div>
+    <div class="progress" id="progress">Kanji 1 of 6</div>
     <div class="buttons">
       <button onclick="prevCard()">Previous</button>
       <button onclick="nextCard()">Next</button>
@@ -1087,13 +1097,17 @@
     meaning: "Chinese, man",
     related: ["漢字 - かんじ - kanji", "漢方 - かんぽう - Chinese medicine", "漢語 - かんご - Sino-Japanese words"]
   }
+    ];
 
-
-      
-];
-
-
+    // Load currentIndex from localStorage or start at 0
     let currentIndex = 0;
+    const savedIndex = localStorage.getItem('kanjiFlashcardIndex');
+    if (savedIndex !== null && !isNaN(savedIndex)) {
+      const idx = parseInt(savedIndex, 10);
+      if (idx >= 0 && idx < flashcards.length) {
+        currentIndex = idx;
+      }
+    }
 
     function updateCard() {
       const card = flashcards[currentIndex];
@@ -1108,6 +1122,12 @@
         li.textContent = item;
         relatedList.appendChild(li);
       });
+
+      // Update progress indicator
+      document.getElementById('progress').textContent = `Kanji ${currentIndex + 1} of ${flashcards.length}`;
+
+      // Save current index to localStorage
+      localStorage.setItem('kanjiFlashcardIndex', currentIndex);
     }
 
     function nextCard() {
@@ -1121,6 +1141,16 @@
     }
 
     updateCard(); // initialize
+
+    // Optional: Disable double tap zoom on iOS Safari by preventing double taps in JS
+    let lastTouch = 0;
+    document.addEventListener('touchend', function(event) {
+      const now = Date.now();
+      if (now - lastTouch <= 300) {
+        event.preventDefault();
+      }
+      lastTouch = now;
+    }, false);
 
   </script>
 
