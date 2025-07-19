@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanji Flashcards</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f3f4f6;
+      padding: 2rem;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 300px;
+      margin: auto;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+    .kanji {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #2563eb;
+    }
+    .reading, .meaning {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    button {
+      padding: 0.5rem 1.5rem;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+    }
+    .related {
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .related h4 {
+      margin-bottom: 0.5rem;
+    }
+    .related ul {
+      list-style: none;
+      padding: 0;
+    }
+    .related li {
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="kanji" id="kanji">食</div>
+    <div class="reading" id="reading">たべる / ショク</div>
+    <div class="meaning" id="meaning">to eat</div>
+    <div class="buttons">
+      <button onclick="prevCard()">Previous</button>
+      <button onclick="nextCard()">Next</button>
+    </div>
+    <div class="related">
+      <h4>🔹 Related Kanji</h4>
+      <ul id="relatedList"></ul>
+    </div>
+  </div>
+
+  <script>
+    const flashcards = [
+  {
+    kanji: "会",
+    reading: "あう / カイ",
+    meaning: "to meet",
+    related: ["会社 - かいしゃ - company", "会話 - かいわ - conversation", "社会 - しゃかい - society"]
+  },
+  {
+    kanji: "同",
+    reading: "おなじ / ドウ",
+    meaning: "same",
+    related: ["同時 - どうじ - same time", "同意 - どうい - agreement", "同じ - おなじ - same"]
+  },
+  {
+    kanji: "事",
+    reading: "こと / ジ",
+    meaning: "thing, matter",
+    related: ["仕事 - しごと - work", "事故 - じこ - accident", "用事 - ようじ - errands"]
+  },
+  {
+    kanji: "自",
+    reading: "みずから / ジ",
+    meaning: "oneself",
+    related: ["自由 - じゆう - freedom", "自動車 - じどうしゃ - automobile", "自分 - じぶん - oneself"]
+  },
+  {
+    kanji: "社",
+    reading: "やしろ / シャ",
+    meaning: "company, shrine",
+    related: ["会社 - かいしゃ - company", "神社 - じんじゃ - shrine", "社会 - しゃかい - society"]
+  },
+  {
+    kanji: "発",
+    reading: "はつ / ハツ",
+    meaning: "departure, emit",
+    related: ["出発 - しゅっぱつ - departure", "発明 - はつめい - invention", "発行 - はっこう - issue"]
+  },
+  {
+    kanji: "者",
+    reading: "もの / シャ",
+    meaning: "person",
+    related: ["医者 - いしゃ - doctor", "学生 - がくせい - student", "作者 - さくしゃ - author"]
+  },
+  {
+    kanji: "地",
+    reading: "ち / ジ",
+    meaning: "earth, ground",
+    related: ["土地 - とち - land", "地図 - ちず - map", "地下 - ちか - underground"]
+  },
+  {
+    kanji: "業",
+    reading: "わざ / ギョウ",
+    meaning: "business, work",
+    related: ["授業 - じゅぎょう - class", "産業 - さんぎょう - industry", "工業 - こうぎょう - manufacturing"]
+  },
+  {
+    kanji: "方",
+    reading: "かた / ホウ",
+    meaning: "direction, person",
+    related: ["方法 - ほうほう - method", "地方 - ちほう - region", "味方 - みかた - ally"]
+  },
+  {
+    kanji: "新",
+    reading: "あたらしい / シン",
+    meaning: "new",
+    related: ["新聞 - しんぶん - newspaper", "新年 - しんねん - new year", "新しい - あたらしい - new"]
+  },
+  {
+    kanji: "場",
+    reading: "ば / ジョウ",
+    meaning: "place",
+    related: ["場所 - ばしょ - place", "場合 - ばあい - case", "工場 - こうじょう - factory"]
+  },
+  {
+    kanji: "員",
+    reading: "イン",
+    meaning: "member, employee",
+    related: ["社員 - しゃいん - company employee", "店員 - てんいん - shop assistant", "会員 - かいいん - member"]
+  },
+  {
+    kanji: "立",
+    reading: "たつ / リツ",
+    meaning: "to stand",
+    related: ["立場 - たちば - standpoint", "独立 - どくりつ - independence", "立つ - たつ - to stand"]
+  },
+  {
+    kanji: "開",
+    reading: "ひらく / カイ",
+    meaning: "to open",
+    related: ["開始 - かいし - start", "開く - ひらく - to open", "公開 - こうかい - public release"]
+  },
+  {
+    kanji: "手",
+    reading: "て / シュ",
+    meaning: "hand",
+    related: ["手紙 - てがみ - letter", "手伝う - てつだう - to help", "上手 - じょうず - skillful"]
+  },
+  {
+    kanji: "力",
+    reading: "ちから / リョク",
+    meaning: "power, strength",
+    related: ["努力 - どりょく - effort", "力 - ちから - power", "電力 - でんりょく - electric power"]
+  },
+  {
+    kanji: "問",
+    reading: "と(う) / モン",
+    meaning: "question, ask",
+    related: ["質問 - しつもん - question", "問題 - もんだい - problem", "問い - とい - query"]
+  },
+  {
+    kanji: "代",
+    reading: "か(わる) / ダイ",
+    meaning: "substitute, era",
+    related: ["時代 - じだい - era", "交代 - こうたい - change", "代わる - かわる - to replace"]
+  },
+  {
+    kanji: "明",
+    reading: "あかるい / メイ",
+    meaning: "bright, light",
+    related: ["明日 - あした - tomorrow", "説明 - せつめい - explanation", "明るい - あかるい - bright"]
+  },
+  {
+    kanji: "動",
+    reading: "うごく / ドウ",
+    meaning: "to move",
+    related: ["運動 - うんどう - exercise", "動く - うごく - to move", "活動 - かつどう - activity"]
+  },
+  {
+    kanji: "京",
+    reading: "みやこ / キョウ",
+    meaning: "capital",
+    related: ["東京 - とうきょう - Tokyo", "京都 - きょうと - Kyoto", "京 - きょう - capital"]
+  },
+  {
+    kanji: "目",
+    reading: "め / モク",
+    meaning: "eye",
+    related: ["目的 - もくてき - purpose", "目標 - もくひょう - target", "目 - め - eye"]
+  },
+  {
+    kanji: "通",
+    reading: "とおる / ツウ",
+    meaning: "to pass, commute",
+    related: ["通る - とおる - to pass", "通学 - つうがく - commuting to school", "交通 - こうつう - traffic"]
+  },
+  {
+    kanji: "言",
+    reading: "いう / ゲン",
+    meaning: "to say, word",
+    related: ["言葉 - ことば - word", "伝言 - でんごん - message", "言う - いう - to say"]
+  },
+  {
+    kanji: "理",
+    reading: "リ",
+    meaning: "logic, reason",
+    related: ["理由 - りゆう - reason", "物理 - ぶつり - physics", "理想 - りそう - ideal"]
+  },
+  {
+    kanji: "体",
+    reading: "からだ / タイ",
+    meaning: "body",
+    related: ["体 - からだ - body", "体育 - たいいく - physical education", "体力 - たいりょく - stamina"]
+  },
+  {
+    kanji: "田",
+    reading: "た / デン",
+    meaning: "rice field",
+    related: ["田んぼ - たんぼ - rice field", "田園 - でんえん - rural area", "田 - た - rice paddy"]
+  },
+  {
+    kanji: "主",
+    reading: "ぬし / シュ",
+    meaning: "master, main",
+    related: ["主人 - しゅじん - master", "主要 - しゅよう - main", "主に - おもに - mainly"]
+  },
+  {
+    kanji: "題",
+    reading: "ダイ",
+    meaning: "topic, title",
+    related: ["問題 - もんだい - problem", "課題 - かだい - task", "題名 - だいめい - title"]
+  },
+  {
+    kanji: "意",
+    reading: "イ",
+    meaning: "idea, mind",
+    related: ["意味 - いみ - meaning", "意見 - いけん - opinion", "注意 - ちゅうい - attention"]
+  },
+  {
+    kanji: "不",
+    reading: "フ、ブ",
+    meaning: "not, negative",
+    related: ["不便 - ふべん - inconvenient", "不足 - ふそく - shortage", "不安 - ふあん - anxiety"]
+  },
+  {
+    kanji: "作",
+    reading: "つくる / サク",
+    meaning: "to make",
+    related: ["作品 - さくひん - work", "作る - つくる - to make", "作文 - さくぶん - composition"]
+  },
+  {
+    kanji: "用",
+    reading: "もちいる / ヨウ",
+    meaning: "use",
+    related: ["使用 - しよう - use", "用事 - ようじ - errands", "利用 - りよう - utilization"]
+  },
+  {
+    kanji: "度",
+    reading: "たび / ド",
+    meaning: "degree, time",
+    related: ["一度 - いちど - once", "程度 - ていど - degree", "度々 - たびたび - often"]
+  },
+  {
+    kanji: "強",
+    reading: "つよい / キョウ",
+    meaning: "strong",
+    related: ["強い - つよい - strong", "勉強 - べんきょう - study", "強化 - きょうか - strengthening"]
+  },
+  {
+    kanji: "公",
+    reading: "コウ",
+    meaning: "public",
+    related: ["公共 - こうきょう - public", "公園 - こうえん - park", "公平 - こうへい - fairness"]
+  },
+  {
+    kanji: "持",
+    reading: "もつ / ジ",
+    meaning: "to hold, have",
+    related: ["持つ - もつ - to hold", "保持 - ほじ - retention", "所持 - しょじ - possession"]
+  },
+  {
+    kanji: "野",
+    reading: "の / ヤ",
+    meaning: "field, plains",
+    related: ["野菜 - やさい - vegetable", "野原 - のはら - field", "野球 - やきゅう - baseball"]
+  },
+  {
+    kanji: "以",
+    reading: "もって / イ",
+    meaning: "by means of, because",
+    related: ["以上 - いじょう - more than", "以下 - いか - less than", "以来 - いらい - since"]
+  },
+  {
+    kanji: "思",
+    reading: "おもう / シ",
+    meaning: "to think",
+    related: ["思う - おもう - to think", "記憶 - きおく - memory", "思想 - しそう - thought"]
+  },
+  {
+    kanji: "家",
+    reading: "いえ / カ",
+    meaning: "house, home",
+    related: ["家 - いえ - house", "家庭 - かてい - home", "家族 - かぞく - family"]
+  },
+  {
+    kanji: "世",
+    reading: "よ / セイ",
+    meaning: "world, generation",
+    related: ["世界 - せかい - world", "世代 - せだい - generation", "世話 - せわ - care"]
+  },
+  {
+    kanji: "多",
+    reading: "おおい / タ",
+    meaning: "many, much",
+    related: ["多い - おおい - many", "多少 - たしょう - more or less", "多数 - たすう - majority"]
+  },
+  {
+    kanji: "正",
+    reading: "ただしい / セイ",
+    meaning: "correct, justice",
+    related: ["正しい - ただしい - correct", "正月 - しょうがつ - New Year", "正直 - しょうじき - honesty"]
+  },
+  {
+    kanji: "安",
+    reading: "やすい / アン",
+    meaning: "cheap, safe",
+    related: ["安い - やすい - cheap", "安全 - あんぜん - safety", "安心 - あんしん - relief"]
+  },
+  {
+    kanji: "院",
+    reading: "イン",
+    meaning: "institution",
+    related: ["病院 - びょういん - hospital", "大学院 - だいがくいん - graduate school", "入院 - にゅういん - hospitalization"]
+  },
+  {
+    kanji: "心",
+    reading: "こころ / シン",
+    meaning: "heart, mind",
+    related: ["心 - こころ - heart", "安心 - あんしん - peace of mind", "心理 - しんり - psychology"]
+  },
+  {
+    kanji: "界",
+    reading: "カイ",
+    meaning: "world, boundary",
+    related: ["世界 - せかい - world", "界限 - かいげん - limit", "国際界 - こくさいかい - international world"]
+  },
+  {
+    kanji: "教",
+    reading: "おしえる / キョウ",
+    meaning: "to teach",
+    related: ["教える - おしえる - to teach", "教育 - きょういく - education", "教師 - きょうし - teacher"]
+  }
+
+      
+];
+
+
+    let currentIndex = 0;
+
+    function updateCard() {
+      const card = flashcards[currentIndex];
+      document.getElementById('kanji').textContent = card.kanji;
+      document.getElementById('reading').textContent = card.reading;
+      document.getElementById('meaning').textContent = card.meaning;
+
+      const relatedList = document.getElementById('relatedList');
+      relatedList.innerHTML = "";
+      card.related.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        relatedList.appendChild(li);
+      });
+    }
+
+    function nextCard() {
+      currentIndex = (currentIndex + 1) % flashcards.length;
+      updateCard();
+    }
+
+    function prevCard() {
+      currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+      updateCard();
+    }
+
+    updateCard(); // initialize
+  </script>
+
+</body>
+</html>
