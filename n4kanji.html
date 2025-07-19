@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Kanji Flashcards</title>
   <style>
     body {
@@ -1121,6 +1121,16 @@
     }
 
     updateCard(); // initialize
+
+    let lastTouch = 0;
+document.addEventListener('touchstart', function(event) {
+  const now = new Date().getTime();
+  if (now - lastTouch <= 300) {
+    event.preventDefault(); // disables double tap zoom
+  }
+  lastTouch = now;
+}, { passive: false });
+
   </script>
 
 </body>
