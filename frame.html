@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Framed Photo Uploader</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    canvas {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+    }
+    @media (max-width: 640px) {
+      canvas {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 flex flex-col items-center justify-center p-4 sm:p-6 font-sans">
+  <div class="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">Frame Your Photo</h2>
+
+    <input type="file" id="uploadInput" accept="image/*" class="block mx-auto mb-6 text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-500 file:text-white hover:file:bg-blue-600">
+
+    <canvas id="canvas" width="1200" height="1200" class="rounded-lg shadow-md bg-gray-200 mx-auto"></canvas>
+
+    <div class="controls flex flex-wrap justify-center gap-3 sm:gap-4 mt-6">
+      <button onclick="move(0, -10)" aria-label="Move image up" title="Move Up" class="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+      </button>
+      <button onclick="move(-10, 0)" aria-label="Move image left" title="Move Left" class="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+      <button onclick="move(10, 0)" aria-label="Move image right" title="Move Right" class="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </button>
+      <button onclick="move(0, 10)" aria-label="Move image down" title="Move Down" class="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </button>
+      <button onclick="zoom(0.05)" aria-label="Zoom in" title="Zoom In" class="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+      </button>
+      <button onclick="zoom(-0.05)" aria-label="Zoom out" title="Zoom Out" class="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
+      </button>
+    </div>
+
+    <button id="downloadBtn" class="mt-6 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition hidden">Download Framed Photo</button>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d', { alpha: true, desynchronized: false });
+    const uploadInput = document.getElementById('uploadInput');
+    const downloadBtn = document.getElementById('downloadBtn');
+
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+
+    let userImg = null;
+    let userScale = 1;
+    let userOffset = { x: 0, y: 0 };
+    const displayScale = 2;
+
+    const frameImg = new Image();
+    frameImg.crossOrigin = "anonymous";
+    frameImg.src = "https://suvashlamichhane.com/img/newFrame4.png";
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (userImg) {
+        const imgWidth = userImg.width * userScale * displayScale;
+        const imgHeight = userImg.height * userScale * displayScale;
+        ctx.drawImage(userImg, userOffset.x * displayScale, userOffset.y * displayScale, imgWidth, imgHeight);
+      }
+      if (frameImg.complete) {
+        ctx.drawImage(frameImg, 0, 0, canvas.width, canvas.height);
+      }
+    }
+
+    uploadInput.addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      uploadInput.disabled = true; // Disable input during load
+      const reader = new FileReader();
+      reader.onload = () => {
+        const img = new Image();
+        img.onload = () => {
+          userImg = img;
+          userScale = canvas.width / img.width / displayScale;
+          userOffset = {
+            x: (canvas.width / displayScale - img.width * userScale) / 2,
+            y: (canvas.height / displayScale - img.height * userScale) / 2
+          };
+          draw();
+          downloadBtn.classList.remove('hidden');
+          uploadInput.disabled = false;
+        };
+        img.src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    });
+
+    function move(dx, dy) {
+      if (!userImg) return;
+      userOffset.x += dx;
+      userOffset.y += dy;
+      draw();
+    }
+
+    function zoom(delta) {
+      if (!userImg) return;
+      const oldScale = userScale;
+      userScale += delta;
+      userScale = Math.max(0.1, Math.min(5, userScale));
+      const centerX = (canvas.width / displayScale) / 2;
+      const centerY = (canvas.height / displayScale) / 2;
+      userOffset.x = centerX - (centerX - userOffset.x) * (userScale / oldScale);
+      userOffset.y = centerY - (centerY - userOffset.y) * (userScale / oldScale);
+      draw();
+    }
+
+    downloadBtn.addEventListener('click', () => {
+      const link = document.createElement('a');
+      link.download = 'framed-photo.png';
+      link.href = canvas.toDataURL('image/png', 1.0);
+      link.click();
+    });
+
+    frameImg.onload = draw;
+  </script>
+</body>
+</html>
