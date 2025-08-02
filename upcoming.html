@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 30px;
+      background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
+      color: #dfe6e9;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 0;
+      background: linear-gradient(to right, #74b9ff, #55efc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .theme-icon {
+      font-size: 1.5rem;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .event-card {
+      background: linear-gradient(145deg, #34495e, #2c3e50);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .event-card.today {
+      border-left: 6px solid #55efc4;
+      background: linear-gradient(145deg, #2d6a4f, #1b4332);
+    }
+
+    .event-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 8px;
+      color: #dfe6e9;
+    }
+
+    .event-date {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      color: #b2bec3;
+      margin: 0 0 8px;
+    }
+
+    .event-countdown {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      color: #74b9ff;
+    }
+
+    .event-countdown.today {
+      color: #55efc4;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Upcoming Events</h1>
+      <span class="theme-icon">🌙</span>
+    </div>
+    <div id="events"></div>
+  </div>
+  <script>
+    
+    const recurringEvents = [ // Birthday Like Days
+      { title: "New Year's Day", date: "01-01" },
+      { title: "Independence Day", date: "07-04" },
+      { title: "Christmas", date: "12-25" }
+    ];
+
+    
+
+    const oneTimeEvents = [ // One Time Events Only
+      { title: "Gakko Resume", date: "2025-08-24" }
+    ];
+
+    function getNextOccurrence(recurringDate) {
+      const today = new Date();
+      const [month, day] = recurringDate.split('-').map(Number);
+      let year = today.getFullYear();
+      let nextDate = new Date(year, month - 1, day);
+      if (nextDate < today) {
+        nextDate = new Date(year + 1, month - 1, day);
+      }
+      return nextDate;
+    }
+
+    function formatDate(date) {
+      return date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
+    }
+
+    function calculateDaysDiff(date) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const eventDate = new Date(date);
+      eventDate.setHours(0, 0, 0, 0);
+      const diffTime = eventDate - today;
+      const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+      return diffDays;
+    }
+
+    function getEvents() {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const allEvents = [];
+
+      recurringEvents.forEach(event => {
+        const nextDate = getNextOccurrence(event.date);
+        allEvents.push({
+          title: event.title,
+          date: nextDate,
+          isRecurring: true
+        });
+      });
+
+      oneTimeEvents.forEach(event => {
+        const eventDate = new Date(event.date);
+        if (eventDate >= today) {
+          allEvents.push({
+            title: event.title,
+            date: eventDate,
+            isRecurring: false
+          });
+        }
+      });
+
+      allEvents.sort((a, b) => {
+        const daysDiffA = calculateDaysDiff(a.date);
+        const daysDiffB = calculateDaysDiff(b.date);
+        if (daysDiffA >= 0 && daysDiffB >= 0) return daysDiffA - daysDiffB;
+        return daysDiffA >= 0 ? -1 : 1;
+      });
+
+      return allEvents;
+    }
+
+    function renderEvents() {
+      const eventsContainer = document.getElementById('events');
+      const events = getEvents();
+      eventsContainer.innerHTML = '';
+
+      events.forEach(event => {
+        const daysDiff = calculateDaysDiff(event.date);
+        const card = document.createElement('div');
+        card.className = `event-card ${daysDiff === 0 ? 'today' : ''}`;
+
+        const title = document.createElement('div');
+        title.className = 'event-title';
+        title.textContent = event.title;
+
+        const date = document.createElement('div');
+        date.className = 'event-date';
+        date.textContent = formatDate(event.date);
+
+        const countdown = document.createElement('div');
+        countdown.className = 'event-countdown';
+        if (daysDiff === 0) {
+          countdown.textContent = '🎉 Happening Today!';
+          countdown.classList.add('today');
+        } else if (daysDiff > 0) {
+          countdown.textContent = `${daysDiff} day${daysDiff === 1 ? '' : 's'} remaining`;
+        } else {
+          countdown.textContent = `${Math.abs(daysDiff)} day${Math.abs(daysDiff) === 1 ? '' : 's'} ago`;
+        }
+
+        card.appendChild(title);
+        card.appendChild(date);
+        card.appendChild(countdown);
+        eventsContainer.appendChild(card);
+      });
+    }
+
+    window.onload = () => {
+      renderEvents();
+    };
+  </script>
+</body>
+</html>
