@@ -97,16 +97,13 @@
     <div id="events"></div>
   </div>
   <script>
-    
-    const recurringEvents = [ // Birthday Like Days
+    const recurringEvents = [
       { title: "New Year's Day", date: "01-01" },
       { title: "Independence Day", date: "07-04" },
       { title: "Christmas", date: "12-25" }
     ];
 
-    
-
-    const oneTimeEvents = [ // One Time Events Only
+    const oneTimeEvents = [
       { title: "Gakko Resume", date: "2025-08-24" }
     ];
 
@@ -190,7 +187,7 @@
 
         const date = document.createElement('div');
         date.className = 'event-date';
-        date.textContent = formatDate(event.date);
+        date.textContent = `📅 ${formatDate(event.date)}`;
 
         const countdown = document.createElement('div');
         countdown.className = 'event-countdown';
