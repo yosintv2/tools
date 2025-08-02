@@ -24,7 +24,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     h1 {
@@ -41,6 +41,26 @@
       font-size: 1.5rem;
       padding: 10px;
       border-radius: 50%;
+    }
+
+    .search-bar {
+      margin-bottom: 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #34495e;
+      color: #dfe6e9;
+      outline: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .search-bar input::placeholder {
+      color: #b2bec3;
     }
 
     .event-card {
@@ -94,6 +114,9 @@
       <h1>Upcoming Events</h1>
       <span class="theme-icon">🌙</span>
     </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search events by title..." oninput="renderEvents()">
+    </div>
     <div id="events"></div>
   </div>
   <script>
@@ -139,6 +162,7 @@
     function getEvents() {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
+      const searchQuery = document.getElementById('searchInput').value.toLowerCase();
       const allEvents = [];
 
       recurringEvents.forEach(event => {
@@ -161,14 +185,16 @@
         }
       });
 
-      allEvents.sort((a, b) => {
+      const filteredEvents = allEvents.filter(event => event.title.toLowerCase().includes(searchQuery));
+
+      filteredEvents.sort((a, b) => {
         const daysDiffA = calculateDaysDiff(a.date);
         const daysDiffB = calculateDaysDiff(b.date);
         if (daysDiffA >= 0 && daysDiffB >= 0) return daysDiffA - daysDiffB;
         return daysDiffA >= 0 ? -1 : 1;
       });
 
-      return allEvents;
+      return filteredEvents;
     }
 
     function renderEvents() {
