@@ -2,42 +2,40 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>日本語表現 - 毎日読解</title>
   <style>
     body {
       font-family: "Yu Gothic", sans-serif;
-      background-color: #f4f4f4;
-      padding: 20px;
+      background-color: #f9f9f9;
       color: #333;
+      padding: 20px;
     }
     h1 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
-    .content {
-      max-width: 900px;
-      margin: 0 auto;
+    .container {
+      max-width: 800px;
+      margin: auto;
       background: #fff;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .content p {
-      margin-bottom: 20px;
+    p {
       line-height: 1.8;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 <body>
 
   <h1>日本語表現 - 毎日読解</h1>
-
-  <div class="content" id="dailyText"></div>
+  <div class="container" id="dailyText"></div>
 
   <script>
-    const text1 = `
-みなさん こんにちは！Bite size Japanese の レイラです。
+    const text1 = `みなさん こんにちは！Bite size Japanese の レイラです。
 
 きょうは「め」、この かおにある「め」をつかう
 
@@ -591,29 +589,38 @@
 
 よろしく おねがいします。
 
-じゃあ みなさん、きょうは ほんとうに おつかれさまでした！
-`;
+じゃあ みなさん、きょうは ほんとうに おつかれさまでした！`;
+    const text2 = `きょうは「め」、この かおにある「め」をつかういろんな ひょうげんを 20こ、しょうかいしたいとおもいます。`;
+    const text3 = `めをひく（目を引く）`;
+    const text4 = `目立つという意味ですね。人やものに つかいます。`;
+    const text5 = `あのせいとは おしゃれで、いつも目をひきます。`;
+    const text6 = `目がない（目がない）`;
+    const text7 = `何かが大すきで、がまんできない、という意味。`;
+    const text8 = `わたしは あまいものに目がないんです。`;
+    const text9 = `目にする（目にする）`;
+    const text10 = `実際に見ること、見かけること。`;
+    const text11 = `あの人のブログ、よく目にしますよね。`;
+    const text12 = `目を通す（目を通す）`;
+    const text13 = `ざっと読むこと。`;
+    const text14 = `会議のまえに、このしりょうに目を通してください。`;
+    const text15 = `目に入る（目に入る）`;
+    const text16 = `意識しないで見ること。`;
+    const text17 = `道を歩いていたら、かわいいいぬが目に入りました。`;
+    const text18 = `目からうろこが落ちる（目からうろこが落ちる）`;
+    const text19 = `何かにきづくこと、はっとすること。`;
+    const text20 = `この本を読んで、目からうろこが落ちました。`;
 
-    const text2 = `
-つぎの ひょうげんは、「耳」に かんする ものです。
+    const texts = [
+      text1, text2, text3, text4, text5,
+      text6, text7, text8, text9, text10,
+      text11, text12, text13, text14, text15,
+      text16, text17, text18, text19, text20
+    ];
 
-にんげんの かおの パーツを つかった ひょうげんは、
-かんようく として とても よく つかわれます。
-`;
+    const randomIndex = Math.floor(Math.random() * texts.length);
+    const paragraph = texts[randomIndex];
 
-    const text3 = `
-たとえば、「耳がいたい」は、ひとからの ちゅうこくや
-アドバイスが じぶんに あてはまって、つらいときに つかいます。
-`;
-
-    const paragraphs = [text1, text2, text3];
-    const container = document.getElementById("dailyText");
-
-    paragraphs.forEach(text => {
-      const p = document.createElement("p");
-      p.textContent = text.trim();
-      container.appendChild(p);
-    });
+    document.getElementById("dailyText").innerHTML = `<p>${paragraph}</p>`;
   </script>
 
 </body>
