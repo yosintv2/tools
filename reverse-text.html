@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Text Tool - Free Online Text Reversal</title>
+    <meta name="description" content="A free online tool to reverse text instantly. Enter your text and get it reversed (e.g., 'hello' to 'olleh'). Supports copy-to-clipboard and is compatible with all devices.">
+    <meta name="keywords" content="reverse text, text reversal tool, free text reverser, online text reverser, flip text, backwards text generator, reverse string tool, text inverter, reverse text online, text flipper, string reverser, text manipulation tool, reverse words, text reverse converter, text formatting tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Reverse Text Tool Team">
+    <meta property="og:title" content="Reverse Text Tool - Free Online Text Reversal">
+    <meta property="og:description" content="Instantly reverse text with our free online tool. Transform 'hello' to 'olleh' with ease, featuring copy-to-clipboard functionality. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/reverse-text">
+    <meta property="og:image" content="https://example.com/images/reverse-text-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reverse Text Tool - Free Online Text Reversal">
+    <meta name="twitter:description" content="Instantly reverse text with our free online tool. Transform 'hello' to 'olleh' with ease, featuring copy-to-clipboard functionality. Works on all devices.">
+    <meta name="twitter:image" content="https://example.com/images/reverse-text-og.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-backward text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Reverse Text Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Instantly reverse your text with this free online tool. Transform 'hello' to 'olleh' and copy the result easily.</p>
+        </header>
+
+        <!-- Reverse Text Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Enter Text to Reverse</label>
+                    <textarea id="inputText" placeholder="Enter text to reverse (e.g., 'hello' becomes 'olleh')..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y"></textarea>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="reverseBtn" class="action-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Reverse
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-auto bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-auto bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Reversed Text</label>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y" placeholder="Reversed text will appear here..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">About Reverse Text Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Reverse Text Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Reverse Text Tool is a free online utility that reverses the order of characters in your text. For example, entering 'hello' will output 'olleh'. It's perfect for creating reversed text for fun, puzzles, or specific formatting needs.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your text in the input field, then click "Reverse" to see the reversed text in the output field. Use the "Copy Result" button to copy the reversed text to your clipboard, or "Reset" to clear the form. The tool is secure, runs entirely in your browser, and is compatible with all devices, including mobile.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Reverse Text Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    This tool is free, fast, and easy to use, making it ideal for creating reversed text for creative projects, coding, or text manipulation tasks. The copy-to-clipboard feature and responsive design ensure a seamless experience for students, developers, or anyone needing to reverse text quickly.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function reverseText() {
+            const input = document.getElementById('inputText').value;
+            const resultText = document.getElementById('resultText');
+            const reversed = input.split('').reverse().join('');
+            resultText.value = reversed;
+        }
+
+        document.getElementById('reverseBtn').addEventListener('click', reverseText);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('resultText').value = '';
+        });
+
+        // Update result on input
+        document.getElementById('inputText').addEventListener('input', reverseText);
+    </script>
+</body>
+</html>
