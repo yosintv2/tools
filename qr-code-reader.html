@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>QR Code Reader Tool - Free Online QR Code Scanner</title>
+    <meta name="description" content="A free online QR Code reader tool to scan QR codes using your camera or upload images. Decode QR codes instantly and copy results. Works on all devices.">
+    <meta name="keywords" content="qr code reader, qr code scanner, free qr code reader, online qr code scanner, qr code decoder, scan qr code online, qr code reader tool, qr code image reader, qr code scanner free, qr code text decoder, qr code reader online, qr code scan tool, qr code reader camera, qr code reader upload, qr code reader mobile">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="QR Code Reader Tool Team">
+    <meta property="og:title" content="QR Code Reader Tool - Free Online QR Code Scanner">
+    <meta property="og:description" content="Scan QR codes using your camera or upload images with our free online QR code reader. Decode and copy results instantly. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/qr-code-reader">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QR Code Reader Tool - Free Online QR Code Scanner">
+    <meta name="twitter:description" content="Scan QR codes using your camera or upload images with our free online QR code reader. Decode and copy results instantly. Works on all devices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/jsqr@1.4.0/dist/jsQR.js"></script>
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        #videoContainer video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-qrcode text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">QR Code Reader Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Scan QR codes using your camera or upload an image with this free online tool. Compatible with all devices.</p>
+        </header>
+
+        <!-- QR Code Reader Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button type="button" id="scanBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Scan</button>
+                        <button type="button" id="uploadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Upload</button>
+                    </div>
+                    <input type="file" id="imageInput" accept="image/*" class="hidden">
+                    <div class="flex justify-center mb-4">
+                        <div id="videoContainer" class="hidden">
+                            <video id="video" autoplay playsinline class="rounded-lg"></video>
+                        </div>
+                        <canvas id="canvas" class="hidden"></canvas>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Decoded Result</label>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y" placeholder="Decoded QR code content will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 text-center hidden">Error: Unable to decode QR code. Please try again.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About QR Code Reader Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the QR Code Reader Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The QR Code Reader Tool is a free online utility that scans QR codes using your device's camera or decodes them from uploaded images. This QR code scanner is ideal for anyone needing to quickly access URLs, contact details, or other information encoded in QR codes.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Click "Scan" to use your camera to read a QR code or "Upload" to select an image containing a QR code. The decoded content will appear in the result area. Use the "Copy Result" button to copy the decoded text or "Reset" to clear the form. This online QR code reader is secure, runs in your browser, and works on all devices for seamless QR code scanning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our QR Code Reader Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our QR code scanner is free, fast, and user-friendly, perfect for decoding QR codes in marketing materials, business cards, or digital content. The copy-to-clipboard feature and responsive design ensure a smooth experience on any device. This online QR code reader tool provides accurate scanning and decoding for all your needs.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let stream = null;
+        let mode = 'scan'; // Default mode: scan
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function toggleMode(newMode) {
+            mode = newMode;
+            const scanBtn = document.getElementById('scanBtn');
+            const uploadBtn = document.getElementById('uploadBtn');
+            const videoContainer = document.getElementById('videoContainer');
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (mode === 'scan') {
+                scanBtn.classList.add('active', 'bg-red-600', 'text-white');
+                scanBtn.classList.remove('bg-blue-600');
+                uploadBtn.classList.remove('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.add('bg-blue-600');
+                videoContainer.classList.remove('hidden');
+                startCamera();
+            } else {
+                uploadBtn.classList.add('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.remove('bg-red-600');
+                scanBtn.classList.remove('active', 'bg-red-600', 'text-white');
+                scanBtn.classList.add('bg-red-600');
+                videoContainer.classList.add('hidden');
+                stopCamera();
+            }
+            document.getElementById('resultText').value = '';
+            errorMessage.classList.add('hidden');
+        }
+
+        async function startCamera() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const errorMessage = document.getElementById('errorMessage');
+
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
+                video.srcObject = stream;
+                video.play();
+                scanQRCode();
+            } catch (e) {
+                errorMessage.textContent = 'Error: Unable to access camera. Please ensure camera access is allowed.';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        function stopCamera() {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                stream = null;
+            }
+            document.getElementById('videoContainer').classList.add('hidden');
+        }
+
+        function scanQRCode() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (!video.srcObject) return;
+
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            const code = jsQR(imageData.data, imageData.width, imageData.height);
+
+            if (code) {
+                resultText.value = code.data;
+                stopCamera();
+            } else {
+                requestAnimationFrame(scanQRCode);
+            }
+        }
+
+        function readQRCodeFromImage(file) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            const img = new Image();
+            img.onload = () => {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                const code = jsQR(imageData.data, imageData.width, imageData.height);
+
+                if (code) {
+                    resultText.value = code.data;
+                } else {
+                    errorMessage.textContent = 'Error: Unable to decode QR code from the image.';
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            };
+            img.onerror = () => {
+                errorMessage.textContent = 'Error: Invalid image file.';
+                errorMessage.classList.remove('hidden');
+                resultText.value = '';
+            };
+            img.src = URL.createObjectURL(file);
+        }
+
+        document.getElementById('scanBtn').addEventListener('click', () => toggleMode('scan'));
+        document.getElementById('uploadBtn').addEventListener('click', () => {
+            toggleMode('upload');
+            document.getElementById('imageInput').click();
+        });
+        document.getElementById('imageInput').addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                readQRCodeFromImage(e.target.files[0]);
+            }
+        });
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            stopCamera();
+            document.getElementById('imageInput').value = '';
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            toggleMode('scan');
+        });
+
+        // Initialize scan mode
+        toggleMode('scan');
+    </script>
+</body>
+</html>
