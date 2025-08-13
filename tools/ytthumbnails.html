@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .thumbnail-hover:hover {
+            transform: scale(1.02);
+            transition: transform 0.2s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-4xl">
+        <!-- Header Section -->
+        <div class="text-center mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fab fa-youtube text-red-600 text-4xl mr-3"></i>
+                <h1 class="text-3xl font-bold text-gray-800">YouTube Thumbnail Downloader</h1>
+            </div>
+            <p class="text-gray-600">Paste a YouTube video URL to instantly view and download all thumbnail formats.</p>
+        </div>
+        
+        <!-- URL Input -->
+        <div class="mb-8">
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fas fa-link text-gray-400"></i>
+                </div>
+                <input 
+                    id="youtubeUrl" 
+                    type="text" 
+                    placeholder="Enter YouTube video URL" 
+                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                >
+            </div>
+        </div>
+        
+        <!-- Thumbnails Container -->
+        <div id="thumbnailContainer" class="mt-8">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-semibold text-gray-800">
+                    <i class="fas fa-images text-red-500 mr-2"></i>
+                    Available Thumbnails
+                </h2>
+            </div>
+            
+            <!-- Primary Thumbnail -->
+            <div class="mb-8 bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <h3 id="primaryThumbnailLabel" class="text-lg font-semibold text-gray-800">
+                        <i class="fas fa-star text-yellow-500 mr-2"></i>
+                        Primary Thumbnail
+                    </h3>
+                    <span class="ml-auto bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Best Quality</span>
+                </div>
+                <a id="previewPrimary" target="_blank" class="block mb-4 thumbnail-hover">
+                    <img id="thumbnailPrimary" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGulVYznuO3AIXARkY4ta9Apteso_iDrlWyeOTrcP5cnf2WlmmBz8Pnpytk9HCo82yDdwPUs9DuEn15Z4g9jC9mnGhAeMrFMo9wju_OOjQxf_YRJLSmpnHSjEGKuM5tBOSRq4ccze-8q4/s16000/youtubethumbnaildownloader.png" alt="Primary Thumbnail" class="w-full rounded-lg shadow-md max-h-96 object-contain">
+                </a>
+                <button data-img="" data-name="" class="download-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center">
+                    <i class="fas fa-download mr-2"></i>
+                    Download
+                </button>
+            </div>
+
+            <!-- Other Thumbnails -->
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                <i class="fas fa-th-large text-red-500 mr-2"></i>
+                Other Thumbnail Formats
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4" id="otherThumbnails">
+                <!-- Medium Quality -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-700 mb-2">
+                        <i class="fas fa-image text-blue-500 mr-2"></i>
+                        Medium Quality
+                    </h3>
+                    <a target="_blank" class="block mb-3 thumbnail-hover">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGulVYznuO3AIXARkY4ta9Apteso_iDrlWyeOTrcP5cnf2WlmmBz8Pnpytk9HCo82yDdwPUs9DuEn15Z4g9jC9mnGhAeMrFMo9wju_OOjQxf_YRJLSmpnHSjEGKuM5tBOSRq4ccze-8q4/s16000/youtubethumbnaildownloader.png" class="w-full h-40 object-cover rounded-lg shadow-md">
+                    </a>
+                    <button data-img="" data-name="" class="download-btn w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>
+                        Download
+                    </button>
+                </div>
+                
+                <!-- Standard Definition -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-700 mb-2">
+                        <i class="fas fa-image text-purple-500 mr-2"></i>
+                        Standard Definition
+                    </h3>
+                    <a target="_blank" class="block mb-3 thumbnail-hover">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGulVYznuO3AIXARkY4ta9Apteso_iDrlWyeOTrcP5cnf2WlmmBz8Pnpytk9HCo82yDdwPUs9DuEn15Z4g9jC9mnGhAeMrFMo9wju_OOjQxf_YRJLSmpnHSjEGKuM5tBOSRq4ccze-8q4/s16000/youtubethumbnaildownloader.png" class="w-full h-40 object-cover rounded-lg shadow-md">
+                    </a>
+                    <button data-img="" data-name="" class="download-btn w-full bg-purple-600 text-white font-semibold py-2 rounded-lg hover:bg-purple-700 transition flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>
+                        Download
+                    </button>
+                </div>
+                
+                <!-- Default -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-700 mb-2">
+                        <i class="fas fa-image text-green-500 mr-2"></i>
+                        Default
+                    </h3>
+                    <a target="_blank" class="block mb-3 thumbnail-hover">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGulVYznuO3AIXARkY4ta9Apteso_iDrlWyeOTrcP5cnf2WlmmBz8Pnpytk9HCo82yDdwPUs9DuEn15Z4g9jC9mnGhAeMrFMo9wju_OOjQxf_YRJLSmpnHSjEGKuM5tBOSRq4ccze-8q4/s16000/youtubethumbnaildownloader.png" class="w-full h-40 object-cover rounded-lg shadow-md">
+                    </a>
+                    <button data-img="" data-name="" class="download-btn w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Error Message -->
+        <div id="errorMessage" class="mt-6 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-lg hidden">
+            <div class="flex">
+                <div class="flex-shrink-0 text-red-500">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="ml-3">
+                    <h3 class="text-sm font-medium text-red-800">Error</h3>
+                    <div class="mt-1 text-sm text-red-700">
+                        <p id="errorText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Original JavaScript (unchanged) -->
+    <script>
+        const youtubeUrlInput = document.getElementById('youtubeUrl');
+        const thumbnailPrimary = document.getElementById('thumbnailPrimary');
+        const previewPrimary = document.getElementById('previewPrimary');
+        const primaryDownloadBtn = previewPrimary.nextElementSibling;
+        const otherThumbnailsContainer = document.getElementById('otherThumbnails');
+
+        const secondaryThumbs = [
+            { type: 'mqdefault', label: 'Medium Quality', name: 'mqres' },
+            { type: 'sddefault', label: 'Standard Definition', name: 'sdres' },
+            { type: 'default', label: 'Default', name: 'default' }
+        ];
+
+        function extractVideoId(url) {
+            const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
+
+        function preloadImage(url) {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = url;
+                img.onload = () => resolve();
+                img.onerror = () => reject();
+            });
+        }
+
+        async function downloadImage(url, filename) {
+            try {
+                const res = await fetch(url, { mode: 'cors' });
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const blob = await res.blob();
+                const a = document.createElement('a');
+                const objectURL = URL.createObjectURL(blob);
+                a.href = objectURL;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                URL.revokeObjectURL(objectURL);
+            } catch {
+                window.open(url, '_blank'); // Fallback for CORS-blocked images
+            }
+        }
+
+        let debounceTimeout;
+        youtubeUrlInput.addEventListener('input', () => {
+            clearTimeout(debounceTimeout);
+            debounceTimeout = setTimeout(async () => {
+                const url = youtubeUrlInput.value.trim();
+                const videoId = extractVideoId(url);
+                if (!videoId) return;
+
+                // Primary thumbnail
+                let primaryUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+                try {
+                    await preloadImage(primaryUrl);
+                } catch {
+                    primaryUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                }
+                thumbnailPrimary.src = primaryUrl;
+                previewPrimary.href = primaryUrl;
+                primaryDownloadBtn.dataset.img = primaryUrl;
+                primaryDownloadBtn.dataset.name = `thumbnail_${videoId}_primary.jpg`;
+
+                // Secondary thumbnails
+                otherThumbnailsContainer.innerHTML = '';
+                for (const t of secondaryThumbs) {
+                    const thumbUrl = `https://img.youtube.com/vi/${videoId}/${t.type}.jpg`;
+                    try {
+                        await preloadImage(thumbUrl);
+                        const div = document.createElement('div');
+                        div.innerHTML = `
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                <h3 class="text-lg font-medium text-gray-700 mb-2">
+                                    <i class="fas fa-image ${t.type === 'mqdefault' ? 'text-blue-500' : t.type === 'sddefault' ? 'text-purple-500' : 'text-green-500'} mr-2"></i>
+                                    ${t.label}
+                                </h3>
+                                <a href="${thumbUrl}" target="_blank" class="block mb-3 thumbnail-hover">
+                                    <img src="${thumbUrl}" class="w-full h-40 object-cover rounded-lg shadow-md">
+                                </a>
+                                <button data-img="${thumbUrl}" data-name="thumbnail_${videoId}_${t.name}.jpg" class="download-btn w-full ${t.type === 'mqdefault' ? 'bg-blue-600 hover:bg-blue-700' : t.type === 'sddefault' ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} text-white font-semibold py-2 rounded-lg transition flex items-center justify-center">
+                                    <i class="fas fa-download mr-2"></i>
+                                    Download
+                                </button>
+                            </div>
+                        `;
+                        otherThumbnailsContainer.appendChild(div);
+                    } catch {}
+                }
+            }, 300);
+        });
+
+        document.addEventListener('click', e => {
+            if (e.target.classList.contains('download-btn')) {
+                const imgUrl = e.target.dataset.img;
+                const filename = e.target.dataset.name;
+                if (imgUrl && filename) {
+                    e.target.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Downloading...';
+                    downloadImage(imgUrl, filename);
+                    setTimeout(() => {
+                        e.target.innerHTML = '<i class="fas fa-download mr-2"></i> Download';
+                    }, 1000);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
