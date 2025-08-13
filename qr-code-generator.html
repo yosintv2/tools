@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>QR Code Generator Tool - Free Online QR Code Creator</title>
+    <meta name="description" content="A free online QR Code generator tool to create customizable QR codes from URLs or text. Supports size adjustment, error correction, copy-to-clipboard, and download. Works on all devices.">
+    <meta name="keywords" content="qr code generator, free qr code tool, online qr code creator, qr code maker, custom qr code generator, qr code creator, qr code builder, generate qr code online, qr code for url, qr code for text, qr code scanner, qr code design tool, qr code customization, qr code download, qr code generator free">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="QR Code Generator Tool Team">
+    <meta property="og:title" content="QR Code Generator Tool - Free Online QR Code Creator">
+    <meta property="og:description" content="Create customizable QR codes from URLs or text with our free online tool. Adjust size, error correction, and download or copy the QR code. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/qr-code-generator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QR Code Generator Tool - Free Online QR Code Creator">
+    <meta name="twitter:description" content="Create customizable QR codes from URLs or text with our free online tool. Adjust size, error correction, and download or copy the QR code. Works on all devices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        #qrCodeCanvas {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-qrcode text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">QR Code Generator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Create customizable QR codes from URLs or text with this free online tool. Compatible with all devices.</p>
+        </header>
+
+        <!-- QR Code Generator Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Enter Text or URL</label>
+                    <input type="text" id="inputText" placeholder="Enter URL or text (e.g., https://example.com)" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base mb-4">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="w-full sm:w-1/2">
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">QR Code Size (px)</label>
+                            <input type="number" id="sizeInput" min="100" max="1000" value="200" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                        </div>
+                        <div class="w-full sm:w-1/2">
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Error Correction Level</label>
+                            <select id="errorCorrectionInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                                <option value="L">Low</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="Q">Quartile</option>
+                                <option value="H">High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <button type="button" id="generateBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-qrcode mr-2"></i>
+                            Generate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy URL
+                        </button>
+                        <button type="button" id="downloadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4 flex justify-center">
+                    <div id="qrCodeCanvas" class="bg-white p-4 rounded-lg border border-gray-300"></div>
+                </div>
+                <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 text-center hidden">Error: Please enter a valid URL or text.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About QR Code Generator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the QR Code Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The QR Code Generator Tool is a free online utility that creates customizable QR codes from URLs or text. This QR code maker is ideal for marketers, developers, and designers needing quick, scannable codes for websites, contact details, or promotional content.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter a URL or text in the input field, adjust the QR code size and error correction level, then click "Generate" to create the QR code. Use the "Copy URL" button to copy the input text, "Download" to save the QR code as an image, or "Reset" to clear the form. This online QR code generator is secure, runs in your browser, and works on all devices for seamless QR code creation.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our QR Code Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our QR code creator is free, fast, and user-friendly, perfect for generating QR codes for business cards, websites, or marketing materials. Customize size and error correction for optimal scanning. The copy-to-clipboard and download features, along with responsive design, ensure a smooth experience on any device. This online QR code generator tool is your go-to solution for accurate QR code creation.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let qrCodeInstance = null;
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function validateInput(input) {
+            if (!input.trim()) {
+                throw new Error('Please enter a valid URL or text.');
+            }
+            // Basic URL validation
+            if (input.startsWith('http://') || input.startsWith('https://')) {
+                try {
+                    new URL(input);
+                } catch {
+                    throw new Error('Invalid URL format.');
+                }
+            }
+        }
+
+        function generateQRCode() {
+            const input = document.getElementById('inputText').value;
+            const size = parseInt(document.getElementById('sizeInput').value) || 200;
+            const errorCorrection = document.getElementById('errorCorrectionInput').value;
+            const qrCodeCanvas = document.getElementById('qrCodeCanvas');
+            const errorMessage = document.getElementById('errorMessage');
+
+            errorMessage.classList.add('hidden');
+            qrCodeCanvas.innerHTML = '';
+
+            try {
+                validateInput(input);
+                qrCodeInstance = new QRCode(qrCodeCanvas, {
+                    text: input,
+                    width: size,
+                    height: size,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel[errorCorrection]
+                });
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+                qrCodeCanvas.innerHTML = '';
+            }
+        }
+
+        function downloadQRCode() {
+            const qrCanvas = document.getElementById('qrCodeCanvas').querySelector('canvas');
+            if (qrCanvas) {
+                const link = document.createElement('a');
+                link.href = qrCanvas.toDataURL('image/png');
+                link.download = 'qrcode.png';
+                link.click();
+            }
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', generateQRCode);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const input = document.getElementById('inputText').value;
+            if (input) {
+                navigator.clipboard.writeText(input);
+                showPopup();
+            }
+        });
+        document.getElementById('downloadBtn').addEventListener('click', downloadQRCode);
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('sizeInput').value = '200';
+            document.getElementById('errorCorrectionInput').value = 'M';
+            document.getElementById('qrCodeCanvas').innerHTML = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            qrCodeInstance = null;
+        });
+        document.getElementById('inputText').addEventListener('input', generateQRCode);
+        document.getElementById('sizeInput').addEventListener('input', generateQRCode);
+        document.getElementById('errorCorrectionInput').addEventListener('change', generateQRCode);
+
+        // Initialize with empty QR code
+        generateQRCode();
+    </script>
+</body>
+</html>
