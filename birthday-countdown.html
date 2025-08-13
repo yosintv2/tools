@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Birthday Countdown Tool - Free Online Birthday Timer</title>
+    <meta name="description" content="A free online Birthday Countdown tool to track the time until your next birthday. Displays days, hours, minutes, and seconds with real-time updates. Supports copy-to-clipboard and works on all devices.">
+    <meta name="keywords" content="birthday countdown, birthday timer, free birthday countdown tool, online birthday countdown, birthday countdown clock, birthday timer online, countdown to birthday, birthday countdown generator, birthday date calculator, birthday countdown app, online birthday timer, birthday event countdown, birthday reminder tool, countdown timer for birthday, birthday countdown widget">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Birthday Countdown Tool Team">
+    <meta property="og:title" content="Birthday Countdown Tool - Free Online Birthday Timer">
+    <meta property="og:description" content="Track the time until your next birthday with our free online countdown tool. Displays days, hours, minutes, and seconds with real-time updates. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/birthday-countdown">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Birthday Countdown Tool - Free Online Birthday Timer">
+    <meta name="twitter:description" content="Track the time until your next birthday with our free online countdown tool. Displays days, hours, minutes, and seconds with real-time updates. Works on all devices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .countdown-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .countdown-item {
+            flex: 1;
+            text-align: center;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-birthday-cake text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Birthday Countdown Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Track the time until your next birthday with this free online countdown timer. Compatible with all devices.</p>
+        </header>
+
+        <!-- Birthday Countdown Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Select Birthday Date</label>
+                    <input type="date" id="dateInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base mb-4">
+                    <div class="flex flex-wrap gap-2">
+                        <button type="button" id="startBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-play mr-2"></i>
+                            Start
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Countdown</label>
+                    <div class="countdown-box">
+                        <div class="countdown-item">
+                            <span id="days" class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">0</span>
+                            <p class="text-xs sm:text-sm md:text-base text-gray-600">Days</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours" class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">0</span>
+                            <p class="text-xs sm:text-sm md:text-base text-gray-600">Hours</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes" class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">0</span>
+                            <p class="text-xs sm:text-sm md:text-base text-gray-600">Minutes</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds" class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">0</span>
+                            <p class="text-xs sm:text-sm md:text-base text-gray-600">Seconds</p>
+                        </div>
+                    </div>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 text-center hidden">Error: Please select a valid future date.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Birthday Countdown Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Birthday Countdown Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Birthday Countdown Tool is a free online utility that calculates the time remaining until your next birthday. This birthday timer displays days, hours, minutes, and seconds, making it perfect for planning celebrations or sharing countdowns.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select your birthday date using the date picker, then click "Start" to begin the countdown. The tool updates in real-time, showing the time left until your birthday. Use the "Copy Result" button to share the countdown text or "Reset" to clear the form. This online birthday countdown tool is secure, runs in your browser, and works on all devices for seamless tracking.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Birthday Countdown Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our birthday countdown clock is free, accurate, and user-friendly, ideal for individuals planning birthday events or sharing countdowns with friends. The real-time updates and copy-to-clipboard feature, along with responsive design, ensure a smooth experience on any device. This online birthday timer is your go-to solution for tracking birthdays with precision.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let countdownInterval = null;
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function validateDate(date) {
+            const selectedDate = new Date(date);
+            const now = new Date();
+            // Adjust current date to exclude time for comparison
+            now.setHours(0, 0, 0, 0);
+            if (isNaN(selectedDate)) {
+                throw new Error('Please select a valid date.');
+            }
+            // Adjust selected date to next occurrence of birthday
+            selectedDate.setFullYear(now.getFullYear());
+            if (selectedDate < now) {
+                selectedDate.setFullYear(now.getFullYear() + 1);
+            }
+            return selectedDate;
+        }
+
+        function updateCountdown(targetDate) {
+            const now = new Date();
+            const timeDiff = targetDate - now;
+
+            if (timeDiff <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('days').textContent = '0';
+                document.getElementById('hours').textContent = '0';
+                document.getElementById('minutes').textContent = '0';
+                document.getElementById('seconds').textContent = '0';
+                document.getElementById('errorMessage').textContent = 'Birthday has arrived!';
+                document.getElementById('errorMessage').classList.remove('hidden');
+                return;
+            }
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+
+        function startCountdown() {
+            const dateInput = document.getElementById('dateInput').value;
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            if (!dateInput) {
+                document.getElementById('days').textContent = '0';
+                document.getElementById('hours').textContent = '0';
+                document.getElementById('minutes').textContent = '0';
+                document.getElementById('seconds').textContent = '0';
+                return;
+            }
+
+            try {
+                const targetDate = validateDate(dateInput);
+                clearInterval(countdownInterval);
+                updateCountdown(targetDate);
+                countdownInterval = setInterval(() => updateCountdown(targetDate), 1000);
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+                document.getElementById('days').textContent = '0';
+                document.getElementById('hours').textContent = '0';
+                document.getElementById('minutes').textContent = '0';
+                document.getElementById('seconds').textContent = '0';
+                clearInterval(countdownInterval);
+            }
+        }
+
+        document.getElementById('startBtn').addEventListener('click', startCountdown);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const dateInput = document.getElementById('dateInput').value;
+            if (dateInput) {
+                const days = document.getElementById('days').textContent;
+                const hours = document.getElementById('hours').textContent;
+                const minutes = document.getElementById('minutes').textContent;
+                const seconds = document.getElementById('seconds').textContent;
+                const text = `Birthday Countdown: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds until ${dateInput}`;
+                navigator.clipboard.writeText(text);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            clearInterval(countdownInterval);
+            document.getElementById('dateInput').value = '';
+            document.getElementById('days').textContent = '0';
+            document.getElementById('hours').textContent = '0';
+            document.getElementById('minutes').textContent = '0';
+            document.getElementById('seconds').textContent = '0';
+            document.getElementById('errorMessage').classList.add('hidden');
+        });
+        document.getElementById('dateInput').addEventListener('change', startCountdown);
+
+        // Initialize with no countdown
+        document.getElementById('days').textContent = '0';
+        document.getElementById('hours').textContent = '0';
+        document.getElementById('minutes').textContent = '0';
+        document.getElementById('seconds').textContent = '0';
+    </script>
+</body>
+</html>
