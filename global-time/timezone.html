@@ -72,8 +72,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Local Time</td><td id="local-datetime" class="loading">Loading...</td></tr>
-                    <tr><td>API Time</td><td id="datetime" class="loading">Fetching...</td></tr>
+                    <tr><td>Selected Time</td><td id="datetime" class="loading">Fetching...</td></tr>
                     <tr><td>Timezone</td><td id="timezone" class="loading">Fetching...</td></tr>
                     <tr><td>UTC Offset</td><td id="utc_offset" class="loading">Fetching...</td></tr>
                     <tr><td>Day of Week</td><td id="day_of_week" class="loading">Fetching...</td></tr>
@@ -105,23 +104,6 @@
     }
     </script>
     <script>
-        // Update local time in JST as fallback
-        function updateLocalDateTime() {
-            const now = new Date();
-            const options = {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
-                hour12: true,
-                timeZone: 'Asia/Tokyo' // JST
-            };
-            const formattedDateTime = now.toLocaleString('en-US', options);
-            document.getElementById('local-datetime').textContent = formattedDateTime;
-        }
-
         // Fetch data from WorldTimeAPI
         async function fetchAPIData(timezone) {
             const apiUrl = `https://corsproxy.io/?url=http://worldtimeapi.org/api/timezone/${timezone}`;
@@ -174,9 +156,7 @@
 
             } catch (error) {
                 console.error('API fetch error:', error);
-                // Fallback to local time
-                updateLocalDateTime();
-                document.getElementById('datetime').textContent = 'API unavailable (using local JST time)';
+                document.getElementById('datetime').textContent = 'API unavailable';
                 document.getElementById('timezone').textContent = 'N/A';
                 document.getElementById('utc_offset').textContent = 'N/A';
                 document.getElementById('day_of_week').textContent = 'N/A';
@@ -193,16 +173,12 @@
                 // Set fallback SEO meta tags
                 document.getElementById('dynamic-title').textContent = `Time and Date for ${timezone}`;
                 document.getElementById('title').textContent = `Time and Date for ${timezone}`;
-                document.getElementById('dynamic-description').setAttribute('content', `Unable to fetch time for ${timezone}. Showing local JST time.`);
+                document.getElementById('dynamic-description').setAttribute('content', `Unable to fetch time for ${timezone}.`);
                 document.getElementById('dynamic-keywords').setAttribute('content', `${timezone} time, time and date, world time`);
                 document.getElementById('og-title').setAttribute('content', `Time and Date for ${timezone}`);
-                document.getElementById('og-description').setAttribute('content', `Unable to fetch time for ${timezone}. Showing local JST time.`);
+                document.getElementById('og-description').setAttribute('content', `Unable to fetch time for ${timezone}.`);
             }
         }
-
-        // Initialize
-        updateLocalDateTime();
-        setInterval(updateLocalDateTime, 1000); // Update local JST time every second
 
         // Get timezone from URL parameter
         const urlParams = new URLSearchParams(window.location.search);
