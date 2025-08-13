@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Tool - Free and Accurate Character and Line Counting</title>
+    <meta name="description" content="A free and accurate word counter tool to count characters and lines in your text. Supports full-width and half-width character calculations, with or without spaces, and line counting. Perfect for writers and SEO optimization.">
+    <meta name="keywords" content="word counter, character counter, text counter, free word counter, character count tool, line counter, full-width character counter, half-width character counter, text analysis, word count online, character count with spaces, character count without spaces, SEO word counter, text character counter, online character counter, writing tool, text length calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Word Counter Team">
+    <meta property="og:title" content="Word Counter Tool - Free and Accurate Character and Line Counting">
+    <meta property="og:description" content="Count characters and lines in your text with our free tool. Supports full-width and half-width character calculations, with or without spaces, and line counting. Ideal for writers and SEO.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/word-counter">
+    <meta property="og:image" content="https://example.com/images/word-counter-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Word Counter Tool - Free and Accurate Character and Line Counting">
+    <meta name="twitter:description" content="Count characters and lines in your text with our free tool. Supports full-width and half-width character calculations, with or without spaces, and line counting. Ideal for writers and SEO.">
+    <meta name="twitter:image" content="https://example.com/images/word-counter-og.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .count-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .count-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-text-height text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Word Counter Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Count characters and lines in your text with customizable settings. Supports full-width and half-width calculations, with or without spaces.</p>
+        </header>
+
+        <!-- Word Counter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Enter Your Text</label>
+                    <textarea id="inputText" placeholder="Enter the text you want to check the number of characters for..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y"></textarea>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="countBtn" class="count-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Count
+                        </button>
+                        <button type="button" id="resetBtn" class="count-btn w-full sm:w-auto bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="text-xs sm:text-sm md:text-base font-semibold text-gray-800 p-2 text-left border-b border-gray-200">Metric</th>
+                                <th class="text-xs sm:text-sm md:text-base font-semibold text-gray-800 p-2 text-right border-b border-gray-200">Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-xs sm:text-sm md:text-base text-gray-600 p-2 border-b border-gray-200">Characters (including spaces)</td>
+                                <td class="text-xs sm:text-sm md:text-base font-semibold text-gray-800 p-2 text-right border-b border-gray-200" id="charCountWithSpaces">0</td>
+                            </tr>
+                            <tr>
+                                <td class="text-xs sm:text-sm md:text-base text-gray-600 p-2 border-b border-gray-200">Characters (excluding spaces)</td>
+                                <td class="text-xs sm:text-sm md:text-base font-semibold text-gray-800 p-2 text-right border-b border-gray-200" id="charCountNoSpaces">0</td>
+                            </tr>
+                            <tr>
+                                <td class="text-xs sm:text-sm md:text-base text-gray-600 p-2 border-b border-gray-200">Characters (full-width = 1, half-width = 0.5)</td>
+                                <td class="text-xs sm:text-sm md:text-base font-semibold text-gray-800 p-2 text-right border-b border-gray-200" id="charCountWeighted">0</td>
+                            </tr>
+                            <tr>
+                                <td class="text-xs sm:text-sm md:text-base text-gray-600 p-2 border-b border-gray-200">Characters (full-width = 1, half-width = 0.5, no spaces)</td>
+                                <td class="text-xs sm:text-sm md:text-base font-semibold text-gray-800 p-2 text-right border-b border-gray-200" id="charCountWeightedNoSpaces">0</td>
+                            </tr>
+                            <tr>
+                                <td class="text-xs sm:text-sm md:text-base text-gray-600 p-2 border-b border-gray-200">Number of lines</td>
+                                <td class="text-xs sm:text-sm md:text-base font-semibold text-gray-800 p-2 text-right border-b border-gray-200" id="lineCount">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Use Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">How to Use</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Number of Characters (Full-width and Half-width as One)</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The number of characters is calculated by counting both full-width and half-width characters as one character. Line breaks are not counted.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Number of Characters (Full-width = 1, Half-width = 0.5)</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The number of characters is displayed, counting full-width characters as 1 character and half-width characters as 0.5 characters. Line breaks are not counted.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Number of Characters (Excluding Spaces, Full-width and Half-width as One)</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The number of characters is displayed, with both full-width and half-width characters counted as one character, excluding line breaks and spaces (full-width and half-width spaces).
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Number of Characters (Excluding Spaces, Full-width = 1, Half-width = 0.5)</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The number of characters is displayed, excluding line breaks and spaces (full-width and half-width spaces), with full-width characters counted as 1 character and half-width characters counted as 0.5 characters.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Number of Lines</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The number of lines is displayed based on the line breaks in the entered text.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="count-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        function isFullWidth(char) {
+            // Check if character is full-width (CJK characters, full-width punctuation, etc.)
+            const code = char.charCodeAt(0);
+            return (
+                (code >= 0xFF00 && code <= 0xFFEF) || // Full-width ASCII and punctuation
+                (code >= 0x4E00 && code <= 0x9FFF) || // CJK Unified Ideographs
+                (code >= 0x3040 && code <= 0x309F) || // Hiragana
+                (code >= 0x30A0 && code <= 0x30FF) || // Katakana
+                (code >= 0xAC00 && code <= 0xD7AF)    // Hangul
+            );
+        }
+
+        function countCharacters() {
+            const text = document.getElementById('inputText').value;
+            const charCountWithSpaces = text.length;
+            const charCountNoSpaces = text.replace(/[\s\u3000]/g, '').length; // Remove half-width and full-width spaces
+            let weightedCount = 0;
+            let weightedCountNoSpaces = 0;
+
+            // Calculate weighted counts (full-width = 1, half-width = 0.5)
+            for (let char of text) {
+                weightedCount += isFullWidth(char) ? 1 : 0.5;
+            }
+            for (let char of text.replace(/[\s\u3000]/g, '')) {
+                weightedCountNoSpaces += isFullWidth(char) ? 1 : 0.5;
+            }
+
+            // Count lines (split by newline characters)
+            const lineCount = text === '' ? 0 : text.split(/\r\n|\r|\n/).length;
+
+            // Update display
+            document.getElementById('charCountWithSpaces').textContent = charCountWithSpaces;
+            document.getElementById('charCountNoSpaces').textContent = charCountNoSpaces;
+            document.getElementById('charCountWeighted').textContent = weightedCount.toFixed(1);
+            document.getElementById('charCountWeightedNoSpaces').textContent = weightedCountNoSpaces.toFixed(1);
+            document.getElementById('lineCount').textContent = lineCount;
+        }
+
+        document.getElementById('countBtn').addEventListener('click', countCharacters);
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('charCountWithSpaces').textContent = '0';
+            document.getElementById('charCountNoSpaces').textContent = '0';
+            document.getElementById('charCountWeighted').textContent = '0';
+            document.getElementById('charCountWeightedNoSpaces').textContent = '0';
+            document.getElementById('lineCount').textContent = '0';
+        });
+
+        // Update counts on input
+        document.getElementById('inputText').addEventListener('input', countCharacters);
+    </script>
+</body>
+</html>
