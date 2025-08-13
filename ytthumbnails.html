@@ -57,10 +57,10 @@
         <!-- Header Section -->
         <header class="text-center mb-6 sm:mb-8">
             <div class="flex items-center justify-center mb-4">
-                <i class="fab fa-youtube text-red-600 text-3xl sm:text-4xl mr-3"></i>
-                <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">YouTube Thumbnail Downloader</h1>
+                <i class="fab fa-youtube text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">YouTube Thumbnail Downloader</h1>
             </div>
-            <p class="text-gray-600 text-sm sm:text-base">Paste a YouTube video URL to instantly view and download all thumbnail formats.</p>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Paste a YouTube video URL to instantly view and download all thumbnail formats.</p>
         </header>
         
         <!-- URL Input -->
@@ -73,7 +73,7 @@
                     id="youtubeUrl" 
                     type="text" 
                     placeholder="Enter YouTube video URL" 
-                    class="w-full pl-10 pr-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm sm:text-base"
+                    class="w-full pl-10 pr-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base"
                     aria-label="YouTube video URL input"
                 >
             </div>
@@ -82,7 +82,7 @@
         <!-- Thumbnails Container -->
         <section id="thumbnailContainer" class="mt-6 sm:mt-8">
             <div class="flex items-center justify-between mb-4 sm:mb-6">
-                <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">
+                <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">
                     <i class="fas fa-images text-red-500 mr-2"></i>
                     Available Thumbnails
                 </h2>
@@ -91,33 +91,33 @@
             <!-- Primary Thumbnail -->
             <article class="mb-6 sm:mb-8 bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <div class="flex items-center mb-4">
-                    <h3 id="primaryThumbnailLabel" class="text-base sm:text-lg font-semibold text-gray-800">
+                    <h3 id="primaryThumbnailLabel" class="text-sm sm:text-base md:text-lg font-semibold text-gray-800">
                         <i class="fas fa-star text-yellow-500 mr-2"></i>
                         Primary Thumbnail
                     </h3>
-                    <span class="ml-auto bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Best Quality</span>
+                    <span class="ml-auto bg-red-100 text-red-800 text-xs sm:text-sm font-medium px-2.5 py-0.5 rounded-full">Best Quality</span>
                 </div>
                 <a id="previewPrimary" href="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" target="_blank" class="block mb-4 thumbnail-hover">
                     <div class="thumbnail-container">
                         <img id="thumbnailPrimary" src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Primary YouTube Thumbnail">
                     </div>
                 </a>
-                <p class="text-gray-600 text-sm mb-3">Thumbnail Details: Resolution: 1280×720, Format: JPEG</p>
-                <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" data-name="thumbnail_primary.jpg" class="download-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-sm sm:text-base">
+                <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-3">Thumbnail Details: Resolution: 1280×720, Format: JPEG</p>
+                <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" data-name="thumbnail_primary.jpg" class="download-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                     <i class="fas fa-download mr-2"></i>
                     Download
                 </button>
             </article>
 
             <!-- Other Thumbnails -->
-            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+            <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4">
                 <i class="fas fa-th-large text-red-500 mr-2"></i>
                 Other Thumbnail Formats
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="otherThumbnails">
                 <!-- Medium Quality -->
                 <article class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                    <h3 class="text-base sm:text-lg font-medium text-gray-700 mb-2">
+                    <h3 class="text-sm sm:text-base md:text-lg font-medium text-gray-700 mb-2">
                         <i class="fas fa-image text-blue-500 mr-2"></i>
                         Medium Quality
                     </h3>
@@ -126,8 +126,8 @@
                             <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Medium Quality YouTube Thumbnail">
                         </div>
                     </a>
-                    <p class="text-gray-600 text-sm mb-3">Resolution: 320×180</p>
-                    <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" data-name="thumbnail_mqres.jpg" class="download-btn w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-sm sm:text-base">
+                    <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-3">Resolution: 320×180</p>
+                    <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" data-name="thumbnail_mqres.jpg" class="download-btn w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                         <i class="fas fa-download mr-2"></i>
                         Download
                     </button>
@@ -135,7 +135,7 @@
                 
                 <!-- Standard Definition -->
                 <article class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                    <h3 class="text-base sm:text-lg font-medium text-gray-700 mb-2">
+                    <h3 class="text-sm sm:text-base md:text-lg font-medium text-gray-700 mb-2">
                         <i class="fas fa-image text-purple-500 mr-2"></i>
                         Standard Definition
                     </h3>
@@ -144,8 +144,8 @@
                             <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg" alt="Standard Definition YouTube Thumbnail">
                         </div>
                     </a>
-                    <p class="text-gray-600 text-sm mb-3">Resolution: 640×480</p>
-                    <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg" data-name="thumbnail_sdres.jpg" class="download-btn w-full bg-purple-600 text-white font-semibold py-2 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-sm sm:text-base">
+                    <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-3">Resolution: 640×480</p>
+                    <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg" data-name="thumbnail_sdres.jpg" class="download-btn w-full bg-purple-600 text-white font-semibold py-2 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                         <i class="fas fa-download mr-2"></i>
                         Download
                     </button>
@@ -153,7 +153,7 @@
                 
                 <!-- Default -->
                 <article class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                    <h3 class="text-base sm:text-lg font-medium text-gray-700 mb-2">
+                    <h3 class="text-sm sm:text-base md:text-lg font-medium text-gray-700 mb-2">
                         <i class="fas fa-image text-green-500 mr-2"></i>
                         Default
                     </h3>
@@ -162,8 +162,8 @@
                             <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" alt="Default YouTube Thumbnail">
                         </div>
                     </a>
-                    <p class="text-gray-600 text-sm mb-3">Resolution: 120×90</p>
-                    <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" data-name="thumbnail_default.jpg" class="download-btn w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-sm sm:text-base">
+                    <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-3">Resolution: 120×90</p>
+                    <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" data-name="thumbnail_default.jpg" class="download-btn w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                         <i class="fas fa-download mr-2"></i>
                         Download
                     </button>
@@ -178,8 +178,8 @@
                     <i class="fas fa-exclamation-circle"></i>
                 </div>
                 <div class="ml-3">
-                    <h3 class="text-sm font-medium text-red-800">Error</h3>
-                    <div class="mt-1 text-sm text-red-700">
+                    <h3 class="text-xs sm:text-sm md:text-base font-medium text-red-800">Error</h3>
+                    <div class="mt-1 text-xs sm:text-sm md:text-base text-red-700">
                         <p id="errorText"></p>
                     </div>
                 </div>
@@ -188,52 +188,52 @@
 
         <!-- Additional Information Section -->
         <section class="mt-8 sm:mt-12">
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">YouTube Thumbnail Downloader</h2>
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">YouTube Thumbnail Downloader</h2>
             <article class="mb-6">
-                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Save YouTube Video Thumbnails</h3>
-                <p class="text-gray-600 text-sm sm:text-base">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Save YouTube Video Thumbnails</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
                     With our <strong>YouTube thumbnail downloader</strong>, you can easily <strong>get YouTube thumbnail</strong> images in multiple resolutions, including <strong>high quality YouTube thumbnail</strong> formats like Full HD (1080p), HD (720p), SD, and smaller sizes. Our <strong>YouTube thumbnail download tool</strong> supports all YouTube formats, including HD, HQ, 1080p, and even 4K videos, making it the <strong>best YouTube thumbnail downloader</strong> for your needs. Enjoy a <strong>free YouTube thumbnail download</strong> experience with our intuitive <strong>YouTube thumbnail downloader app</strong>.
                 </p>
             </article>
 
             <article class="mb-6">
-                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">What is the Use of This YouTube Thumbnail Grabber Website?</h3>
-                <p class="text-gray-600 text-sm sm:text-base">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Use of This YouTube Thumbnail Grabber Website?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
                     Our <strong>YouTube thumbnail grabber</strong> website is designed for users who want to <strong>download YouTube thumbnail</strong> images for various purposes, such as presentations, animations, or other creative projects. Whether you need a <strong>YouTube thumbnail saver</strong> to <strong>YouTube thumbnail save</strong> images or a <strong>YouTube thumbnail extractor online</strong> to quickly extract thumbnails, our tool provides a seamless way to <strong>download YouTube thumbnail online</strong> for free.
                 </p>
             </article>
 
             <article class="mb-6">
-                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">How to Use This YouTube Thumbnail Downloader Website?</h3>
-                <p class="text-gray-600 text-sm sm:text-base">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This YouTube Thumbnail Downloader Website?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
                     Using our <strong>YouTube thumbnail downloader free</strong> tool is simple. First, copy the URL of the YouTube video whose thumbnail you want to download. Paste the URL into the input box on our <strong>YouTube thumbnail download</strong> website, and our <strong>YouTube thumbnail extractor</strong> will automatically generate different thumbnail sizes, including <strong>HD YouTube thumbnail</strong> options. Click the <strong>YouTube thumbnail direct download</strong> button to save the thumbnail to your device. For Android users, simply save the images as prompted. Note that iPhone users may face restrictions unless using a jailbroken device.
                 </p>
             </article>
 
             <article class="mb-6">
-                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Is It Legal to Download YouTube Thumbnails?</h3>
-                <p class="text-gray-600 text-sm sm:text-base">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Is It Legal to Download YouTube Thumbnails?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
                     Yes, it is 100% legal to use our <strong>YouTube video thumbnail download</strong> tool to download thumbnails. However, since thumbnails are copyrighted by their respective video owners, you should obtain permission before reusing them. Our <strong>YouTube thumbnail generator</strong> allows you to <strong>download YouTube thumbnail</strong> images, but always ensure you have the necessary rights for reuse.
                 </p>
             </article>
 
             <article class="mb-6">
-                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Compatibility of This YouTube Thumbnail Grabber Website</h3>
-                <p class="text-gray-600 text-sm sm:text-base">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Compatibility of This YouTube Thumbnail Grabber Website</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
                     Our <strong>YouTube thumbnail downloader app</strong> is compatible with most devices, including Android phones, laptops, and desktops. However, due to iPhone restrictions, saving images may not work unless using a jailbroken device. This <strong>YouTube thumbnail grabber</strong> ensures a smooth experience for <strong>free YouTube thumbnail download</strong> across supported platforms.
                 </p>
             </article>
 
             <article class="mb-6">
-                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Is There Any Copyright Risk on YouTube Thumbnails?</h3>
-                <p class="text-gray-600 text-sm sm:text-base">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Is There Any Copyright Risk on YouTube Thumbnails?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
                     Thumbnails downloaded via our <strong>YouTube thumbnail download tool</strong> are copyrighted by the video owner. If you plan to reuse them, especially on YouTube, you must seek permission to avoid issues. However, using thumbnails for non-YouTube purposes, such as website design, logos, or Photoshop projects, typically poses no risk of DMCA complaints.
                 </p>
             </article>
 
             <article class="mb-6">
-                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Are Reusing YouTube Thumbnails SEO Friendly?</h3>
-                <p class="text-gray-600 text-sm sm:text-base">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Are Reusing YouTube Thumbnails SEO Friendly?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
                     Reusing YouTube thumbnails directly is not SEO-friendly, as Google indexes most YouTube thumbnails, marking duplicates. To make a thumbnail SEO-friendly, use tools like Photoshop to add unique effects, transforming it into a new image. This way, our <strong>YouTube thumbnail extractor online</strong> can help you create unique content for better SEO performance.
                 </p>
             </article>
@@ -241,7 +241,7 @@
 
         <!-- Footer Section -->
         <footer class="mt-8 sm:mt-12">
-            <a href="/" class="download-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-sm sm:text-base">
+            <a href="/" class="download-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                 <i class="fas fa-home mr-2"></i>
                 Go to Homepage
             </a>
@@ -328,7 +328,7 @@
                         const div = document.createElement('div');
                         div.innerHTML = `
                             <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                                <h3 class="text-lg font-medium text-gray-700 mb-2">
+                                <h3 class="text-sm sm:text-base md:text-lg font-medium text-gray-700 mb-2">
                                     <i class="fas fa-image ${t.type === 'mqdefault' ? 'text-blue-500' : t.type === 'sddefault' ? 'text-purple-500' : 'text-green-500'} mr-2"></i>
                                     ${t.label}
                                 </h3>
@@ -337,8 +337,8 @@
                                         <img src="${thumbUrl}" alt="${t.label} YouTube Thumbnail">
                                     </div>
                                 </a>
-                                <p class="text-gray-600 text-sm mb-3">Resolution: ${t.resolution}</p>
-                                <button data-img="${thumbUrl}" data-name="thumbnail_${videoId}_${t.name}.jpg" class="download-btn w-full ${t.type === 'mqdefault' ? 'bg-blue-600 hover:bg-blue-700' : t.type === 'sddefault' ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} text-white font-semibold py-2 rounded-lg transition flex items-center justify-center">
+                                <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-3">Resolution: ${t.resolution}</p>
+                                <button data-img="${thumbUrl}" data-name="thumbnail_${videoId}_${t.name}.jpg" class="download-btn w-full ${t.type === 'mqdefault' ? 'bg-blue-600 hover:bg-blue-700' : t.type === 'sddefault' ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} text-white font-semibold py-2 rounded-lg transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                                     <i class="fas fa-download mr-2"></i>
                                     Download
                                 </button>
