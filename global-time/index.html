@@ -25,6 +25,8 @@
         .timezone-card {
             background: linear-gradient(135deg, #ffffff, #f1f4f8);
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
         }
         .timezone-card:hover {
             transform: translateY(-5px);
@@ -36,6 +38,20 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        .ripple {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            transform: scale(0);
+            animation: ripple 0.6s linear;
+            pointer-events: none;
+        }
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -135,9 +151,32 @@
                             </div>
                         </div>
                     `;
-                    card.onclick = () => window.open(`timezone.html?tz=${encodeURIComponent(tz)}`, '_blank');
+                    card.onclick = (e) => {
+                        // Create ripple effect
+                        const ripple = document.createElement('span');
+                        ripple.className = 'ripple';
+                        const rect = card.getBoundingClientRect();
+                        const size = Math.max(rect.width, rect.height);
+                        ripple.style.width = ripple.style.height = `${size}px`;
+                        ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+                        ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+                        card.appendChild(ripple);
+                        setTimeout(() => ripple.remove(), 600); // Remove after animation
+                        // Open timezone page
+                        window.open(`timezone.html?tz=${encodeURIComponent(tz)}`, '_blank');
+                    };
                     card.onkeydown = (e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
+                            // Simulate ripple at center for keyboard users
+                            const ripple = document.createElement('span');
+                            ripple.className = 'ripple';
+                            const rect = card.getBoundingClientRect();
+                            const size = Math.max(rect.width, rect.height);
+                            ripple.style.width = ripple.style.height = `${size}px`;
+                            ripple.style.left = `${rect.width / 2 - size / 2}px`;
+                            ripple.style.top = `${rect.height / 2 - size / 2}px`;
+                            card.appendChild(ripple);
+                            setTimeout(() => ripple.remove(), 600);
                             window.open(`timezone.html?tz=${encodeURIComponent(tz)}`, '_blank');
                         }
                     };
