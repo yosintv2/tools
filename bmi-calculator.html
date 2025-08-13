@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>BMI Calculator Tool - Free Online Body Mass Index Calculator</title>
-    <meta name="description" content="A free online BMI calculator tool to measure your Body Mass Index. Supports metric and imperial units, with results including BMI value and category. Works on all devices with copy-to-clipboard functionality.">
-    <meta name="keywords" content="bmi calculator, body mass index calculator, free bmi calculator, online bmi calculator, bmi calculator tool, bmi checker, calculate bmi online, bmi measurement tool, body mass index tool, bmi calculator metric, bmi calculator imperial, bmi health calculator, bmi weight calculator, online body mass index, bmi fitness tool">
+    <meta name="description" content="A free online BMI calculator tool to measure your Body Mass Index based on weight, height, age, and gender. Supports metric and imperial units, with results including BMI value and category. Works on all devices with copy-to-clipboard functionality.">
+    <meta name="keywords" content="bmi calculator, body mass index calculator, free bmi calculator, online bmi calculator, bmi calculator tool, bmi checker, calculate bmi online, bmi measurement tool, body mass index tool, bmi calculator metric, bmi calculator imperial, bmi health calculator, bmi weight calculator, bmi age gender calculator, online body mass index">
     <meta name="robots" content="index, follow">
     <meta name="author" content="BMI Calculator Tool Team">
     <meta property="og:title" content="BMI Calculator Tool - Free Online Body Mass Index Calculator">
-    <meta property="og:description" content="Calculate your Body Mass Index with our free online BMI calculator. Supports metric and imperial units, with results including BMI value and category. Works on all devices.">
+    <meta property="og:description" content="Calculate your Body Mass Index with our free online BMI calculator, including age and gender considerations. Supports metric and imperial units, with results including BMI value and category. Works on all devices.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.singhyogendra.com.np/bmi-calculator">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="BMI Calculator Tool - Free Online Body Mass Index Calculator">
-    <meta name="twitter:description" content="Calculate your Body Mass Index with our free online BMI calculator. Supports metric and imperial units, with results including BMI value and category. Works on all devices.">
+    <meta name="twitter:description" content="Calculate your Body Mass Index with our free online BMI calculator, including age and gender considerations. Supports metric and imperial units, with results including BMI value and category. Works on all devices.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -66,7 +66,7 @@
                 <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
                 <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">BMI Calculator Tool</h1>
             </div>
-            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate your Body Mass Index (BMI) with this free online tool. Supports metric and imperial units. Compatible with all devices.</p>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate your Body Mass Index (BMI) with this free online tool, including age and gender considerations. Supports metric and imperial units. Compatible with all devices.</p>
         </header>
 
         <!-- BMI Calculator Form and Results -->
@@ -78,14 +78,26 @@
                         <button type="button" id="imperialBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Imperial</button>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <div class="w-full sm:w-1/2">
+                        <div class="w-full sm:w-1/3">
                             <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="weightLabel">Weight (kg)</label>
                             <input type="number" id="weightInput" min="1" step="0.1" placeholder="Enter weight" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
                         </div>
-                        <div class="w-full sm:w-1/2">
+                        <div class="w-full sm:w-1/3">
                             <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="heightLabel">Height (cm)</label>
                             <input type="number" id="heightInput" min="1" step="0.1" placeholder="Enter height" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
                         </div>
+                        <div class="w-full sm:w-1/3">
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Age</label>
+                            <input type="number" id="ageInput" min="2" max="120" placeholder="Enter age" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Gender</label>
+                        <select id="genderInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
                     <div class="flex flex-wrap gap-2">
                         <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -105,7 +117,7 @@
                 <div class="mt-4">
                     <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Result</label>
                     <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y" placeholder="BMI result will appear here..."></textarea>
-                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid weight and height values.</p>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid weight, height, and age values.</p>
                 </div>
             </div>
         </section>
@@ -116,19 +128,19 @@
             <article class="mb-6">
                 <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the BMI Calculator Tool?</h3>
                 <p class="text-xs sm:text-sm md:text-base text-gray-600">
-                    The BMI Calculator Tool is a free online utility that calculates your Body Mass Index based on weight and height. This bmi checker is ideal for individuals monitoring their health, fitness enthusiasts, or anyone interested in understanding their BMI category (Underweight, Normal, Overweight, Obese).
+                    The BMI Calculator Tool is a free online utility that calculates your Body Mass Index based on weight, height, age, and gender. This bmi checker is ideal for individuals monitoring their health, fitness enthusiasts, or anyone interested in understanding their BMI category (Underweight, Normal, Overweight, Obese) with age and gender context.
                 </p>
             </article>
             <article class="mb-6">
                 <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
                 <p class="text-xs sm:text-sm md:text-base text-gray-600">
-                    Select "Metric" or "Imperial" units, enter your weight and height, then click "Calculate" to compute your BMI and category. Use the "Copy Result" button to copy the result to your clipboard or "Reset" to clear the form. This online BMI calculator is secure, runs in your browser, and works on all devices for seamless BMI calculation.
+                    Select "Metric" or "Imperial" units, enter your weight, height, age, and select your gender, then click "Calculate" to compute your BMI and category. Use the "Copy Result" button to copy the result to your clipboard or "Reset" to clear the form. This online BMI calculator is secure, runs in your browser, and works on all devices for seamless BMI calculation.
                 </p>
             </article>
             <article class="mb-6">
                 <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our BMI Calculator Tool?</h3>
                 <p class="text-xs sm:text-sm md:text-base text-gray-600">
-                    Our body mass index calculator is free, accurate, and user-friendly, perfect for tracking health metrics or planning fitness goals. The copy-to-clipboard feature and responsive design ensure a smooth experience on any device. Whether you're using metric or imperial units, this online BMI calculator tool provides precise results for your health needs.
+                    Our body mass index calculator is free, accurate, and user-friendly, perfect for tracking health metrics or planning fitness goals, with age and gender considerations for personalized results. The copy-to-clipboard feature and responsive design ensure a smooth experience on any device. Whether you're using metric or imperial units, this online BMI calculator tool provides precise results for your health needs.
                 </p>
             </article>
         </section>
@@ -157,9 +169,9 @@
             }, 2000);
         }
 
-        function validateInputs(weight, height) {
-            if (!weight || !height || weight <= 0 || height <= 0) {
-                throw new Error('Please enter valid weight and height values.');
+        function validateInputs(weight, height, age) {
+            if (!weight || !height || !age || weight <= 0 || height <= 0 || age < 2 || age > 120) {
+                throw new Error('Please enter valid weight, height, and age values.');
             }
         }
 
@@ -175,11 +187,24 @@
             return bmi.toFixed(2);
         }
 
-        function getBMICategory(bmi) {
-            if (bmi < 18.5) return 'Underweight';
-            if (bmi >= 18.5 && bmi < 25) return 'Normal';
-            if (bmi >= 25 && bmi < 30) return 'Overweight';
-            return 'Obese';
+        function getBMICategory(bmi, age) {
+            // Simplified BMI categories for adults (age >= 20)
+            if (age >= 20) {
+                if (bmi < 18.5) return 'Underweight';
+                if (bmi >= 18.5 && bmi < 25) return 'Normal';
+                if (bmi >= 25 && bmi < 30) return 'Overweight';
+                return 'Obese';
+            } else {
+                // For children (age < 20), indicate that BMI percentiles are needed
+                return 'Child (Percentile-based assessment recommended)';
+            }
+        }
+
+        function getHealthNote(age, gender, bmi, category) {
+            if (age < 20) {
+                return 'Note: For children and teens (age < 20), BMI interpretation requires age- and gender-specific percentiles. Consult a healthcare provider for accurate assessment.';
+            }
+            return `Note: BMI is a general indicator. ${gender.charAt(0).toUpperCase() + gender.slice(1)} adults may have different health implications based on BMI. Consult a healthcare provider for personalized advice.`;
         }
 
         function toggleMode(newMode) {
@@ -220,20 +245,23 @@
         function calculate() {
             const weight = parseFloat(document.getElementById('weightInput').value);
             const height = parseFloat(document.getElementById('heightInput').value);
+            const age = parseInt(document.getElementById('ageInput').value);
+            const gender = document.getElementById('genderInput').value;
             const resultText = document.getElementById('resultText');
             const errorMessage = document.getElementById('errorMessage');
             errorMessage.classList.add('hidden');
 
-            if (!weight || !height) {
+            if (!weight || !height || !age) {
                 resultText.value = '';
                 return;
             }
 
             try {
-                validateInputs(weight, height);
+                validateInputs(weight, height, age);
                 const bmi = calculateBMI(weight, height, mode);
-                const category = getBMICategory(bmi);
-                resultText.value = `BMI: ${bmi}\nCategory: ${category}`;
+                const category = getBMICategory(bmi, age);
+                const healthNote = getHealthNote(age, gender, bmi, category);
+                resultText.value = `BMI: ${bmi}\nCategory: ${category}\n${healthNote}`;
             } catch (e) {
                 errorMessage.textContent = `Error: ${e.message}`;
                 errorMessage.classList.remove('hidden');
@@ -254,12 +282,16 @@
         document.getElementById('resetBtn').addEventListener('click', () => {
             document.getElementById('weightInput').value = '';
             document.getElementById('heightInput').value = '';
+            document.getElementById('ageInput').value = '';
+            document.getElementById('genderInput').value = 'male';
             document.getElementById('resultText').value = '';
             document.getElementById('errorMessage').classList.add('hidden');
             toggleMode('metric');
         });
         document.getElementById('weightInput').addEventListener('input', calculate);
         document.getElementById('heightInput').addEventListener('input', calculate);
+        document.getElementById('ageInput').addEventListener('input', calculate);
+        document.getElementById('genderInput').addEventListener('change', calculate);
 
         // Initialize metric mode
         toggleMode('metric');
