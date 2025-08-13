@@ -29,13 +29,25 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
+        .thumbnail-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+        }
+        .thumbnail-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
         @media (max-width: 640px) {
             .download-btn {
                 font-size: 0.875rem;
                 padding: 0.5rem;
-            }
-            .thumbnail-hover img {
-                height: 10rem;
             }
         }
     </style>
@@ -86,8 +98,11 @@
                     <span class="ml-auto bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Best Quality</span>
                 </div>
                 <a id="previewPrimary" href="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" target="_blank" class="block mb-4 thumbnail-hover">
-                    <img id="thumbnailPrimary" src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Primary YouTube Thumbnail" class="w-full rounded-lg shadow-md max-h-64 sm:max-h-96 object-contain">
+                    <div class="thumbnail-container">
+                        <img id="thumbnailPrimary" src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Primary YouTube Thumbnail">
+                    </div>
                 </a>
+                <p class="text-gray-600 text-sm mb-3">Thumbnail Details: Resolution: 1280×720, Format: JPEG</p>
                 <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" data-name="thumbnail_primary.jpg" class="download-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-sm sm:text-base">
                     <i class="fas fa-download mr-2"></i>
                     Download
@@ -107,8 +122,11 @@
                         Medium Quality
                     </h3>
                     <a href="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" target="_blank" class="block mb-3 thumbnail-hover">
-                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Medium Quality YouTube Thumbnail" class="w-full h-40 object-cover rounded-lg shadow-md">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Medium Quality YouTube Thumbnail">
+                        </div>
                     </a>
+                    <p class="text-gray-600 text-sm mb-3">Resolution: 320×180</p>
                     <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" data-name="thumbnail_mqres.jpg" class="download-btn w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-sm sm:text-base">
                         <i class="fas fa-download mr-2"></i>
                         Download
@@ -122,8 +140,11 @@
                         Standard Definition
                     </h3>
                     <a href="https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg" target="_blank" class="block mb-3 thumbnail-hover">
-                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg" alt="Standard Definition YouTube Thumbnail" class="w-full h-40 object-cover rounded-lg shadow-md">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg" alt="Standard Definition YouTube Thumbnail">
+                        </div>
                     </a>
+                    <p class="text-gray-600 text-sm mb-3">Resolution: 640×480</p>
                     <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg" data-name="thumbnail_sdres.jpg" class="download-btn w-full bg-purple-600 text-white font-semibold py-2 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-sm sm:text-base">
                         <i class="fas fa-download mr-2"></i>
                         Download
@@ -137,8 +158,11 @@
                         Default
                     </h3>
                     <a href="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" target="_blank" class="block mb-3 thumbnail-hover">
-                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" alt="Default YouTube Thumbnail" class="w-full h-40 object-cover rounded-lg shadow-md">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" alt="Default YouTube Thumbnail">
+                        </div>
                     </a>
+                    <p class="text-gray-600 text-sm mb-3">Resolution: 120×90</p>
                     <button data-img="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" data-name="thumbnail_default.jpg" class="download-btn w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-sm sm:text-base">
                         <i class="fas fa-download mr-2"></i>
                         Download
@@ -216,7 +240,7 @@
         </section>
     </div>
 
-    <!-- JavaScript (unchanged) -->
+    <!-- JavaScript (updated to include resolution details dynamically) -->
     <script>
         const youtubeUrlInput = document.getElementById('youtubeUrl');
         const thumbnailPrimary = document.getElementById('thumbnailPrimary');
@@ -225,9 +249,9 @@
         const otherThumbnailsContainer = document.getElementById('otherThumbnails');
 
         const secondaryThumbs = [
-            { type: 'mqdefault', label: 'Medium Quality', name: 'mqres' },
-            { type: 'sddefault', label: 'Standard Definition', name: 'sdres' },
-            { type: 'default', label: 'Default', name: 'default' }
+            { type: 'mqdefault', label: 'Medium Quality', name: 'mqres', resolution: '320×180' },
+            { type: 'sddefault', label: 'Standard Definition', name: 'sdres', resolution: '640×480' },
+            { type: 'default', label: 'Default', name: 'default', resolution: '120×90' }
         ];
 
         function extractVideoId(url) {
@@ -273,15 +297,19 @@
 
                 // Primary thumbnail
                 let primaryUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+                let isMaxRes = true;
                 try {
                     await preloadImage(primaryUrl);
                 } catch {
                     primaryUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                    isMaxRes = false;
                 }
                 thumbnailPrimary.src = primaryUrl;
                 previewPrimary.href = primaryUrl;
                 primaryDownloadBtn.dataset.img = primaryUrl;
                 primaryDownloadBtn.dataset.name = `thumbnail_${videoId}_primary.jpg`;
+                const primaryDetails = previewPrimary.nextElementSibling;
+                primaryDetails.textContent = `Thumbnail Details: Resolution: ${isMaxRes ? '1280×720' : '1280×720'}, Format: JPEG`;
 
                 // Secondary thumbnails
                 otherThumbnailsContainer.innerHTML = '';
@@ -297,8 +325,11 @@
                                     ${t.label}
                                 </h3>
                                 <a href="${thumbUrl}" target="_blank" class="block mb-3 thumbnail-hover">
-                                    <img src="${thumbUrl}" class="w-full h-40 object-cover rounded-lg shadow-md">
+                                    <div class="thumbnail-container">
+                                        <img src="${thumbUrl}" alt="${t.label} YouTube Thumbnail">
+                                    </div>
                                 </a>
+                                <p class="text-gray-600 text-sm mb-3">Resolution: ${t.resolution}</p>
                                 <button data-img="${thumbUrl}" data-name="thumbnail_${videoId}_${t.name}.jpg" class="download-btn w-full ${t.type === 'mqdefault' ? 'bg-blue-600 hover:bg-blue-700' : t.type === 'sddefault' ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} text-white font-semibold py-2 rounded-lg transition flex items-center justify-center">
                                     <i class="fas fa-download mr-2"></i>
                                     Download
