@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Encoder & Decoder Tool - Free Online Encoding and Decoding</title>
+    <meta name="description" content="A free and secure Base64 encoder and decoder tool. Easily encode text to Base64 or decode Base64 to text online. Supports instant conversion, copy-to-clipboard, and is compatible with all devices.">
+    <meta name="keywords" content="base64 encoder, base64 decoder, base64 converter, free base64 tool, encode base64 online, decode base64 online, base64 encoding, base64 decoding, text to base64, base64 to text, online base64 converter, secure base64 tool, base64 string converter, base64 text encoder, base64 text decoder, base64 conversion tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Base64 Tool Team">
+    <meta property="og:title" content="Base64 Encoder & Decoder Tool - Free Online Encoding and Decoding">
+    <meta property="og:description" content="Encode text to Base64 or decode Base64 to text with our free online tool. Fast, secure, and compatible with all devices, including copy-to-clipboard functionality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/base64-encoder-decoder">
+    <meta property="og:image" content="https://example.com/images/base64-tool-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Base64 Encoder & Decoder Tool - Free Online Encoding and Decoding">
+    <meta name="twitter:description" content="Encode text to Base64 or decode Base64 to text with our free online tool. Fast, secure, and compatible with all devices, including copy-to-clipboard functionality.">
+    <meta name="twitter:image" content="https://example.com/images/base64-tool-og.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-code text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Base64 Encoder & Decoder Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Easily encode text to Base64 or decode Base64 to text. Free, secure, and compatible with all devices.</p>
+        </header>
+
+        <!-- Base64 Encoder/Decoder Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button type="button" id="encodeBtn" class="action-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Encode to Base64</button>
+                        <button type="button" id="decodeBtn" class="action-btn w-full sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Decode from Base64</button>
+                    </div>
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="inputLabel">Enter Text to Encode</label>
+                    <textarea id="inputText" placeholder="Enter text to encode to Base64..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y"></textarea>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-auto bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-auto bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Result</label>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y" placeholder="Result will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid Base64 string. Please check your input.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">About Base64 Encoder & Decoder Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is Base64 Encoding and Decoding?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Base64 is a method for encoding binary data into an ASCII string format, commonly used for embedding images in HTML, storing data in JSON, or transmitting data over text-based protocols. Our tool allows you to easily encode text to Base64 or decode Base64 strings back to readable text, with a user-friendly interface and instant results.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select whether you want to encode or decode using the toggle buttons. Enter your text or Base64 string in the input field, then click "Convert" to see the result. Use the "Copy Result" button to copy the output to your clipboard, or "Reset" to clear the form. The tool is secure, works entirely in your browser, and supports all devices, including mobile.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Base64 Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our Base64 Encoder & Decoder is free, fast, and secure, with no server-side processing, ensuring your data stays private. It’s perfect for developers, content creators, or anyone needing to work with Base64 strings for APIs, web development, or data encoding tasks. The intuitive design and copy-to-clipboard feature make it ideal for quick conversions.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let mode = 'encode'; // Default mode: encode
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function toggleMode(newMode) {
+            mode = newMode;
+            const encodeBtn = document.getElementById('encodeBtn');
+            const decodeBtn = document.getElementById('decodeBtn');
+            const inputLabel = document.getElementById('inputLabel');
+            const convertBtn = document.getElementById('convertBtn');
+
+            if (mode === 'encode') {
+                encodeBtn.classList.add('active', 'bg-red-600', 'text-white');
+                encodeBtn.classList.remove('bg-blue-600');
+                decodeBtn.classList.remove('active', 'bg-blue-600', 'text-white');
+                decodeBtn.classList.add('bg-blue-600');
+                inputLabel.textContent = 'Enter Text to Encode';
+                convertBtn.innerHTML = '<i class="fas fa-exchange-alt mr-2"></i>Encode';
+                convertBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                convertBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                document.getElementById('inputText').placeholder = 'Enter text to encode to Base64...';
+            } else {
+                decodeBtn.classList.add('active', 'bg-blue-600', 'text-white');
+                decodeBtn.classList.remove('bg-red-600');
+                encodeBtn.classList.remove('active', 'bg-red-600', 'text-white');
+                encodeBtn.classList.add('bg-red-600');
+                inputLabel.textContent = 'Enter Base64 to Decode';
+                convertBtn.innerHTML = '<i class="fas fa-exchange-alt mr-2"></i>Decode';
+                convertBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                convertBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                document.getElementById('inputText').placeholder = 'Enter Base64 string to decode...';
+            }
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+        }
+
+        function convertText() {
+            const input = document.getElementById('inputText').value;
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+
+            errorMessage.classList.add('hidden');
+
+            if (mode === 'encode') {
+                try {
+                    const encoded = btoa(input);
+                    resultText.value = encoded;
+                } catch (e) {
+                    errorMessage.textContent = 'Error: Invalid input for encoding. Please enter valid text.';
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            } else {
+                try {
+                    const decoded = atob(input);
+                    resultText.value = decoded;
+                } catch (e) {
+                    errorMessage.textContent = 'Error: Invalid Base64 string. Please check your input.';
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            }
+        }
+
+        document.getElementById('encodeBtn').addEventListener('click', () => toggleMode('encode'));
+        document.getElementById('decodeBtn').addEventListener('click', () => toggleMode('decode'));
+        document.getElementById('convertBtn').addEventListener('click', convertText);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+        });
+
+        // Initialize encode mode
+        toggleMode('encode');
+    </script>
+</body>
+</html>
