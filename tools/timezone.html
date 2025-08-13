@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="dynamic-title">Timezone Data</title>
+    <meta name="description" id="dynamic-description" content="View current time and date information for the selected timezone, including UTC offset, DST details, and more.">
+    <meta name="keywords" id="dynamic-keywords" content="timezone, time and date, world time, UTC offset, DST">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" id="og-title" content="Timezone Data">
+    <meta property="og:description" id="og-description" content="Get accurate time and date details for any timezone worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://your-domain.com/og-image.jpg">
+    <link rel="canonical" id="canonical" href="https://your-domain.com/timezone.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        .container {
+            animation: fadeIn 0.5s ease-in;
+        }
+        .table {
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .table th {
+            background: #2c3e50;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .table tr:nth-child(even) {
+            background: #f1f4f8;
+        }
+        .table tr:hover {
+            background: #e6e9ff;
+            transition: background 0.3s;
+        }
+        .loading {
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center mb-4">
+            <h1 id="title" class="display-5 text-dark">Timezone Data</h1>
+        </header>
+        <main>
+            <table class="table table-bordered" role="grid" aria-describedby="timezone-table-desc">
+                <caption id="timezone-table-desc" class="visually-hidden">Time and date details for the selected timezone</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Property</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Local Time</td><td id="local-datetime" class="loading">Loading...</td></tr>
+                    <tr><td>API Time</td><td id="datetime" class="loading">Fetching...</td></tr>
+                    <tr><td>Timezone</td><td id="timezone" class="loading">Fetching...</td></tr>
+                    <tr><td>UTC Offset</td><td id="utc_offset" class="loading">Fetching...</td></tr>
+                    <tr><td>Day of Week</td><td id="day_of_week" class="loading">Fetching...</td></tr>
+                    <tr><td>Day of Year</td><td id="day_of_year" class="loading">Fetching...</td></tr>
+                    <tr><td>UTC Datetime</td><td id="utc_datetime" class="loading">Fetching...</td></tr>
+                    <tr><td>Unix Time</td><td id="unixtime" class="loading">Fetching...</td></tr>
+                    <tr><td>Raw Offset</td><td id="raw_offset" class="loading">Fetching...</td></tr>
+                    <tr><td>Week Number</td><td id="week_number" class="loading">Fetching...</td></tr>
+                    <tr><td>DST</td><td id="dst" class="loading">Fetching...</td></tr>
+                    <tr><td>Abbreviation</td><td id="abbreviation" class="loading">Fetching...</td></tr>
+                    <tr><td>DST Offset</td><td id="dst_offset" class="loading">Fetching...</td></tr>
+                    <tr><td>DST From</td><td id="dst_from" class="loading">Fetching...</td></tr>
+                    <tr><td>DST Until</td><td id="dst_until" class="loading">Fetching...</td></tr>
+                </tbody>
+            </table>
+        </main>
+        <nav class="text-center mt-3">
+            <a href="index.html" class="btn btn-link text-dark" aria-label="Return to timezone explorer homepage">Back to Homepage</a>
+        </nav>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Timezone Data",
+        "description": "Current time and date information for the selected timezone.",
+        "url": "https://your-domain.com/timezone.html"
+    }
+    </script>
+    <script>
+        // Update local time in JST as fallback
+        function updateLocalDateTime() {
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true,
+                timeZone: 'Asia/Tokyo' // JST
+            };
+            const formattedDateTime = now.toLocaleString('en-US', options);
+            document.getElementById('local-datetime').textContent = formattedDateTime;
+        }
+
+        // Fetch data from WorldTimeAPI
+        async function fetchAPIData(timezone) {
+            const apiUrl = `https://corsproxy.io/?url=http://worldtimeapi.org/api/timezone/${timezone}`;
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error('API request failed');
+                }
+                const data = await response.json();
+
+                // Dynamic SEO meta tags
+                const pageTitle = `Time and Date for ${data.timezone}`;
+                const description = `Current time in ${data.timezone} is ${new Date(data.datetime).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true })} with UTC offset ${data.utc_offset}.`;
+                const keywords = `${data.timezone} time, ${data.abbreviation}, UTC ${data.utc_offset}, time and date, world time`;
+
+                document.getElementById('dynamic-title').textContent = pageTitle;
+                document.getElementById('title').textContent = pageTitle;
+                document.getElementById('dynamic-description').setAttribute('content', description);
+                document.getElementById('dynamic-keywords').setAttribute('content', keywords);
+                document.getElementById('og-title').setAttribute('content', pageTitle);
+                document.getElementById('og-description').setAttribute('content', description);
+                document.getElementById('canonical').setAttribute('href', `https://your-domain.com/timezone.html?tz=${encodeURIComponent(timezone)}`);
+
+                // Format and display time-related fields
+                const apiDateTime = new Date(data.datetime);
+                const options = {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: true
+                };
+                const formattedDateTime = apiDateTime.toLocaleString('en-US', options);
+                document.getElementById('datetime').textContent = `${formattedDateTime} (${data.abbreviation}, ${data.timezone})`;
+                document.getElementById('timezone').textContent = data.timezone;
+                document.getElementById('utc_offset').textContent = data.utc_offset;
+                document.getElementById('day_of_week').textContent = data.day_of_week;
+                document.getElementById('day_of_year').textContent = data.day_of_year;
+                document.getElementById('utc_datetime').textContent = data.utc_datetime;
+                document.getElementById('unixtime').textContent = data.unixtime;
+                document.getElementById('raw_offset').textContent = `${data.raw_offset} seconds`;
+                document.getElementById('week_number').textContent = data.week_number;
+                document.getElementById('dst').textContent = data.dst ? 'Yes' : 'No';
+                document.getElementById('abbreviation').textContent = data.abbreviation;
+                document.getElementById('dst_offset').textContent = `${data.dst_offset} seconds`;
+                document.getElementById('dst_from').textContent = data.dst_from || 'N/A';
+                document.getElementById('dst_until').textContent = data.dst_until || 'N/A';
+
+            } catch (error) {
+                console.error('API fetch error:', error);
+                // Fallback to local time
+                updateLocalDateTime();
+                document.getElementById('datetime').textContent = 'API unavailable (using local JST time)';
+                document.getElementById('timezone').textContent = 'N/A';
+                document.getElementById('utc_offset').textContent = 'N/A';
+                document.getElementById('day_of_week').textContent = 'N/A';
+                document.getElementById('day_of_year').textContent = 'N/A';
+                document.getElementById('utc_datetime').textContent = 'N/A';
+                document.getElementById('unixtime').textContent = 'N/A';
+                document.getElementById('raw_offset').textContent = 'N/A';
+                document.getElementById('week_number').textContent = 'N/A';
+                document.getElementById('dst').textContent = 'N/A';
+                document.getElementById('abbreviation').textContent = 'N/A';
+                document.getElementById('dst_offset').textContent = 'N/A';
+                document.getElementById('dst_from').textContent = 'N/A';
+                document.getElementById('dst_until').textContent = 'N/A';
+                // Set fallback SEO meta tags
+                document.getElementById('dynamic-title').textContent = `Time and Date for ${timezone}`;
+                document.getElementById('title').textContent = `Time and Date for ${timezone}`;
+                document.getElementById('dynamic-description').setAttribute('content', `Unable to fetch time for ${timezone}. Showing local JST time.`);
+                document.getElementById('dynamic-keywords').setAttribute('content', `${timezone} time, time and date, world time`);
+                document.getElementById('og-title').setAttribute('content', `Time and Date for ${timezone}`);
+                document.getElementById('og-description').setAttribute('content', `Unable to fetch time for ${timezone}. Showing local JST time.`);
+            }
+        }
+
+        // Initialize
+        updateLocalDateTime();
+        setInterval(updateLocalDateTime, 1000); // Update local JST time every second
+
+        // Get timezone from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const timezone = urlParams.get('tz');
+        if (timezone) {
+            fetchAPIData(timezone);
+        } else {
+            document.getElementById('dynamic-title').textContent = 'No Timezone Selected';
+            document.getElementById('title').textContent = 'No Timezone Selected';
+            document.getElementById('dynamic-description').setAttribute('content', 'No timezone selected. Explore global timezones to view time and date details.');
+            document.getElementById('dynamic-keywords').setAttribute('content', 'timezone, time and date, world time');
+            document.getElementById('og-title').setAttribute('content', 'No Timezone Selected');
+            document.getElementById('og-description').setAttribute('content', 'No timezone selected. Explore global timezones to view time and date details.');
+            document.getElementById('datetime').textContent = 'N/A';
+            document.getElementById('timezone').textContent = 'N/A';
+            document.getElementById('utc_offset').textContent = 'N/A';
+            document.getElementById('day_of_week').textContent = 'N/A';
+            document.getElementById('day_of_year').textContent = 'N/A';
+            document.getElementById('utc_datetime').textContent = 'N/A';
+            document.getElementById('unixtime').textContent = 'N/A';
+            document.getElementById('raw_offset').textContent = 'N/A';
+            document.getElementById('week_number').textContent = 'N/A';
+            document.getElementById('dst').textContent = 'N/A';
+            document.getElementById('abbreviation').textContent = 'N/A';
+            document.getElementById('dst_offset').textContent = 'N/A';
+            document.getElementById('dst_from').textContent = 'N/A';
+            document.getElementById('dst_until').textContent = 'N/A';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
