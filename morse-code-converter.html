@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Text to Morse Code / Morse Code to Text Converter Tool - Free Online Translator</title>
+    <meta name="description" content="A free online Morse code converter tool to translate text to Morse code or Morse code to text instantly. Supports encoding and decoding with copy-to-clipboard functionality. Compatible with all devices.">
+    <meta name="keywords" content="text to morse code, morse code to text, morse code converter, morse code translator, free morse code tool, online morse code encoder, morse code decoder, text to morse translator, morse to text converter, morse code generator, morse code translator online, morse code conversion tool, text morse code converter, online text to morse, morse code text translator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Morse Code Converter Team">
+    <meta property="og:title" content="Text to Morse Code / Morse Code to Text Converter Tool - Free Online Translator">
+    <meta property="og:description" content="Convert text to Morse code or Morse code to text with our free online tool. Fast, secure, and user-friendly for encoding and decoding Morse code messages.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/morse-code-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Text to Morse Code / Morse Code to Text Converter Tool - Free Online Translator">
+    <meta name="twitter:description" content="Convert text to Morse code or Morse code to text with our free online tool. Fast, secure, and user-friendly for encoding and decoding Morse code messages.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-dot-circle text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Text to Morse Code / Morse Code to Text Converter</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Translate text to Morse code or Morse code to text instantly with this free online tool. Supports encoding and decoding for Morse code messages.</p>
+        </header>
+
+        <!-- Morse Code Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button type="button" id="textToMorseBtn" class="action-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Text to Morse</button>
+                        <button type="button" id="morseToTextBtn" class="action-btn w-full sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Morse to Text</button>
+                    </div>
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="inputLabel">Enter Text to Convert to Morse Code</label>
+                    <textarea id="inputText" placeholder="Enter text to convert to Morse code (e.g., 'SOS' becomes '... --- ...')..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y"></textarea>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-auto bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-auto bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Result</label>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y" placeholder="Converted result will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid input. Please check your text or Morse code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">About Text to Morse Code / Morse Code to Text Converter Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Morse Code Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Morse Code Converter Tool is a free online utility that allows you to translate text to Morse code or decode Morse code back to text. Whether you're learning Morse code, working on a project, or exploring telecommunication history, this tool provides a quick and easy way to encode or decode messages using the Morse code translator.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select whether you want to convert text to Morse code or Morse code to text using the toggle buttons. Enter your text or Morse code in the input field, then click "Convert" to see the result. Use the "Copy Result" button to copy the output to your clipboard, or "Reset" to clear the form. The tool is secure, runs entirely in your browser, and is compatible with all devices for seamless text to Morse code or Morse code to text conversion.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Morse Code Converter?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our Morse code translator is free, fast, and user-friendly, making it ideal for students, hobbyists, or professionals needing to encode or decode Morse code messages. The copy-to-clipboard feature and responsive design ensure a smooth experience, whether you're using it for educational purposes, coding projects, or fun activities like creating Morse code puzzles. This online text to Morse code and Morse code to text converter is perfect for all your translation needs.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        const morseCodeMap = {
+            'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
+            'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
+            'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+            'Y': '-.--', 'Z': '--..', '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-',
+            '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.', '.': '.-.-.-', ',': '--..--',
+            '?': '..--..', '!': '-.-.--', ' ': '/'
+        };
+
+        const reverseMorseCodeMap = Object.fromEntries(
+            Object.entries(morseCodeMap).map(([key, value]) => [value, key])
+        );
+
+        let mode = 'textToMorse'; // Default mode: text to Morse
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function toggleMode(newMode) {
+            mode = newMode;
+            const textToMorseBtn = document.getElementById('textToMorseBtn');
+            const morseToTextBtn = document.getElementById('morseToTextBtn');
+            const inputLabel = document.getElementById('inputLabel');
+            const convertBtn = document.getElementById('convertBtn');
+
+            if (mode === 'textToMorse') {
+                textToMorseBtn.classList.add('active', 'bg-red-600', 'text-white');
+                textToMorseBtn.classList.remove('bg-blue-600');
+                morseToTextBtn.classList.remove('active', 'bg-blue-600', 'text-white');
+                morseToTextBtn.classList.add('bg-blue-600');
+                inputLabel.textContent = 'Enter Text to Convert to Morse Code';
+                convertBtn.innerHTML = '<i class="fas fa-exchange-alt mr-2"></i>Convert';
+                convertBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                convertBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                document.getElementById('inputText').placeholder = 'Enter text to convert to Morse code (e.g., "SOS" becomes "... --- ...")...';
+            } else {
+                morseToTextBtn.classList.add('active', 'bg-blue-600', 'text-white');
+                morseToTextBtn.classList.remove('bg-red-600');
+                textToMorseBtn.classList.remove('active', 'bg-red-600', 'text-white');
+                textToMorseBtn.classList.add('bg-red-600');
+                inputLabel.textContent = 'Enter Morse Code to Convert to Text';
+                convertBtn.innerHTML = '<i class="fas fa-exchange-alt mr-2"></i>Convert';
+                convertBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                convertBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                document.getElementById('inputText').placeholder = 'Enter Morse code to convert to text (e.g., "... --- ..." becomes "SOS")...';
+            }
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            convertText();
+        }
+
+        function convertText() {
+            const input = document.getElementById('inputText').value.trim();
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            if (!input) {
+                resultText.value = '';
+                return;
+            }
+
+            if (mode === 'textToMorse') {
+                try {
+                    const result = input.toUpperCase().split('').map(char => {
+                        if (morseCodeMap[char]) return morseCodeMap[char];
+                        throw new Error('Invalid character in input');
+                    }).join(' ');
+                    resultText.value = result;
+                } catch (e) {
+                    errorMessage.textContent = 'Error: Invalid text. Only letters, numbers, and common punctuation (., ,, ?, !, space) are supported.';
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            } else {
+                try {
+                    const morseWords = input.split('/').map(word => word.trim());
+                    const result = morseWords.map(word => {
+                        const chars = word.split(' ').filter(c => c);
+                        return chars.map(code => {
+                            if (reverseMorseCodeMap[code]) return reverseMorseCodeMap[code];
+                            throw new Error('Invalid Morse code');
+                        }).join('');
+                    }).join(' ');
+                    resultText.value = result;
+                } catch (e) {
+                    errorMessage.textContent = 'Error: Invalid Morse code. Use dots (.), dashes (-), spaces, and slashes (/) for word separation.';
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            }
+        }
+
+        document.getElementById('textToMorseBtn').addEventListener('click', () => toggleMode('textToMorse'));
+        document.getElementById('morseToTextBtn').addEventListener('click', () => toggleMode('morseToText'));
+        document.getElementById('convertBtn').addEventListener('click', convertText);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            toggleMode('textToMorse');
+        });
+
+        // Update result on input
+        document.getElementById('inputText').addEventListener('input', convertText);
+
+        // Initialize text to Morse mode
+        toggleMode('textToMorse');
+    </script>
+</body>
+</html>
