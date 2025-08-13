@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator Tool - Free Basic and Scientific Calculations</title>
+    <meta name="description" content="A free online web calculator for basic and scientific calculations. Perform arithmetic operations, trigonometric functions, logarithms, and more with ease. User-friendly and compatible with all devices.">
+    <meta name="keywords" content="web calculator, online calculator, scientific calculator, free calculator tool, basic calculator, math calculator, trigonometric calculator, log calculator, sqrt calculator, exp calculator, pi calculator, advanced calculator, arithmetic calculator, calculation tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Web Calculator Team">
+    <meta property="og:title" content="Web Calculator Tool - Free Basic and Scientific Calculations">
+    <meta property="og:description" content="Perform basic and scientific calculations online for free. Supports arithmetic, trigonometry, logarithms, and more. Fast, accurate, and mobile-friendly.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/web-calculator">
+    <meta property="og:image" content="https://example.com/images/web-calculator-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Calculator Tool - Free Basic and Scientific Calculations">
+    <meta name="twitter:description" content="Perform basic and scientific calculations online for free. Supports arithmetic, trigonometry, logarithms, and more. Fast, accurate, and mobile-friendly.">
+    <meta name="twitter:image" content="https://example.com/images/web-calculator-og.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .calc-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .calc-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Web Calculator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Perform basic and scientific calculations online for free. Supports arithmetic, trigonometry, logarithms, and more.</p>
+        </header>
+
+        <!-- Calculator Interface -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <button type="button" id="basicModeBtn" class="calc-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Basic Mode</button>
+                    <button type="button" id="scientificModeBtn" class="calc-btn w-full sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Scientific Mode</button>
+                </div>
+                <div class="mb-4">
+                    <input type="text" id="display" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-right text-xs sm:text-sm md:text-base font-mono">
+                </div>
+                <div id="basicButtons" class="grid grid-cols-4 gap-2">
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('7')">7</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('8')">8</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('9')">9</button>
+                    <button class="calc-btn bg-orange-500 text-white font-semibold py-2 rounded-lg hover:bg-orange-600 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('/')">/</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('4')">4</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('5')">5</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('6')">6</button>
+                    <button class="calc-btn bg-orange-500 text-white font-semibold py-2 rounded-lg hover:bg-orange-600 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('*')">*</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('1')">1</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('2')">2</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('3')">3</button>
+                    <button class="calc-btn bg-orange-500 text-white font-semibold py-2 rounded-lg hover:bg-orange-600 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('-')">-</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('0')">0</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('.')">.</button>
+                    <button class="calc-btn bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition text-xs sm:text-sm md:text-base col-span-2" onclick="calculate()">=</button>
+                    <button class="calc-btn bg-orange-500 text-white font-semibold py-2 rounded-lg hover:bg-orange-600 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('+')">+</button>
+                    <button class="calc-btn bg-purple-600 text-white font-semibold py-2 rounded-lg hover:bg-purple-700 transition text-xs sm:text-sm md:text-base col-span-3" onclick="clearDisplay()">C</button>
+                </div>
+                <div id="scientificButtons" class="grid grid-cols-4 gap-2 hidden mt-4">
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.sin(')">sin</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.cos(')">cos</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.tan(')">tan</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.log10(')">log</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.sqrt(')">√</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.exp(')">exp</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.PI')">π</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('Math.E')">e</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('(')">(</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay(')')">)</button>
+                    <button class="calc-btn bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition text-xs sm:text-sm md:text-base" onclick="appendToDisplay('**')">^</button>
+                    <button class="calc-btn bg-purple-600 text-white font-semibold py-2 rounded-lg hover:bg-purple-700 transition text-xs sm:text-sm md:text-base" onclick="clearDisplay()">C</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">About Web Calculator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Web Calculator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our Web Calculator Tool is a free online calculator that supports both basic arithmetic operations and advanced scientific calculations. Switch between modes to perform simple additions or complex trigonometric functions with ease.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Choose between Basic and Scientific mode using the toggle buttons. Enter your calculation using the on-screen buttons or your keyboard. Click '=' to compute the result. Use 'C' to clear the display. The tool is designed for accuracy and speed, making it ideal for students, professionals, and everyday use.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Web Calculator?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our calculator is free, fast, and accessible from any device without downloads. It supports a wide range of functions, including sin, cos, tan, log, sqrt, exp, pi, and e, ensuring you have all the tools you need for basic and scientific computations. The user-friendly design and responsive layout provide the best experience on desktop or mobile.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="calc-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let displayValue = '0';
+        let isScientificMode = false;
+
+        function toggleMode(mode) {
+            isScientificMode = mode === 'scientific';
+            const basicButtons = document.getElementById('basicButtons');
+            const scientificButtons = document.getElementById('scientificButtons');
+            const basicModeBtn = document.getElementById('basicModeBtn');
+            const scientificModeBtn = document.getElementById('scientificModeBtn');
+
+            if (isScientificMode) {
+                basicButtons.classList.add('hidden');
+                scientificButtons.classList.remove('hidden');
+                basicModeBtn.classList.remove('active');
+                scientificModeBtn.classList.add('active');
+            } else {
+                basicButtons.classList.remove('hidden');
+                scientificButtons.classList.add('hidden');
+                basicModeBtn.classList.add('active');
+                scientificModeBtn.classList.remove('active');
+            }
+            clearDisplay();
+        }
+
+        function appendToDisplay(value) {
+            if (displayValue === '0') displayValue = '';
+            displayValue += value;
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            displayValue = '0';
+            updateDisplay();
+        }
+
+        function calculate() {
+            try {
+                let result = eval(displayValue.replace('^', '**'));
+                displayValue = result.toString();
+                updateDisplay();
+            } catch (e) {
+                displayValue = 'Error';
+                updateDisplay();
+            }
+        }
+
+        function updateDisplay() {
+            document.getElementById('display').value = displayValue;
+        }
+
+        document.getElementById('basicModeBtn').addEventListener('click', () => toggleMode('basic'));
+        document.getElementById('scientificModeBtn').addEventListener('click', () => toggleMode('scientific'));
+
+        // Initialize basic mode
+        toggleMode('basic');
+    </script>
+</body>
+</html>
