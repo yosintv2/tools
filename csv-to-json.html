@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CSV to JSON Converter Tool - Free Online CSV to JSON Parser</title>
+    <meta name="description" content="A free online CSV to JSON converter tool to transform CSV data into JSON format. Supports manual input or file upload, with copy-to-clipboard functionality. Works on all devices.">
+    <meta name="keywords" content="csv to json, csv to json converter, free csv to json tool, online csv to json parser, csv to json converter online, csv to json formatter, csv data converter, json from csv tool, csv file to json, csv to json online, csv to json parser, convert csv to json, csv to json generator, csv data to json, online csv converter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CSV to JSON Converter Tool Team">
+    <meta property="og:title" content="CSV to JSON Converter Tool - Free Online CSV to JSON Parser">
+    <meta property="og:description" content="Convert CSV data to JSON format with our free online tool. Supports manual input or file upload, with copy-to-clipboard functionality. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/csv-to-json">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSV to JSON Converter Tool - Free Online CSV to JSON Parser">
+    <meta name="twitter:description" content="Convert CSV data to JSON format with our free online tool. Supports manual input or file upload, with copy-to-clipboard functionality. Works on all devices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-file-csv text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">CSV to JSON Converter Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert CSV data to JSON format with this free online tool. Supports manual input or file upload. Compatible with all devices.</p>
+        </header>
+
+        <!-- CSV to JSON Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button type="button" id="manualBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Manual Input</button>
+                        <button type="button" id="uploadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Upload File</button>
+                    </div>
+                    <input type="file" id="fileInput" accept=".csv" class="hidden">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="inputLabel">Enter CSV Data</label>
+                    <textarea id="inputText" placeholder='Enter CSV data (e.g., name,age\nJohn,30\nJane,25)' class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y font-mono"></textarea>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">JSON Result</label>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y font-mono" placeholder="Converted JSON will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid CSV input. Please check your data format.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About CSV to JSON Converter Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the CSV to JSON Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The CSV to JSON Converter Tool is a free online utility that transforms CSV data into JSON format. This csv to json parser is ideal for developers, data analysts, and anyone needing to convert CSV files or text into structured JSON for web applications or APIs.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select "Manual Input" to enter CSV data or "Upload File" to upload a CSV file. Click "Convert" to transform the CSV into JSON format. Use the "Copy Result" button to copy the JSON output to your clipboard, or "Reset" to clear the form. This online CSV to JSON converter is secure, runs in your browser, and works on all devices for seamless data conversion.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our CSV to JSON Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our CSV to JSON formatter is free, fast, and user-friendly, perfect for converting CSV data for programming, data analysis, or API integration. The copy-to-clipboard feature and responsive design ensure a smooth experience on any device. Whether you're converting small datasets or large CSV files, this online CSV to JSON converter tool provides accurate and reliable results.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let mode = 'manual'; // Default mode: manual input
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function parseCSV(csv) {
+            const lines = csv.trim().split('\n');
+            const headers = lines[0].split(',').map(header => header.trim());
+            if (!headers.length || lines.length < 2) {
+                throw new Error('CSV must have headers and at least one data row.');
+            }
+
+            const result = lines.slice(1).map(line => {
+                const values = line.split(',').map(value => value.trim());
+                if (values.length !== headers.length) {
+                    throw new Error('Inconsistent number of columns in CSV data.');
+                }
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = values[index];
+                });
+                return obj;
+            });
+
+            return result;
+        }
+
+        function convertToJSON(csv) {
+            try {
+                const data = parseCSV(csv);
+                return JSON.stringify(data, null, 2);
+            } catch (e) {
+                throw new Error(`Invalid CSV format: ${e.message}`);
+            }
+        }
+
+        function toggleMode(newMode) {
+            mode = newMode;
+            const manualBtn = document.getElementById('manualBtn');
+            const uploadBtn = document.getElementById('uploadBtn');
+            const inputLabel = document.getElementById('inputLabel');
+            const inputText = document.getElementById('inputText');
+            const convertBtn = document.getElementById('convertBtn');
+
+            if (mode === 'manual') {
+                manualBtn.classList.add('active', 'bg-red-600', 'text-white');
+                manualBtn.classList.remove('bg-blue-600');
+                uploadBtn.classList.remove('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.add('bg-blue-600');
+                inputLabel.textContent = 'Enter CSV Data';
+                inputText.classList.remove('hidden');
+                convertBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                convertBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                inputText.placeholder = 'Enter CSV data (e.g., name,age\nJohn,30\nJane,25)';
+            } else {
+                uploadBtn.classList.add('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.remove('bg-red-600');
+                manualBtn.classList.remove('active', 'bg-red-600', 'text-white');
+                manualBtn.classList.add('bg-red-600');
+                inputLabel.textContent = 'Upload CSV File';
+                inputText.classList.add('hidden');
+                convertBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                convertBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                inputText.placeholder = '';
+            }
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+        }
+
+        function processCSV() {
+            const inputText = document.getElementById('inputText').value;
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            if (mode === 'manual' && !inputText) {
+                resultText.value = '';
+                return;
+            }
+
+            try {
+                if (mode === 'manual') {
+                    resultText.value = convertToJSON(inputText);
+                }
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+                resultText.value = '';
+            }
+        }
+
+        function handleFileUpload(file) {
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const csv = e.target.result;
+                    resultText.value = convertToJSON(csv);
+                } catch (err) {
+                    errorMessage.textContent = `Error: ${err.message}`;
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            };
+            reader.onerror = () => {
+                errorMessage.textContent = 'Error: Unable to read the file.';
+                errorMessage.classList.remove('hidden');
+                resultText.value = '';
+            };
+            reader.readAsText(file);
+        }
+
+        document.getElementById('manualBtn').addEventListener('click', () => toggleMode('manual'));
+        document.getElementById('uploadBtn').addEventListener('click', () => {
+            toggleMode('upload');
+            document.getElementById('fileInput').click();
+        });
+        document.getElementById('fileInput').addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileUpload(e.target.files[0]);
+            }
+        });
+        document.getElementById('convertBtn').addEventListener('click', processCSV);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('fileInput').value = '';
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            toggleMode('manual');
+        });
+        document.getElementById('inputText').addEventListener('input', processCSV);
+
+        // Initialize manual mode
+        toggleMode('manual');
+    </script>
+</body>
+</html>
