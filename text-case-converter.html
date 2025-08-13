@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Converter Tool - Free Uppercase, Lowercase, Title Case, camelCase, snake_case</title>
+    <meta name="description" content="A free online text case converter tool to transform text into uppercase, lowercase, title case, camelCase, and snake_case. Fast, user-friendly, and compatible with all devices.">
+    <meta name="keywords" content="text case converter, uppercase converter, lowercase converter, title case converter, camelCase converter, snake_case converter, free text converter, online text case tool, text transformation, case converter, text formatting tool, text case changer, uppercase to lowercase, lowercase to uppercase, text case conversion, programming case converter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Text Case Converter Team">
+    <meta property="og:title" content="Text Case Converter Tool - Free Uppercase, Lowercase, Title Case, camelCase, snake_case">
+    <meta property="og:description" content="Transform text to uppercase, lowercase, title case, camelCase, or snake_case with our free online tool. Fast, secure, and compatible with all devices, including copy-to-clipboard functionality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/text-case-converter">
+    <meta property="og:image" content="https://example.com/images/text-case-converter-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Text Case Converter Tool - Free Uppercase, Lowercase, Title Case, camelCase, snake_case">
+    <meta name="twitter:description" content="Transform text to uppercase, lowercase, title case, camelCase, or snake_case with our free online tool. Fast, secure, and compatible with all devices, including copy-to-clipboard functionality.">
+    <meta name="twitter:image" content="https://example.com/images/text-case-converter-og.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-font text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Text Case Converter Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Transform text into uppercase, lowercase, title case, camelCase, or snake_case with ease. Free and compatible with all devices.</p>
+        </header>
+
+        <!-- Text Case Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button type="button" id="uppercaseBtn" class="action-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Uppercase</button>
+                        <button type="button" id="lowercaseBtn" class="action-btn w-full sm:w-auto bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Lowercase</button>
+                        <button type="button" id="titlecaseBtn" class="action-btn w-full sm:w-auto bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Title Case</button>
+                        <button type="button" id="camelcaseBtn" class="action-btn w-full sm:w-auto bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">camelCase</button>
+                        <button type="button" id="snakecaseBtn" class="action-btn w-full sm:w-auto bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">snake_case</button>
+                    </div>
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Enter Text to Convert</label>
+                    <textarea id="inputText" placeholder="Enter text to convert..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y"></textarea>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-auto bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-auto bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-auto bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Result</label>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y" placeholder="Converted text will appear here..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">About Text Case Converter Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Text Case Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our Text Case Converter Tool is a free online utility that allows you to transform text into various case formats, including uppercase, lowercase, title case, camelCase, and snake_case. It’s designed for writers, developers, and anyone needing quick text formatting.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select the desired case format using the buttons (uppercase, lowercase, title case, camelCase, or snake_case). Enter your text in the input field, then click "Convert" to see the result. Use the "Copy Result" button to copy the output to your clipboard, or "Reset" to clear the form. The tool is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Text Case Converter?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    This tool is free, fast, and user-friendly, making it ideal for formatting text for programming (e.g., camelCase, snake_case for variable names), writing (e.g., title case for headlines), or general text editing. The copy-to-clipboard feature and responsive design ensure a seamless experience for developers, content creators, and casual users alike.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let currentMode = 'uppercase'; // Default mode
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function toggleMode(mode) {
+            currentMode = mode;
+            const buttons = {
+                'uppercase': document.getElementById('uppercaseBtn'),
+                'lowercase': document.getElementById('lowercaseBtn'),
+                'titlecase': document.getElementById('titlecaseBtn'),
+                'camelcase': document.getElementById('camelcaseBtn'),
+                'snakecase': document.getElementById('snakecaseBtn')
+            };
+            const convertBtn = document.getElementById('convertBtn');
+            Object.values(buttons).forEach(btn => {
+                btn.classList.remove('active', 'bg-red-600', 'bg-blue-600', 'bg-green-600', 'bg-purple-600', 'bg-orange-600', 'text-white');
+                btn.classList.add(btn.id === `${mode}Btn` ? `bg-${mode === 'uppercase' ? 'red' : mode === 'lowercase' ? 'blue' : mode === 'titlecase' ? 'green' : mode === 'camelcase' ? 'purple' : 'orange'}-600` : 'bg-gray-200');
+                btn.classList.add(btn.id === `${mode}Btn` ? 'text-white' : 'text-gray-800');
+                if (btn.id === `${mode}Btn`) btn.classList.add('active');
+            });
+            convertBtn.innerHTML = `<i class="fas fa-exchange-alt mr-2"></i>Convert to ${mode.charAt(0).toUpperCase() + mode.slice(1)}`;
+            convertBtn.classList.remove('bg-red-600', 'bg-blue-600', 'bg-green-600', 'bg-purple-600', 'bg-orange-600', 'hover:bg-red-700', 'hover:bg-blue-700', 'hover:bg-green-700', 'hover:bg-purple-700', 'hover:bg-orange-700');
+            convertBtn.classList.add(`bg-${mode === 'uppercase' ? 'red' : mode === 'lowercase' ? 'blue' : mode === 'titlecase' ? 'green' : mode === 'camelcase' ? 'purple' : 'orange'}-600`, `hover:bg-${mode === 'uppercase' ? 'red' : mode === 'lowercase' ? 'blue' : mode === 'titlecase' ? 'green' : mode === 'camelcase' ? 'purple' : 'orange'}-700`);
+            convertText();
+        }
+
+        function convertText() {
+            const input = document.getElementById('inputText').value;
+            const resultText = document.getElementById('resultText');
+            let result = input;
+
+            if (currentMode === 'uppercase') {
+                result = input.toUpperCase();
+            } else if (currentMode === 'lowercase') {
+                result = input.toLowerCase();
+            } else if (currentMode === 'titlecase') {
+                result = input.replace(/\w\S*/g, word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+            } else if (currentMode === 'camelcase') {
+                result = input.toLowerCase().replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match, index) => {
+                    if (/\s+/.test(match)) return '';
+                    return index === 0 ? match.toLowerCase() : match.toUpperCase();
+                });
+            } else if (currentMode === 'snakecase') {
+                result = input.toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '');
+            }
+
+            resultText.value = result;
+        }
+
+        document.getElementById('uppercaseBtn').addEventListener('click', () => toggleMode('uppercase'));
+        document.getElementById('lowercaseBtn').addEventListener('click', () => toggleMode('lowercase'));
+        document.getElementById('titlecaseBtn').addEventListener('click', () => toggleMode('titlecase'));
+        document.getElementById('camelcaseBtn').addEventListener('click', () => toggleMode('camelcase'));
+        document.getElementById('snakecaseBtn').addEventListener('click', () => toggleMode('snakecase'));
+        document.getElementById('convertBtn').addEventListener('click', convertText);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('resultText').value = '';
+            toggleMode('uppercase');
+        });
+
+        // Update result on input
+        document.getElementById('inputText').addEventListener('input', convertText);
+
+        // Initialize uppercase mode
+        toggleMode('uppercase');
+    </script>
+</body>
+</html>
