@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>PNG to WEBP Converter Tool - Free Online Image Converter</title>
+    <meta name="description" content="A free online PNG to WEBP Converter tool to convert PNG images to WEBP format. Upload, convert, preview, copy base64 code, and download as WEBP. Works on all devices with accurate results.">
+    <meta name="keywords" content="png to webp converter, online image converter, free png to webp tool, image converter, convert png to webp, png to webp maker, webp converter, online png converter, png to webp tool, free image converter, create webp from png, image converter online, png to webp creator, webp image converter, base64 image converter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="PNG to WEBP Converter Tool Team">
+    <meta property="og:title" content="PNG to WEBP Converter Tool - Free Online Image Converter">
+    <meta property="og:description" content="Convert PNG images to WEBP format with our free online tool. Upload, convert, preview, copy base64 code, and download as WEBP. Works on all devices with accurate results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/png-to-webp-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PNG to WEBP Converter Tool - Free Online Image Converter">
+    <meta name="twitter:description" content="Convert PNG images to WEBP format with our free online tool. Upload, convert, preview, copy base64 code, and download as WEBP. Works on all devices with accurate results.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/png-to-webp-converter">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .image-preview {
+            margin-top: 1rem;
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            border-radius: 0.375rem;
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-preview img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+        .image-filename {
+            margin-top: 0.5rem;
+            font-size: 0.75rem; /* text-xs */
+            color: #4b5563; /* Tailwind's text-gray-600 */
+            word-break: break-all;
+            text-align: center;
+        }
+        @media (min-width: 640px) {
+            .image-filename {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .image-filename {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        textarea {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            resize: vertical;
+            height: 100px;
+        }
+        input[type="file"] {
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-image text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">PNG to WEBP Converter Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert PNG images to WEBP format with this free online tool. Upload a PNG file, convert, preview the WEBP, copy base64 code, or download as WEBP. Compatible with all devices for accurate image conversion.</p>
+        </header>
+
+        <!-- Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputFile">Upload PNG Image</label>
+                        <input type="file" id="inputFile" accept="image/png" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="inputFileHelp">
+                        <p id="inputFileHelp" class="text-xs text-gray-600 mt-1">Upload a PNG image file to convert to WEBP format.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="downloadBtn" class="action-btn w-full sm:w-1/3 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Generated Base64 WEBP Code</label>
+                    <textarea id="base64Code" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" readonly placeholder="Generated base64 WEBP code will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please upload a valid PNG image.</p>
+                </div>
+                <div id="imagePreview" class="image-preview hidden">
+                    <img id="previewImage" src="" alt="Converted WEBP Preview">
+                    <p id="imageFilename" class="image-filename"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About PNG to WEBP Converter Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the PNG to WEBP Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The PNG to WEBP Converter Tool is a free online utility that converts PNG images to WEBP format. Upload your PNG file, convert it to WEBP, preview the result, copy the base64-encoded WEBP code, or download it as a WEBP file for use in web development, graphic design, or other projects requiring WEBP format.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Upload a PNG image file, then click "Convert" to generate a WEBP image. Preview the converted WEBP, copy the base64 code with the "Copy" button, download it as a WEBP file, or reset the form. This tool is secure, runs in your browser, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our PNG to WEBP Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our PNG to WEBP converter is free, accurate, and user-friendly, providing high-quality WEBP images from PNG files with live preview, base64 code copying, and download features. It ensures a seamless experience on any device, perfect for creating WEBP images for web optimization, design, or archival purposes.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function convertPngToWebp(file, callback) {
+            if (!file || !file.type.includes('image/png')) {
+                throw new Error('Please upload a valid PNG image');
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d', { alpha: true });
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(img, 0, 0);
+                    try {
+                        const base64 = canvas.toDataURL('image/webp', 0.8); // Quality set to 0.8 for WEBP
+                        callback({
+                            base64: base64,
+                            filename: file.name.replace(/\.(png|PNG)$/, '.webp')
+                        });
+                    } catch (e) {
+                        throw new Error('Failed to convert image to WEBP');
+                    }
+                };
+                img.onerror = function() {
+                    throw new Error('Failed to load PNG image');
+                };
+                img.src = e.target.result;
+            };
+            reader.onerror = function() {
+                throw new Error('Failed to read PNG file');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function processInput() {
+            const inputFile = document.getElementById('inputFile').files[0];
+            const base64Code = document.getElementById('base64Code');
+            const previewImage = document.getElementById('previewImage');
+            const imageFilename = document.getElementById('imageFilename');
+            const imagePreview = document.getElementById('imagePreview');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            imagePreview.classList.add('hidden');
+            base64Code.value = '';
+            previewImage.src = '';
+            imageFilename.textContent = '';
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+
+            if (!inputFile) {
+                return;
+            }
+
+            try {
+                convertPngToWebp(inputFile, ({ base64, filename }) => {
+                    base64Code.value = base64;
+                    previewImage.src = base64;
+                    imageFilename.textContent = filename;
+                    imagePreview.classList.remove('hidden');
+                    document.getElementById('copyBtn').dataset.result = base64;
+                    document.getElementById('downloadBtn').dataset.result = base64;
+                    document.getElementById('downloadBtn').dataset.filename = filename;
+                });
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('convertBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy base64 code';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const result = document.getElementById('downloadBtn').dataset.result;
+            const filename = document.getElementById('downloadBtn').dataset.filename;
+            if (result && filename) {
+                const a = document.createElement('a');
+                a.href = result;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            } else {
+                document.getElementById('errorMessage').textContent = 'Error: No converted image available for download';
+                document.getElementById('errorMessage').classList.remove('hidden');
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputFile').value = '';
+            document.getElementById('base64Code').value = '';
+            document.getElementById('previewImage').src = '';
+            document.getElementById('imageFilename').textContent = '';
+            document.getElementById('imagePreview').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+        });
+        document.getElementById('inputFile').addEventListener('change', processInput);
+    </script>
+</body>
+</html>
