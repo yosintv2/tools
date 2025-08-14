@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>GS1-128 (UCC/EAN-128) Barcode Generator Tool - Free Online Barcode Creator</title>
+    <meta name="description" content="A free online GS1-128 (UCC/EAN-128) Barcode Generator tool to create GS1-128 barcodes with Application Identifiers and custom captions. Generate, preview, copy SVG code, and download as JPG. Works on all devices with accurate results.">
+    <meta name="keywords" content="gs1-128 barcode generator, ucc/ean-128 barcode generator, online barcode generator, free gs1-128 barcode tool, barcode creator, generate gs1-128 barcode, gs1-128 barcode maker, barcode jpg generator, online barcode creator, gs1-128 barcode tool, free barcode generator, create gs1-128 barcode, barcode generator online, gs1-128 barcode creator, jpg barcode generator, barcode code generator, barcode with caption">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="GS1-128 Barcode Generator Tool Team">
+    <meta property="og:title" content="GS1-128 (UCC/EAN-128) Barcode Generator Tool - Free Online Barcode Creator">
+    <meta property="og:description" content="Create GS1-128 (UCC/EAN-128) barcodes with Application Identifiers and custom captions using our free online tool. Generate, preview, copy SVG code, and download as JPG. Works on all devices with accurate results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/gs1-128-barcode-generator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GS1-128 (UCC/EAN-128) Barcode Generator Tool - Free Online Barcode Creator">
+    <meta name="twitter:description" content="Create GS1-128 (UCC/EAN-128) barcodes with Application Identifiers and custom captions using our free online tool. Generate, preview, copy SVG code, and download as JPG. Works on all devices with accurate results.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/gs1-128-barcode-generator">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://収録.4f2.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .barcode-preview {
+            margin-top: 1rem;
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            border-radius: 0.375rem;
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .barcode-preview svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .barcode-text, .barcode-caption {
+            margin-top: 0.5rem;
+            font-size: 0.75rem; /* text-xs */
+            color: #4b5563; /* Tailwind's text-gray-600 */
+            word-break: break-all;
+            text-align: center;
+        }
+        @media (min-width: 640px) {
+            .barcode-text, .barcode-caption {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .barcode-text, .barcode-caption {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        textarea {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            resize: vertical;
+            height: 100px;
+        }
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234b5563'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1.5em;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-barcode text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">GS1-128 (UCC/EAN-128) Barcode Generator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Generate GS1-128 (UCC/EAN-128) barcodes with Application Identifiers and custom captions using this free online tool. Enter data with AI to create, preview with text and caption, copy SVG code, or download as JPG. Compatible with all devices for accurate barcode creation.</p>
+        </header>
+
+        <!-- Barcode Generator Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputAI">Select Application Identifier (AI)</label>
+                        <select id="inputAI" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="inputAIHelp">
+                            <option value="01">01 - GTIN (14 digits)</option>
+                            <option value="10">10 - Batch or Lot Number (up to 20 alphanumeric)</option>
+                            <option value="17">17 - Expiration Date (YYMMDD, 6 digits)</option>
+                            <option value="21">21 - Serial Number (up to 20 alphanumeric)</option>
+                        </select>
+                        <p id="inputAIHelp" class="text-xs text-gray-600 mt-1">Select an Application Identifier to define the data type for the barcode.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputData">Enter Data for Barcode</label>
+                        <input type="text" id="inputData" placeholder="Enter data (e.g., 01234567890123 for GTIN)" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="inputDataHelp">
+                        <p id="inputDataHelp" class="text-xs text-gray-600 mt-1">Enter data matching the selected AI (e.g., 14 digits for GTIN, up to 20 alphanumeric for Batch/Serial, 6 digits for Expiration Date).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputCaption">Enter Barcode Caption</label>
+                        <input type="text" id="inputCaption" placeholder="Enter caption (optional)" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="inputCaptionHelp">
+                        <p id="inputCaptionHelp" class="text-xs text-gray-600 mt-1">Enter an optional caption to display below the barcode in the preview and JPG download.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="generateBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-barcode mr-2"></i>
+                            Generate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="downloadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Generated Barcode Code (SVG)</label>
+                    <textarea id="barcodeCode" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" readonly placeholder="Generated SVG code will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid data for the barcode.</p>
+                </div>
+                <div id="barcodePreview" class="barcode-preview hidden">
+                    <div id="barcodeSvg"></div>
+                    <p id="barcodeText" class="barcode-text"></p>
+                    <p id="barcodeCaption" class="barcode-caption"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About GS1-128 (UCC/EAN-128) Barcode Generator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the GS1-128 (UCC/EAN-128) Barcode Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The GS1-128 (UCC/EAN-128) Barcode Generator Tool is a free online utility that creates GS1-128 barcodes using Application Identifiers (e.g., GTIN, Batch Number, Expiration Date, Serial Number) with optional custom captions. Generate SVG barcode code, preview it with text and caption, copy the code, or download it as a JPG for use in supply chain, logistics, or retail projects.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select an Application Identifier (AI), enter corresponding data (e.g., 14 digits for GTIN), and an optional caption, then click "Generate" to create a GS1-128 barcode. Preview the barcode with its text and caption below, copy the SVG code with the "Copy" button, download it as a JPG file, or reset the form. This tool is secure, runs in your browser, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our GS1-128 (UCC/EAN-128) Barcode Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our GS1-128 barcode generator is free, accurate, and user-friendly, providing high-quality barcodes with Application Identifiers and custom captions in SVG and JPG formats for professional use. With live preview, text and caption display, copy, and download features, it ensures a seamless experience on any device, perfect for creating reliable barcodes for your business needs.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function generateGS1128(ai, data) {
+            if (!ai || !data) {
+                throw new Error('Both Application Identifier and data are required');
+            }
+
+            // Validate AI and data
+            const aiRules = {
+                '01': { length: 14, pattern: /^[0-9]{14}$/, description: 'GTIN (14 digits)' },
+                '10': { length: 20, pattern: /^[0-9A-Za-z]{1,20}$/, description: 'Batch or Lot Number (up to 20 alphanumeric)' },
+                '17': { length: 6, pattern: /^[0-9]{6}$/, description: 'Expiration Date (YYMMDD, 6 digits)' },
+                '21': { length: 20, pattern: /^[0-9A-Za-z]{1,20}$/, description: 'Serial Number (up to 20 alphanumeric)' }
+            };
+
+            if (!aiRules[ai]) {
+                throw new Error('Invalid Application Identifier');
+            }
+            if (!aiRules[ai].pattern.test(data)) {
+                throw new Error(`Data must match ${aiRules[ai].description}`);
+            }
+            if (data.length > aiRules[ai].length) {
+                throw new Error(`Data exceeds maximum length for ${aiRules[ai].description}`);
+            }
+
+            // GS1-128 uses Code 128 with FNC1 as the first character
+            const FNC1 = String.fromCharCode(201); // Non-printable FNC1 character
+            const text = FNC1 + ai + data;
+
+            // Code 128 character set
+            const code128 = {
+                ' ': 0, '!': 1, '"': 2, '#': 3, '$': 4, '%': 5, '&': 6, "'": 7, '(': 8, ')': 9,
+                '*': 10, '+': 11, ',': 12, '-': 13, '.': 14, '/': 15, '0': 16, '1': 17, '2': 18, '3': 19,
+                '4': 20, '5': 21, '6': 22, '7': 23, '8': 24, '9': 25, ':': 26, ';': 27, '<': 28, '=': 29,
+                '>': 30, '?': 31, '@': 32, 'A': 33, 'B': 34, 'C': 35, 'D': 36, 'E': 37, 'F': 38, 'G': 39,
+                'H': 40, 'I': 41, 'J': 42, 'K': 43, 'L': 44, 'M': 45, 'N': 46, 'O': 47, 'P': 48, 'Q': 49,
+                'R': 50, 'S': 51, 'T': 52, 'U': 53, 'V': 54, 'W': 55, 'X': 56, 'Y': 57, 'Z': 58, '[': 59,
+                '\\': 60, ']': 61, '^': 62, '_': 63, '`': 64, 'a': 65, 'b': 66, 'c': 67, 'd': 68, 'e': 69,
+                'f': 70, 'g': 71, 'h': 72, 'i': 73, 'j': 74, 'k': 75, 'l': 76, 'm': 77, 'n': 78, 'o': 79,
+                'p': 80, 'q': 81, 'r': 82, 's': 83, 't': 84, 'u': 85, 'v': 86, 'w': 87, 'x': 88, 'y': 89,
+                'z': 90, '{': 91, '|': 92, '}': 93, '~': 94, 'DEL': 95, 'FNC1': 102
+            };
+
+            // Code 128 patterns (11 modules: 3 bars, 3 spaces)
+            const patterns = [
+                "11011001100", "11001101100", "11001100110", "10010011000", "10010001100", "10001001100",
+                "10011001000", "10011000100", "10001100100", "11001001000", "11001000100", "11000100100",
+                "10110011100", "10011011100", "10011001110", "10111001100", "10011101100", "10011100110",
+                "11001110010", "11001011100", "11001001110", "11011100100", "11001110100", "11101101110",
+                "11101001100", "11100101100", "11100100110", "11101100100", "11100110100", "11100110010",
+                "11011011000", "11011000110", "11000110110", "10100011000", "10001011000", "10001000110",
+                "10110001000", "10001101000", "10001100010", "11010001000", "11000101000", "11000100010",
+                "10110111000", "10110001110", "10001101110", "10111011000", "10111000110", "10001110110",
+                "11101011000", "11101000110", "11100010110", "11101101000", "11101100010", "11100011010",
+                "11101111010", "11001000010", "11110001010", "10100111000", "10100001110", "10010111000",
+                "10010110010", "10010010110", "10111010000", "10111001000", "10001101010", "10001011110",
+                "10101100010", "10100010110", "10010101100", "10010100110", "10010011100", "10101111000",
+                "10100101110", "10111100100", "10011110100", "10011110010", "11110100100", "11110010100",
+                "11110010010", "11011010000", "11011001000", "11010010100", "10111011110", "10111101110",
+                "11101011110", "11110101110", "11010000110", "11000101110", "11011101000", "11011100010",
+                "11011101110", "11101011000", "11101000110", "11100010110", "11101101000", "11101100010",
+                "11100011010", "10101111000", "10100111110", "10011011110", "10111101000", "10111100010"
+            ];
+
+            // Start with Code C for numeric pairs or Code B for alphanumeric
+            let codeSet = 'C'; // Start with Code C for efficiency
+            let bars = patterns[105]; // Start Code C
+            let values = [105]; // Track values for checksum
+
+            // Encode AI and data
+            if (ai === '01' || ai === '17') {
+                // Numeric data, use Code C for pairs
+                values.push(code128['FNC1']);
+                bars += patterns[code128['FNC1']];
+                for (let i = 0; i < ai.length; i += 2) {
+                    const pair = parseInt(ai.slice(i, i + 2));
+                    values.push(pair);
+                    bars += patterns[pair];
+                }
+                for (let i = 0; i < data.length; i += 2) {
+                    const pair = parseInt(data.slice(i, i + 2));
+                    values.push(pair);
+                    bars += patterns[pair];
+                }
+            } else {
+                // Alphanumeric, switch to Code B
+                codeSet = 'B';
+                bars = patterns[104]; // Start Code B
+                values = [104];
+                values.push(code128['FNC1']);
+                bars += patterns[code128['FNC1']];
+                for (let i = 0; i < ai.length; i++) {
+                    values.push(code128[ai[i]]);
+                    bars += patterns[code128[ai[i]]];
+                }
+                for (let i = 0; i < data.length; i++) {
+                    values.push(code128[data[i]]);
+                    bars += patterns[code128[data[i]]];
+                }
+            }
+
+            // Calculate Mod 103 checksum
+            let sum = values[0];
+            for (let i = 1; i < values.length; i++) {
+                sum += values[i] * i;
+            }
+            const checkDigit = sum % 103;
+            bars += patterns[checkDigit];
+            values.push(checkDigit);
+
+            // Add stop code
+            bars += patterns[106]; // Stop code
+
+            // Generate SVG
+            const barWidth = 2;
+            const height = 100;
+            const width = bars.length * barWidth;
+            let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">`;
+            for (let i = 0; i < bars.length; i++) {
+                if (bars[i] === '1') {
+                    svg += `<rect x="${i * barWidth}" y="0" width="${barWidth}" height="${height}" fill="black"/>`;
+                }
+            }
+            svg += '</svg>';
+
+            return { svg, text: `(${ai})${data}` };
+        }
+
+        function svgToJpg(svg, text, caption, callback) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            const svgBlob = new Blob([svg], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(svgBlob);
+
+            img.onload = () => {
+                // Calculate dimensions
+                const barcodeHeight = img.height;
+                const textHeight = text ? 30 : 0;
+                const captionHeight = caption ? 30 : 0;
+                const padding = 10;
+                canvas.width = img.width + 20; // 10px padding on each side
+                canvas.height = barcodeHeight + textHeight + captionHeight + padding * 3;
+
+                // Draw white background
+                ctx.fillStyle = '#fff';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Draw barcode centered
+                ctx.drawImage(img, 10, 10);
+
+                // Draw text and caption centered
+                ctx.font = '16px Inter, sans-serif';
+                ctx.fillStyle = '#4b5563'; // Tailwind's text-gray-600
+                ctx.textAlign = 'center';
+                if (text) {
+                    ctx.fillText(text, canvas.width / 2, barcodeHeight + 30);
+                }
+                if (caption) {
+                    ctx.fillText(caption, canvas.width / 2, barcodeHeight + 60);
+                }
+
+                canvas.toBlob(blob => {
+                    callback(blob);
+                    URL.revokeObjectURL(url);
+                }, 'image/jpeg', 0.95);
+            };
+            img.src = url;
+        }
+
+        function processInput() {
+            const inputAI = document.getElementById('inputAI').value;
+            const inputData = document.getElementById('inputData').value.trim();
+            const inputCaption = document.getElementById('inputCaption').value.trim();
+            const barcodeCode = document.getElementById('barcodeCode');
+            const barcodeSvg = document.getElementById('barcodeSvg');
+            const barcodeText = document.getElementById('barcodeText');
+            const barcodeCaption = document.getElementById('barcodeCaption');
+            const barcodePreview = document.getElementById('barcodePreview');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            barcodePreview.classList.add('hidden');
+            barcodeCode.value = '';
+            barcodeSvg.innerHTML = '';
+            barcodeText.textContent = '';
+            barcodeCaption.textContent = '';
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+            document.getElementById('downloadBtn').dataset.caption = '';
+
+            if (!inputData) {
+                return;
+            }
+
+            try {
+                const { svg, text } = generateGS1128(inputAI, inputData);
+                if (inputCaption && !/^[ -~]*$/.test(inputCaption)) {
+                    throw new Error('Caption must contain only printable ASCII characters');
+                }
+                barcodeCode.value = svg;
+                barcodeSvg.innerHTML = svg;
+                barcodeText.textContent = text;
+                barcodeCaption.textContent = inputCaption;
+                barcodePreview.classList.remove('hidden');
+                document.getElementById('copyBtn').dataset.result = svg;
+                document.getElementById('downloadBtn').dataset.result = svg;
+                document.getElementById('downloadBtn').dataset.filename = `barcode_${text.replace(/[^a-zA-Z0-9]/g, '_')}.jpg`;
+                document.getElementById('downloadBtn').dataset.caption = inputCaption;
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const result = document.getElementById('downloadBtn').dataset.result;
+            const filename = document.getElementById('downloadBtn').dataset.filename;
+            const caption = document.getElementById('downloadBtn').dataset.caption;
+            const text = document.getElementById('barcodeText').textContent;
+            if (result) {
+                svgToJpg(result, text, caption, blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename || 'barcode.jpg';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputAI').value = '01';
+            document.getElementById('inputData').value = '';
+            document.getElementById('inputCaption').value = '';
+            document.getElementById('barcodeCode').value = '';
+            document.getElementById('barcodeSvg').innerHTML = '';
+            document.getElementById('barcodeText').textContent = '';
+            document.getElementById('barcodeCaption').textContent = '';
+            document.getElementById('barcodePreview').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+            document.getElementById('downloadBtn').dataset.caption = '';
+        });
+        document.getElementById('inputAI').addEventListener('change', processInput);
+        document.getElementById('inputData').addEventListener('input', processInput);
+        document.getElementById('inputCaption').addEventListener('input', processInput);
+    </script>
+</body>
+</html>
