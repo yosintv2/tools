@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Base16 Encoder Tool - Free Online Hex Converter</title>
+    <meta name="description" content="A free online Base16 Encoder tool to convert text or files to hexadecimal (Base16) format. Supports multiple input encodings (UTF-8, ASCII, UTF-16, ISO-8859-1, Windows-1252), manual input, or file upload, with copy-to-clipboard and download functionality. Works on all devices.">
+    <meta name="keywords" content="base16 encoder, hex encoder, free base16 encoder tool, online base16 encoder, base16 encoding tool, hex converter, encode base16 online, base16 file encoder, base16 data converter, base16 encoding utility, online hex converter, base16 text to hex, base16 encoding online, hex format tool, base16 data encoder">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Base16 Encoder Tool Team">
+    <meta property="og:title" content="Base16 Encoder Tool - Free Online Hex Converter">
+    <meta property="og:description" content="Encode text or files to Base16 (hexadecimal) with our free online tool. Supports multiple input encodings, manual input, or file upload, with copy-to-clipboard and download functionality. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/base16-encoder">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Base16 Encoder Tool - Free Online Hex Converter">
+    <meta name="twitter:description" content="Encode text or files to Base16 (hexadecimal) with our free online tool. Supports multiple input encodings, manual input, or file upload, with copy-to-clipboard and download functionality. Works on all devices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-lock text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Base16 Encoder Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Encode text or files to Base16 (hexadecimal) with this free online tool. Supports multiple input encodings (UTF-8, ASCII, UTF-16, ISO-8859-1, Windows-1252), manual input, or file upload, with copy and download options. Compatible with all devices.</p>
+        </header>
+
+        <!-- Base16 Encoder Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button type="button" id="manualBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Manual Input</button>
+                        <button type="button" id="uploadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Upload File</button>
+                    </div>
+                    <input type="file" id="fileInput" class="hidden">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="inputLabel">Enter Text to Encode</label>
+                    <textarea id="inputText" placeholder="Enter text to encode to Base16 (hex)" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y font-mono"></textarea>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Input Encoding</label>
+                        <select id="encodingInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                            <option value="utf-8">UTF-8</option>
+                            <option value="ascii">ASCII</option>
+                            <option value="utf-16">UTF-16</option>
+                            <option value="iso-8859-1">ISO-8859-1</option>
+                            <option value="windows-1252">Windows-1252</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="encodeBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-lock mr-2"></i>
+                            Encode
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="downloadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Base16 Encoded Result</label>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y font-mono" placeholder="Base16 (hex) encoded result will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid input or encoding issue. Please check your input.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Base16 Encoder Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Base16 Encoder Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Base16 Encoder Tool is a free online utility that converts text or files to Base16 (hexadecimal) format, using a 16-character alphabet for data encoding. This hex converter supports multiple input encodings (UTF-8, ASCII, UTF-16, ISO-8859-1, Windows-1252) and is ideal for developers and data professionals.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select "Manual Input" to enter text or "Upload File" to upload a file. Choose the input encoding (e.g., UTF-8), then click "Encode" to convert to Base16 (hex). Use the "Copy Result" button to copy the encoded output, "Download" to save it as a file, or "Reset" to clear the form. This online base16 encoder is secure, runs in your browser, and works on all devices for seamless encoding.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Base16 Encoder Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our base16 encoder is free, accurate, and user-friendly, perfect for encoding text or files for secure data transfer, storage, or debugging. The copy-to-clipboard and download features, along with responsive design, ensure a smooth experience on any device. This online hex converter tool provides precise results for all your Base16 encoding needs.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        let mode = 'manual'; // Default mode: manual input
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function base16Encode(input, encoding) {
+            try {
+                let bytes;
+
+                // Convert input string to bytes based on encoding
+                if (encoding === 'utf-8') {
+                    bytes = new TextEncoder().encode(input);
+                } else if (encoding === 'ascii') {
+                    bytes = new Uint8Array(input.split('').map(c => c.charCodeAt(0) & 0x7F));
+                } else if (encoding === 'utf-16') {
+                    let buffer = new ArrayBuffer(input.length * 2);
+                    let view = new DataView(buffer);
+                    for (let i = 0; i < input.length; i++) {
+                        view.setUint16(i * 2, input.charCodeAt(i), true);
+                    }
+                    bytes = new Uint8Array(buffer);
+                } else if (encoding === 'iso-8859-1' || encoding === 'windows-1252') {
+                    bytes = new Uint8Array(input.split('').map(c => c.charCodeAt(0) & 0xFF));
+                } else {
+                    throw new Error('Unsupported encoding');
+                }
+
+                // Convert bytes to hexadecimal
+                let output = '';
+                for (let byte of bytes) {
+                    output += byte.toString(16).padStart(2, '0').toUpperCase();
+                }
+
+                return output;
+            } catch (e) {
+                throw new Error('Error encoding to Base16: ' + e.message);
+            }
+        }
+
+        function processInput() {
+            const inputText = document.getElementById('inputText').value;
+            const encoding = document.getElementById('encodingInput').value;
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            if (mode === 'manual' && !inputText) {
+                resultText.value = '';
+                return;
+            }
+
+            try {
+                if (mode === 'manual') {
+                    resultText.value = base16Encode(inputText, encoding);
+                }
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+                resultText.value = '';
+            }
+        }
+
+        function handleFileUpload(file) {
+            const encoding = document.getElementById('encodingInput').value;
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const text = e.target.result;
+                    resultText.value = base16Encode(text, encoding);
+                } catch (err) {
+                    errorMessage.textContent = `Error: ${err.message}`;
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            };
+            reader.onerror = () => {
+                errorMessage.textContent = 'Error: Unable to read the file.';
+                errorMessage.classList.remove('hidden');
+                resultText.value = '';
+            };
+            reader.readAsText(file, encoding);
+        }
+
+        function downloadBase16(base16) {
+            if (!base16) return;
+            const blob = new Blob([base16], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'encoded_base16.txt';
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function toggleMode(newMode) {
+            mode = newMode;
+            const manualBtn = document.getElementById('manualBtn');
+            const uploadBtn = document.getElementById('uploadBtn');
+            const inputLabel = document.getElementById('inputLabel');
+            const inputText = document.getElementById('inputText');
+            const encodeBtn = document.getElementById('encodeBtn');
+
+            if (mode === 'manual') {
+                manualBtn.classList.add('active', 'bg-red-600', 'text-white');
+                manualBtn.classList.remove('bg-blue-600');
+                uploadBtn.classList.remove('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.add('bg-blue-600');
+                inputLabel.textContent = 'Enter Text to Encode';
+                inputText.classList.remove('hidden');
+                encodeBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                encodeBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                inputText.placeholder = 'Enter text to encode to Base16 (hex)';
+            } else {
+                uploadBtn.classList.add('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.remove('bg-red-600');
+                manualBtn.classList.remove('active', 'bg-red-600', 'text-white');
+                manualBtn.classList.add('bg-red-600');
+                inputLabel.textContent = 'Upload File to Encode';
+                inputText.classList.add('hidden');
+                encodeBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                encodeBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                inputText.placeholder = '';
+            }
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+        }
+
+        document.getElementById('manualBtn').addEventListener('click', () => toggleMode('manual'));
+        document.getElementById('uploadBtn').addEventListener('click', () => {
+            toggleMode('upload');
+            document.getElementById('fileInput').click();
+        });
+        document.getElementById('fileInput').addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileUpload(e.target.files[0]);
+            }
+        });
+        document.getElementById('encodeBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const result = document.getElementById('resultText').value;
+            if (result) {
+                downloadBase16(result);
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('fileInput').value = '';
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            toggleMode('manual');
+        });
+        document.getElementById('inputText').addEventListener('input', processInput);
+        document.getElementById('encodingInput').addEventListener('change', processInput);
+
+        // Initialize manual mode
+        toggleMode('manual');
+    </script>
+</body>
+</html>
