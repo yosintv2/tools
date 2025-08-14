@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>HEIC to JPG Converter Tool - Free Online Image Converter</title>
+    <meta name="description" content="A free online HEIC to JPG Converter tool to convert HEIC images to JPG format. Upload, convert, preview, and download as JPG. Works on all devices with accurate results.">
+    <meta name="keywords" content="heic to jpg converter, online image converter, free heic to jpg tool, image converter, convert heic to jpg, heic to jpg maker, jpg converter, online heic converter, heic to jpg tool, free image converter, create jpg from heic, image converter online, heic to jpg creator, jpg image converter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HEIC to JPG Converter Tool Team">
+    <meta property="og:title" content="HEIC to JPG Converter Tool - Free Online Image Converter">
+    <meta property="og:description" content="Convert HEIC images to JPG format with our free online tool. Upload, convert, preview, and download as JPG. Works on all devices with accurate results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/heic-to-jpg-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HEIC to JPG Converter Tool - Free Online Image Converter">
+    <meta name="twitter:description" content="Convert HEIC images to JPG format with our free online tool. Upload, convert, preview, and download as JPG. Works on all devices with accurate results.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/heic-to-jpg-converter">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/heic2any@0.0.4/dist/heic2any.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .image-preview {
+            margin-top: 1rem;
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            border-radius: 0.375rem;
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-preview img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+        .image-filename {
+            margin-top: 0.5rem;
+            font-size: 0.75rem; /* text-xs */
+            color: #4b5563; /* Tailwind's text-gray-600 */
+            word-break: break-all;
+            text-align: center;
+        }
+        @media (min-width: 640px) {
+            .image-filename {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .image-filename {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        input[type="file"] {
+            padding: 0.5rem;
+        }
+        @media (min-width: 640px) {
+            .button-row {
+                flex-wrap: nowrap !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-image text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">HEIC to JPG Converter Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert HEIC images to JPG format with this free online tool. Upload a HEIC file, convert, preview the JPG, and download as JPG. Compatible with all devices for accurate image conversion.</p>
+        </header>
+
+        <!-- Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputFile">Upload HEIC Image</label>
+                        <input type="file" id="inputFile" accept=".heic,image/heic,image/heif" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="inputFileHelp">
+                        <p id="inputFileHelp" class="text-xs text-gray-600 mt-1">Upload a HEIC image file to convert to JPG format.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 button-row">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="downloadBtn" class="action-btn w-full sm:w-1/3 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please upload a valid HEIC image.</p>
+                </div>
+                <div id="imagePreview" class="image-preview hidden">
+                    <img id="previewImage" src="" alt="Converted JPG Preview">
+                    <p id="imageFilename" class="image-filename"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About HEIC to JPG Converter Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the HEIC to JPG Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The HEIC to JPG Converter Tool is a free online utility that converts HEIC images to JPG format. Upload your HEIC file, convert it to JPG, preview the result, and download it as a JPG file for use in web development, graphic design, or other projects requiring JPG format.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Upload a HEIC image file, then click "Convert" to generate a JPG image. Preview the converted JPG, download it as a JPG file, or reset the form. This tool is secure, runs in your browser, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our HEIC to JPG Converter Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our HEIC to JPG converter is free, accurate, and user-friendly, providing high-quality JPG images from HEIC files with live preview and download features. It ensures a seamless experience on any device, perfect for creating JPG images for web, design, or archival purposes.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function convertHeicToJpg(file, callback) {
+            if (!file || !file.type.includes('image/heic') && !file.type.includes('image/heif') && !file.name.toLowerCase().endsWith('.heic')) {
+                throw new Error('Please upload a valid HEIC image');
+            }
+
+            heic2any({ blob: file, toType: 'image/jpeg', quality: 0.95 })
+                .then(result => {
+                    const img = new Image();
+                    img.onload = function() {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        const ctx = canvas.getContext('2d', { alpha: false });
+                        ctx.fillStyle = '#ffffff';
+                        ctx.fillRect(0, 0, canvas.width, canvas.height);
+                        ctx.drawImage(img, 0, 0);
+                        try {
+                            const base64 = canvas.toDataURL('image/jpeg', 0.95);
+                            callback({
+                                base64: base64,
+                                filename: file.name.replace(/\.(heic|HEIC|heif|HEIF)$/, '.jpg')
+                            });
+                        } catch (e) {
+                            throw new Error('Failed to convert image to JPG');
+                        }
+                    };
+                    img.onerror = function() {
+                        throw new Error('Failed to load converted image');
+                    };
+                    img.src = URL.createObjectURL(result);
+                })
+                .catch(() => {
+                    throw new Error('Failed to convert HEIC to JPG');
+                });
+        }
+
+        function processInput() {
+            const inputFile = document.getElementById('inputFile').files[0];
+            const previewImage = document.getElementById('previewImage');
+            const imageFilename = document.getElementById('imageFilename');
+            const imagePreview = document.getElementById('imagePreview');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            imagePreview.classList.add('hidden');
+            previewImage.src = '';
+            imageFilename.textContent = '';
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+
+            if (!inputFile) {
+                return;
+            }
+
+            try {
+                convertHeicToJpg(inputFile, ({ base64, filename }) => {
+                    previewImage.src = base64;
+                    imageFilename.textContent = filename;
+                    imagePreview.classList.remove('hidden');
+                    document.getElementById('downloadBtn').dataset.result = base64;
+                    document.getElementById('downloadBtn').dataset.filename = filename;
+                });
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('convertBtn').addEventListener('click', processInput);
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const result = document.getElementById('downloadBtn').dataset.result;
+            const filename = document.getElementById('downloadBtn').dataset.filename;
+            if (result && filename) {
+                const a = document.createElement('a');
+                a.href = result;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            } else {
+                document.getElementById('errorMessage').textContent = 'Error: No converted image available for download';
+                document.getElementById('errorMessage').classList.remove('hidden');
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputFile').value = '';
+            document.getElementById('previewImage').src = '';
+            document.getElementById('imageFilename').textContent = '';
+            document.getElementById('imagePreview').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+        });
+        document.getElementById('inputFile').addEventListener('change', processInput);
+    </script>
+</body>
+</html>
