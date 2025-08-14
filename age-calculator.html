@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Age Calculator Tool - Free Online Age Calculation</title>
+    <meta name="description" content="A free online Age Calculator tool to calculate your age in years, months, days, weeks, hours, minutes, and seconds. Find out the day you were born and time until your next birthday. Works on all devices with accurate results.">
+    <meta name="keywords" content="age calculator, online age calculator, free age calculator tool, calculate age online, age in years months days, age in weeks hours minutes seconds, day of birth calculator, next birthday calculator, age calculation tool, birthday age calculator, precise age calculator, age from date of birth, age calculator online free, how old am i calculator, age computation tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Age Calculator Tool Team">
+    <meta property="og:title" content="Age Calculator Tool - Free Online Age Calculation">
+    <meta property="og:description" content="Calculate your age in years, months, days, weeks, hours, minutes, and seconds with our free online tool. Discover the day you were born and time until your next birthday. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/age-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Age Calculator Tool - Free Online Age Calculation">
+    <meta name="twitter:description" content="Calculate your age in years, months, days, weeks, hours, minutes, and seconds with our free online tool. Discover the day you were born and time until your next birthday. Works on all devices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb; /* Tailwind's border-gray-200 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            font-weight: 600;
+            color: #1f2937; /* Tailwind's text-gray-800 */
+        }
+        .result-table td {
+            color: #4b5563; /* Tailwind's text-gray-600 */
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Age Calculator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate your age in years, months, days, weeks, hours, minutes, and seconds with this free online tool. Find out the day you were born and time until your next birthday. Compatible with all devices.</p>
+        </header>
+
+        <!-- Age Calculator Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="birthDate">Enter Your Birth Date</label>
+                        <input type="date" id="birthDate" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" max="2025-08-14">
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Age Calculation Result</label>
+                    <div class="overflow-x-auto">
+                        <table id="resultTable" class="result-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Age (Years, Months, Days)</td><td id="ageYMD">-</td></tr>
+                                <tr><td>Total Weeks</td><td id="totalWeeks">-</td></tr>
+                                <tr><td>Total Hours</td><td id="totalHours">-</td></tr>
+                                <tr><td>Total Minutes</td><td id="totalMinutes">-</td></tr>
+                                <tr><td>Total Seconds</td><td id="totalSeconds">-</td></tr>
+                                <tr><td>Day You Were Born</td><td id="birthDay">-</td></tr>
+                                <tr><td>Next Birthday In</td><td id="nextBirthday">-</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter a valid birth date.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Age Calculator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Age Calculator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Age Calculator Tool is a free online utility that calculates your age in years, months, days, weeks, hours, minutes, and seconds based on your birth date. It also tells you the day of the week you were born and the time until your next birthday. This age calculation tool is perfect for personal use, planning, or curiosity about your precise age.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your birth date using the date picker, then click "Calculate" to see your age in multiple units, the day you were born, and time until your next birthday displayed in a responsive table. Use the "Copy Result" button to copy the results or "Reset" to clear the form. This online age calculator is secure, runs in your browser, and works on all devices for accurate age computation.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Age Calculator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our age calculator is free, accurate, and user-friendly, providing detailed age breakdowns in years, months, days, weeks, hours, minutes, and seconds. It also includes the day of birth and next birthday countdown, making it ideal for personal or professional use. The responsive design ensures a seamless experience on any device, delivering precise results for all your age calculation needs.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateAge(birthDateStr) {
+            try {
+                const birthDate = new Date(birthDateStr);
+                const today = new Date('2025-08-14T14:27:00+09:00'); // Current date and time in JST
+
+                // Validate birth date
+                if (isNaN(birthDate) || birthDate > today) {
+                    throw new Error('Invalid or future birth date');
+                }
+
+                // Calculate time difference
+                const diffMs = today - birthDate;
+                const diffSeconds = Math.floor(diffMs / 1000);
+                const diffMinutes = Math.floor(diffSeconds / 60);
+                const diffHours = Math.floor(diffMinutes / 60);
+                const diffDays = Math.floor(diffHours / 24);
+                const diffWeeks = Math.floor(diffDays / 7);
+
+                // Calculate years and months
+                let years = today.getFullYear() - birthDate.getFullYear();
+                let months = today.getMonth() - birthDate.getMonth();
+                let days = today.getDate() - birthDate.getDate();
+
+                if (days < 0) {
+                    months--;
+                    days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+                }
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+
+                // Calculate next birthday
+                let nextBirthday = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+                if (nextBirthday < today) {
+                    nextBirthday.setFullYear(today.getFullYear() + 1);
+                }
+                const untilNextBirthdayMs = nextBirthday - today;
+                const untilDays = Math.floor(untilNextBirthdayMs / (1000 * 60 * 60 * 24));
+                const untilHours = Math.floor((untilNextBirthdayMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const untilMinutes = Math.floor((untilNextBirthdayMs % (1000 * 60 * 60)) / (1000 * 60));
+                const untilSeconds = Math.floor((untilNextBirthdayMs % (1000 * 60)) / 1000);
+
+                // Get day of birth
+                const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                const birthDayOfWeek = daysOfWeek[birthDate.getDay()];
+
+                // Prepare result object
+                return {
+                    ageYMD: `${years} years, ${months} months, ${days} days`,
+                    totalWeeks: diffWeeks.toLocaleString(),
+                    totalHours: diffHours.toLocaleString(),
+                    totalMinutes: diffMinutes.toLocaleString(),
+                    totalSeconds: diffSeconds.toLocaleString(),
+                    birthDay: birthDayOfWeek,
+                    nextBirthday: `${untilDays} days, ${untilHours} hours, ${untilMinutes} minutes, ${untilSeconds} seconds`,
+                    textForCopy: [
+                        `Age: ${years} years, ${months} months, ${days} days`,
+                        `Total Weeks: ${diffWeeks.toLocaleString()}`,
+                        `Total Hours: ${diffHours.toLocaleString()}`,
+                        `Total Minutes: ${diffMinutes.toLocaleString()}`,
+                        `Total Seconds: ${diffSeconds.toLocaleString()}`,
+                        `Day You Were Born: ${birthDayOfWeek}`,
+                        `Next Birthday In: ${untilDays} days, ${untilHours} hours, ${untilMinutes} minutes, ${untilSeconds} seconds`
+                    ].join('\n')
+                };
+            } catch (e) {
+                throw new Error('Error calculating age: ' + e.message);
+            }
+        }
+
+        function processInput() {
+            const birthDate = document.getElementById('birthDate').value;
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            // Reset table
+            document.getElementById('ageYMD').textContent = '-';
+            document.getElementById('totalWeeks').textContent = '-';
+            document.getElementById('totalHours').textContent = '-';
+            document.getElementById('totalMinutes').textContent = '-';
+            document.getElementById('totalSeconds').textContent = '-';
+            document.getElementById('birthDay').textContent = '-';
+            document.getElementById('nextBirthday').textContent = '-';
+
+            if (!birthDate) {
+                return;
+            }
+
+            try {
+                const result = calculateAge(birthDate);
+                document.getElementById('ageYMD').textContent = result.ageYMD;
+                document.getElementById('totalWeeks').textContent = result.totalWeeks;
+                document.getElementById('totalHours').textContent = result.totalHours;
+                document.getElementById('totalMinutes').textContent = result.totalMinutes;
+                document.getElementById('totalSeconds').textContent = result.totalSeconds;
+                document.getElementById('birthDay').textContent = result.birthDay;
+                document.getElementById('nextBirthday').textContent = result.nextBirthday;
+                document.getElementById('copyBtn').dataset.result = result.textForCopy;
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('birthDate').value = '';
+            document.getElementById('ageYMD').textContent = '-';
+            document.getElementById('totalWeeks').textContent = '-';
+            document.getElementById('totalHours').textContent = '-';
+            document.getElementById('totalMinutes').textContent = '-';
+            document.getElementById('totalSeconds').textContent = '-';
+            document.getElementById('birthDay').textContent = '-';
+            document.getElementById('nextBirthday').textContent = '-';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+        });
+        document.getElementById('birthDate').addEventListener('change', processInput);
+    </script>
+</body>
+</html>
