@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Preeti to Unicode Converter - Convert Preeti Font to Nepali Unicode</title>
+    <meta name="description" content="Convert Preeti font text to Nepali Unicode with our free online tool. Paste Preeti text to instantly generate Unicode output, with live preview and copy functionality. Works on all devices.">
+    <meta name="keywords" content="preeti to unicode converter, preeti font to unicode, nepali unicode converter, preeti font converter, convert preeti to unicode, nepali text converter, preeti to nepali unicode, free preeti converter, nepali unicode tool, preeti font online">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Preeti to Unicode Converter Team">
+    <meta property="og:title" content="Preeti to Unicode Converter - Convert Preeti Font to Nepali Unicode">
+    <meta property="og:description" content="Convert Preeti font text to Nepali Unicode with our free online tool. Paste Preeti text to instantly generate Unicode output, with live preview and copy functionality. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/preeti-to-unicode-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Preeti to Unicode Converter - Convert Preeti Font to Nepali Unicode">
+    <meta name="twitter:description" content="Convert Preeti font text to Nepali Unicode with our free online tool. Paste Preeti text to instantly generate Unicode output, with live preview and copy functionality. Works on all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/preeti-to-unicode-converter">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            font-family: 'Noto Sans Devanagari', 'Courier New', Courier, monospace;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            resize: vertical;
+            height: 150px;
+        }
+        .example-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        .example-list ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .button-row {
+                flex-wrap: nowrap !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-font text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Preeti to Unicode Converter</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert Preeti font text to Nepali Unicode effortlessly with live preview and copy functionality. Works on all devices for accurate text conversion.</p>
+        </header>
+
+        <!-- Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form name="Form1" onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="preeti-input">Enter Preeti Font Text</label>
+                        <textarea id="preeti-input" name="legacy_text" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Type or paste Preeti font text (e.g., g]kfn)" aria-describedby="inputHelp"></textarea>
+                        <p id="inputHelp" class="text-xs text-gray-600 mt-1">Enter Preeti font text to convert to Nepali Unicode (e.g., 'g]kfn' becomes नेपाल).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="unicode-output">Nepali Unicode Output</label>
+                        <textarea id="unicode-output" name="unicode_text" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" readonly placeholder="Converted Nepali Unicode text will appear here..."></textarea>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 button-row">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="clearBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Clear form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Clear
+                        </button>
+                    </div>
+                </form>
+                <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Conversion failed. Please check your input.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Preeti to Unicode Converter</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Preeti to Unicode Converter?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Preeti to Unicode Converter is a free online tool that transforms Preeti font text, a popular legacy Nepali font, into standard Nepali Unicode. Paste Preeti text (e.g., g]kfn) to instantly generate Unicode output (e.g., नेपाल), with live preview and copy functionality, ideal for modern digital platforms and documents.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter or paste Preeti font text, click "Convert" or type for live conversion, and view the Nepali Unicode output. Use the "Copy" button to copy the result or "Clear" to reset the form. The tool is secure, browser-based, and works on all devices, ensuring accurate conversion for Nepali text.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is Preeti Font?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Preeti is a legacy Nepali font widely used in traditional Nepali desktop publishing and word processing. Unlike Unicode, which is a universal encoding standard, Preeti uses proprietary encoding, making this converter essential for converting Preeti text to Unicode for compatibility with modern systems and applications.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Tips and Tricks for Preeti to Unicode Conversion</h3>
+                <ul class="example-list text-xs sm:text-sm md:text-base text-gray-600">
+                    <li><strong>Ensure valid Preeti input:</strong> Input valid Preeti font text (e.g., g]kfn for नेपाल) for accurate conversion to Unicode. Invalid characters may not convert correctly.</li>
+                    <li><strong>Handle special characters:</strong> The tool correctly processes Preeti-specific characters like 'l' for short 'i' matra (ि) and '{' for reph (र्), ensuring proper Unicode rendering (e.g., g]kfn becomes नेपाल).</li>
+                    <li><strong>Copy for digital use:</strong> Use the "Copy" button to paste the Unicode output into modern applications like web editors, social media, or word processors that support Unicode.</li>
+                    <li><strong>Clear for new conversions:</strong> Use the "Clear" button to reset the form for new text inputs, especially when switching between multiple text samples.</li>
+                    <li><strong>Check input source:</strong> Ensure the input text is in Preeti font encoding, as text from other legacy fonts may require a different converter.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function convert_to_unicode() {
+            var array_one = [
+                "ç", "˜", ".", "'m", "]m", "Fmf", "Fm",
+                ")", "!", "@", "#", "$", "%", "^", "&", "*", "(",
+                "k|m", "em", "km", "Qm", "qm", "N˜",
+                "¡", "¢", "1", "2", "4", ">", "?", "B", "I", "Q", "ß",
+                "q", "„", "‹", "•", "›", "§", "°", "¶", "¿", "Å",
+                "Ë", "Ì", "Í", "Î", "Ý", "å",
+                "6«", "7«", "8«", "9«",
+                "Ø", "|",
+                "8þ", "9þ",
+                "S", "s", "V", "v", "U", "u", "£", "3", "ª",
+                "R", "r", "5", "H", "h", "‰", "´", "~", "`",
+                "6", "7", "8", "9", "0",
+                "T", "t", "Y", "y", "b", "W", "w", "G", "g",
+                "K", "k", "ˆ", "A", "a", "E", "e", "D", "d",
+                "o", "/", "N", "n", "J", "j", "Z", "z", "i", ":", ";", "X", "x",
+                "cf‘", "c‘f", "cf}", "cf]", "cf", "c", "O{", "O", "pm", "p", "C", "P]", "P",
+                "f‘", "\"", "'", "+", "f", "[", "\\", "]", "}", "F", "L", "M",
+                "्ा", "्ो", "्ौ", "अो", "अा", "आै", "आे", "ाो", "ा्", "ाे",
+                "ंु", "ेे", "अै", "ाे", "अे", "ंा", "अ्", "ाै", "ैा", "ंृ",
+                "ँा", "ँू", "ेा", "ंे"
+            ];
+
+            var array_two = [
+                "ॐ", "ऽ", "।", "m'", "m]", "mfF", "mF",
+                "०", "१", "२", "३", "४", "५", "६", "७", "८", "९",
+                "फ्र", "झ", "फ", "क्त", "क्र", "ल",
+                "ज्ञ्", "द्घ", "ज्ञ", "द्द", "द्ध", "श्र", "रु", "द्य", "क्ष्", "त्त", "द्म",
+                "त्र", "ध्र", "ङ्घ", "ड्ड", "द्र", "ट्ट", "ड्ढ", "ट्", "रू", "हृ",
+                "ङ्ग", "त्र", "ङ्क", "ङ्ख", "ट्", "द्व",
+                "ट्र", "ट्र", "ड्र", "ढ्र",
+                "्य", "्र",
+                "ड़", "ढ़",
+                "क्", "क", "ख्", "ख", "ग्", "ग", "घ्", "घ", "ङ",
+                "च्", "च", "छ", "ज्", "ज", "झ्", "झ", "ञ्", "ञ",
+                "ट", "ठ", "ड", "ढ", "ण्",
+                "त्", "त", "थ्", "थ", "द", "ध्", "ध", "न्", "न",
+                "प्", "प", "फ्", "ब्", "ब", "भ्", "भ", "म्", "म",
+                "य", "र", "ल्", "ल", "व्", "व", "श्", "श", "ष्", "स्", "स", "ह्", "ह",
+                "ऑ", "ऑ", "औ", "ो", "आ", "अ", "ई", "इ", "ऊ", "उ", "ऋ", "ऐ", "ए",
+                "ॉ", "ू", "ु", "ं", "ा", "ृ", "्", "े", "ै", "ँ", "ी", "ः",
+                "", "े", "ै", "ओ", "आ", "औ", "ो", "ो", "ॉ", "ो",
+                "ुं", "े", "अ‍ै", "ो", "अ‍े", "ां", "अ‍्", "ौ", "ौ", "ृं",
+                "ाँ", "ूँ", "ो", "ें"
+            ];
+
+            var array_one_length = array_one.length;
+            var modified_substring = document.getElementById("preeti-input").value;
+            var text_size = modified_substring.length;
+            var processed_text = '';
+            var sthiti1 = 0;
+            var sthiti2 = 0;
+            var chale_chalo = 1;
+            var max_text_size = 6000;
+
+            try {
+                document.getElementById("unicode-output").value = "Converting Preeti to Unicode...";
+                while (chale_chalo == 1) {
+                    sthiti1 = sthiti2;
+                    if (sthiti2 < (text_size - max_text_size)) {
+                        sthiti2 += max_text_size;
+                        while (modified_substring.charAt(sthiti2) != ' ') {
+                            sthiti2--;
+                        }
+                    } else {
+                        sthiti2 = text_size;
+                        chale_chalo = 0;
+                    }
+
+                    modified_substring = document.getElementById("preeti-input").value.substring(sthiti1, sthiti2);
+                    Replace_Symbols();
+                    processed_text += modified_substring;
+                }
+
+                document.getElementById("unicode-output").value = processed_text;
+                document.getElementById("errorMessage").classList.add("hidden");
+            } catch (e) {
+                document.getElementById("unicode-output").value = "";
+                document.getElementById("errorMessage").textContent = "Error: Conversion failed. Please check your input.";
+                document.getElementById("errorMessage").classList.remove("hidden");
+            }
+
+            function Replace_Symbols() {
+                if (modified_substring != "") {
+                    for (let input_symbol_idx = 0; input_symbol_idx < array_one_length; input_symbol_idx++) {
+                        let idx = 0;
+                        while (idx != -1) {
+                            modified_substring = modified_substring.replace(array_one[input_symbol_idx], array_two[input_symbol_idx]);
+                            idx = modified_substring.indexOf(array_one[input_symbol_idx]);
+                        }
+                    }
+
+                    var position_of_i = modified_substring.indexOf("l");
+                    while (position_of_i != -1) {
+                        var charecter_next_to_i = modified_substring.charAt(position_of_i + 1);
+                        var charecter_to_be_replaced = "l" + charecter_next_to_i;
+                        modified_substring = modified_substring.replace(charecter_to_be_replaced, charecter_next_to_i + "ि");
+                        position_of_i = modified_substring.indexOf("l", position_of_i + 1);
+                    }
+
+                    var position_of_wrong_ee = modified_substring.indexOf("ि्");
+                    while (position_of_wrong_ee != -1) {
+                        var consonent_next_to_wrong_ee = modified_substring.charAt(position_of_wrong_ee + 2);
+                        var charecter_to_be_replaced = "ि्" + consonent_next_to_wrong_ee;
+                        modified_substring = modified_substring.replace(charecter_to_be_replaced, "्" + consonent_next_to_wrong_ee + "ि");
+                        position_of_wrong_ee = modified_substring.indexOf("ि्", position_of_wrong_ee + 2);
+                    }
+
+                    position_of_wrong_ee = modified_substring.indexOf("िं्");
+                    while (position_of_wrong_ee != -1) {
+                        var consonent_next_to_wrong_ee = modified_substring.charAt(position_of_wrong_ee + 3);
+                        var charecter_to_be_replaced = "िं्" + consonent_next_to_wrong_ee;
+                        modified_substring = modified_substring.replace(charecter_to_be_replaced, "्" + consonent_next_to_wrong_ee + "िं");
+                        position_of_wrong_ee = modified_substring.indexOf("िं्", position_of_wrong_ee + 3);
+                    }
+
+                    var set_of_matras = "ा ि ी ु ू ृ े ै ो ौ ं ँ ्";
+                    var position_of_R = modified_substring.indexOf("{");
+                    while (position_of_R > 0) {
+                        var probable_position_of_half_r = position_of_R - 1;
+                        var charecter_at_probable_position_of_half_r = modified_substring.charAt(probable_position_of_half_r);
+                        while (set_of_matras.includes(charecter_at_probable_position_of_half_r)) {
+                            probable_position_of_half_r--;
+                            charecter_at_probable_position_of_half_r = modified_substring.charAt(probable_position_of_half_r);
+                        }
+                        var charecter_to_be_replaced = modified_substring.substring(probable_position_of_half_r, position_of_R);
+                        var new_replacement_string = "र्" + charecter_to_be_replaced;
+                        charecter_to_be_replaced = charecter_to_be_replaced + "{";
+                        modified_substring = modified_substring.replace(charecter_to_be_replaced, new_replacement_string);
+                        position_of_R = modified_substring.indexOf("{");
+                    }
+
+                    modified_substring = modified_substring.replace(/=/g, ".");
+                    modified_substring = modified_substring.replace(/_/g, ")");
+                    modified_substring = modified_substring.replace(/Ö/g, "=");
+                    modified_substring = modified_substring.replace(/Ù/g, ";");
+                    modified_substring = modified_substring.replace(/…/g, "‘");
+                    modified_substring = modified_substring.replace(/Ú/g, "’");
+                    modified_substring = modified_substring.replace(/Û/g, "!");
+                    modified_substring = modified_substring.replace(/Ü/g, "%");
+                    modified_substring = modified_substring.replace(/æ/g, "“");
+                    modified_substring = modified_substring.replace(/Æ/g, "”");
+                    modified_substring = modified_substring.replace(/±/g, "+");
+                    modified_substring = modified_substring.replace(/-/g, "(");
+                    modified_substring = modified_substring.replace(/</g, "?");
+                }
+            }
+        }
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function clearInput() {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            if (document.Form1.legacy_text.value.length < 30 || confirm("Are you sure you want to clear what you typed?")) {
+                document.Form1.legacy_text.value = "";
+                document.Form1.unicode_text.value = "";
+                document.Form1.legacy_text.focus();
+            }
+        }
+
+        let liveConversion = true;
+        function convertLive(flag) {
+            if (flag) {
+                if (document.Form1.legacy_text.value.length > 1500) {
+                    document.getElementById('errorMessage').textContent = 'Error: Text is too large for live conversion. Please press the Convert button.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    return convertLive(false);
+                }
+                convert_to_unicode();
+                liveConversion = true;
+            } else {
+                liveConversion = false;
+            }
+        }
+
+        document.getElementById('convertBtn').addEventListener('click', () => {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            try {
+                if (liveConversion && document.Form1.legacy_text.value.length <= 1500) {
+                    convert_to_unicode();
+                } else if (liveConversion && document.Form1.legacy_text.value.length > 1500) {
+                    convertLive(true);
+                }
+            } catch (e) {
+                errorMessage.textContent = 'Error: Conversion failed. Please check your input.';
+                errorMessage.classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('clearBtn').addEventListener('click', clearInput);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('unicode-output').value;
+            if (result && result !== "Converting Preeti to Unicode...") {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy text';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            } else {
+                document.getElementById('errorMessage').textContent = 'Error: No text available to copy';
+                document.getElementById('errorMessage').classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('preeti-input').addEventListener('input', () => convertLive(true));
+
+        document.Form1.legacy_text.focus();
+    </script>
+</body>
+</html>
