@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instagram Name Generator Tool - Free Username Ideas</title>
+    <meta name="description" content="A free online Instagram Name Generator tool to create unique Instagram username ideas based on your name. Generate variations like iam(name), (name)_official, and more with copy functions. Works on all devices with accurate results.">
+    <meta name="keywords" content="instagram name generator, instagram username generator, free instagram name tool, instagram username ideas, generate instagram names, unique instagram usernames, instagram handle generator, online instagram name generator, instagram username creator, cool instagram names, instagram name suggestions, free username generator, instagram name tool, create instagram username, instagram handle ideas">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Instagram Name Generator Tool Team">
+    <meta property="og:title" content="Instagram Name Generator Tool - Free Username Ideas">
+    <meta property="og:description" content="Create unique Instagram usernames with our free online tool. Generate variations like iam(name), (name)_official, and more with copy functions. Works on all devices with accurate results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/instagram-name-generator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Instagram Name Generator Tool - Free Username Ideas">
+    <meta name="twitter:description" content="Create unique Instagram usernames with our free online tool. Generate variations like iam(name), (name)_official, and more with copy functions. Works on all devices with accurate results.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb; /* Tailwind's border-gray-200 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            font-weight: 600;
+            color: #1f2937; /* Tailwind's text-gray-800 */
+        }
+        .result-table td {
+            color: #4b5563; /* Tailwind's text-gray-600 */
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+        }
+        .copy-btn {
+            background-color: #10b981; /* Tailwind's bg-green-500 */
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            transition: background-color 0.2s ease;
+        }
+        .copy-btn:hover {
+            background-color: #059669; /* Tailwind's bg-green-600 */
+        }
+        @media (min-width: 640px) {
+            .copy-btn {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-user-plus text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Instagram Name Generator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Generate unique Instagram username ideas with this free online tool. Enter your name to create variations like iam(name), (name)_official, and more, with copy functions for each suggestion. Compatible with all devices.</p>
+        </header>
+
+        <!-- Instagram Name Generator Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputName">Enter Your Name</label>
+                        <input type="text" id="inputName" placeholder="Enter your name" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="generateBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-user-plus mr-2"></i>
+                            Generate
+                        </button>
+                        <button type="button" id="copyAllBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy All
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Generated Instagram Usernames</label>
+                    <div class="overflow-x-auto">
+                        <table id="resultTable" class="result-table">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultBody">
+                                <tr><td colspan="2" class="text-center">Enter a name to generate usernames</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter a valid name (letters and spaces only).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Instagram Name Generator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Instagram Name Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Instagram Name Generator Tool is a free online utility that creates unique Instagram username ideas based on your input name. It generates variations like iam(name), (name)_official, (name)official, and more, making it perfect for finding a cool and catchy Instagram handle.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your name, then click "Generate" to see a list of Instagram username suggestions in a responsive table. Copy individual usernames with the copy buttons, or use "Copy All" to copy all suggestions. Click "Reset" to clear the form. This online Instagram name generator is secure, runs in your browser, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Instagram Name Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our Instagram name generator is free, accurate, and user-friendly, offering a variety of unique username ideas for your Instagram profile. The copy functions and responsive design ensure a seamless experience on any device. This tool is ideal for creating cool Instagram usernames that stand out.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function generateUsernames(name) {
+            try {
+                // Input validation
+                if (!name || !/^[a-zA-Z\s]+$/.test(name)) {
+                    throw new Error('Name must contain only letters and spaces');
+                }
+
+                const cleanName = name.trim().toLowerCase().replace(/\s+/g, '');
+// instagramUsernameVariations.js
+
+const variations = [
+    `iam${cleanName}`,
+    `${cleanName}_official`,
+    `${cleanName}official`,
+    `the${cleanName}`,
+    `${cleanName}_vibes`,
+    `${cleanName}hub`,
+    `${cleanName}_star`,
+    `its${cleanName}`,
+    `${cleanName}world`,
+    `${cleanName}_ig`,
+    `real${cleanName}`,
+    `${cleanName}x`,
+    `${cleanName}_life`,
+    `i_am_${cleanName}`,
+    `${cleanName}4real`,
+    `${cleanName}_daily`,
+    `go${cleanName}`,
+    `${cleanName}_love`,
+    `${cleanName}gang`,
+    `my${cleanName}`,
+    `${cleanName}_queen`,
+    `${cleanName}_king`,
+    `the_real_${cleanName}`,
+    `${cleanName}dreams`,
+    `${cleanName}_magic`,
+    `${cleanName}flow`,
+    `${cleanName}_pro`,
+    `just${cleanName}`,
+    `${cleanName}_universe`,
+    `${cleanName}style`,
+    `${cleanName}_club`,
+    `${cleanName}vibe`,
+    `get${cleanName}`,
+    `${cleanName}_boss`,
+    `${cleanName}rocks`,
+    `${cleanName}_co`,
+    `that${cleanName}`,
+    `${cleanName}_fam`,
+    `${cleanName}journey`,
+    `${cleanName}_addict`,
+    `live${cleanName}`,
+    `${cleanName}_legend`,
+    `${cleanName}lyfe`,
+    `${cleanName}_fit`,
+    `${cleanName}guru`,
+    `${cleanName}_snap`,
+    `all${cleanName}`,
+    `${cleanName}_wave`,
+    `${cleanName}nation`,
+    `${cleanName}_diaries`,
+    `pure${cleanName}`,
+    `${cleanName}_zone`,
+    `${cleanName}spark`,
+    `${cleanName}_soul`,
+    `be${cleanName}`,
+    `${cleanName}_now`,
+    `${cleanName}shine`,
+    `${cleanName}_trends`,
+    `${cleanName}pulse`,
+    `${cleanName}_hype`,
+    `true${cleanName}`,
+    `${cleanName}_mood`,
+    `${cleanName}fire`,
+    `${cleanName}_avenue`,
+    `${cleanName}path`,
+    `${cleanName}_connect`,
+    `${cleanName}vibesonly`,
+    `${cleanName}_insider`,
+    `${cleanName}collective`,
+    `${cleanName}_space`,
+    `${cleanName}dreamer`,
+    `${cleanName}_xoxo`,
+    `${cleanName}energy`,
+    `${cleanName}_quest`,
+    `thisis${cleanName}`,
+    `${cleanName}_icon`,
+    `${cleanName}magic`,
+    `${cleanName}_circle`,
+    `${cleanName}adventure`,
+    `${cleanName}_rise`,
+    `${cleanName}glory`,
+    `${cleanName}_society`,
+    `${cleanName}express`,
+    `${cleanName}_corner`,
+    `${cleanName}lovers`,
+    `${cleanName}_beat`,
+    `${cleanName}vision`,
+    `${cleanName}_bloom`,
+    `${cleanName}sparkle`,
+    `${cleanName}_crew`,
+    `${cleanName}story`,
+    `${cleanName}_edge`,
+    `${cleanName}vibez`,
+    `${cleanName}_link`,
+    `${cleanName}forever`,
+    `${cleanName}_dash`,
+    `${cleanName}live`,
+    `${cleanName}_pulse`,
+    `${cleanName}wavez`,
+    `${cleanName}_legacy`,
+    `${cleanName}_trendz`,
+    `only${cleanName}`,
+    `${cleanName}_glow`,
+    `${cleanName}mania`,
+    `${cleanName}_vault`,
+    `epic${cleanName}`,
+    `${cleanName}_xpress`,
+    `${cleanName}vogue`,
+    `${cleanName}_realm`,
+    `yo${cleanName}`,
+    `${cleanName}_spirit`,
+    `${cleanName}blaze`,
+    `${cleanName}_vibezz`,
+    `${cleanName}master`,
+    `${cleanName}_haven`,
+    `one${cleanName}`,
+    `${cleanName}_dream`,
+    `${cleanName}force`,
+    `${cleanName}_tribe`,
+    `${cleanName}radar`,
+    `${cleanName}_echo`,
+    `${cleanName}boom`,
+    `${cleanName}_lyfe`,
+    `vibe${cleanName}`,
+    `${cleanName}_fusion`,
+    `${cleanName}quest`
+];
+                // Remove duplicates and limit to valid Instagram usernames (max 30 characters)
+                const validUsernames = [...new Set(variations)]
+                    .filter(username => username.length <= 30 && /^[a-z0-9._]+$/.test(username))
+                    .slice(0, 125); // Limit to 10 suggestions
+
+                return {
+                    usernames: validUsernames,
+                    textForCopy: validUsernames.map((username, index) => `Username ${index + 1}: ${username}`).join('\n')
+                };
+            } catch (e) {
+                throw new Error('Error generating usernames: ' + e.message);
+            }
+        }
+
+        function processInput() {
+            const name = document.getElementById('inputName').value.trim();
+            const resultBody = document.getElementById('resultBody');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            // Reset table
+            resultBody.innerHTML = '<tr><td colspan="2" class="text-center">Enter a name to generate usernames</td></tr>';
+            document.getElementById('copyAllBtn').dataset.result = '';
+
+            if (!name) {
+                return;
+            }
+
+            try {
+                const result = generateUsernames(name);
+                resultBody.innerHTML = result.usernames.map((username, index) => `
+                    <tr>
+                        <td>${username}</td>
+                        <td><button class="copy-btn" data-clipboard="${username}"><i class="fas fa-copy mr-1"></i>Copy</button></td>
+                    </tr>
+                `).join('');
+                document.getElementById('copyAllBtn').dataset.result = result.textForCopy;
+
+                // Add event listeners to copy buttons
+                document.querySelectorAll('.copy-btn').forEach(button => {
+                    button.addEventListener('click', () => {
+                        navigator.clipboard.writeText(button.dataset.clipboard);
+                        showPopup();
+                    });
+                });
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+                resultBody.innerHTML = '<tr><td colspan="2" class="text-center">No results</td></tr>';
+            }
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', processInput);
+        document.getElementById('copyAllBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyAllBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputName').value = '';
+            document.getElementById('resultBody').innerHTML = '<tr><td colspan="2" class="text-center">Enter a name to generate usernames</td></tr>';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyAllBtn').dataset.result = '';
+        });
+        document.getElementById('inputName').addEventListener('input', processInput);
+    </script>
+</body>
+</html>
