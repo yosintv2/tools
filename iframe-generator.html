@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>iFrame Generator Tool - Free Online iFrame Code Creator</title>
+    <meta name="description" content="A free online iFrame Generator tool to create custom iFrame code for your website. Customize name, width, height, scrollbar, margins, border, and URL with a preview and copy function. Works on all devices with accurate results.">
+    <meta name="keywords" content="iframe generator, online iframe generator, free iframe generator tool, iframe code creator, generate iframe code, custom iframe tool, iframe embed code, iframe html generator, iframe creator online, iframe code builder, website iframe generator, iframe embed tool, create iframe online, iframe code generator, iframe customization tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="iFrame Generator Tool Team">
+    <meta property="og:title" content="iFrame Generator Tool - Free Online iFrame Code Creator">
+    <meta property="og:description" content="Create custom iFrame code with our free online tool. Customize name, width, height, scrollbar, margins, border, and URL with a preview and copy function. Works on all devices with accurate results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/iframe-generator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="iFrame Generator Tool - Free Online iFrame Code Creator">
+    <meta name="twitter:description" content="Create custom iFrame code with our free online tool. Customize name, width, height, scrollbar, margins, border, and URL with a preview and copy function. Works on all devices with accurate results.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .iframe-main label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .iframe-main label span {
+            width: 100px;
+            font-weight: 600;
+            color: #1f2937; /* Tailwind's text-gray-800 */
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .iframe-main label span {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .iframe-main label span {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .iframe-main input, .iframe-main select {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            border-radius: 0.375rem;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .iframe-main input, .iframe-main select {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .iframe-main input, .iframe-main select {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .iframe-main textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            border-radius: 0.375rem;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            font-size: 0.75rem; /* text-xs */
+            resize: vertical;
+            font-family: 'Inter', sans-serif;
+            height: 100px;
+        }
+        @media (min-width: 640px) {
+            .iframe-main textarea {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .iframe-main textarea {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .iframe-main .options {
+            font-size: 1rem; /* text-base */
+            font-weight: 600;
+            color: #1f2937; /* Tailwind's text-gray-800 */
+            margin: 1rem 0;
+        }
+        @media (min-width: 640px) {
+            .iframe-main .options {
+                font-size: 1.125rem; /* sm:text-lg */
+            }
+        }
+        @media (min-width: 768px) {
+            .iframe-main .options {
+                font-size: 1.25rem; /* md:text-xl */
+            }
+        }
+        .iframe-main .generated-label {
+            display: block;
+            font-weight: 600;
+            color: #1f2937; /* Tailwind's text-gray-800 */
+            margin-bottom: 0.5rem;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .iframe-main .generated-label {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .iframe-main .generated-label {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .iframe-preview {
+            margin-top: 1rem;
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            border-radius: 0.375rem;
+            padding: 1rem;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-code text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">iFrame Generator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Create custom iFrame code with this free online tool. Customize name, width, height, scrollbar, margins, border, and URL, with preview and copy functions. Compatible with all devices.</p>
+        </header>
+
+        <!-- iFrame Generator Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;" class="iframe-main">
+                    <div class="colom grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <label>
+                            <span>Name:</span>
+                            <input name="ignamee" type="text" value="myiFrame" class="focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" />
+                        </label>
+                        <label class="igwidth">
+                            <span>Width:</span>
+                            <input name="igwidth" type="text" value="600" class="focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" />
+                        </label>
+                        <label class="igheight">
+                            <span>Height:</span>
+                            <input name="igheight" type="text" value="400" class="focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" />
+                        </label>
+                        <label class="igsizetype">
+                            <span>Size Type:</span>
+                            <select name="igsizetype">
+                                <option value="px">px</option>
+                                <option value="%">%</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <h2 class="options">Options</h2>
+
+                    <div class="colom grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <label class="scrollbar">
+                            <span>Scrollbar:</span>
+                            <select name="igscroll">
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </label>
+                        <label class="marginWidth">
+                            <span>Margin Width:</span>
+                            <input name="igmarwidth" type="text" value="0" class="focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" />
+                        </label>
+                        <label class="marginHeight">
+                            <span>Margin Height:</span>
+                            <input name="igmarheight" type="text" value="0" class="focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" />
+                        </label>
+                        <label class="border">
+                            <span>Border:</span>
+                            <select name="igborder">
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="colom grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+                        <label class="border-type">
+                            <span>Border Type:</span>
+                            <select name="igbortype">
+                                <option value="none">None</option>
+                                <option value="hidden">Hidden</option>
+                                <option value="solid">Solid</option>
+                                <option value="dotted">Dotted</option>
+                                <option value="dashed">Dashed</option>
+                            </select>
+                        </label>
+                        <label class="border-type">
+                            <span>Border Size:</span>
+                            <select name="igborsize">
+                                <option value="0">0px</option>
+                                <option value="1">1px</option>
+                                <option value="2">2px</option>
+                                <option value="3">3px</option>
+                                <option value="4">4px</option>
+                                <option value="5">5px</option>
+                                <option value="6">6px</option>
+                                <option value="7">7px</option>
+                                <option value="8">8px</option>
+                                <option value="9">9px</option>
+                                <option value="10">10px</option>
+                            </select>
+                        </label>
+                        <label class="igborcolor">
+                            <span>Border Color:</span>
+                            <input name="igborcolor" type="text" value="ffffff" class="focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" />
+                        </label>
+                    </div>
+
+                    <div class="colom mb-4">
+                        <label class="iframe-url">
+                            <span>iFrame URL:</span>
+                            <input name="igurl" type="text" placeholder="https://" class="focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" />
+                        </label>
+                    </div>
+
+                    <div class="button-group flex flex-wrap gap-2 mt-4">
+                        <span id="alertmsg" class="text-xs sm:text-sm md:text-base text-red-600 flex-1"></span>
+                        <button type="button" onclick="makingdifferentcodegen();" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-code mr-2"></i>
+                            Generate
+                        </button>
+                        <button type="button" onclick="igpreview();" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-eye mr-2"></i>
+                            Preview
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+
+                    <div class="mt-4">
+                        <span class="generated-label">iFrame Generated Code</span>
+                        <label class="iframe-gen">
+                            <textarea class="textareaBox" name="igcode" id="ifcode" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" readonly placeholder="Generated iFrame code will appear here..."></textarea>
+                        </label>
+                    </div>
+
+                    <div id="previewContainer" class="iframe-preview hidden"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About iFrame Generator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the iFrame Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The iFrame Generator Tool is a free online utility that creates custom iFrame code for embedding content on your website. Customize parameters like name, width, height, scrollbar, margins, border, and URL to generate tailored iFrame code with a preview and copy function.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your desired iFrame parameters, including name, dimensions, scrollbar, margins, border settings, and URL. Click "Generate" to create the iFrame code, "Preview" to see how it looks, "Copy" to copy the code, or "Reset" to clear the form. This online iFrame generator is secure, runs in your browser, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our iFrame Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our iFrame generator is free, accurate, and user-friendly, offering customizable iFrame code for seamless website integration. The preview and copy functions, along with responsive design, ensure a smooth experience on any device. This tool is ideal for creating precise iFrame embed codes for your web projects.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function validateInputs(ignamee, igwidth, igheight, igmarwidth, igmarheight, igborcolor, igurl) {
+            if (!ignamee || !/^[a-zA-Z0-9_-]+$/.test(ignamee)) {
+                return 'Name must contain only letters, numbers, underscores, or hyphens';
+            }
+            if (!igwidth || isNaN(igwidth) || igwidth <= 0) {
+                return 'Width must be a positive number';
+            }
+            if (!igheight || isNaN(igheight) || igheight <= 0) {
+                return 'Height must be a positive number';
+            }
+            if (isNaN(igmarwidth) || igmarwidth < 0) {
+                return 'Margin Width must be a non-negative number';
+            }
+            if (isNaN(igmarheight) || igmarheight < 0) {
+                return 'Margin Height must be a non-negative number';
+            }
+            if (!igborcolor || !/^[0-9a-fA-F]{6}$/.test(igborcolor)) {
+                return 'Border Color must be a valid 6-digit hex code (e.g., ffffff)';
+            }
+            if (!igurl || !/^https?:\/\/.+$/.test(igurl)) {
+                return 'URL must start with http:// or https://';
+            }
+            return null;
+        }
+
+        function makingdifferentcodegen() {
+            const ignamee = document.querySelector('input[name="ignamee"]').value.trim();
+            const igwidth = document.querySelector('input[name="igwidth"]').value.trim();
+            const igheight = document.querySelector('input[name="igheight"]').value.trim();
+            const igsizetype = document.querySelector('select[name="igsizetype"]').value;
+            const igscroll = document.querySelector('select[name="igscroll"]').value;
+            const igmarwidth = document.querySelector('input[name="igmarwidth"]').value.trim();
+            const igmarheight = document.querySelector('input[name="igmarheight"]').value.trim();
+            const igborder = document.querySelector('select[name="igborder"]').value;
+            const igbortype = document.querySelector('select[name="igbortype"]').value;
+            const igborsize = document.querySelector('select[name="igborsize"]').value;
+            const igborcolor = document.querySelector('input[name="igborcolor"]').value.trim();
+            const igurl = document.querySelector('input[name="igurl"]').value.trim();
+            const ifcode = document.getElementById('ifcode');
+            const alertmsg = document.getElementById('alertmsg');
+            const previewContainer = document.getElementById('previewContainer');
+
+            alertmsg.textContent = '';
+            previewContainer.classList.add('hidden');
+            ifcode.value = '';
+
+            const validationError = validateInputs(ignamee, igwidth, igheight, igmarwidth, igmarheight, igborcolor, igurl);
+            if (validationError) {
+                alertmsg.textContent = `Error: ${validationError}`;
+                return;
+            }
+
+            try {
+                const style = igborder === '1' && igbortype !== 'none' ? `border: ${igborsize}px ${igbortype} #${igborcolor};` : '';
+                const iframeCode = `<iframe name="${ignamee}" src="${igurl}" width="${igwidth}${igsizetype}" height="${igheight}${igsizetype}" scrolling="${igscroll}" marginwidth="${igmarwidth}" marginheight="${igmarheight}" frameborder="${igborder}" style="${style}"></iframe>`;
+                ifcode.value = iframeCode;
+                document.getElementById('copyBtn').dataset.result = iframeCode;
+            } catch (e) {
+                alertmsg.textContent = `Error: ${e.message}`;
+            }
+        }
+
+        function igpreview() {
+            const ignamee = document.querySelector('input[name="ignamee"]').value.trim();
+            const igwidth = document.querySelector('input[name="igwidth"]').value.trim();
+            const igheight = document.querySelector('input[name="igheight"]').value.trim();
+            const igsizetype = document.querySelector('select[name="igsizetype"]').value;
+            const igscroll = document.querySelector('select[name="igscroll"]').value;
+            const igmarwidth = document.querySelector('input[name="igmarwidth"]').value.trim();
+            const igmarheight = document.querySelector('input[name="igmarheight"]').value.trim();
+            const igborder = document.querySelector('select[name="igborder"]').value;
+            const igbortype = document.querySelector('select[name="igbortype"]').value;
+            const igborsize = document.querySelector('select[name="igborsize"]').value;
+            const igborcolor = document.querySelector('input[name="igborcolor"]').value.trim();
+            const igurl = document.querySelector('input[name="igurl"]').value.trim();
+            const alertmsg = document.getElementById('alertmsg');
+            const previewContainer = document.getElementById('previewContainer');
+
+            alertmsg.textContent = '';
+            previewContainer.classList.add('hidden');
+
+            const validationError = validateInputs(ignamee, igwidth, igheight, igmarwidth, igmarheight, igborcolor, igurl);
+            if (validationError) {
+                alertmsg.textContent = `Error: ${validationError}`;
+                return;
+            }
+
+            try {
+                const style = igborder === '1' && igbortype !== 'none' ? `border: ${igborsize}px ${igbortype} #${igborcolor};` : '';
+                previewContainer.innerHTML = `<iframe name="${ignamee}" src="${igurl}" width="${igwidth}${igsizetype}" height="${igheight}${igsizetype}" scrolling="${igscroll}" marginwidth="${igmarwidth}" marginheight="${igmarheight}" frameborder="${igborder}" style="${style}"></iframe>`;
+                previewContainer.classList.remove('hidden');
+                makingdifferentcodegen(); // Generate code when previewing
+            } catch (e) {
+                alertmsg.textContent = `Error: ${e.message}`;
+            }
+        }
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.querySelector('input[name="ignamee"]').value = 'myiFrame';
+            document.querySelector('input[name="igwidth"]').value = '600';
+            document.querySelector('input[name="igheight"]').value = '400';
+            document.querySelector('select[name="igsizetype"]').value = 'px';
+            document.querySelector('select[name="igscroll"]').value = 'no';
+            document.querySelector('input[name="igmarwidth"]').value = '0';
+            document.querySelector('input[name="igmarheight"]').value = '0';
+            document.querySelector('select[name="igborder"]').value = '1';
+            document.querySelector('select[name="igbortype"]').value = 'none';
+            document.querySelector('select[name="igborsize"]').value = '0';
+            document.querySelector('input[name="igborcolor"]').value = 'ffffff';
+            document.querySelector('input[name="igurl"]').value = '';
+            document.getElementById('ifcode').value = '';
+            document.getElementById('alertmsg').textContent = '';
+            document.getElementById('previewContainer').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+        });
+
+        // Auto-generate on input change
+        document.querySelectorAll('.iframe-main input, .iframe-main select').forEach(input => {
+            input.addEventListener('input', makingdifferentcodegen);
+            input.addEventListener('change', makingdifferentcodegen);
+        });
+    </script>
+</body>
+</html>
