@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Code-93 Barcode Generator Tool - Free Online Barcode Creator</title>
+    <meta name="description" content="A free online Code-93 Barcode Generator tool to create Code-93 barcodes from alphanumeric input with custom captions. Generate, preview, copy SVG code, and download as JPG. Works on all devices with accurate results.">
+    <meta name="keywords" content="code-93 barcode generator, online barcode generator, free code-93 barcode tool, barcode creator, generate code-93 barcode, code-93 barcode maker, barcode jpg generator, online barcode creator, code-93 barcode tool, free barcode generator, create code-93 barcode, barcode generator online, code-93 barcode creator, jpg barcode generator, barcode code generator, barcode with caption">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Code-93 Barcode Generator Tool Team">
+    <meta property="og:title" content="Code-93 Barcode Generator Tool - Free Online Barcode Creator">
+    <meta property="og:description" content="Create Code-93 barcodes with custom captions using our free online tool. Generate, preview, copy SVG code, and download as JPG from alphanumeric input. Works on all devices with accurate results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/code-93-barcode-generator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Code-93 Barcode Generator Tool - Free Online Barcode Creator">
+    <meta name="twitter:description" content="Create Code-93 barcodes with custom captions using our free online tool. Generate, preview, copy SVG code, and download as JPG from alphanumeric input. Works on all devices with accurate results.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/code-93-barcode-generator">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .barcode-preview {
+            margin-top: 1rem;
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            border-radius: 0.375rem;
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .barcode-preview svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .barcode-text, .barcode-caption {
+            margin-top: 0.5rem;
+            font-size: 0.75rem; /* text-xs */
+            color: #4b5563; /* Tailwind's text-gray-600 */
+            word-break: break-all;
+            text-align: center;
+        }
+        @media (min-width: 640px) {
+            .barcode-text, .barcode-caption {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .barcode-text, .barcode-caption {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        textarea {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            resize: vertical;
+            height: 100px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-barcode text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Code-93 Barcode Generator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Generate Code-93 barcodes with custom captions using this free online tool. Enter alphanumeric text to create, preview with text and caption, copy SVG code, or download as JPG. Compatible with all devices for accurate barcode creation.</p>
+        </header>
+
+        <!-- Barcode Generator Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputText">Enter Text for Barcode</label>
+                        <input type="text" id="inputText" placeholder="Enter text (e.g., ABC-123)" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="inputTextHelp">
+                        <p id="inputTextHelp" class="text-xs text-gray-600 mt-1">Enter alphanumeric text (0-9, A-Z, -, ., $, /, +, %, space) to generate a Code-93 barcode.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="inputCaption">Enter Barcode Caption</label>
+                        <input type="text" id="inputCaption" placeholder="Enter caption (optional)" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="inputCaptionHelp">
+                        <p id="inputCaptionHelp" class="text-xs text-gray-600 mt-1">Enter an optional caption to display below the barcode in the preview and JPG download.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="generateBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-barcode mr-2"></i>
+                            Generate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="downloadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Generated Barcode Code (SVG)</label>
+                    <textarea id="barcodeCode" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" readonly placeholder="Generated SVG code will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid text for the barcode.</p>
+                </div>
+                <div id="barcodePreview" class="barcode-preview hidden">
+                    <div id="barcodeSvg"></div>
+                    <p id="barcodeText" class="barcode-text"></p>
+                    <p id="barcodeCaption" class="barcode-caption"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Code-93 Barcode Generator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Code-93 Barcode Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Code-93 Barcode Generator Tool is a free online utility that creates Code-93 barcodes from alphanumeric input (0-9, A-Z, dash, space, and specific symbols) with optional custom captions. Generate SVG barcode code, preview it with text and caption, copy the code, or download it as a JPG for use in inventory, logistics, or identification projects.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter alphanumeric text (e.g., ABC-123) and an optional caption, then click "Generate" to create a Code-93 barcode. Preview the barcode with its text and caption below, copy the SVG code with the "Copy" button, download it as a JPG file, or reset the form. This tool is secure, runs in your browser, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Code-93 Barcode Generator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our Code-93 barcode generator is free, accurate, and user-friendly, providing high-quality barcodes with custom captions in SVG and JPG formats for professional use. With live preview, text and caption display, copy, and download features, it ensures a seamless experience on any device, perfect for creating reliable barcodes for your business needs.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function generateCode93(text) {
+            if (!text || text.length === 0) {
+                throw new Error('Text input is required');
+            }
+            if (!/^[0-9A-Z\-\.\$\+\% ]+$/.test(text)) {
+                throw new Error('Text must contain only 0-9, A-Z, -, ., $, /, +, %, or space');
+            }
+
+            // Code-93 character set
+            const code93 = {
+                '0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+                'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15, 'G': 16, 'H': 17, 'I': 18, 'J': 19,
+                'K': 20, 'L': 21, 'M': 22, 'N': 23, 'O': 24, 'P': 25, 'Q': 26, 'R': 27, 'S': 28, 'T': 29,
+                'U': 30, 'V': 31, 'W': 32, 'X': 33, 'Y': 34, 'Z': 35, '-': 36, '.': 37, ' ': 38, '$': 39,
+                '/': 40, '+': 41, '%': 42
+            };
+
+            // Code-93 patterns (9 bars: 3 black, 3 white, 3 wide/narrow)
+            const patterns = [
+                "100010100", // 0
+                "101001000", // 1
+                "101000100", // 2
+                "101000010", // 3
+                "100101000", // 4
+                "100100100", // 5
+                "100100010", // 6
+                "101010000", // 7
+                "100010010", // 8
+                "100001010", // 9
+                "110101000", // A
+                "110100100", // B
+                "110100010", // C
+                "110010100", // D
+                "110010010", // E
+                "110001010", // F
+                "101101000", // G
+                "101100100", // H
+                "101100010", // I
+                "100110100", // J
+                "100011010", // K
+                "101011000", // L
+                "101001100", // M
+                "101000110", // N
+                "100101100", // O
+                "100010110", // P
+                "110110100", // Q
+                "110110010", // R
+                "110101100", // S
+                "110100110", // T
+                "110011010", // U
+                "110010110", // V
+                "101101100", // W
+                "101100110", // X
+                "100110110", // Y
+                "100011110", // Z
+                "101011110", // -
+                "110101110", // .
+                "110110101", // space
+                "110110110", // $
+                "110101101", // /
+                "101101101", // +
+                "101110110"  // %
+            ];
+
+            // Calculate checksums (C and K)
+            let sumC = 0;
+            let weightC = 1;
+            for (let i = text.length - 1; i >= 0; i--) {
+                sumC += code93[text[i]] * weightC;
+                weightC = weightC === 20 ? 1 : weightC + 1;
+            }
+            const checkC = sumC % 47;
+            const checkCChar = Object.keys(code93)[checkC];
+
+            let sumK = 0;
+            let weightK = 1;
+            const textWithC = text + checkCChar;
+            for (let i = textWithC.length - 1; i >= 0; i--) {
+                sumK += code93[textWithC[i]] * weightK;
+                weightK = weightK === 15 ? 1 : weightK + 1;
+            }
+            const checkK = sumK % 47;
+            const checkKChar = Object.keys(code93)[checkK];
+
+            // Combine text with checksums
+            const fullText = text + checkCChar + checkKChar;
+
+            // Generate bars (start, data, stop)
+            let bars = '101011110'; // Start code
+            for (let i = 0; i < fullText.length; i++) {
+                bars += patterns[code93[fullText[i]]];
+            }
+            bars += '1010111101'; // Stop code (includes termination bar)
+
+            // Generate SVG
+            const barWidth = 2;
+            const height = 100;
+            const width = bars.length * barWidth;
+            let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">`;
+            for (let i = 0; i < bars.length; i++) {
+                if (bars[i] === '1') {
+                    svg += `<rect x="${i * barWidth}" y="0" width="${barWidth}" height="${height}" fill="black"/>`;
+                }
+            }
+            svg += '</svg>';
+
+            return { svg, text };
+        }
+
+        function svgToJpg(svg, text, caption, callback) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            const svgBlob = new Blob([svg], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(svgBlob);
+
+            img.onload = () => {
+                // Calculate dimensions
+                const barcodeHeight = img.height;
+                const textHeight = text ? 30 : 0;
+                const captionHeight = caption ? 30 : 0;
+                const padding = 10;
+                canvas.width = img.width + 20; // 10px padding on each side
+                canvas.height = barcodeHeight + textHeight + captionHeight + padding * 3;
+
+                // Draw white background
+                ctx.fillStyle = '#fff';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Draw barcode centered
+                ctx.drawImage(img, 10, 10);
+
+                // Draw text and caption centered
+                ctx.font = '16px Inter, sans-serif';
+                ctx.fillStyle = '#4b5563'; // Tailwind's text-gray-600
+                ctx.textAlign = 'center';
+                if (text) {
+                    ctx.fillText(text, canvas.width / 2, barcodeHeight + 30);
+                }
+                if (caption) {
+                    ctx.fillText(caption, canvas.width / 2, barcodeHeight + 60);
+                }
+
+                canvas.toBlob(blob => {
+                    callback(blob);
+                    URL.revokeObjectURL(url);
+                }, 'image/jpeg', 0.95);
+            };
+            img.src = url;
+        }
+
+        function processInput() {
+            const inputText = document.getElementById('inputText').value.trim().toUpperCase();
+            const inputCaption = document.getElementById('inputCaption').value.trim();
+            const barcodeCode = document.getElementById('barcodeCode');
+            const barcodeSvg = document.getElementById('barcodeSvg');
+            const barcodeText = document.getElementById('barcodeText');
+            const barcodeCaption = document.getElementById('barcodeCaption');
+            const barcodePreview = document.getElementById('barcodePreview');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            barcodePreview.classList.add('hidden');
+            barcodeCode.value = '';
+            barcodeSvg.innerHTML = '';
+            barcodeText.textContent = '';
+            barcodeCaption.textContent = '';
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+            document.getElementById('downloadBtn').dataset.caption = '';
+
+            if (!inputText) {
+                return;
+            }
+
+            try {
+                const { svg, text } = generateCode93(inputText);
+                if (inputCaption && !/^[ -~]*$/.test(inputCaption)) {
+                    throw new Error('Caption must contain only printable ASCII characters');
+                }
+                barcodeCode.value = svg;
+                barcodeSvg.innerHTML = svg;
+                barcodeText.textContent = text;
+                barcodeCaption.textContent = inputCaption;
+                barcodePreview.classList.remove('hidden');
+                document.getElementById('copyBtn').dataset.result = svg;
+                document.getElementById('downloadBtn').dataset.result = svg;
+                document.getElementById('downloadBtn').dataset.filename = `barcode_${text.replace(/[^a-zA-Z0-9]/g, '_')}.jpg`;
+                document.getElementById('downloadBtn').dataset.caption = inputCaption;
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const result = document.getElementById('downloadBtn').dataset.result;
+            const filename = document.getElementById('downloadBtn').dataset.filename;
+            const caption = document.getElementById('downloadBtn').dataset.caption;
+            const text = document.getElementById('barcodeText').textContent;
+            if (result) {
+                svgToJpg(result, text, caption, blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename || 'barcode.jpg';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('inputCaption').value = '';
+            document.getElementById('barcodeCode').value = '';
+            document.getElementById('barcodeSvg').innerHTML = '';
+            document.getElementById('barcodeText').textContent = '';
+            document.getElementById('barcodeCaption').textContent = '';
+            document.getElementById('barcodePreview').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.result = '';
+            document.getElementById('downloadBtn').dataset.filename = '';
+            document.getElementById('downloadBtn').dataset.caption = '';
+        });
+        document.getElementById('inputText').addEventListener('input', processInput);
+        document.getElementById('inputCaption').addEventListener('input', processInput);
+    </script>
+</body>
+</html>
