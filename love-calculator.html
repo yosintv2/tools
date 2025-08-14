@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Love Calculator Tool - Free Online Love Compatibility Test</title>
+    <meta name="description" content="A free online Love Calculator tool to test love compatibility between two people based on names, ages, and horoscope signs. Enjoy a suspenseful result reveal with a percentage score. Works on all devices with accurate results.">
+    <meta name="keywords" content="love calculator, online love calculator, free love calculator tool, love compatibility test, love percentage calculator, love match calculator, romantic compatibility test, love score calculator, love test online, love calculator by name, love calculator with horoscope, love match test, online love compatibility calculator, love calculator free, romantic love calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Love Calculator Tool Team">
+    <meta property="og:title" content="Love Calculator Tool - Free Online Love Compatibility Test">
+    <meta property="og:description" content="Test love compatibility with our free online Love Calculator based on names, ages, and horoscope signs. Enjoy a suspenseful result reveal with a percentage score. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/love-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Love Calculator Tool - Free Online Love Compatibility Test">
+    <meta name="twitter:description" content="Test love compatibility with our free online Love Calculator based on names, ages, and horoscope signs. Enjoy a suspenseful result reveal with a percentage score. Works on all devices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb; /* Tailwind's border-gray-200 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            font-weight: 600;
+            color: #1f2937; /* Tailwind's text-gray-800 */
+        }
+        .result-table td {
+            color: #4b5563; /* Tailwind's text-gray-600 */
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+        }
+        .progress-container {
+            height: 1rem;
+            background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+            border-radius: 0.5rem;
+            overflow: hidden;
+            width: 100%;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #ef4444, #3b82f6); /* Red to blue gradient */
+            width: 0;
+            transition: width 2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-heart text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Love Calculator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Test love compatibility between two people with this free online Love Calculator. Enter names, ages, and horoscope signs to get a percentage score with a suspenseful reveal. Compatible with all devices.</p>
+        </header>
+
+        <!-- Love Calculator Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="name1">First Person's Name</label>
+                            <input type="text" id="name1" placeholder="Enter first name" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                        </div>
+                        <div>
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="name2">Second Person's Name</label>
+                            <input type="text" id="name2" placeholder="Enter second name" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                        </div>
+                        <div>
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="age1">First Person's Age</label>
+                            <input type="number" id="age1" placeholder="Enter age" min="0" max="150" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                        </div>
+                        <div>
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="age2">Second Person's Age</label>
+                            <input type="number" id="age2" placeholder="Enter age" min="0" max="150" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                        </div>
+                        <div>
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="horoscope1">First Person's Horoscope</label>
+                            <select id="horoscope1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                                <option value="" disabled selected>Select Horoscope</option>
+                                <option value="Aries">Aries</option>
+                                <option value="Taurus">Taurus</option>
+                                <option value="Gemini">Gemini</option>
+                                <option value="Cancer">Cancer</option>
+                                <option value="Leo">Leo</option>
+                                <option value="Virgo">Virgo</option>
+                                <option value="Libra">Libra</option>
+                                <option value="Scorpio">Scorpio</option>
+                                <option value="Sagittarius">Sagittarius</option>
+                                <option value="Capricorn">Capricorn</option>
+                                <option value="Aquarius">Aquarius</option>
+                                <option value="Pisces">Pisces</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="horoscope2">Second Person's Horoscope</label>
+                            <select id="horoscope2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                                <option value="" disabled selected>Select Horoscope</option>
+                                <option value="Aries">Aries</option>
+                                <option value="Taurus">Taurus</option>
+                                <option value="Gemini">Gemini</option>
+                                <option value="Cancer">Cancer</option>
+                                <option value="Leo">Leo</option>
+                                <option value="Virgo">Virgo</option>
+                                <option value="Libra">Libra</option>
+                                <option value="Scorpio">Scorpio</option>
+                                <option value="Sagittarius">Sagittarius</option>
+                                <option value="Capricorn">Capricorn</option>
+                                <option value="Aquarius">Aquarius</option>
+                                <option value="Pisces">Pisces</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-heart mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Result
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Love Compatibility Result</label>
+                    <div class="overflow-x-auto">
+                        <table id="resultTable" class="result-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>First Person</td><td id="name1Result">-</td></tr>
+                                <tr><td>Second Person</td><td id="name2Result">-</td></tr>
+                                <tr><td>Love Compatibility Score</td><td id="loveScore">-</td></tr>
+                                <tr><td>Compatibility Progress</td><td id="progressCell"><div class="progress-container"><div id="progressBar" class="progress-bar"></div></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please fill in all fields correctly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Love Calculator Tool</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Love Calculator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Love Calculator Tool is a free online utility that calculates love compatibility between two people based on their names, ages, and horoscope signs. It provides a percentage score with a suspenseful reveal, making it fun and engaging for users curious about their romantic compatibility.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter the names, ages, and horoscope signs of two people, then click "Calculate" to see their love compatibility score in a responsive table with a suspenseful progress bar animation. Use the "Copy Result" button to copy the results or "Reset" to clear the form. This online love calculator is secure, runs in your browser, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Love Calculator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our love calculator is free, fun, and user-friendly, providing a unique compatibility score based on names, ages, and horoscopes. The suspenseful result animation and responsive design ensure an engaging experience on any device. This online love compatibility test is perfect for exploring romantic connections with precise and entertaining results.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateLoveScore(name1, age1, horoscope1, name2, age2, horoscope2) {
+            try {
+                // Input validation
+                if (!name1 || !name2 || !age1 || !age2 || !horoscope1 || !horoscope2) {
+                    throw new Error('All fields are required');
+                }
+                if (isNaN(age1) || isNaN(age2) || age1 < 0 || age2 < 0 || age1 > 150 || age2 > 150) {
+                    throw new Error('Invalid age input');
+                }
+                if (!/^[a-zA-Z\s]+$/.test(name1) || !/^[a-zA-Z\s]+$/.test(name2)) {
+                    throw new Error('Names must contain only letters and spaces');
+                }
+
+                // Simple deterministic hash for names
+                const hashString = (str) => {
+                    let hash = 0;
+                    for (let i = 0; i < str.length; i++) {
+                        hash = (hash * 31 + str.charCodeAt(i)) % 1000000;
+                    }
+                    return hash;
+                };
+
+                // Horoscope compatibility scores (simplified)
+                const horoscopeCompatibility = {
+                    'Aries': { 'Aries': 80, 'Taurus': 60, 'Gemini': 90, 'Cancer': 50, 'Leo': 85, 'Virgo': 65, 'Libra': 75, 'Scorpio': 55, 'Sagittarius': 80, 'Capricorn': 60, 'Aquarius': 70, 'Pisces': 65 },
+                    'Taurus': { 'Aries': 60, 'Taurus': 85, 'Gemini': 55, 'Cancer': 80, 'Leo': 60, 'Virgo': 90, 'Libra': 65, 'Scorpio': 75, 'Sagittarius': 50, 'Capricorn': 85, 'Aquarius': 55, 'Pisces': 70 },
+                    'Gemini': { 'Aries': 90, 'Taurus': 55, 'Gemini': 80, 'Cancer': 60, 'Leo': 85, 'Virgo': 65, 'Libra': 90, 'Scorpio': 50, 'Sagittarius': 75, 'Capricorn': 55, 'Aquarius': 85, 'Pisces': 60 },
+                    'Cancer': { 'Aries': 50, 'Taurus': 80, 'Gemini': 60, 'Cancer': 85, 'Leo': 55, 'Virgo': 75, 'Libra': 60, 'Scorpio': 90, 'Sagittarius': 50, 'Capricorn': 80, 'Aquarius': 55, 'Pisces': 85 },
+                    'Leo': { 'Aries': 85, 'Taurus': 60, 'Gemini': 85, 'Cancer': 55, 'Leo': 80, 'Virgo': 60, 'Libra': 90, 'Scorpio': 65, 'Sagittarius': 85, 'Capricorn': 55, 'Aquarius': 75, 'Pisces': 60 },
+                    'Virgo': { 'Aries': 65, 'Taurus': 90, 'Gemini': 65, 'Cancer': 75, 'Leo': 60, 'Virgo': 85, 'Libra': 60, 'Scorpio': 80, 'Sagittarius': 55, 'Capricorn': 90, 'Aquarius': 50, 'Pisces': 75 },
+                    'Libra': { 'Aries': 75, 'Taurus': 65, 'Gemini': 90, 'Cancer': 60, 'Leo': 90, 'Virgo': 60, 'Libra': 80, 'Scorpio': 55, 'Sagittarius': 85, 'Capricorn': 60, 'Aquarius': 90, 'Pisces': 65 },
+                    'Scorpio': { 'Aries': 55, 'Taurus': 75, 'Gemini': 50, 'Cancer': 90, 'Leo': 65, 'Virgo': 80, 'Libra': 55, 'Scorpio': 85, 'Sagittarius': 60, 'Capricorn': 75, 'Aquarius': 50, 'Pisces': 90 },
+                    'Sagittarius': { 'Aries': 80, 'Taurus': 50, 'Gemini': 75, 'Cancer': 50, 'Leo': 85, 'Virgo': 55, 'Libra': 85, 'Scorpio': 60, 'Sagittarius': 80, 'Capricorn': 65, 'Aquarius': 90, 'Pisces': 55 },
+                    'Capricorn': { 'Aries': 60, 'Taurus': 85, 'Gemini': 55, 'Cancer': 80, 'Leo': 55, 'Virgo': 90, 'Libra': 60, 'Scorpio': 75, 'Sagittarius': 65, 'Capricorn': 85, 'Aquarius': 60, 'Pisces': 80 },
+                    'Aquarius': { 'Aries': 70, 'Taurus': 55, 'Gemini': 85, 'Cancer': 55, 'Leo': 75, 'Virgo': 50, 'Libra': 90, 'Scorpio': 50, 'Sagittarius': 90, 'Capricorn': 60, 'Aquarius': 80, 'Pisces': 65 },
+                    'Pisces': { 'Aries': 65, 'Taurus': 70, 'Gemini': 60, 'Cancer': 85, 'Leo': 60, 'Virgo': 75, 'Libra': 65, 'Scorpio': 90, 'Sagittarius': 55, 'Capricorn': 80, 'Aquarius': 65, 'Pisces': 85 }
+                };
+
+                // Calculate score based on names, ages, and horoscopes
+                const nameHash1 = hashString(name1.toLowerCase().trim());
+                const nameHash2 = hashString(name2.toLowerCase().trim());
+                const ageDiff = Math.abs(age1 - age2);
+                const horoscopeScore = horoscopeCompatibility[horoscope1][horoscope2] || 50;
+
+                // Combine factors
+                const baseScore = (nameHash1 + nameHash2) % 100;
+                const ageModifier = Math.max(0, 100 - ageDiff * 5); // Reduce score for large age differences
+                const finalScore = Math.round((baseScore * 0.4 + horoscopeScore * 0.4 + ageModifier * 0.2) * 0.95); // Cap at 95% for suspense
+
+                return {
+                    name1: `${name1} (Age: ${age1}, Horoscope: ${horoscope1})`,
+                    name2: `${name2} (Age: ${age2}, Horoscope: ${horoscope2})`,
+                    loveScore: `${finalScore}%`,
+                    progress: finalScore,
+                    textForCopy: [
+                        `First Person: ${name1} (Age: ${age1}, Horoscope: ${horoscope1})`,
+                        `Second Person: ${name2} (Age: ${age2}, Horoscope: ${horoscope2})`,
+                        `Love Compatibility Score: ${finalScore}%`
+                    ].join('\n')
+                };
+            } catch (e) {
+                throw new Error('Error calculating love score: ' + e.message);
+            }
+        }
+
+        function animateProgress(score) {
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = '0%';
+            let current = 0;
+            const increment = score / 100;
+            const interval = setInterval(() => {
+                current += increment;
+                progressBar.style.width = `${Math.min(current, score)}%`;
+                if (current >= score) {
+                    clearInterval(interval);
+                }
+            }, 20);
+        }
+
+        function processInput() {
+            const name1 = document.getElementById('name1').value.trim();
+            const name2 = document.getElementById('name2').value.trim();
+            const age1 = parseInt(document.getElementById('age1').value);
+            const age2 = parseInt(document.getElementById('age2').value);
+            const horoscope1 = document.getElementById('horoscope1').value;
+            const horoscope2 = document.getElementById('horoscope2').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            // Reset table
+            document.getElementById('name1Result').textContent = '-';
+            document.getElementById('name2Result').textContent = '-';
+            document.getElementById('loveScore').textContent = '-';
+            document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('copyBtn').dataset.result = '';
+            errorMessage.classList.add('hidden');
+
+            if (!name1 || !name2 || isNaN(age1) || isNaN(age2) || !horoscope1 || !horoscope2) {
+                return;
+            }
+
+            try {
+                const result = calculateLoveScore(name1, age1, horoscope1, name2, age2, horoscope2);
+                document.getElementById('name1Result').textContent = result.name1;
+                document.getElementById('name2Result').textContent = result.name2;
+                document.getElementById('loveScore').textContent = result.loveScore;
+                document.getElementById('copyBtn').dataset.result = result.textForCopy;
+                animateProgress(result.progress);
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result);
+                showPopup();
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('name1').value = '';
+            document.getElementById('name2').value = '';
+            document.getElementById('age1').value = '';
+            document.getElementById('age2').value = '';
+            document.getElementById('horoscope1').value = '';
+            document.getElementById('horoscope2').value = '';
+            document.getElementById('name1Result').textContent = '-';
+            document.getElementById('name2Result').textContent = '-';
+            document.getElementById('loveScore').textContent = '-';
+            document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+        });
+        document.getElementById('name1').addEventListener('input', processInput);
+        document.getElementById('name2').addEventListener('input', processInput);
+        document.getElementById('age1').addEventListener('input', processInput);
+        document.getElementById('age2').addEventListener('input', processInput);
+        document.getElementById('horoscope1').addEventListener('change', processInput);
+        document.getElementById('horoscope2').addEventListener('change', processInput);
+    </script>
+</body>
+</html>
