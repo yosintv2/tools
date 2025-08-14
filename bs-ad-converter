@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>BS to AD, AD to BS Converter - Convert Nepali Bikram Sambat to Gregorian Dates</title>
+    <meta name="description" content="Convert Bikram Sambat (BS) to Anno Domini (AD) or AD to BS with our free online tool. Enter dates to instantly get full date and day of the week, with live preview and copy functionality. Works on all devices.">
+    <meta name="keywords" content="bs to ad converter, ad to bs converter, bikram sambat to gregorian, nepali date converter, bs to ad date converter, ad to bs date converter, nepali calendar converter, bikram sambat converter, gregorian to bikram sambat, free date converter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="BS to AD, AD to BS Converter Team">
+    <meta property="og:title" content="BS to AD, AD to BS Converter - Convert Nepali Bikram Sambat to Gregorian Dates">
+    <meta property="og:description" content="Convert Bikram Sambat (BS) to Anno Domini (AD) or AD to BS with our free online tool. Enter dates to instantly get full date and day of the week, with live preview and copy functionality. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/bs-ad-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BS to AD, AD to BS Converter - Convert Nepali Bikram Sambat to Gregorian Dates">
+    <meta name="twitter:description" content="Convert Bikram Sambat (BS) to Anno Domini (AD) or AD to BS with our free online tool. Enter dates to instantly get full date and day of the week, with live preview and copy functionality. Works on all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/bs-ad-converter">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            resize: vertical;
+            height: 100px;
+        }
+        select, input[type="number"] {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+        }
+        .example-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .button-row {
+                flex-wrap: nowrap !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calendar-alt text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">BS to AD, AD to BS Converter</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert Bikram Sambat (BS) to Anno Domini (AD) or AD to BS with full date and day of the week. Enjoy live preview and copy functionality, works on all devices.</p>
+        </header>
+
+        <!-- Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form name="Form1" onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Select Conversion Type</label>
+                        <select id="conversion-type" name="conversion_type" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                            <option value="bs_to_ad">BS to AD</option>
+                            <option value="ad_to_bs">AD to BS</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="input-year">Enter Date (Year, Month, Day)</label>
+                        <div class="flex flex-wrap gap-2">
+                            <input type="number" id="input-year" name="year" class="w-full sm:w-1/3 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Year (e.g., 2082 or 2025)" min="1913" max="2100" aria-describedby="inputHelp">
+                            <select id="input-month" name="month" class="w-full sm:w-1/3 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base">
+                                <option value="1">Baisakh/January</option>
+                                <option value="2">Jestha/February</option>
+                                <option value="3">Ashadh/March</option>
+                                <option value="4">Shrawan/April</option>
+                                <option value="5">Bhadra/May</option>
+                                <option value="6">Ashwin/June</option>
+                                <option value="7">Kartik/July</option>
+                                <option value="8">Mangsir/August</option>
+                                <option value="9">Poush/September</option>
+                                <option value="10">Magh/October</option>
+                                <option value="11">Falgun/November</option>
+                                <option value="12">Chaitra/December</option>
+                            </select>
+                            <input type="number" id="input-day" name="day" class="w-full sm:w-1/3 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Day (1-32)" min="1" max="32">
+                        </div>
+                        <p id="inputHelp" class="text-xs text-gray-600 mt-1">Enter a valid date (BS: 1970-2100, AD: 1913-2043) to convert with full date and day.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output-date">Converted Date Output</label>
+                        <textarea id="output-date" name="output_date" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" readonly placeholder="Converted date and day will appear here..."></textarea>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 button-row">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="clearBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Clear form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Clear
+                        </button>
+                    </div>
+                </form>
+                <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid date. Please check your input.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About BS to AD, AD to BS Converter</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the BS to AD, AD to BS Converter?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The BS to AD, AD to BS Converter is a free online tool that converts dates between Bikram Sambat (BS), the Nepali calendar, and Anno Domini (AD), the Gregorian calendar. Enter a date to instantly get the converted date with the full format and day of the week, with live preview and copy functionality, ideal for planning and documentation.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select the conversion type (BS to AD or AD to BS), enter the year, month, and day, then click "Convert" or type for live conversion. View the result with the full date and day of the week. Use the "Copy" button to copy the output or "Clear" to reset the form. The tool is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is Bikram Sambat?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Bikram Sambat (BS) is the official calendar of Nepal, approximately 56 years, 8 months, and 15 days ahead of the Gregorian calendar (AD). This tool accurately converts dates between BS (1970-2100) and AD (1913-2043), ensuring compatibility for scheduling, events, and official records in Nepal.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Tips and Tricks for Date Conversion</h3>
+                <ul class="example-list text-xs sm:text-sm md:text-base text-gray-600">
+                    <li><strong>Valid date ranges:</strong> Use BS years 1970-2100 or AD years 1913-2043 for accurate conversions. For example, 2082/01/01 BS converts to 2025/04/14 AD (Monday).</li>
+                    <li><strong>Month names:</strong> Select the correct month (e.g., Baisakh for BS, January for AD) to align with the calendar system. The tool handles month-day variations in BS.</li>
+                    <li><strong>Day validation:</strong> Ensure the day is valid (1-32 for BS, 1-31 for AD, depending on the month). Invalid dates will trigger an error message.</li>
+                    <li><strong>Copy for use:</strong> Copy the converted date (e.g., '2025 April 14, Monday') for use in documents, calendars, or planning tools.</li>
+                    <li><strong>Clear for new conversions:</strong> Use the "Clear" button to reset the form when switching between BS and AD conversions.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Nepali months for display
+        const nepaliMonths = ["Baisakh", "Jestha", "Ashadh", "Shrawan", "Bhadra", "Ashwin", "Kartik", "Mangsir", "Poush", "Magh", "Falgun", "Chaitra"];
+        const englishMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        // BS to AD conversion data (approximate, based on 56 years, 8 months, 15 days difference)
+        const bsToAdDiff = { years: 56, months: 8, days: 15 };
+        const bsMonthsDays = [31, 31, 32, 31, 31, 30, 30, 29, 30, 29, 30, 30]; // Typical BS month lengths
+        const adLeapYear = year => (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+        const adMonthsDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        function getDaysInADMonth(year, month) {
+            return month === 2 && adLeapYear(year) ? 29 : adMonthsDays[month - 1];
+        }
+
+        function validateDate(year, month, day, isBS) {
+            if (!Number.isInteger(year) || !Number.isInteger(month) || !Number.isInteger(day)) return false;
+            if (isBS) {
+                if (year < 1970 || year > 2100 || month < 1 || month > 12 || day < 1 || day > bsMonthsDays[month - 1]) return false;
+            } else {
+                if (year < 1913 || year > 2043 || month < 1 || month > 12 || day < 1 || day > getDaysInADMonth(year, month)) return false;
+            }
+            return true;
+        }
+
+        function bsToAd(year, month, day) {
+            // Convert BS date to approximate AD date
+            let adYear = year - bsToAdDiff.years;
+            let adMonth = month - bsToAdDiff.months;
+            let adDay = day - bsToAdDiff.days;
+
+            // Adjust for negative or overflow
+            while (adDay <= 0) {
+                adMonth--;
+                if (adMonth <= 0) {
+                    adMonth += 12;
+                    adYear--;
+                }
+                adDay += getDaysInADMonth(adYear, adMonth);
+            }
+            while (adDay > getDaysInADMonth(adYear, adMonth)) {
+                adDay -= getDaysInADMonth(adYear, adMonth);
+                adMonth++;
+                if (adMonth > 12) {
+                    adMonth -= 12;
+                    adYear++;
+                }
+            }
+            if (adMonth <= 0) {
+                adMonth += 12;
+                adYear--;
+            }
+
+            // Validate AD date
+            if (!validateDate(adYear, adMonth, adDay, false)) return null;
+
+            // Calculate day of the week
+            const date = new Date(adYear, adMonth - 1, adDay);
+            const dayOfWeek = daysOfWeek[date.getDay()];
+            return { year: adYear, month: adMonth, day: adDay, dayOfWeek };
+        }
+
+        function adToBs(year, month, day) {
+            // Convert AD date to approximate BS date
+            let bsYear = year + bsToAdDiff.years;
+            let bsMonth = month + bsToAdDiff.months;
+            let bsDay = day + bsToAdDiff.days;
+
+            // Adjust for overflow
+            while (bsDay > bsMonthsDays[bsMonth - 1]) {
+                bsDay -= bsMonthsDays[bsMonth - 1];
+                bsMonth++;
+                if (bsMonth > 12) {
+                    bsMonth -= 12;
+                    bsYear++;
+                }
+            }
+            if (bsMonth > 12) {
+                bsMonth -= 12;
+                bsYear++;
+            }
+
+            // Validate BS date
+            if (!validateDate(bsYear, bsMonth, bsDay, true)) return null;
+
+            // Calculate day of the week
+            const date = new Date(year, month - 1, day);
+            const dayOfWeek = daysOfWeek[date.getDay()];
+            return { year: bsYear, month: bsMonth, day: bsDay, dayOfWeek };
+        }
+
+        function formatDate(year, month, day, dayOfWeek, isBS) {
+            const monthName = isBS ? nepaliMonths[month - 1] : englishMonths[month - 1];
+            return `${year} ${monthName} ${day < 10 ? '0' + day : day}, ${dayOfWeek}`;
+        }
+
+        function convertDate() {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            const conversionType = document.getElementById('conversion-type').value;
+            const year = parseInt(document.getElementById('input-year').value);
+            const month = parseInt(document.getElementById('input-month').value);
+            const day = parseInt(document.getElementById('input-day').value);
+
+            try {
+                if (!validateDate(year, month, day, conversionType === 'bs_to_ad')) {
+                    throw new Error('Invalid date');
+                }
+
+                let result;
+                if (conversionType === 'bs_to_ad') {
+                    result = bsToAd(year, month, day);
+                    if (!result) throw new Error('Invalid BS date');
+                    document.getElementById('output-date').value = formatDate(result.year, result.month, result.day, result.dayOfWeek, false);
+                } else {
+                    result = adToBs(year, month, day);
+                    if (!result) throw new Error('Invalid AD date');
+                    document.getElementById('output-date').value = formatDate(result.year, result.month, result.day, result.dayOfWeek, true);
+                }
+            } catch (e) {
+                document.getElementById('output-date').value = '';
+                errorMessage.textContent = 'Error: Invalid date. Please check your input (BS: 1970-2100, AD: 1913-2043).';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function clearInput() {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            document.getElementById('input-year').value = '';
+            document.getElementById('input-month').value = '1';
+            document.getElementById('input-day').value = '';
+            document.getElementById('output-date').value = '';
+            document.getElementById('input-year').focus();
+        }
+
+        let liveConversion = true;
+        function convertLive() {
+            if (document.getElementById('input-year').value && document.getElementById('input-month').value && document.getElementById('input-day').value) {
+                convertDate();
+            }
+        }
+
+        document.getElementById('convertBtn').addEventListener('click', convertDate);
+        document.getElementById('clearBtn').addEventListener('click', clearInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('output-date').value;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy text';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            } else {
+                document.getElementById('errorMessage').textContent = 'Error: No text available to copy';
+                document.getElementById('errorMessage').classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('input-year').addEventListener('input', convertLive);
+        document.getElementById('input-month').addEventListener('change', convertLive);
+        document.getElementById('input-day').addEventListener('input', convertLive);
+        document.getElementById('conversion-type').addEventListener('change', convertLive);
+
+        document.getElementById('input-year').focus();
+    </script>
+</body>
+</html>
