@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Unicode to Preeti Converter - Convert Nepali Unicode to Preeti Font</title>
+    <meta name="description" content="Convert Nepali Unicode to Preeti font with our free online tool. Paste Unicode Devanagari text to instantly generate Preeti font output, with live preview and copy functionality. Works on all devices.">
+    <meta name="keywords" content="unicode to preeti converter, nepali unicode to preeti, preeti font converter, nepali font converter, unicode to preeti tool, convert nepali unicode, preeti font online, nepali text converter, free preeti converter, nepali unicode tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Unicode to Preeti Converter Team">
+    <meta property="og:title" content="Unicode to Preeti Converter - Convert Nepali Unicode to Preeti Font">
+    <meta property="og:description" content="Convert Nepali Unicode to Preeti font with our free online tool. Paste Unicode Devanagari text to instantly generate Preeti font output, with live preview and copy functionality. Works on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/unicode-to-preeti-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unicode to Preeti Converter - Convert Nepali Unicode to Preeti Font">
+    <meta name="twitter:description" content="Convert Nepali Unicode to Preeti font with our free online tool. Paste Unicode Devanagari text to instantly generate Preeti font output, with live preview and copy functionality. Works on all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/unicode-to-preeti-converter">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            font-family: 'Noto Sans Devanagari', 'Courier New', Courier, monospace;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            resize: vertical;
+            height: 150px;
+        }
+        .example-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        .example-list ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .button-row {
+                flex-wrap: nowrap !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-font text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Unicode to Preeti Converter</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert Nepali Unicode text to Preeti font effortlessly with live preview and copy functionality. Works on all devices for accurate text conversion.</p>
+        </header>
+
+        <!-- Converter Form and Results -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form name="Form1" onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="unicode-input">Enter Unicode Devanagari Text</label>
+                        <textarea id="unicode-input" name="unicode_text" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Type or paste Unicode Devanagari text (e.g., नमस्कार)" aria-describedby="inputHelp"></textarea>
+                        <p id="inputHelp" class="text-xs text-gray-600 mt-1">Enter Nepali Unicode text to convert to Preeti font (e.g., 'नमस्कार' becomes Preeti font equivalent).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="preeti-output">Preeti Font Output</label>
+                        <textarea id="preeti-output" name="legacy_text" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" readonly placeholder="Converted Preeti font text will appear here..."></textarea>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 button-row">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="clearBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Clear form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Clear
+                        </button>
+                    </div>
+                </form>
+                <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Conversion failed. Please check your input.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Unicode to Preeti Converter</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Unicode to Preeti Converter?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Unicode to Preeti Converter is a free online tool that transforms Nepali Unicode text into Preeti font, a popular legacy font used in Nepali documents. Paste Unicode Devanagari text (e.g., नमस्कार) to instantly generate Preeti font output, with live preview and copy functionality, ideal for creating documents compatible with Preeti font software.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter or paste Nepali Unicode text, click "Convert" or type for live conversion, and view the Preeti font output. Use the "Copy" button to copy the result or "Clear" to reset the form. The tool is secure, browser-based, and works on all devices, ensuring accurate conversion for Nepali text.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is Preeti Font?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Preeti is a legacy Nepali font widely used in traditional Nepali desktop publishing and word processing. Unlike Unicode, which is a universal encoding standard, Preeti uses a proprietary encoding, making this converter essential for converting modern Nepali Unicode text to Preeti for compatibility with older systems or software.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Tips and Tricks for Unicode to Preeti Conversion</h3>
+                <ul class="example-list text-xs sm:text-sm md:text-base text-gray-600">
+                    <li><strong>Ensure valid Unicode input:</strong> Input valid Nepali Unicode text (e.g., नमस्कार) for accurate conversion to Preeti font. Invalid characters may not convert correctly.</li>
+                    <li><strong>Handle special characters:</strong> The tool supports characters like 'ि' (short i matra) and 'र्' (reph), adjusting their positions for proper Preeti rendering (e.g., नमस्कार becomes its Preeti equivalent).</li>
+                    <li><strong>Copy for documents:</strong> Use the "Copy" button to paste the Preeti output into software like Microsoft Word, ensuring the Preeti font is installed on your system for correct display.</li>
+                    <li><strong>Clear for new conversions:</strong> Use the "Clear" button to reset the form for new text inputs, especially when switching between multiple text samples.</li>
+                    <li><strong>Check compatibility:</strong> Ensure your target application supports Preeti font to view the converted text correctly after copying.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function convert_to_Preeti() {
+            var array_one = [
+                "‘", "?",
+                "क़", "ख़", "ग़", "ज़", "ड़", "ढ़", "फ़",
+                "ॐ", "ऽ", "।", "m'", "m]", "mfF", "mF",
+                "०", "१", "२", "३", "४", "५", "६", "७", "८", "९",
+                "फ्र", "झ", "फ", "क्त", "क्र", "ल",
+                "ज्ञ्", "द्घ", "ज्ञ", "द्द", "द्ध", "श्र", "रु", "द्य", "क्ष्", "क्ष", "त्त", "द्म",
+                "त्र", "ध्र", "ङ्घ", "ड्ड", "द्र", "ट्ट", "ड्ढ", "ट्", "रू", "हृ",
+                "ङ्ग", "त्र", "ङ्क", "ङ्ख", "ट्", "द्व",
+                "ट्र", "ट्र", "ड्र", "ढ्र",
+                "्र",
+                "ड़", "ढ़",
+                "क्", "क", "ख्", "ख", "ग्", "ग", "घ्", "घ", "ङ",
+                "च्", "च", "छ", "ज्", "ज", "झ्", "झ", "ञ्", "ञ",
+                "ट", "ठ", "ड", "ढ", "ण्", "ण",
+                "त्", "त", "थ्", "थ", "द", "ध्", "ध", "न्", "न",
+                "प्", "प", "फ्", "ब्", "ब", "भ्", "भ", "म्", "म",
+                "य", "र", "ल्", "ल", "व्", "व", "श्", "श", "ष्", "ष", "स्", "स", "ह्", "ह",
+                "्य",
+                "ऑ", "ऑ", "औ", "ो", "आ", "अ", "ई", "इ", "ऊ", "उ", "ऋ", "ऐ", "ए",
+                "ॉ", "ू", "ु", "ं", "ा", "ृ", "्", "े", "ै", "ँ", "ी", "ः", "ो", "ौ"
+            ];
+
+            var array_two = [
+                "…", "<",
+                "क़", "ख़", "ग़", "ज़", "ड़", "ढ़", "फ़",
+                "ç", "˜", ".", "'m", "]m", "Fmf", "Fm",
+                ")", "!", "@", "#", "$", "%", "^", "&", "*", "(",
+                "k|m", "em", "km", "Qm", "qm", "n",
+                "¡", "¢", "1", "2", "4", ">", "?", "B", "I", "If", "Q", "ß",
+                "q", "„", "‹", "•", "›", "§", "°", "¶", "¿", "Å",
+                "Ë", "Ì", "Í", "Î", "Ý", "å",
+                "6«", "7«", "8«", "9«",
+                "|",
+                "8þ", "9þ",
+                "S", "s", "V", "v", "U", "u", "£", "3", "ª",
+                "R", "r", "5", "H", "h", "‰", "´", "~", "`",
+                "6", "7", "8", "9", "0", "0f",
+                "T", "t", "Y", "y", "b", "W", "w", "G", "g",
+                "K", "k", "ˆ", "A", "a", "E", "e", "D", "d",
+                "o", "/", "N", "n", "J", "j", "Z", "z", "i", "if", ":", ";", "X", "x",
+                "Ø",
+                "cf‘", "c‘f", "cf}", "cf]", "cf", "c", "O{", "O", "pm", "p", "C", "P]", "P",
+                "f‘", "\"", "'", "+", "f", "[", "\\", "]", "}", "F", "L", "M", "f]", "f}"
+            ];
+
+            var array_one_length = array_one.length;
+            var modified_substring = document.getElementById("unicode-input").value;
+            var processed_text = '';
+
+            try {
+                Replace_Symbols();
+                processed_text = modified_substring;
+                document.getElementById("preeti-output").value = processed_text;
+                document.getElementById("errorMessage").classList.add("hidden");
+            } catch (e) {
+                document.getElementById("errorMessage").textContent = "Error: Conversion failed. Please check your input.";
+                document.getElementById("errorMessage").classList.remove("hidden");
+            }
+
+            function Replace_Symbols() {
+                if (modified_substring != "") {
+                    // Handle short 'i' matra (ि)
+                    var position_of_f = modified_substring.indexOf("ि");
+                    while (position_of_f != -1) {
+                        var character_left_to_f = modified_substring.charAt(position_of_f - 1);
+                        modified_substring = modified_substring.replace(character_left_to_f + "ि", "l" + character_left_to_f);
+                        position_of_f = position_of_f - 1;
+                        while (modified_substring.charAt(position_of_f - 1) == "्" && position_of_f != 0) {
+                            var string_to_be_replaced = modified_substring.charAt(position_of_f - 2) + "्";
+                            modified_substring = modified_substring.replace(string_to_be_replaced + "l", "l" + string_to_be_replaced);
+                            position_of_f = position_of_f - 2;
+                        }
+                        position_of_f = modified_substring.indexOf("ि", position_of_f + 1);
+                    }
+
+                    // Handle reph (र्)
+                    var set_of_matras = "ा ि ी ु ू ृ े ै ो ौ ं : ँ ्";
+                    modified_substring += '  ';
+                    var position_of_half_R = modified_substring.indexOf("र्");
+                    while (position_of_half_R > 0) {
+                        var probable_position_of_Z = position_of_half_R + 2;
+                        var character_at_probable_position_of_Z = modified_substring.charAt(probable_position_of_Z);
+                        while (set_of_matras.includes(character_at_probable_position_of_Z)) {
+                            probable_position_of_Z++;
+                            character_at_probable_position_of_Z = modified_substring.charAt(probable_position_of_Z);
+                        }
+                        var right_to_position_of_Z = probable_position_of_Z + 1;
+                        if (right_to_position_of_Z > 0) {
+                            var character_right_to_position_of_Z = modified_substring.charAt(right_to_position_of_Z);
+                            while (character_right_to_position_of_Z === "्") {
+                                probable_position_of_Z = right_to_position_of_Z + 1;
+                                character_at_probable_position_of_Z = modified_substring.charAt(probable_position_of_Z);
+                                right_to_position_of_Z = probable_position_of_Z + 1;
+                                character_right_to_position_of_Z = modified_substring.charAt(right_to_position_of_Z);
+                            }
+                        }
+                        var string_to_be_replaced = modified_substring.substr(position_of_half_R + 2, (probable_position_of_Z - position_of_half_R) - 1);
+                        modified_substring = modified_substring.replace("र्" + string_to_be_replaced, string_to_be_replaced + "{");
+                        position_of_half_R = modified_substring.indexOf("र्");
+                    }
+                    modified_substring = modified_substring.substr(0, modified_substring.length - 2);
+
+                    // Main character mapping
+                    for (let input_symbol_idx = 0; input_symbol_idx < array_one_length; input_symbol_idx++) {
+                        let idx = 0;
+                        while (idx != -1) {
+                            modified_substring = modified_substring.replace(array_one[input_symbol_idx], array_two[input_symbol_idx]);
+                            idx = modified_substring.indexOf(array_one[input_symbol_idx]);
+                        }
+                    }
+                }
+            }
+        }
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function clearInput() {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            if (document.Form1.unicode_text.value.length < 30 || confirm("Are you sure you want to clear what you typed?")) {
+                document.Form1.unicode_text.value = "";
+                document.Form1.legacy_text.value = "";
+                document.Form1.unicode_text.focus();
+            }
+        }
+
+        let liveConversion = true;
+        function convertLive(flag) {
+            if (flag) {
+                if (document.Form1.unicode_text.value.length > 1500) {
+                    document.getElementById('errorMessage').textContent = 'Error: Text is too large for live conversion. Please press the Convert button.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    return convertLive(false);
+                }
+                convert_to_Preeti();
+                liveConversion = true;
+            } else {
+                liveConversion = false;
+            }
+        }
+
+        document.getElementById('convertBtn').addEventListener('click', () => {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+            try {
+                if (liveConversion && document.Form1.unicode_text.value.length <= 1500) {
+                    convert_to_Preeti();
+                } else if (liveConversion && document.Form1.unicode_text.value.length > 1500) {
+                    convertLive(true);
+                }
+            } catch (e) {
+                errorMessage.textContent = 'Error: Conversion failed. Please check your input.';
+                errorMessage.classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('clearBtn').addEventListener('click', clearInput);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('preeti-output').value;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy text';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            } else {
+                document.getElementById('errorMessage').textContent = 'Error: No text available to copy';
+                document.getElementById('errorMessage').classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('unicode-input').addEventListener('input', () => convertLive(true));
+
+        document.Form1.unicode_text.focus();
+    </script>
+</body>
+</html>
