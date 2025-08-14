@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CSS Beautifier & Minifier Tool - Free Online CSS Formatter</title>
-    <meta name="description" content="A free online CSS beautifier and minifier tool to format CSS code with proper indentation or compress it for optimization. Supports copy-to-clipboard and works on all devices.">
-    <meta name="keywords" content="css beautifier, css minifier, css formatter, free css beautifier, online css formatter, css code formatter, css pretty print, css compressor, css minify tool, css code beautifier, online css minifier, css syntax formatter, css optimization tool, css code editor, css prettifier">
+    <title>CSS Beautifier/Minifier Tool - Free Online CSS Formatter</title>
+    <meta name="description" content="A free online CSS Beautifier and Minifier tool to format or compress CSS code. Supports manual input or file upload, with copy-to-clipboard functionality. Works on all devices.">
+    <meta name="keywords" content="css beautifier, css minifier, css formatter, free css beautifier tool, online css minifier, css code formatter, css beautify online, css minify tool, css code optimizer, css formatter online, css beautifier minifier, online css compressor, css code beautifier, css syntax formatter, css optimization tool">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="CSS Beautifier & Minifier Tool Team">
-    <meta property="og:title" content="CSS Beautifier & Minifier Tool - Free Online CSS Formatter">
-    <meta property="og:description" content="Beautify CSS code with proper indentation or minify it for optimization using our free online tool. Supports copy-to-clipboard and works on all devices.">
+    <meta name="author" content="CSS Beautifier/Minifier Tool Team">
+    <meta property="og:title" content="CSS Beautifier/Minifier Tool - Free Online CSS Formatter">
+    <meta property="og:description" content="Beautify or minify your CSS code with our free online tool. Supports manual input or file upload, with copy-to-clipboard functionality. Works on all devices.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.singhyogendra.com.np/css-beautifier-minifier">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CSS Beautifier & Minifier Tool - Free Online CSS Formatter">
-    <meta name="twitter:description" content="Beautify CSS code with proper indentation or minify it for optimization using our free online tool. Supports copy-to-clipboard and works on all devices.">
+    <meta name="twitter:title" content="CSS Beautifier/Minifier Tool - Free Online CSS Formatter">
+    <meta name="twitter:description" content="Beautify or minify your CSS code with our free online tool. Supports manual input or file upload, with copy-to-clipboard functionality. Works on all devices.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -64,25 +64,30 @@
         <header class="text-center mb-6 sm:mb-8">
             <div class="flex items-center justify-center mb-4">
                 <i class="fas fa-code text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
-                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">CSS Beautifier & Minifier Tool</h1>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">CSS Beautifier/Minifier Tool</h1>
             </div>
-            <p class="text-xs sm:text-sm md:text-base text-gray-600">Beautify CSS code with proper indentation or minify it for optimization with this free online tool. Compatible with all devices.</p>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Beautify or minify your CSS code with this free online tool. Supports manual input or file upload. Compatible with all devices.</p>
         </header>
 
-        <!-- CSS Beautifier & Minifier Form and Results -->
+        <!-- CSS Beautifier/Minifier Form and Results -->
         <section class="mb-6 sm:mb-8">
             <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <form onsubmit="return false;">
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <button type="button" id="beautifyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Beautify</button>
-                        <button type="button" id="minifyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Minify</button>
+                        <button type="button" id="manualBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base active">Manual Input</button>
+                        <button type="button" id="uploadBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">Upload File</button>
                     </div>
-                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="inputLabel">Enter CSS to Beautify or Minify</label>
-                    <textarea id="inputText" placeholder='Enter CSS code (e.g., body { background-color: #fff; })...' class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y font-mono"></textarea>
+                    <input type="file" id="fileInput" accept=".css" class="hidden">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" id="inputLabel">Enter CSS Code</label>
+                    <textarea id="inputText" placeholder="Enter CSS code (e.g., body { background: #fff; margin: 0; })" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base h-32 resize-y font-mono"></textarea>
                     <div class="flex flex-wrap gap-2 mt-4">
-                        <button type="button" id="processBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-exchange-alt mr-2"></i>
-                            Process
+                        <button type="button" id="beautifyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-paint-brush mr-2"></i>
+                            Beautify
+                        </button>
+                        <button type="button" id="minifyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-compress mr-2"></i>
+                            Minify
                         </button>
                         <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 md:w-1/5 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                             <i class="fas fa-copy mr-2"></i>
@@ -96,31 +101,31 @@
                 </form>
                 <div class="mt-4">
                     <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Result</label>
-                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y font-mono" placeholder="Processed CSS will appear here..."></textarea>
-                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid CSS input. Please check your syntax.</p>
+                    <textarea id="resultText" readonly class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base h-32 resize-y font-mono" placeholder="Formatted or minified CSS will appear here..."></textarea>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid CSS input. Please check your code.</p>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section class="mt-8 sm:mt-12">
-            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About CSS Beautifier & Minifier Tool</h2>
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About CSS Beautifier/Minifier Tool</h2>
             <article class="mb-6">
-                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the CSS Beautifier & Minifier Tool?</h3>
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the CSS Beautifier/Minifier Tool?</h3>
                 <p class="text-xs sm:text-sm md:text-base text-gray-600">
-                    The CSS Beautifier & Minifier Tool is a free online utility that formats CSS code with proper indentation for readability or compresses it to reduce file size. This CSS formatter and minifier is ideal for web developers, designers, and anyone working with CSS to improve code readability or optimize performance.
+                    The CSS Beautifier/Minifier Tool is a free online utility that formats or compresses CSS code. This css formatter is ideal for developers and designers who need readable, well-structured CSS or optimized, minified code for production.
                 </p>
             </article>
             <article class="mb-6">
                 <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
                 <p class="text-xs sm:text-sm md:text-base text-gray-600">
-                    Select whether you want to beautify or minify using the toggle buttons. Enter your CSS code in the input field, then click "Process" to see the formatted or minified result. Use the "Copy Result" button to copy the output to your clipboard, or "Reset" to clear the form. This online CSS beautifier and minifier is secure, runs in your browser, and works on all devices for seamless CSS formatting and optimization.
+                    Select "Manual Input" to enter CSS code or "Upload File" to upload a CSS file. Click "Beautify" to format the code with proper indentation or "Minify" to compress it. Use the "Copy Result" button to copy the output or "Reset" to clear the form. This online CSS beautifier and minifier is secure, runs in your browser, and works on all devices for seamless code processing.
                 </p>
             </article>
             <article class="mb-6">
-                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our CSS Beautifier & Minifier Tool?</h3>
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our CSS Beautifier/Minifier Tool?</h3>
                 <p class="text-xs sm:text-sm md:text-base text-gray-600">
-                    Our CSS formatter and minifier is free, fast, and user-friendly, perfect for developers debugging CSS, formatting code for documentation, or optimizing stylesheets for faster loading. The copy-to-clipboard feature and responsive design ensure a smooth experience on any device. Whether you're beautifying CSS for readability or minifying it for performance, this online CSS beautifier and minifier tool is your go-to solution.
+                    Our CSS formatter is free, fast, and user-friendly, perfect for formatting CSS for debugging or minifying it for faster website loading. The copy-to-clipboard feature and responsive design ensure a smooth experience on any device. This online CSS beautifier and minifier tool provides accurate results for all your CSS optimization needs.
                 </p>
             </article>
         </section>
@@ -135,7 +140,7 @@
     </div>
 
     <script>
-        let mode = 'beautify'; // Default mode: beautify
+        let mode = 'manual'; // Default mode: manual input
 
         function showPopup() {
             const popup = document.createElement('div');
@@ -150,123 +155,154 @@
         }
 
         function beautifyCSS(css) {
-            // Enhanced CSS beautifier with proper formatting
-            let formatted = '';
-            let indentLevel = 0;
-            const indentSize = 2;
-            css = css.replace(/\s+/g, ' ').trim(); // Normalize whitespace
-
-            // Split by curly braces and process each block
-            const parts = css.split(/([{}])/).filter(part => part.trim());
-            parts.forEach((part, index) => {
-                if (part === '{') {
-                    formatted += ' {\n';
-                    indentLevel++;
-                } else if (part === '}') {
-                    indentLevel--;
-                    formatted += `${' '.repeat(indentLevel * indentSize)}}\n`;
-                } else if (part.trim()) {
-                    // Handle CSS properties and selectors
-                    const trimmed = part.trim();
-                    if (index > 0 && parts[index - 1] !== '{') {
-                        // Selector or rule
-                        formatted += `${' '.repeat(indentLevel * indentSize)}${trimmed.replace(/;/g, ';\n' + ' '.repeat(indentLevel * indentSize))}`;
-                    } else {
-                        formatted += `${' '.repeat(indentLevel * indentSize)}${trimmed};\n`;
-                    }
-                }
-            });
-
-            return formatted.replace(/\n\s*\n/g, '\n').trim();
+            try {
+                // Remove comments and extra whitespace
+                css = css.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s+/g, ' ').trim();
+                // Split into rules
+                const rules = css.split('}').map(rule => rule.trim()).filter(rule => rule);
+                let formatted = '';
+                rules.forEach(rule => {
+                    const [selector, properties] = rule.split('{').map(part => part.trim());
+                    if (!selector || !properties) return;
+                    formatted += `${selector} {\n`;
+                    const props = properties.split(';').map(prop => prop.trim()).filter(prop => prop);
+                    props.forEach(prop => {
+                        formatted += `    ${prop};\n`;
+                    });
+                    formatted += '}\n';
+                });
+                return formatted.trim();
+            } catch (e) {
+                throw new Error('Invalid CSS format');
+            }
         }
 
         function minifyCSS(css) {
-            return css
-                .replace(/\/\*.*?\*\//g, '') // Remove comments
-                .replace(/\s+/g, ' ') // Replace whitespace with single space
-                .replace(/\s*{\s*/g, '{')
-                .replace(/\s*}\s*/g, '}')
-                .replace(/\s*;\s*/g, ';')
-                .replace(/\s*,\s*/g, ',')
-                .trim();
+            try {
+                // Remove comments, extra whitespace, and line breaks
+                return css
+                    .replace(/\/\*[\s\S]*?\*\//g, '') // Remove comments
+                    .replace(/\s+/g, ' ') // Collapse whitespace
+                    .replace(/\s*([{}:;])\s*/g, '$1') // Remove spaces around delimiters
+                    .replace(/;}/g, '}') // Remove trailing semicolons
+                    .trim();
+            } catch (e) {
+                throw new Error('Invalid CSS format');
+            }
         }
 
         function validateCSS(css) {
-            // Basic CSS validation: check for matching braces and basic syntax
-            const openBraces = (css.match(/{/g) || []).length;
-            const closeBraces = (css.match(/}/g) || []).length;
-            if (openBraces !== closeBraces) {
-                throw new Error('Unmatched braces in CSS');
+            if (!css.trim()) {
+                throw new Error('Please enter valid CSS code.');
             }
-
-            // Check for basic CSS syntax (selector { property: value; })
-            const cssRegex = /[a-zA-Z0-9\s.#]*(?<!\s)\{[^}]*\}/;
-            if (!cssRegex.test(css) && css.trim()) {
-                throw new Error('Invalid CSS syntax');
+            // Basic CSS validation: check for balanced braces
+            let braceCount = 0;
+            for (let char of css) {
+                if (char === '{') braceCount++;
+                if (char === '}') braceCount--;
+                if (braceCount < 0) throw new Error('Unmatched closing brace in CSS.');
             }
+            if (braceCount !== 0) throw new Error('Unmatched opening brace in CSS.');
         }
 
-        function toggleMode(newMode) {
-            mode = newMode;
-            const beautifyBtn = document.getElementById('beautifyBtn');
-            const minifyBtn = document.getElementById('minifyBtn');
-            const inputLabel = document.getElementById('inputLabel');
-            const processBtn = document.getElementById('processBtn');
-
-            if (mode === 'beautify') {
-                beautifyBtn.classList.add('active', 'bg-red-600', 'text-white');
-                beautifyBtn.classList.remove('bg-blue-600');
-                minifyBtn.classList.remove('active', 'bg-blue-600', 'text-white');
-                minifyBtn.classList.add('bg-blue-600');
-                inputLabel.textContent = 'Enter CSS to Beautify';
-                processBtn.innerHTML = '<i class="fas fa-exchange-alt mr-2"></i>Beautify';
-                processBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
-                processBtn.classList.add('bg-red-600', 'hover:bg-red-700');
-                document.getElementById('inputText').placeholder = 'Enter CSS code to beautify (e.g., body { background-color: #fff; })...';
-            } else {
-                minifyBtn.classList.add('active', 'bg-blue-600', 'text-white');
-                minifyBtn.classList.remove('bg-red-600');
-                beautifyBtn.classList.remove('active', 'bg-red-600', 'text-white');
-                beautifyBtn.classList.add('bg-red-600');
-                inputLabel.textContent = 'Enter CSS to Minify';
-                processBtn.innerHTML = '<i class="fas fa-exchange-alt mr-2"></i>Minify';
-                processBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
-                processBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
-                document.getElementById('inputText').placeholder = 'Enter CSS code to minify (e.g., body { background-color: #fff; })...';
-            }
-            document.getElementById('resultText').value = '';
-            document.getElementById('errorMessage').classList.add('hidden');
-            processCSS();
-        }
-
-        function processCSS() {
-            const input = document.getElementById('inputText').value;
+        function processCSS(action) {
+            const inputText = document.getElementById('inputText').value;
             const resultText = document.getElementById('resultText');
             const errorMessage = document.getElementById('errorMessage');
             errorMessage.classList.add('hidden');
 
-            if (!input) {
+            if (mode === 'manual' && !inputText) {
                 resultText.value = '';
                 return;
             }
 
             try {
-                validateCSS(input); // Validate CSS input
-                if (mode === 'beautify') {
-                    resultText.value = beautifyCSS(input);
-                } else {
-                    resultText.value = minifyCSS(input);
+                if (mode === 'manual') {
+                    validateCSS(inputText);
+                    resultText.value = action === 'beautify' ? beautifyCSS(inputText) : minifyCSS(inputText);
                 }
             } catch (e) {
-                errorMessage.textContent = `Error: Invalid CSS input. ${e.message}`;
+                errorMessage.textContent = `Error: ${e.message}`;
                 errorMessage.classList.remove('hidden');
                 resultText.value = '';
             }
         }
 
-        document.getElementById('beautifyBtn').addEventListener('click', () => toggleMode('beautify'));
-        document.getElementById('minifyBtn').addEventListener('click', () => toggleMode('minify'));
-        document.getElementById('processBtn').addEventListener('click', processCSS);
+        function handleFileUpload(file) {
+            const resultText = document.getElementById('resultText');
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.classList.add('hidden');
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const css = e.target.result;
+                    validateCSS(css);
+                    resultText.value = beautifyCSS(css); // Default to beautify for uploaded files
+                } catch (err) {
+                    errorMessage.textContent = `Error: ${err.message}`;
+                    errorMessage.classList.remove('hidden');
+                    resultText.value = '';
+                }
+            };
+            reader.onerror = () => {
+                errorMessage.textContent = 'Error: Unable to read the file.';
+                errorMessage.classList.remove('hidden');
+                resultText.value = '';
+            };
+            reader.readAsText(file);
+        }
+
+        function toggleMode(newMode) {
+            mode = newMode;
+            const manualBtn = document.getElementById('manualBtn');
+            const uploadBtn = document.getElementById('uploadBtn');
+            const inputLabel = document.getElementById('inputLabel');
+            const inputText = document.getElementById('inputText');
+            const beautifyBtn = document.getElementById('beautifyBtn');
+            const minifyBtn = document.getElementById('minifyBtn');
+
+            if (mode === 'manual') {
+                manualBtn.classList.add('active', 'bg-red-600', 'text-white');
+                manualBtn.classList.remove('bg-blue-600');
+                uploadBtn.classList.remove('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.add('bg-blue-600');
+                inputLabel.textContent = 'Enter CSS Code';
+                inputText.classList.remove('hidden');
+                beautifyBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                beautifyBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                minifyBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                minifyBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                inputText.placeholder = 'Enter CSS code (e.g., body { background: #fff; margin: 0; })';
+            } else {
+                uploadBtn.classList.add('active', 'bg-blue-600', 'text-white');
+                uploadBtn.classList.remove('bg-red-600');
+                manualBtn.classList.remove('active', 'bg-red-600', 'text-white');
+                manualBtn.classList.add('bg-red-600');
+                inputLabel.textContent = 'Upload CSS File';
+                inputText.classList.add('hidden');
+                beautifyBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                beautifyBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                minifyBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                minifyBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                inputText.placeholder = '';
+            }
+            document.getElementById('resultText').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+        }
+
+        document.getElementById('manualBtn').addEventListener('click', () => toggleMode('manual'));
+        document.getElementById('uploadBtn').addEventListener('click', () => {
+            toggleMode('upload');
+            document.getElementById('fileInput').click();
+        });
+        document.getElementById('fileInput').addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileUpload(e.target.files[0]);
+            }
+        });
+        document.getElementById('beautifyBtn').addEventListener('click', () => processCSS('beautify'));
+        document.getElementById('minifyBtn').addEventListener('click', () => processCSS('minify'));
         document.getElementById('copyBtn').addEventListener('click', () => {
             const result = document.getElementById('resultText').value;
             if (result) {
@@ -276,16 +312,15 @@
         });
         document.getElementById('resetBtn').addEventListener('click', () => {
             document.getElementById('inputText').value = '';
+            document.getElementById('fileInput').value = '';
             document.getElementById('resultText').value = '';
             document.getElementById('errorMessage').classList.add('hidden');
-            toggleMode('beautify');
+            toggleMode('manual');
         });
+        document.getElementById('inputText').addEventListener('input', () => processCSS('beautify')); // Default to beautify on input
 
-        // Update result on input
-        document.getElementById('inputText').addEventListener('input', processCSS);
-
-        // Initialize beautify mode
-        toggleMode('beautify');
+        // Initialize manual mode
+        toggleMode('manual');
     </script>
 </body>
 </html>
