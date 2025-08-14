@@ -12,15 +12,15 @@
     <meta property="og:description" content="Access a collection of free, premium-quality utility tools including password generator, base64 encoder/decoder, calculator, text case converter, word counter, and more. Fast, secure, and easy to use on any device.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="/">
-    <meta property="og:image" content=/tool-hierarchy-og.jpg">
+    <meta property="og:image" content="/tool-hierarchy-og.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HamroTools - Free & Premium Utility Tools">
     <meta name="twitter:description" content="Access a collection of free, premium-quality utility tools including password generator, base64 encoder/decoder, calculator, text case converter, word counter, and more. Fast, secure, and easy to use on any device.">
-    <meta name="twitter:image" content=/tool-hierarchy-og.jpg">
+    <meta name="twitter:image" content="/tool-hierarchy-og.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
 
     <style>
         .download-btn:hover {
@@ -36,6 +36,12 @@
         .footer-link:hover {
             color: #dc2626;
         }
+        .tool-card {
+            transition: all 0.3s ease;
+        }
+        .tool-card.hidden {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
@@ -49,13 +55,26 @@
             <p class="text-xs sm:text-sm md:text-base text-gray-600">Explore our collection of free, premium-quality utility tools, including password generators, text converters, calculators, and more. Fast, secure, and accessible on any device.</p>
         </header>
 
+        <!-- Search Bar -->
+        <div class="mb-6">
+            <div class="relative">
+                <input
+                    type="text"
+                    id="tool-search"
+                    placeholder="Search tools (e.g., Password Generator, Base64 Encoder)..."
+                    class="w-full p-3 pl-10 text-sm sm:text-base text-gray-800 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 bg-gray-50"
+                >
+                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
         <!-- Tools List Section -->
-        <section class="mb-6 sm:mb-8">
+        <section class="mb-6 sm:mb-8" id="tools-section">
             <!-- Text and Data Conversion -->
-            <div class="mb-6">
+            <div class="mb-6 tool-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Text and Data Conversion</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base16 Encoder" data-description="Encode text to Base16 for efficient data representation.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base16 Encoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base16 for efficient data representation.</p>
                         <a href="base16-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -63,7 +82,7 @@
                             Go to Base16 Encoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base16 Decoder" data-description="Decode Base16 text back to its original form.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base16 Decoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base16 text back to its original form.</p>
                         <a href="base16-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -71,7 +90,7 @@
                             Go to Base16 Decoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base32 Encoder" data-description="Encode text to Base32 for compact data encoding.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base32 Encoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base32 for compact data encoding.</p>
                         <a href="base32-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -79,7 +98,7 @@
                             Go to Base32 Encoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base32 Decoder" data-description="Decode Base32 text to its original content.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base32 Decoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base32 text to its original content.</p>
                         <a href="base32-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -87,7 +106,7 @@
                             Go to Base32 Decoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base58 Encoder" data-description="Encode text to Base58 for cryptocurrency and data applications.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base58 Encoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base58 for cryptocurrency and data applications.</p>
                         <a href="base58-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -95,7 +114,7 @@
                             Go to Base58 Encoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base58 Decoder" data-description="Decode Base58 text for accurate data retrieval.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base58 Decoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base58 text for accurate data retrieval.</p>
                         <a href="base58-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -103,7 +122,7 @@
                             Go to Base58 Decoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base64 Encoder" data-description="Encode text to Base64 for secure data handling.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base64 Encoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base64 for secure data handling.</p>
                         <a href="base64-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -111,7 +130,7 @@
                             Go to Base64 Encoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base64 Decoder" data-description="Decode Base64 text to its original format.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base64 Decoder</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base64 text to its original format.</p>
                         <a href="base64-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -119,7 +138,7 @@
                             Go to Base64 Decoder
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="CSV to JSON" data-description="Convert CSV data to JSON format for easy integration.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">CSV to JSON</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert CSV data to JSON format for easy integration.</p>
                         <a href="csv-to-json.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -127,7 +146,7 @@
                             Go to CSV to JSON
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JSON to CSV" data-description="Transform JSON data into CSV format for data analysis.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JSON to CSV</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Transform JSON data into CSV format for data analysis.</p>
                         <a href="json-to-csv.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -135,7 +154,7 @@
                             Go to JSON to CSV
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Find and Replace" data-description="Quickly search and replace text in any input for efficient editing.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Find and Replace</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Quickly search and replace text in any input for efficient editing.</p>
                         <a href="find-replace.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -143,7 +162,7 @@
                             Go to Find and Replace
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="HTML Encode/Decode Tool" data-description="Encode or decode HTML entities for secure and accurate web content processing.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">HTML Encode/Decode Tool</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode or decode HTML entities for secure and accurate web content processing.</p>
                         <a href="html-encode-decode.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -151,7 +170,7 @@
                             Go to HTML Encode/Decode
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Morse Code to Text" data-description="Convert Morse code to text or text to Morse code quickly and accurately.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Morse Code to Text</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert Morse code to text or text to Morse code quickly and accurately.</p>
                         <a href="morse-code-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -159,7 +178,7 @@
                             Go to Morse Code Converter
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Text Case Converter" data-description="Convert text to uppercase, lowercase, or other cases with ease.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Text Case Converter</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert text to uppercase, lowercase, or other cases with ease.</p>
                         <a href="text-case-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -167,7 +186,7 @@
                             Go to Text Case Converter
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Text Reverser" data-description="Reverse text characters instantly for creative or technical use.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Text Reverser</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Reverse text characters instantly for creative or technical use.</p>
                         <a href="reverse-text.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -175,7 +194,7 @@
                             Go to Text Reverser
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="URL Encode/Decode" data-description="Encode or decode URLs for safe and reliable web data handling.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">URL Encode/Decode</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode or decode URLs for safe and reliable web data handling.</p>
                         <a href="url-encode-decode.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -183,7 +202,7 @@
                             Go to URL Encode/Decode
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Word Counter" data-description="Count words, characters, and sentences in text quickly and accurately.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Word Counter</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Count words, characters, and sentences in text quickly and accurately.</p>
                         <a href="word-counter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -195,10 +214,10 @@
             </div>
 
             <!-- Code Formatting and Validation -->
-            <div class="mb-6">
+            <div class="mb-6 tool-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Code Formatting and Validation</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="CSS Beautifier/Minifier" data-description="Format or minify CSS code for improved readability or optimized performance.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">CSS Beautifier/Minifier</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format or minify CSS code for improved readability or optimized performance.</p>
                         <a href="css-beautifier-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -206,7 +225,7 @@
                             Go to CSS Beautifier/Minifier
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="HTML Beautifier/Minifier" data-description="Beautify or minify HTML code for better readability or reduced file size.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">HTML Beautifier/Minifier</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Beautify or minify HTML code for better readability or reduced file size.</p>
                         <a href="html-beautifier-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -214,7 +233,7 @@
                             Go to HTML Beautifier/Minifier
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JS Beautifier/Minifier" data-description="Format or minify JavaScript code for enhanced readability or optimized performance.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JS Beautifier/Minifier</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format or minify JavaScript code for enhanced readability or optimized performance.</p>
                         <a href="js-beautifier-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -222,7 +241,7 @@
                             Go to JS Beautifier/Minifier
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JSON Formatter" data-description="Format and validate JSON data for easy reading and debugging.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JSON Formatter</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format and validate JSON data for easy reading and debugging.</p>
                         <a href="json-formatter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -230,7 +249,7 @@
                             Go to JSON Formatter
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JSON Validator" data-description="Validate and check JSON data for syntax errors and correctness.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JSON Validator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Validate and check JSON data for syntax errors and correctness.</p>
                         <a href="json-validator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -238,7 +257,7 @@
                             Go to JSON Validator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Formatter" data-description="Format XML data for improved readability and structure.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Formatter</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format XML data for improved readability and structure.</p>
                         <a href="xml-formatter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -246,7 +265,7 @@
                             Go to XML Formatter
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Minifier" data-description="Minify XML data to reduce file size and optimize performance.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Minifier</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Minify XML data to reduce file size and optimize performance.</p>
                         <a href="xml-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -254,7 +273,7 @@
                             Go to XML Minifier
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Parser" data-description="Parse XML data to analyze and extract information efficiently.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Parser</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Parse XML data to analyze and extract information efficiently.</p>
                         <a href="xml-parser.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -262,7 +281,7 @@
                             Go to XML Parser
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Validator" data-description="Validate XML data for syntax errors and schema compliance.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Validator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Validate XML data for syntax errors and schema compliance.</p>
                         <a href="xml-validator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -274,10 +293,10 @@
             </div>
 
             <!-- Social Media Tools -->
-            <div class="mb-6">
+            <div class="mb-6 tool-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Social Media Tools</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Instagram Name Generator" data-description="Generate unique and catchy usernames for your Instagram profile.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Instagram Name Generator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate unique and catchy usernames for your Instagram profile.</p>
                         <a href="instagram-name-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -285,7 +304,7 @@
                             Go to Instagram Name Generator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Twitter Name Generator" data-description="Create memorable and unique handles for your Twitter account.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Twitter Name Generator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create memorable and unique handles for your Twitter account.</p>
                         <a href="twitter-name-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -293,7 +312,7 @@
                             Go to Twitter Name Generator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="YouTube Thumbnails" data-description="Download or manage YouTube thumbnail images for better video engagement.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">YouTube Thumbnails</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Download or manage YouTube thumbnail images for better video engagement.</p>
                         <a href="ytthumbnails.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -305,10 +324,10 @@
             </div>
 
             <!-- Calculators -->
-            <div class="mb-6">
+            <div class="mb-6 tool-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Calculators</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Age Calculator" data-description="Calculate your age with detailed breakdowns in years, months, and days.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Age Calculator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate your age with detailed breakdowns in years, months, and days.</p>
                         <a href="age-calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -316,7 +335,7 @@
                             Go to Age Calculator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Birthday Countdown" data-description="Track the countdown to your next birthday in days, hours, and minutes.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Birthday Countdown</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Track the countdown to your next birthday in days, hours, and minutes.</p>
                         <a href="birthday-countdown.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -324,7 +343,7 @@
                             Go to Birthday Countdown
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="BMI Calculator" data-description="Calculate your Body Mass Index to assess health and fitness levels.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">BMI Calculator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate your Body Mass Index to assess health and fitness levels.</p>
                         <a href="bmi-calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -332,7 +351,7 @@
                             Go to BMI Calculator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Calculator" data-description="Perform basic and advanced calculations with a fast and intuitive interface.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Calculator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Perform basic and advanced calculations with a fast and intuitive interface.</p>
                         <a href="calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -340,7 +359,7 @@
                             Go to Calculator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Love Calculator" data-description="Calculate compatibility between two names for fun and insights.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Love Calculator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate compatibility between two names for fun and insights.</p>
                         <a href="love-calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -352,10 +371,10 @@
             </div>
 
             <!-- Image and Media Tools -->
-            <div class="mb-6">
+            <div class="mb-6 tool-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Image and Media Tools</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Iframe Generator" data-description="Generate iframe code for embedding web content seamlessly.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Iframe Generator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate iframe code for embedding web content seamlessly.</p>
                         <a href="iframe-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -363,7 +382,7 @@
                             Go to Iframe Generator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Lorem Ipsum Generator" data-description="Generate placeholder text for design and content prototyping.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Lorem Ipsum Generator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate placeholder text for design and content prototyping.</p>
                         <a href="lorem-ipsum-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -371,7 +390,7 @@
                             Go to Lorem Ipsum Generator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Password Generator" data-description="Generate secure, customizable passwords for maximum security.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Password Generator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate secure, customizable passwords for maximum security.</p>
                         <a href="password-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -379,7 +398,7 @@
                             Go to Password Generator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="QR Code Generator" data-description="Create QR codes for URLs, text, or other data with ease.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">QR Code Generator</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create QR codes for URLs, text, or other data with ease.</p>
                         <a href="qr-code-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -387,7 +406,7 @@
                             Go to QR Code Generator
                         </a>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="QR Code Reader" data-description="Scan and decode QR codes to retrieve embedded information quickly.">
                         <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">QR Code Reader</h3>
                         <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Scan and decode QR codes to retrieve embedded information quickly.</p>
                         <a href="qr-code-reader.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
@@ -441,13 +460,44 @@
                 <a href="/contact" class="footer-link text-xs sm:text-sm md:text-base text-gray-600 hover:text-red-600 transition">Contact</a>
                 <a href="/disclaimer" class="footer-link text-xs sm:text-sm md:text-base text-gray-600 hover:text-red-600 transition">Disclaimer</a>
                 <a href="/privacy" class="footer-link text-xs sm:text-sm md:text-base text-gray-600 hover:text-red-600 transition">Privacy Policy</a>
-
             </div>
             <p class="text-center text-xs sm:text-sm md:text-base text-gray-600">© 2025 Hamro Tools. All rights reserved.</p>
         </footer>
     </div>
-    
-    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;"><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
-    <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script><noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript></div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <!-- Search Functionality Script -->
+    <script>
+        document.getElementById('tool-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const toolCards = document.querySelectorAll('.tool-card');
+            const categories = document.querySelectorAll('.tool-category');
+
+            toolCards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const description = card.getAttribute('data-description').toLowerCase();
+                if (name.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Hide categories if they have no visible tools
+            categories.forEach(category => {
+                const visibleCards = category.querySelectorAll('.tool-card:not(.hidden)');
+                if (visibleCards.length === 0) {
+                    category.style.display = 'none';
+                } else {
+                    category.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
