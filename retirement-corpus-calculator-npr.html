@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Retirement Corpus Calculator NPR - Free Online Retirement Planner</title>
+    <meta name="description" content="Calculate your retirement corpus in NPR with our free online Retirement Corpus Calculator. Enter current age, retirement age, monthly expenses, expected return rate, and life expectancy to get accurate results in a table, copy, or reset. Works on all devices for easy retirement planning in Nepal.">
+    <meta name="keywords" content="retirement corpus calculator npr, online retirement corpus calculator, free retirement corpus calculator, retirement calculator nepal, retirement planning calculator, free retirement calculator npr, online retirement planning calculator, retirement corpus calculator, npr retirement calculator, retirement calculator tool, free online retirement calculator, online retirement calculator nepal, retirement planning tool, free retirement planning calculator, retirement savings calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Retirement Corpus Calculator NPR Team">
+    <meta property="og:title" content="Retirement Corpus Calculator NPR - Free Online Retirement Planner">
+    <meta property="og:description" content="Calculate your retirement corpus in NPR with our free online Retirement Corpus Calculator. Enter current age, retirement age, monthly expenses, expected return rate, and life expectancy to get accurate results in a table, copy, or reset. Works on all devices for easy retirement planning in Nepal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/retirement-corpus-calculator-npr">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Retirement Corpus Calculator NPR - Free Online Retirement Planner">
+    <meta name="twitter:description" content="Calculate your retirement corpus in NPR with our free online Retirement Corpus Calculator. Enter current age, retirement age, monthly expenses, expected return rate, and life expectancy to get accurate results in a table, copy, or reset. Works on all devices for easy retirement planning in Nepal.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/retirement-corpus-calculator-npr">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        input[type="number"], select {
+            padding: 0.5rem;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            opacity: 1;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Retirement Corpus Calculator NPR</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate your retirement corpus in NPR with this free online calculator. Enter current age, retirement age, monthly expenses, expected return rate, and life expectancy to view results in a table, copy, or reset. Works on all devices for easy retirement planning.</p>
+        </header>
+
+        <!-- Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="currentAge">Current Age (Years)</label>
+                        <input type="number" id="currentAge" min="18" max="100" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter your current age" aria-describedby="currentAgeHelp">
+                        <p id="currentAgeHelp" class="text-xs text-gray-600 mt-1">Enter your current age in years (e.g., 30).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="retirementAge">Retirement Age (Years)</label>
+                        <input type="number" id="retirementAge" min="18" max="100" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter your retirement age" aria-describedby="retirementAgeHelp">
+                        <p id="retirementAgeHelp" class="text-xs text-gray-600 mt-1">Enter your desired retirement age (e.g., 60).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="monthlyExpenses">Monthly Expenses Post-Retirement (NPR)</label>
+                        <input type="number" id="monthlyExpenses" min="1" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter monthly expenses in NPR" aria-describedby="monthlyExpensesHelp">
+                        <p id="monthlyExpensesHelp" class="text-xs text-gray-600 mt-1">Enter expected monthly expenses after retirement (e.g., 30000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="returnRate">Expected Annual Return Rate (%)</label>
+                        <input type="number" id="returnRate" min="0.01" step="0.01" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter expected annual return rate" aria-describedby="returnRateHelp">
+                        <p id="returnRateHelp" class="text-xs text-gray-600 mt-1">Enter the expected annual return rate (e.g., 7 for 7%).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="lifeExpectancy">Life Expectancy (Years)</label>
+                        <input type="number" id="lifeExpectancy" min="18" max="120" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter life expectancy" aria-describedby="lifeExpectancyHelp">
+                        <p id="lifeExpectancyHelp" class="text-xs text-gray-600 mt-1">Enter your expected life expectancy (e.g., 80).</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Retirement Corpus Calculation Results</label>
+                    <table id="resultTable" class="result-table hidden w-full">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Parameter</th>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Current Age</td><td id="tableCurrentAge" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0 years</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Retirement Age</td><td id="tableRetirementAge" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0 years</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Monthly Expenses</td><td id="tableMonthlyExpenses" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Expected Annual Return Rate</td><td id="tableReturnRate" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0%</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Life Expectancy</td><td id="tableLifeExpectancy" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0 years</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Retirement Corpus Required</td><td id="tableRetirementCorpus" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid inputs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Retirement Corpus Calculator NPR</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Retirement Corpus Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Retirement Corpus Calculator NPR is a free online retirement corpus calculator and retirement planning calculator designed for Nepalese Rupees. This retirement calculator npr, online retirement corpus calculator, and free retirement corpus calculator helps you calculate the corpus needed for a financially secure retirement in Nepal. Enter current age, retirement age, monthly expenses, expected return rate, and life expectancy with this retirement calculator nepal and npr retirement calculator for accurate results.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your current age, retirement age, monthly expenses post-retirement in NPR, expected annual return rate, and life expectancy using our online retirement planning calculator. Click "Calculate" to view the required retirement corpus in a table. Copy the results with the "Copy" button or reset the form. This free retirement calculator npr and retirement calculator tool is secure, browser-based, and works on all devices for easy retirement planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Retirement Corpus Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our retirement calculator tool is fast, accurate, and user-friendly, offering a free online retirement calculator for precise calculations in NPR. This npr retirement calculator and online retirement calculator nepal provides detailed results in a table, making it ideal for individuals planning retirement with this free retirement planning calculator. It’s the perfect retirement savings calculator for financial planning in Nepal.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateRetirementCorpus(monthlyExpenses, returnRate, retirementYears) {
+            const monthlyRate = returnRate / 100 / 12;
+            // Present value of an annuity formula: PV = PMT * [(1 - (1 + r)^-n) / r]
+            const retirementCorpus = monthlyExpenses * ((1 - Math.pow(1 + monthlyRate, -retirementYears * 12)) / monthlyRate);
+            return retirementCorpus.toFixed(2);
+        }
+
+        function processInput() {
+            const currentAge = parseInt(document.getElementById('currentAge').value, 10);
+            const retirementAge = parseInt(document.getElementById('retirementAge').value, 10);
+            const monthlyExpenses = parseFloat(document.getElementById('monthlyExpenses').value);
+            const returnRate = parseFloat(document.getElementById('returnRate').value);
+            const lifeExpectancy = parseInt(document.getElementById('lifeExpectancy').value, 10);
+            const resultTable = document.getElementById('resultTable');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.classList.add('hidden');
+            copyBtn.disabled = true;
+            copyBtn.dataset.result = '';
+
+            document.getElementById('tableCurrentAge').textContent = '0 years';
+            document.getElementById('tableRetirementAge').textContent = '0 years';
+            document.getElementById('tableMonthlyExpenses').textContent = 'NPR 0.00';
+            document.getElementById('tableReturnRate').textContent = '0%';
+            document.getElementById('tableLifeExpectancy').textContent = '0 years';
+            document.getElementById('tableRetirementCorpus').textContent = 'NPR 0.00';
+
+            if (!currentAge || !retirementAge || !monthlyExpenses || !returnRate || !lifeExpectancy ||
+                currentAge < 18 || retirementAge <= currentAge || lifeExpectancy <= retirementAge ||
+                monthlyExpenses <= 0 || returnRate <= 0) {
+                errorMessage.textContent = 'Error: Please enter valid inputs (Current Age < Retirement Age ≤ Life Expectancy, and positive numbers for expenses and return rate).';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                const retirementYears = lifeExpectancy - retirementAge;
+                const retirementCorpus = calculateRetirementCorpus(monthlyExpenses, returnRate, retirementYears);
+                const resultText = `Current Age: ${currentAge} years\nRetirement Age: ${retirementAge} years\nMonthly Expenses: NPR ${monthlyExpenses.toFixed(2)}\nExpected Annual Return Rate: ${returnRate}%\nLife Expectancy: ${lifeExpectancy} years\n\nRetirement Corpus Required: NPR ${retirementCorpus}`;
+
+                document.getElementById('tableCurrentAge').textContent = `${currentAge} years`;
+                document.getElementById('tableRetirementAge').textContent = `${retirementAge} years`;
+                document.getElementById('tableMonthlyExpenses').textContent = `NPR ${monthlyExpenses.toFixed(2)}`;
+                document.getElementById('tableReturnRate').textContent = `${returnRate}%`;
+                document.getElementById('tableLifeExpectancy').textContent = `${lifeExpectancy} years`;
+                document.getElementById('tableRetirementCorpus').textContent = `NPR ${retirementCorpus}`;
+
+                resultTable.classList.remove('hidden');
+                copyBtn.dataset.result = resultText;
+                copyBtn.disabled = false;
+            } catch (e) {
+                errorMessage.textContent = 'Error: Failed to calculate retirement corpus.';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy results';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('currentAge').value = '';
+            document.getElementById('retirementAge').value = '';
+            document.getElementById('monthlyExpenses').value = '';
+            document.getElementById('returnRate').value = '';
+            document.getElementById('lifeExpectancy').value = '';
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('tableCurrentAge').textContent = '0 years';
+            document.getElementById('tableRetirementAge').textContent = '0 years';
+            document.getElementById('tableMonthlyExpenses').textContent = 'NPR 0.00';
+            document.getElementById('tableReturnRate').textContent = '0%';
+            document.getElementById('tableLifeExpectancy').textContent = '0 years';
+            document.getElementById('tableRetirementCorpus').textContent = 'NPR 0.00';
+        });
+    </script>
+</body>
+</html>
