@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>FD Calculator NPR - Free Online Fixed Deposit Calculator</title>
+    <meta name="description" content="Calculate your fixed deposit maturity amount in NPR with our free online FD Calculator. Enter principal, interest rate, tenure, and compounding frequency to get accurate results in a table, copy, or reset. Works on all devices for easy investment planning.">
+    <meta name="keywords" content="fd calculator npr, online fd calculator, free fd calculator, fixed deposit calculator nepal, fd calculator online, free fixed deposit calculator, fixed deposit calculator npr, online fixed deposit calculator, fd calculator tool, free online fd calculator, npr fd calculator, fixed deposit calculator tool, online fd calculator nepal, free fd calculator npr, fixed deposit interest calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FD Calculator NPR Team">
+    <meta property="og:title" content="FD Calculator NPR - Free Online Fixed Deposit Calculator">
+    <meta property="og:description" content="Calculate your fixed deposit maturity amount in NPR with our free online FD Calculator. Enter principal, interest rate, tenure, and compounding frequency to get accurate results in a table, copy, or reset. Works on all devices for easy investment planning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/fd-calculator-npr">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FD Calculator NPR - Free Online Fixed Deposit Calculator">
+    <meta name="twitter:description" content="Calculate your fixed deposit maturity amount in NPR with our free online FD Calculator. Enter principal, interest rate, tenure, and compounding frequency to get accurate results in a table, copy, or reset. Works on all devices for easy investment planning.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/fd-calculator-npr">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        input[type="number"], select {
+            padding: 0.5rem;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            opacity: 1;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">FD Calculator NPR</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate your fixed deposit maturity amount in NPR with this free online calculator. Enter principal, interest rate, tenure, and compounding frequency to view results in a table, copy, or reset. Works on all devices for easy investment planning.</p>
+        </header>
+
+        <!-- Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="principal">Principal Amount (NPR)</label>
+                        <input type="number" id="principal" min="1" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter principal amount in NPR" aria-describedby="principalHelp">
+                        <p id="principalHelp" class="text-xs text-gray-600 mt-1">Enter the principal amount in Nepalese Rupees (e.g., 100000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="interestRate">Annual Interest Rate (%)</label>
+                        <input type="number" id="interestRate" min="0.01" step="0.01" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter annual interest rate" aria-describedby="interestRateHelp">
+                        <p id="interestRateHelp" class="text-xs text-gray-600 mt-1">Enter the annual interest rate (e.g., 7 for 7%).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="tenure">Tenure (Years)</label>
+                        <input type="number" id="tenure" min="0.1" step="0.1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter tenure in years" aria-describedby="tenureHelp">
+                        <p id="tenureHelp" class="text-xs text-gray-600 mt-1">Enter the tenure in years (e.g., 5 for 5 years).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="compoundFrequency">Compounding Frequency</label>
+                        <select id="compoundFrequency" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="compoundFrequencyHelp">
+                            <option value="4">Quarterly</option>
+                            <option value="2">Semi-Annually</option>
+                            <option value="1">Annually</option>
+                        </select>
+                        <p id="compoundFrequencyHelp" class="text-xs text-gray-600 mt-1">Select how often interest is compounded.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">FD Calculation Results</label>
+                    <table id="resultTable" class="result-table hidden w-full">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Parameter</th>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Principal Amount</td><td id="tablePrincipal" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Annual Interest Rate</td><td id="tableInterestRate" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0%</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Tenure</td><td id="tableTenure" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0 years</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Compounding Frequency</td><td id="tableCompoundFrequency" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">-</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Maturity Amount</td><td id="tableMaturityAmount" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Total Interest</td><td id="tableTotalInterest" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid inputs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About FD Calculator NPR</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the FD Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The FD Calculator NPR is a free online fixed deposit calculator and fd calculator tool designed for Nepalese Rupees. This fd calculator npr, online fd calculator, and free fd calculator helps you calculate the maturity amount and interest for fixed deposits in Nepal. Enter principal, interest rate, tenure, and compounding frequency with this fixed deposit calculator nepal and npr fd calculator for accurate results.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter the principal amount in NPR, annual interest rate, tenure in years, and compounding frequency using our online fixed deposit calculator. Click "Calculate" to view the maturity amount and total interest in a table. Copy the results with the "Copy" button or reset the form. This free fixed deposit calculator and fd calculator online is secure, browser-based, and works on all devices for easy investment planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our FD Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our fixed deposit calculator tool is fast, accurate, and user-friendly, offering a free online fd calculator for precise calculations in NPR. This npr fd calculator and online fd calculator nepal provides detailed results in a table, making it ideal for individuals planning fixed deposits with this free fd calculator npr. It’s the perfect fixed deposit interest calculator for financial planning in Nepal.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateFD(principal, interestRate, tenure, compoundFrequency) {
+            const rate = interestRate / 100;
+            const maturityAmount = principal * Math.pow(1 + rate / compoundFrequency, compoundFrequency * tenure);
+            const totalInterest = maturityAmount - principal;
+
+            return {
+                maturityAmount: maturityAmount.toFixed(2),
+                totalInterest: totalInterest.toFixed(2)
+            };
+        }
+
+        function processInput() {
+            const principal = parseFloat(document.getElementById('principal').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value);
+            const tenure = parseFloat(document.getElementById('tenure').value);
+            const compoundFrequency = parseInt(document.getElementById('compoundFrequency').value, 10);
+            const resultTable = document.getElementById('resultTable');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.classList.add('hidden');
+            copyBtn.disabled = true;
+            copyBtn.dataset.result = '';
+
+            document.getElementById('tablePrincipal').textContent = 'NPR 0.00';
+            document.getElementById('tableInterestRate').textContent = '0%';
+            document.getElementById('tableTenure').textContent = '0 years';
+            document.getElementById('tableCompoundFrequency').textContent = '-';
+            document.getElementById('tableMaturityAmount').textContent = 'NPR 0.00';
+            document.getElementById('tableTotalInterest').textContent = 'NPR 0.00';
+
+            if (!principal || !interestRate || !tenure || principal <= 0 || interestRate <= 0 || tenure <= 0) {
+                errorMessage.textContent = 'Error: Please enter valid positive numbers for all fields.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                const { maturityAmount, totalInterest } = calculateFD(principal, interestRate, tenure, compoundFrequency);
+                const frequencyText = compoundFrequency === 4 ? 'Quarterly' : compoundFrequency === 2 ? 'Semi-Annually' : 'Annually';
+                const resultText = `Principal Amount: NPR ${principal.toFixed(2)}\nAnnual Interest Rate: ${interestRate}%\nTenure: ${tenure} years\nCompounding Frequency: ${frequencyText}\n\nMaturity Amount: NPR ${maturityAmount}\nTotal Interest: NPR ${totalInterest}`;
+
+                document.getElementById('tablePrincipal').textContent = `NPR ${principal.toFixed(2)}`;
+                document.getElementById('tableInterestRate').textContent = `${interestRate}%`;
+                document.getElementById('tableTenure').textContent = `${tenure} years`;
+                document.getElementById('tableCompoundFrequency').textContent = frequencyText;
+                document.getElementById('tableMaturityAmount').textContent = `NPR ${maturityAmount}`;
+                document.getElementById('tableTotalInterest').textContent = `NPR ${totalInterest}`;
+
+                resultTable.classList.remove('hidden');
+                copyBtn.dataset.result = resultText;
+                copyBtn.disabled = false;
+            } catch (e) {
+                errorMessage.textContent = 'Error: Failed to calculate FD.';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy results';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('principal').value = '';
+            document.getElementById('interestRate').value = '';
+            document.getElementById('tenure').value = '';
+            document.getElementById('compoundFrequency').value = '4';
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('tablePrincipal').textContent = 'NPR 0.00';
+            document.getElementById('tableInterestRate').textContent = '0%';
+            document.getElementById('tableTenure').textContent = '0 years';
+            document.getElementById('tableCompoundFrequency').textContent = '-';
+            document.getElementById('tableMaturityAmount').textContent = 'NPR 0.00';
+            document.getElementById('tableTotalInterest').textContent = 'NPR 0.00';
+        });
+
+        document.getElementById('principal').addEventListener('input', processInput);
+        document.getElementById('interestRate').addEventListener('input', processInput);
+        document.getElementById('tenure').addEventListener('input', processInput);
+        document.getElementById('compoundFrequency').addEventListener('change', processInput);
+    </script>
+</body>
+</html>
