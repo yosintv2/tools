@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Overdraft Interest Calculator NPR - Free Online Calculator</title>
+    <meta name="description" content="Calculate overdraft interest in NPR with our free online Overdraft Interest Calculator. Enter overdraft amount, interest rate, and duration in days to get accurate results in a table, copy, or reset. Works on all devices for easy financial planning.">
+    <meta name="keywords" content="overdraft interest calculator npr, online overdraft calculator, free overdraft calculator, overdraft calculator nepal, overdraft interest calculator, free overdraft interest calculator, overdraft calculator npr, online overdraft interest calculator, overdraft calculator tool, free online overdraft calculator, npr overdraft calculator, overdraft interest calculator tool, online overdraft calculator nepal, free overdraft calculator npr, overdraft interest calculator online">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Overdraft Interest Calculator NPR Team">
+    <meta property="og:title" content="Overdraft Interest Calculator NPR - Free Online Calculator">
+    <meta property="og:description" content="Calculate overdraft interest in NPR with our free online Overdraft Interest Calculator. Enter overdraft amount, interest rate, and duration in days to get accurate results in a table, copy, or reset. Works on all devices for easy financial planning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/overdraft-interest-calculator-npr">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Overdraft Interest Calculator NPR - Free Online Calculator">
+    <meta name="twitter:description" content="Calculate overdraft interest in NPR with our free online Overdraft Interest Calculator. Enter overdraft amount, interest rate, and duration in days to get accurate results in a table, copy, or reset. Works on all devices for easy financial planning.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/overdraft-interest-calculator-npr">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        input[type="number"] {
+            padding: 0.5rem;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            opacity: 1;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Overdraft Interest Calculator NPR</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate overdraft interest in NPR with this free online calculator. Enter overdraft amount, interest rate, and duration in days to view results in a table, copy, or reset. Works on all devices for easy financial planning.</p>
+        </header>
+
+        <!-- Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="overdraftAmount">Overdraft Amount (NPR)</label>
+                        <input type="number" id="overdraftAmount" min="1" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter overdraft amount in NPR" aria-describedby="overdraftAmountHelp">
+                        <p id="overdraftAmountHelp" class="text-xs text-gray-600 mt-1">Enter the overdraft amount in Nepalese Rupees (e.g., 50000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="interestRate">Annual Interest Rate (%)</label>
+                        <input type="number" id="interestRate" min="0.01" step="0.01" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter annual interest rate" aria-describedby="interestRateHelp">
+                        <p id="interestRateHelp" class="text-xs text-gray-600 mt-1">Enter the annual interest rate (e.g., 12 for 12%).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="duration">Duration (Days)</label>
+                        <input type="number" id="duration" min="1" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter duration in days" aria-describedby="durationHelp">
+                        <p id="durationHelp" class="text-xs text-gray-600 mt-1">Enter the duration in days (e.g., 30 for 1 month).</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Overdraft Interest Calculation Results</label>
+                    <table id="resultTable" class="result-table hidden w-full">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Parameter</th>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Overdraft Amount</td><td id="tableOverdraftAmount" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Annual Interest Rate</td><td id="tableInterestRate" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0%</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Duration</td><td id="tableDuration" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0 days</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Total Interest</td><td id="tableTotalInterest" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Total Amount Payable</td><td id="tableTotalPayable" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid inputs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Overdraft Interest Calculator NPR</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Overdraft Interest Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Overdraft Interest Calculator NPR is a free online overdraft calculator and overdraft calculator tool designed for Nepalese Rupees. This overdraft interest calculator npr, online overdraft calculator, and free overdraft calculator helps you calculate the interest accrued on overdrafts in Nepal. Enter the overdraft amount, interest rate, and duration with this overdraft calculator nepal and npr overdraft calculator for accurate results.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter the overdraft amount in NPR, annual interest rate, and duration in days using our online overdraft interest calculator. Click "Calculate" to view the total interest and amount payable in a table. Copy the results with the "Copy" button or reset the form. This free overdraft interest calculator and overdraft calculator online is secure, browser-based, and works on all devices for easy financial planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Overdraft Interest Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our overdraft interest calculator tool is fast, accurate, and user-friendly, offering a free online overdraft calculator for precise calculations in NPR. This npr overdraft calculator and online overdraft calculator nepal provides detailed results in a table, making it ideal for individuals and businesses managing overdrafts with this free overdraft calculator npr. It’s the perfect overdraft interest calculator online for financial planning in Nepal.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateOverdraftInterest(overdraftAmount, interestRate, duration) {
+            const dailyRate = interestRate / 100 / 365;
+            const totalInterest = overdraftAmount * dailyRate * duration;
+            const totalPayable = overdraftAmount + totalInterest;
+
+            return {
+                totalInterest: totalInterest.toFixed(2),
+                totalPayable: totalPayable.toFixed(2)
+            };
+        }
+
+        function processInput() {
+            const overdraftAmount = parseFloat(document.getElementById('overdraftAmount').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value);
+            const duration = parseInt(document.getElementById('duration').value, 10);
+            const resultTable = document.getElementById('resultTable');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.classList.add('hidden');
+            copyBtn.disabled = true;
+            copyBtn.dataset.result = '';
+
+            document.getElementById('tableOverdraftAmount').textContent = 'NPR 0.00';
+            document.getElementById('tableInterestRate').textContent = '0%';
+            document.getElementById('tableDuration').textContent = '0 days';
+            document.getElementById('tableTotalInterest').textContent = 'NPR 0.00';
+            document.getElementById('tableTotalPayable').textContent = 'NPR 0.00';
+
+            if (!overdraftAmount || !interestRate || !duration || overdraftAmount <= 0 || interestRate <= 0 || duration <= 0) {
+                errorMessage.textContent = 'Error: Please enter valid positive numbers for all fields.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                const { totalInterest, totalPayable } = calculateOverdraftInterest(overdraftAmount, interestRate, duration);
+                const resultText = `Overdraft Amount: NPR ${overdraftAmount.toFixed(2)}\nAnnual Interest Rate: ${interestRate}%\nDuration: ${duration} days\n\nTotal Interest: NPR ${totalInterest}\nTotal Amount Payable: NPR ${totalPayable}`;
+
+                document.getElementById('tableOverdraftAmount').textContent = `NPR ${overdraftAmount.toFixed(2)}`;
+                document.getElementById('tableInterestRate').textContent = `${interestRate}%`;
+                document.getElementById('tableDuration').textContent = `${duration} days`;
+                document.getElementById('tableTotalInterest').textContent = `NPR ${totalInterest}`;
+                document.getElementById('tableTotalPayable').textContent = `NPR ${totalPayable}`;
+
+                resultTable.classList.remove('hidden');
+                copyBtn.dataset.result = resultText;
+                copyBtn.disabled = false;
+            } catch (e) {
+                errorMessage.textContent = 'Error: Failed to calculate overdraft interest.';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy results';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('overdraftAmount').value = '';
+            document.getElementById('interestRate').value = '';
+            document.getElementById('duration').value = '';
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('tableOverdraftAmount').textContent = 'NPR 0.00';
+            document.getElementById('tableInterestRate').textContent = '0%';
+            document.getElementById('tableDuration').textContent = '0 days';
+            document.getElementById('tableTotalInterest').textContent = 'NPR 0.00';
+            document.getElementById('tableTotalPayable').textContent = 'NPR 0.00';
+        });
+
+        document.getElementById('overdraftAmount').addEventListener('input', processInput);
+        document.getElementById('interestRate').addEventListener('input', processInput);
+        document.getElementById('duration').addEventListener('input', processInput);
+    </script>
+</body>
+</html>
