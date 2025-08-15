@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>SIP Calculator NPR - Free Online Systematic Investment Plan Calculator</title>
+    <meta name="description" content="Calculate your SIP investment returns in NPR with our free online SIP Calculator. Enter monthly investment, expected return rate, and tenure to get accurate results in a table, copy, or reset. Works on all devices for easy financial planning in Nepal.">
+    <meta name="keywords" content="sip calculator npr, online sip calculator, free sip calculator, sip calculator nepal, systematic investment plan calculator, free sip calculator npr, online systematic investment calculator, sip investment calculator, npr sip calculator, sip calculator tool, free online sip calculator, online sip calculator nepal, systematic investment calculator, free systematic investment calculator, sip return calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="SIP Calculator NPR Team">
+    <meta property="og:title" content="SIP Calculator NPR - Free Online Systematic Investment Plan Calculator">
+    <meta property="og:description" content="Calculate your SIP investment returns in NPR with our free online SIP Calculator. Enter monthly investment, expected return rate, and tenure to get accurate results in a table, copy, or reset. Works on all devices for easy financial planning in Nepal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/sip-calculator-npr">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SIP Calculator NPR - Free Online Systematic Investment Plan Calculator">
+    <meta name="twitter:description" content="Calculate your SIP investment returns in NPR with our free online SIP Calculator. Enter monthly investment, expected return rate, and tenure to get accurate results in a table, copy, or reset. Works on all devices for easy financial planning in Nepal.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/sip-calculator-npr">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        input[type="number"], select {
+            padding: 0.5rem;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            opacity: 1;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">SIP Calculator NPR</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate your SIP investment returns in NPR with this free online calculator. Enter monthly investment, expected return rate, and tenure to view results in a table, copy, or reset. Works on all devices for easy financial planning.</p>
+        </header>
+
+        <!-- Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="monthlyInvestment">Monthly Investment (NPR)</label>
+                        <input type="number" id="monthlyInvestment" min="1" step="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter monthly investment in NPR" aria-describedby="monthlyInvestmentHelp">
+                        <p id="monthlyInvestmentHelp" class="text-xs text-gray-600 mt-1">Enter the monthly investment amount in Nepalese Rupees (e.g., 5000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="returnRate">Expected Annual Return Rate (%)</label>
+                        <input type="number" id="returnRate" min="0.01" step="0.01" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter expected annual return rate" aria-describedby="returnRateHelp">
+                        <p id="returnRateHelp" class="text-xs text-gray-600 mt-1">Enter the expected annual return rate (e.g., 12 for 12%).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="tenure">Investment Tenure (Years)</label>
+                        <input type="number" id="tenure" min="0.1" step="0.1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter tenure in years" aria-describedby="tenureHelp">
+                        <p id="tenureHelp" class="text-xs text-gray-600 mt-1">Enter the investment tenure in years (e.g., 10 for 10 years).</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">SIP Calculation Results</label>
+                    <table id="resultTable" class="result-table hidden w-full">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Parameter</th>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold" style="font-family: 'Courier New', Courier, monospace;">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Monthly Investment</td><td id="tableMonthlyInvestment" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Expected Annual Return Rate</td><td id="tableReturnRate" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0%</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Tenure</td><td id="tableTenure" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">0 years</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Total Investment</td><td id="tableTotalInvestment" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Future Value</td><td id="tableFutureValue" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                            <tr><td class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">Total Returns</td><td id="tableTotalReturns" class="border border-gray-300 p-2" style="font-family: 'Courier New', Courier, monospace;">NPR 0.00</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid inputs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About SIP Calculator NPR</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the SIP Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The SIP Calculator NPR is a free online sip calculator and systematic investment plan calculator designed for Nepalese Rupees. This sip calculator npr, online sip calculator, and free sip calculator helps you calculate the future value and returns of systematic investment plans in Nepal. Enter monthly investment, expected annual return rate, and tenure with this sip calculator nepal and npr sip calculator for accurate results.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter the monthly investment amount in NPR, expected annual return rate, and tenure in years using our online systematic investment calculator. Click "Calculate" to view the total investment, future value, and total returns in a table. Copy the results with the "Copy" button or reset the form. This free sip calculator npr and sip investment calculator is secure, browser-based, and works on all devices for easy financial planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our SIP Calculator NPR?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our sip calculator tool is fast, accurate, and user-friendly, offering a free online sip calculator for precise calculations in NPR. This npr sip calculator and online sip calculator nepal provides detailed results in a table, making it ideal for individuals planning systematic investments with this free systematic investment calculator. It’s the perfect sip return calculator for financial planning in Nepal.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateSIP(monthlyInvestment, returnRate, tenure) {
+            const months = tenure * 12;
+            const monthlyRate = returnRate / 100 / 12;
+            // SIP future value formula: FV = P * [((1 + r)^n - 1) / r] * (1 + r)
+            const futureValue = monthlyInvestment * (((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * (1 + monthlyRate));
+            const totalInvestment = monthlyInvestment * months;
+            const totalReturns = futureValue - totalInvestment;
+
+            return {
+                totalInvestment: totalInvestment.toFixed(2),
+                futureValue: futureValue.toFixed(2),
+                totalReturns: totalReturns.toFixed(2)
+            };
+        }
+
+        function processInput() {
+            const monthlyInvestment = parseFloat(document.getElementById('monthlyInvestment').value);
+            const returnRate = parseFloat(document.getElementById('returnRate').value);
+            const tenure = parseFloat(document.getElementById('tenure').value);
+            const resultTable = document.getElementById('resultTable');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.classList.add('hidden');
+            copyBtn.disabled = true;
+            copyBtn.dataset.result = '';
+
+            document.getElementById('tableMonthlyInvestment').textContent = 'NPR 0.00';
+            document.getElementById('tableReturnRate').textContent = '0%';
+            document.getElementById('tableTenure').textContent = '0 years';
+            document.getElementById('tableTotalInvestment').textContent = 'NPR 0.00';
+            document.getElementById('tableFutureValue').textContent = 'NPR 0.00';
+            document.getElementById('tableTotalReturns').textContent = 'NPR 0.00';
+
+            if (!monthlyInvestment || !returnRate || !tenure || monthlyInvestment <= 0 || returnRate <= 0 || tenure <= 0) {
+                errorMessage.textContent = 'Error: Please enter valid positive numbers for all fields.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                const { totalInvestment, futureValue, totalReturns } = calculateSIP(monthlyInvestment, returnRate, tenure);
+                const resultText = `Monthly Investment: NPR ${monthlyInvestment.toFixed(2)}\nExpected Annual Return Rate: ${returnRate}%\nTenure: ${tenure} years\n\nTotal Investment: NPR ${totalInvestment}\nFuture Value: NPR ${futureValue}\nTotal Returns: NPR ${totalReturns}`;
+
+                document.getElementById('tableMonthlyInvestment').textContent = `NPR ${monthlyInvestment.toFixed(2)}`;
+                document.getElementById('tableReturnRate').textContent = `${returnRate}%`;
+                document.getElementById('tableTenure').textContent = `${tenure} years`;
+                document.getElementById('tableTotalInvestment').textContent = `NPR ${totalInvestment}`;
+                document.getElementById('tableFutureValue').textContent = `NPR ${futureValue}`;
+                document.getElementById('tableTotalReturns').textContent = `NPR ${totalReturns}`;
+
+                resultTable.classList.remove('hidden');
+                copyBtn.dataset.result = resultText;
+                copyBtn.disabled = false;
+            } catch (e) {
+                errorMessage.textContent = 'Error: Failed to calculate SIP.';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy results';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('monthlyInvestment').value = '';
+            document.getElementById('returnRate').value = '';
+            document.getElementById('tenure').value = '';
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('tableMonthlyInvestment').textContent = 'NPR 0.00';
+            document.getElementById('tableReturnRate').textContent = '0%';
+            document.getElementById('tableTenure').textContent = '0 years';
+            document.getElementById('tableTotalInvestment').textContent = 'NPR 0.00';
+            document.getElementById('tableFutureValue').textContent = 'NPR 0.00';
+            document.getElementById('tableTotalReturns').textContent = 'NPR 0.00';
+        });
+    </script>
+</body>
+</html>
