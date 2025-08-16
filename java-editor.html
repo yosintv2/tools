@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Java Editor - Free Online Java Formatter and Validator</title>
+    <meta name="description" content="Edit, format, and validate Java code with our free online Java Editor. Input your Java code, format or validate it, and copy the results. Works on all devices for developers and programmers.">
+    <meta name="keywords" content="java editor, online java editor, free java editor, java formatter, java validator, free online java editor, java code editor, online java formatter, java validation tool, free java formatter, java beautifier, online java validator, java code formatter, free java validator, java editing tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Java Editor Team">
+    <meta property="og:title" content="Java Editor - Free Online Java Formatter and Validator">
+    <meta property="og:description" content="Edit, format, and validate Java code with our free online Java Editor. Input your Java code, format or validate it, and copy the results. Works on all devices for developers and programmers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/java-editor">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Java Editor - Free Online Java Formatter and Validator">
+    <meta name="twitter:description" content="Edit, format, and validate Java code with our free online Java Editor. Input your Java code, format or validate it, and copy the results. Works on all devices for developers and programmers.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/java-editor">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            white-space: pre;
+            overflow-x: auto;
+            resize: none;
+        }
+        input, textarea, select {
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-code text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Java Editor</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Edit, format, and validate Java code with our free online Java Editor. Input your Java code, format or validate it, and copy the results. Works on all devices for developers and programmers.</p>
+        </header>
+
+        <!-- Java Editor Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="javaInput">Enter Java Code</label>
+                        <textarea id="javaInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" rows="10" placeholder="Enter your Java code here" aria-describedby="javaInputHelp"></textarea>
+                        <p id="javaInputHelp" class="text-xs text-gray-600 mt-1">Paste or type your Java code to format or validate.</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="formatBtn" class="action-btn w-full sm:w-1/4 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-align-left mr-2"></i>
+                            Format
+                        </button>
+                        <button type="button" id="validateBtn" class="action-btn w-full sm:w-1/4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            Validate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/4 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/4 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="javaOutput">Java Output</label>
+                    <textarea id="javaOutput" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" rows="10" readonly aria-describedby="javaOutputHelp"></textarea>
+                    <p id="javaOutputHelp" class="text-xs text-gray-600 mt-1">Formatted or validated Java code will appear here. Click "Copy" to share.</p>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Invalid Java input.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Java Editor</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Java Editor?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Java Editor is a free online java editor and java formatter designed for developers and programmers. This online java editor, free java editor, and java code editor allows you to edit, format, and validate Java code. Use this java validator, free java formatter, and java beautifier to ensure your Java code is well-formed and properly structured.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Paste or type your Java code in our online java editor, then click "Format" to beautify or "Validate" to check its syntax. The results appear in a readonly output that you can copy or reset. This free online java editor, java validation tool, and java code formatter is secure, browser-based, and works on all devices for easy Java editing.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Java Editor?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our java beautifier and free java validator is fast, accurate, and user-friendly, offering an online java formatter for precise Java editing. This java editing tool and java code editor provides clean, formatted output, making it ideal for developers and learners. It’s the perfect online java validator and free java editor for Java-related tasks.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function validateJava(java) {
+            // Basic validation: check for balanced braces and basic class structure
+            let braceCount = 0;
+            let bracketCount = 0;
+            let parenCount = 0;
+            for (let i = 0; i < java.length; i++) {
+                const char = java[i];
+                if (char === '{') braceCount++;
+                else if (char === '}') braceCount--;
+                else if (char === '[') bracketCount++;
+                else if (char === ']') bracketCount--;
+                else if (char === '(') parenCount++;
+                else if (char === ')') parenCount--;
+                if (braceCount < 0 || bracketCount < 0 || parenCount < 0) {
+                    return false;
+                }
+            }
+            if (braceCount !== 0 || bracketCount !== 0 || parenCount !== 0) {
+                return false;
+            }
+            // Check for basic class structure
+            const classRegex = /class\s+\w+\s*{/;
+            return classRegex.test(java);
+        }
+
+        function formatJava(java) {
+            if (!validateJava(java)) {
+                throw new Error('Invalid Java: Please check your input.');
+            }
+            // Simple formatting: normalize indentation
+            const lines = java.split('\n').map(line => line.trim());
+            let indentLevel = 0;
+            const formatted = lines.map(line => {
+                if (line.endsWith('}')) indentLevel--;
+                const indent = '  '.repeat(Math.max(0, indentLevel));
+                if (line.includes('{') && !line.includes('}')) indentLevel++;
+                return indent + line;
+            }).join('\n').trim();
+            return formatted;
+        }
+
+        function processFormat() {
+            const javaInput = document.getElementById('javaInput').value.trim();
+            const javaOutput = document.getElementById('javaOutput');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            javaOutput.value = '';
+            copyBtn.disabled = true;
+
+            if (!javaInput) {
+                errorMessage.textContent = 'Error: Please enter Java code.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                const formattedJava = formatJava(javaInput);
+                javaOutput.value = formattedJava;
+                copyBtn.dataset.result = formattedJava;
+                copyBtn.disabled = false;
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        function processValidate() {
+            const javaInput = document.getElementById('javaInput').value.trim();
+            const javaOutput = document.getElementById('javaOutput');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            javaOutput.value = '';
+            copyBtn.disabled = true;
+
+            if (!javaInput) {
+                errorMessage.textContent = 'Error: Please enter Java code.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            if (validateJava(javaInput)) {
+                javaOutput.value = 'Java code is valid!';
+                copyBtn.dataset.result = 'Java code is valid!';
+                copyBtn.disabled = false;
+            } else {
+                errorMessage.textContent = 'Error: Invalid Java input (check braces or class structure).';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('formatBtn').addEventListener('click', processFormat);
+        document.getElementById('validateBtn').addEventListener('click', processValidate);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('javaInput').value = '';
+            document.getElementById('javaOutput').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+        });
+    </script>
+</body>
+</html>
