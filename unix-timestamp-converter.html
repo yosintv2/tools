@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Unix Timestamp Converter - Free Online Timestamp Tool</title>
+    <meta name="description" content="Convert Unix timestamps to human-readable dates and vice versa with our free online Unix Timestamp Converter. Enter a timestamp or date to get accurate results in a table, copy, or reset. Works on all devices for developers and enthusiasts.">
+    <meta name="keywords" content="unix timestamp converter, timestamp converter, free timestamp converter, online timestamp converter, unix time converter, timestamp to date converter, free online timestamp converter, unix timestamp tool, date to timestamp converter, online unix time converter, timestamp conversion tool, free unix timestamp converter, unix time to date, timestamp to human readable, date to unix timestamp">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Unix Timestamp Converter Team">
+    <meta property="og:title" content="Unix Timestamp Converter - Free Online Timestamp Tool">
+    <meta property="og:description" content="Convert Unix timestamps to human-readable dates and vice versa with our free online Unix Timestamp Converter. Enter a timestamp or date to get accurate results in a table, copy, or reset. Works on all devices for developers and enthusiasts.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/unix-timestamp-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unix Timestamp Converter - Free Online Timestamp Tool">
+    <meta name="twitter:description" content="Convert Unix timestamps to human-readable dates and vice versa with our free online Unix Timestamp Converter. Enter a timestamp or date to get accurate results in a table, copy, or reset. Works on all devices for developers and enthusiasts.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/unix-timestamp-converter">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        input[type="text"], input[type="datetime-local"], select {
+            padding: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 0.75rem; /* text-xs */
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem; /* sm:text-sm */
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        .result-table th {
+            background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-clock text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Unix Timestamp Converter</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert Unix timestamps to human-readable dates and vice versa with this free online timestamp converter. Enter a timestamp or date to get accurate results in a table, copy, or reset. Works on all devices.</p>
+        </header>
+
+        <!-- Timestamp Converter Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Current Epoch Unix Timestamp</label>
+                        <div class="flex items-center gap-2">
+                            <span id="currentTimestamp" class="text-xs sm:text-sm md:text-base text-gray-800">0</span>
+                            <button type="button" id="copyCurrentBtn" class="bg-green-600 text-white font-semibold py-1 px-2 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                                <i class="fas fa-copy mr-1"></i>
+                                Copy
+                            </button>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-1">Current Unix timestamp updates every second. Click "Copy" to copy it.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="conversionType">Conversion Type</label>
+                        <select id="conversionType" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="conversionTypeHelp">
+                            <option value="timestampToDate">Unix Timestamp to Date</option>
+                            <option value="dateToTimestamp">Date to Unix Timestamp</option>
+                        </select>
+                        <p id="conversionTypeHelp" class="text-xs text-gray-600 mt-1">Select whether to convert a timestamp to a date or a date to a timestamp.</p>
+                    </div>
+                    <div class="mb-4" id="timestampInputGroup">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="timestampInput">Unix Timestamp</label>
+                        <input type="text" id="timestampInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" placeholder="Enter Unix timestamp (e.g., 1692211200)" aria-describedby="timestampInputHelp">
+                        <p id="timestampInputHelp" class="text-xs text-gray-600 mt-1">Enter a Unix timestamp in seconds.</p>
+                    </div>
+                    <div class="mb-4 hidden" id="dateInputGroup">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="dateInput">Date and Time</label>
+                        <input type="datetime-local" id="dateInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="dateInputHelp">
+                        <p id="dateInputHelp" class="text-xs text-gray-600 mt-1">Select a date and time to convert to a Unix timestamp.</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Conversion Results</label>
+                    <table id="resultTable" class="result-table hidden w-full">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold">Parameter</th>
+                                <th class="border border-gray-300 p-2 bg-gray-200 font-semibold">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="border border-gray-300 p-2">Unix Timestamp</td><td id="tableTimestamp" class="border border-gray-300 p-2">0</td></tr>
+                            <tr><td class="border border-gray-300 p-2">UTC Date</td><td id="tableUtcDate" class="border border-gray-300 p-2">N/A</td></tr>
+                            <tr><td class="border border-gray-300 p-2">Local Date</td><td id="tableLocalDate" class="border border-gray-300 p-2">N/A</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter a valid input.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Unix Timestamp Converter</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Unix Timestamp Converter?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Unix Timestamp Converter is a free online timestamp converter and unix time converter designed for developers and enthusiasts. This timestamp converter, free timestamp converter, and online timestamp converter allows you to convert Unix timestamps to human-readable dates or dates to timestamps. Use this unix timestamp tool, timestamp to date converter, and date to timestamp converter for accurate conversions.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select the conversion type, then enter a Unix timestamp or a date/time in our online unix time converter. Click "Convert" to view results in a table, including Unix timestamp, UTC, and local dates. Copy the results or reset the form. This free online timestamp converter and timestamp conversion tool is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Unix Timestamp Converter?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our timestamp to human readable tool is fast, accurate, and user-friendly, offering a free unix timestamp converter for precise conversions. This unix time to date and date to unix timestamp tool provides results in a clear table, making it ideal for developers and learners. It’s the perfect online timestamp converter for time-related tasks.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function updateCurrentTimestamp() {
+            const timestamp = Math.floor(Date.now() / 1000);
+            document.getElementById('currentTimestamp').textContent = timestamp;
+            document.getElementById('copyCurrentBtn').dataset.currentTimestamp = timestamp;
+        }
+
+        function formatDate(date) {
+            return date.toUTCString();
+        }
+
+        function formatLocalDate(date) {
+            return date.toLocaleString('en-US', {
+                year: 'numeric', month: 'long', day: 'numeric',
+                hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true
+            });
+        }
+
+        function convertTimestampToDate(timestamp) {
+            const date = new Date(timestamp * 1000);
+            return {
+                timestamp: timestamp,
+                utcDate: formatDate(date),
+                localDate: formatLocalDate(date)
+            };
+        }
+
+        function convertDateToTimestamp(dateStr) {
+            const date = new Date(dateStr);
+            if (isNaN(date.getTime())) throw new Error('Invalid date');
+            return {
+                timestamp: Math.floor(date.getTime() / 1000),
+                utcDate: formatDate(date),
+                localDate: formatLocalDate(date)
+            };
+        }
+
+        function updateResults({ timestamp, utcDate, localDate }) {
+            document.getElementById('tableTimestamp').textContent = timestamp;
+            document.getElementById('tableUtcDate').textContent = utcDate;
+            document.getElementById('tableLocalDate').textContent = localDate;
+            document.getElementById('resultTable').classList.remove('hidden');
+            document.getElementById('copyBtn').dataset.result = `Unix Timestamp: ${timestamp}\nUTC Date: ${utcDate}\nLocal Date: ${localDate}`;
+            document.getElementById('copyBtn').disabled = false;
+        }
+
+        function processInput() {
+            const conversionType = document.getElementById('conversionType').value;
+            const timestampInput = document.getElementById('timestampInput').value.trim();
+            const dateInput = document.getElementById('dateInput').value;
+            const errorMessage = document.getElementById('errorMessage');
+            const resultTable = document.getElementById('resultTable');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.classList.add('hidden');
+            copyBtn.disabled = true;
+
+            try {
+                if (conversionType === 'timestampToDate') {
+                    const timestamp = parseInt(timestampInput);
+                    if (isNaN(timestamp) || timestamp < 0) {
+                        throw new Error('Please enter a valid Unix timestamp.');
+                    }
+                    const result = convertTimestampToDate(timestamp);
+                    updateResults(result);
+                } else {
+                    if (!dateInput) {
+                        throw new Error('Please select a valid date and time.');
+                    }
+                    const result = convertDateToTimestamp(dateInput);
+                    updateResults(result);
+                }
+            } catch (e) {
+                errorMessage.textContent = `Error: ${e.message}`;
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('conversionType').addEventListener('change', () => {
+            const conversionType = document.getElementById('conversionType').value;
+            document.getElementById('timestampInputGroup').classList.toggle('hidden', conversionType !== 'timestampToDate');
+            document.getElementById('dateInputGroup').classList.toggle('hidden', conversionType !== 'dateToTimestamp');
+        });
+
+        document.getElementById('convertBtn').addEventListener('click', processInput);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy results.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('copyCurrentBtn').addEventListener('click', () => {
+            const currentTimestamp = document.getElementById('copyCurrentBtn').dataset.currentTimestamp;
+            if (currentTimestamp) {
+                navigator.clipboard.writeText(currentTimestamp).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy current timestamp.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('conversionType').value = 'timestampToDate';
+            document.getElementById('timestampInput').value = '';
+            document.getElementById('dateInput').value = '';
+            document.getElementById('timestampInputGroup').classList.remove('hidden');
+            document.getElementById('dateInputGroup').classList.add('hidden');
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('tableTimestamp').textContent = '0';
+            document.getElementById('tableUtcDate').textContent = 'N/A';
+            document.getElementById('tableLocalDate').textContent = 'N/A';
+        });
+
+        // Initialize and update current timestamp
+        updateCurrentTimestamp();
+        setInterval(updateCurrentTimestamp, 1000);
+    </script>
+</body>
+</html>
