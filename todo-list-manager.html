@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>To-do List Manager</title>
+    <meta name="description" content="Manage your tasks with our free online To-do List Manager by HamroTools. Add, edit, delete, and mark tasks as complete with local storage to save your lists. Perfect for personal task management on all devices.">
+    <meta name="keywords" content="todo list manager, to-do list manager, free todo list tool, online todo list manager, hamrotools todo list, task manager tool, free task manager, todo list app, online task organizer, personal task manager, todo list with local storage, free todo app, task list manager, todo list planner, productivity tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools To-do List Manager Team">
+    <meta property="og:title" content="To-do List Manager - HamroTools">
+    <meta property="og:description" content="Manage your tasks with our free online To-do List Manager by HamroTools. Add, edit, delete, and mark tasks as complete with local storage to save your lists. Perfect for personal task manager on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/todo-list-manager">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="To-do List Manager - HamroTools">
+    <meta name="twitter:description" content="Manage your tasks with our free online To-do List Manager by HamroTools. Add, edit, delete, and mark tasks as complete with local storage to save your lists. Perfect for personal task manager on all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/todo-list-manager">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "To-do List Manager - HamroTools",
+        "description": "A free online To-do List Manager by HamroTools to add, edit, delete, and mark tasks as complete with local storage. Perfect for personal task management on all devices.",
+        "url": "https://www.singhyogendra.com.np/todo-list-manager",
+        "applicationCategory": "Productivity",
+        "operatingSystem": "All",
+        "keywords": ["todo list manager", "to-do list manager", "free todo list tool", "online todo list manager", "hamrotools todo list", "task manager tool", "free task manager", "todo list app", "online task organizer", "personal task manager", "todo list with local storage", "free todo app", "task list manager", "todo list planner", "productivity tool"]
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            white-space: pre;
+            overflow-x: auto;
+            resize: none;
+        }
+        input, textarea {
+            padding: 0.5rem;
+        }
+        .task-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .task-item.completed {
+            text-decoration: line-through;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-list-check text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">To-do List Manager</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Manage your tasks with our free online To-do List Manager by HamroTools. Add, edit, delete, and mark tasks as complete with local storage to save your lists. Perfect for personal task management on all devices.</p>
+        </header>
+
+        <!-- To-do List Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="taskInput">Add Task</label>
+                        <input id="taskInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="text" placeholder="Enter your task" aria-describedby="taskInputHelp">
+                        <p id="taskInputHelp" class="text-xs text-gray-600 mt-1">Type a task to add to your to-do list (e.g., "Complete project").</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="addTaskBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-plus mr-2"></i>
+                            Add Task
+                        </button>
+                        <button type="button" id="clearAllBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-trash mr-2"></i>
+                            Clear All
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Task List</label>
+                    <div id="taskList" class="border border-gray-300 rounded-lg bg-gray-100 p-2 text-xs sm:text-sm md:text-base" aria-describedby="taskListHelp"></div>
+                    <p id="taskListHelp" class="text-xs text-gray-600 mt-1">Your tasks appear here. Click to edit, delete, or mark as complete.</p>
+                </div>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Task Output</label>
+                    <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 font-mono text-xs sm:text-sm md:text-base" rows="8" readonly aria-describedby="outputHelp"></textarea>
+                    <p id="outputHelp" class="text-xs text-gray-600 mt-1">Your to-do list for copying. Click "Copy" to share.</p>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter a valid task.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About To-do List Manager - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the To-do List Manager - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The To-do List Manager - HamroTools is a free todo list manager and online todo list manager designed for efficient task management. This free todo list tool, task manager tool, and todo list app by HamroTools allows you to create a todo list with local storage, making it a reliable personal task manager and online task organizer for productivity.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Add tasks to your todo list planner using our free task manager by HamroTools. Edit, delete, or mark tasks as complete, and save them locally with this todo list with local storage. Copy or clear your task list as needed. This free todo app and task list manager is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our To-do List Manager - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our productivity tool and free todo list tool by HamroTools is fast, accurate, and user-friendly, offering an online todo list manager and task manager tool for seamless task organization. This todo list app and task list manager provides reliable local storage, making it the perfect personal task manager and free todo app for productivity.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        let tasks = JSON.parse(localStorage.getItem('todoList')) || [];
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function saveTasks() {
+            localStorage.setItem('todoList', JSON.stringify(tasks));
+            updateTaskList();
+            updateOutput();
+        }
+
+        function updateTaskList() {
+            const taskList = document.getElementById('taskList');
+            taskList.innerHTML = '';
+            tasks.forEach((task, index) => {
+                const taskItem = document.createElement('div');
+                taskItem.className = `task-item ${task.completed ? 'completed' : ''}`;
+                taskItem.innerHTML = `
+                    <input type="checkbox" ${task.completed ? 'checked' : ''} aria-label="Mark task ${task.text} as complete" onchange="toggleTask(${index})">
+                    <span class="flex-1">${task.text}</span>
+                    <button class="text-blue-600 hover:text-blue-800" aria-label="Edit task ${task.text}" onclick="editTask(${index})"><i class="fas fa-edit"></i></button>
+                    <button class="text-red-600 hover:text-red-800" aria-label="Delete task ${task.text}" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></button>
+                `;
+                taskList.appendChild(taskItem);
+            });
+            document.getElementById('copyBtn').disabled = tasks.length === 0;
+        }
+
+        function updateOutput() {
+            const output = document.getElementById('output');
+            output.value = tasks.map(task => `${task.completed ? '[x]' : '[ ]'} ${task.text}`).join('\n');
+            document.getElementById('copyBtn').dataset.result = output.value;
+        }
+
+        function addTask() {
+            const taskInput = document.getElementById('taskInput');
+            const taskText = taskInput.value.trim();
+            const errorMessage = document.getElementById('errorMessage');
+
+            errorMessage.classList.add('hidden');
+            if (!taskText) {
+                errorMessage.textContent = 'Error: Please enter a valid task.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            tasks.push({ text: taskText, completed: false });
+            saveTasks();
+            taskInput.value = '';
+        }
+
+        function toggleTask(index) {
+            tasks[index].completed = !tasks[index].completed;
+            saveTasks();
+        }
+
+        function editTask(index) {
+            const newText = prompt('Edit task:', tasks[index].text);
+            if (newText !== null && newText.trim()) {
+                tasks[index].text = newText.trim();
+                saveTasks();
+            }
+        }
+
+        function deleteTask(index) {
+            tasks.splice(index, 1);
+            saveTasks();
+        }
+
+        function clearAllTasks() {
+            if (confirm('Are you sure you want to clear all tasks?')) {
+                tasks = [];
+                saveTasks();
+            }
+        }
+
+        document.getElementById('addTaskBtn').addEventListener('click', addTask);
+        document.getElementById('clearAllBtn').addEventListener('click', clearAllTasks);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+
+        // Initialize task list
+        updateTaskList();
+        updateOutput();
+    </script>
+</body>
+</html>
