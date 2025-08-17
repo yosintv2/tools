@@ -4,42 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>HamroTools - Free & Premium Utility Tools</title>
-    <meta name="description" content="Access a collection of free, premium-quality utility tools including password generators, text converters, calculators, barcode generators, and more. Fast, secure, and easy to use on any device.">
-    <meta name="keywords" content="HamroTools, utility tools, password generator, base64 encoder, calculator, text converter, barcode generator, image converter, financial calculators, free tools, secure tools">
+    <meta name="description" content="HamroTools offers a collection of free utility tools, calculators, and converters for everyday needs.">
+    <meta name="keywords" content="HamroTools, utility tools, calculators, converters, barcode generators">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Tool Development Team">
     <meta property="og:title" content="HamroTools - Free & Premium Utility Tools">
-    <meta property="og:description" content="Access a collection of free, premium-quality utility tools including password generators, text converters, calculators, barcode generators, and more. Fast, secure, and easy to use on any device.">
+    <meta property="og:description" content="HamroTools offers a collection of free utility tools, calculators, and converters for everyday needs.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="/index.html">
     <meta property="og:image" content="/tool-hierarchy-og.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HamroTools - Free & Premium Utility Tools">
-    <meta name="twitter:description" content="Access a collection of free, premium-quality utility tools including password generators, text converters, calculators, barcode generators, and more. Fast, secure, and easy to use on any device.">
+    <meta name="twitter:description" content="HamroTools offers a collection of free utility tools, calculators, and converters for everyday needs.">
     <meta name="twitter:image" content="/tool-hierarchy-og.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
 
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "HamroTools",
+        "url": "https://www.singhyogendra.com.np",
+        "description": "HamroTools offers a collection of free utility tools, calculators, and converters for everyday needs.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.singhyogendra.com.np/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
     <style>
-        .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        @media (max-width: 640px) {
-            .download-btn {
-                font-size: 0.875rem;
-                padding: 0.5rem;
-            }
-        }
-        .footer-link:hover {
+        .sitemap-link:hover {
             color: #dc2626;
         }
-        .tool-card {
+        .sitemap-category {
             transition: all 0.3s ease;
         }
-        .tool-card.hidden {
+        .sitemap-category.hidden {
             display: none;
         }
     </style>
@@ -49,10 +58,12 @@
         <!-- Header Section -->
         <header class="text-center mb-6 sm:mb-8">
             <div class="flex items-center justify-center mb-4">
-                <i class="fas fa-sitemap text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
-                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">HamroTools</h1>
+                <i class="fas fa-tools text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Welcome to HamroTools</h1>
             </div>
-            <p class="text-xs sm:text-sm md:text-base text-gray-600">Explore our collection of free, premium-quality utility tools, including password generators, text converters, calculators, and more. Fast, secure, and accessible on any device.</p>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Explore our collection of free, premium-quality utility tools, including password generators, text converters, calculators, and more. Fast, secure, and accessible on any device.
+
+</p>
         </header>
 
         <!-- Search Bar -->
@@ -60,7 +71,7 @@
             <div class="relative">
                 <input
                     type="text"
-                    id="tool-search"
+                    id="sitemap-search"
                     placeholder="Search tools (e.g., Password Generator, Base64 Encoder)..."
                     class="w-full p-3 pl-10 text-sm sm:text-base text-gray-800 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 bg-gray-50"
                 >
@@ -68,676 +79,190 @@
             </div>
         </div>
 
-        <!-- Tools List Section -->
-        <section class="mb-6 sm:mb-8" id="tools-section">
-            <!-- Text and Data Conversion -->
-            <div class="mb-6 tool-category">
-                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Text and Data Conversion</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base16 Encoder" data-description="Encode text to Base16 for efficient data representation.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base16 Encoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base16 for efficient data representation.</p>
-                        <a href="base16-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base16 Encoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base16 Decoder" data-description="Decode Base16 text back to its original form.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base16 Decoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base16 text back to its original form.</p>
-                        <a href="base16-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base16 Decoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base32 Encoder" data-description="Encode text to Base32 for compact data encoding.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base32 Encoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base32 for compact data encoding.</p>
-                        <a href="base32-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base32 Encoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base32 Decoder" data-description="Decode Base32 text to its original content.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base32 Decoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base32 text to its original content.</p>
-                        <a href="base32-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base32 Decoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base58 Encoder" data-description="Encode text to Base58 for cryptocurrency and data applications.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base58 Encoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base58 for cryptocurrency and data applications.</p>
-                        <a href="base58-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base58 Encoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base58 Decoder" data-description="Decode Base58 text for accurate data retrieval.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base58 Decoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base58 text for accurate data retrieval.</p>
-                        <a href="base58-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base58 Decoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base64 Encoder" data-description="Encode text to Base64 for secure data handling.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base64 Encoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode text to Base64 for secure data handling.</p>
-                        <a href="base64-encoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base64 Encoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base64 Decoder" data-description="Decode Base64 text to its original format.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base64 Decoder</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Decode Base64 text to its original format.</p>
-                        <a href="base64-decoder.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base64 Decoder
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base64 Encode/Decode" data-description="Encode or decode Base64 data for secure and efficient data handling.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base64 Encode/Decode</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode or decode Base64 data for secure and efficient data handling.</p>
-                        <a href="base64-encode-decode.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to Base64 Encode/Decode
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="CSV to JSON" data-description="Convert CSV data to JSON format for easy integration.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">CSV to JSON</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert CSV data to JSON format for easy integration.</p>
-                        <a href="csv-to-json.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-csv mr-2"></i>
-                            Go to CSV to JSON
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JSON to CSV" data-description="Transform JSON data into CSV format for data analysis.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JSON to CSV</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Transform JSON data into CSV format for data analysis.</p>
-                        <a href="json-to-csv.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-csv mr-2"></i>
-                            Go to JSON to CSV
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Find and Replace" data-description="Quickly search and replace text in any input for efficient editing.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Find and Replace</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Quickly search and replace text in any input for efficient editing.</p>
-                        <a href="find-replace.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-search mr-2"></i>
-                            Go to Find and Replace
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="HTML Encode/Decode Tool" data-description="Encode or decode HTML entities for secure and accurate web content processing.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">HTML Encode/Decode Tool</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode or decode HTML entities for secure and accurate web content processing.</p>
-                        <a href="html-encode-decode.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-code mr-2"></i>
-                            Go to HTML Encode/Decode
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Morse Code Converter" data-description="Convert Morse code to text or text to Morse code quickly and accurately.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Morse Code Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert Morse code to text or text to Morse code quickly and accurately.</p>
-                        <a href="morse-code-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-code mr-2"></i>
-                            Go to Morse Code Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Nepali Text Converter" data-description="Convert text to and from Nepali scripts for seamless communication.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Nepali Text Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert text to and from Nepali scripts for seamless communication.</p>
-                        <a href="nepali-text-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-language mr-2"></i>
-                            Go to Nepali Text Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Preeti to Unicode Converter" data-description="Convert Preeti font text to Unicode for modern Nepali applications.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Preeti to Unicode Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert Preeti font text to Unicode for modern Nepali applications.</p>
-                        <a href="preeti-to-unicode-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-font mr-2"></i>
-                            Go to Preeti to Unicode Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Unicode to Preeti Converter" data-description="Convert Unicode text to Preeti font for traditional Nepali typing.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Unicode to Preeti Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert Unicode text to Preeti font for traditional Nepali typing.</p>
-                        <a href="unicode-to-preeti-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-font mr-2"></i>
-                            Go to Unicode to Preeti Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Text Case Converter" data-description="Convert text to uppercase, lowercase, or other cases with ease.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Text Case Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert text to uppercase, lowercase, or other cases with ease.</p>
-                        <a href="text-case-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-font mr-2"></i>
-                            Go to Text Case Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Text Reverser" data-description="Reverse text characters instantly for creative or technical use.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Text Reverser</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Reverse text characters instantly for creative or technical use.</p>
-                        <a href="reverse-text.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-undo mr-2"></i>
-                            Go to Text Reverser
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="URL Encode/Decode" data-description="Encode or decode URLs for safe and reliable web data handling.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">URL Encode/Decode</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Encode or decode URLs for safe and reliable web data handling.</p>
-                        <a href="url-encode-decode.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-link mr-2"></i>
-                            Go to URL Encode/Decode
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Word Counter" data-description="Count words, characters, and sentences in text quickly and accurately.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Word Counter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Count words, characters, and sentences in text quickly and accurately.</p>
-                        <a href="word-counter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-text-width mr-2"></i>
-                            Go to Word Counter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Online Notepad & Word Counter" data-description="Edit text and count words, characters, and sentences in real-time.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Online Notepad & Word Counter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Edit text and count words, characters, and sentences in real-time.</p>
-                        <a href="online-notepad-word-counter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-edit mr-2"></i>
-                            Go to Online Notepad & Word Counter
-                        </a>
-                    </div>
-                </div>
+        <!-- All Tools Section -->
+        <section class="mb-6 sm:mb-8" id="sitemap-section">
+            <!-- Text Encoding/Decoding -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Text Encoding/Decoding</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base16-encoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base16 Encoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base16-decoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base16 Decoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base32-encoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base32 Encoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base32-decoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base32 Decoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base58-encoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base58 Encoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base58-decoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base58 Decoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base64-encoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base64 Encoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base64-decoder.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base64 Decoder</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base64-encode-decode.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>Base64 Encode/Decode</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/base64-to-image-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>Base64 to Image Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/image-to-base64-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>Image to Base64 Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/html-encode-decode.html" class="sitemap-link hover:text-red-600"><i class="fas fa-code mr-2"></i>HTML Encode/Decode</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/url-encode-decode.html" class="sitemap-link hover:text-red-600"><i class="fas fa-link mr-2"></i>URL Encode/Decode</a></li>
+                </ul>
+            </div>
+
+            <!-- Text Processing -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Text Processing</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/find-replace.html" class="sitemap-link hover:text-red-600"><i class="fas fa-search mr-2"></i>Find and Replace</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/morse-code-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-code mr-2"></i>Morse Code Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/reverse-text.html" class="sitemap-link hover:text-red-600"><i class="fas fa-undo mr-2"></i>Text Reverser</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/text-case-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-font mr-2"></i>Text Case Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/word-counter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-text-width mr-2"></i>Word Counter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/online-notepad-word-counter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-edit mr-2"></i>Online Notepad & Word Counter</a></li>
+                </ul>
+            </div>
+
+            <!-- Data Conversion -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Data Conversion</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/csv-to-json.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-csv mr-2"></i>CSV to JSON</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/json-to-csv.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-csv mr-2"></i>JSON to CSV</a></li>
+                </ul>
+            </div>
+
+            <!-- Nepali Unicode Tools -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Nepali Unicode Tools</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/nepali-text-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-language mr-2"></i>Nepali Text Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/preeti-to-unicode-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-font mr-2"></i>Preeti to Unicode Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/unicode-to-preeti-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-font mr-2"></i>Unicode to Preeti Converter</a></li>
+                </ul>
+            </div>
+
+            <!-- Japanese Script Conversion -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Japanese Script Conversion</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/hiragana-to-katakana-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-language mr-2"></i>Hiragana to Katakana Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/katakana-to-hiragana-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-language mr-2"></i>Katakana to Hiragana Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/romaji-to-hiragana-katakana-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-language mr-2"></i>Romaji to Hiragana/Katakana Converter</a></li>
+                </ul>
             </div>
 
             <!-- Code Formatting and Validation -->
-            <div class="mb-6 tool-category">
+            <div class="mb-6 sitemap-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Code Formatting and Validation</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="CSS Beautifier/Minifier" data-description="Format or minify CSS code for improved readability or optimized performance.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">CSS Beautifier/Minifier</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format or minify CSS code for improved readability or optimized performance.</p>
-                        <a href="css-beautifier-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-code mr-2"></i>
-                            Go to CSS Beautifier/Minifier
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="HTML Beautifier/Minifier" data-description="Beautify or minify HTML code for better readability or reduced file size.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">HTML Beautifier/Minifier</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Beautify or minify HTML code for better readability or reduced file size.</p>
-                        <a href="html-beautifier-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-code mr-2"></i>
-                            Go to HTML Beautifier/Minifier
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JS Beautifier/Minifier" data-description="Format or minify JavaScript code for enhanced readability or optimized performance.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JS Beautifier/Minifier</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format or minify JavaScript code for enhanced readability or optimized performance.</p>
-                        <a href="js-beautifier-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-code mr-2"></i>
-                            Go to JS Beautifier/Minifier
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JSON Formatter" data-description="Format and validate JSON data for easy reading and debugging.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JSON Formatter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format and validate JSON data for easy reading and debugging.</p>
-                        <a href="json-formatter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-code mr-2"></i>
-                            Go to JSON Formatter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JSON Validator" data-description="Validate and check JSON data for syntax errors and correctness.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JSON Validator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Validate and check JSON data for syntax errors and correctness.</p>
-                        <a href="json-validator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-check-circle mr-2"></i>
-                            Go to JSON Validator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Formatter" data-description="Format XML data for improved readability and structure.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Formatter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Format XML data for improved readability and structure.</p>
-                        <a href="xml-formatter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-code mr-2"></i>
-                            Go to XML Formatter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Minifier" data-description="Minify XML data to reduce file size and optimize performance.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Minifier</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Minify XML data to reduce file size and optimize performance.</p>
-                        <a href="xml-minifier.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-code mr-2"></i>
-                            Go to XML Minifier
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Parser" data-description="Parse XML data to analyze and extract information efficiently.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Parser</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Parse XML data to analyze and extract information efficiently.</p>
-                        <a href="xml-parser.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-code mr-2"></i>
-                            Go to XML Parser
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="XML Validator" data-description="Validate XML data for syntax errors and schema compliance.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">XML Validator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Validate XML data for syntax errors and schema compliance.</p>
-                        <a href="xml-validator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-check-circle mr-2"></i>
-                            Go to XML Validator
-                        </a>
-                    </div>
-                </div>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/css-beautifier-minifier.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>CSS Beautifier/Minifier</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/html-beautifier-minifier.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>HTML Beautifier/Minifier</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/js-beautifier-minifier.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>JS Beautifier/Minifier</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/json-formatter.html " class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>JSON Formatter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/json-validator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-check-circle mr-2"></i>JSON Validator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/xml-formatter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>XML Formatter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/xml-minifier.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>XML Minifier</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/xml-parser.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>XML Parser</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/xml-validator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-check-circle mr-2"></i>XML Validator</a></li>
+                </ul>
+            </div>
+
+            <!-- Code Editors and Utilities -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Code Editors and Utilities</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/html-source-code-viewer.html" class="sitemap-link hover:text-red-600"><i class="fas fa-code mr-2"></i>HTML Source Code Viewer</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/java-editor.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>Java Editor</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/json-editor.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>JSON Editor</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/real-time-html-editor.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>Real-Time HTML Editor</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/xml-editor.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>XML Editor</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/yaml-editor.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-code mr-2"></i>YAML Editor</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/todo-list-manager.html" class="sitemap-link hover:text-red-600"><i class="fas fa-list-check mr-2"></i>To-Do List Manager</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/unix-timestamp-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-clock mr-2"></i>Unix Timestamp Converter</a></li>
+                </ul>
             </div>
 
             <!-- Social Media Tools -->
-            <div class="mb-6 tool-category">
+            <div class="mb-6 sitemap-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Social Media Tools</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Instagram Name Generator" data-description="Generate unique and catchy usernames for your Instagram profile.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Instagram Name Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate unique and catchy usernames for your Instagram profile.</p>
-                        <a href="instagram-name-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fab fa-instagram mr-2"></i>
-                            Go to Instagram Name Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Twitter Name Generator" data-description="Create memorable and unique handles for your Twitter account.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Twitter Name Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create memorable and unique handles for your Twitter account.</p>
-                        <a href="twitter-name-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fab fa-twitter mr-2"></i>
-                            Go to Twitter Name Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="YouTube Thumbnails" data-description="Download or manage YouTube thumbnail images for better video engagement.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">YouTube Thumbnails</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Download or manage YouTube thumbnail images for better video engagement.</p>
-                        <a href="ytthumbnails.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to YouTube Thumbnails
-                        </a>
-                    </div>
-                </div>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/instagram-name-generator.html" class="sitemap-link hover:text-red-600"><i class="fab fa-instagram mr-2"></i>Instagram Name Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/twitter-name-generator.html" class="sitemap-link hover:text-red-600"><i class="fab fa-twitter mr-2"></i>Twitter Name Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/ytthumbnails.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>YouTube Thumbnails</a></li>
+                </ul>
             </div>
 
-            <!-- Calculators -->
-            <div class="mb-6 tool-category">
-                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Calculators</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Age Calculator" data-description="Calculate your age with detailed breakdowns in years, months, and days.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Age Calculator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate your age with detailed breakdowns in years, months, and days.</p>
-                        <a href="age-calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-birthday-cake mr-2"></i>
-                            Go to Age Calculator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Birthday Countdown" data-description="Track the countdown to your next birthday in days, hours, and minutes.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Birthday Countdown</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Track the countdown to your next birthday in days, hours, and minutes.</p>
-                        <a href="birthday-countdown.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-clock mr-2"></i>
-                            Go to Birthday Countdown
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="BMI Calculator" data-description="Calculate your Body Mass Index to assess health and fitness levels.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">BMI Calculator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate your Body Mass Index to assess health and fitness levels.</p>
-                        <a href="bmi-calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-heartbeat mr-2"></i>
-                            Go to BMI Calculator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="BS to AD Converter" data-description="Convert dates between Bikram Sambat (BS) and Anno Domini (AD) calendars.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">BS to AD Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert dates between Bikram Sambat (BS) and Anno Domini (AD) calendars.</p>
-                        <a href="bs-ad-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-calendar-alt mr-2"></i>
-                            Go to BS to AD Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Calculator" data-description="Perform basic and advanced calculations with a fast and intuitive interface.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Calculator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Perform basic and advanced calculations with a fast and intuitive interface.</p>
-                        <a href="calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-calculator mr-2"></i>
-                            Go to Calculator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Love Calculator" data-description="Calculate compatibility between two names for fun and insights.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Love Calculator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate compatibility between two names for fun and insights.</p>
-                        <a href="love-calculator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-heart mr-2"></i>
-                            Go to Love Calculator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Daily Interest Calculator NPR" data-description="Calculate daily interest for financial planning in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Daily Interest Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate daily interest for financial planning in NPR currency.</p>
-                        <a href="daily-interest-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-money-bill-wave mr-2"></i>
-                            Go to Daily Interest Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="FD Calculator NPR" data-description="Calculate returns on fixed deposits in NPR for investment planning.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">FD Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate returns on fixed deposits in NPR for investment planning.</p>
-                        <a href="fd-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-piggy-bank mr-2"></i>
-                            Go to FD Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Inflation Investment Calculator NPR" data-description="Assess investment growth considering inflation in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Inflation Investment Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Assess investment growth considering inflation in NPR currency.</p>
-                        <a href="inflation-investment-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-chart-line mr-2"></i>
-                            Go to Inflation Investment Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Loan EMI Calculator NPR" data-description="Calculate Equated Monthly Installments for loans in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Loan EMI Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate Equated Monthly Installments for loans in NPR currency.</p>
-                        <a href="loan-emi-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-hand-holding-usd mr-2"></i>
-                            Go to Loan EMI Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Lump Sum Investment Calculator NPR" data-description="Calculate returns on lump sum investments in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Lump Sum Investment Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate returns on lump sum investments in NPR currency.</p>
-                        <a href="lump-sum-investment-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-money-check-alt mr-2"></i>
-                            Go to Lump Sum Investment Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Overdraft Interest Calculator NPR" data-description="Calculate interest on overdraft accounts in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Overdraft Interest Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate interest on overdraft accounts in NPR currency.</p>
-                        <a href="overdraft-interest-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-credit-card mr-2"></i>
-                            Go to Overdraft Interest Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Recurring Deposit Calculator NPR" data-description="Calculate returns on recurring deposits in NPR for savings planning.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Recurring Deposit Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate returns on recurring deposits in NPR for savings planning.</p>
-                        <a href="recurring-deposit-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-piggy-bank mr-2"></i>
-                            Go to Recurring Deposit Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Retirement Corpus Calculator NPR" data-description="Plan your retirement savings with this calculator in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Retirement Corpus Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Plan your retirement savings with this calculator in NPR currency.</p>
-                        <a href="retirement-corpus-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-umbrella-beach mr-2"></i>
-                            Go to Retirement Corpus Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Savings Account Interest Calculator NPR" data-description="Calculate interest earned on savings accounts in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Savings Account Interest Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate interest earned on savings accounts in NPR currency.</p>
-                        <a href="savings-account-interest-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-money-check-alt mr-2"></i>
-                            Go to Savings Account Interest Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="SIP Calculator NPR" data-description="Calculate returns on Systematic Investment Plans in NPR currency.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">SIP Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate returns on Systematic Investment Plans in NPR currency.</p>
-                        <a href="sip-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-chart-line mr-2"></i>
-                            Go to SIP Calculator NPR
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Term Deposit Calculator NPR" data-description="Calculate returns on term deposits in NPR for financial planning.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Term Deposit Calculator NPR</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Calculate returns on term deposits in NPR for financial planning.</p>
-                        <a href="term-deposit-calculator-npr.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-piggy-bank mr-2"></i>
-                            Go to Term Deposit Calculator NPR
-                        </a>
-                    </div>
-                </div>
+            <!-- Daily Life Utilities -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Daily Life Utilities</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/age-calculator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-birthday-cake mr-2"></i>Age Calculator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/birthday-countdown.html" class="sitemap-link hover:text-red-600"><i class="fas fa-clock mr-2"></i>Birthday Countdown</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/bmi-calculator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-heartbeat mr-2"></i>BMI Calculator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/bs-ad-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-calendar-alt mr-2"></i>BS AD Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/love-calculator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-heart mr-2"></i>Love Calculator</a></li>
+                </ul>
             </div>
 
-            <!-- Image and Media Tools -->
-            <div class="mb-6 tool-category">
-                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Image and Media Tools</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Base64 to Image Converter" data-description="Convert Base64 strings to images for easy viewing and downloading.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Base64 to Image Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert Base64 strings to images for easy viewing and downloading.</p>
-                        <a href="base64-to-image-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to Base64 to Image Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Image to Base64 Converter" data-description="Convert images to Base64 strings for embedding in web applications.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Image to Base64 Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert images to Base64 strings for embedding in web applications.</p>
-                        <a href="image-to-base64-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to Image to Base64 Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="HEIC to JPG Converter" data-description="Transform HEIC images to JPG for easy sharing and compatibility.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">HEIC to JPG Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Transform HEIC images to JPG for easy sharing and compatibility.</p>
-                        <a href="heic-to-jpg-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to HEIC to JPG Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="HEIC to PNG Converter" data-description="Convert HEIC images to PNG for universal compatibility and editing.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">HEIC to PNG Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert HEIC images to PNG for universal compatibility and editing.</p>
-                        <a href="heic-to-png-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to HEIC to PNG Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JFIF to JPG Converter" data-description="Convert JFIF images to JPG format for broader compatibility.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JFIF to JPG Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert JFIF images to JPG format for broader compatibility.</p>
-                        <a href="jfif-to-jpg-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to JFIF to JPG Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JFIF to PNG Converter" data-description="Transform JFIF images to PNG format for high-quality graphics.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JFIF to PNG Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Transform JFIF images to PNG format for high-quality graphics.</p>
-                        <a href="jfif-to-png-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to JFIF to PNG Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JPG to PDF Converter" data-description="Transform JPG images into PDF files for professional documents.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JPG to PDF Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Transform JPG images into PDF files for professional documents.</p>
-                        <a href="jpg-to-pdf-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-pdf mr-2"></i>
-                            Go to JPG to PDF Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="JPG to WebP Converter" data-description="Convert JPG images to WebP for optimized web performance.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">JPG to WebP Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert JPG images to WebP for optimized web performance.</p>
-                        <a href="jpg-to-webp-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to JPG to WebP Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="PNG to PDF Converter" data-description="Convert PNG images to PDF documents for easy sharing and printing.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">PNG to PDF Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert PNG images to PDF documents for easy sharing and printing.</p>
-                        <a href="png-to-pdf-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-file-pdf mr-2"></i>
-                            Go to PNG to PDF Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="PNG to WebP Converter" data-description="Transform PNG images to WebP for faster web loading.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">PNG to WebP Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Transform PNG images to WebP for faster web loading.</p>
-                        <a href="png-to-webp-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to PNG to WebP Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="WebP to JPG Converter" data-description="Convert WebP images to JPG for broader compatibility.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">WebP to JPG Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Convert WebP images to JPG for broader compatibility.</p>
-                        <a href="webp-to-jpg-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to WebP to JPG Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="WebP to PNG Converter" data-description="Transform WebP images to PNG for high-quality editing.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">WebP to PNG Converter</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Transform WebP images to PNG for high-quality editing.</p>
-                        <a href="webp-to-png-converter.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-image mr-2"></i>
-                            Go to WebP to PNG Converter
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Reduce Image Size" data-description="Compress images to reduce file size without losing quality.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Reduce Image Size</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Compress images to reduce file size without losing quality.</p>
-                        <a href="reduce-image-size.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-compress mr-2"></i>
-                            Go to Reduce Image Size
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Code 11 Barcode Generator" data-description="Create Code 11 barcodes for telecommunications and labeling.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Code 11 Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create Code 11 barcodes for telecommunications and labeling.</p>
-                        <a href="code-11-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to Code 11 Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Code 128 Barcode Generator" data-description="Generate Code 128 barcodes for inventory and shipping applications.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Code 128 Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate Code 128 barcodes for inventory and shipping applications.</p>
-                        <a href="code-128-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to Code 128 Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Code 39 Barcode Generator" data-description="Generate Code 39 barcodes for industrial and commercial use.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Code 39 Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate Code 39 barcodes for industrial and commercial use.</p>
-                        <a href="code-39-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to Code 39 Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Code 39 Full ASCII Barcode Generator" data-description="Create Code 39 Full ASCII barcodes for extended character support.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Code 39 Full ASCII Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create Code 39 Full ASCII barcodes for extended character support.</p>
-                        <a href="code-39-full-ascii-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to Code 39 Full ASCII Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Code 93 Barcode Generator" data-description="Generate Code 93 barcodes for compact and reliable data encoding.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Code 93 Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate Code 93 barcodes for compact and reliable data encoding.</p>
-                        <a href="code-93-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to Code 93 Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Flattermarken Barcode Generator" data-description="Create Flattermarken barcodes for specialized postal and shipping needs.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Flattermarken Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create Flattermarken barcodes for specialized postal and shipping needs.</p>
-                        <a href="flattermarken-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to Flattermarken Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="GS1-128 Barcode Generator" data-description="Generate GS1-128 barcodes for advanced supply chain and logistics applications.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">GS1-128 Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate GS1-128 barcodes for advanced supply chain and logistics applications.</p>
-                        <a href="gs1-128-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to GS1-128 Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="MSI Barcode Generator" data-description="Create MSI barcodes for inventory and retail applications.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">MSI Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create MSI barcodes for inventory and retail applications.</p>
-                        <a href="msi-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to MSI Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Pharmacode One-Track Barcode Generator" data-description="Generate Pharmacode One-Track barcodes for pharmaceutical packaging.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Pharmacode One-Track Barcode Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate Pharmacode One-Track barcodes for pharmaceutical packaging.</p>
-                        <a href="pharmacode-one-track-barcode-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-barcode mr-2"></i>
-                            Go to Pharmacode One-Track Barcode Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="QR Code Generator" data-description="Create QR codes for URLs, text, or contact information quickly and easily.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">QR Code Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create QR codes for URLs, text, or contact information quickly and easily.</p>
-                        <a href="qr-code-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-qrcode mr-2"></i>
-                            Go to QR Code Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="QR Code Reader" data-description="Scan and read QR codes to extract embedded information instantly.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">QR Code Reader</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Scan and read QR codes to extract embedded information instantly.</p>
-                        <a href="qr-code-reader.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-qrcode mr-2"></i>
-                            Go to QR Code Reader
-                        </a>
-                    </div>
-                </div>
+            <!-- Finance Calculators -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Finance Calculators</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/calculator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-calculator mr-2"></i>Calculator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/daily-interest-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-money-bill-wave mr-2"></i>Daily Interest Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/fd-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-piggy-bank mr-2"></i>FD Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/inflation-investment-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-chart-line mr-2"></i>Inflation Investment Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/loan-emi-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-hand-holding-usd mr-2"></i>Loan EMI Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/lump-sum-investment-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-money-check-alt mr-2"></i>Lump Sum Investment Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/overdraft-interest-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-credit-card mr-2"></i>Overdraft Interest Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/recurring-deposit-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-piggy-bank mr-2"></i>Recurring Deposit Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/retirement-corpus-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-money-check-alt mr-2"></i>Retirement Corpus Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/savings-account-interest-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-money-check-alt mr-2"></i>Savings Account Interest Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/sip-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-chart-line mr-2"></i>SIP Calculator NPR</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/term-deposit-calculator-npr.html" class="sitemap-link hover:text-red-600"><i class="fas fa-piggy-bank mr-2"></i>Term Deposit Calculator NPR</a></li>
+                </ul>
             </div>
 
-                    <!-- Generators -->
-            <div class="mb-6 tool-category">
+            <!-- Barcode Tools -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Barcode Tools</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/code-11-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>Code 11 Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/code-128-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>Code 128 Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/code-39-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>Code 39 Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/code-39-full-ascii-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>Code 39 Full ASCII Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/code-93-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>Code 93 Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/flattermarken-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>Flattermarken Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/gs1-128-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>GS1-128 Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/msi-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>MSI Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/pharmacode-one-track-barcode-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-barcode mr-2"></i>Pharmacode One-Track Barcode Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/qr-code-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-qrcode mr-2"></i>QR Code Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/qr-code-reader.html" class="sitemap-link hover:text-red-600"><i class="fas fa-qrcode mr-2"></i>QR Code Reader</a></li>
+                </ul>
+            </div>
+
+            <!-- Image Conversion and Processing -->
+            <div class="mb-6 sitemap-category">
+                <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Image Conversion and Processing</h2>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/heic-to-jpg-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>HEIC to JPG Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/heic-to-png-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>HEIC to PNG Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/jfif-to-jpg-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>JFIF to JPG Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/jfif-to-png-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>JFIF to PNG Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/jpg-to-pdf-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-pdf mr-2"></i>JPG to PDF Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/jpg-to-webp-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>JPG to WebP Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/png-to-pdf-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-file-pdf mr-2"></i>PNG to PDF Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/png-to-webp-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>PNG to WebP Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/reduce-image-size.html" class="sitemap-link hover:text-red-600"><i class="fas fa-compress mr-2"></i>Reduce Image Size</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/webp-to-jpg-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>WebP to JPG Converter</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/webp-to-png-converter.html" class="sitemap-link hover:text-red-600"><i class="fas fa-image mr-2"></i>WebP to PNG Converter</a></li>
+                </ul>
+            </div>
+
+            <!-- Generators -->
+            <div class="mb-6 sitemap-category">
                 <h2 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-4 text-center bg-gray-100 py-2 rounded-lg">Generators</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="iFrame Generator" data-description="Generate iFrame code for embedding web content seamlessly.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">iFrame Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate iFrame code for embedding web content seamlessly.</p>
-                        <a href="iframe-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-code mr-2"></i>
-                            Go to iFrame Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Lorem Ipsum Generator" data-description="Generate placeholder text for design and content creation.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Lorem Ipsum Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Generate placeholder text for design and content creation.</p>
-                        <a href="lorem-ipsum-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-text-height mr-2"></i>
-                            Go to Lorem Ipsum Generator
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 tool-card" data-name="Password Generator" data-description="Create strong, secure passwords with customizable options.">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Password Generator</h3>
-                        <p class="text-xs sm:text-sm md:text-base text-gray-600 mb-4">Create strong, secure passwords with customizable options.</p>
-                        <a href="password-generator.html" class="download-btn w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
-                            <i class="fas fa-lock mr-2"></i>
-                            Go to Password Generator
-                        </a>
-                    </div>
-                </div>
+                <ul class="list-none text-sm sm:text-base text-gray-600">
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/iframe-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-code mr-2"></i>iFrame Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/lorem-ipsum-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-text-height mr-2"></i>Lorem Ipsum Generator</a></li>
+                    <li class="mb-2"><a href="https://www.singhyogendra.com.np/password-generator.html" class="sitemap-link hover:text-red-600"><i class="fas fa-lock mr-2"></i>Password Generator</a></li>
+                </ul>
             </div>
         </section>
 
-              <!-- FAQ Section -->
+        <!-- FAQ Section -->
         <section class="mb-6 sm:mb-8">
             <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 text-center bg-gray-100 py-2 rounded-lg">Frequently Asked Questions (FAQ)</h2>
             <article class="mb-6">
@@ -771,41 +296,34 @@
                 </p>
             </article>
         </section>
-        
-        
+
         <!-- Footer Section -->
         <footer class="text-center text-gray-600 text-xs sm:text-sm md:text-base">
             <p>&copy; 2025 HamroTools. All rights reserved.</p>
             <div class="mt-2">
-                <a href="/about" class="footer-link text-gray-600 hover:text-red-600 mx-2">About</a>
-                <a href="/privacy" class="footer-link text-gray-600 hover:text-red-600 mx-2">Privacy Policy</a>
-                <a href="/contact" class="footer-link text-gray-600 hover:text-red-600 mx-2">Contact</a>
+                <a href="/about" class="sitemap-link text-gray-600 hover:text-red-600 mx-2">About</a>
+                <a href="/privacy" class="sitemap-link text-gray-600 hover:text-red-600 mx-2">Privacy Policy</a>
+                <a href="/contact" class="sitemap-link text-gray-600 hover:text-red-600 mx-2">Contact</a>
             </div>
         </footer>
     </div>
 
     <!-- Search Functionality Script -->
     <script>
-        document.getElementById('tool-search').addEventListener('input', function(e) {
+        document.getElementById('sitemap-search').addEventListener('input', function(e) {
             const searchTerm = e.target.value.toLowerCase();
-            const toolCards = document.querySelectorAll('.tool-card');
+            const sitemapLinks = document.querySelectorAll('.sitemap-link');
             
-            toolCards.forEach(card => {
-                const toolName = card.getAttribute('data-name').toLowerCase();
-                const toolDescription = card.getAttribute('data-description').toLowerCase();
-                
-                if (toolName.includes(searchTerm) || toolDescription.includes(searchTerm)) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
+            sitemapLinks.forEach(link => {
+                const linkText = link.textContent.toLowerCase();
+                link.parentElement.style.display = linkText.includes(searchTerm) ? 'list-item' : 'none';
             });
 
-            // Show/hide category sections based on visible cards
-            const categories = document.querySelectorAll('.tool-category');
+            // Show/hide category sections based on visible links
+            const categories = document.querySelectorAll('.sitemap-category');
             categories.forEach(category => {
-                const visibleCards = category.querySelectorAll('.tool-card:not(.hidden)');
-                category.style.display = visibleCards.length > 0 ? 'block' : 'none';
+                const visibleLinks = category.querySelectorAll('li:not([style*="display: none"])');
+                category.style.display = visibleLinks.length > 0 ? 'block' : 'none';
             });
         });
     </script>
