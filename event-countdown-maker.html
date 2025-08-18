@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Event Countdown Maker</title>
+    <meta name="description" content="Create custom countdowns with time zone options using our free Event Countdown Maker by HamroTools. Generate shareable links for events, perfect for all devices with live preview.">
+    <meta name="keywords" content="event countdown maker, free countdown maker, online event countdown, hamrotools countdown maker, custom countdown timer, event timer with time zone, free event countdown tool, countdown generator, shareable countdown link, online countdown creator, event countdown tool, free countdown timer, countdown with time zone, custom event countdown, event countdown share link">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Event Countdown Maker Team">
+    <meta property="og:title" content="Event Countdown Maker - HamroTools">
+    <meta property="og:description" content="Create custom countdowns with time zone options using our free Event Countdown Maker by HamroTools. Generate shareable links for events, perfect for all devices with live preview.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/event-countdown-maker">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Event Countdown Maker - HamroTools">
+    <meta name="twitter:description" content="Create custom countdowns with time zone options using our free Event Countdown Maker by HamroTools. Generate shareable links for events, perfect for all devices with live preview.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/event-countdown-maker">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            input[type="date"], input[type="time"] {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+                line-height: 1.5;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            white-space: pre;
+            overflow-x: auto;
+            resize: none;
+        }
+        input, select, textarea {
+            padding: 0.5rem;
+        }
+        input[type="date"], input[type="time"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #preview {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            background-color: #f9fafb;
+        }
+        table {
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Event Countdown Maker - HamroTools",
+        "description": "Create custom countdowns with time zone options using our free Event Countdown Maker by HamroTools. Generate shareable links for events, perfect for all devices with live preview.",
+        "url": "https://www.singhyogendra.com.np/event-countdown-maker",
+        "applicationCategory": "Lifestyle",
+        "operatingSystem": "All"
+    }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-clock text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Event Countdown Maker</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Create custom countdowns with time zone options using our free online tool by HamroTools. Generate shareable links, perfect for all devices.</p>
+        </header>
+
+        <!-- Countdown Form and Preview -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="eventName">Event Name</label>
+                        <input id="eventName" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="text" placeholder="Enter event name (e.g., Birthday Party)" aria-describedby="eventNameHelp">
+                        <p id="eventNameHelp" class="text-xs text-gray-600 mt-1">Enter the name of your event.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="eventDate">Event Date</label>
+                        <input id="eventDate" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base appearance-none" type="date" aria-describedby="eventDateHelp">
+                        <p id="eventDateHelp" class="text-xs text-gray-600 mt-1">Select the date of your event.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="eventTime">Event Time</label>
+                        <input id="eventTime" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base appearance-none" type="time" aria-describedby="eventTimeHelp">
+                        <p id="eventTimeHelp" class="text-xs text-gray-600 mt-1">Select the time of your event.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="timeZone">Time Zone</label>
+                        <select id="timeZone" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="timeZoneHelp">
+                            <option value="UTC-12:00">UTC-12:00</option>
+                            <option value="UTC-11:00">UTC-11:00</option>
+                            <option value="UTC-10:00">UTC-10:00</option>
+                            <option value="UTC-09:30">UTC-09:30</option>
+                            <option value="UTC-09:00">UTC-09:00</option>
+                            <option value="UTC-08:00">UTC-08:00</option>
+                            <option value="UTC-07:00">UTC-07:00</option>
+                            <option value="UTC-06:00">UTC-06:00</option>
+                            <option value="UTC-05:00">UTC-05:00</option>
+                            <option value="UTC-04:30">UTC-04:30</option>
+                            <option value="UTC-04:00">UTC-04:00</option>
+                            <option value="UTC-03:30">UTC-03:30</option>
+                            <option value="UTC-03:00">UTC-03:00</option>
+                            <option value="UTC-02:00">UTC-02:00</option>
+                            <option value="UTC-01:00">UTC-01:00</option>
+                            <option value="UTC+00:00">UTC+00:00</option>
+                            <option value="UTC+01:00">UTC+01:00</option>
+                            <option value="UTC+02:00">UTC+02:00</option>
+                            <option value="UTC+03:00">UTC+03:00</option>
+                            <option value="UTC+03:30">UTC+03:30</option>
+                            <option value="UTC+04:00">UTC+04:00</option>
+                            <option value="UTC+04:30">UTC+04:30</option>
+                            <option value="UTC+05:00">UTC+05:00</option>
+                            <option value="UTC+05:30">UTC+05:30</option>
+                            <option value="UTC+05:45">UTC+05:45</option>
+                            <option value="UTC+06:00">UTC+06:00</option>
+                            <option value="UTC+06:30">UTC+06:30</option>
+                            <option value="UTC+07:00">UTC+07:00</option>
+                            <option value="UTC+08:00">UTC+08:00</option>
+                            <option value="UTC+08:45">UTC+08:45</option>
+                            <option value="UTC+09:00">UTC+09:00</option>
+                            <option value="UTC+09:30">UTC+09:30</option>
+                            <option value="UTC+10:00">UTC+10:00</option>
+                            <option value="UTC+10:30">UTC+10:30</option>
+                            <option value="UTC+11:00">UTC+11:00</option>
+                            <option value="UTC+12:00">UTC+12:00</option>
+                            <option value="UTC+12:45">UTC+12:45</option>
+                            <option value="UTC+13:00">UTC+13:00</option>
+                            <option value="UTC+14:00">UTC+14:00</option>
+                        </select>
+                        <p id="timeZoneHelp" class="text-xs text-gray-600 mt-1">Select the UTC time zone for your event.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Live Countdown Preview</label>
+                        <div id="preview" aria-live="polite">Enter details to see the countdown...</div>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="generateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-cog mr-2"></i>
+                            Generate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy Link
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Shareable Link</label>
+                    <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 font-mono text-xs sm:text-sm md:text-base" rows="2" readonly aria-describedby="outputHelp"></textarea>
+                    <p id="outputHelp" class="text-xs text-gray-600 mt-1">Shareable link will appear here. Click "Copy Link" to share.</p>
+                    <table id="resultTable" class="mt-4 hidden">
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                                <th>Minutes</th>
+                                <th>Seconds</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="days">0</td>
+                                <td id="hours">0</td>
+                                <td id="minutes">0</td>
+                                <td id="seconds">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please fill in all required fields.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Event Countdown Maker - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Event Countdown Maker - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Event Countdown Maker - HamroTools is a free countdown maker and online event countdown tool designed for creating custom countdown timers. This hamrotools countdown maker, event timer with time zone, and countdown generator allows you to create event countdowns with shareable links, making it a reliable free event countdown tool and custom event countdown maker.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your event details in our online countdown creator by HamroTools, including name, date, time, and time zone, then click "Generate" to create a custom countdown timer and shareable countdown link. Copy or reset the result as needed. This free countdown timer and event countdown tool is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Event Countdown Maker - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our event countdown share link and free countdown maker by HamroTools is fast, accurate, and user-friendly, offering a countdown with time zone and online event countdown for seamless event planning. This event countdown maker and custom countdown timer is perfect for organizing events with a shareable countdown link.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        let countdownInterval = null;
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function setDefaultDateTime() {
+            const now = new Date();
+            const dateStr = now.toISOString().split('T')[0];
+            const timeStr = now.toTimeString().slice(0, 5);
+            document.getElementById('eventDate').value = dateStr;
+            document.getElementById('eventTime').value = timeStr;
+        }
+
+        function calculateCountdown(eventDateTime, timeZone) {
+            const now = new Date();
+            const eventDate = new Date(eventDateTime + timeZone.replace('UTC', ''));
+            const diff = eventDate - now;
+            if (diff <= 0) {
+                return { days: 0, hours: 0, minutes: 0, seconds: 0, expired: true };
+            }
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            return { days, hours, minutes, seconds, expired: false };
+        }
+
+        function updatePreview(eventName, eventDateTime, timeZone) {
+            const preview = document.getElementById('preview');
+            const resultTable = document.getElementById('resultTable');
+            const daysTd = document.getElementById('days');
+            const hoursTd = document.getElementById('hours');
+            const minutesTd = document.getElementById('minutes');
+            const secondsTd = document.getElementById('seconds');
+
+            const countdown = calculateCountdown(eventDateTime, timeZone);
+            if (countdown.expired) {
+                preview.textContent = `${eventName ? eventName : 'Event'} has already occurred!`;
+                resultTable.classList.add('hidden');
+            } else {
+                preview.textContent = `${eventName ? eventName : 'Event'} in ${countdown.days}d ${countdown.hours}h ${countdown.minutes}m ${countdown.seconds}s`;
+                daysTd.textContent = countdown.days;
+                hoursTd.textContent = countdown.hours;
+                minutesTd.textContent = countdown.minutes;
+                secondsTd.textContent = countdown.seconds;
+                resultTable.classList.remove('hidden');
+            }
+        }
+
+        function generateShareableLink(eventName, eventDate, eventTime, timeZone) {
+            const baseUrl = 'https://www.singhyogendra.com.np/event-countdown-maker';
+            const params = new URLSearchParams({
+                name: encodeURIComponent(eventName),
+                date: eventDate,
+                time: eventTime,
+                tz: timeZone
+            });
+            return `${baseUrl}?${params.toString()}`;
+        }
+
+        function processGenerate() {
+            const eventName = document.getElementById('eventName').value.trim();
+            const eventDate = document.getElementById('eventDate').value;
+            const eventTime = document.getElementById('eventTime').value;
+            const timeZone = document.getElementById('timeZone').value;
+            const output = document.getElementById('output');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+            const resultTable = document.getElementById('resultTable');
+
+            errorMessage.classList.add('hidden');
+            output.value = '';
+            copyBtn.disabled = true;
+            resultTable.classList.add('hidden');
+
+            if (!eventName || !eventDate || !eventTime || !timeZone) {
+                errorMessage.textContent = 'Error: Please fill in all required fields.';
+                errorMessage.classList.remove('hidden');
+                document.getElementById('preview').textContent = 'Enter details to see the countdown...';
+                if (countdownInterval) clearInterval(countdownInterval);
+                return;
+            }
+
+            const eventDateTime = `${eventDate}T${eventTime}`;
+            try {
+                const countdown = calculateCountdown(eventDateTime, timeZone);
+                const shareableLink = generateShareableLink(eventName, eventDate, eventTime, timeZone);
+                output.value = shareableLink;
+                copyBtn.dataset.result = shareableLink;
+                copyBtn.disabled = false;
+
+                if (countdownInterval) clearInterval(countdownInterval);
+                updatePreview(eventName, eventDateTime, timeZone);
+                countdownInterval = setInterval(() => {
+                    updatePreview(eventName, eventDateTime, timeZone);
+                }, 1000);
+            } catch (e) {
+                errorMessage.textContent = 'Error: Invalid date or time zone.';
+                errorMessage.classList.remove('hidden');
+                document.getElementById('preview').textContent = 'Enter details to see the countdown...';
+                if (countdownInterval) clearInterval(countdownInterval);
+            }
+        }
+
+        function loadFromUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            const eventName = params.get('name') || '';
+            const eventDate = params.get('date') || '';
+            const eventTime = params.get('time') || '';
+            const timeZone = params.get('tz') || 'UTC+00:00';
+
+            document.getElementById('eventName').value = eventName;
+            document.getElementById('eventDate').value = eventDate || document.getElementById('eventDate').value;
+            document.getElementById('eventTime').value = eventTime || document.getElementById('eventTime').value;
+            document.getElementById('timeZone').value = timeZone;
+
+            if (eventName && eventDate && eventTime && timeZone) {
+                processGenerate();
+            }
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', processGenerate);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Link copied!');
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy link.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('eventName').value = '';
+            setDefaultDateTime();
+            document.getElementById('timeZone').value = 'UTC+00:00';
+            document.getElementById('output').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('preview').textContent = 'Enter details to see the countdown...';
+            if (countdownInterval) clearInterval(countdownInterval);
+        });
+
+        // Set default date and time and load URL parameters on page load
+        window.addEventListener('load', () => {
+            setDefaultDateTime();
+            loadFromUrlParams();
+        });
+    </script>
+</body>
+</html>
