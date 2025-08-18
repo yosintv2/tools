@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Time Zone Converter - Time Difference Calculator</title>
+    <meta name="description" content="Convert time zones and calculate time differences with our free Time Zone Converter by HamroTools. Search by country or capital, view current date and time with live results, perfect for all devices.">
+    <meta name="keywords" content="time zone converter, time difference calculator, free time zone converter, online time converter, hamrotools time zone converter, time zone calculator, free time difference tool, time zone search, country time zone converter, capital city time converter, online time zone tool, utc time converter, time zone comparison, free time zone calculator, time difference converter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Time Zone Converter Team">
+    <meta property="og:title" content="Time Zone Converter - Time Difference Calculator - HamroTools">
+    <meta property="og:description" content="Convert time zones and calculate time differences with our free Time Zone Converter by HamroTools. Search by country or capital, view current date and time with live results, perfect for all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/time-zone-converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Time Zone Converter - Time Difference Calculator - HamroTools">
+    <meta name="twitter:description" content="Convert time zones and calculate time differences with our free Time Zone Converter by HamroTools. Search by country or capital, view current date and time with live results, perfect for all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/time-zone-converter">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            input {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+                line-height: 1.5;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            white-space: pre;
+            overflow-x: auto;
+            resize: none;
+        }
+        input, textarea {
+            padding: 0.5rem;
+        }
+        input {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        table {
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+        .suggestions {
+            position: absolute;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            width: 100%;
+            z-index: 1000;
+        }
+        .suggestion-item {
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        .suggestion-item:hover {
+            background-color: #f3f4f6;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Time Zone Converter - Time Difference Calculator - HamroTools",
+        "description": "Convert time zones and calculate time differences with our free Time Zone Converter by HamroTools. Search by country or capital, view current date and time with live results, perfect for all devices.",
+        "url": "https://www.singhyogendra.com.np/time-zone-converter",
+        "applicationCategory": "Utility",
+        "operatingSystem": "All"
+    }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-globe text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Time Zone Converter</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Convert time zones and calculate time differences with our free online tool by HamroTools. Search by country or capital for accurate results.</p>
+        </header>
+
+        <!-- Converter Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4 relative">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="locationSearch">Add Locations</label>
+                        <input id="locationSearch" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="text" placeholder="Search by country or capital (e.g., Japan, Tokyo)" aria-describedby="locationSearchHelp">
+                        <div id="suggestions" class="suggestions hidden"></div>
+                        <p id="locationSearchHelp" class="text-xs text-gray-600 mt-1">Enter a country or capital to find its time zone and current time.</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="convertBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-cog mr-2"></i>
+                            Convert
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 font-mono text-xs sm:text-sm md:text-base" rows="4" readonly aria-describedby="outputHelp"></textarea>
+                    <p id="outputHelp" class="text-xs text-gray-600 mt-1">Time zone conversion results will appear here. Click "Copy" to share.</p>
+                    <table id="resultTable" class="mt-4 hidden">
+                        <thead>
+                            <tr>
+                                <th>Location</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Time Zone</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTableBody"></tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter a valid country or capital.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Time Zone Converter - Time Difference Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Time Zone Converter - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Time Zone Converter - Time Difference Calculator - HamroTools is a free time zone converter and time difference calculator designed for accurate time zone conversions. This hamrotools time zone converter, time zone calculator, and free time difference tool allows you to search by country or capital city to view current date and time, making it a reliable online time zone tool and utc time converter.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter a country or capital city in our time zone search by HamroTools, then click "Convert" to view the current time and date with time zone comparison. Copy or reset the results as needed. This free time zone calculator and country time zone converter is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Time Zone Converter - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our online time converter and time difference converter by HamroTools is fast, accurate, and user-friendly, offering a capital city time converter and free time zone calculator for seamless time zone conversions. This time zone converter and time zone comparison tool is perfect for scheduling across different regions.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        const timeZones = [
+            { country: "Algeria", capital: "Algiers", timeZone: "Africa/Algiers", offset: "UTC+1" },
+            { country: "Angola", capital: "Luanda", timeZone: "Africa/Luanda", offset: "UTC+1" },
+            { country: "Benin", capital: "Porto-Novo", timeZone: "Africa/Porto-Novo", offset: "UTC+1" },
+            { country: "Botswana", capital: "Gaborone", timeZone: "Africa/Gaborone", offset: "UTC+2" },
+            { country: "Burkina Faso", capital: "Ouagadougou", timeZone: "Africa/Ouagadougou", offset: "UTC+0" },
+            { country: "Burundi", capital: "Gitega", timeZone: "Africa/Gitega", offset: "UTC+2" },
+            { country: "Cabo Verde", capital: "Praia", timeZone: "Atlantic/Cape_Verde", offset: "UTC-1" },
+            { country: "Cameroon", capital: "Yaoundé", timeZone: "Africa/Douala", offset: "UTC+1" },
+            { country: "Central African Republic", capital: "Bangui", timeZone: "Africa/Bangui", offset: "UTC+1" },
+            { country: "Chad", capital: "N'Djamena", timeZone: "Africa/Ndjamena", offset: "UTC+1" },
+            { country: "Comoros", capital: "Moroni", timeZone: "Indian/Comoro", offset: "UTC+3" },
+            { country: "Congo (Brazzaville)", capital: "Brazzaville", timeZone: "Africa/Brazzaville", offset: "UTC+1" },
+            { country: "Congo (DRC)", capital: "Kinshasa", timeZone: "Africa/Kinshasa", offset: "UTC+1" },
+            { country: "Congo (DRC)", capital: "Lubumbashi", timeZone: "Africa/Lubumbashi", offset: "UTC+2" },
+            { country: "Cote d'Ivoire", capital: "Yamoussoukro", timeZone: "Africa/Abidjan", offset: "UTC+0" },
+            { country: "Djibouti", capital: "Djibouti", timeZone: "Africa/Djibouti", offset: "UTC+3" },
+            { country: "Egypt", capital: "Cairo", timeZone: "Africa/Cairo", offset: "UTC+2" },
+            { country: "Equatorial Guinea", capital: "Malabo", timeZone: "Africa/Malabo", offset: "UTC+1" },
+            { country: "Eritrea", capital: "Asmara", timeZone: "Africa/Asmara", offset: "UTC+3" },
+            { country: "Eswatini", capital: "Mbabane", timeZone: "Africa/Mbabane", offset: "UTC+2" },
+            { country: "Ethiopia", capital: "Addis Ababa", timeZone: "Africa/Addis_Ababa", offset: "UTC+3" },
+            { country: "Gabon", capital: "Libreville", timeZone: "Africa/Libreville", offset: "UTC+1" },
+            { country: "Gambia", capital: "Banjul", timeZone: "Africa/Banjul", offset: "UTC+0" },
+            { country: "Ghana", capital: "Accra", timeZone: "Africa/Accra", offset: "UTC+0" },
+            { country: "Guinea", capital: "Conakry", timeZone: "Africa/Conakry", offset: "UTC+0" },
+            { country: "Guinea-Bissau", capital: "Bissau", timeZone: "Africa/Bissau", offset: "UTC+0" },
+            { country: "Kenya", capital: "Nairobi", timeZone: "Africa/Nairobi", offset: "UTC+3" },
+            { country: "Lesotho", capital: "Maseru", timeZone: "Africa/Maseru", offset: "UTC+2" },
+            { country: "Liberia", capital: "Monrovia", timeZone: "Africa/Monrovia", offset: "UTC+0" },
+            { country: "Libya", capital: "Tripoli", timeZone: "Africa/Tripoli", offset: "UTC+2" },
+            { country: "Madagascar", capital: "Antananarivo", timeZone: "Indian/Antananarivo", offset: "UTC+3" },
+            { country: "Malawi", capital: "Lilongwe", timeZone: "Africa/Blantyre", offset: "UTC+2" },
+            { country: "Mali", capital: "Bamako", timeZone: "Africa/Bamako", offset: "UTC+0" },
+            { country: "Mauritania", capital: "Nouakchott", timeZone: "Africa/Nouakchott", offset: "UTC+0" },
+            { country: "Mauritius", capital: "Port Louis", timeZone: "Indian/Mauritius", offset: "UTC+4" },
+            { country: "Morocco", capital: "Rabat", timeZone: "Africa/Casablanca", offset: "UTC+1" },
+            { country: "Mozambique", capital: "Maputo", timeZone: "Africa/Maputo", offset: "UTC+2" },
+            { country: "Namibia", capital: "Windhoek", timeZone: "Africa/Windhoek", offset: "UTC+2" },
+            { country: "Niger", capital: "Niamey", timeZone: "Africa/Niamey", offset: "UTC+1" },
+            { country: "Nigeria", capital: "Abuja", timeZone: "Africa/Lagos", offset: "UTC+1" },
+            { country: "Rwanda", capital: "Kigali", timeZone: "Africa/Kigali", offset: "UTC+2" },
+            { country: "Sao Tome and Principe", capital: "São Tomé", timeZone: "Africa/Sao_Tome", offset: "UTC+0" },
+            { country: "Senegal", capital: "Dakar", timeZone: "Africa/Dakar", offset: "UTC+0" },
+            { country: "Seychelles", capital: "Victoria", timeZone: "Indian/Mahe", offset: "UTC+4" },
+            { country: "Sierra Leone", capital: "Freetown", timeZone: "Africa/Freetown", offset: "UTC+0" },
+            { country: "Somalia", capital: "Mogadishu", timeZone: "Africa/Mogadishu", offset: "UTC+3" },
+            { country: "South Africa", capital: "Pretoria", timeZone: "Africa/Johannesburg", offset: "UTC+2" },
+            { country: "South Sudan", capital: "Juba", timeZone: "Africa/Juba", offset: "UTC+2" },
+            { country: "Sudan", capital: "Khartoum", timeZone: "Africa/Khartoum", offset: "UTC+2" },
+            { country: "Tanzania", capital: "Dodoma", timeZone: "Africa/Dar_es_Salaam", offset: "UTC+3" },
+            { country: "Togo", capital: "Lomé", timeZone: "Africa/Lome", offset: "UTC+0" },
+            { country: "Tunisia", capital: "Tunis", timeZone: "Africa/Tunis", offset: "UTC+1" },
+            { country: "Uganda", capital: "Kampala", timeZone: "Africa/Kampala", offset: "UTC+3" },
+            { country: "Zambia", capital: "Lusaka", timeZone: "Africa/Lusaka", offset: "UTC+2" },
+            { country: "Zimbabwe", capital: "Harare", timeZone: "Africa/Harare", offset: "UTC+2" },
+            { country: "Afghanistan", capital: "Kabul", timeZone: "Asia/Kabul", offset: "UTC+4:30" },
+            { country: "Armenia", capital: "Yerevan", timeZone: "Asia/Yerevan", offset: "UTC+4" },
+            { country: "Azerbaijan", capital: "Baku", timeZone: "Asia/Baku", offset: "UTC+4" },
+            { country: "Bahrain", capital: "Manama", timeZone: "Asia/Bahrain", offset: "UTC+3" },
+            { country: "Bangladesh", capital: "Dhaka", timeZone: "Asia/Dhaka", offset: "UTC+6" },
+            { country: "Bhutan", capital: "Thimphu", timeZone: "Asia/Thimphu", offset: "UTC+6" },
+            { country: "Brunei", capital: "Bandar Seri Begawan", timeZone: "Asia/Brunei", offset: "UTC+8" },
+            { country: "Cambodia", capital: "Phnom Penh", timeZone: "Asia/Phnom_Penh", offset: "UTC+7" },
+            { country: "China", capital: "Beijing", timeZone: "Asia/Shanghai", offset: "UTC+8" },
+            { country: "Cyprus", capital: "Nicosia", timeZone: "Asia/Nicosia", offset: "UTC+2" },
+            { country: "Georgia", capital: "Tbilisi", timeZone: "Asia/Tbilisi", offset: "UTC+4" },
+            { country: "India", capital: "New Delhi", timeZone: "Asia/Kolkata", offset: "UTC+5:30" },
+            { country: "Indonesia", capital: "Jakarta", timeZone: "Asia/Jakarta", offset: "UTC+7" },
+            { country: "Indonesia", capital: "Surabaya", timeZone: "Asia/Makassar", offset: "UTC+8" },
+            { country: "Iran", capital: "Tehran", timeZone: "Asia/Tehran", offset: "UTC+3:30" },
+            { country: "Iraq", capital: "Baghdad", timeZone: "Asia/Baghdad", offset: "UTC+3" },
+            { country: "Israel", capital: "Jerusalem", timeZone: "Asia/Jerusalem", offset: "UTC+2" },
+            { country: "Japan", capital: "Tokyo", timeZone: "Asia/Tokyo", offset: "UTC+9" },
+            { country: "Jordan", capital: "Amman", timeZone: "Asia/Amman", offset: "UTC+2" },
+            { country: "Kazakhstan", capital: "Astana", timeZone: "Asia/Almaty", offset: "UTC+5" },
+            { country: "Kazakhstan", capital: "Almaty", timeZone: "Asia/Almaty", offset: "UTC+6" },
+            { country: "Kuwait", capital: "Kuwait City", timeZone: "Asia/Kuwait", offset: "UTC+3" },
+            { country: "Kyrgyzstan", capital: "Bishkek", timeZone: "Asia/Bishkek", offset: "UTC+6" },
+            { country: "Laos", capital: "Vientiane", timeZone: "Asia/Vientiane", offset: "UTC+7" },
+            { country: "Lebanon", capital: "Beirut", timeZone: "Asia/Beirut", offset: "UTC+2" },
+            { country: "Malaysia", capital: "Kuala Lumpur", timeZone: "Asia/Kuala_Lumpur", offset: "UTC+8" },
+            { country: "Maldives", capital: "Male", timeZone: "Indian/Maldives", offset: "UTC+5" },
+            { country: "Mongolia", capital: "Ulaanbaatar", timeZone: "Asia/Ulaanbaatar", offset: "UTC+8" },
+            { country: "Mongolia", capital: "Hovd", timeZone: "Asia/Hovd", offset: "UTC+7" },
+            { country: "Myanmar", capital: "Naypyidaw", timeZone: "Asia/Yangon", offset: "UTC+6:30" },
+            { country: "Nepal", capital: "Kathmandu", timeZone: "Asia/Kathmandu", offset: "UTC+5:45" },
+            { country: "North Korea", capital: "Pyongyang", timeZone: "Asia/Pyongyang", offset: "UTC+9" },
+            { country: "Oman", capital: "Muscat", timeZone: "Asia/Muscat", offset: "UTC+4" },
+            { country: "Pakistan", capital: "Islamabad", timeZone: "Asia/Karachi", offset: "UTC+5" },
+            { country: "Philippines", capital: "Manila", timeZone: "Asia/Manila", offset: "UTC+8" },
+            { country: "Qatar", capital: "Doha", timeZone: "Asia/Qatar", offset: "UTC+3" },
+            { country: "Saudi Arabia", capital: "Riyadh", timeZone: "Asia/Riyadh", offset: "UTC+3" },
+            { country: "Singapore", capital: "Singapore", timeZone: "Asia/Singapore", offset: "UTC+8" },
+            { country: "South Korea", capital: "Seoul", timeZone: "Asia/Seoul", offset: "UTC+9" },
+            { country: "Sri Lanka", capital: "Sri Jayawardenepura Kotte", timeZone: "Asia/Colombo", offset: "UTC+5:30" },
+            { country: "Syria", capital: "Damascus", timeZone: "Asia/Damascus", offset: "UTC+3" },
+            { country: "Taiwan", capital: "Taipei", timeZone: "Asia/Taipei", offset: "UTC+8" },
+            { country: "Tajikistan", capital: "Dushanbe", timeZone: "Asia/Dushanbe", offset: "UTC+5" },
+            { country: "Thailand", capital: "Bangkok", timeZone: "Asia/Bangkok", offset: "UTC+7" },
+            { country: "Timor-Leste", capital: "Dili", timeZone: "Asia/Dili", offset: "UTC+9" },
+            { country: "Turkey", capital: "Ankara", timeZone: "Europe/Istanbul", offset: "UTC+3" },
+            { country: "Turkmenistan", capital: "Ashgabat", timeZone: "Asia/Ashgabat", offset: "UTC+5" },
+            { country: "United Arab Emirates", capital: "Abu Dhabi", timeZone: "Asia/Dubai", offset: "UTC+4" },
+            { country: "Uzbekistan", capital: "Tashkent", timeZone: "Asia/Tashkent", offset: "UTC+5" },
+            { country: "Vietnam", capital: "Hanoi", timeZone: "Asia/Ho_Chi_Minh", offset: "UTC+7" },
+            { country: "Yemen", capital: "Sana’a", timeZone: "Asia/Aden", offset: "UTC+3" },
+            { country: "Albania", capital: "Tirana", timeZone: "Europe/Tirane", offset: "UTC+1" },
+            { country: "Andorra", capital: "Andorra la Vella", timeZone: "Europe/Andorra", offset: "UTC+1" },
+            { country: "Austria", capital: "Vienna", timeZone: "Europe/Vienna", offset: "UTC+1" },
+            { country: "Belarus", capital: "Minsk", timeZone: "Europe/Minsk", offset: "UTC+3" },
+            { country: "Belgium", capital: "Brussels", timeZone: "Europe/Brussels", offset: "UTC+1" },
+            { country: "Bosnia and Herzegovina", capital: "Sarajevo", timeZone: "Europe/Sarajevo", offset: "UTC+1" },
+            { country: "Bulgaria", capital: "Sofia", timeZone: "Europe/Sofia", offset: "UTC+2" },
+            { country: "Croatia", capital: "Zagreb", timeZone: "Europe/Zagreb", offset: "UTC+1" },
+            { country: "Czechia", capital: "Prague", timeZone: "Europe/Prague", offset: "UTC+1" },
+            { country: "Denmark", capital: "Copenhagen", timeZone: "Europe/Copenhagen", offset: "UTC+1" },
+            { country: "Denmark", capital: "Nuuk", timeZone: "America/Nuuk", offset: "UTC-3" },
+            { country: "Estonia", capital: "Tallinn", timeZone: "Europe/Tallinn", offset: "UTC+2" },
+            { country: "Finland", capital: "Helsinki", timeZone: "Europe/Helsinki", offset: "UTC+2" },
+            { country: "France", capital: "Paris", timeZone: "Europe/Paris", offset: "UTC+1" },
+            { country: "France", capital: "Martinique", timeZone: "America/Martinique", offset: "UTC-4" },
+            { country: "Germany", capital: "Berlin", timeZone: "Europe/Berlin", offset: "UTC+1" },
+            { country: "Greece", capital: "Athens", timeZone: "Europe/Athens", offset: "UTC+2" },
+            { country: "Hungary", capital: "Budapest", timeZone: "Europe/Budapest", offset: "UTC+1" },
+            { country: "Iceland", capital: "Reykjavik", timeZone: "Atlantic/Reykjavik", offset: "UTC+0" },
+            { country: "Ireland", capital: "Dublin", timeZone: "Europe/Dublin", offset: "UTC+0" },
+            { country: "Italy", capital: "Rome", timeZone: "Europe/Rome", offset: "UTC+1" },
+            { country: "Kosovo", capital: "Pristina", timeZone: "Europe/Belgrade", offset: "UTC+1" },
+            { country: "Latvia", capital: "Riga", timeZone: "Europe/Riga", offset: "UTC+2" },
+            { country: "Liechtenstein", capital: "Vaduz", timeZone: "Europe/Vaduz", offset: "UTC+1" },
+            { country: "Lithuania", capital: "Vilnius", timeZone: "Europe/Vilnius", offset: "UTC+2" },
+            { country: "Luxembourg", capital: "Luxembourg", timeZone: "Europe/Luxembourg", offset: "UTC+1" },
+            { country: "Malta", capital: "Valletta", timeZone: "Europe/Malta", offset: "UTC+1" },
+            { country: "Moldova", capital: "Chișinău", timeZone: "Europe/Chisinau", offset: "UTC+2" },
+            { country: "Monaco", capital: "Monaco", timeZone: "Europe/Monaco", offset: "UTC+1" },
+            { country: "Montenegro", capital: "Podgorica", timeZone: "Europe/Podgorica", offset: "UTC+1" },
+            { country: "Netherlands", capital: "Amsterdam", timeZone: "Europe/Amsterdam", offset: "UTC+1" },
+            { country: "Netherlands", capital: "Aruba", timeZone: "America/Aruba", offset: "UTC-4" },
+            { country: "North Macedonia", capital: "Skopje", timeZone: "Europe/Skopje", offset: "UTC+1" },
+            { country: "Norway", capital: "Oslo", timeZone: "Europe/Oslo", offset: "UTC+1" },
+            { country: "Norway", capital: "Svalbard", timeZone: "Arctic/Longyearbyen", offset: "UTC+1" },
+            { country: "Poland", capital: "Warsaw", timeZone: "Europe/Warsaw", offset: "UTC+1" },
+            { country: "Portugal", capital: "Lisbon", timeZone: "Europe/Lisbon", offset: "UTC+0" },
+            { country: "Portugal", capital: "Azores", timeZone: "Atlantic/Azores", offset: "UTC-1" },
+            { country: "Romania", capital: "Bucharest", timeZone: "Europe/Bucharest", offset: "UTC+2" },
+            { country: "Russia", capital: "Moscow", timeZone: "Europe/Moscow", offset: "UTC+3" },
+            { country: "Russia", capital: "Kaliningrad", timeZone: "Europe/Kaliningrad", offset: "UTC+2" },
+            { country: "San Marino", capital: "San Marino", timeZone: "Europe/San_Marino", offset: "UTC+1" },
+            { country: "Serbia", capital: "Belgrade", timeZone: "Europe/Belgrade", offset: "UTC+1" },
+            { country: "Slovakia", capital: "Bratislava", timeZone: "Europe/Bratislava", offset: "UTC+1" },
+            { country: "Slovenia", capital: "Ljubljana", timeZone: "Europe/Ljubljana", offset: "UTC+1" },
+            { country: "Spain", capital: "Madrid", timeZone: "Europe/Madrid", offset: "UTC+1" },
+            { country: "Spain", capital: "Canary Islands", timeZone: "Atlantic/Canary", offset: "UTC+0" },
+            { country: "Sweden", capital: "Stockholm", timeZone: "Europe/Stockholm", offset: "UTC+1" },
+            { country: "Switzerland", capital: "Bern", timeZone: "Europe/Zurich", offset: "UTC+1" },
+            { country: "Ukraine", capital: "Kyiv", timeZone: "Europe/Kyiv", offset: "UTC+2" },
+            { country: "United Kingdom", capital: "London", timeZone: "Europe/London", offset: "UTC+0" },
+            { country: "United Kingdom", capital: "Falkland Islands", timeZone: "Atlantic/Stanley", offset: "UTC-3" },
+            { country: "Vatican City", capital: "Vatican City", timeZone: "Europe/Vatican", offset: "UTC+1" },
+            { country: "Antigua and Barbuda", capital: "Saint John’s", timeZone: "America/Antigua", offset: "UTC-4" },
+            { country: "Bahamas", capital: "Nassau", timeZone: "America/Nassau", offset: "UTC-5" },
+            { country: "Barbados", capital: "Bridgetown", timeZone: "America/Barbados", offset: "UTC-4" },
+            { country: "Belize", capital: "Belmopan", timeZone: "America/Belize", offset: "UTC-6" },
+            { country: "Canada", capital: "Ottawa", timeZone: "America/Toronto", offset: "UTC-5" },
+            { country: "Canada", capital: "Vancouver", timeZone: "America/Vancouver", offset: "UTC-8" },
+            { country: "Costa Rica", capital: "San José", timeZone: "America/Costa_Rica", offset: "UTC-6" },
+            { country: "Cuba", capital: "Havana", timeZone: "America/Havana", offset: "UTC-5" },
+            { country: "Dominica", capital: "Roseau", timeZone: "America/Dominica", offset: "UTC-4" },
+            { country: "Dominican Republic", capital: "Santo Domingo", timeZone: "America/Santo_Domingo", offset: "UTC-4" },
+            { country: "El Salvador", capital: "San Salvador", timeZone: "America/El_Salvador", offset: "UTC-6" },
+            { country: "Grenada", capital: "Saint George’s", timeZone: "America/Grenada", offset: "UTC-4" },
+            { country: "Guatemala", capital: "Guatemala City", timeZone: "America/Guatemala", offset: "UTC-6" },
+            { country: "Haiti", capital: "Port-au-Prince", timeZone: "America/Port-au-Prince", offset: "UTC-5" },
+            { country: "Honduras", capital: "Tegucigalpa", timeZone: "America/Tegucigalpa", offset: "UTC-6" },
+            { country: "Jamaica", capital: "Kingston", timeZone: "America/Jamaica", offset: "UTC-5" },
+            { country: "Mexico", capital: "Mexico City", timeZone: "America/Mexico_City", offset: "UTC-6" },
+            { country: "Mexico", capital: "Tijuana", timeZone: "America/Tijuana", offset: "UTC-8" },
+            { country: "Nicaragua", capital: "Managua", timeZone: "America/Managua", offset: "UTC-6" },
+            { country: "Panama", capital: "Panama City", timeZone: "America/Panama", offset: "UTC-5" },
+            { country: "Saint Kitts and Nevis", capital: "Basseterre", timeZone: "America/St_Kitts", offset: "UTC-4" },
+            { country: "Saint Lucia", capital: "Castries", timeZone: "America/St_Lucia", offset: "UTC-4" },
+            { country: "Saint Vincent and the Grenadines", capital: "Kingstown", timeZone: "America/St_Vincent", offset: "UTC-4" },
+            { country: "Trinidad and Tobago", capital: "Port of Spain", timeZone: "America/Port_of_Spain", offset: "UTC-4" },
+            { country: "United States", capital: "Washington, D.C.", timeZone: "America/New_York", offset: "UTC-5" },
+            { country: "United States", capital: "Los Angeles", timeZone: "America/Los_Angeles", offset: "UTC-8" },
+            { country: "Argentina", capital: "Buenos Aires", timeZone: "America/Argentina/Buenos_Aires", offset: "UTC-3" },
+            { country: "Bolivia", capital: "Sucre", timeZone: "America/La_Paz", offset: "UTC-4" },
+            { country: "Brazil", capital: "Brasília", timeZone: "America/Sao_Paulo", offset: "UTC-3" },
+            { country: "Brazil", capital: "Manaus", timeZone: "America/Manaus", offset: "UTC-4" },
+            { country: "Chile", capital: "Santiago", timeZone: "America/Santiago", offset: "UTC-4" },
+            { country: "Chile", capital: "Easter Island", timeZone: "Pacific/Easter", offset: "UTC-6" },
+            { country: "Colombia", capital: "Bogotá", timeZone: "America/Bogota", offset: "UTC-5" },
+            { country: "Ecuador", capital: "Quito", timeZone: "America/Guayaquil", offset: "UTC-5" },
+            { country: "Ecuador", capital: "Galápagos Islands", timeZone: "Pacific/Galapagos", offset: "UTC-6" },
+            { country: "Guyana", capital: "Georgetown", timeZone: "America/Guyana", offset: "UTC-4" },
+            { country: "Paraguay", capital: "Asunción", timeZone: "America/Asuncion", offset: "UTC-4" },
+            { country: "Peru", capital: "Lima", timeZone: "America/Lima", offset: "UTC-5" },
+            { country: "Suriname", capital: "Paramaribo", timeZone: "America/Paramaribo", offset: "UTC-3" },
+            { country: "Uruguay", capital: "Montevideo", timeZone: "America/Montevideo", offset: "UTC-3" },
+            { country: "Venezuela", capital: "Caracas", timeZone: "America/Caracas", offset: "UTC-4" },
+            { country: "Australia", capital: "Canberra", timeZone: "Australia/Sydney", offset: "UTC+10" },
+            { country: "Australia", capital: "Lord Howe Island", timeZone: "Australia/Lord_Howe", offset: "UTC+10:30" },
+            { country: "Fiji", capital: "Suva", timeZone: "Pacific/Fiji", offset: "UTC+12" },
+            { country: "Kiribati", capital: "Tarawa", timeZone: "Pacific/Tarawa", offset: "UTC+12" },
+            { country: "Kiribati", capital: "Line Islands", timeZone: "Pacific/Kiritimati", offset: "UTC+14" },
+            { country: "Marshall Islands", capital: "Majuro", timeZone: "Pacific/Majuro", offset: "UTC+12" },
+            { country: "Micronesia", capital: "Palikir", timeZone: "Pacific/Pohnpei", offset: "UTC+11" },
+            { country: "Micronesia", capital: "Yap", timeZone: "Pacific/Chuuk", offset: "UTC+10" },
+            { country: "Nauru", capital: "Yaren", timeZone: "Pacific/Nauru", offset: "UTC+12" },
+            { country: "New Zealand", capital: "Wellington", timeZone: "Pacific/Auckland", offset: "UTC+12" },
+            { country: "New Zealand", capital: "Chatham Islands", timeZone: "Pacific/Chatham", offset: "UTC+12:45" },
+            { country: "Palau", capital: "Ngerulmud", timeZone: "Pacific/Palau", offset: "UTC+9" },
+            { country: "Papua New Guinea", capital: "Port Moresby", timeZone: "Pacific/Port_Moresby", offset: "UTC+10" },
+            { country: "Papua New Guinea", capital: "Bougainville", timeZone: "Pacific/Bougainville", offset: "UTC+11" },
+            { country: "Samoa", capital: "Apia", timeZone: "Pacific/Apia", offset: "UTC+13" },
+            { country: "Solomon Islands", capital: "Honiara", timeZone: "Pacific/Guadalcanal", offset: "UTC+11" },
+            { country: "Tonga", capital: "Nuku’alofa", timeZone: "Pacific/Tongatapu", offset: "UTC+13" },
+            { country: "Tuvalu", capital: "Funafuti", timeZone: "Pacific/Funafuti", offset: "UTC+12" },
+            { country: "Vanuatu", capital: "Port Vila", timeZone: "Pacific/Efate", offset: "UTC+11" },
+            { country: "Bermuda", capital: "Hamilton", timeZone: "Atlantic/Bermuda", offset: "UTC-4" },
+            { country: "British Virgin Islands", capital: "Road Town", timeZone: "America/Tortola", offset: "UTC-4" },
+            { country: "Cayman Islands", capital: "George Town", timeZone: "America/Cayman", offset: "UTC-5" },
+            { country: "Falkland Islands", capital: "Stanley", timeZone: "Atlantic/Stanley", offset: "UTC-3" },
+            { country: "French Guiana", capital: "Cayenne", timeZone: "America/Cayenne", offset: "UTC-3" },
+            { country: "Greenland", capital: "Nuuk", timeZone: "America/Nuuk", offset: "UTC-3" },
+            { country: "Greenland", capital: "Ittoqqortoormiit", timeZone: "America/Scoresbysund", offset: "UTC-1" },
+            { country: "Guam", capital: "Hagåtña", timeZone: "Pacific/Guam", offset: "UTC+10" },
+            { country: "Puerto Rico", capital: "San Juan", timeZone: "America/Puerto_Rico", offset: "UTC-4" },
+            { country: "Réunion", capital: "Saint-Denis", timeZone: "Indian/Reunion", offset: "UTC+4" }
+        ];
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function getCurrentTime(timeZone) {
+            const now = new Date('2025-08-19T02:03:00+09:00'); // Fixed to JST
+            return new Intl.DateTimeFormat('en-US', {
+                timeZone,
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            }).formatToParts(now).reduce((acc, part) => {
+                if (part.type === 'literal' && part.value === ',') return acc;
+                acc[part.type] = part.value;
+                return acc;
+            }, {});
+        }
+
+        function formatDateTime(parts) {
+            return `${parts.month} ${parts.day}, ${parts.year}, ${parts.hour}:${parts.minute}:${parts.second} ${parts.dayPeriod}`;
+        }
+
+        function searchLocations(query) {
+            query = query.toLowerCase().trim();
+            if (!query) return [];
+            return timeZones.filter(item =>
+                item.country.toLowerCase().includes(query) ||
+                item.capital.toLowerCase().includes(query)
+            );
+        }
+
+        function displaySuggestions(suggestions) {
+            const suggestionsDiv = document.getElementById('suggestions');
+            suggestionsDiv.innerHTML = '';
+            if (suggestions.length === 0) {
+                suggestionsDiv.classList.add('hidden');
+                return;
+            }
+            suggestions.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.textContent = `${item.country} - ${item.capital} (${item.offset})`;
+                div.dataset.country = item.country;
+                div.dataset.capital = item.capital;
+                div.dataset.timeZone = item.timeZone;
+                div.dataset.offset = item.offset;
+                div.addEventListener('click', () => {
+                    document.getElementById('locationSearch').value = `${item.country} - ${item.capital}`;
+                    suggestionsDiv.classList.add('hidden');
+                    processConvert(item);
+                });
+                suggestionsDiv.appendChild(div);
+            });
+            suggestionsDiv.classList.remove('hidden');
+        }
+
+        function processConvert(selectedItem = null) {
+            const searchInput = document.getElementById('locationSearch').value.trim();
+            const output = document.getElementById('output');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+            const resultTable = document.getElementById('resultTable');
+            const resultTableBody = document.getElementById('resultTableBody');
+
+            errorMessage.classList.add('hidden');
+            output.value = '';
+            copyBtn.disabled = true;
+            resultTable.classList.add('hidden');
+            resultTableBody.innerHTML = '';
+
+            const localTimeZone = 'Asia/Tokyo'; // Fixed to JST
+            const localTimeParts = getCurrentTime(localTimeZone);
+            const localTime = formatDateTime(localTimeParts);
+
+            let selectedLocation = selectedItem;
+            if (!selectedItem) {
+                const suggestions = searchLocations(searchInput);
+                if (suggestions.length === 0) {
+                    errorMessage.textContent = 'Error: No matching country or capital found.';
+                    errorMessage.classList.remove('hidden');
+                    resultTableBody.innerHTML = `
+                        <tr>
+                            <td>Local Time</td>
+                            <td>${localTime}</td>
+                            <td>${localTimeParts.hour}:${localTimeParts.minute}:${localTimeParts.second} ${localTimeParts.dayPeriod}</td>
+                            <td>UTC+9</td>
+                        </tr>
+                    `;
+                    resultTable.classList.remove('hidden');
+                    output.value = `Local Time: ${localTime} (UTC+9)`;
+                    copyBtn.dataset.result = output.value;
+                    copyBtn.disabled = false;
+                    return;
+                }
+                selectedLocation = suggestions[0]; // Select first match if not from suggestions
+            }
+
+            const convertedTimeParts = getCurrentTime(selectedLocation.timeZone);
+            const convertedTime = formatDateTime(convertedTimeParts);
+            const outputText = `Local Time: ${localTime} (UTC+9)\n${selectedLocation.country} - ${selectedLocation.capital}: ${convertedTime} (${selectedLocation.offset})`;
+
+            resultTableBody.innerHTML = `
+                <tr>
+                    <td>Local Time</td>
+                    <td>${localTime}</td>
+                    <td>${localTimeParts.hour}:${localTimeParts.minute}:${localTimeParts.second} ${localTimeParts.dayPeriod}</td>
+                    <td>UTC+9</td>
+                </tr>
+                <tr>
+                    <td>${selectedLocation.country} - ${selectedLocation.capital}</td>
+                    <td>${convertedTime}</td>
+                    <td>${convertedTimeParts.hour}:${convertedTimeParts.minute}:${convertedTimeParts.second} ${convertedTimeParts.dayPeriod}</td>
+                    <td>${selectedLocation.offset}</td>
+                </tr>
+            `;
+            resultTable.classList.remove('hidden');
+            output.value = outputText;
+            copyBtn.dataset.result = outputText;
+            copyBtn.disabled = false;
+        }
+
+        document.getElementById('convertBtn').addEventListener('click', () => processConvert());
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Results copied!');
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy results.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('locationSearch').value = '';
+            document.getElementById('output').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('resultTableBody').innerHTML = '';
+            document.getElementById('suggestions').classList.add('hidden');
+        });
+
+        document.getElementById('locationSearch').addEventListener('input', (e) => {
+            const query = e.target.value;
+            const suggestions = searchLocations(query);
+            displaySuggestions(suggestions);
+        });
+
+        document.getElementById('locationSearch').addEventListener('blur', () => {
+            setTimeout(() => {
+                document.getElementById('suggestions').classList.add('hidden');
+            }, 200);
+        });
+
+        // Initialize with local time
+        window.addEventListener('load', () => {
+            processConvert();
+        });
+    </script>
+</body>
+</html>
