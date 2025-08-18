@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS Mart Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #eceff1 0%, #cfd8dc 100%);
+            color: #263238;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #1565c0;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #42a5f5;
+            padding-bottom: 8px;
+            font-weight: 500;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+            background: #fafafa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 14px;
+            text-align: left;
+            font-size: 0.95em;
+        }
+        th {
+            background: #1976d2;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td {
+            background: #ffffff;
+        }
+        tr:nth-child(even) td {
+            background: #f5f7fa;
+        }
+        tr:hover td {
+            background: #e3f2fd;
+            transition: background 0.2s;
+        }
+        button {
+            padding: 12px 28px;
+            background: #4caf50;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.2s;
+            margin: 10px;
+        }
+        button:hover {
+            background: #388e3c;
+            transform: scale(1.05);
+        }
+        textarea {
+            width: 100%;
+            height: 140px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #b0bec5;
+            border-radius: 6px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1em;
+            resize: vertical;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #1976d2;
+            box-shadow: 0 0 8px rgba(25, 118, 210, 0.3);
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #37474f;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #b0bec5;
+            border-radius: 6px;
+            font-size: 1em;
+            background: #f9f9f9;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .input-group input:focus {
+            outline: none;
+            border-color: #1976d2;
+            box-shadow: 0 0 8px rgba(25, 118, 210, 0.3);
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AMS Mart Receipt Maker</h1>
+        <h2>Input Item Data</h2>
+        <div class="input-group">
+            <textarea id="dataInput" placeholder="Enter data in format: Name, QTY, Rate (one item per line)">
+Mutton 900g, 12, 480
+Chicken 900g, 12, 560
+Lollypop, 12, 890
+            </textarea>
+        </div>
+        <div class="input-group">
+            <label for="pdfDate">Date (YYYY-MM-DD):</label>
+            <input type="text" id="pdfDate" placeholder="e.g., 2025-08-18" value="2025-08-18">
+        </div>
+        <div class="input-group">
+            <label for="shopName">Shop Name:</label>
+            <input type="text" id="shopName" placeholder="e.g., AMS Mart" value="AMS Mart">
+        </div>
+        <div class="input-group">
+            <label for="shopAddress">Shop Address:</label>
+            <input type="text" id="shopAddress" placeholder="e.g., Gunma, Maebashi-shi, Ishikura-machi 1-13-6, Tomo G House, West Room" value="Gunma, Maebashi-shi, Ishikura-machi 1-13-6, Tomo G House, West Room">
+        </div>
+        <div class="input-group">
+            <label for="shopPhone">Shop Phone Number:</label>
+            <input type="text" id="shopPhone" placeholder="e.g., +81-027-2892-494" value="+81-027-2892-494">
+        </div>
+        <div class="input-group">
+            <label for="receiverShopName">Receiver Shop Name:</label>
+            <input type="text" id="receiverShopName" placeholder="e.g., Tokyo Fresh Mart" value="Tokyo Fresh Mart">
+        </div>
+        <div class="input-group">
+            <label for="receiverShopAddress">Receiver Shop Address:</label>
+            <input type="text" id="receiverShopAddress" placeholder="e.g., 456 Central Avenue, Tokyo, Chuo-ku, 104-0061" value="456 Central Avenue, Tokyo, Chuo-ku, 104-0061">
+        </div>
+        <div class="input-group">
+            <label for="receiverShopPhone">Receiver Shop Phone Number:</label>
+            <input type="text" id="receiverShopPhone" placeholder="e.g., +81-3-9876-5432" value="+81-3-9876-5432">
+        </div>
+        <div class="input-group">
+            <label for="managingDirector">Name of Managing Director:</label>
+            <input type="text" id="managingDirector" placeholder="e.g., John Doe" value="John Doe">
+        </div>
+        <div class="input-group">
+            <label for="pdfNotes">Notes (optional):</label>
+            <textarea id="pdfNotes" placeholder="Enter any additional notes for the PDF"></textarea>
+        </div>
+        <div class="input-group">
+            <label for="pdfFileName">PDF File Name (without .pdf):</label>
+            <input type="text" id="pdfFileName" placeholder="e.g., AMS_Mart_Items" value="AMS_Mart_Items">
+        </div>
+        <div class="button-container">
+            <button onclick="loadData()">Load Data to Table</button>
+        </div>
+
+        <h2>Item List Preview</h2>
+        <table id="itemTable">
+            <thead>
+                <tr>
+                    <th>S No.</th>
+                    <th>Name of Items</th>
+                    <th>QTY</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody id="itemTableBody">
+            </tbody>
+        </table>
+
+        <div class="button-container">
+            <button onclick="exportToPDF()">Export to PDF</button>
+        </div>
+    </div>
+
+    <script>
+        let items = [];
+        let serialNo = 1;
+        const yenSymbol = '\u00A5'; // Unicode for ¥
+
+        // Load and parse data from textarea
+        function loadData() {
+            try {
+                console.log('Loading data...');
+                const input = document.getElementById('dataInput').value.trim();
+                const lines = input.split('\n').filter(line => line.trim() !== '');
+                items = [];
+                serialNo = 1;
+                const tableBody = document.getElementById('itemTableBody');
+                tableBody.innerHTML = ''; // Clear existing table
+
+                lines.forEach(line => {
+                    const [itemName, qty, rate] = line.split(',').map(item => item.trim());
+                    const qtyNum = parseFloat(qty);
+                    const rateNum = parseFloat(rate);
+                    if (itemName && !isNaN(qtyNum) && !isNaN(rateNum)) {
+                        const amount = qtyNum * rateNum;
+                        items.push({
+                            serialNo: serialNo,
+                            itemName: itemName,
+                            qty: qtyNum,
+                            rate: `${yenSymbol}${rateNum}`,
+                            amount: `${yenSymbol}${amount}`,
+                            remarks: ''
+                        });
+
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${serialNo}</td>
+                            <td>${itemName}</td>
+                            <td>${qtyNum}</td>
+                            <td>${yenSymbol}${rateNum}</td>
+                            <td>${yenSymbol}${amount}</td>
+                            <td></td>
+                        `;
+                        tableBody.appendChild(row);
+                        serialNo++;
+                    }
+                });
+
+                if (items.length === 0) {
+                    alert('No valid data entered. Please use format: Name, QTY, Rate (one item per line).');
+                }
+                console.log('Data loaded successfully:', items);
+            } catch (error) {
+                console.error('Error in loadData:', error);
+                alert('Error loading data. Please check the console for details.');
+            }
+        }
+
+        function exportToPDF() {
+            try {
+                console.log('Starting PDF export...');
+                if (items.length === 0) {
+                    alert('No items to export. Please load data first.');
+                    return;
+                }
+
+                const fileNameInput = document.getElementById('pdfFileName').value.trim();
+                const fileName = fileNameInput ? fileNameInput.replace(/[^a-zA-Z0-9-_]/g, '') + '.pdf' : 'AMS_Mart_Items.pdf';
+                const pdfDate = document.getElementById('pdfDate').value.trim() || '2025-08-18';
+                const shopName = document.getElementById('shopName').value.trim() || 'AMS Mart';
+                const shopAddress = document.getElementById('shopAddress').value.trim() || 'Gunma, Maebashi-shi, Ishikura-machi 1-13-6, Tomo G House, West Room';
+                const shopPhone = document.getElementById('shopPhone').value.trim() || '+81-027-2892-494';
+                const receiverShopName = document.getElementById('receiverShopName').value.trim() || 'Tokyo Fresh Mart';
+                const receiverShopAddress = document.getElementById('receiverShopAddress').value.trim() || '456 Central Avenue, Tokyo, Chuo-ku, 104-0061';
+                const receiverShopPhone = document.getElementById('receiverShopPhone').value.trim() || '+81-3-9876-5432';
+                const managingDirector = document.getElementById('managingDirector').value.trim() || 'John Doe';
+                const pdfNotes = document.getElementById('pdfNotes').value.trim();
+
+                console.log('Input values retrieved:', { fileName, pdfDate, shopName, shopAddress, shopPhone, receiverShopName, receiverShopAddress, receiverShopPhone, managingDirector, pdfNotes });
+
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF({
+                    orientation: 'portrait',
+                    unit: 'mm',
+                    format: 'a4'
+                });
+                console.log('jsPDF initialized');
+
+                // Set document properties
+                doc.setProperties({
+                    title: 'Weekly Purchase Order',
+                    creator: 'AMS Mart Calculator',
+                    producer: 'jsPDF'
+                });
+                console.log('Document properties set');
+
+                // Date (top-right)
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'normal');
+                doc.text(`Date: ${pdfDate}`, 200, 20, { align: 'right' });
+                console.log('Date added');
+
+                // Shop details and greeting
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'bold'); // Bold for shopName
+                doc.text(shopName, 10, 30);
+                doc.setFont('helvetica', 'normal');
+                const shopAddressDim = doc.getTextDimensions(shopAddress, { fontSize: 10, maxWidth: 120 });
+                doc.text(shopAddress, 10, 36, { maxWidth: 120 });
+                const shopPhoneY = 36 + shopAddressDim.h + 2; // Dynamic Y based on address height
+                doc.text(`Phone: ${shopPhone}`, 10, shopPhoneY);
+                console.log('Shop address dimensions:', shopAddressDim, 'Phone Y:', shopPhoneY);
+                doc.text('Dear Sir/Ma\'am,', 10, shopPhoneY + 8);
+                console.log('Shop details and greeting added');
+
+                // Weekly Purchase Order (centered)
+                doc.setFontSize(14);
+                doc.setFont('helvetica', 'bold');
+                doc.text('Weekly Purchase Order', 105, shopPhoneY + 18, { align: 'center' });
+                console.log('Title added');
+
+                // Calculate grand total
+                const grandTotal = items.reduce((sum, item) => {
+                    const amount = parseFloat(item.amount.replace(yenSymbol, ''));
+                    return sum + amount;
+                }, 0);
+                console.log('Grand total calculated:', grandTotal);
+
+                // Table data
+                const tableData = items.map(item => [
+                    item.serialNo.toString(),
+                    item.itemName,
+                    item.qty.toString(),
+                    item.rate,
+                    item.amount,
+                    item.remarks
+                ]);
+
+                // Add total row
+                tableData.push(['', 'Total', '', '', `${yenSymbol}${grandTotal.toFixed(2)}`, '']);
+                console.log('Table data prepared:', tableData);
+
+                // Table configuration
+                try {
+                    doc.autoTable({
+                        startY: shopPhoneY + 24,
+                        head: [['S No.', 'Name of Items', 'QTY', 'Rate', 'Amount', 'Remarks']],
+                        body: tableData,
+                        styles: {
+                            font: 'helvetica',
+                            fontSize: 10,
+                            cellPadding: 3,
+                            textColor: [40, 40, 40],
+                            lineColor: [200, 200, 200],
+                            lineWidth: 0.1
+                        },
+                        headStyles: {
+                            fillColor: [25, 118, 210],
+                            textColor: [255, 255, 255],
+                            fontStyle: 'bold'
+                        },
+                        alternateRowStyles: {
+                            fillColor: [245, 245, 245]
+                        },
+                        margin: { top: 20, left: 10, right: 10 },
+                        pageBreak: 'auto',
+                        columnStyles: {
+                            0: { cellWidth: 20 },
+                            1: { cellWidth: 60 },
+                            2: { cellWidth: 20 },
+                            3: { cellWidth: 30 },
+                            4: { cellWidth: 30 },
+                            5: { cellWidth: 30 }
+                        },
+                        didParseCell: function (data) {
+                            if (data.row.index === tableData.length - 1 && (data.column.index === 1 || data.column.index === 4)) {
+                                data.cell.styles.fontStyle = 'bold'; // Bold for "Total" and total amount
+                            }
+                        },
+                        didDrawPage: function (data) {
+                            console.log('Page drawn, page number:', doc.internal.getCurrentPageInfo().pageNumber);
+                        }
+                    });
+                    console.log('Table generated, total pages:', doc.internal.getNumberOfPages());
+                } catch (error) {
+                    console.error('Error generating table:', error);
+                    alert('Error generating table. Please check the console for details.');
+                    return;
+                }
+
+                // Additional text below table
+                const finalY = doc.lastAutoTable.finalY || (shopPhoneY + 24);
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'normal');
+                doc.text('This contract will automatically renew every year', 200, finalY + 10, { align: 'right' });
+                doc.setFont('helvetica', 'bold');
+                doc.text('Payment Method: Payment will be done by cash on delivery basis', 200, finalY + 15, { align: 'right' });
+                doc.setFont('helvetica', 'normal');
+                doc.text('Thank You,', 10, finalY + 25);
+                doc.text('Sincerely,', 10, finalY + 30);
+                doc.setFont('helvetica', 'bold'); // Bold for receiverShopName
+                doc.text(receiverShopName, 10, finalY + 35);
+                doc.setFont('helvetica', 'normal');
+                const receiverAddressDim = doc.getTextDimensions(receiverShopAddress, { fontSize: 10, maxWidth: 120 });
+                doc.text(receiverShopAddress, 10, finalY + 40, { maxWidth: 120 });
+                const receiverPhoneY = finalY + 40 + receiverAddressDim.h + 2; // Dynamic Y based on address height
+                doc.text(`Phone: ${receiverShopPhone}`, 10, receiverPhoneY);
+                console.log('Receiver address dimensions:', receiverAddressDim, 'Phone Y:', receiverPhoneY);
+                console.log('Additional text added');
+
+                // Managing Director (right-aligned)
+                doc.setFont('helvetica', 'normal');
+                doc.text('Managing Director', 200, finalY + 35, { align: 'right' });
+                doc.setFont('helvetica', 'bold'); // Bold for managingDirector
+                doc.text(managingDirector, 200, finalY + 40, { align: 'right' });
+                console.log('Managing Director added');
+
+                // Add notes if provided
+                if (pdfNotes) {
+                    doc.setFont('helvetica', 'normal');
+                    const notesY = receiverPhoneY + 10;
+                    doc.text('Notes:', 10, notesY);
+                    doc.text(pdfNotes, 10, notesY + 5, { maxWidth: 190 });
+                    console.log('Notes added');
+                }
+
+                // Save the PDF
+                console.log('Saving PDF...');
+                doc.save(fileName);
+                console.log('PDF saved successfully');
+            } catch (error) {
+                console.error('Error during PDF export:', error);
+                alert(`PDF generation failed. Error: ${error.message}. Please check the console for details.`);
+            }
+        }
+
+        // Load default data on page load
+        window.onload = loadData;
+    </script>
+</body>
+</html>
