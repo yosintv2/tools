@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    
     <!-- https://grok.com/chat/a69d834d-dd8d-4eac-86ac-6e177b56c0f0 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMS Mart Calculator</title>
+    <title>AMS Mart Receipt Maker</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
     <style>
@@ -77,6 +76,9 @@
         tr:hover td {
             background: #e3f2fd;
             transition: background 0.2s;
+        }
+        .total-row td:nth-child(2), .total-row td:nth-child(5) {
+            font-weight: bold;
         }
         button {
             padding: 12px 28px;
@@ -155,7 +157,7 @@ Lollypop, 12, 890
         </div>
         <div class="input-group">
             <label for="pdfDate">Date (YYYY-MM-DD):</label>
-            <input type="text" id="pdfDate" placeholder="e.g., 2025-08-18" value="2025-08-18">
+            <input type="date" id="pdfDate">
         </div>
         <div class="input-group">
             <label for="shopName">Shop Name:</label>
@@ -206,7 +208,6 @@ Lollypop, 12, 890
                     <th>Quantity</th>
                     <th>Rate</th>
                     <th>Amount</th>
-                    <th>Remarks</th>
                 </tr>
             </thead>
             <tbody id="itemTableBody">
@@ -223,6 +224,29 @@ Lollypop, 12, 890
         let serialNo = 1;
         const yenSymbol = '\u00A5'; // Unicode for ¥
 
+        // Function to get today's date in YYYY-MM-DD format
+        function getTodayDate() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        // Function to validate phone numbers
+        function isValidPhone(phone) {
+            const phoneRegex = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}$/;
+            return phoneRegex.test(phone);
+        }
+
+        // Set today's date in the date input field on page load
+        window.onload = function() {
+            const dateInput = document.getElementById('pdfDate');
+            dateInput.value = getTodayDate();
+            console.log('Date set to:', dateInput.value);
+            loadData();
+        };
+
         // Load and parse data from textarea
         function loadData() {
             try {
@@ -234,34 +258,49 @@ Lollypop, 12, 890
                 const tableBody = document.getElementById('itemTableBody');
                 tableBody.innerHTML = ''; // Clear existing table
 
+                let grandTotal = 0;
                 lines.forEach(line => {
-                    const [itemName, Quantity, rate] = line.split(',').map(item => item.trim());
-                    const QuantityNum = parseFloat(Quantity);
+                    const [itemName, quantity, rate] = line.split(',').map(item => item.trim());
+                    const quantityNum = parseFloat(quantity);
                     const rateNum = parseFloat(rate);
-                    if (itemName && !isNaN(QuantityNum) && !isNaN(rateNum)) {
-                        const amount = QuantityNum * rateNum;
+                    if (itemName && !isNaN(quantityNum) && !isNaN(rateNum)) {
+                        const amount = quantityNum * rateNum;
+                        grandTotal += amount;
                         items.push({
                             serialNo: serialNo,
                             itemName: itemName,
-                            Quantity: QuantityNum,
+                            quantity: quantityNum,
                             rate: `${yenSymbol}${rateNum}`,
-                            amount: `${yenSymbol}${amount}`,
-                            remarks: ''
+                            amount: `${yenSymbol}${amount}`
                         });
 
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td>${serialNo}</td>
                             <td>${itemName}</td>
-                            <td>${QuantityNum}</td>
+                            <td>${quantityNum}</td>
                             <td>${yenSymbol}${rateNum}</td>
                             <td>${yenSymbol}${amount}</td>
-                            <td></td>
                         `;
                         tableBody.appendChild(row);
                         serialNo++;
                     }
                 });
+
+                // Add total row to the table
+                if (items.length > 0) {
+                    const totalRow = document.createElement('tr');
+                    totalRow.className = 'total-row';
+                    totalRow.innerHTML = `
+                        <td></td>
+                        <td>Total</td>
+                        <td></td>
+                        <td></td>
+                        <td>${yenSymbol}${grandTotal.toFixed(2)}</td>
+                    `;
+                    tableBody.appendChild(totalRow);
+                    console.log('Grand total for table:', grandTotal);
+                }
 
                 if (items.length === 0) {
                     alert('No valid data entered. Please use format: Name, Quantity, Rate (one item per line).');
@@ -283,7 +322,7 @@ Lollypop, 12, 890
 
                 const fileNameInput = document.getElementById('pdfFileName').value.trim();
                 const fileName = fileNameInput ? fileNameInput.replace(/[^a-zA-Z0-9-_]/g, '') + '.pdf' : 'AMS_Mart_Items.pdf';
-                const pdfDate = document.getElementById('pdfDate').value.trim() || '2025-08-18';
+                const pdfDate = document.getElementById('pdfDate').value.trim() || getTodayDate();
                 const shopName = document.getElementById('shopName').value.trim() || 'AMS Mart';
                 const shopAddress = document.getElementById('shopAddress').value.trim() || 'Gunma, Maebashi-shi, Ishikura-machi 1-13-6, Tomo G House, West Room';
                 const shopPhone = document.getElementById('shopPhone').value.trim() || '+81-027-2892-494';
@@ -292,6 +331,16 @@ Lollypop, 12, 890
                 const receiverShopPhone = document.getElementById('receiverShopPhone').value.trim() || '+81-3-9876-5432';
                 const managingDirector = document.getElementById('managingDirector').value.trim() || 'John Doe';
                 const pdfNotes = document.getElementById('pdfNotes').value.trim();
+
+                // Validate phone numbers
+                if (!isValidPhone(shopPhone)) {
+                    alert('Invalid Shop Phone Number. Please use a valid format (e.g., +81-027-2892-494).');
+                    return;
+                }
+                if (!isValidPhone(receiverShopPhone)) {
+                    alert('Invalid Receiver Shop Phone Number. Please use a valid format (e.g., +81-3-9876-5432).');
+                    return;
+                }
 
                 console.log('Input values retrieved:', { fileName, pdfDate, shopName, shopAddress, shopPhone, receiverShopName, receiverShopAddress, receiverShopPhone, managingDirector, pdfNotes });
 
@@ -306,14 +355,14 @@ Lollypop, 12, 890
                 // Set document properties
                 doc.setProperties({
                     title: 'Weekly Purchase Order',
-                    creator: 'AMS Mart Calculator',
+                    creator: 'AMS Mart Receipt Maker',
                     producer: 'jsPDF'
                 });
                 console.log('Document properties set');
 
                 // Date (top-right)
                 doc.setFontSize(10);
-                doc.setFont('helvetica', 'bold');
+                doc.setFont('helvetica', 'normal');
                 doc.text(`Date: ${pdfDate}`, 200, 20, { align: 'right' });
                 console.log('Date added');
 
@@ -347,21 +396,20 @@ Lollypop, 12, 890
                 const tableData = items.map(item => [
                     item.serialNo.toString(),
                     item.itemName,
-                    item.Quantity.toString(),
+                    item.quantity.toString(),
                     item.rate,
-                    item.amount,
-                    item.remarks
+                    item.amount
                 ]);
 
                 // Add total row
-                tableData.push(['', 'Total', '', '', `${yenSymbol}${grandTotal.toFixed(2)}`, '']);
+                tableData.push(['', 'Total', '', '', `${yenSymbol}${grandTotal.toFixed(2)}`]);
                 console.log('Table data prepared:', tableData);
 
                 // Table configuration
                 try {
                     doc.autoTable({
                         startY: shopPhoneY + 24,
-                        head: [['S No.', 'Name of Items', 'Quantity', 'Rate', 'Amount', 'Remarks']],
+                        head: [['S No.', 'Name of Items', 'Quantity', 'Rate', 'Amount']],
                         body: tableData,
                         styles: {
                             font: 'helvetica',
@@ -382,12 +430,11 @@ Lollypop, 12, 890
                         margin: { top: 20, left: 10, right: 10 },
                         pageBreak: 'auto',
                         columnStyles: {
-                            0: { cellWidth: 20 },
-                            1: { cellWidth: 60 },
-                            2: { cellWidth: 20 },
-                            3: { cellWidth: 30 },
-                            4: { cellWidth: 30 },
-                            5: { cellWidth: 30 }
+                            0: { cellWidth: 25 },
+                            1: { cellWidth: 70 },
+                            2: { cellWidth: 25 },
+                            3: { cellWidth: 35 },
+                            4: { cellWidth: 35 }
                         },
                         didParseCell: function (data) {
                             if (data.row.index === tableData.length - 1 && (data.column.index === 1 || data.column.index === 4)) {
@@ -450,9 +497,6 @@ Lollypop, 12, 890
                 alert(`PDF generation failed. Error: ${error.message}. Please check the console for details.`);
             }
         }
-
-        // Load default data on page load
-        window.onload = loadData;
     </script>
 </body>
 </html>
