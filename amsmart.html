@@ -147,7 +147,7 @@
         <h1>AMS Mart Receipt Maker</h1>
         <h2>Input Item Data</h2>
         <div class="input-group">
-            <textarea id="dataInput" placeholder="Enter data in format: Name, QTY, Rate (one item per line)">
+            <textarea id="dataInput" placeholder="Enter data in format: Name, Quantity, Rate (one item per line)">
 Mutton 900g, 12, 480
 Chicken 900g, 12, 560
 Lollypop, 12, 890
@@ -203,7 +203,7 @@ Lollypop, 12, 890
                 <tr>
                     <th>S No.</th>
                     <th>Name of Items</th>
-                    <th>QTY</th>
+                    <th>Quantity</th>
                     <th>Rate</th>
                     <th>Amount</th>
                     <th>Remarks</th>
@@ -235,15 +235,15 @@ Lollypop, 12, 890
                 tableBody.innerHTML = ''; // Clear existing table
 
                 lines.forEach(line => {
-                    const [itemName, qty, rate] = line.split(',').map(item => item.trim());
-                    const qtyNum = parseFloat(qty);
+                    const [itemName, Quantity, rate] = line.split(',').map(item => item.trim());
+                    const QuantityNum = parseFloat(Quantity);
                     const rateNum = parseFloat(rate);
-                    if (itemName && !isNaN(qtyNum) && !isNaN(rateNum)) {
-                        const amount = qtyNum * rateNum;
+                    if (itemName && !isNaN(QuantityNum) && !isNaN(rateNum)) {
+                        const amount = QuantityNum * rateNum;
                         items.push({
                             serialNo: serialNo,
                             itemName: itemName,
-                            qty: qtyNum,
+                            Quantity: QuantityNum,
                             rate: `${yenSymbol}${rateNum}`,
                             amount: `${yenSymbol}${amount}`,
                             remarks: ''
@@ -253,7 +253,7 @@ Lollypop, 12, 890
                         row.innerHTML = `
                             <td>${serialNo}</td>
                             <td>${itemName}</td>
-                            <td>${qtyNum}</td>
+                            <td>${QuantityNum}</td>
                             <td>${yenSymbol}${rateNum}</td>
                             <td>${yenSymbol}${amount}</td>
                             <td></td>
@@ -264,7 +264,7 @@ Lollypop, 12, 890
                 });
 
                 if (items.length === 0) {
-                    alert('No valid data entered. Please use format: Name, QTY, Rate (one item per line).');
+                    alert('No valid data entered. Please use format: Name, Quantity, Rate (one item per line).');
                 }
                 console.log('Data loaded successfully:', items);
             } catch (error) {
@@ -347,7 +347,7 @@ Lollypop, 12, 890
                 const tableData = items.map(item => [
                     item.serialNo.toString(),
                     item.itemName,
-                    item.qty.toString(),
+                    item.Quantity.toString(),
                     item.rate,
                     item.amount,
                     item.remarks
@@ -361,7 +361,7 @@ Lollypop, 12, 890
                 try {
                     doc.autoTable({
                         startY: shopPhoneY + 24,
-                        head: [['S No.', 'Name of Items', 'QTY', 'Rate', 'Amount', 'Remarks']],
+                        head: [['S No.', 'Name of Items', 'Quantity', 'Rate', 'Amount', 'Remarks']],
                         body: tableData,
                         styles: {
                             font: 'helvetica',
