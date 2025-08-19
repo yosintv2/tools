@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Cryptocurrency Exchange Fee Calculator</title>
+    <meta name="description" content="Calculate cryptocurrency exchange fees instantly with our free Cryptocurrency Exchange Fee Calculator by HamroTools. Enter amount, exchange, and trade type for accurate fee calculations, perfect for all devices.">
+    <meta name="keywords" content="cryptocurrency exchange fee calculator, free crypto fee calculator, online crypto fee calculator, hamrotools crypto fee calculator, crypto transaction fee calculator, crypto cost calculator, free crypto fee tool, crypto fee estimator, crypto fee calculation, online crypto cost calculator, binance fee calculator, coinbase fee calculator, kraken fee calculator, transaction fee calculator, crypto fee tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Cryptocurrency Exchange Fee Calculator Team">
+    <meta property="og:title" content="Cryptocurrency Exchange Fee Calculator - HamroTools">
+    <meta property="og:description" content="Calculate cryptocurrency exchange fees instantly with our free Cryptocurrency Exchange Fee Calculator by HamroTools. Enter amount, exchange, and trade type for accurate fee calculations, perfect for all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/cryptocurrency-ex-fee-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cryptocurrency Exchange Fee Calculator - HamroTools">
+    <meta name="twitter:description" content="Calculate cryptocurrency exchange fees instantly with our free Cryptocurrency Exchange Fee Calculator by HamroTools. Enter amount, exchange, and trade type for accurate fee calculations, perfect for all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/cryptocurrency-ex-fee-calculator">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            input, select {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+                line-height: 1.5;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            white-space: pre;
+            overflow-x: auto;
+            resize: none;
+        }
+        input, select, textarea {
+            padding: 0.5rem;
+        }
+        input, select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        table {
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Cryptocurrency Exchange Fee Calculator - HamroTools",
+        "description": "Calculate cryptocurrency exchange fees instantly with our free Cryptocurrency Exchange Fee Calculator by HamroTools. Enter amount, exchange, and trade type for accurate fee calculations, perfect for all devices.",
+        "url": "https://www.singhyogendra.com.np/cryptocurrency-ex-fee-calculator",
+        "applicationCategory": "Utility",
+        "operatingSystem": "All"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the Cryptocurrency Exchange Fee Calculator by HamroTools?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Cryptocurrency Exchange Fee Calculator by HamroTools is a free tool designed to accurately calculate crypto transaction fees for various exchanges like Binance, Coinbase, Kraken, and others, helping users estimate costs efficiently."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I use the Cryptocurrency Exchange Fee Calculator?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Enter the amount, select the exchange, and choose the trade type in the HamroTools calculator, then click 'Calculate' to view the fee and net amount. Copy or reset results as needed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why should I use the HamroTools Cryptocurrency Exchange Fee Calculator?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The HamroTools Cryptocurrency Exchange Fee Calculator is fast, accurate, and user-friendly, offering a free solution for calculating crypto fees across different exchanges and trade types, ideal for traders and investors."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Cryptocurrency Exchange Fee Calculator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate cryptocurrency exchange fees instantly with our free online tool by HamroTools. Enter amount, exchange, and trade type for accurate results.</p>
+        </header>
+
+        <!-- Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="amount">Transaction Amount</label>
+                        <input id="amount" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.0001" min="0" placeholder="Enter amount (e.g., 0.5 BTC)" aria-describedby="amountHelp">
+                        <p id="amountHelp" class="text-xs text-gray-600 mt-1">Enter the transaction amount to calculate cryptocurrency exchange fees.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="exchange">Exchange</label>
+                        <select id="exchange" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="exchangeHelp">
+                            <option value="binance">Binance (0.1%)</option>
+                            <option value="coinbase">Coinbase (0.5%)</option>
+                            <option value="kraken">Kraken (0.16%)</option>
+                            <option value="gemini">Gemini (0.35%)</option>
+                            <option value="bitstamp">Bitstamp (0.5%)</option>
+                        </select>
+                        <p id="exchangeHelp" class="text-xs text-gray-600 mt-1">Select the cryptocurrency exchange for accurate fee calculation.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="tradeType">Trade Type</label>
+                        <select id="tradeType" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="tradeTypeHelp">
+                            <option value="spot">Spot (Standard Fee)</option>
+                            <option value="futures">Futures (0.02% Maker, 0.04% Taker)</option>
+                        </select>
+                        <p id="tradeTypeHelp" class="text-xs text-gray-600 mt-1">Select the trade type for accurate fee calculation (fees may vary by exchange).</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-cog mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 font-mono text-xs sm:text-sm md:text-base" rows="4" readonly aria-describedby="outputHelp"></textarea>
+                    <p id="outputHelp" class="text-xs text-gray-600 mt-1">Cryptocurrency exchange fee calculation results will appear here. Click "Copy" to share.</p>
+                    <table id="resultTable" class="mt-4 hidden">
+                        <thead>
+                            <tr>
+                                <th>Amount</th>
+                                <th>Exchange</th>
+                                <th>Trade Type</th>
+                                <th>Fee</th>
+                                <th>Net Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTableBody"></tbody>
+                    </table>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter a valid amount.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Cryptocurrency Exchange Fee Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Cryptocurrency Exchange Fee Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Cryptocurrency Exchange Fee Calculator - HamroTools is a free crypto fee calculator and online crypto fee calculator designed for accurate crypto transaction fee calculations. This hamrotools crypto fee calculator, crypto cost calculator, and free crypto fee tool allows you to calculate crypto fees for Binance (0.1%), Coinbase (0.5%), Kraken (0.16%), Gemini (0.35%), or Bitstamp (0.5%) exchanges, with spot or futures trade types, making it a reliable crypto fee estimator and crypto fee calculation tool.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter the transaction amount, select the exchange, and choose the trade type in our crypto fee tool by HamroTools, then click "Calculate" to view the crypto fee calculation and net amount. Copy or reset the results as needed. This online crypto cost calculator and transaction fee calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Cryptocurrency Exchange Fee Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our binance fee calculator, coinbase fee calculator, and kraken fee calculator by HamroTools is fast, accurate, and user-friendly, offering a free crypto fee calculator for seamless crypto fee calculations. This crypto fee estimator and transaction fee calculator is perfect for traders and investors managing cryptocurrency exchanges.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        const exchangeFees = {
+            binance: { spot: 0.001, futures: { maker: 0.0002, taker: 0.0004 } },
+            coinbase: { spot: 0.005, futures: { maker: 0.0004, taker: 0.0006 } },
+            kraken: { spot: 0.0016, futures: { maker: 0.0002, taker: 0.0005 } },
+            gemini: { spot: 0.0035, futures: { maker: 0.0003, taker: 0.0005 } },
+            bitstamp: { spot: 0.005, futures: { maker: 0.0003, taker: 0.0006 } }
+        };
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateCryptoFee(amount, exchange, tradeType) {
+            let feeRate = exchangeFees[exchange]?.[tradeType] || 0;
+            if (tradeType === 'futures') {
+                feeRate = (feeRate.maker + feeRate.taker) / 2; // Average for simplicity
+            }
+            const fee = amount * feeRate;
+            return fee.toFixed(6);
+        }
+
+        function processCalculation() {
+            const amountInput = document.getElementById('amount').value;
+            const exchange = document.getElementById('exchange').value;
+            const tradeType = document.getElementById('tradeType').value;
+            const output = document.getElementById('output');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+            const resultTable = document.getElementById('resultTable');
+            const resultTableBody = document.getElementById('resultTableBody');
+
+            errorMessage.classList.add('hidden');
+            output.value = '';
+            copyBtn.disabled = true;
+            resultTable.classList.add('hidden');
+            resultTableBody.innerHTML = '';
+
+            const amount = parseFloat(amountInput);
+            if (isNaN(amount) || amount < 0) {
+                errorMessage.textContent = 'Error: Please enter a valid positive amount.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            const fee = calculateCryptoFee(amount, exchange, tradeType);
+            const netAmount = (amount - fee).toFixed(6);
+            const exchangeLabel = exchange.charAt(0).toUpperCase() + exchange.slice(1);
+            const tradeTypeLabel = tradeType.charAt(0).toUpperCase() + tradeType.slice(1);
+            const outputText = `Amount: ${amount.toFixed(6)}\nExchange: ${exchangeLabel}\nTrade Type: ${tradeTypeLabel}\nFee: ${fee}\nNet Amount: ${netAmount}`;
+
+            resultTableBody.innerHTML = `
+                <tr>
+                    <td>${amount.toFixed(6)}</td>
+                    <td>${exchangeLabel}</td>
+                    <td>${tradeTypeLabel}</td>
+                    <td>${fee}</td>
+                    <td>${netAmount}</td>
+                </tr>
+            `;
+            resultTable.classList.remove('hidden');
+            output.value = outputText;
+            copyBtn.dataset.result = outputText;
+            copyBtn.disabled = false;
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', processCalculation);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Results copied!');
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy results.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('amount').value = '';
+            document.getElementById('exchange').value = 'binance';
+            document.getElementById('tradeType').value = 'spot';
+            document.getElementById('output').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('resultTable').classList.add('hidden');
+            document.getElementById('resultTableBody').innerHTML = '';
+        });
+    </script>
+</body>
+</html>
