@@ -42,7 +42,7 @@
         async function displayLogins() {
             try {
                 // Fetch JSON data from a different folder
-                const response = await fetch('/data.json');
+                const response = await fetch('data.json');
                 const logins = await response.json();
                 
                 // Save to localStorage to simulate persistent storage
