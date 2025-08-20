@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>JavaScript Obfuscator Tool</title>
+    <meta name="description" content="Obfuscate JavaScript code instantly with our free JavaScript Obfuscator Tool by HamroTools. Upload files or paste code to generate secure, complex output with customizable string transformations, copy, and reset functionality, perfect for all devices.">
+    <meta name="keywords" content="javascript obfuscator tool, free js obfuscator, online js obfuscator, hamrotools js obfuscator, js code obfuscator, javascript code protector, free js code tool, js obfuscation tool, javascript minifier, online js code obfuscator, js variable renamer, js code compressor, code obfuscation calculator, js fee calculator, calculate js obfuscation">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools JavaScript Obfuscator Tool Team">
+    <meta property="og:title" content="JavaScript Obfuscator Tool - HamroTools">
+    <meta property="og:description" content="Obfuscate JavaScript code instantly with our free JavaScript Obfuscator Tool by HamroTools. Upload files or paste code to generate secure, complex output with customizable string transformations, copy, and reset functionality, perfect for all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/js-obfuscator-tool">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JavaScript Obfuscator Tool - HamroTools">
+    <meta name="twitter:description" content="Obfuscate JavaScript code instantly with our free JavaScript Obfuscator Tool by HamroTools. Upload files or paste code to generate secure, complex output with customizable string transformations, copy, and reset functionality, perfect for all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/js-obfuscator-tool">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            input, textarea, select {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+                line-height: 1.5;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        input, textarea, select {
+            padding: 0.5rem;
+        }
+        input[type="file"], input[type="text"], input[type="number"], select, textarea {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        textarea {
+            font-family: 'Inter', sans-serif;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            resize: vertical;
+        }
+        select {
+            font-family: 'Inter', sans-serif;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            background-color: #fff;
+        }
+        select:focus {
+            outline: none;
+            border-color: #ef4444;
+            ring: 2px solid #ef4444;
+        }
+        .file-input-label {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #dc2626;
+            color: #fff;
+            font-weight: 600;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .file-input-label:hover {
+            background-color: #b91c1c;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "JavaScript Obfuscator Tool - HamroTools",
+        "description": "Obfuscate JavaScript code instantly with our free JavaScript Obfuscator Tool by HamroTools. Upload files or paste code to generate secure, complex output with customizable string transformations, copy, and reset functionality, perfect for all devices.",
+        "url": "https://www.singhyogendra.com.np/js-obfuscator-tool",
+        "applicationCategory": "Utility",
+        "operatingSystem": "All"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the JavaScript Obfuscator Tool by HamroTools?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The JavaScript Obfuscator Tool by HamroTools is a free online tool that obfuscates JavaScript code to protect it from reverse engineering. It supports uploading files or pasting code, with customizable string transformations and copy functionality."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I use the JavaScript Obfuscator Tool?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Upload a JavaScript file or paste code into the input textarea, configure string transformation options, click 'Obfuscate' to generate the obfuscated code, and view the result in the output textarea. Click 'Copy' to copy the output or 'Reset' to clear the form."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why should I use the HamroTools JavaScript Obfuscator Tool?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The HamroTools JavaScript Obfuscator Tool is fast, secure, and user-friendly, offering a free solution for obfuscating JavaScript code with customizable options to protect intellectual property, supporting both upload and paste inputs."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-code text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">JavaScript Obfuscator Tool</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Obfuscate JavaScript code instantly with our free tool by HamroTools. Upload files or paste code to generate secure output with customizable string transformations.</p>
+        </header>
+
+        <!-- Obfuscator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="codeInput">Paste JavaScript Code</label>
+                        <textarea id="codeInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" rows="8" placeholder="Paste JavaScript code here..." aria-describedby="codeHelp"></textarea>
+                        <p id="codeHelp" class="text-xs text-gray-600 mt-1">Paste your JavaScript code or upload a file to obfuscate it.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="fileUpload">Upload JavaScript File</label>
+                        <input id="fileUpload" class="hidden" type="file" accept=".js" aria-describedby="fileHelp">
+                        <label for="fileUpload" class="file-input-label">Choose File</label>
+                        <p id="fileHelp" class="text-xs text-gray-600 mt-1">Upload a .js file to obfuscate its content (optional).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">String Transformation Options</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="stringArrayThreshold">String Array Threshold</label>
+                                <input id="stringArrayThreshold" type="number" step="0.01" min="0" max="1" value="0.75" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="stringArrayThresholdHelp">
+                                <p id="stringArrayThresholdHelp" class="text-xs text-gray-600 mt-1">Probability of string array transformation (0 to 1).</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="stringArrayIndexesType">String Array Indexes Type</label>
+                                <select id="stringArrayIndexesType" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="stringArrayIndexesTypeHelp">
+                                    <option value="hexadecimal-number">Hexadecimal Number</option>
+                                    <option value="decimal-number">Decimal Number</option>
+                                </select>
+                                <p id="stringArrayIndexesTypeHelp" class="text-xs text-gray-600 mt-1">Format for string array indexes.</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="stringArrayCallsTransformThreshold">String Array Calls Transform Threshold</label>
+                                <input id="stringArrayCallsTransformThreshold" type="number" step="0.01" min="0" max="1" value="0" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="stringArrayCallsTransformThresholdHelp">
+                                <p id="stringArrayCallsTransformThresholdHelp" class="text-xs text-gray-600 mt-1">Probability of transforming string array calls (0 to 1).</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="stringArrayWrappersCount">String Array Wrappers Count</label>
+                                <input id="stringArrayWrappersCount" type="number" min="0" value="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="stringArrayWrappersCountHelp">
+                                <p id="stringArrayWrappersCountHelp" class="text-xs text-gray-600 mt-1">Number of wrapper functions for string array.</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="stringArrayWrappersType">String Array Wrappers Type</label>
+                                <select id="stringArrayWrappersType" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="stringArrayWrappersTypeHelp">
+                                    <option value="variable">Variable</option>
+                                    <option value="function">Function</option>
+                                </select>
+                                <p id="stringArrayWrappersTypeHelp" class="text-xs text-gray-600 mt-1">Type of wrappers for string array access.</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="stringArrayWrappersParametersMax">String Array Wrappers Parameters Maximum Count</label>
+                                <input id="stringArrayWrappersParametersMax" type="number" min="0" value="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="stringArrayWrappersParametersMaxHelp">
+                                <p id="stringArrayWrappersParametersMaxHelp" class="text-xs text-gray-600 mt-1">Maximum number of parameters for wrapper functions.</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="stringArrayEncoding">String Array Encoding</label>
+                                <select id="stringArrayEncoding" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="stringArrayEncodingHelp">
+                                    <option value="none">None</option>
+                                    <option value="base64">Base64</option>
+                                    <option value="rc4">RC4</option>
+                                </select>
+                                <p id="stringArrayEncodingHelp" class="text-xs text-gray-600 mt-1">Encoding method for string array.</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="splitStringsChunkLength">Split Strings Chunk Length</label>
+                                <input id="splitStringsChunkLength" type="number" min="1" value="10" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="splitStringsChunkLengthHelp">
+                                <p id="splitStringsChunkLengthHelp" class="text-xs text-gray-600 mt-1">Length of chunks for splitting strings.</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="forceTransformStrings">Force Transform Strings</label>
+                                <input id="forceTransformStrings" type="text" value="^some *string *or RegExp" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="forceTransformStringsHelp">
+                                <p id="forceTransformStringsHelp" class="text-xs text-gray-600 mt-1">RegExp for strings to force transform.</p>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1" for="reservedStrings">Reserved Strings</label>
+                                <input id="reservedStrings" type="text" placeholder="Comma-separated strings" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm" aria-describedby="reservedStringsHelp">
+                                <p id="reservedStringsHelp" class="text-xs text-gray-600 mt-1">Comma-separated strings to exclude from transformation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <button type="button" id="obfuscateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-lock mr-2"></i>
+                            Obfuscate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" title="Reset form">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Obfuscated Code</label>
+                    <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 font-mono text-xs sm:text-sm md:text-base" rows="8" readonly aria-describedby="outputHelp"></textarea>
+                    <p id="outputHelp" class="text-xs text-gray-600 mt-1">Obfuscated JavaScript code will appear here. Click "Copy" to copy the result.</p>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please provide valid JavaScript code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About JavaScript Obfuscator Tool - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the JavaScript Obfuscator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The JavaScript Obfuscator Tool by HamroTools is a free javascript obfuscator tool and online js obfuscator designed to protect your code from reverse engineering. This hamrotools js obfuscator, javascript code protector, and free js code tool supports uploading files or pasting code, offering customizable string transformations like js variable renamer and js code compressor for secure javascript minifier output.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Upload a JavaScript file or paste code into the input field of our online js code obfuscator by HamroTools, configure string transformation options, click "Obfuscate" to generate the obfuscated code, and view the result in the output textarea. Click "Copy" to copy the output or "Reset" to clear the form. This js code obfuscator and code obfuscation calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our JavaScript Obfuscator Tool?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our javascript minifier and js code compressor by HamroTools is fast, accurate, and user-friendly, offering a free js obfuscator for seamless javascript code obfuscation. This js code obfuscator and code obfuscation calculator is perfect for developers protecting their code with customizable string transformations, supporting both upload and paste inputs.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function minifyJS(code) {
+            return code
+                .replace(/\/\/.*|\/\*[\s\S]*?\*\//g, '') // Remove comments
+                .replace(/\s+/g, ' ') // Replace whitespace with single space
+                .replace(/\s?([=,+\-*\/;:{}()<>])\s?/g, '$1') // Remove spaces around operators
+                .trim();
+        }
+
+        function encodeString(str, encoding) {
+            if (encoding === 'base64') {
+                return btoa(str);
+            } else if (encoding === 'rc4') {
+                const key = 'hamrotools';
+                let result = '';
+                for (let i = 0, j = 0; i < str.length; i++) {
+                    j = (j + 1) % key.length;
+                    result += String.fromCharCode(str.charCodeAt(i) ^ key.charCodeAt(j));
+                }
+                return result;
+            }
+            return str;
+        }
+
+        function generateHexVar() {
+            return '_0x' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        }
+
+        function splitStrings(code, chunkLength, encoding, reservedStrings) {
+            const stringRegex = /(["'])(.*?)\1/g;
+            let stringArray = [];
+            let stringMap = {};
+            let arrayIndex = 0;
+
+            code = code.replace(stringRegex, (match, quote, str) => {
+                if (reservedStrings.includes(str)) {
+                    return match;
+                }
+                if (str.length <= chunkLength) {
+                    const encoded = encodeString(str, encoding);
+                    stringArray.push(encoded);
+                    stringMap[str] = `_0x_str[${arrayIndex}]`;
+                    return quote + `_0x_str[${arrayIndex++}]` + quote;
+                } else {
+                    const chunks = [];
+                    for (let i = 0; i < str.length; i += chunkLength) {
+                        const chunk = str.slice(i, i + chunkLength);
+                        const encoded = encodeString(chunk, encoding);
+                        stringArray.push(encoded);
+                        chunks.push(`_0x_str[${arrayIndex}]`);
+                        arrayIndex++;
+                    }
+                    return quote + chunks.join('+') + quote;
+                }
+            });
+
+            return { code, stringArray, stringMap };
+        }
+
+        function generateWrapperFunction(count, type, maxParams) {
+            if (type === 'variable') {
+                return `var _0x_w=function(_0xi){return ${count > 1 ? '_0x_w(_0xi)' : '_0x_str[_0xi]'};};`;
+            } else {
+                const params = Array.from({ length: Math.min(maxParams, 2) }, (_, i) => `_0xp${i}`).join(',');
+                return `function _0x_w(_0xi${params ? ',' + params : ''}){return ${count > 1 ? '_0x_w(_0xi)' : '_0x_str[_0xi]'};};`;
+            }
+        }
+
+        function obfuscateJS(code, options) {
+            let obfuscatedCode = minifyJS(code);
+
+            // Extract variables
+            const variables = code.match(/\b(var|let|const)\b\s+(\w+)/g) || [];
+            const variableMap = {};
+            variables.forEach((varDec, index) => {
+                const varName = varDec.replace(/(var|let|const)\s+/, '');
+                if (!options.reservedStrings.includes(varName)) {
+                    variableMap[varName] = generateHexVar();
+                }
+            });
+
+            // Apply variable renaming
+            for (const oldName in variableMap) {
+                obfuscatedCode = obfuscatedCode.replace(new RegExp('\\b' + oldName + '\\b', 'g'), variableMap[oldName]);
+            }
+
+            // Handle string transformations
+            if (Math.random() > options.stringArrayThreshold) {
+                return `(function(${generateHexVar()},${generateHexVar()}){return ${obfuscatedCode};})();`;
+            }
+
+            let { code: transformedCode, stringArray } = splitStrings(obfuscatedCode, options.splitStringsChunkLength, options.stringArrayEncoding, options.reservedStrings);
+
+            // Generate string array
+            const indexes = options.stringArrayIndexesType === 'hexadecimal-number'
+                ? stringArray.map((_, i) => '0x' + i.toString(16))
+                : stringArray.map((_, i) => i.toString());
+            const arrayCode = `var _0x_str=[${stringArray.map(s => `"${s.replace(/"/g, '\\"')}"`).join(',')}];`;
+
+            // Generate wrapper function
+            const wrapperCode = generateWrapperFunction(options.stringArrayWrappersCount, options.stringArrayWrappersType, options.stringArrayWrappersParametersMax);
+
+            // Transform string array calls based on threshold
+            if (Math.random() < options.stringArrayCallsTransformThreshold) {
+                transformedCode = transformedCode.replace(/_0x_str\[(\d+)\]/g, (match, index) => `_0x_w(${indexes[index]})`);
+            }
+
+            // Apply force transform strings
+            if (options.forceTransformStrings) {
+                try {
+                    const regex = new RegExp(options.forceTransformStrings);
+                    transformedCode = transformedCode.replace(regex, (match) => {
+                        if (!options.reservedStrings.includes(match)) {
+                            const encoded = encodeString(match, options.stringArrayEncoding);
+                            stringArray.push(encoded);
+                            return `_0x_str[${stringArray.length - 1}]`;
+                        }
+                        return match;
+                    });
+                } catch (e) {
+                    // Invalid regex, skip force transform
+                }
+            }
+
+            // Wrap in self-executing function with try-catch and while loop
+            const param1 = generateHexVar();
+            const param2 = generateHexVar();
+            const var1 = generateHexVar();
+            const var2 = generateHexVar();
+            const var3 = generateHexVar();
+            return `(function(${param1},${param2}){var ${var1}=${param2},${var2}=${param1}();while(!![]){try{var ${var3}=${Math.floor(Math.random() * 1000)-500};${arrayCode}${wrapperCode}return ${transformedCode};}catch(_0xe){return ${var2};}}})(${generateHexVar()},${generateHexVar()});`;
+        }
+
+        function processObfuscation() {
+            const codeInput = document.getElementById('codeInput').value.trim();
+            const output = document.getElementById('output');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            const options = {
+                stringArrayThreshold: parseFloat(document.getElementById('stringArrayThreshold').value) || 0.75,
+                stringArrayIndexesType: document.getElementById('stringArrayIndexesType').value,
+                stringArrayCallsTransformThreshold: parseFloat(document.getElementById('stringArrayCallsTransformThreshold').value) || 0,
+                stringArrayWrappersCount: parseInt(document.getElementById('stringArrayWrappersCount').value) || 1,
+                stringArrayWrappersType: document.getElementById('stringArrayWrappersType').value,
+                stringArrayWrappersParametersMax: parseInt(document.getElementById('stringArrayWrappersParametersMax').value) || 2,
+                stringArrayEncoding: document.getElementById('stringArrayEncoding').value,
+                splitStringsChunkLength: parseInt(document.getElementById('splitStringsChunkLength').value) || 10,
+                forceTransformStrings: document.getElementById('forceTransformStrings').value,
+                reservedStrings: document.getElementById('reservedStrings').value.split(',').map(s => s.trim()).filter(s => s) || []
+            };
+
+            errorMessage.classList.add('hidden');
+            output.value = '';
+            copyBtn.disabled = true;
+
+            if (!codeInput) {
+                errorMessage.textContent = 'Error: Please paste JavaScript code or upload a file.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                const obfuscatedCode = obfuscateJS(codeInput, options);
+                output.value = obfuscatedCode;
+                copyBtn.disabled = false;
+            } catch (err) {
+                errorMessage.textContent = 'Error: Failed to obfuscate code. Please check your input.';
+                errorMessage.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('obfuscateBtn').addEventListener('click', processObfuscation);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const output = document.getElementById('output').value;
+            if (output) {
+                navigator.clipboard.writeText(output).then(() => {
+                    showPopup('Obfuscated code copied!');
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('codeInput').value = '';
+            document.getElementById('output').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('fileUpload').value = '';
+            // Reset options to default
+            document.getElementById('stringArrayThreshold').value = '0.75';
+            document.getElementById('stringArrayIndexesType').value = 'hexadecimal-number';
+            document.getElementById('stringArrayCallsTransformThreshold').value = '0';
+            document.getElementById('stringArrayWrappersCount').value = '1';
+            document.getElementById('stringArrayWrappersType').value = 'variable';
+            document.getElementById('stringArrayWrappersParametersMax').value = '2';
+            document.getElementById('stringArrayEncoding').value = 'none';
+            document.getElementById('splitStringsChunkLength').value = '10';
+            document.getElementById('forceTransformStrings').value = '^some *string *or RegExp';
+            document.getElementById('reservedStrings').value = '';
+        });
+
+        document.getElementById('fileUpload').addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    document.getElementById('codeInput').value = e.target.result;
+                    processObfuscation();
+                };
+                reader.readAsText(file);
+            }
+        });
+    </script>
+</body>
+</html>
