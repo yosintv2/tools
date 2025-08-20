@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- https://grok.com/chat/a69d834d-dd8d-4eac-86ac-6e177b56c0f0 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMS Mart Receipt Maker</title>
@@ -486,39 +484,65 @@ Lollypop, 12, 890
                 }
 
                 // Additional text below table
-                const finalY = doc.lastAutoTable.finalY || (shopPhoneY + 24);
+                let finalY = doc.lastAutoTable.finalY || (shopPhoneY + 24);
+                const pageHeight = 297; // A4 height in mm
+                const bottomMargin = 20; // Bottom margin
+                const maxY = pageHeight - bottomMargin;
+
+                // Function to check and add page if needed
+                function checkAddPage(currentY, neededSpace) {
+                    if (currentY + neededSpace > maxY) {
+                        doc.addPage();
+                        currentY = 20; // Start at top margin of new page
+                        console.log('Added new page, reset Y to:', currentY);
+                    }
+                    return currentY;
+                }
+
+                // Estimate space needed for text
+                const receiverAddressDim = doc.getTextDimensions(receiverShopAddress, { fontSize: 10, maxWidth: 120 });
+                let totalSpaceNeeded = 15 + 4 + 4 + 4 + 4 + 4 + receiverAddressDim.h + 4 + (pdfNotes ? 8 + doc.getTextDimensions(pdfNotes, { fontSize: 10, maxWidth: 190 }).h : 0);
+
+                // Add page if needed for initial text block
+                finalY = checkAddPage(finalY, totalSpaceNeeded);
+
+                // Add text with equal spacing (4mm between lines)
                 doc.setFontSize(10);
                 doc.setFont('helvetica', 'normal');
-                doc.text('This contract will automatically renew every year', 200, finalY + 10, { align: 'right' });
+                doc.text('This contract will automatically renew every year', 200, finalY + 15, { align: 'right' });
+                console.log('Added "This contract..." at Y:', finalY + 15);
                 doc.setFont('helvetica', 'bold');
-                doc.text('Payment Method: Payment will be done by cash on delivery basis', 200, finalY + 15, { align: 'right' });
+                doc.text('Payment Method: Payment will be done by cash on delivery basis', 200, finalY + 19, { align: 'right' });
+                console.log('Added "Payment Method..." at Y:', finalY + 19);
                 doc.setFont('helvetica', 'normal');
-                doc.text('Thank You,', 10, finalY + 25);
-                doc.text('Sincerely,', 10, finalY + 30);
-                doc.setFont('helvetica', 'bold'); // Bold for receiverShopName
-                doc.text(receiverShopName, 10, finalY + 35);
+                doc.text('Thank You,', 10, finalY + 23);
+                console.log('Added "Thank You," at Y:', finalY + 23);
+                doc.text('Sincerely,', 10, finalY + 27);
+                console.log('Added "Sincerely," at Y:', finalY + 27);
+                doc.setFont('helvetica', 'bold');
+                doc.text(receiverShopName, 10, finalY + 31);
+                console.log('Added Receiver Shop Name at Y:', finalY + 31);
                 doc.setFont('helvetica', 'normal');
-                const receiverAddressDim = doc.getTextDimensions(receiverShopAddress, { fontSize: 10, maxWidth: 120 });
-                doc.text(receiverShopAddress, 10, finalY + 40, { maxWidth: 120 });
-                const receiverPhoneY = finalY + 40 + receiverAddressDim.h + 2; // Dynamic Y based on address height
+                doc.text(receiverShopAddress, 10, finalY + 35, { maxWidth: 120 });
+                console.log('Added Receiver Shop Address at Y:', finalY + 35);
+                const receiverPhoneY = finalY + 35 + receiverAddressDim.h + 4;
                 doc.text(`Phone: ${receiverShopPhone}`, 10, receiverPhoneY);
                 console.log('Receiver address dimensions:', receiverAddressDim, 'Phone Y:', receiverPhoneY);
-                console.log('Additional text added');
-
-                // Managing Director (right-aligned)
                 doc.setFont('helvetica', 'normal');
-                doc.text('Managing Director', 200, finalY + 35, { align: 'right' });
-                doc.setFont('helvetica', 'bold'); // Bold for managingDirector
-                doc.text(managingDirector, 200, finalY + 40, { align: 'right' });
-                console.log('Managing Director added');
+                doc.text('Managing Director', 200, finalY + 31, { align: 'right' });
+                console.log('Added "Managing Director" at Y:', finalY + 31);
+                doc.setFont('helvetica', 'bold');
+                doc.text(managingDirector, 200, finalY + 35, { align: 'right' });
+                console.log('Added Name of Managing Director at Y:', finalY + 35);
+                console.log('Additional text added');
 
                 // Add notes if provided
                 if (pdfNotes) {
+                    const notesY = checkAddPage(receiverPhoneY, 8 + doc.getTextDimensions(pdfNotes, { fontSize: 10, maxWidth: 190 }).h);
                     doc.setFont('helvetica', 'normal');
-                    const notesY = receiverPhoneY + 10;
-                    doc.text('Notes:', 10, notesY);
-                    doc.text(pdfNotes, 10, notesY + 5, { maxWidth: 190 });
-                    console.log('Notes added to PDF:', pdfNotes);
+                    doc.text('Notes:', 10, notesY + 8);
+                    doc.text(pdfNotes, 10, notesY + 12, { maxWidth: 190 });
+                    console.log('Notes added to PDF at Y:', notesY + 8, 'Text:', pdfNotes);
                 } else {
                     console.log('No notes provided for PDF');
                 }
