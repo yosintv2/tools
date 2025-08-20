@@ -488,6 +488,7 @@ Lollypop, 12, 890
                 const pageHeight = 297; // A4 height in mm
                 const bottomMargin = 20; // Bottom margin
                 const maxY = pageHeight - bottomMargin;
+                const lineSpacing = 1; // Consistent 4mm spacing
 
                 // Function to check and add page if needed
                 function checkAddPage(currentY, neededSpace) {
@@ -499,50 +500,84 @@ Lollypop, 12, 890
                     return currentY;
                 }
 
-                // Estimate space needed for text
+                // Calculate text dimensions for accurate spacing
+                const contractDim = doc.getTextDimensions('This contract will automatically renew every year', { fontSize: 10, maxWidth: 120 });
+                const paymentDim = doc.getTextDimensions('Payment Method: Payment will be done by cash on delivery basis', { fontSize: 10, maxWidth: 120 });
+                const thankYouDim = doc.getTextDimensions('Thank You,', { fontSize: 10 });
+                const sincerelyDim = doc.getTextDimensions('Sincerely,', { fontSize: 10 });
+                const receiverNameDim = doc.getTextDimensions(receiverShopName, { fontSize: 10 });
                 const receiverAddressDim = doc.getTextDimensions(receiverShopAddress, { fontSize: 10, maxWidth: 120 });
-                let totalSpaceNeeded = 15 + 4 + 4 + 4 + 4 + 4 + receiverAddressDim.h + 4 + (pdfNotes ? 8 + doc.getTextDimensions(pdfNotes, { fontSize: 10, maxWidth: 190 }).h : 0);
+                const receiverPhoneDim = doc.getTextDimensions(`Phone: ${receiverShopPhone}`, { fontSize: 10 });
+                const managingDirectorDim = doc.getTextDimensions('Managing Director', { fontSize: 10 });
+                const managingDirectorNameDim = doc.getTextDimensions(managingDirector, { fontSize: 10 });
+
+                // Estimate space needed for text
+                let totalSpaceNeeded = 15 + // Initial offset
+                    contractDim.h + lineSpacing +
+                    paymentDim.h + lineSpacing +
+                    thankYouDim.h + lineSpacing +
+                    sincerelyDim.h + lineSpacing +
+                    Math.max(receiverNameDim.h, managingDirectorDim.h) + lineSpacing +
+                    Math.max(receiverAddressDim.h, managingDirectorNameDim.h) + lineSpacing +
+                    receiverPhoneDim.h +
+                    (pdfNotes ? 8 + doc.getTextDimensions(pdfNotes, { fontSize: 10, maxWidth: 190 }).h : 0);
 
                 // Add page if needed for initial text block
                 finalY = checkAddPage(finalY, totalSpaceNeeded);
 
-                // Add text with equal spacing (4mm between lines)
+                // Add text with consistent 4mm spacing
                 doc.setFontSize(10);
+                let currentY = finalY + 15; // Start 15mm below table
                 doc.setFont('helvetica', 'normal');
-                doc.text('This contract will automatically renew every year', 200, finalY + 15, { align: 'right' });
-                console.log('Added "This contract..." at Y:', finalY + 15);
+                doc.text('This contract will automatically renew every year', 200, currentY, { align: 'right', maxWidth: 120 });
+                console.log('Added "This contract..." at Y:', currentY, 'Height:', contractDim.h);
+                currentY += contractDim.h + lineSpacing;
+
                 doc.setFont('helvetica', 'bold');
-                doc.text('Payment Method: Payment will be done by cash on delivery basis', 200, finalY + 19, { align: 'right' });
-                console.log('Added "Payment Method..." at Y:', finalY + 19);
+                doc.text('Payment Method: Payment will be done by cash on delivery basis', 200, currentY, { align: 'right', maxWidth: 120 });
+                console.log('Added "Payment Method..." at Y:', currentY, 'Height:', paymentDim.h);
+                currentY += paymentDim.h + lineSpacing;
+
                 doc.setFont('helvetica', 'normal');
-                doc.text('Thank You,', 10, finalY + 23);
-                console.log('Added "Thank You," at Y:', finalY + 23);
-                doc.text('Sincerely,', 10, finalY + 27);
-                console.log('Added "Sincerely," at Y:', finalY + 27);
+                doc.text('Thank You,', 10, currentY);
+                console.log('Added "Thank You," at Y:', currentY, 'Height:', thankYouDim.h);
+                currentY += thankYouDim.h + lineSpacing;
+
+                doc.text('Sincerely,', 10, currentY);
+                console.log('Added "Sincerely," at Y:', currentY, 'Height:', sincerelyDim.h);
+                currentY += sincerelyDim.h + lineSpacing;
+
                 doc.setFont('helvetica', 'bold');
-                doc.text(receiverShopName, 10, finalY + 31);
-                console.log('Added Receiver Shop Name at Y:', finalY + 31);
+                doc.text(receiverShopName, 10, currentY);
+                console.log('Added Receiver Shop Name at Y:', currentY, 'Height:', receiverNameDim.h);
                 doc.setFont('helvetica', 'normal');
-                doc.text(receiverShopAddress, 10, finalY + 35, { maxWidth: 120 });
-                console.log('Added Receiver Shop Address at Y:', finalY + 35);
-                const receiverPhoneY = finalY + 35 + receiverAddressDim.h + 4;
-                doc.text(`Phone: ${receiverShopPhone}`, 10, receiverPhoneY);
-                console.log('Receiver address dimensions:', receiverAddressDim, 'Phone Y:', receiverPhoneY);
+                doc.text('Managing Director', 200, currentY, { align: 'right' });
+                console.log('Added "Managing Director" at Y:', currentY, 'Height:', managingDirectorDim.h);
+                currentY += Math.max(receiverNameDim.h, managingDirectorDim.h) + lineSpacing;
+
                 doc.setFont('helvetica', 'normal');
-                doc.text('Managing Director', 200, finalY + 31, { align: 'right' });
-                console.log('Added "Managing Director" at Y:', finalY + 31);
+                doc.text(receiverShopAddress, 10, currentY, { maxWidth: 120 });
+                console.log('Added Receiver Shop Address at Y:', currentY, 'Height:', receiverAddressDim.h);
                 doc.setFont('helvetica', 'bold');
-                doc.text(managingDirector, 200, finalY + 35, { align: 'right' });
-                console.log('Added Name of Managing Director at Y:', finalY + 35);
+                doc.text(managingDirector, 200, currentY, { align: 'right' });
+                console.log('Added Name of Managing Director at Y:', currentY, 'Height:', managingDirectorNameDim.h);
+                currentY += Math.max(receiverAddressDim.h, managingDirectorNameDim.h) + lineSpacing;
+
+                doc.setFont('helvetica', 'normal');
+                doc.text(`Phone: ${receiverShopPhone}`, 10, currentY);
+                console.log('Added Receiver Shop Phone at Y:', currentY, 'Height:', receiverPhoneDim.h);
+                currentY += receiverPhoneDim.h;
+
                 console.log('Additional text added');
 
                 // Add notes if provided
                 if (pdfNotes) {
-                    const notesY = checkAddPage(receiverPhoneY, 8 + doc.getTextDimensions(pdfNotes, { fontSize: 10, maxWidth: 190 }).h);
+                    const notesDim = doc.getTextDimensions(pdfNotes, { fontSize: 10, maxWidth: 190 });
+                    const notesY = checkAddPage(currentY, 8 + notesDim.h);
                     doc.setFont('helvetica', 'normal');
                     doc.text('Notes:', 10, notesY + 8);
                     doc.text(pdfNotes, 10, notesY + 12, { maxWidth: 190 });
-                    console.log('Notes added to PDF at Y:', notesY + 8, 'Text:', pdfNotes);
+                    console.log('Notes added to PDF at Y:', notesY + 8, 'Text:', pdfNotes, 'Height:', notesDim.h);
                 } else {
                     console.log('No notes provided for PDF');
                 }
