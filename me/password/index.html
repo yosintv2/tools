@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Password Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center h-screen">
+    <!-- Login Popup -->
+    <div id="loginPopup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-sm">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Sign In</h2>
+            <input id="idInput" type="text" placeholder="Login ID" class="w-full px-4 py-2 mb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <input id="passwordInput" type="password" placeholder="Password" class="w-full px-4 py-2 mb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <button id="loginButton" class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">Login</button>
+            <p id="errorMessage" class="text-red-500 text-sm mt-3 hidden">Invalid ID or Password</p>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden until login) -->
+    <div id="mainContent" class="hidden container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-8 text-gray-900 text-center">Stored Logins</h1>
+        
+        <!-- Full-Width Professional Table -->
+        <div class="overflow-x-auto max-w-none mx-auto">
+            <table class="w-full text-left border-collapse bg-white shadow-xl rounded-lg">
+                <thead>
+                    <tr class="bg-blue-600 text-white">
+                        <th class="px-8 py-4 text-sm font-semibold uppercase tracking-wide rounded-tl-lg">Website</th>
+                        <th class="px-8 py-4 text-sm font-semibold uppercase tracking-wide">ID</th>
+                        <th class="px-8 py-4 text-sm font-semibold uppercase tracking-wide rounded-tr-lg">Password</th>
+                    </tr>
+                </thead>
+                <tbody id="loginTable" class="divide-y divide-gray-200"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Function to load and display logins from JSON
+        async function displayLogins() {
+            try {
+                // Fetch JSON data from a different folder
+                const response = await fetch('/data.json');
+                const logins = await response.json();
+                
+                // Save to localStorage to simulate persistent storage
+                localStorage.setItem('logins', JSON.stringify(logins));
+                
+                const tableBody = document.getElementById('loginTable');
+                tableBody.innerHTML = '';
+                logins.forEach((login, index) => {
+                    const row = document.createElement('tr');
+                    row.className = index % 2 === 0 ? 'bg-gray-50' : 'bg-white';
+                    row.innerHTML = `
+                        <td class="px-8 py-4 text-sm text-gray-700 cursor-pointer" ondblclick="copyToClipboard('${login.site}')">${login.site}</td>
+                        <td class="px-8 py-4 text-sm text-gray-700 cursor-pointer" ondblclick="copyToClipboard('${login.id}')">${login.id}</td>
+                        <td class="px-8 py-4 text-sm text-gray-700 cursor-pointer" ondblclick="copyToClipboard('${login.password}')">${login.password}</td>
+                    `;
+                    row.classList.add('hover:bg-blue-50', 'transition', 'duration-150');
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error fetching JSON:', error);
+                alert('Failed to load login data. Please check the JSON file.');
+            }
+        }
+
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(`Copied: ${text}`);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy text');
+            });
+        }
+
+        // Login validation
+        document.getElementById('loginButton').addEventListener('click', () => {
+            const id = document.getElementById('idInput').value;
+            const password = document.getElementById('passwordInput').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (id === '7275' && password === 'Shekhar@99') {
+                document.getElementById('loginPopup').classList.add('hidden');
+                document.getElementById('mainContent').classList.remove('hidden');
+                displayLogins();
+            } else {
+                errorMessage.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
