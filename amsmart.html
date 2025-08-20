@@ -240,11 +240,21 @@ Lollypop, 12, 890
             return phoneRegex.test(phone);
         }
 
-        // Set today's date in the date input field on page load
+        // Set today's date and load last input data on page load
         window.onload = function() {
             const dateInput = document.getElementById('pdfDate');
             dateInput.value = getTodayDate();
             console.log('Date set to:', dateInput.value);
+
+            // Load last input data from localStorage
+            const lastInput = localStorage.getItem('lastInputItemData');
+            if (lastInput) {
+                document.getElementById('dataInput').value = lastInput;
+                console.log('Loaded last input data from localStorage:', lastInput);
+            } else {
+                console.log('No last input data found in localStorage');
+            }
+
             loadData();
         };
 
@@ -260,6 +270,7 @@ Lollypop, 12, 890
                 tableBody.innerHTML = ''; // Clear existing table
 
                 let grandTotal = 0;
+                let hasValidData = false;
                 lines.forEach(line => {
                     const [itemName, quantity, rate] = line.split(',').map(item => item.trim());
                     const quantityNum = parseFloat(quantity);
@@ -287,8 +298,15 @@ Lollypop, 12, 890
                         `;
                         tableBody.appendChild(row);
                         serialNo++;
+                        hasValidData = true;
                     }
                 });
+
+                // Save input to localStorage only if valid data was processed
+                if (hasValidData) {
+                    localStorage.setItem('lastInputItemData', input);
+                    console.log('Saved input to localStorage:', input);
+                }
 
                 // Add total row to the table
                 if (items.length > 0) {
