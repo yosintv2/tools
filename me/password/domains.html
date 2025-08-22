@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain Expiration Countdown</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+  <div class="w-full max-w-4xl bg-white shadow-lg rounded-2xl p-6">
+    <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">📅 Domain Expiration Countdown</h1>
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
+          <tr>
+            <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Domain Name</th>
+            <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Expiration Date</th>
+            <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Countdown</th>
+          </tr>
+        </thead>
+        <tbody id="domainTable" class="bg-white divide-y divide-gray-200">
+          <!-- Rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const domains = [
+      { name: "yosintv.link", date: "2025-10-15" },
+      { name: "hls-player.net", date: "2026-05-17" },
+      { name: "kanjitest.online", date: "2028-08-03" },
+      { name: "pasuwadoseisei.com", date: "2026-08-13" },
+      { name: "rajdhani-hotel.com", date: "2026-05-22" },
+      { name: "yosintvlive.com", date: "2026-05-06" },
+      { name: "reducemyweight.net", date: "2026-01-07" },
+      { name: "yosin-tv.net	", date: "2026-04-15" },
+      { name: "getemoji.online", date: "2026-06-05" },
+      { name: "cricfoot.net", date: "2026-07-21" }
+    ];
+
+    function updateTable() {
+      const tableBody = document.getElementById("domainTable");
+      tableBody.innerHTML = "";
+
+      // Sort domains by nearest expiration
+      const sortedDomains = [...domains].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+      sortedDomains.forEach(domain => {
+        const expiryDate = new Date(domain.date).getTime();
+        const now = new Date().getTime();
+        const distance = expiryDate - now;
+
+        let countdownText = "";
+        if (distance > 0) {
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          countdownText = `${days}d ${hours}h remaining`;
+        } else {
+          countdownText = "❌ Expired";
+        }
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td class="px-6 py-4 whitespace-nowrap text-gray-800 font-medium">${domain.name}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-gray-600">${domain.date}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-blue-600 font-semibold">${countdownText}</td>
+        `;
+        tableBody.appendChild(tr);
+      });
+    }
+
+    setInterval(updateTable, 1000);
+    updateTable();
+  </script>
+</body>
+</html>
