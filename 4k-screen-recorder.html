@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>4K Screen Recorder - HamroTools</title>
+    <meta name="description" content="Record your screen in 4K resolution with our free 4K Screen Recorder by HamroTools. Automatically include microphone audio, auto-preview, and download MP4 videos easily, with reset functionality, perfect for all devices.">
+    <meta name="keywords" content="4k screen recorder, free screen recording tool, online screen recorder, hamrotools screen recorder, screen capture 4k, record screen mp4, free video recorder, screen video recorder, online 4k recorder, screen recording software, 4k video capture, free mp4 recorder, screen recorder with preview, video screen capture, free online screen recorder, screen recorder with audio">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools 4K Screen Recorder Team">
+    <meta property="og:title" content="4K Screen Recorder - HamroTools">
+    <meta property="og:description" content="Record your screen in 4K resolution with our free 4K Screen Recorder by HamroTools. Automatically include microphone audio, auto-preview, and download MP4 videos easily, with reset functionality, perfect for all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/4k-screen-recorder">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="4K Screen Recorder - HamroTools">
+    <meta name="twitter:description" content="Record your screen in 4K resolution with our free 4K Screen Recorder by HamroTools. Automatically include microphone audio, auto-preview, and download MP4 videos easily, with reset functionality, perfect for all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/4k-screen-recorder">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            touch-action: manipulation;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        .action-btn {
+            min-height: 48px;
+            min-width: 0;
+        }
+        .action-btn:focus {
+            outline: none;
+            ring: 2px;
+            ring-offset: 2px;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.75rem 1rem;
+            }
+            video {
+                width: 100%;
+                height: auto;
+            }
+            .button-row {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        @media (min-width: 640px) {
+            .button-row {
+                flex-wrap: nowrap !important;
+                justify-content: space-between;
+            }
+            .action-btn {
+                font-size: 1rem;
+                padding: 0.75rem 1rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        video {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            max-width: 100%;
+            height: auto;
+        }
+        #preview {
+            display: none;
+        }
+        #status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: #374151;
+        }
+        #recordingTime {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            color: #dc2626;
+        }
+        .recording {
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "4K Screen Recorder - HamroTools",
+        "description": "Record your screen in 4K resolution with our free 4K Screen Recorder by HamroTools. Automatically include microphone audio, auto-preview, and download MP4 videos easily, with reset functionality, perfect for all devices.",
+        "url": "https://www.singhyogendra.com.np/4k-screen-recorder",
+        "applicationCategory": "Utility",
+        "operatingSystem": "All"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the 4K Screen Recorder by HamroTools?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The 4K Screen Recorder by HamroTools is a free online tool that allows you to record your screen in 4K resolution with microphone audio included by default. It supports starting and stopping recording, auto-previewing the video, and downloading it as an MP4 file, with reset functionality."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I use the 4K Screen Recorder?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Click 'Start Recording' to begin capturing your screen in 4K with microphone audio, 'Stop Recording' to end and auto-preview, 'Download' to save as MP4, or 'Reset' to clear the recording."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why should I use the HamroTools 4K Screen Recorder?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The HamroTools 4K Screen Recorder is fast, free, and user-friendly, offering a simple solution for high-quality screen recording with microphone audio and auto-preview. It's perfect for tutorials, presentations, and content creation on all devices."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-video text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">4K Screen Recorder</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Record your screen in 4K resolution with our free online tool by HamroTools. Automatically include microphone audio, auto-preview, and download MP4 videos easily.</p>
+        </header>
+
+        <!-- Screen Recording Section -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Recording Status</label>
+                        <div id="status" class="text-xs sm:text-sm md:text-base text-gray-600" aria-live="polite">
+                            <span>Idle</span>
+                            <span id="recordingTime"></span>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-1">Click 'Start Recording' to begin capturing your screen with microphone audio. Ensure your browser supports screen sharing and microphone access.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 mt-4 button-row">
+                        <button type="button" id="startBtn" class="action-btn w-full sm:w-1/4 bg-red-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-red-700 transition focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex items-center justify-center text-sm sm:text-base" aria-label="Start recording screen">
+                            <i class="fas fa-video mr-2"></i>
+                            Start Recording
+                        </button>
+                        <button type="button" id="stopBtn" class="action-btn w-full sm:w-1/4 bg-red-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-red-700 transition focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex items-center justify-center text-sm sm:text-base" disabled aria-label="Stop recording screen">
+                            <i class="fas fa-stop mr-2"></i>
+                            Stop Recording
+                        </button>
+                        <button type="button" id="downloadBtn" class="action-btn w-full sm:w-1/4 bg-blue-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-blue-700 transition focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center justify-center text-sm sm:text-base" disabled aria-label="Download recorded video">
+                            <i class="fas fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/4 bg-purple-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-purple-700 transition focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 flex items-center justify-center text-sm sm:text-base" aria-label="Reset recording">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <video id="preview" class="w-full" controls aria-describedby="previewHelp"></video>
+                    <p id="previewHelp" class="text-xs text-gray-600 mt-1">Your recorded video with audio appears here automatically after stopping. Click "Download" to save it as MP4.</p>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" aria-live="assertive"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About 4K Screen Recorder - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the 4K Screen Recorder?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The 4K Screen Recorder by HamroTools is a free 4k screen recorder and online screen recorder designed for accurate screen capture in 4K resolution with microphone audio included by default. This hamrotools screen recorder, screen video recorder, and free video recorder allows you to record screen mp4 files with auto-preview and download functionality, making it ideal for creating high-quality videos for tutorials and presentations.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Click "Start Recording" in our free screen recording tool by HamroTools to begin capturing your screen with microphone audio, "Stop Recording" to end and auto-preview, "Download" to save as MP4, or "Reset" to clear. This screen capture 4k and video screen capture is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our 4K Screen Recorder?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our online 4k recorder and screen recording software by HamroTools is fast, accurate, and user-friendly, offering a free solution for recording screen videos in 4K with microphone audio and auto-preview. This free mp4 recorder and screen recorder with preview is perfect for content creators and professionals needing high-quality video capture with simple, accessible tools.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-3 rounded-md hover:bg-red-700 transition focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex items-center justify-center text-sm sm:text-base" aria-label="Go to homepage">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        let mediaRecorder;
+        let recordedChunks = [];
+        let isRecording = false;
+        let startTime = null;
+        let timerInterval = null;
+        let micStream = null;
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function startTimer() {
+            startTime = Date.now();
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        function updateTimer() {
+            if (startTime) {
+                const elapsed = Math.floor((Date.now() - startTime) / 1000);
+                document.getElementById('recordingTime').textContent = `(${formatTime(elapsed)})`;
+            }
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+            startTime = null;
+            document.getElementById('recordingTime').textContent = '';
+        }
+
+        async function startRecording() {
+            if (isRecording) return;
+            try {
+                const streams = [];
+                const screenStream = await navigator.mediaDevices.getDisplayMedia({
+                    video: { width: 3840, height: 2160, frameRate: 30 },
+                    audio: false
+                });
+                streams.push(screenStream);
+
+                let audioTracks = [];
+                try {
+                    micStream = await navigator.mediaDevices.getUserMedia({
+                        audio: true
+                    });
+                    audioTracks = micStream.getAudioTracks();
+                } catch (err) {
+                    document.getElementById('errorMessage').textContent = 'Warning: Failed to access microphone. Recording will continue without audio.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                }
+
+                const canvas = document.createElement('canvas');
+                canvas.width = 3840;
+                canvas.height = 2160;
+                const ctx = canvas.getContext('2d');
+                const video = document.createElement('video');
+                video.srcObject = screenStream;
+                video.play();
+
+                function draw() {
+                    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                    if (isRecording) requestAnimationFrame(draw);
+                }
+                requestAnimationFrame(draw);
+
+                const canvasStream = canvas.captureStream(30);
+                if (audioTracks.length > 0) {
+                    audioTracks.forEach(track => canvasStream.addTrack(track));
+                }
+
+                mediaRecorder = new MediaRecorder(canvasStream, { mimeType: 'video/webm; codecs=vp9,opus' });
+                mediaRecorder.ondataavailable = (event) => {
+                    if (event.data.size > 0) recordedChunks.push(event.data);
+                };
+                mediaRecorder.onstop = () => {
+                    stopTimer();
+                    document.getElementById('downloadBtn').disabled = false;
+                    if (micStream) {
+                        micStream.getTracks().forEach(track => track.stop());
+                        micStream = null;
+                    }
+                    previewVideo();
+                };
+                mediaRecorder.start(100);
+                isRecording = true;
+                document.getElementById('status').innerHTML = '<span class="recording">Recording Started</span> <span id="recordingTime"></span>';
+                startTimer();
+                document.getElementById('startBtn').disabled = true;
+                document.getElementById('stopBtn').disabled = false;
+                document.getElementById('errorMessage').classList.add('hidden');
+            } catch (err) {
+                document.getElementById('errorMessage').textContent = 'Error: Failed to start screen recording. Please grant permission or check browser support.';
+                document.getElementById('errorMessage').classList.remove('hidden');
+                if (micStream) {
+                    micStream.getTracks().forEach(track => track.stop());
+                    micStream = null;
+                }
+            }
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && isRecording) {
+                mediaRecorder.stop();
+                isRecording = false;
+                document.getElementById('status').innerHTML = '<span>Recording stopped. Video ready for download.</span> <span id="recordingTime"></span>';
+                document.getElementById('startBtn').disabled = false;
+                document.getElementById('stopBtn').disabled = true;
+            }
+        }
+
+        function previewVideo() {
+            if (recordedChunks.length === 0) return;
+            const blob = new Blob(recordedChunks, { type: 'video/mp4' });
+            const url = URL.createObjectURL(blob);
+            const video = document.getElementById('preview');
+            video.src = url;
+            video.style.display = 'block';
+            video.play();
+        }
+
+        function downloadVideo() {
+            if (recordedChunks.length === 0) return;
+            const blob = new Blob(recordedChunks, { type: 'video/mp4' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `screen_recording_${new Date().toISOString().replace(/[:.]/g, '-')}.mp4`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            showPopup('Video downloaded!');
+        }
+
+        function resetRecording() {
+            recordedChunks = [];
+            const video = document.getElementById('preview');
+            video.style.display = 'none';
+            video.src = '';
+            stopTimer();
+            document.getElementById('status').innerHTML = '<span>Idle</span> <span id="recordingTime"></span>';
+            document.getElementById('downloadBtn').disabled = true;
+            document.getElementById('errorMessage').classList.add('hidden');
+            if (micStream) {
+                micStream.getTracks().forEach(track => track.stop());
+                micStream = null;
+            }
+        }
+
+        document.getElementById('startBtn').addEventListener('click', startRecording);
+        document.getElementById('startBtn').addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            startRecording();
+        });
+
+        document.getElementById('stopBtn').addEventListener('click', stopRecording);
+        document.getElementById('stopBtn').addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            stopRecording();
+        });
+
+        document.getElementById('downloadBtn').addEventListener('click', downloadVideo);
+        document.getElementById('downloadBtn').addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            downloadVideo();
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', resetRecording);
+        document.getElementById('resetBtn').addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            resetRecording();
+        });
+    </script>
+</body>
+</html>
