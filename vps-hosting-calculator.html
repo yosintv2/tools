@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>VPS/Hosting Cost Estimator</title>
+    <meta name="description" content="Estimate VPS and hosting costs with our free online VPS/Hosting Cost Estimator by HamroTools. Calculate costs for DigitalOcean, Linode, Vultr, AWS Lightsail, Google Cloud, and more with instant results. Perfect for businesses and developers on all devices.">
+    <meta name="keywords" content="vps hosting cost estimator, hosting cost calculator, free vps pricing tool, online hosting cost estimator, hamrotools vps calculator, vps cost estimation tool, free hosting cost calculator, hosting pricing app, online vps cost calculator, cloud hosting cost calculator, digitalocean pricing, linode pricing, vultr pricing, aws lightsail pricing, google cloud pricing, hosting cost management tool, vps pricing tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools VPS/Hosting Cost Estimator Team">
+    <meta property="og:title" content="VPS/Hosting Cost Estimator - HamroTools">
+    <meta property="og:description" content="Estimate VPS and hosting costs with our free online VPS/Hosting Cost Estimator by HamroTools. Calculate costs for DigitalOcean, Linode, Vultr, AWS Lightsail, Google Cloud, and more with instant results. Perfect for businesses and developers on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/vps-hosting-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VPS/Hosting Cost Estimator - HamroTools">
+    <meta name="twitter:description" content="Estimate VPS and hosting costs with our free online VPS/Hosting Cost Estimator by HamroTools. Calculate costs for DigitalOcean, Linode, Vultr, AWS Lightsail, Google Cloud, and more with instant results. Perfect for businesses and developers on all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/vps-hosting-calculator">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "VPS/Hosting Cost Estimator - HamroTools",
+            "description": "A free online VPS/Hosting Cost Estimator by HamroTools to estimate costs for hosting providers like DigitalOcean, Linode, Vultr, AWS Lightsail, Google Cloud, and more. Ideal for businesses and developers on all devices.",
+            "url": "https://www.singhyogendra.com.np/vps-hosting-calculator",
+            "applicationCategory": "Business",
+            "operatingSystem": "All",
+            "keywords": ["vps hosting cost estimator", "hosting cost calculator", "free vps pricing tool", "online hosting cost estimator", "hamrotools vps calculator", "vps cost estimation tool", "free hosting cost calculator", "hosting pricing app", "online vps cost calculator", "cloud hosting cost calculator", "digitalocean pricing", "linode pricing", "vultr pricing", "aws lightsail pricing", "google cloud pricing", "hosting cost management tool", "vps pricing tool"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the VPS/Hosting Cost Estimator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The VPS/Hosting Cost Estimator - HamroTools is a free vps hosting cost estimator and online hosting cost estimator designed for accurate cost estimation. This free hosting cost calculator, hosting pricing app, and vps cost estimation tool by HamroTools supports providers like digitalocean pricing, linode pricing, vultr pricing, aws lightsail pricing, and google cloud pricing, making it a reliable cloud hosting cost calculator for businesses and developers."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the VPS/Hosting Cost Estimator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Select a hosting provider, server type, and configuration details using our hosting cost management tool by HamroTools. Click 'Calculate' to get instant cost estimates for digitalocean pricing, linode pricing, vultr pricing, aws lightsail pricing, or google cloud pricing. Copy or reset as needed. This free vps pricing tool and online vps cost calculator is secure, browser-based, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the VPS/Hosting Cost Estimator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our cloud hosting cost calculator and free hosting cost calculator by HamroTools is fast, accurate, and user-friendly, offering an online hosting cost estimator and hosting pricing app for seamless cost calculations. This hosting cost management tool provides reliable estimates, making it the perfect vps pricing tool for hosting users."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            white-space: pre;
+            overflow-x: auto;
+            resize: none;
+        }
+        input, select, textarea, table {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">VPS/Hosting Cost Estimator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Estimate VPS and hosting costs with our free online VPS/Hosting Cost Estimator by HamroTools. Calculate costs for DigitalOcean, Linode, Vultr, AWS Lightsail, Google Cloud, and more with instant results. Perfect for businesses and developers on all devices.</p>
+        </header>
+
+        <!-- VPS/Hosting Cost Estimator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="providerSelect">Hosting Provider</label>
+                        <select id="providerSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="providerSelectHelp">
+                            <option value="digitalocean">DigitalOcean</option>
+                            <option value="linode">Linode</option>
+                            <option value="vultr">Vultr</option>
+                            <option value="awslightsail">AWS Lightsail</option>
+                            <option value="googlecloud">Google Cloud</option>
+                            <option value="hetzner">Hetzner</option>
+                            <option value="ovh">OVHcloud</option>
+                            <option value="azure">Azure</option>
+                        </select>
+                        <p id="providerSelectHelp" class="text-xs text-gray-600 mt-1">Select the hosting provider to estimate costs for.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="serverTypeSelect">Server Type</label>
+                        <select id="serverTypeSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="serverTypeSelectHelp">
+                            <option value="shared">Shared Hosting</option>
+                            <option value="vps">VPS</option>
+                            <option value="dedicated">Dedicated Server</option>
+                        </select>
+                        <p id="serverTypeSelectHelp" class="text-xs text-gray-600 mt-1">Select the type of server.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="cpuSelect">CPU Cores</label>
+                        <select id="cpuSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="cpuSelectHelp">
+                            <option value="1">1 Core</option>
+                            <option value="2">2 Cores</option>
+                            <option value="4">4 Cores</option>
+                            <option value="8">8 Cores</option>
+                            <option value="16">16 Cores</option>
+                        </select>
+                        <p id="cpuSelectHelp" class="text-xs text-gray-600 mt-1">Select the number of CPU cores.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="ramSelect">RAM (GB)</label>
+                        <select id="ramSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="ramSelectHelp">
+                            <option value="1">1 GB</option>
+                            <option value="2">2 GB</option>
+                            <option value="4">4 GB</option>
+                            <option value="8">8 GB</option>
+                            <option value="16">16 GB</option>
+                            <option value="32">32 GB</option>
+                        </select>
+                        <p id="ramSelectHelp" class="text-xs text-gray-600 mt-1">Select the amount of RAM.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="storageInput">Storage (GB)</label>
+                        <input id="storageInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="1" min="0" placeholder="Enter storage amount" aria-describedby="storageInputHelp">
+                        <p id="storageInputHelp" class="text-xs text-gray-600 mt-1">Enter the amount of storage in GB.</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Cost Estimate</label>
+                    <table class="w-full border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" aria-describedby="resultHelp">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="p-2 text-left font-semibold">Provider</th>
+                                <th class="p-2 text-left font-semibold">Server Type</th>
+                                <th class="p-2 text-left font-semibold">Configuration</th>
+                                <th class="p-2 text-left font-semibold">Cost (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable"></tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">Cost estimates appear here.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 font-mono text-xs sm:text-sm md:text-base" rows="4" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Cost estimate for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid inputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About VPS/Hosting Cost Estimator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the VPS/Hosting Cost Estimator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The VPS/Hosting Cost Estimator - HamroTools is a free vps hosting cost estimator and online hosting cost estimator designed for accurate cost estimation. This free hosting cost calculator, hosting pricing app, and vps cost estimation tool by HamroTools supports providers like digitalocean pricing, linode pricing, vultr pricing, aws lightsail pricing, and google cloud pricing, making it a reliable cloud hosting cost calculator for businesses and developers.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select a hosting provider, server type, and configuration details using our hosting cost management tool by HamroTools. Click "Calculate" to get instant cost estimates for digitalocean pricing, linode pricing, vultr pricing, aws lightsail pricing, or google cloud pricing. Copy or reset as needed. This free vps pricing tool and online vps cost calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our VPS/Hosting Cost Estimator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our cloud hosting cost calculator and free hosting cost calculator by HamroTools is fast, accurate, and user-friendly, offering an online hosting cost estimator and hosting pricing app for seamless cost calculations. This hosting cost management tool provides reliable estimates, making it the perfect vps pricing tool for hosting users.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Mock pricing data for hosting providers (real-time pricing requires API access)
+        const pricingData = {
+            'digitalocean': {
+                'shared': { '1_1': 5, '2_2': 10, '4_4': 20, '8_8': 40, '16_16': 80 },
+                'vps': { '1_1': 15, '2_2': 20, '4_4': 40, '8_8': 80, '16_16': 160 },
+                'dedicated': { '1_1': 100, '2_2': 150, '4_4': 200, '8_8': 300, '16_16': 400 }
+            },
+            'linode': {
+                'shared': { '1_1': 5, '2_2': 10, '4_4': 20, '8_8': 40, '16_16': 80 },
+                'vps': { '1_1': 15, '2_2': 20, '4_4': 40, '8_8': 80, '16_16': 160 },
+                'dedicated': { '1_1': 100, '2_2': 150, '4_4': 200, '8_8': 300, '16_16': 400 }
+            },
+            'vultr': {
+                'shared': { '1_1': 5, '2_2': 10, '4_4': 20, '8_8': 40, '16_16': 80 },
+                'vps': { '1_1': 10, '2_2': 15, '4_4': 30, '8_8': 60, '16_16': 120 },
+                'dedicated': { '1_1': 90, '2_2': 140, '4_4': 190, '8_8': 290, '16_16': 390 }
+            },
+            'awslightsail': {
+                'shared': { '1_1': 3.5, '2_2': 7, '4_4': 15, '8_8': 30, '16_16': 60 },
+                'vps': { '1_1': 10, '2_2': 20, '4_4': 40, '8_8': 80, '16_16': 160 },
+                'dedicated': { '1_1': 100, '2_2': 150, '4_4': 200, '8_8': 300, '16_16': 400 }
+            },
+            'googlecloud': {
+                'shared': { '1_1': 6, '2_2': 12, '4_4': 24, '8_8': 48, '16_16': 96 },
+                'vps': { '1_1': 20, '2_2': 30, '4_4': 60, '8_8': 120, '16_16': 240 },
+                'dedicated': { '1_1': 120, '2_2': 180, '4_4': 240, '8_8': 360, '16_16': 480 }
+            },
+            'hetzner': {
+                'shared': { '1_1': 4, '2_2': 8, '4_4': 16, '8_8': 32, '16_16': 64 },
+                'vps': { '1_1': 10, '2_2': 15, '4_4': 30, '8_8': 60, '16_16': 120 },
+                'dedicated': { '1_1': 80, '2_2': 120, '4_4': 160, '8_8': 240, '16_16': 320 }
+            },
+            'ovh': {
+                'shared': { '1_1': 5, '2_2': 10, '4_4': 20, '8_8': 40, '16_16': 80 },
+                'vps': { '1_1': 12, '2_2': 18, '4_4': 36, '8_8': 72, '16_16': 144 },
+                'dedicated': { '1_1': 90, '2_2': 135, '4_4': 180, '8_8': 270, '16_16': 360 }
+            },
+            'azure': {
+                'shared': { '1_1': 6, '2_2': 12, '4_4': 24, '8_8': 48, '16_16': 96 },
+                'vps': { '1_1': 15, '2_2': 25, '4_4': 50, '8_8': 100, '16_16': 200 },
+                'dedicated': { '1_1': 110, '2_2': 165, '4_4': 220, '8_8': 330, '16_16': 440 }
+            }
+        };
+
+        const storagePricing = {
+            'digitalocean': 0.1, // per GB/month
+            'linode': 0.1,
+            'vultr': 0.1,
+            'awslightsail': 0.08,
+            'googlecloud': 0.12,
+            'hetzner': 0.07,
+            'ovh': 0.09,
+            'azure': 0.11
+        };
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateCost() {
+            const provider = document.getElementById('providerSelect').value;
+            const serverType = document.getElementById('serverTypeSelect').value;
+            const cpu = document.getElementById('cpuSelect').value;
+            const ram = document.getElementById('ramSelect').value;
+            const storage = parseInt(document.getElementById('storageInput').value);
+            const resultTable = document.getElementById('resultTable');
+            const output = document.getElementById('output');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.innerHTML = '';
+            output.value = '';
+            copyBtn.disabled = true;
+
+            if (isNaN(storage) || storage <= 0) {
+                errorMessage.textContent = 'Error: Please enter a valid positive storage amount.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            const configKey = `${cpu}_${ram}`;
+            const baseCost = pricingData[provider][serverType][configKey];
+            const storageCost = storage * storagePricing[provider];
+            if (!baseCost || !storageCost) {
+                errorMessage.textContent = 'Error: Pricing data unavailable for selected provider and configuration.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            const totalCost = (baseCost + storageCost).toFixed(2);
+            const providerName = {
+                'digitalocean': 'DigitalOcean',
+                'linode': 'Linode',
+                'vultr': 'Vultr',
+                'awslightsail': 'AWS Lightsail',
+                'googlecloud': 'Google Cloud',
+                'hetzner': 'Hetzner',
+                'ovh': 'OVHcloud',
+                'azure': 'Azure'
+            }[provider];
+            const serverTypeName = {
+                'shared': 'Shared Hosting',
+                'vps': 'VPS',
+                'dedicated': 'Dedicated Server'
+            }[serverType];
+
+            const resultRow = document.createElement('tr');
+            resultRow.innerHTML = `
+                <td class="p-2">${providerName}</td>
+                <td class="p-2">${serverTypeName}</td>
+                <td class="p-2">${cpu} CPU, ${ram} GB RAM, ${storage} GB Storage</td>
+                <td class="p-2">$${totalCost}</td>
+            `;
+            resultTable.appendChild(resultRow);
+
+            output.value = `Provider: ${providerName}\nServer Type: ${serverTypeName}\nCPU: ${cpu} Cores\nRAM: ${ram} GB\nStorage: ${storage} GB\nEstimated Cost: $${totalCost}/month\nBase Cost: $${baseCost}/month\nStorage Cost: $${storageCost}/month`;
+            copyBtn.dataset.result = output.value;
+            copyBtn.disabled = false;
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', calculateCost);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('providerSelect').value = 'digitalocean';
+            document.getElementById('serverTypeSelect').value = 'vps';
+            document.getElementById('cpuSelect').value = '1';
+            document.getElementById('ramSelect').value = '1';
+            document.getElementById('storageInput').value = '';
+            document.getElementById('resultTable').innerHTML = '';
+            document.getElementById('output').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+        });
+    </script>
+</body>
+</html>
