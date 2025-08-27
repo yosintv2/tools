@@ -45,7 +45,7 @@
                     "name": "How to use the Age Calculator Tool - HamroTools?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Enter your birth date using our age computation tool by HamroTools. Click 'Calculate' to get instant age estimates with our age from date of birth, birthday age calculator, and precise age calculator, including day of birth and real-time birthday countdown. Copy or reset as needed. This free age calculator tool and online age calculator is secure, browser-based, and works on all devices."
+                        "text": "Enter your birth date using our age computation tool by HamroTools. Click 'Calculate' to get instant age estimates with our age from date of birth, birthday age calculator, and precise age calculator, including day of birth and real-time birthday countdown. Reset as needed. This free age calculator tool and online age calculator is secure, browser-based, and works on all devices."
                     }
                 },
                 {
@@ -80,7 +80,7 @@
                 font-size: 0.875rem;
                 padding: 0.5rem;
             }
-            table {
+            .result-table {
                 font-size: 0.75rem;
             }
         }
@@ -111,25 +111,56 @@
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
         }
-        textarea {
-            white-space: pre-wrap;
-            overflow-x: auto;
-            resize: none;
+        .result-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
             font-family: 'Inter', sans-serif;
         }
-        input, select, textarea, table {
-            font-family: 'Inter', sans-serif;
-            padding: 0.5rem;
+        .result-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .result-table td {
+            color: #4b5563;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem;
+            }
         }
         @media (max-width: 768px) {
-            table {
+            .result-table {
                 display: block;
                 overflow-x: auto;
                 white-space: nowrap;
             }
-            th, td {
-                min-width: 100px;
+            .result-table th, .result-table td {
+                min-width: 120px;
             }
+        }
+        input, select, table {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
         }
     </style>
 </head>
@@ -162,15 +193,11 @@
                         <p id="birthDateInputHelp" class="text-xs text-gray-600 mt-1">Select your date of birth (must be in the past).</p>
                     </div>
                     <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
-                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/2 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                             <i class="fas fa-calculator mr-2"></i>
                             Calculate
                         </button>
-                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
-                            <i class="fas fa-copy mr-2"></i>
-                            Copy
-                        </button>
-                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/2 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
                             <i class="fas fa-undo mr-2"></i>
                             Reset
                         </button>
@@ -178,9 +205,9 @@
                 </form>
                 <div class="mt-4">
                     <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Age Calculation Results</label>
-                    <table class="w-full border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" aria-describedby="resultHelp">
+                    <table class="result-table" aria-describedby="resultHelp">
                         <thead>
-                            <tr class="bg-gray-200">
+                            <tr>
                                 <th class="p-2 text-left font-semibold">Metric</th>
                                 <th class="p-2 text-left font-semibold">Value</th>
                             </tr>
@@ -196,12 +223,7 @@
                         </tbody>
                     </table>
                     <p id="resultHelp" class="text-xs text-gray-600 mt-1">Age calculation results appear here. Results are based on today's date (August 28, 2025).</p>
-                    <div class="mt-4">
-                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
-                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" rows="1" readonly aria-describedby="outputHelp"></textarea>
-                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Age calculation results for copying. Click "Copy" to share.</p>
-                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Please enter a valid birth date.</p>
-                    </div>
+                    <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Please enter a valid birth date.</p>
                 </div>
             </div>
         </section>
@@ -218,7 +240,7 @@
             <article class="mb-6">
                 <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
                 <p class="text-xs sm:text-sm md:text-base text-gray-600">
-                    Enter your birth date using our age computation tool by HamroTools. Click "Calculate" to get instant age estimates with our age from date of birth, birthday age calculator, and precise age calculator, including day of birth and real-time birthday countdown. Copy or reset as needed. This free age calculator tool and online age calculator is secure, browser-based, and works on all devices.
+                    Enter your birth date using our age computation tool by HamroTools. Click "Calculate" to get instant age estimates with our age from date of birth, birthday age calculator, and precise age calculator, including day of birth and real-time birthday countdown. Reset as needed. This free age calculator tool and online age calculator is secure, browser-based, and works on all devices.
                 </p>
             </article>
             <article class="mb-6">
@@ -250,18 +272,6 @@
             console.log(`Event: ${event}`, data);
         }
         trackEvent('page_load', { page: window.location.href });
-
-        function showPopup() {
-            const popup = document.createElement('div');
-            popup.className = 'copy-popup';
-            popup.textContent = 'Copied!';
-            document.body.appendChild(popup);
-            setTimeout(() => popup.classList.add('show'), 10);
-            setTimeout(() => {
-                popup.classList.remove('show');
-                setTimeout(() => popup.remove(), 300);
-            }, 2000);
-        }
 
         let countdownInterval = null;
 
@@ -342,8 +352,7 @@
                     totalSeconds: diffSeconds.toLocaleString(),
                     birthDay: birthDayOfWeek,
                     nextBirthday: formatCountdown(untilMs),
-                    nextBirthdayDate: nextBirthday,
-                    textForCopy: `Birth Date: ${birthDate.toLocaleDateString()}\nAge: ${years} Years, ${months} Months, ${days} Days\nTotal Weeks: ${diffWeeks.toLocaleString()}\nTotal Hours: ${diffHours.toLocaleString()}\nTotal Minutes: ${diffMinutes.toLocaleString()}\nTotal Seconds: ${diffSeconds.toLocaleString()}\nDay of Birth: ${birthDayOfWeek}\nNext Birthday In: ${formatCountdown(untilMs)}\nNote: Results are based on today's date (August 28, 2025).`
+                    nextBirthdayDate: nextBirthday
                 };
             } catch (e) {
                 throw new Error('Error calculating age: ' + e.message);
@@ -354,12 +363,7 @@
             const birthDate = document.getElementById('birthDateInput').value;
             const errorMessage = document.getElementById('errorMessage');
             const calculateBtn = document.getElementById('calculateBtn');
-            const output = document.getElementById('output');
-            const copyBtn = document.getElementById('copyBtn');
             errorMessage.classList.add('hidden');
-            output.value = '';
-            output.rows = 1;
-            copyBtn.disabled = true;
             if (countdownInterval) clearInterval(countdownInterval);
             // Reset table
             document.getElementById('ageYMD').textContent = '-';
@@ -387,10 +391,6 @@
                     document.getElementById('totalSeconds').textContent = result.totalSeconds;
                     document.getElementById('birthDay').textContent = result.birthDay;
                     document.getElementById('nextBirthday').textContent = result.nextBirthday;
-                    output.value = result.textForCopy;
-                    output.rows = result.textForCopy.split('\n').length + 1;
-                    copyBtn.dataset.result = result.textForCopy;
-                    copyBtn.disabled = false;
                     if (result.nextBirthday !== 'Today is your birthday!') {
                         startCountdown(new Date(birthDate), result.nextBirthdayDate);
                     }
@@ -406,20 +406,6 @@
             }, 300);
         });
 
-        document.getElementById('copyBtn').addEventListener('click', () => {
-            const result = document.getElementById('copyBtn').dataset.result;
-            if (result) {
-                navigator.clipboard.writeText(result).then(() => {
-                    showPopup();
-                    trackEvent('copy_result', { result });
-                }).catch(() => {
-                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
-                    document.getElementById('errorMessage').classList.remove('hidden');
-                    trackEvent('copy_error', { result });
-                });
-            }
-        });
-
         document.getElementById('resetBtn').addEventListener('click', () => {
             if (countdownInterval) clearInterval(countdownInterval);
             document.getElementById('birthDateInput').value = '';
@@ -430,11 +416,7 @@
             document.getElementById('totalSeconds').textContent = '-';
             document.getElementById('birthDay').textContent = '-';
             document.getElementById('nextBirthday').textContent = '-';
-            document.getElementById('output').value = '';
-            document.getElementById('output').rows = 1;
             document.getElementById('errorMessage').classList.add('hidden');
-            document.getElementById('copyBtn').dataset.result = '';
-            document.getElementById('copyBtn').disabled = true;
             trackEvent('reset_form', {});
         });
     </script>
