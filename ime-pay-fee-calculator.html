@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>IME Pay Fee Calculator</title>
+    <meta name="description" content="Calculate IME Pay transaction fees with our free online IME Pay Fee Calculator by HamroTools. Estimate costs for P2P transfers, bank transfers, merchant payments, and bill payments in Nepal with instant results. Perfect for IME Pay users on all devices.">
+    <meta name="keywords" content="ime pay fee calculator, ime pay transaction fee calculator, free ime pay cost tool, online ime pay fee estimator, hamrotools ime pay calculator, ime pay cost estimation tool, free ime pay fee calculator, ime pay pricing app, online ime pay cost calculator, digital wallet fee calculator, ime pay p2p transfer fees, ime pay bank transfer fees, ime pay merchant payment fees, ime pay bill payment fees, nepal digital wallet calculator, ime pay cost management tool, ime pay pricing tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools IME Pay Fee Calculator Team">
+    <meta property="og:title" content="IME Pay Fee Calculator - HamroTools">
+    <meta property="og:description" content="Calculate IME Pay transaction fees with our free online IME Pay Fee Calculator by HamroTools. Estimate costs for P2P transfers, bank transfers, merchant payments, and bill payments in Nepal with instant results. Perfect for IME Pay users on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/ime-pay-fee-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IME Pay Fee Calculator - HamroTools">
+    <meta name="twitter:description" content="Calculate IME Pay transaction fees with our free online IME Pay Fee Calculator by HamroTools. Estimate costs for P2P transfers, bank transfers, merchant payments, and bill payments in Nepal with instant results. Perfect for IME Pay users on all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/ime-pay-fee-calculator">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "IME Pay Fee Calculator - HamroTools",
+            "description": "A free online IME Pay Fee Calculator by HamroTools to estimate transaction fees for IME Pay P2P transfers, bank transfers, merchant payments, and bill payments in Nepal. Ideal for IME Pay users on all devices.",
+            "url": "https://www.singhyogendra.com.np/ime-pay-fee-calculator",
+            "applicationCategory": "Finance",
+            "operatingSystem": "All",
+            "keywords": ["ime pay fee calculator", "ime pay transaction fee calculator", "free ime pay cost tool", "online ime pay fee estimator", "hamrotools ime pay calculator", "ime pay cost estimation tool", "free ime pay fee calculator", "ime pay pricing app", "online ime pay cost calculator", "digital wallet fee calculator", "ime pay p2p transfer fees", "ime pay bank transfer fees", "ime pay merchant payment fees", "ime pay bill payment fees", "nepal digital wallet calculator", "ime pay cost management tool", "ime pay pricing tool"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the IME Pay Fee Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The IME Pay Fee Calculator - HamroTools is a free ime pay fee calculator and online ime pay fee estimator designed for accurate cost estimation. This free ime pay cost tool, ime pay pricing app, and ime pay cost estimation tool by HamroTools supports ime pay p2p transfer fees, ime pay bank transfer fees, ime pay merchant payment fees, and ime pay bill payment fees, making it a reliable digital wallet fee calculator for IME Pay users in Nepal."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the IME Pay Fee Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Select a transaction type and enter the amount using our ime pay cost management tool by HamroTools. Click 'Calculate' to get instant fee estimates for ime pay p2p transfer fees, ime pay bank transfer fees, ime pay merchant payment fees, or ime pay bill payment fees. Copy or reset as needed. This free ime pay cost tool and online ime pay cost calculator is secure, browser-based, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the IME Pay Fee Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our digital wallet fee calculator and free ime pay fee calculator by HamroTools is fast, accurate, and user-friendly, offering an online ime pay fee estimator and ime pay pricing app for seamless cost calculations. This ime pay cost management tool provides reliable estimates, making it the perfect ime pay pricing tool for IME Pay users in Nepal."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        textarea {
+            white-space: pre;
+            overflow-x: auto;
+            resize: none;
+        }
+        input, select, textarea, table {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">IME Pay Fee Calculator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate IME Pay transaction fees with our free online IME Pay Fee Calculator by HamroTools. Estimate costs for P2P transfers, bank transfers, merchant payments, and bill payments in Nepal with instant results. Perfect for IME Pay users on all devices.</p>
+        </header>
+
+        <!-- IME Pay Fee Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="transactionTypeSelect">Transaction Type</label>
+                        <select id="transactionTypeSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="transactionTypeSelectHelp">
+                            <option value="p2p">P2P Transfer (IME Pay to IME Pay)</option>
+                            <option value="bank">Bank Transfer (IME Pay to Bank)</option>
+                            <option value="merchant">Merchant Payment</option>
+                            <option value="bill">Bill Payment</option>
+                        </select>
+                        <p id="transactionTypeSelectHelp" class="text-xs text-gray-600 mt-1">Select the type of IME Pay transaction.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="amountInput">Transaction Amount (NPR)</label>
+                        <input id="amountInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.01" min="0" placeholder="Enter transaction amount" aria-describedby="amountInputHelp">
+                        <p id="amountInputHelp" class="text-xs text-gray-600 mt-1">Enter the transaction amount in NPR.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="dailyTransactionsInput">Daily P2P Transactions (for P2P only)</label>
+                        <input id="dailyTransactionsInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="1" min="0" placeholder="Enter number of daily P2P transactions" aria-describedby="dailyTransactionsInputHelp">
+                        <p id="dailyTransactionsInputHelp" class="text-xs text-gray-600 mt-1">Enter the number of daily P2P transactions (for P2P transfers only).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="monthlyTransactionsInput">Monthly P2P Transactions (for P2P only)</label>
+                        <input id="monthlyTransactionsInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="1" min="0" placeholder="Enter number of monthly P2P transactions" aria-describedby="monthlyTransactionsInputHelp">
+                        <p id="monthlyTransactionsInputHelp" class="text-xs text-gray-600 mt-1">Enter the number of monthly P2P transactions (for P2P transfers only).</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Fee Estimate</label>
+                    <table class="w-full border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" aria-describedby="resultHelp">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="p-2 text-left font-semibold">Transaction Type</th>
+                                <th class="p-2 text-left font-semibold">Amount (NPR)</th>
+                                <th class="p-2 text-left font-semibold">Fee (NPR)</th>
+                                <th class="p-2 text-left font-semibold">VAT (NPR)</th>
+                                <th class="p-2 text-left font-semibold">Total Cost (NPR)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable"></tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">Fee estimates appear here. Note: Check imepay.com.np for the latest tariff details.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 font-mono text-xs sm:text-sm md:text-base" rows="4" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Fee estimate for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden">Error: Please enter valid inputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About IME Pay Fee Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the IME Pay Fee Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The IME Pay Fee Calculator - HamroTools is a free ime pay fee calculator and online ime pay fee estimator designed for accurate cost estimation. This free ime pay cost tool, ime pay pricing app, and ime pay cost estimation tool by HamroTools supports ime pay p2p transfer fees, ime pay bank transfer fees, ime pay merchant payment fees, and ime pay bill payment fees, making it a reliable digital wallet fee calculator for IME Pay users in Nepal.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select a transaction type and enter the amount using our ime pay cost management tool by HamroTools. Click "Calculate" to get instant fee estimates for ime pay p2p transfer fees, ime pay bank transfer fees, ime pay merchant payment fees, or ime pay bill payment fees. Copy or reset as needed. This free ime pay cost tool and online ime pay cost calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our IME Pay Fee Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our digital wallet fee calculator and free ime pay fee calculator by HamroTools is fast, accurate, and user-friendly, offering an online ime pay fee estimator and ime pay pricing app for seamless cost calculations. This ime pay cost management tool provides reliable estimates, making it the perfect ime pay pricing tool for IME Pay users in Nepal.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // IME Pay fee calculation logic based on provided data
+        function calculateFee() {
+            const transactionType = document.getElementById('transactionTypeSelect').value;
+            const amount = parseFloat(document.getElementById('amountInput').value);
+            const dailyTransactions = parseInt(document.getElementById('dailyTransactionsInput').value) || 0;
+            const monthlyTransactions = parseInt(document.getElementById('monthlyTransactionsInput').value) || 0;
+            const resultTable = document.getElementById('resultTable');
+            const output = document.getElementById('output');
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.innerHTML = '';
+            output.value = '';
+            copyBtn.disabled = true;
+
+            if (isNaN(amount) || amount < 0) {
+                errorMessage.textContent = 'Error: Please enter a valid transaction amount.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            let fee = 0;
+            let vat = 0;
+            let totalCost = amount;
+            let feeDescription = '';
+
+            if (transactionType === 'p2p') {
+                if (amount <= 100) {
+                    fee = 0;
+                    feeDescription = 'Free (below NPR 100)';
+                } else if (dailyTransactions <= 3 && monthlyTransactions <= 30) {
+                    fee = 0;
+                    feeDescription = 'Free (within 3 daily and 30 monthly limit)';
+                } else {
+                    fee = 10;
+                    vat = fee * 0.13; // 13% VAT
+                    feeDescription = 'NPR 10 (exceeded free limit) + 13% VAT';
+                }
+            } else if (transactionType === 'bank') {
+                fee = amount * 0.015; // Assumed 1.5% fee based on typical range
+                vat = fee * 0.13; // 13% VAT
+                feeDescription = '1.5% of transaction amount + 13% VAT';
+            } else if (transactionType === 'merchant') {
+                fee = 0; // Most merchant payments are free for users
+                feeDescription = 'Free (typical for merchant payments)';
+            } else if (transactionType === 'bill') {
+                fee = 5; // Assumed NPR 5 for bill payments
+                vat = fee * 0.13; // 13% VAT
+                feeDescription = 'NPR 5 + 13% VAT (typical for bill payments)';
+            }
+
+            totalCost = (amount + fee + vat).toFixed(2);
+            fee = fee.toFixed(2);
+            vat = vat.toFixed(2);
+
+            const transactionTypeName = {
+                'p2p': 'P2P Transfer',
+                'bank': 'Bank Transfer',
+                'merchant': 'Merchant Payment',
+                'bill': 'Bill Payment'
+            }[transactionType];
+
+            const resultRow = document.createElement('tr');
+            resultRow.innerHTML = `
+                <td class="p-2">${transactionTypeName}</td>
+                <td class="p-2">NPR ${amount.toFixed(2)}</td>
+                <td class="p-2">NPR ${fee}</td>
+                <td class="p-2">NPR ${vat}</td>
+                <td class="p-2">NPR ${totalCost}</td>
+            `;
+            resultTable.appendChild(resultRow);
+
+            output.value = `Transaction Type: ${transactionTypeName}\nAmount: NPR ${amount.toFixed(2)}\nFee: NPR ${fee}\nVAT: NPR ${vat}\nTotal Cost: NPR ${totalCost}\nFee Description: ${feeDescription}\nNote: Check imepay.com.np for the latest tariff details.`;
+            copyBtn.dataset.result = output.value;
+            copyBtn.disabled = false;
+        }
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', calculateFee);
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                });
+            }
+        });
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('transactionTypeSelect').value = 'p2p';
+            document.getElementById('amountInput').value = '';
+            document.getElementById('dailyTransactionsInput').value = '';
+            document.getElementById('monthlyTransactionsInput').value = '';
+            document.getElementById('resultTable').innerHTML = '';
+            document.getElementById('output').value = '';
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+        });
+    </script>
+</body>
+</html>
