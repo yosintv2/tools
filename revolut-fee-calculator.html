@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Revolut Fee Calculator</title>
+    <meta name="description" content="Calculate Revolut transaction fees accurately with our free online Revolut Fee Calculator by HamroTools. Estimate costs for ATM withdrawals, currency conversions, international transfers, and card transfers with instant results. Perfect for financial planning on all devices.">
+    <meta name="keywords" content="revolut fee calculator, revolut transaction fee calculator, free revolut fee tool, online revolut fee estimator, hamrotools revolut calculator, revolut fee estimation tool, free revolut fee calculator, revolut fee planning app, online revolut fee calculator, revolut atm withdrawal fee, revolut currency conversion fee, revolut international transfer fee, revolut card transfer fee, revolut fee management tool, revolut fee pricing tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Revolut Fee Calculator Team">
+    <meta property="og:title" content="Revolut Fee Calculator - HamroTools">
+    <meta property="og:description" content="Calculate Revolut transaction fees accurately with our free online Revolut Fee Calculator by HamroTools. Estimate costs for ATM withdrawals, currency conversions, international transfers, and card transfers with instant results. Perfect for financial planning on all devices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/revolut-fee-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Revolut Fee Calculator - HamroTools">
+    <meta name="twitter:description" content="Calculate Revolut transaction fees accurately with our free online Revolut Fee Calculator by HamroTools. Estimate costs for ATM withdrawals, currency conversions, international transfers, and card transfers with instant results. Perfect for financial planning on all devices.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/revolut-fee-calculator">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Revolut Fee Calculator - HamroTools",
+            "description": "A free online Revolut Fee Calculator by HamroTools to estimate transaction fees for ATM withdrawals, currency conversions, international transfers, and card transfers. Ideal for financial planning on all devices.",
+            "url": "https://www.singhyogendra.com.np/revolut-fee-calculator",
+            "applicationCategory": "Finance",
+            "operatingSystem": "All",
+            "keywords": ["revolut fee calculator", "revolut transaction fee calculator", "free revolut fee tool", "online revolut fee estimator", "hamrotools revolut calculator", "revolut fee estimation tool", "free revolut fee calculator", "revolut fee planning app", "online revolut fee calculator", "revolut atm withdrawal fee", "revolut currency conversion fee", "revolut international transfer fee", "revolut card transfer fee", "revolut fee management tool", "revolut fee pricing tool"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the Revolut Fee Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Revolut Fee Calculator - HamroTools is a free revolut fee calculator and online revolut fee estimator designed for accurate fee estimation. This free revolut fee tool, revolut fee planning app, and revolut fee estimation tool by HamroTools supports revolut atm withdrawal fee, revolut currency conversion fee, revolut international transfer fee, and revolut card transfer fee, making it a reliable online revolut fee calculator for financial planning."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Revolut Fee Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Select the transaction type, enter the amount, choose the currency, and indicate if it's out-of-hours using our revolut fee management tool by HamroTools. Click 'Calculate' to get instant fee estimates for revolut atm withdrawal fee, revolut currency conversion fee, revolut international transfer fee, or revolut card transfer fee. Copy or reset as needed. This free revolut fee tool and online revolut fee calculator is secure, browser-based, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the Revolut Fee Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our revolut fee calculator and free revolut fee calculator by HamroTools is fast, accurate, and user-friendly, offering an online revolut fee estimator and revolut fee planning app for seamless fee calculations, including revolut atm withdrawal fee, revolut currency conversion fee, revolut international transfer fee, and revolut card transfer fee. This revolut fee management tool provides reliable estimates, making it the perfect revolut fee pricing tool for financial planning."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            .result-table {
+                font-size: 0.75rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .result-table td {
+            color: #4b5563;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .result-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .result-table th, .result-table td {
+                min-width: 120px;
+            }
+        }
+        textarea {
+            white-space: pre-wrap;
+            overflow-x: auto;
+            resize: none;
+            font-family: 'Inter', sans-serif;
+        }
+        input, select, textarea {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Revolut Fee Calculator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate Revolut transaction fees accurately with our free online Revolut Fee Calculator by HamroTools. Estimate costs for ATM withdrawals, currency conversions, international transfers, and card transfers with instant results. Perfect for financial planning on all devices.</p>
+        </header>
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+            <!-- hamrotools -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="9765483765" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+
+        <!-- Revolut Fee Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="transactionTypeSelect">Transaction Type</label>
+                        <select id="transactionTypeSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="transactionTypeSelectHelp">
+                            <option value="atm_in_network">ATM Withdrawal (In-network)</option>
+                            <option value="atm_out_network">ATM Withdrawal (Out-of-network)</option>
+                            <option value="currency_conversion">Currency Conversion</option>
+                            <option value="international_transfer">International Transfer</option>
+                            <option value="card_transfer">Card Transfer (Non-Revolut Card)</option>
+                        </select>
+                        <p id="transactionTypeSelectHelp" class="text-xs text-gray-600 mt-1">Select the type of Revolut transaction.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="amountInput">Transaction Amount</label>
+                        <input id="amountInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.01" min="0" placeholder="Enter transaction amount" aria-describedby="amountInputHelp">
+                        <p id="amountInputHelp" class="text-xs text-gray-600 mt-1">Enter the amount (e.g., in USD, EUR, or NPR).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="currencySelect">Currency</label>
+                        <select id="currencySelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="currencySelectHelp">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="NPR">NPR</option>
+                        </select>
+                        <p id="currencySelectHelp" class="text-xs text-gray-600 mt-1">Select the transaction currency.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="outOfHours">Out-of-hours (Weekends)</label>
+                        <input id="outOfHours" type="checkbox" class="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded" aria-describedby="outOfHoursHelp">
+                        <p id="outOfHoursHelp" class="text-xs text-gray-600 mt-1">Check if the transaction occurs between 5 PM Friday and 6 PM Sunday.</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Fee Estimate Results</label>
+                    <table class="result-table" aria-describedby="resultHelp">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-left font-semibold">Transaction Type</th>
+                                <th class="p-2 text-left font-semibold">Amount</th>
+                                <th class="p-2 text-left font-semibold">Fee Rate</th>
+                                <th class="p-2 text-left font-semibold">Fee Amount</th>
+                                <th class="p-2 text-left font-semibold">Total Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable"></tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">Fee estimates appear here. Note: Fees are approximate; check Revolut for exact rates. Out-of-hours fees apply from 5 PM Friday to 6 PM Sunday.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" rows="1" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Fee estimate results for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Please enter valid inputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Revolut Fee Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Revolut Fee Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Revolut Fee Calculator - HamroTools is a free revolut fee calculator and online revolut fee estimator designed for accurate fee estimation. This free revolut fee tool, revolut fee planning app, and revolut fee estimation tool by HamroTools supports revolut atm withdrawal fee, revolut currency conversion fee, revolut international transfer fee, and revolut card transfer fee, making it a reliable online revolut fee calculator for financial planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select the transaction type, enter the amount, choose the currency, and indicate if it's out-of-hours using our revolut fee management tool by HamroTools. Click "Calculate" to get instant fee estimates for revolut atm withdrawal fee, revolut currency conversion fee, revolut international transfer fee, or revolut card transfer fee. Copy or reset as needed. This free revolut fee tool and online revolut fee calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Revolut Fee Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our revolut fee calculator and free revolut fee calculator by HamroTools is fast, accurate, and user-friendly, offering an online revolut fee estimator and revolut fee planning app for seamless fee calculations, including revolut atm withdrawal fee, revolut currency conversion fee, revolut international transfer fee, and revolut card transfer fee. This revolut fee management tool provides reliable estimates, making it the perfect revolut fee pricing tool for financial planning.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Analytics tracking function
+        function trackEvent(event, data) {
+            console.log(`Event: ${event}`, data);
+        }
+        trackEvent('page_load', { page: window.location.href });
+
+        function showPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Copied!';
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateFee() {
+            const transactionType = document.getElementById('transactionTypeSelect').value;
+            const amount = parseFloat(document.getElementById('amountInput').value) || 0;
+            const currency = document.getElementById('currencySelect').value;
+            const outOfHours = document.getElementById('outOfHours').checked;
+            const resultTable = document.getElementById('resultTable');
+            const output = document.getElementById('output');
+            const errorMessage = document.getElementById('errorMessage');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const copyBtn = document.getElementById('copyBtn');
+
+            errorMessage.classList.add('hidden');
+            resultTable.innerHTML = '';
+            output.value = '';
+            output.rows = 1;
+            copyBtn.disabled = true;
+
+            if (amount <= 0) {
+                errorMessage.textContent = 'Error: Please enter a valid positive transaction amount.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_amount' });
+                return;
+            }
+
+            calculateBtn.disabled = true;
+            calculateBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Calculating...';
+
+            setTimeout(() => {
+                try {
+                    let feeRate = 0;
+                    let feeAmount = 0;
+                    let feeDescription = '';
+                    let isFlatFee = false;
+
+                    switch (transactionType) {
+                        case 'atm_in_network':
+                            feeRate = 0;
+                            feeDescription = 'Free for in-network ATM withdrawals';
+                            break;
+                        case 'atm_out_network':
+                            if (amount <= 400) {
+                                feeRate = 0;
+                                feeDescription = 'Free up to $400/month for out-of-network ATM withdrawals';
+                            } else {
+                                feeRate = 0.02;
+                                feeDescription = '2% fee for out-of-network ATM withdrawals above $400/month';
+                            }
+                            break;
+                        case 'currency_conversion':
+                            feeRate = amount <= 1000 ? 0 : 0.005;
+                            feeDescription = amount <= 1000 ? 'Free up to $1,000/month for currency conversion' : '0.5% fair usage fee above $1,000/month';
+                            if (outOfHours) {
+                                feeRate += 0.01;
+                                feeDescription += '; additional 1% out-of-hours fee (5 PM Friday to 6 PM Sunday)';
+                            }
+                            break;
+                        case 'international_transfer':
+                            if (amount >= 200) {
+                                feeRate = 0.05;
+                                feeDescription = 'Up to 5% fee for international transfers ≥$200';
+                            } else {
+                                feeAmount = Math.min(10, amount);
+                                isFlatFee = true;
+                                feeDescription = 'Up to $10 flat fee for international transfers <$200';
+                            }
+                            break;
+                        case 'card_transfer':
+                            feeRate = 0.01;
+                            feeDescription = 'Approximately 1% fee for card transfers to non-Revolut cards (estimated)';
+                            break;
+                        default:
+                            throw new Error('Invalid transaction type');
+                    }
+
+                    if (!isFlatFee) {
+                        feeAmount = (amount * feeRate).toFixed(2);
+                    } else {
+                        feeAmount = feeAmount.toFixed(2);
+                    }
+                    const totalAmount = (amount + parseFloat(feeAmount)).toFixed(2);
+                    const transactionTypeName = transactionType.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+                    const resultRow = document.createElement('tr');
+                    resultRow.innerHTML = `
+                        <td class="p-2">${transactionTypeName}</td>
+                        <td class="p-2">${currency} ${amount.toFixed(2)}</td>
+                        <td class="p-2">${isFlatFee ? 'Flat' : (feeRate * 100).toFixed(2) + '%'}</td>
+                        <td class="p-2">${currency} ${feeAmount}</td>
+                        <td class="p-2">${currency} ${totalAmount}</td>
+                    `;
+                    resultTable.appendChild(resultRow);
+
+                    const outputText = `Transaction Type: ${transactionTypeName}\nAmount: ${currency} ${amount.toFixed(2)}\nFee Rate: ${isFlatFee ? 'Flat' : (feeRate * 100).toFixed(2) + '%'}\nFee Amount: ${currency} ${feeAmount}\nTotal Amount: ${currency} ${totalAmount}\nFee Description: ${feeDescription}\nNote: Fees are approximate; check Revolut for exact rates.`;
+                    output.value = outputText;
+                    output.rows = outputText.split('\n').length + 1;
+                    copyBtn.dataset.result = outputText;
+                    copyBtn.disabled = false;
+
+                    trackEvent('calculate_fee', { transactionType, amount, currency, outOfHours });
+                } catch (e) {
+                    errorMessage.textContent = 'Error: ' + e.message;
+                    errorMessage.classList.remove('hidden');
+                    trackEvent('calculate_error', { error: e.message });
+                } finally {
+                    calculateBtn.disabled = false;
+                    calculateBtn.innerHTML = '<i class="fas fa-calculator mr-2"></i>Calculate';
+                }
+            }, 300);
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', calculateFee);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup();
+                    trackEvent('copy_result', { result });
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    trackEvent('copy_error', { result });
+                });
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('transactionTypeSelect').value = 'atm_in_network';
+            document.getElementById('amountInput').value = '';
+            document.getElementById('currencySelect').value = 'USD';
+            document.getElementById('outOfHours').checked = false;
+            document.getElementById('resultTable').innerHTML = '';
+            document.getElementById('output').value = '';
+            document.getElementById('output').rows = 1;
+            document.getElementById('errorMessage').classList.add('hidden');
+            document.getElementById('copyBtn').dataset.result = '';
+            document.getElementById('copyBtn').disabled = true;
+            trackEvent('reset_form', {});
+        });
+    </script>
+</body>
+</html>
