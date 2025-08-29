@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Nepal Business Loan Calculator - Free Online EMI Calculation</title>
+    <meta name="description" content="Calculate business loan EMIs accurately with our free online Nepal Business Loan Calculator by HamroTools. Enter loan amount, interest rate, tenure, and payment frequency to get instant EMI estimates, total interest, and payment breakdowns, including ideal and better calculation options for financial planning in Nepal.">
+    <meta name="keywords" content="nepal business loan calculator, online nepal business loan calculator, free nepal business loan calculator tool, calculate business loan emi nepal, business loan emi calculator nepal, nepal commercial loan calculator, nepal sme loan calculator, ideal business loan calculation nepal, better business loan calculation nepal, business loan emi estimation tool, business loan planning app nepal, business loan management tool nepal, nepal business finance calculator, nepal business loan interest calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Nepal Business Loan Calculator Team">
+    <meta property="og:title" content="Nepal Business Loan Calculator - Free Online EMI Calculation - HamroTools">
+    <meta property="og:description" content="Calculate business loan EMIs accurately with our free online Nepal Business Loan Calculator by HamroTools. Enter loan amount, interest rate, tenure, and payment frequency to get instant EMI estimates, total interest, and payment breakdowns, including ideal and better calculation options for financial planning in Nepal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/nepal-business-loan-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nepal Business Loan Calculator - Free Online EMI Calculation - HamroTools">
+    <meta name="twitter:description" content="Calculate business loan EMIs accurately with our free online Nepal Business Loan Calculator by HamroTools. Enter loan amount, interest rate, tenure, and payment frequency to get instant EMI estimates, total interest, and payment breakdowns, including ideal and better calculation options for financial planning in Nepal.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/nepal-business-loan-calculator">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Nepal Business Loan Calculator - HamroTools",
+            "description": "A free online Nepal Business Loan Calculator by HamroTools to calculate business loan EMIs, total interest, and payment breakdowns for commercial loans in Nepal. Includes ideal and better calculation options for financial planning on all devices.",
+            "url": "https://www.singhyogendra.com.np/nepal-business-loan-calculator",
+            "applicationCategory": "Finance",
+            "operatingSystem": "All",
+            "keywords": ["nepal business loan calculator", "online nepal business loan calculator", "free nepal business loan calculator tool", "calculate business loan emi nepal", "business loan emi calculator nepal", "nepal commercial loan calculator", "nepal sme loan calculator", "ideal business loan calculation nepal", "better business loan calculation nepal", "business loan emi estimation tool", "business loan planning app nepal", "business loan management tool nepal", "nepal business finance calculator", "nepal business loan interest calculator"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the Nepal Business Loan Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Nepal Business Loan Calculator - HamroTools is a free online nepal business loan calculator and business loan emi estimation tool designed for accurate EMI computation. This business loan planning app nepal by HamroTools supports calculate business loan emi nepal, nepal commercial loan calculator, and nepal sme loan calculator, with ideal business loan calculation nepal and better business loan calculation nepal options, making it a reliable business loan management tool nepal for financial planning."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Nepal Business Loan Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Enter your business purpose, loan amount, interest rate, tenure, and payment frequency using our business loan management tool nepal by HamroTools. Click 'Calculate' to get instant EMI estimates with nepal business loan calculator, including total interest and payment breakdowns, with ideal business loan calculation nepal and better business loan calculation nepal recommendations. Copy or reset as needed. This free nepal business loan calculator tool and online nepal business loan calculator is secure, browser-based, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the Nepal Business Loan Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our nepal business loan calculator and free nepal business loan calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal business loan calculator and business loan planning app nepal for seamless EMI calculations, including calculate business loan emi nepal, nepal commercial loan calculator, and nepal sme loan calculator, with ideal business loan calculation nepal and better business loan calculation nepal options. This business loan management tool nepal provides reliable estimates, making it the perfect nepal business finance calculator and nepal business loan interest calculator for financial planning."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            .result-table {
+                font-size: 0.75rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .result-table td {
+            color: #4b5563;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .result-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .result-table th, .result-table td {
+                min-width: 120px;
+            }
+        }
+        input, select, table, textarea {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+        textarea {
+            white-space: pre-wrap;
+            resize: none;
+            overflow-y: hidden;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Nepal Business Loan Calculator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate business loan EMIs accurately with our free online Nepal Business Loan Calculator by HamroTools. Enter loan amount, interest rate, tenure, and payment frequency to get instant EMI estimates, total interest, and payment breakdowns, including ideal and better calculation options for financial planning in Nepal.</p>
+        </header>
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+            <!-- hamrotools -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="9765483765" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+
+        <!-- Nepal Business Loan Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="businessPurposeSelect">Business Purpose</label>
+                        <select id="businessPurposeSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="businessPurposeSelectHelp">
+                            <option value="workingCapital">Working Capital</option>
+                            <option value="equipment">Equipment Purchase</option>
+                            <option value="expansion">Business Expansion</option>
+                            <option value="property">Property Investment</option>
+                        </select>
+                        <p id="businessPurposeSelectHelp" class="text-xs text-gray-600 mt-1">Select the purpose of the loan (affects tenure and rates).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="loanAmountInput">Loan Amount (NPR)</label>
+                        <input id="loanAmountInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="1000" min="100000" max="50000000" placeholder="Enter loan amount (e.g., 1000000)" aria-describedby="loanAmountInputHelp">
+                        <p id="loanAmountInputHelp" class="text-xs text-gray-600 mt-1">Enter the loan amount (NPR 100,000–50,000,000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="interestRateInput">Interest Rate (% per year)</label>
+                        <input id="interestRateInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.1" min="0.1" max="25" placeholder="Enter interest rate (e.g., 10)" aria-describedby="interestRateInputHelp">
+                        <p id="interestRateInputHelp" class="text-xs text-gray-600 mt-1">Enter the annual interest rate (e.g., 2–25%).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="tenureInput">Loan Tenure (years)</label>
+                        <input id="tenureInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.5" min="0.5" max="30" placeholder="Enter tenure (e.g., 5)" aria-describedby="tenureInputHelp">
+                        <p id="tenureInputHelp" class="text-xs text-gray-600 mt-1">Enter the loan tenure in years (0.5–30).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="paymentFrequencySelect">Payment Frequency</label>
+                        <select id="paymentFrequencySelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="paymentFrequencySelectHelp">
+                            <option value="monthly">Monthly</option>
+                            <option value="quarterly">Quarterly</option>
+                            <option value="semiAnnually">Semi-Annually</option>
+                        </select>
+                        <p id="paymentFrequencySelectHelp" class="text-xs text-gray-600 mt-1">Select payment frequency (affects EMI calculation).</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">EMI Calculation Results</label>
+                    <table class="result-table" aria-describedby="resultHelp">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-left font-semibold">Metric</th>
+                                <th class="p-2 text-left font-semibold">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable">
+                            <tr><td>Business Purpose</td><td id="businessPurpose">-</td></tr>
+                            <tr><td>Loan Amount</td><td id="loanAmount">-</td></tr>
+                            <tr><td>Interest Rate</td><td id="interestRate">-</td></tr>
+                            <tr><td>Tenure</td><td id="tenure">-</td></tr>
+                            <tr><td>Payment Frequency</td><td id="paymentFrequency">-</td></tr>
+                            <tr><td>EMI</td><td id="emi">-</td></tr>
+                            <tr><td>Total Interest</td><td id="totalInterest">-</td></tr>
+                            <tr><td>Total Payment</td><td id="totalPayment">-</td></tr>
+                            <tr><td>Better Calculation</td><td id="betterCalculation">-</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">EMI calculation results appear here. Note: Check with your bank for exact interest rates and processing fees.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">EMI calculation results for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Please enter valid inputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Nepal Business Loan Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Nepal Business Loan Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Nepal Business Loan Calculator - HamroTools is a free online nepal business loan calculator and business loan emi estimation tool designed for accurate EMI computation. This business loan planning app nepal by HamroTools supports calculate business loan emi nepal, nepal commercial loan calculator, and nepal sme loan calculator, with ideal business loan calculation nepal and better business loan calculation nepal options, making it a reliable business loan management tool nepal for financial planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your business purpose, loan amount, interest rate, tenure, and payment frequency using our business loan management tool nepal by HamroTools. Click 'Calculate' to get instant EMI estimates with nepal business loan calculator, including total interest and payment breakdowns, with ideal business loan calculation nepal and better business loan calculation nepal recommendations. Copy or reset as needed. This free nepal business loan calculator tool and online nepal business loan calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Nepal Business Loan Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our nepal business loan calculator and free nepal business loan calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal business loan calculator and business loan planning app nepal for seamless EMI calculations, including calculate business loan emi nepal, nepal commercial loan calculator, and nepal sme loan calculator, with ideal business loan calculation nepal and better business loan calculation nepal options. This business loan management tool nepal provides reliable estimates, making it the perfect nepal business finance calculator and nepal business loan interest calculator for financial planning.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Analytics tracking function
+        function trackEvent(event, data) {
+            console.log(`Event: ${event}`, data);
+        }
+        trackEvent('page_load', { page: window.location.href });
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateEMI() {
+            const businessPurpose = document.getElementById('businessPurposeSelect').value;
+            const loanAmount = parseFloat(document.getElementById('loanAmountInput').value) || 0;
+            const interestRate = parseFloat(document.getElementById('interestRateInput').value) || 0;
+            const tenure = parseFloat(document.getElementById('tenureInput').value) || 0;
+            const paymentFrequency = document.getElementById('paymentFrequencySelect').value;
+            const errorMessage = document.getElementById('errorMessage');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const copyBtn = document.getElementById('copyBtn');
+            const output = document.getElementById('output');
+
+            errorMessage.classList.add('hidden');
+            document.getElementById('businessPurpose').textContent = '-';
+            document.getElementById('loanAmount').textContent = '-';
+            document.getElementById('interestRate').textContent = '-';
+            document.getElementById('tenure').textContent = '-';
+            document.getElementById('paymentFrequency').textContent = '-';
+            document.getElementById('emi').textContent = '-';
+            document.getElementById('totalInterest').textContent = '-';
+            document.getElementById('totalPayment').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            output.value = '';
+            output.style.height = 'auto';
+            copyBtn.disabled = true;
+
+            if (loanAmount < 100000 || loanAmount > 50000000) {
+                errorMessage.textContent = 'Error: Loan amount must be between NPR 100,000 and NPR 50,000,000.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_loan_amount' });
+                return;
+            }
+            if (interestRate < 0.1 || interestRate > 25) {
+                errorMessage.textContent = 'Error: Interest rate must be between 0.1% and 25%.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_interest_rate' });
+                return;
+            }
+            if (tenure < 0.5 || tenure > 30) {
+                errorMessage.textContent = 'Error: Tenure must be between 0.5 and 30 years.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_tenure' });
+                return;
+            }
+            if (businessPurpose === 'workingCapital' && tenure > 2) {
+                errorMessage.textContent = 'Error: Tenure for working capital loans must be 0.5–2 years.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_tenure_working_capital' });
+                return;
+            }
+            if (businessPurpose === 'equipment' && tenure > 7) {
+                errorMessage.textContent = 'Error: Tenure for equipment loans must be 0.5–7 years.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_tenure_equipment' });
+                return;
+            }
+
+            calculateBtn.disabled = true;
+            calculateBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Calculating...';
+
+            setTimeout(() => {
+                try {
+                    const periodsPerYear = paymentFrequency === 'monthly' ? 12 : paymentFrequency === 'quarterly' ? 4 : 2;
+                    const ratePerPeriod = interestRate / 100 / periodsPerYear;
+                    const totalPeriods = tenure * periodsPerYear;
+                    const emi = (loanAmount * ratePerPeriod * Math.pow(1 + ratePerPeriod, totalPeriods)) / (Math.pow(1 + ratePerPeriod, totalPeriods) - 1);
+                    const totalPayment = emi * totalPeriods;
+                    const totalInterest = totalPayment - loanAmount;
+
+                    const betterTenure = Math.max(0.5, tenure - (businessPurpose === 'workingCapital' ? 0.5 : businessPurpose === 'equipment' ? 2 : 3));
+                    const betterPeriods = betterTenure * periodsPerYear;
+                    const betterEMI = (loanAmount * ratePerPeriod * Math.pow(1 + ratePerPeriod, betterPeriods)) / (Math.pow(1 + ratePerPeriod, betterPeriods) - 1);
+                    const betterTotalPayment = betterEMI * betterPeriods;
+                    const betterTotalInterest = betterTotalPayment - loanAmount;
+                    const betterCalculation = `Reduce tenure to ${betterTenure} years to lower total interest to NPR ${betterTotalInterest.toFixed(2)} (${paymentFrequency} EMI: NPR ${betterEMI.toFixed(2)}). Or, seek a lower interest rate (e.g., 7%) from banks like Everest Bank or Nepal Bank. Consider monthly payments to reduce interest accumulation.`;
+
+                    document.getElementById('businessPurpose').textContent = businessPurpose === 'workingCapital' ? 'Working Capital' : businessPurpose === 'equipment' ? 'Equipment Purchase' : businessPurpose === 'expansion' ? 'Business Expansion' : 'Property Investment';
+                    document.getElementById('loanAmount').textContent = `NPR ${loanAmount.toFixed(2)}`;
+                    document.getElementById('interestRate').textContent = `${interestRate.toFixed(2)}% per year`;
+                    document.getElementById('tenure').textContent = `${tenure} years`;
+                    document.getElementById('paymentFrequency').textContent = paymentFrequency === 'monthly' ? 'Monthly' : paymentFrequency === 'quarterly' ? 'Quarterly' : 'Semi-Annually';
+                    document.getElementById('emi').textContent = `NPR ${emi.toFixed(2)}`;
+                    document.getElementById('totalInterest').textContent = `NPR ${totalInterest.toFixed(2)}`;
+                    document.getElementById('totalPayment').textContent = `NPR ${totalPayment.toFixed(2)}`;
+                    document.getElementById('betterCalculation').textContent = betterCalculation;
+
+                    const outputText = [
+                        `Business Purpose: ${businessPurpose === 'workingCapital' ? 'Working Capital' : businessPurpose === 'equipment' ? 'Equipment Purchase' : businessPurpose === 'expansion' ? 'Business Expansion' : 'Property Investment'}`,
+                        `Loan Amount: NPR ${loanAmount.toFixed(2)}`,
+                        `Interest Rate: ${interestRate.toFixed(2)}% per year`,
+                        `Tenure: ${tenure} years`,
+                        `Payment Frequency: ${paymentFrequency === 'monthly' ? 'Monthly' : paymentFrequency === 'quarterly' ? 'Quarterly' : 'Semi-Annually'}`,
+                        `${paymentFrequency === 'monthly' ? 'Monthly' : paymentFrequency === 'quarterly' ? 'Quarterly' : 'Semi-Annual'} EMI: NPR ${emi.toFixed(2)}`,
+                        `Total Interest: NPR ${totalInterest.toFixed(2)}`,
+                        `Total Payment: NPR ${totalPayment.toFixed(2)}`,
+                        `Better Calculation: ${betterCalculation}`,
+                        `Note: Check with your bank for exact interest rates and processing fees.`
+                    ].join('\n');
+                    output.value = outputText;
+                    output.style.height = 'auto';
+                    output.style.height = output.scrollHeight + 'px';
+                    copyBtn.dataset.result = outputText;
+                    copyBtn.disabled = false;
+
+                    trackEvent('calculate_emi', { businessPurpose, loanAmount, interestRate, tenure, paymentFrequency });
+                } catch (e) {
+                    errorMessage.textContent = 'Error: ' + e.message;
+                    errorMessage.classList.remove('hidden');
+                    trackEvent('calculate_error', { error: e.message });
+                } finally {
+                    calculateBtn.disabled = false;
+                    calculateBtn.innerHTML = '<i class="fas fa-calculator mr-2"></i>Calculate';
+                }
+            }, 300);
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', calculateEMI);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Copied!');
+                    trackEvent('copy_result', { result });
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    trackEvent('copy_error', { result });
+                });
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('businessPurposeSelect').value = 'workingCapital';
+            document.getElementById('loanAmountInput').value = '';
+            document.getElementById('interestRateInput').value = '';
+            document.getElementById('tenureInput').value = '';
+            document.getElementById('paymentFrequencySelect').value = 'monthly';
+            document.getElementById('businessPurpose').textContent = '-';
+            document.getElementById('loanAmount').textContent = '-';
+            document.getElementById('interestRate').textContent = '-';
+            document.getElementById('tenure').textContent = '-';
+            document.getElementById('paymentFrequency').textContent = '-';
+            document.getElementById('emi').textContent = '-';
+            document.getElementById('totalInterest').textContent = '-';
+            document.getElementById('totalPayment').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            document.getElementById('output').value = '';
+            document.getElementById('output').style.height = 'auto';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('errorMessage').classList.add('hidden');
+            trackEvent('reset_form', {});
+        });
+    </script>
+</body>
+</html>
