@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Nepal Fixed Deposit Calculator - Free Online Interest Calculation</title>
+    <meta name="description" content="Calculate fixed deposit maturity and interest accurately with our free online Nepal Fixed Deposit Calculator by HamroTools. Enter principal amount, interest rate, tenure, and compounding frequency to get instant maturity amount, interest earned, and better calculation options for financial planning in Nepal.">
+    <meta name="keywords" content="nepal fixed deposit calculator, online nepal fixed deposit calculator, free nepal fixed deposit calculator tool, calculate fixed deposit interest nepal, fixed deposit interest calculator nepal, nepal term deposit calculator, nepal savings calculator, ideal fixed deposit calculation nepal, better fixed deposit calculation nepal, fixed deposit interest estimation tool, fixed deposit planning app nepal, fixed deposit management tool nepal, nepal fixed deposit finance calculator, nepal fixed deposit return calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Nepal Fixed Deposit Calculator Team">
+    <meta property="og:title" content="Nepal Fixed Deposit Calculator - Free Online Interest Calculation - HamroTools">
+    <meta property="og:description" content="Calculate fixed deposit maturity and interest accurately with our free online Nepal Fixed Deposit Calculator by HamroTools. Enter principal amount, interest rate, tenure, and compounding frequency to get instant maturity amount, interest earned, and better calculation options for financial planning in Nepal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/nepal-fixed-deposit-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nepal Fixed Deposit Calculator - Free Online Interest Calculation - HamroTools">
+    <meta name="twitter:description" content="Calculate fixed deposit maturity and interest accurately with our free online Nepal Fixed Deposit Calculator by HamroTools. Enter principal amount, interest rate, tenure, and compounding frequency to get instant maturity amount, interest earned, and better calculation options for financial planning in Nepal.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/nepal-fixed-deposit-calculator">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Nepal Fixed Deposit Calculator - HamroTools",
+            "description": "A free online Nepal Fixed Deposit Calculator by HamroTools to calculate fixed deposit maturity amounts, interest earned, and better calculation options for savings in Nepal. Works on all devices for accurate financial planning.",
+            "url": "https://www.singhyogendra.com.np/nepal-fixed-deposit-calculator",
+            "applicationCategory": "Finance",
+            "operatingSystem": "All",
+            "keywords": ["nepal fixed deposit calculator", "online nepal fixed deposit calculator", "free nepal fixed deposit calculator tool", "calculate fixed deposit interest nepal", "fixed deposit interest calculator nepal", "nepal term deposit calculator", "nepal savings calculator", "ideal fixed deposit calculation nepal", "better fixed deposit calculation nepal", "fixed deposit interest estimation tool", "fixed deposit planning app nepal", "fixed deposit management tool nepal", "nepal fixed deposit finance calculator", "nepal fixed deposit return calculator"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the Nepal Fixed Deposit Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Nepal Fixed Deposit Calculator - HamroTools is a free online nepal fixed deposit calculator and fixed deposit interest estimation tool designed for accurate maturity and interest calculations. This fixed deposit planning app nepal by HamroTools supports calculate fixed deposit interest nepal, fixed deposit interest calculator nepal, nepal term deposit calculator, and nepal savings calculator, with ideal fixed deposit calculation nepal and better fixed deposit calculation nepal options, making it a reliable fixed deposit management tool nepal for financial planning."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Nepal Fixed Deposit Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Enter your principal amount, interest rate, tenure, and compounding frequency using our fixed deposit management tool nepal by HamroTools. Click 'Calculate' to get instant maturity amount and interest earned estimates with nepal fixed deposit calculator, including better fixed deposit calculation nepal recommendations. Copy or reset as needed. This free nepal fixed deposit calculator tool and online nepal fixed deposit calculator is secure, browser-based, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the Nepal Fixed Deposit Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our nepal fixed deposit calculator and free nepal fixed deposit calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal fixed deposit calculator and fixed deposit planning app nepal for seamless calculations, including calculate fixed deposit interest nepal, fixed deposit interest calculator nepal, nepal term deposit calculator, and nepal savings calculator, with ideal fixed deposit calculation nepal and better fixed deposit calculation nepal options. This fixed deposit management tool nepal provides reliable estimates, making it the perfect nepal fixed deposit finance calculator and nepal fixed deposit return calculator for financial planning."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            .result-table {
+                font-size: 0.75rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .result-table td {
+            color: #4b5563;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .result-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .result-table th, .result-table td {
+                min-width: 120px;
+            }
+        }
+        input, select, table, textarea {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+        textarea {
+            white-space: pre-wrap;
+            resize: none;
+            overflow-y: hidden;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Nepal Fixed Deposit Calculator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate fixed deposit maturity and interest accurately with our free online Nepal Fixed Deposit Calculator by HamroTools. Enter principal amount, interest rate, tenure, and compounding frequency to get instant maturity amount, interest earned, and better calculation options for financial planning in Nepal.</p>
+        </header>
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+            <!-- hamrotools -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="9765483765" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+
+        <!-- Nepal Fixed Deposit Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="principalInput">Principal Amount (NPR)</label>
+                        <input id="principalInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="1000" min="1000" max="50000000" placeholder="Enter principal amount (e.g., 100000)" aria-describedby="principalInputHelp">
+                        <p id="principalInputHelp" class="text-xs text-gray-600 mt-1">Enter the deposit amount (NPR 1,000–50,000,000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="interestRateInput">Interest Rate (% per year)</label>
+                        <input id="interestRateInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.1" min="0.1" max="15" placeholder="Enter interest rate (e.g., 7)" aria-describedby="interestRateInputHelp">
+                        <p id="interestRateInputHelp" class="text-xs text-gray-600 mt-1">Enter the annual interest rate (e.g., 4–11.65%).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="tenureInput">Tenure (years)</label>
+                        <input id="tenureInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.1" min="0.1" placeholder="Enter tenure (e.g., 2)" aria-describedby="tenureInputHelp">
+                        <p id="tenureInputHelp" class="text-xs text-gray-600 mt-1">Enter the deposit tenure in years (e.g., 0.1 or more).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="compoundingFrequencySelect">Compounding Frequency</label>
+                        <select id="compoundingFrequencySelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="compoundingFrequencySelectHelp">
+                            <option value="monthly">Monthly</option>
+                            <option value="quarterly">Quarterly</option>
+                            <option value="semiAnnually">Semi-Annually</option>
+                            <option value="annually">Annually</option>
+                        </select>
+                        <p id="compoundingFrequencySelectHelp" class="text-xs text-gray-600 mt-1">Select how often interest is compounded.</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Calculation Results</label>
+                    <table class="result-table" aria-describedby="resultHelp">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-left font-semibold">Metric</th>
+                                <th class="p-2 text-left font-semibold">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable">
+                            <tr><td>Principal Amount</td><td id="principal">-</td></tr>
+                            <tr><td>Interest Rate</td><td id="interestRate">-</td></tr>
+                            <tr><td>Tenure</td><td id="tenure">-</td></tr>
+                            <tr><td>Compounding Frequency</td><td id="compoundingFrequency">-</td></tr>
+                            <tr><td>Maturity Amount</td><td id="maturityAmount">-</td></tr>
+                            <tr><td>Interest Earned</td><td id="interestEarned">-</td></tr>
+                            <tr><td>Better Calculation</td><td id="betterCalculation">-</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">Fixed deposit calculation results appear here. Note: Check with your bank for exact interest rates and taxes.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Fixed deposit calculation results for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Please enter valid inputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Nepal Fixed Deposit Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Nepal Fixed Deposit Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Nepal Fixed Deposit Calculator - HamroTools is a free online nepal fixed deposit calculator and fixed deposit interest estimation tool designed for accurate maturity and interest calculations. This fixed deposit planning app nepal by HamroTools supports calculate fixed deposit interest nepal, fixed deposit interest calculator nepal, nepal term deposit calculator, and nepal savings calculator, with ideal fixed deposit calculation nepal and better fixed deposit calculation nepal options, making it a reliable fixed deposit management tool nepal for financial planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter your principal amount, interest rate, tenure, and compounding frequency using our fixed deposit management tool nepal by HamroTools. Click 'Calculate' to get instant maturity amount and interest earned estimates with nepal fixed deposit calculator, including better fixed deposit calculation nepal recommendations. Copy or reset as needed. This free nepal fixed deposit calculator tool and online nepal fixed deposit calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Nepal Fixed Deposit Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our nepal fixed deposit calculator and free nepal fixed deposit calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal fixed deposit calculator and fixed deposit planning app nepal for seamless calculations, including calculate fixed deposit interest nepal, fixed deposit interest calculator nepal, nepal term deposit calculator, and nepal savings calculator, with ideal fixed deposit calculation nepal and better fixed deposit calculation nepal options. This fixed deposit management tool nepal provides reliable estimates, making it the perfect nepal fixed deposit finance calculator and nepal fixed deposit return calculator for financial planning.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Analytics tracking function
+        function trackEvent(event, data) {
+            console.log(`Event: ${event}`, data);
+        }
+        trackEvent('page_load', { page: window.location.href });
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateFD() {
+            const principal = parseFloat(document.getElementById('principalInput').value) || 0;
+            const interestRate = parseFloat(document.getElementById('interestRateInput').value) || 0;
+            const tenure = parseFloat(document.getElementById('tenureInput').value) || 0;
+            const compoundingFrequency = document.getElementById('compoundingFrequencySelect').value;
+            const errorMessage = document.getElementById('errorMessage');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const copyBtn = document.getElementById('copyBtn');
+            const output = document.getElementById('output');
+
+            errorMessage.classList.add('hidden');
+            document.getElementById('principal').textContent = '-';
+            document.getElementById('interestRate').textContent = '-';
+            document.getElementById('tenure').textContent = '-';
+            document.getElementById('compoundingFrequency').textContent = '-';
+            document.getElementById('maturityAmount').textContent = '-';
+            document.getElementById('interestEarned').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            output.value = '';
+            output.style.height = 'auto';
+            copyBtn.disabled = true;
+
+            if (principal < 1000 || principal > 50000000) {
+                errorMessage.textContent = 'Error: Principal amount must be between NPR 1,000 and NPR 50,000,000.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_principal' });
+                return;
+            }
+            if (interestRate < 0.1 || interestRate > 15) {
+                errorMessage.textContent = 'Error: Interest rate must be between 0.1% and 15%.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_interest_rate' });
+                return;
+            }
+            if (tenure <= 0) {
+                errorMessage.textContent = 'Error: Tenure must be greater than 0 years.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_tenure' });
+                return;
+            }
+
+            calculateBtn.disabled = true;
+            calculateBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Calculating...';
+
+            setTimeout(() => {
+                try {
+                    const compoundsPerYear = compoundingFrequency === 'monthly' ? 12 : compoundingFrequency === 'quarterly' ? 4 : compoundingFrequency === 'semiAnnually' ? 2 : 1;
+                    const ratePerPeriod = interestRate / 100;
+                    const maturityAmount = principal * Math.pow(1 + ratePerPeriod / compoundsPerYear, compoundsPerYear * tenure);
+                    const interestEarned = maturityAmount - principal;
+
+                    const betterInterestRate = Math.min(11, interestRate + 2);
+                    const betterTenure = tenure + (tenure <= 1 ? 1 : 2); // Add 1 year for short tenures, 2 for longer
+                    const betterCompoundsPerYear = 12; // Monthly for maximum returns
+                    const betterMaturityAmount = principal * Math.pow(1 + betterInterestRate / 100 / betterCompoundsPerYear, betterCompoundsPerYear * betterTenure);
+                    const betterInterestEarned = betterMaturityAmount - principal;
+                    const betterCalculation = `Increase tenure to ${betterTenure.toFixed(2)} years and use monthly compounding with a higher interest rate (e.g., ${betterInterestRate.toFixed(2)}%) from institutions like CDBL to earn NPR ${betterInterestEarned.toFixed(2)} (Maturity: NPR ${betterMaturityAmount.toFixed(2)}).`;
+
+                    document.getElementById('principal').textContent = `NPR ${principal.toFixed(2)}`;
+                    document.getElementById('interestRate').textContent = `${interestRate.toFixed(2)}% per year`;
+                    document.getElementById('tenure').textContent = `${tenure.toFixed(2)} years`;
+                    document.getElementById('compoundingFrequency').textContent = compoundingFrequency === 'monthly' ? 'Monthly' : compoundingFrequency === 'quarterly' ? 'Quarterly' : compoundingFrequency === 'semiAnnually' ? 'Semi-Annually' : 'Annually';
+                    document.getElementById('maturityAmount').textContent = `NPR ${maturityAmount.toFixed(2)}`;
+                    document.getElementById('interestEarned').textContent = `NPR ${interestEarned.toFixed(2)}`;
+                    document.getElementById('betterCalculation').textContent = betterCalculation;
+
+                    const outputText = [
+                        `Principal Amount: NPR ${principal.toFixed(2)}`,
+                        `Interest Rate: ${interestRate.toFixed(2)}% per year`,
+                        `Tenure: ${tenure.toFixed(2)} years`,
+                        `Compounding Frequency: ${compoundingFrequency === 'monthly' ? 'Monthly' : compoundingFrequency === 'quarterly' ? 'Quarterly' : compoundingFrequency === 'semiAnnually' ? 'Semi-Annually' : 'Annually'}`,
+                        `Maturity Amount: NPR ${maturityAmount.toFixed(2)}`,
+                        `Interest Earned: NPR ${interestEarned.toFixed(2)}`,
+                        `Better Calculation: ${betterCalculation}`,
+                        `Note: Check with your bank for exact interest rates and taxes.`
+                    ].join('\n');
+                    output.value = outputText;
+                    output.style.height = 'auto';
+                    output.style.height = output.scrollHeight + 'px';
+                    copyBtn.dataset.result = outputText;
+                    copyBtn.disabled = false;
+
+                    trackEvent('calculate_fd', { principal, interestRate, tenure, compoundingFrequency });
+                } catch (e) {
+                    errorMessage.textContent = 'Error: ' + e.message;
+                    errorMessage.classList.remove('hidden');
+                    trackEvent('calculate_error', { error: e.message });
+                } finally {
+                    calculateBtn.disabled = false;
+                    calculateBtn.innerHTML = '<i class="fas fa-calculator mr-2"></i>Calculate';
+                }
+            }, 300);
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', calculateFD);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Copied!');
+                    trackEvent('copy_result', { result });
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    trackEvent('copy_error', { result });
+                });
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('principalInput').value = '';
+            document.getElementById('interestRateInput').value = '';
+            document.getElementById('tenureInput').value = '';
+            document.getElementById('compoundingFrequencySelect').value = 'monthly';
+            document.getElementById('principal').textContent = '-';
+            document.getElementById('interestRate').textContent = '-';
+            document.getElementById('tenure').textContent = '-';
+            document.getElementById('compoundingFrequency').textContent = '-';
+            document.getElementById('maturityAmount').textContent = '-';
+            document.getElementById('interestEarned').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            document.getElementById('output').value = '';
+            document.getElementById('output').style.height = 'auto';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('errorMessage').classList.add('hidden');
+            trackEvent('reset_form', {});
+        });
+    </script>
+</body>
+</html>
