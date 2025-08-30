@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Nepal Stock Profit Calculator - Free Online Investment Tool</title>
+    <meta name="description" content="Calculate stock trading profits accurately with our free online Nepal Stock Profit Calculator by HamroTools. Enter share quantity, buy/sell prices, commission rate, and investor type to get instant total costs, gross profit, capital gains tax, net profit, and better calculation options for NEPSE trading in Nepal.">
+    <meta name="keywords" content="nepal stock profit calculator, online nepal stock calculator, free nepal stock calculator tool, calculate stock profits nepal, nepal stock trading calculator, nepal stock calculation tool, stock profit estimation tool, ideal stock profit calculation nepal, better stock profit calculation nepal, stock trading planning app nepal, stock trading management tool nepal, nepal stock finance calculator, nepal stock return calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Nepal Stock Profit Calculator Team">
+    <meta property="og:title" content="Nepal Stock Profit Calculator - Free Online Investment Tool - HamroTools">
+    <meta property="og:description" content="Calculate stock trading profits accurately with our free online Nepal Stock Profit Calculator by HamroTools. Enter share quantity, buy/sell prices, commission rate, and investor type to get instant total costs, gross profit, capital gains tax, net profit, and better calculation options for NEPSE trading in Nepal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/nepal-stock-profit-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nepal Stock Profit Calculator - Free Online Investment Tool - HamroTools">
+    <meta name="twitter:description" content="Calculate stock trading profits accurately with our free online Nepal Stock Profit Calculator by HamroTools. Enter share quantity, buy/sell prices, commission rate, and investor type to get instant total costs, gross profit, capital gains tax, net profit, and better calculation options for NEPSE trading in Nepal.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/nepal-stock-profit-calculator">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Nepal Stock Profit Calculator - HamroTools",
+            "description": "A free online Nepal Stock Profit Calculator by HamroTools to calculate stock trading profits for NEPSE-listed shares in Nepal. Works on all devices for accurate financial planning.",
+            "url": "https://www.singhyogendra.com.np/nepal-stock-profit-calculator",
+            "applicationCategory": "Finance",
+            "operatingSystem": "All",
+            "keywords": ["nepal stock profit calculator", "online nepal stock calculator", "free nepal stock calculator tool", "calculate stock profits nepal", "nepal stock trading calculator", "nepal stock calculation tool", "stock profit estimation tool", "ideal stock profit calculation nepal", "better stock profit calculation nepal", "stock trading planning app nepal", "stock trading management tool nepal", "nepal stock finance calculator", "nepal stock return calculator"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the Nepal Stock Profit Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Nepal Stock Profit Calculator - HamroTools is a free online nepal stock calculator and stock profit estimation tool designed for accurate profit calculations for NEPSE trading. This stock trading planning app nepal by HamroTools supports calculate stock profits nepal, nepal stock trading calculator, nepal stock calculation tool, with ideal stock profit calculation nepal and better stock profit calculation nepal options, making it a reliable stock trading management tool nepal for financial planning."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Nepal Stock Profit Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Enter share quantity, buy/sell prices, broker commission rate, and investor type using our stock trading management tool nepal by HamroTools. Click 'Calculate' to get instant total costs, gross profit, capital gains tax, net profit, and better calculation recommendations with nepal stock profit calculator. Copy or reset as needed. This free nepal stock calculator tool and online nepal stock calculator is secure, browser-based, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the Nepal Stock Profit Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our nepal stock profit calculator and free nepal stock calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal stock calculator and stock trading planning app nepal for seamless calculations, including calculate stock profits nepal, nepal stock trading calculator, nepal stock calculation tool, with ideal stock profit calculation nepal and better stock profit calculation nepal options. This stock trading management tool nepal provides reliable estimates, making it the perfect nepal stock finance calculator and nepal stock return calculator for financial planning."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            .result-table {
+                font-size: 0.75rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .result-table td {
+            color: #4b5563;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .result-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .result-table th, .result-table td {
+                min-width: 120px;
+            }
+        }
+        input, select, table {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+        textarea {
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            resize: none;
+            overflow-y: hidden;
+            width: 100%;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Nepal Stock Profit Calculator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate stock trading profits accurately with our free online Nepal Stock Profit Calculator by HamroTools. Enter share quantity, buy/sell prices, commission rate, and investor type to get instant total costs, gross profit, capital gains tax, net profit, and better calculation options for NEPSE trading in Nepal.</p>
+        </header>
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+            <!-- hamrotools -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="9765483765" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+
+        <!-- Nepal Stock Profit Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="shareQuantityInput">Share Quantity</label>
+                        <input id="shareQuantityInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="1" min="1" max="10000" placeholder="Enter share quantity (e.g., 100)" aria-describedby="shareQuantityInputHelp">
+                        <p id="shareQuantityInputHelp" class="text-xs text-gray-600 mt-1">Enter the number of shares (1–10,000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="buyPriceInput">Buy Price (NPR)</label>
+                        <input id="buyPriceInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.01" min="10" max="10000" placeholder="Enter buy price per share (e.g., 200)" aria-describedby="buyPriceInputHelp">
+                        <p id="buyPriceInputHelp" class="text-xs text-gray-600 mt-1">Enter the purchase price per share (NPR 10–10,000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="sellPriceInput">Sell Price (NPR)</label>
+                        <input id="sellPriceInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.01" min="10" max="10000" placeholder="Enter sell price per share (e.g., 300)" aria-describedby="sellPriceInputHelp">
+                        <p id="sellPriceInputHelp" class="text-xs text-gray-600 mt-1">Enter the selling price per share (NPR 10–10,000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="commissionRateInput">Broker Commission Rate (%)</label>
+                        <input id="commissionRateInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.01" min="0.4" max="1" placeholder="Enter commission rate (e.g., 0.4)" aria-describedby="commissionRateInputHelp">
+                        <p id="commissionRateInputHelp" class="text-xs text-gray-600 mt-1">Enter the broker commission rate (0.4–1%, minimum NPR 10).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="investorTypeSelect">Investor Type</label>
+                        <select id="investorTypeSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="investorTypeSelectHelp">
+                            <option value="individual">Individual (5% Tax)</option>
+                            <option value="institutional">Institutional (10% Tax)</option>
+                        </select>
+                        <p id="investorTypeSelectHelp" class="text-xs text-gray-600 mt-1">Select investor type for capital gains tax (5% or 10%).</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Calculation Results</label>
+                    <table class="result-table" aria-describedby="resultHelp">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-left font-semibold">Metric</th>
+                                <th class="p-2 text-left font-semibold">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable">
+                            <tr><td>Share Quantity</td><td id="shareQuantity">-</td></tr>
+                            <tr><td>Buy Price</td><td id="buyPrice">-</td></tr>
+                            <tr><td>Sell Price</td><td id="sellPrice">-</td></tr>
+                            <tr><td>Commission Rate</td><td id="commissionRate">-</td></tr>
+                            <tr><td>Investor Type</td><td id="investorType">-</td></tr>
+                            <tr><td>Total Buy Cost</td><td id="totalBuyCost">-</td></tr>
+                            <tr><td>Total Sell Amount</td><td id="totalSellAmount">-</td></tr>
+                            <tr><td>Gross Profit</td><td id="grossProfit">-</td></tr>
+                            <tr><td>Capital Gains Tax</td><td id="capitalGainsTax">-</td></tr>
+                            <tr><td>Net Profit</td><td id="netProfit">-</td></tr>
+                            <tr><td>Better Calculation</td><td id="betterCalculation">-</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">Stock trading calculation results appear here. Note: Results exclude additional fees (e.g., annual DP maintenance) and assume same-day transactions. Consult your broker.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Stock trading calculation results for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Please enter valid inputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Nepal Stock Profit Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Nepal Stock Profit Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Nepal Stock Profit Calculator - HamroTools is a free online nepal stock calculator and stock profit estimation tool designed for accurate profit calculations for NEPSE trading. This stock trading planning app nepal by HamroTools supports calculate stock profits nepal, nepal stock trading calculator, nepal stock calculation tool, with ideal stock profit calculation nepal and better stock profit calculation nepal options, making it a reliable stock trading management tool nepal for financial planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Enter share quantity, buy/sell prices, broker commission rate, and investor type using our stock trading management tool nepal by HamroTools. Click 'Calculate' to get instant total costs, gross profit, capital gains tax, net profit, and better calculation recommendations with nepal stock profit calculator. Copy or reset as needed. This free nepal stock calculator tool and online nepal stock calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Nepal Stock Profit Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our nepal stock profit calculator and free nepal stock calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal stock calculator and stock trading planning app nepal for seamless calculations, including calculate stock profits nepal, nepal stock trading calculator, nepal stock calculation tool, with ideal stock profit calculation nepal and better stock profit calculation nepal options. This stock trading management tool nepal provides reliable estimates, making it the perfect nepal stock finance calculator and nepal stock return calculator for financial planning.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Analytics tracking function
+        function trackEvent(event, data) {
+            console.log(`Event: ${event}`, data);
+        }
+        trackEvent('page_load', { page: window.location.href });
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateStockProfit() {
+            const shareQuantity = parseInt(document.getElementById('shareQuantityInput').value) || 0;
+            const buyPrice = parseFloat(document.getElementById('buyPriceInput').value) || 0;
+            const sellPrice = parseFloat(document.getElementById('sellPriceInput').value) || 0;
+            const commissionRate = parseFloat(document.getElementById('commissionRateInput').value) || 0;
+            const investorType = document.getElementById('investorTypeSelect').value;
+            const errorMessage = document.getElementById('errorMessage');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const copyBtn = document.getElementById('copyBtn');
+            const output = document.getElementById('output');
+
+            errorMessage.classList.add('hidden');
+            document.getElementById('shareQuantity').textContent = '-';
+            document.getElementById('buyPrice').textContent = '-';
+            document.getElementById('sellPrice').textContent = '-';
+            document.getElementById('commissionRate').textContent = '-';
+            document.getElementById('investorType').textContent = '-';
+            document.getElementById('totalBuyCost').textContent = '-';
+            document.getElementById('totalSellAmount').textContent = '-';
+            document.getElementById('grossProfit').textContent = '-';
+            document.getElementById('capitalGainsTax').textContent = '-';
+            document.getElementById('netProfit').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            output.value = '';
+            output.style.height = 'auto';
+            copyBtn.disabled = true;
+
+            if (shareQuantity < 1 || shareQuantity > 10000) {
+                errorMessage.textContent = 'Error: Share quantity must be between 1 and 10,000.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_share_quantity' });
+                return;
+            }
+            if (buyPrice < 10 || buyPrice > 10000) {
+                errorMessage.textContent = 'Error: Buy price must be between NPR 10 and NPR 10,000.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_buy_price' });
+                return;
+            }
+            if (sellPrice < 10 || sellPrice > 10000) {
+                errorMessage.textContent = 'Error: Sell price must be between NPR 10 and NPR 10,000.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_sell_price' });
+                return;
+            }
+            if (commissionRate < 0.4 || commissionRate > 1) {
+                errorMessage.textContent = 'Error: Broker commission rate must be between 0.4% and 1%.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_commission_rate' });
+                return;
+            }
+
+            calculateBtn.disabled = true;
+            calculateBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Calculating...';
+
+            setTimeout(() => {
+                try {
+                    const totalBuyAmount = shareQuantity * buyPrice;
+                    const buyCommission = Math.max(10, totalBuyAmount * (commissionRate / 100));
+                    const buySebonFee = totalBuyAmount * 0.00015;
+                    const buyDpCharge = 25;
+                    const totalBuyCost = totalBuyAmount + buyCommission + buySebonFee + buyDpCharge;
+
+                    const totalSellAmount = shareQuantity * sellPrice;
+                    const sellCommission = Math.max(10, totalSellAmount * (commissionRate / 100));
+                    const sellSebonFee = totalSellAmount * 0.00015;
+                    const sellDpCharge = 25;
+
+                    const grossProfit = totalSellAmount - totalBuyAmount;
+                    const capitalGainsTax = grossProfit > 0 ? grossProfit * (investorType === 'individual' ? 0.05 : 0.10) : 0;
+                    const netProfit = grossProfit - buyCommission - buySebonFee - buyDpCharge - sellCommission - sellSebonFee - sellDpCharge - capitalGainsTax;
+
+                    const betterSellPrice = Math.min(10000, sellPrice * 1.1);
+                    const betterCommissionRate = Math.min(commissionRate, 0.36);
+                    const betterTotalSellAmount = shareQuantity * betterSellPrice;
+                    const betterSellCommission = Math.max(10, betterTotalSellAmount * (betterCommissionRate / 100));
+                    const betterSellSebonFee = betterTotalSellAmount * 0.00015;
+                    const betterGrossProfit = betterTotalSellAmount - totalBuyAmount;
+                    const betterCapitalGainsTax = betterGrossProfit > 0 ? betterGrossProfit * 0.05 : 0;
+                    const betterNetProfit = betterGrossProfit - buyCommission - buySebonFee - buyDpCharge - betterSellCommission - betterSellSebonFee - sellDpCharge - betterCapitalGainsTax;
+                    const betterCalculation = `Sell at a higher price (e.g., NPR ${betterSellPrice.toFixed(2)}), negotiate a lower commission rate (e.g., ${betterCommissionRate.toFixed(2)}%), and trade as an individual (5% tax) to earn NPR ${betterNetProfit.toFixed(2)}.`;
+
+                    document.getElementById('shareQuantity').textContent = shareQuantity;
+                    document.getElementById('buyPrice').textContent = `NPR ${buyPrice.toFixed(2)}`;
+                    document.getElementById('sellPrice').textContent = `NPR ${sellPrice.toFixed(2)}`;
+                    document.getElementById('commissionRate').textContent = `${commissionRate.toFixed(2)}%`;
+                    document.getElementById('investorType').textContent = investorType === 'individual' ? 'Individual (5% Tax)' : 'Institutional (10% Tax)';
+                    document.getElementById('totalBuyCost').textContent = `NPR ${totalBuyCost.toFixed(2)}`;
+                    document.getElementById('totalSellAmount').textContent = `NPR ${totalSellAmount.toFixed(2)}`;
+                    document.getElementById('grossProfit').textContent = `NPR ${grossProfit.toFixed(2)}`;
+                    document.getElementById('capitalGainsTax').textContent = `NPR ${capitalGainsTax.toFixed(2)}`;
+                    document.getElementById('netProfit').textContent = `NPR ${netProfit.toFixed(2)}`;
+                    document.getElementById('betterCalculation').textContent = betterCalculation;
+
+                    const outputText = [
+                        `Share Quantity: ${shareQuantity}`,
+                        `Buy Price: NPR ${buyPrice.toFixed(2)}`,
+                        `Sell Price: NPR ${sellPrice.toFixed(2)}`,
+                        `Commission Rate: ${commissionRate.toFixed(2)}%`,
+                        `Investor Type: ${investorType === 'individual' ? 'Individual (5% Tax)' : 'Institutional (10% Tax)'}`,
+                        `Total Buy Cost: NPR ${totalBuyCost.toFixed(2)}`,
+                        `Total Sell Amount: NPR ${totalSellAmount.toFixed(2)}`,
+                        `Gross Profit: NPR ${grossProfit.toFixed(2)}`,
+                        `Capital Gains Tax: NPR ${capitalGainsTax.toFixed(2)}`,
+                        `Net Profit: NPR ${netProfit.toFixed(2)}`,
+                        `Better Calculation: ${betterCalculation}`,
+                        `Note: Results exclude additional fees (e.g., annual DP maintenance) and assume same-day transactions. Consult your broker.`
+                    ].join('\n');
+                    output.value = outputText;
+                    output.style.height = 'auto';
+                    output.style.height = output.scrollHeight + 'px';
+                    copyBtn.dataset.result = outputText;
+                    copyBtn.disabled = false;
+
+                    trackEvent('calculate_stock_profit', { shareQuantity, buyPrice, sellPrice, commissionRate, investorType });
+                } catch (e) {
+                    errorMessage.textContent = 'Error: ' + e.message;
+                    errorMessage.classList.remove('hidden');
+                    trackEvent('calculate_error', { error: e.message });
+                } finally {
+                    calculateBtn.disabled = false;
+                    calculateBtn.innerHTML = '<i class="fas fa-calculator mr-2"></i>Calculate';
+                }
+            }, 300);
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', calculateStockProfit);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Copied!');
+                    trackEvent('copy_result', { result });
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    trackEvent('copy_error', { result });
+                });
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('shareQuantityInput').value = '';
+            document.getElementById('buyPriceInput').value = '';
+            document.getElementById('sellPriceInput').value = '';
+            document.getElementById('commissionRateInput').value = '';
+            document.getElementById('investorTypeSelect').value = 'individual';
+            document.getElementById('shareQuantity').textContent = '-';
+            document.getElementById('buyPrice').textContent = '-';
+            document.getElementById('sellPrice').textContent = '-';
+            document.getElementById('commissionRate').textContent = '-';
+            document.getElementById('investorType').textContent = '-';
+            document.getElementById('totalBuyCost').textContent = '-';
+            document.getElementById('totalSellAmount').textContent = '-';
+            document.getElementById('grossProfit').textContent = '-';
+            document.getElementById('capitalGainsTax').textContent = '-';
+            document.getElementById('netProfit').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            document.getElementById('output').value = '';
+            document.getElementById('output').style.height = 'auto';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('errorMessage').classList.add('hidden');
+            trackEvent('reset_form', {});
+        });
+    </script>
+</body>
+</html>
