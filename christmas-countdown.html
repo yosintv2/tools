@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Christmas Countdown - Free Online Timer Tool</title>
+    <meta name="description" content="Track the time to Christmas with our free online Christmas Countdown by HamroTools. Get a live countdown in days, hours, minutes, and seconds that auto-restarts for the next Christmas, perfect for holiday planning in Nepal and beyond.">
+    <meta name="keywords" content="christmas countdown, online christmas countdown, free christmas countdown tool, christmas timer nepal, christmas countdown timer, holiday countdown tool, christmas planning app, live christmas countdown, auto-restart christmas timer, festive countdown nepal, christmas event planner, christmas time tracker, holiday timer tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Christmas Countdown Team">
+    <meta property="og:title" content="Christmas Countdown - Free Online Timer Tool - HamroTools">
+    <meta property="og:description" content="Track the time to Christmas with our free online Christmas Countdown by HamroTools. Get a live countdown in days, hours, minutes, and seconds that auto-restarts for the next Christmas, perfect for holiday planning in Nepal and beyond.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/christmas-countdown">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Christmas Countdown - Free Online Timer Tool - HamroTools">
+    <meta name="twitter:description" content="Track the time to Christmas with our free online Christmas Countdown by HamroTools. Get a live countdown in days, hours, minutes, and seconds that auto-restarts for the next Christmas, perfect for holiday planning in Nepal and beyond.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/christmas-countdown">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Christmas Countdown - HamroTools",
+            "description": "A free online Christmas Countdown by HamroTools to track time to Christmas in days, hours, minutes, and seconds. Auto-restarts for the next Christmas, works on all devices for festive holiday planning.",
+            "url": "https://www.singhyogendra.com.np/christmas-countdown",
+            "applicationCategory": "Lifestyle",
+            "operatingSystem": "All",
+            "keywords": ["christmas countdown", "online christmas countdown", "free christmas countdown tool", "christmas timer nepal", "christmas countdown timer", "holiday countdown tool", "christmas planning app", "live christmas countdown", "auto-restart christmas timer", "festive countdown nepal", "christmas event planner", "christmas time tracker", "holiday timer tool"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the Christmas Countdown - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Christmas Countdown - HamroTools is a free online christmas countdown and holiday countdown tool designed for accurate time tracking to Christmas. This christmas planning app by HamroTools supports christmas timer nepal, christmas countdown timer, live christmas countdown, with auto-restart christmas timer and festive countdown nepal options, making it a reliable christmas event planner and christmas time tracker for holiday planning."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Christmas Countdown - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "View the live countdown to Christmas in days, hours, minutes, and seconds with our christmas countdown timer by HamroTools. Copy or reset as needed. This free christmas countdown tool and online christmas countdown is secure, browser-based, auto-restarts for the next Christmas, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the Christmas Countdown - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our christmas countdown and free christmas countdown tool by HamroTools is fast, accurate, and festive, offering an online christmas countdown and christmas planning app for seamless holiday tracking, including christmas timer nepal, christmas countdown timer, live christmas countdown, with auto-restart christmas timer and festive countdown nepal options. This christmas event planner provides a reliable holiday timer tool for festive planning."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #dc2626, #16a34a);
+            position: relative;
+            overflow-x: hidden;
+        }
+        .snowflake {
+            position: absolute;
+            color: #ffffff;
+            font-size: 1rem;
+            opacity: 0.6;
+            animation: fall linear infinite;
+            pointer-events: none;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-100vh); opacity: 0.6; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            .result-table {
+                font-size: 0.75rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #d4af37;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .result-table td {
+            color: #4b5563;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .result-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .result-table th, .result-table td {
+                min-width: 120px;
+            }
+        }
+        input, select, table {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+        textarea {
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            resize: none;
+            overflow-y: hidden;
+            width: 100%;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-tree text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Christmas Countdown</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Track the time to Christmas with our free online Christmas Countdown by HamroTools. Get a live countdown in days, hours, minutes, and seconds that auto-restarts for the next Christmas, perfect for holiday planning in Nepal and beyond.</p>
+        </header>
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+            <!-- hamrotools -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="9765483765" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+
+        <!-- Christmas Countdown Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                        <button type="button" id="toggleSnowBtn" class="action-btn w-full sm:w-1/3 bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-snowflake mr-2"></i>
+                            Toggle Snow Animation
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Countdown Results</label>
+                    <table class="result-table" aria-describedby="resultHelp">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-left font-semibold">Metric</th>
+                                <th class="p-2 text-left font-semibold">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable">
+                            <tr><td>Target Christmas</td><td id="targetChristmas">-</td></tr>
+                            <tr><td>Days</td><td id="days">-</td></tr>
+                            <tr><td>Hours</td><td id="hours">-</td></tr>
+                            <tr><td>Minutes</td><td id="minutes">-</td></tr>
+                            <tr><td>Seconds</td><td id="seconds">-</td></tr>
+                            <tr><td>Better Planning</td><td id="betterPlanning">-</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">Countdown results appear here. Auto-restarts for next Christmas if date has passed. Uses local device time.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Countdown results for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Unable to calculate countdown.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Christmas Countdown - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Christmas Countdown - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Christmas Countdown - HamroTools is a free online christmas countdown and holiday countdown tool designed for accurate time tracking to Christmas. This christmas planning app by HamroTools supports christmas timer nepal, christmas countdown timer, live christmas countdown, with auto-restart christmas timer and festive countdown nepal options, making it a reliable christmas event planner and christmas time tracker for holiday planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    View the live countdown to Christmas in days, hours, minutes, and seconds with our christmas countdown timer by HamroTools. Copy or reset as needed. This free christmas countdown tool and online christmas countdown is secure, browser-based, auto-restarts for the next Christmas, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Christmas Countdown - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our christmas countdown and free christmas countdown tool by HamroTools is fast, accurate, and festive, offering an online christmas countdown and christmas planning app for seamless holiday tracking, including christmas timer nepal, christmas countdown timer, live christmas countdown, with auto-restart christmas timer and festive countdown nepal options. This christmas event planner provides a reliable holiday timer tool for festive planning.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Analytics tracking function
+        function trackEvent(event, data) {
+            console.log(`Event: ${event}`, data);
+        }
+        trackEvent('page_load', { page: window.location.href });
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        // Snowflake animation
+        let snowEnabled = true;
+        function createSnowflake() {
+            if (!snowEnabled) return;
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.innerHTML = '❄';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
+            document.body.appendChild(snowflake);
+            setTimeout(() => snowflake.remove(), 10000);
+        }
+        setInterval(createSnowflake, 500);
+
+        // Automatic countdown
+        let countdownInterval = null;
+        function startCountdown() {
+            const errorMessage = document.getElementById('errorMessage');
+            const copyBtn = document.getElementById('copyBtn');
+            const output = document.getElementById('output');
+
+            errorMessage.classList.add('hidden');
+            document.getElementById('targetChristmas').textContent = '-';
+            document.getElementById('days').textContent = '-';
+            document.getElementById('hours').textContent = '-';
+            document.getElementById('minutes').textContent = '-';
+            document.getElementById('seconds').textContent = '-';
+            document.getElementById('betterPlanning').textContent = '-';
+            output.value = '';
+            output.style.height = 'auto';
+            copyBtn.disabled = true;
+
+            try {
+                if (countdownInterval) clearInterval(countdownInterval);
+                function updateCountdown() {
+                    const now = new Date();
+                    const currentYear = now.getFullYear();
+                    let christmas = new Date(currentYear, 11, 25, 23, 59, 59);
+                    if (now > christmas) {
+                        christmas = new Date(currentYear + 1, 11, 25, 23, 59, 59);
+                    }
+                    const diff = christmas - now;
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                    document.getElementById('targetChristmas').textContent = `December 25, ${christmas.getFullYear()}`;
+                    document.getElementById('days').textContent = days >= 0 ? days : 0;
+                    document.getElementById('hours').textContent = hours >= 0 ? hours : 0;
+                    document.getElementById('minutes').textContent = minutes >= 0 ? minutes : 0;
+                    document.getElementById('seconds').textContent = seconds >= 0 ? seconds : 0;
+                    document.getElementById('betterPlanning').textContent = `Plan early for Christmas ${christmas.getFullYear() + 1} to make it even more special!`;
+
+                    const outputText = [
+                        `Target Christmas: December 25, ${christmas.getFullYear()}`,
+                        `Days: ${days >= 0 ? days : 0}`,
+                        `Hours: ${hours >= 0 ? hours : 0}`,
+                        `Minutes: ${minutes >= 0 ? minutes : 0}`,
+                        `Seconds: ${seconds >= 0 ? seconds : 0}`,
+                        `Better Planning: Plan early for Christmas ${christmas.getFullYear() + 1} to make it even more special!`,
+                        `Note: Uses local device time. Auto-restarts for next Christmas if date has passed.`
+                    ].join('\n');
+                    output.value = outputText;
+                    output.style.height = 'auto';
+                    output.style.height = output.scrollHeight + 'px';
+                    copyBtn.dataset.result = outputText;
+                    copyBtn.disabled = false;
+
+                    trackEvent('countdown_update', { targetYear: christmas.getFullYear(), days, hours, minutes, seconds });
+                }
+                updateCountdown();
+                countdownInterval = setInterval(updateCountdown, 1000);
+            } catch (e) {
+                errorMessage.textContent = 'Error: ' + e.message;
+                errorMessage.classList.remove('hidden');
+                trackEvent('countdown_error', { error: e.message });
+            }
+        }
+
+        // Start countdown on page load
+        startCountdown();
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Copied!');
+                    trackEvent('copy_result', { result });
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    trackEvent('copy_error', { result });
+                });
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            if (countdownInterval) clearInterval(countdownInterval);
+            document.getElementById('targetChristmas').textContent = '-';
+            document.getElementById('days').textContent = '-';
+            document.getElementById('hours').textContent = '-';
+            document.getElementById('minutes').textContent = '-';
+            document.getElementById('seconds').textContent = '-';
+            document.getElementById('betterPlanning').textContent = '-';
+            document.getElementById('output').value = '';
+            document.getElementById('output').style.height = 'auto';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('errorMessage').classList.add('hidden');
+            startCountdown();
+            trackEvent('reset_form', {});
+        });
+
+        document.getElementById('toggleSnowBtn').addEventListener('click', () => {
+            snowEnabled = !snowEnabled;
+            document.querySelectorAll('.snowflake').forEach(snowflake => snowflake.remove());
+            document.getElementById('toggleSnowBtn').innerHTML = `<i class="fas fa-snowflake mr-2"></i>${snowEnabled ? 'Disable' : 'Enable'} Snow Animation`;
+            trackEvent('toggle_snow', { enabled: snowEnabled });
+        });
+    </script>
+</body>
+</html>
