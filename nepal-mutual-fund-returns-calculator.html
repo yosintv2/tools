@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Nepal Mutual Fund Returns Calculator - Free Online Investment Tool</title>
+    <meta name="description" content="Calculate mutual fund returns accurately with our free online Nepal Mutual Fund Returns Calculator by HamroTools. Enter investment amount, expected annual return, and tenure for SIP or lump sum investments to get instant maturity amount, wealth gained, and better calculation options for financial planning in Nepal.">
+    <meta name="keywords" content="nepal mutual fund returns calculator, online nepal mutual fund calculator, free nepal mutual fund calculator tool, calculate mutual fund returns nepal, mutual fund calculator nepal, nepal mutual fund calculation tool, mutual fund return estimation tool, ideal mutual fund calculation nepal, better mutual fund calculation nepal, mutual fund planning app nepal, mutual fund management tool nepal, nepal mutual fund finance calculator, nepal mutual fund return calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HamroTools Nepal Mutual Fund Returns Calculator Team">
+    <meta property="og:title" content="Nepal Mutual Fund Returns Calculator - Free Online Investment Tool - HamroTools">
+    <meta property="og:description" content="Calculate mutual fund returns accurately with our free online Nepal Mutual Fund Returns Calculator by HamroTools. Enter investment amount, expected annual return, and tenure for SIP or lump sum investments to get instant maturity amount, wealth gained, and better calculation options for financial planning in Nepal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.singhyogendra.com.np/nepal-mutual-fund-returns-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nepal Mutual Fund Returns Calculator - Free Online Investment Tool - HamroTools">
+    <meta name="twitter:description" content="Calculate mutual fund returns accurately with our free online Nepal Mutual Fund Returns Calculator by HamroTools. Enter investment amount, expected annual return, and tenure for SIP or lump sum investments to get instant maturity amount, wealth gained, and better calculation options for financial planning in Nepal.">
+    <link rel="canonical" href="https://www.singhyogendra.com.np/nepal-mutual-fund-returns-calculator">
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Nepal Mutual Fund Returns Calculator - HamroTools",
+            "description": "A free online Nepal Mutual Fund Returns Calculator by HamroTools to calculate mutual fund returns for SIP and lump sum investments in Nepal. Works on all devices for accurate financial planning.",
+            "url": "https://www.singhyogendra.com.np/nepal-mutual-fund-returns-calculator",
+            "applicationCategory": "Finance",
+            "operatingSystem": "All",
+            "keywords": ["nepal mutual fund returns calculator", "online nepal mutual fund calculator", "free nepal mutual fund calculator tool", "calculate mutual fund returns nepal", "mutual fund calculator nepal", "nepal mutual fund calculation tool", "mutual fund return estimation tool", "ideal mutual fund calculation nepal", "better mutual fund calculation nepal", "mutual fund planning app nepal", "mutual fund management tool nepal", "nepal mutual fund finance calculator", "nepal mutual fund return calculator"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the Nepal Mutual Fund Returns Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Nepal Mutual Fund Returns Calculator - HamroTools is a free online nepal mutual fund calculator and mutual fund return estimation tool designed for accurate SIP and lump sum return calculations. This mutual fund planning app nepal by HamroTools supports calculate mutual fund returns nepal, mutual fund calculator nepal, nepal mutual fund calculation tool, with ideal mutual fund calculation nepal and better mutual fund calculation nepal options, making it a reliable mutual fund management tool nepal for financial planning."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Nepal Mutual Fund Returns Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Select investment type (SIP or Lump Sum), enter investment amount, expected annual return, and tenure using our mutual fund management tool nepal by HamroTools. Click 'Calculate' to get instant maturity amount and wealth gained estimates with nepal mutual fund returns calculator, including better mutual fund calculation nepal recommendations. Copy or reset as needed. This free nepal mutual fund calculator tool and online nepal mutual fund calculator is secure, browser-based, and works on all devices."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use the Nepal Mutual Fund Returns Calculator - HamroTools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our nepal mutual fund returns calculator and free nepal mutual fund calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal mutual fund calculator and mutual fund planning app nepal for seamless calculations, including calculate mutual fund returns nepal, mutual fund calculator nepal, nepal mutual fund calculation tool, with ideal mutual fund calculation nepal and better mutual fund calculation nepal options. This mutual fund management tool nepal provides reliable estimates, making it the perfect nepal mutual fund finance calculator and nepal mutual fund return calculator for financial planning."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .action-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        @media (max-width: 640px) {
+            .action-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem;
+            }
+            .result-table {
+                font-size: 0.75rem;
+            }
+        }
+        .copy-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #dc2626;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 2000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .copy-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .about-heading {
+            background-color: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .result-table th, .result-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
+            font-family: 'Inter', sans-serif;
+        }
+        .result-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .result-table td {
+            color: #4b5563;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        @media (min-width: 640px) {
+            .result-table th, .result-table td {
+                font-size: 0.875rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .result-table th, .result-table td {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .result-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .result-table th, .result-table td {
+                min-width: 120px;
+            }
+        }
+        input, select, table {
+            font-family: 'Inter', sans-serif;
+            padding: 0.5rem;
+        }
+        textarea {
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            resize: none;
+            overflow-y: hidden;
+            width: 100%;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-4xl">
+        <!-- Header Section -->
+        <header class="text-center mb-6 sm:mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-calculator text-red-600 text-2xl sm:text-3xl md:text-4xl mr-3"></i>
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">Nepal Mutual Fund Returns Calculator</h1>
+            </div>
+            <p class="text-xs sm:text-sm md:text-base text-gray-600">Calculate mutual fund returns accurately with our free online Nepal Mutual Fund Returns Calculator by HamroTools. Enter investment amount, expected annual return, and tenure for SIP or lump sum investments to get instant maturity amount, wealth gained, and better calculation options for financial planning in Nepal.</p>
+        </header>
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+            <!-- hamrotools -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="9765483765" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+
+        <!-- Nepal Mutual Fund Returns Calculator Form and Output -->
+        <section class="mb-6 sm:mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <form onsubmit="return false;">
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="investmentTypeSelect">Investment Type</label>
+                        <select id="investmentTypeSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" aria-describedby="investmentTypeSelectHelp">
+                            <option value="sip">SIP (Systematic Investment Plan)</option>
+                            <option value="lumpSum">Lump Sum</option>
+                        </select>
+                        <p id="investmentTypeSelectHelp" class="text-xs text-gray-600 mt-1">Select whether you want to invest monthly (SIP) or one-time (Lump Sum).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="investmentAmountInput">Investment Amount (NPR)</label>
+                        <input id="investmentAmountInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="100" min="500" max="1000000" placeholder="Enter investment amount (e.g., 5000)" aria-describedby="investmentAmountInputHelp">
+                        <p id="investmentAmountInputHelp" class="text-xs text-gray-600 mt-1">Enter monthly SIP amount (NPR 500–50,000) or lump sum amount (NPR 1,000–1,000,000).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="expectedReturnInput">Expected Annual Return (%)</label>
+                        <input id="expectedReturnInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.1" min="0.1" max="15" placeholder="Enter expected return (e.g., 12)" aria-describedby="expectedReturnInputHelp">
+                        <p id="expectedReturnInputHelp" class="text-xs text-gray-600 mt-1">Enter the expected annual return rate (e.g., 5–15%).</p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="tenureInput">Tenure (years)</label>
+                        <input id="tenureInput" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-xs sm:text-sm md:text-base" type="number" step="0.1" min="1" placeholder="Enter tenure (e.g., 5)" aria-describedby="tenureInputHelp">
+                        <p id="tenureInputHelp" class="text-xs text-gray-600 mt-1">Enter the investment tenure in years (e.g., 1 or more).</p>
+                    </div>
+                    <div class="flex flex-nowrap gap-2 mt-4 sm:flex-nowrap">
+                        <button type="button" id="calculateBtn" class="action-btn w-full sm:w-1/3 bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate
+                        </button>
+                        <button type="button" id="copyBtn" class="action-btn w-full sm:w-1/3 bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base" disabled>
+                            <i class="fas fa-copy mr-2"></i>
+                            Copy
+                        </button>
+                        <button type="button" id="resetBtn" class="action-btn w-full sm:w-1/3 bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2">Calculation Results</label>
+                    <table class="result-table" aria-describedby="resultHelp">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-left font-semibold">Metric</th>
+                                <th class="p-2 text-left font-semibold">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultTable">
+                            <tr><td>Investment Type</td><td id="investmentType">-</td></tr>
+                            <tr><td>Investment Amount</td><td id="investmentAmount">-</td></tr>
+                            <tr><td>Expected Annual Return</td><td id="expectedReturn">-</td></tr>
+                            <tr><td>Tenure</td><td id="tenure">-</td></tr>
+                            <tr><td>Maturity Amount</td><td id="maturityAmount">-</td></tr>
+                            <tr><td>Wealth Gained</td><td id="wealthGained">-</td></tr>
+                            <tr><td>Better Calculation</td><td id="betterCalculation">-</td></tr>
+                        </tbody>
+                    </table>
+                    <p id="resultHelp" class="text-xs text-gray-600 mt-1">Mutual fund calculation results appear here. Note: Mutual fund returns are subject to market risks and exclude taxes/expense ratios. Consult your fund manager.</p>
+                    <div class="mt-4">
+                        <label class="block text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-2" for="output">Copyable Output</label>
+                        <textarea id="output" class="w-full p-2 border border-gray-300 rounded-lg bg-gray-100 text-xs sm:text-sm md:text-base" readonly aria-describedby="outputHelp"></textarea>
+                        <p id="outputHelp" class="text-xs text-gray-600 mt-1">Mutual fund calculation results for copying. Click "Copy" to share.</p>
+                        <p id="errorMessage" class="text-xs sm:text-sm md:text-base text-red-600 mt-2 hidden" role="alert" aria-live="assertive">Error: Please enter valid inputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="mt-8 sm:mt-12">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 about-heading">About Nepal Mutual Fund Returns Calculator - HamroTools</h2>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">What is the Nepal Mutual Fund Returns Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    The Nepal Mutual Fund Returns Calculator - HamroTools is a free online nepal mutual fund calculator and mutual fund return estimation tool designed for accurate SIP and lump sum return calculations. This mutual fund planning app nepal by HamroTools supports calculate mutual fund returns nepal, mutual fund calculator nepal, nepal mutual fund calculation tool, with ideal mutual fund calculation nepal and better mutual fund calculation nepal options, making it a reliable mutual fund management tool nepal for financial planning.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">How to Use This Tool</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Select investment type (SIP or Lump Sum), enter investment amount, expected annual return, and tenure using our mutual fund management tool nepal by HamroTools. Click 'Calculate' to get instant maturity amount and wealth gained estimates with nepal mutual fund returns calculator, including better mutual fund calculation nepal recommendations. Copy or reset as needed. This free nepal mutual fund calculator tool and online nepal mutual fund calculator is secure, browser-based, and works on all devices.
+                </p>
+            </article>
+            <article class="mb-6">
+                <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">Why Use Our Nepal Mutual Fund Returns Calculator - HamroTools?</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600">
+                    Our nepal mutual fund returns calculator and free nepal mutual fund calculator tool by HamroTools is fast, accurate, and user-friendly, offering an online nepal mutual fund calculator and mutual fund planning app nepal for seamless calculations, including calculate mutual fund returns nepal, mutual fund calculator nepal, nepal mutual fund calculation tool, with ideal mutual fund calculation nepal and better mutual fund calculation nepal options. This mutual fund management tool nepal provides reliable estimates, making it the perfect nepal mutual fund finance calculator and nepal mutual fund return calculator for financial planning.
+                </p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-8 sm:mt-12">
+            <a href="/" class="action-btn w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                <i class="fas fa-home mr-2"></i>
+                Go to Homepage
+            </a>
+        </footer>
+    </div>
+
+    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+        <script type="text/javascript">sc_online_i(1720009,"ffffff","ffffff");</script>
+        <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+    </div>
+
+    <script>
+        // Analytics tracking function
+        function trackEvent(event, data) {
+            console.log(`Event: ${event}`, data);
+        }
+        trackEvent('page_load', { page: window.location.href });
+
+        function showPopup(message) {
+            const popup = document.createElement('div');
+            popup.className = 'copy-popup';
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(() => popup.classList.add('show'), 10);
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.remove(), 300);
+            }, 2000);
+        }
+
+        function calculateMutualFund() {
+            const investmentType = document.getElementById('investmentTypeSelect').value;
+            const investmentAmount = parseFloat(document.getElementById('investmentAmountInput').value) || 0;
+            const expectedReturn = parseFloat(document.getElementById('expectedReturnInput').value) || 0;
+            const tenure = parseFloat(document.getElementById('tenureInput').value) || 0;
+            const errorMessage = document.getElementById('errorMessage');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const copyBtn = document.getElementById('copyBtn');
+            const output = document.getElementById('output');
+
+            errorMessage.classList.add('hidden');
+            document.getElementById('investmentType').textContent = '-';
+            document.getElementById('investmentAmount').textContent = '-';
+            document.getElementById('expectedReturn').textContent = '-';
+            document.getElementById('tenure').textContent = '-';
+            document.getElementById('maturityAmount').textContent = '-';
+            document.getElementById('wealthGained').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            output.value = '';
+            output.style.height = 'auto';
+            copyBtn.disabled = true;
+
+            if (investmentType === 'sip' && (investmentAmount < 500 || investmentAmount > 50000)) {
+                errorMessage.textContent = 'Error: SIP monthly amount must be between NPR 500 and NPR 50,000.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_sip_amount' });
+                return;
+            }
+            if (investmentType === 'lumpSum' && (investmentAmount < 1000 || investmentAmount > 1000000)) {
+                errorMessage.textContent = 'Error: Lump sum amount must be between NPR 1,000 and NPR 1,000,000.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_lump_sum_amount' });
+                return;
+            }
+            if (expectedReturn < 0.1 || expectedReturn > 15) {
+                errorMessage.textContent = 'Error: Expected annual return must be between 0.1% and 15%.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_expected_return' });
+                return;
+            }
+            if (tenure < 1) {
+                errorMessage.textContent = 'Error: Tenure must be at least 1 year.';
+                errorMessage.classList.remove('hidden');
+                trackEvent('calculate_error', { error: 'invalid_tenure' });
+                return;
+            }
+
+            calculateBtn.disabled = true;
+            calculateBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Calculating...';
+
+            setTimeout(() => {
+                try {
+                    let maturityAmount, wealthGained;
+                    if (investmentType === 'lumpSum') {
+                        maturityAmount = investmentAmount * Math.pow(1 + expectedReturn / 100, tenure);
+                        wealthGained = maturityAmount - investmentAmount;
+                    } else {
+                        const monthlyRate = expectedReturn / 100 / 12;
+                        const totalMonths = tenure * 12;
+                        maturityAmount = investmentAmount * ((Math.pow(1 + monthlyRate, totalMonths) - 1) / monthlyRate);
+                        wealthGained = maturityAmount - (investmentAmount * totalMonths);
+                    }
+
+                    const betterReturn = Math.min(15, expectedReturn + 2);
+                    const betterTenure = tenure <= 5 ? tenure + 2 : tenure + 5;
+                    const betterInvestmentType = 'sip';
+                    const betterMonthlyRate = betterReturn / 100 / 12;
+                    const betterTotalMonths = betterTenure * 12;
+                    const betterMaturityAmount = investmentType === 'sip' ? investmentAmount * ((Math.pow(1 + betterMonthlyRate, betterTotalMonths) - 1) / betterMonthlyRate) : investmentAmount * ((Math.pow(1 + betterMonthlyRate, betterTotalMonths) - 1) / betterMonthlyRate);
+                    const betterWealthGained = betterMaturityAmount - (investmentAmount * betterTotalMonths);
+                    const betterCalculation = `Switch to SIP with monthly investments, extend tenure to ${betterTenure.toFixed(2)} years, and target a higher return (e.g., ${betterReturn.toFixed(2)}%) from equity funds to earn NPR ${betterWealthGained.toFixed(2)} (Maturity: NPR ${betterMaturityAmount.toFixed(2)}).`;
+
+                    document.getElementById('investmentType').textContent = investmentType === 'sip' ? 'SIP (Systematic Investment Plan)' : 'Lump Sum';
+                    document.getElementById('investmentAmount').textContent = `NPR ${investmentAmount.toFixed(2)} ${investmentType === 'sip' ? 'per month' : ''}`;
+                    document.getElementById('expectedReturn').textContent = `${expectedReturn.toFixed(2)}% per year`;
+                    document.getElementById('tenure').textContent = `${tenure.toFixed(2)} years`;
+                    document.getElementById('maturityAmount').textContent = `NPR ${maturityAmount.toFixed(2)}`;
+                    document.getElementById('wealthGained').textContent = `NPR ${wealthGained.toFixed(2)}`;
+                    document.getElementById('betterCalculation').textContent = betterCalculation;
+
+                    const outputText = [
+                        `Investment Type: ${investmentType === 'sip' ? 'SIP (Systematic Investment Plan)' : 'Lump Sum'}`,
+                        `Investment Amount: NPR ${investmentAmount.toFixed(2)} ${investmentType === 'sip' ? 'per month' : ''}`,
+                        `Expected Annual Return: ${expectedReturn.toFixed(2)}% per year`,
+                        `Tenure: ${tenure.toFixed(2)} years`,
+                        `Maturity Amount: NPR ${maturityAmount.toFixed(2)}`,
+                        `Wealth Gained: NPR ${wealthGained.toFixed(2)}`,
+                        `Better Calculation: ${betterCalculation}`,
+                        `Note: Mutual fund returns are subject to market risks and exclude taxes/expense ratios. Consult your fund manager.`
+                    ].join('\n');
+                    output.value = outputText;
+                    output.style.height = 'auto';
+                    output.style.height = output.scrollHeight + 'px';
+                    copyBtn.dataset.result = outputText;
+                    copyBtn.disabled = false;
+
+                    trackEvent('calculate_mutual_fund', { investmentType, investmentAmount, expectedReturn, tenure });
+                } catch (e) {
+                    errorMessage.textContent = 'Error: ' + e.message;
+                    errorMessage.classList.remove('hidden');
+                    trackEvent('calculate_error', { error: e.message });
+                } finally {
+                    calculateBtn.disabled = false;
+                    calculateBtn.innerHTML = '<i class="fas fa-calculator mr-2"></i>Calculate';
+                }
+            }, 300);
+        }
+
+        document.getElementById('calculateBtn').addEventListener('click', calculateMutualFund);
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const result = document.getElementById('copyBtn').dataset.result;
+            if (result) {
+                navigator.clipboard.writeText(result).then(() => {
+                    showPopup('Copied!');
+                    trackEvent('copy_result', { result });
+                }).catch(() => {
+                    document.getElementById('errorMessage').textContent = 'Error: Failed to copy output.';
+                    document.getElementById('errorMessage').classList.remove('hidden');
+                    trackEvent('copy_error', { result });
+                });
+            }
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            document.getElementById('investmentTypeSelect').value = 'sip';
+            document.getElementById('investmentAmountInput').value = '';
+            document.getElementById('expectedReturnInput').value = '';
+            document.getElementById('tenureInput').value = '';
+            document.getElementById('investmentType').textContent = '-';
+            document.getElementById('investmentAmount').textContent = '-';
+            document.getElementById('expectedReturn').textContent = '-';
+            document.getElementById('tenure').textContent = '-';
+            document.getElementById('maturityAmount').textContent = '-';
+            document.getElementById('wealthGained').textContent = '-';
+            document.getElementById('betterCalculation').textContent = '-';
+            document.getElementById('output').value = '';
+            document.getElementById('output').style.height = 'auto';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('errorMessage').classList.add('hidden');
+            trackEvent('reset_form', {});
+        });
+    </script>
+</body>
+</html>
