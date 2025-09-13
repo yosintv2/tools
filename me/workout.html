@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Workout Daily Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Tailwind styles */
+        .custom-gradient {
+            background: linear-gradient(135deg, #fef9e7 0%, #f8e1c7 100%);
+        }
+        .card-gradient {
+            background: linear-gradient(135deg, #fffaf0 0%, #f9f1e4 100%);
+        }
+        .button-gradient {
+            background: linear-gradient(135deg, #a41623 0%, #003087 100%);
+        }
+        .button-gradient:hover {
+            background: linear-gradient(135deg, #003087 0%, #a41623 100%);
+        }
+        .scrollbar-custom::-webkit-scrollbar {
+            width: 8px;
+        }
+        .scrollbar-custom::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 8px;
+        }
+        .scrollbar-custom::-webkit-scrollbar-thumb {
+            background: #a41623;
+            border-radius: 8px;
+        }
+        /* Ensure text scales with viewport */
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+        }
+        #day-name {
+            font-size: clamp(1.2rem, 3.5vw, 2rem);
+        }
+        .plan-container {
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        }
+        .diet-tips {
+            font-size: clamp(0.85rem, 2.2vw, 1rem);
+        }
+        button {
+            font-size: clamp(0.8rem, 2vw, 1rem);
+        }
+    </style>
+</head>
+<body class="custom-gradient min-h-screen flex flex-col items-center px-4 sm:px-6 lg:px-8 py-6 text-gray-900 font-sans">
+    <h1 class="font-extrabold text-red-800 mb-6 text-center tracking-tight">
+        Daily Diet/Workout
+    </h1>
+    <div id="day-name-container" class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 bg-white bg-opacity-80 p-4 rounded-2xl shadow-lg w-full max-w-4xl">
+        <div class="flex items-center gap-4">
+            <h2 id="day-name" class="font-semibold text-red-800" aria-live="polite">
+                Loading Plan...
+            </h2>
+            <button id="toggle-btn" class="button-gradient text-white font-semibold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300" aria-pressed="false" aria-label="Show tomorrow's plan">
+                Tomorrow's Plan
+            </button>
+        </div>
+    </div>
+    <div id="plan-container" class="plan-container bg-white rounded-2xl p-6 sm:p-8 w-full max-w-4xl shadow-xl scrollbar-custom overflow-y-auto min-h-[400px] sm:min-h-[500px]" tabindex="0" aria-live="polite" aria-atomic="true">
+        Loading daily plan...
+    </div>
+    <div class="diet-tips bg-white bg-opacity-90 border-l-4 border-red-800 p-6 rounded-2xl mt-6 w-full max-w-4xl shadow-lg">
+        <strong class="block text-base sm:text-lg font-bold text-blue-900 mb-4">Healthy Eating Tips:</strong>
+        <ul class="list-none space-y-3">
+            <li class="pl-6 relative">
+                <span class="absolute left-0 text-base">🥗</span>
+                Drink 2-3 liters of water or ginger lemon tea daily to boost metabolism and aid digestion.
+            </li>
+            <li class="pl-6 relative">
+                <span class="absolute left-0 text-base">🥗</span>
+                Skip sugary drinks; opt for homemade yogurt drinks or unsweetened fruit juices.
+            </li>
+            <li class="pl-6 relative">
+                <span class="absolute left-0 text-base">🥗</span>
+                Use spices like cumin, turmeric, and coriander to flavor dishes without excess oil.
+            </li>
+            <li class="pl-6 relative">
+                <span class="absolute left-0 text-base">🥗</span>
+                Eat mindfully, stopping at 80% fullness, inspired by traditional dining habits.
+            </li>
+            <li class="pl-6 relative">
+                <span class="absolute left-0 text-base">🥗</span>
+                Include nuts (almonds, peanuts) for healthy fats and lean proteins like lentils or fish.
+            </li>
+            <li class="pl-6 relative">
+                <span class="absolute left-0 text-base">🥗</span>
+                Choose whole grains like brown rice or buckwheat flatbread and fiber-rich greens like spinach.
+            </li>
+        </ul>
+    </div>
+    <script>
+        const plans = {
+            Monday: {
+                workout: "Full Body Strength Training + 15 min Cardio",
+                workoutDetails: [
+                    "Squats, push-ups, lunges, dumbbell rows",
+                    "3 sets of 12 reps each, focus on controlled movements and good form",
+                    "Core exercises: planks and leg raises (3 sets of 30 sec planks)",
+                    "15 minutes moderate cardio (brisk walking or cycling)",
+                    "Stretch and cool down for 5-10 minutes"
+                ],
+                diet: {
+                    breakfast: "Buckwheat flatbread with scrambled eggs and spinach with cumin",
+                    amSnack: "Handful of roasted peanuts and a small orange",
+                    lunch: "Lentil stew with brown rice, mixed vegetables (cauliflower, beans), and grilled chicken",
+                    pmSnack: "Low-fat yogurt with cucumber and mint",
+                    dinner: "Steamed vegetable dumplings with spicy tomato chutney and green salad"
+                }
+            },
+            Tuesday: {
+                workout: "HIIT Session (20-30 min)",
+                workoutDetails: [
+                    "Intervals: 30 seconds sprint or fast cycling, 1 minute slow walk or rest",
+                    "Repeat cycle 8-10 times",
+                    "Maximum effort during sprints to boost metabolism",
+                    "Warm-up for 5-10 minutes, cool down with stretching",
+                    "Optional core: bicycle crunches and mountain climbers (3 sets of 15 reps)"
+                ],
+                diet: {
+                    breakfast: "Whole wheat flatbread with red lentil curry and a boiled egg",
+                    amSnack: "Fresh guava or banana with a few almonds",
+                    lunch: "Chickpea masala with brown rice and stir-fried greens",
+                    pmSnack: "Carrot and radish sticks with tomato chutney",
+                    dinner: "Grilled fish (turmeric and chili) with steamed broccoli and millet"
+                }
+            },
+            Wednesday: {
+                workout: "Active Rest or Yoga/Stretching",
+                workoutDetails: [
+                    "30-minute walk outdoors or gentle yoga for flexibility",
+                    "Deep breathing and mindfulness to reduce stress",
+                    "Gentle stretching for all major muscle groups",
+                    "Optional light core: pelvic tilts or bridges",
+                    "Prioritize hydration and quality sleep"
+                ],
+                diet: {
+                    breakfast: "Greek yogurt with walnuts and seasonal fruits (pomegranate or mango)",
+                    amSnack: "Medium banana with a teaspoon of peanut butter",
+                    lunch: "Vegetable curry with buckwheat flatbread and low-fat yogurt",
+                    pmSnack: "Chia seed pudding with raspberries and a dash of honey",
+                    dinner: "Lentil salad with cucumber, tomatoes, onions, and lemon dressing",
+                    eveningSnack: "Apple slices with cinnamon"
+                }
+            },
+            Thursday: {
+                workout: "Full Body Strength Training + 15 min Cardio",
+                workoutDetails: [
+                    "Compound lifts: deadlifts, overhead presses, glute bridges, planks",
+                    "3 sets of 12 reps, focus on technique",
+                    "Add weighted/bodyweight exercises for legs, back, chest, core",
+                    "15 minutes moderate cardio (jogging or cycling)",
+                    "Post-workout stretching and foam rolling"
+                ],
+                diet: {
+                    breakfast: "Avocado toast on whole grain bread with kiwi and spices",
+                    amSnack: "Boiled eggs with black salt and chili powder",
+                    lunch: "Spinach lentil stew with brown rice and grilled tofu",
+                    pmSnack: "Handful of roasted chickpeas",
+                    dinner: "Vegetable stew with lentils, carrots, and cauliflower, with millet flatbread"
+                }
+            },
+            Friday: {
+                workout: "Moderate Cardio",
+                workoutDetails: [
+                    "40-minute jogging, cycling, swimming, or brisk walking",
+                    "Steady moderate pace for fat burning",
+                    "Maintain good posture and breathing rhythm",
+                    "Include warm-up and cool-down phases",
+                    "Optional 10 minutes core exercises post-cardio"
+                ],
+                diet: {
+                    breakfast: "Kefir smoothie with unsweetened muesli, raspberries, and ginger tea",
+                    amSnack: "Vegetable omelet with onions, tomatoes, and coriander",
+                    lunch: "Spinach and low-fat paneer with brown rice and cucumber yogurt",
+                    pmSnack: "Medium apple or pear",
+                    dinner: "Baked chicken with spices and mashed root vegetables"
+                }
+            },
+            Saturday: {
+                workout: "Fun Activity or HIIT",
+                workoutDetails: [
+                    "30-45 minutes of badminton, football, or hiking",
+                    "Moderate to high intensity based on fitness level",
+                    "Social exercise to boost motivation",
+                    "Cool down with stretching or light walking"
+                ],
+                diet: {
+                    breakfast: "Whole grain toast with avocado and spices",
+                    amSnack: "Vegetable omelet with green chilies and coriander",
+                    lunch: "Bean and vegetable salad with lemon-cumin dressing",
+                    pmSnack: "Banana with a tablespoon of peanut butter",
+                    dinner: "Grilled fish or shrimp with brown rice, parsley, and steamed green beans"
+                }
+            },
+            Sunday: {
+                workout: "Rest or Light Activity",
+                workoutDetails: [
+                    "Gentle walking, stretching, or yoga for relaxation",
+                    "Focus on deep breathing and stress reduction",
+                    "Avoid strenuous exercise for muscle recovery",
+                    "Prepare mentally and physically for the week",
+                    "Ensure quality sleep and nutrition"
+                ],
+                diet: {
+                    breakfast: "Mini vegetable omelets with orange and cumin",
+                    amSnack: "Apple with a tablespoon of peanut butter",
+                    lunch: "Bean and avocado toast with mixed greens",
+                    pmSnack: "Low-fat kefir with raspberries and chia seeds",
+                    dinner: "Caprese-style chicken with tomatoes, herbs, and brown rice",
+                    eveningSnack: "Low-fat Greek yogurt with a drizzle of honey (optional)"
+                }
+            }
+        };
+
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const dayNameElem = document.getElementById('day-name');
+        const planContainer = document.getElementById('plan-container');
+        const toggleBtn = document.getElementById('toggle-btn');
+
+        const todayIndex = new Date().getDay();
+        const todayName = days[todayIndex];
+        const tomorrowIndex = (todayIndex + 1) % 7;
+        const tomorrowName = days[tomorrowIndex];
+
+        let showingToday = true;
+
+        function renderPlan(day) {
+            dayNameElem.textContent = `${day}'s Plan`;
+            const plan = plans[day];
+            if (!plan) {
+                planContainer.innerHTML = "<p class='text-center text-gray-600'>No plan available for this day.</p>";
+                return;
+            }
+
+            const workoutList = plan.workoutDetails.map(item => `<li class="mb-3 pl-6 relative"><span class="absolute left-0 text-base">🏋️‍♂️</span>${item}</li>`).join('');
+            const diet = plan.diet;
+            const dietHtml = `
+                <li class="mb-3 pl-6 relative"><span class="absolute left-0 text-base">🍛</span><strong class="text-green-700">Breakfast:</strong> ${diet.breakfast}</li>
+                <li class="mb-3 pl-6 relative"><span class="absolute left-0 text-base">🍛</span><strong class="text-green-700">A.M. Snack:</strong> ${diet.amSnack}</li>
+                <li class="mb-3 pl-6 relative"><span class="absolute left-0 text-base">🍛</span><strong class="text-green-700">Lunch:</strong> ${diet.lunch}</li>
+                <li class="mb-3 pl-6 relative"><span class="absolute left-0 text-base">🍛</span><strong class="text-green-700">P.M. Snack:</strong> ${diet.pmSnack}</li>
+                <li class="mb-3 pl-6 relative"><span class="absolute left-0 text-base">🍛</span><strong class="text-green-700">Dinner:</strong> ${diet.dinner}</li>
+                ${diet.eveningSnack ? `<li class="mb-3 pl-6 relative"><span class="absolute left-0 text-base">🍛</span><strong class="text-green-700">Evening Snack:</strong> ${diet.eveningSnack}</li>` : ''}
+            `;
+
+            planContainer.innerHTML = `
+                <div class="mb-6">
+                    <h2 class="text-lg sm:text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
+                        <span>💪</span> Workout Plan
+                    </h2>
+                    <p class="text-base font-semibold text-gray-700 mb-2">${plan.workout}</p>
+                    <ul class="list-none">${workoutList}</ul>
+                </div>
+                <div>
+                    <h2 class="text-lg sm:text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
+                        <span>🥗</span> Diet Plan
+                    </h2>
+                    <ul class="list-none">${dietHtml}</ul>
+                </div>
+            `;
+        }
+
+        // Initial render (shows today's plan by default)
+        renderPlan(todayName);
+
+        // Toggle button to switch between today and tomorrow
+        toggleBtn.addEventListener('click', () => {
+            if (showingToday) {
+                renderPlan(tomorrowName);
+                toggleBtn.textContent = "Today's Plan";
+                toggleBtn.setAttribute('aria-label', "Show today's plan");
+                toggleBtn.setAttribute('aria-pressed', 'true');
+            } else {
+                renderPlan(todayName);
+                toggleBtn.textContent = "Tomorrow's Plan";
+                toggleBtn.setAttribute('aria-label', "Show tomorrow's plan");
+                toggleBtn.setAttribute('aria-pressed', 'false');
+            }
+            showingToday = !showingToday;
+            planContainer.focus();
+        });
+    </script>
+</body>
+</html>
