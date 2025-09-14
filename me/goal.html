@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Countdown to 2027-01-01</title>
+  <style>
+    :root{--bg:#0f172a;--card:#111827;--accent:#38bdf8;--muted:#9ca3af;color-scheme:dark}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--bg),#071124);font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    .wrap{width:calc(100% - 32px);max-width:980px;padding:28px;border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.6);color:#e6eef8}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+    h1{font-size:20px;margin:0}
+    .target{font-size:13px;color:var(--muted)}
+    .main{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
+    .big{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px}
+    .days{font-size:64px;line-height:1;margin:0;font-weight:700;color:var(--accent)}
+    .dhms{display:flex;gap:12px;margin-top:12px}
+    .dhms > div{background:rgba(255,255,255,0.03);padding:10px 14px;border-radius:10px;min-width:68px;text-align:center}
+    .label{font-size:11px;color:var(--muted);margin-top:6px}
+    .hourly-list{padding:8px;text-align:center}
+    .circle-container{position:relative;width:180px;height:180px;margin:0 auto}
+    svg{transform:rotate(-90deg);width:180px;height:180px}
+    .circle-bg{fill:none;stroke:#334155;stroke-width:12}
+    .circle-progress{fill:none;stroke:var(--accent);stroke-width:12;stroke-linecap:round;stroke-dasharray:502.65;stroke-dashoffset:502.65;transition:stroke-dashoffset 1s linear}
+    .circle-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:20px;font-weight:600}
+    footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:900px){.main{grid-template-columns:1fr;}.days{font-size:48px}}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div>
+        <h1>Naite: <span id="targetReadable"> </span></h1>
+        <div class="target" id="tzInfo"></div>
+      </div>
+      <div class="target">Updated: <span id="nowReadable"></span></div>
+    </header>
+    <section class="main">
+      <div class="card big" aria-live="polite">
+        <div style="text-align:center;">
+          <div style="font-size:13px;color:var(--muted);">Remaining full days</div>
+          <div class="days" id="daysRemaining">0</div>
+        </div>
+        <div class="dhms" style="margin-top:18px;">
+          <div>
+            <div id="hours">00</div>
+            <div class="label">Hours</div>
+          </div>
+          <div>
+            <div id="minutes">00</div>
+            <div class="label">Minutes</div>
+          </div>
+          <div>
+            <div id="seconds">00</div>
+            <div class="label">Seconds</div>
+          </div>
+        </div>
+        <div style="margin-top:14px;color:var(--muted);font-size:13px">Time until: <span id="compact"></span></div>
+      </div>
+      <aside class="card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <strong>Hourly checkpoint</strong>
+          <div style="font-size:12px;color:var(--muted)">Counts down to the next exact hour</div>
+        </div>
+        <div class="hourly-list">
+          <div class="circle-container">
+            <svg width="180" height="180" viewBox="0 0 180 180">
+              <circle class="circle-bg" cx="90" cy="90" r="80"></circle>
+              <circle class="circle-progress" cx="90" cy="90" r="80"></circle>
+            </svg>
+            <div class="circle-text" id="hourlyCountdown">00:00</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+    <footer>
+      <div>All times shown in your device time. Page updates every second.</div>
+    </footer>
+  </div>
+  <script>
+    // Target: Jan 1, 2027 00:00:00
+    const target = new Date(2025, 11, 5, 0, 0, 0, 0);
+    const daysEl=document.getElementById('daysRemaining');
+    const hoursEl=document.getElementById('hours');
+    const minutesEl=document.getElementById('minutes');
+    const secondsEl=document.getElementById('seconds');
+    const compactEl=document.getElementById('compact');
+    const nowReadable=document.getElementById('nowReadable');
+    const targetReadable=document.getElementById('targetReadable');
+    const tzInfo=document.getElementById('tzInfo');
+    const circle=document.querySelector('.circle-progress');
+    const hourlyText=document.getElementById('hourlyCountdown');
+    const radius=80;
+    const circumference=2*Math.PI*radius;
+    circle.style.strokeDasharray=circumference;
+    function fmtDate(d){
+      const pad=n=>String(n).padStart(2,'0');
+      return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+    }
+    targetReadable.textContent=fmtDate(target);
+    tzInfo.textContent=`Using your browser local time (timezone offset: ${-new Date().getTimezoneOffset()/60} hrs)`;
+    function updateAll(){
+      const now=new Date();
+      nowReadable.textContent=fmtDate(now);
+      let diff=target-now;
+      if(diff<0) diff=0;
+      const totalSeconds=Math.floor(diff/1000);
+      const days=Math.floor(totalSeconds/86400);
+      const hours=Math.floor((totalSeconds%86400)/3600);
+      const minutes=Math.floor((totalSeconds%3600)/60);
+      const seconds=totalSeconds%60;
+      daysEl.textContent=days;
+      hoursEl.textContent=String(hours).padStart(2,'0');
+      minutesEl.textContent=String(minutes).padStart(2,'0');
+      secondsEl.textContent=String(seconds).padStart(2,'0');
+      compactEl.textContent=`${days}d ${String(hours).padStart(2,'0')}h ${String(minutes).padStart(2,'0')}m ${String(seconds).padStart(2,'0')}s`;
+      // Hourly countdown
+      const nextHour=new Date(now);
+      nextHour.setMinutes(0,0,0);
+      if(now.getMinutes()!==0||now.getSeconds()!==0) nextHour.setHours(nextHour.getHours()+1);
+      const hourDiff=(nextHour-now)/1000;
+      const remM=Math.floor(hourDiff/60);
+      const remS=Math.floor(hourDiff%60);
+      hourlyText.textContent=`${String(remM).padStart(2,'0')}:${String(remS).padStart(2,'0')}`;
+      const progress=(3600-hourDiff)/3600;
+      circle.style.strokeDashoffset=circumference-(progress*circumference);
+    }
+    updateAll();
+    setInterval(updateAll,1000);
+  </script>
+</body>
+</html>
