@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Calendar (Oct 15 - Nov 15, 2025)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .calendar-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .calendar {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .calendar h2 {
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar th, .calendar td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+        .calendar th {
+            background-color: #f4f4f4;
+        }
+        .work-day {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .day-off {
+            color: #721c24;
+        }
+        .day-off span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background-color: #f8d7da;
+            border: 1px solid #721c24;
+        }
+        .outside-range {
+            background-color: #e9ecef;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar" id="october">
+            <h2>October 2025</h2>
+            <table id="octoberTable"></table>
+        </div>
+        <div class="calendar" id="november">
+            <h2>November 2025</h2>
+            <table id="novemberTable"></table>
+        </div>
+    </div>
+    <script>
+        const holidays = [
+            { month: 10, day: 16 }, { month: 10, day: 19 }, { month: 10, day: 22 },
+            { month: 10, day: 23 }, { month: 10, day: 26 }, { month: 10, day: 29 },
+            { month: 10, day: 30 }, { month: 11, day: 2 },
+            { month: 11, day: 5 }, { month: 11, day: 6 }, { month: 11, day: 9 },
+            { month: 11, day: 12 }, { month: 11, day: 13 }
+        ];
+
+        function isHoliday(month, day) {
+            return holidays.some(h => h.month === month && h.day === day);
+        }
+
+        function isInRange(month, day) {
+            if (month === 10 && day >= 15) return true;
+            if (month === 11 && day <= 15) return true;
+            return false;
+        }
+
+        function createCalendar(month, year, tableId) {
+            const table = document.getElementById(tableId);
+            const daysInMonth = month === 10 ? 31 : 30;
+            const firstDay = new Date(year, month - 1, 1).getDay();
+            const weeks = Math.ceil((daysInMonth + firstDay) / 7);
+
+            // Create header
+            let html = '<tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>';
+            let day = 1;
+            let row = 0;
+
+            // Create calendar rows
+            for (let i = 0; i < weeks; i++) {
+                html += '<tr>';
+                for (let j = 0; j < 7; j++) {
+                    if (row === 0 && j < firstDay || day > daysInMonth) {
+                        html += '<td class="outside-range"></td>';
+                    } else {
+                        let className = isInRange(month, day) ? (isHoliday(month, day) ? 'day-off' : 'work-day') : 'outside-range';
+                        let content = isHoliday(month, day) ? `<span>${day}</span>` : day;
+                        html += `<td class="${className}">${content}</td>`;
+                        day++;
+                    }
+                }
+                html += '</tr>';
+                row++;
+            }
+            table.innerHTML = html;
+        }
+
+        createCalendar(10, 2025, 'octoberTable');
+        createCalendar(11, 2025, 'novemberTable');
+    </script>
+</body>
+</html>
