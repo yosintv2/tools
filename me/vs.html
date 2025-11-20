@@ -3,199 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full-Width Soft-Wrap Source Viewer</title>
+  <title>view-source</title>
   
-  <!-- Highlight.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   
   <style>
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: #1e1e1e;
-      color: #d4d4d4;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    .container {
-      width: 100%;
-      max-width: none;
-      margin: 0;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-    h1 {
-      color: #58a6ff;
-      text-align: center;
-      margin: 0 0 1.5rem 0;
-      font-size: 2.2rem;
-    }
-    }
-    .subtitle {
-      text-align: center;
-      opacity: 0.8;
-      margin-bottom: 2rem;
-    }
+    body { margin:0; padding:0; background:#1e1e1e; font-family:system-ui,sans-serif; color:#d4d4d4; }
     .input-box {
-      text-align: center;
-      margin: 0 auto 3rem auto;
-      padding: 1.5rem;
-      background: #252526;
-      border-radius: 12px;
-      max-width: 900px;
+      position:fixed;
+      top:0; left:0; left:0; right:0;
+      padding:1.5rem;
+      background:#252526;
+      text-align:center;
+      z-index:10;
+      box-shadow:0 4px 10px rgba(0,0,0,0.3);
     }
-    input[type="text"] {
-      width: 70%;
-      max-width: 600px;
-      padding: 14px;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 8px;
-      background: #3c3c3c;
-      color: #fff;
+    input {
+      width:70%;
+      max-width:700px;
+      padding:14px;
+      font-size:1.1rem;
+      border:none;
+      border-radius:8px;
+      background:#3c3c3c;
+      color:#fff;
     }
     button {
-      padding: 14px 28px;
-      margin-left: 12px;
-      background: #007acc;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background 0.2s;
+      padding:14px 28px;
+      margin-left:12px;
+      background:#007acc;
+      color:white;
+      border:none;
+      border-radius:8px;
+      font-size:1.1rem;
+      cursor:pointer;
     }
-    button:hover { background: #005a9e; }
+    button:hover { background:#005a9e; }
 
-    /* FULL-WIDTH SOURCE CODE BOX */
     #source-box {
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      background: #252526;
-      padding: 2.5rem;
-      box-sizing: border-box;
-      border-top: 1px solid #404040;
-      border-bottom: 1px solid #404040;
+      width:100vw;
+      position:relative;
+      left:50%;
+      right:50%;
+      margin-left:-50vw;
+      margin-right:-50vw;
+      margin-top:90px; /* space for fixed input bar */
+      padding:3rem 3rem 5rem;
+      background:#252526;
+      box-sizing:border-box;
+      min-height:calc(100vh - 90px);
     }
     #source-box pre {
-      margin: 0;
-      padding: 0;
-      background: transparent !important;
-      border: none;
-      border-radius: 0;
-      font-size: 15.5px;
-      line-height: 1.65;
-      
-      /* Perfect soft wrapping */
-      white-space: pre-wrap !important;
-      word-wrap: break-word !important;
-      word-break: break-all; /* ensures even loooong tokens wrap */
-      overflow-wrap: anywhere;
+      margin:0;
+      white-space:pre-wrap !important;
+      word-wrap:break-word !important;
+      word-break:break-all;
+      overflow-wrap:anywhere;
+      font-size:15.5px;
+      line-height:1.65;
+      background:transparent !important;
     }
-
-    .info {
-      text-align: center;
-      padding: 2rem;
-      opacity: 0.7;
-      font-size: 0.95em;
-    }
-    .loading { text-align: center; padding: 4rem; font-size: 1.4em; color: #58a6ff; }
-    .error {
-      background: #3c1e1e;
-      color: #f48771;
-      padding: 2rem;
-      border-radius: 12px;
-      text-align: center;
-      max-width: 800px;
-      margin: 2rem auto;
-    }
-    a { color: #58a6ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .loading { text-align:center; padding:4rem; font-size:1.3em; color:#58a6ff; }
+    .error { color:#f48771; text-align:center; padding:2rem; }
+    a { color:#58a6ff; }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Full-Width Source Viewer</h1>
-    <p class="subtitle">Soft-wrapped • No horizontal scroll • Edge-to-edge beauty</p>
-    
-    <div class="input-box">
-      <input type="text" id="url-input" placeholder="https://example.com" autofocus />
-      <button onclick="loadSource()">View Source</button>
-    </div>
+  <div class="input-box">
+    <input type="text" id="url-input" placeholder="https://example.com" autofocus />
+    <button onclick="loadSource()">Go</button>
   </div>
 
   <div id="source-box" style="display:none;">
     <div id="result"></div>
   </div>
 
-  <div class="container">
-    <div class="info">
-      Share via: <code>?url=https://news.ycombinator.com</code><br>
-      Works instantly when you add the url= parameter
-    </div>
-  </div>
-
   <script>
     const params = new URLSearchParams(location.search);
-    const urlParam = params.get('url');
-
-    if (urlParam) {
-      document.getElementById('url-input').value = urlParam;
-      loadSource(urlParam);
+    const url = params.get('url');
+    if (url) {
+      document.getElementById('url-input').value = url;
+      loadSource(url);
     }
 
-    async function loadSource(customUrl) {
-      let targetUrl = customUrl || document.getElementById('url-input').value.trim();
-      if (!targetUrl) return alert("Please enter a URL");
+    async function loadSource(custom) {
+      let u = custom || document.getElementById('url-input').value.trim();
+      if (!u) return;
 
-      if (!/^https?:\/\//i.test(targetUrl)) {
-        targetUrl = 'https://' + targetUrl;
-      }
+      if (!/^https?:\/\//i.test(u)) u = 'https://' + u;
 
-      const resultDiv = document.getElementById('result');
       const box = document.getElementById('source-box');
-      resultDiv.innerHTML = '<div class="loading">Fetching source code...</div>';
+      const res = document.getElementById('result');
+      res.innerHTML = '<div class="loading">loading...</div>';
       box.style.display = 'block';
-      window.scrollTo({ top: box.offsetTop - 100, behavior: 'smooth' });
 
       try {
-        const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
-        const response = await fetch(proxyUrl);
-        
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const proxy = `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`;
+        const r = await fetch(proxy);
+        if (!r.ok) throw new Error(r.status);
+        const html = await r.text();
 
-        const html = await response.text();
-
-        resultDiv.innerHTML = `
-          <h2 style="margin:0 0 2rem 0; color:#8 bddb;">
-            Source → <a href="${targetUrl}" target="_blank">${targetUrl}</a>
-          </h2>
-          <pre><code class="language-html">${escapeHtml(html)}</code></pre>
+        res.innerHTML = `
+          <pre><code class="language-html">${html.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</code></pre>
         `;
-
         hljs.highlightAll();
-      } catch (err) {
-        resultDiv.innerHTML = `<div class="error">
-          Failed to load source code<br><br>
-          <strong>${err.message}</strong><br><br>
-          Some sites block proxies (Cloudflare, CAPTCHA, etc.)
-        </div>`;
+      } catch (e) {
+        res.innerHTML = `<div class="error">failed — ${e.message}</div>`;
       }
     }
 
-    function escapeHtml(text) {
-      const div = document.createElement('div');
-      div.textContent = text;
-      return div.innerHTML;
-    }
-
-    // Enter key support
     document.getElementById('url-input').addEventListener('keypress', e => {
       if (e.key === 'Enter') loadSource();
     });
