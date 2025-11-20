@@ -1,122 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>view-source</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  
-  <style>
-    body { margin:0; padding:0; background:#1e1e1e; font-family:system-ui,sans-serif; color:#d4d4d4; }
-    .input-box {
-      position:fixed;
-      top:0; left:0; left:0; right:0;
-      padding:1.5rem;
-      background:#252526;
-      text-align:center;
-      z-index:10;
-      box-shadow:0 4px 10px rgba(0,0,0,0.3);
-    }
-    input {
-      width:70%;
-      max-width:700px;
-      padding:14px;
-      font-size:1.1rem;
-      border:none;
-      border-radius:8px;
-      background:#3c3c3c;
-      color:#fff;
-    }
-    button {
-      padding:14px 28px;
-      margin-left:12px;
-      background:#007acc;
-      color:white;
-      border:none;
-      border-radius:8px;
-      font-size:1.1rem;
-      cursor:pointer;
-    }
-    button:hover { background:#005a9e; }
-
-    #source-box {
-      width:100vw;
-      position:relative;
-      left:50%;
-      right:50%;
-      margin-left:-50vw;
-      margin-right:-50vw;
-      margin-top:90px; /* space for fixed input bar */
-      padding:3rem 3rem 5rem;
-      background:#252526;
-      box-sizing:border-box;
-      min-height:calc(100vh - 90px);
-    }
-    #source-box pre {
-      margin:0;
-      white-space:pre-wrap !important;
-      word-wrap:break-word !important;
-      word-break:break-all;
-      overflow-wrap:anywhere;
-      font-size:15.5px;
-      line-height:1.65;
-      background:transparent !important;
-    }
-    .loading { text-align:center; padding:4rem; font-size:1.3em; color:#58a6ff; }
-    .error { color:#f48771; text-align:center; padding:2rem; }
-    a { color:#58a6ff; }
-  </style>
+<meta charset="UTF-8">
+<title>view-source</title>
+<style>
+  body{margin:0;padding:0;background:#1e1e1e;font-family:system-ui;color:#d4d4d4}
+  #bar{position:fixed;top:0;left:0;right:0;padding:1.5rem;background:#252526;text-align:center;z-index:9;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+  input{width:70%;max-width:720px;padding:14px;font-size:1.1rem;border:none;border-radius:8px;background:#3c3c3c;color:#fff}
+  button{padding:14px 28px;margin-left:12px;background:#007acc;color:#fff;border:none;border-radius:8px;font-size:1.1rem;cursor:pointer}
+  button:hover{background:#005a9e}
+  pre{margin:0;padding:3rem 3rem 6rem;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;overflow-wrap:anywhere;font-size:15.5px;line-height:1.65;background:#252526;color:#d4d4d4}
+  #box{margin-top:90px;display:none}
+  .loading{text-align:center;padding:5rem;font-size:1.4rem;color:#58a6ff}
+  .error{color:#f48771;text-align:center;padding:3rem}
+</style>
 </head>
 <body>
 
-  <div class="input-box">
-    <input type="text" id="url-input" placeholder="https://example.com" autofocus />
-    <button onclick="loadSource()">Go</button>
-  </div>
+<div id="bar">
+  <input id="i" placeholder="https://example.com" autofocus>
+  <button onclick="go()">Go</button>
+</div>
 
-  <div id="source-box" style="display:none;">
-    <div id="result"></div>
-  </div>
+<div id="box">
+  <pre id="out"></pre>
+</div>
 
-  <script>
-    const params = new URLSearchParams(location.search);
-    const url = params.get('url');
-    if (url) {
-      document.getElementById('url-input').value = url;
-      loadSource(url);
-    }
+<script>
+const params = new URLSearchParams(location.search);
+const u = params.get('url');
+if (u) { document.getElementById('i').value = u; go(u); }
 
-    async function loadSource(custom) {
-      let u = custom || document.getElementById('url-input').value.trim();
-      if (!u) return;
+async function go(custom) {
+  let url = custom || document.getElementById('i').value.trim();
+  if (!url) return;
+  if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
 
-      if (!/^https?:\/\//i.test(u)) u = 'https://' + u;
+  const box = document.getElementById('box');
+  const out = document.getElementById('out');
+  out.textContent = 'loading...';
+  box.style.display = 'block';
 
-      const box = document.getElementById('source-box');
-      const res = document.getElementById('result');
-      res.innerHTML = '<div class="loading">loading...</div>';
-      box.style.display = 'block';
+  try {
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(r.status);
+    let text = await r.text();
 
-      try {
-        const proxy = `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`;
-        const r = await fetch(proxy);
-        if (!r.ok) throw new Error(r.status);
-        const html = await r.text();
+    // Simple but perfect escaping
+    text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-        res.innerHTML = `
-          <pre><code class="language-html">${html.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</code></pre>
-        `;
-        hljs.highlightAll();
-      } catch (e) {
-        res.innerHTML = `<div class="error">failed — ${e.message}</div>`;
-      }
-    }
+    out.innerHTML = text;
+    document.title = new URL(url).hostname;
+  } catch (e) {
+    out.innerHTML = `<span class="error">failed — ${e.message}<br><br>Many sites block direct fetch (CORS).<br>Use a proxy service or open<br>view-source:${url}<br>in your browser address bar instead.</span>`;
+  }
+}
 
-    document.getElementById('url-input').addEventListener('keypress', e => {
-      if (e.key === 'Enter') loadSource();
-    });
-  </script>
+document.getElementById('i').addEventListener('keypress', e => {
+  if (e.key === 'Enter') go();
+});
+</script>
 </body>
 </html>
