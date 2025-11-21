@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upcoming & Ongoing IPO in Nepal - This Week & This Month always on top (Mangsir 2082). Complete guide: What is IPO, How to apply, Tips & more.">
+    <title>Upcoming IPO Nepal • This Week & Month First (मंसिर २०८२)</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root { --p: #1e40af; --pl: #3b82f6; --s: #10b981; --w: #f59e0b; --d: #ef4444; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1f2937; line-height: 1.7; }
+
+        header {
+            background: linear-gradient(135deg, var(--p), var(--pl));
+            color: white; text-align: center;
+            padding: 3rem 1rem 2.5rem;
+        }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.7rem; margin-bottom: 0.5rem; }
+        @media (min-width: 640px) { h1 { font-size: 3.4rem; } }
+        .tagline { font-size: 1.3rem; font-weight: 600; opacity: 0.95; }
+        .badge { background: rgba(255,255,255,0.25); padding: 0.6rem 1.4rem; border-radius: 50px; margin-top: 0.8rem; display: inline-block; font-size: 1.05rem; }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+        .stats {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;
+        }
+        @media (min-width: 640px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+        .stat {
+            background: white; padding: 1.3rem; border-radius: 14px; text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .stat .val { font-size: 2.1rem; font-weight: 700; color: var(--p); }
+
+        #loading { text-align: center; padding: 4rem 1rem; color: #6b7280; font-size: 1.2rem; }
+
+        /* Mobile Cards */
+        .ipo-card {
+            background: white; border-radius: 16px; margin-bottom: 1.3rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08); overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .ipo-card:hover { transform: translateY(-4px); }
+        .ipo-card.priority { border-left: 7px solid var(--w); background: linear-gradient(135deg, #fffbeb, #fefce8); }
+        .ipo-card.ongoing { border-left: 7px solid var(--s); background: #f0fdf4; }
+        .card-header {
+            padding: 1.1rem 1.3rem; background: rgba(30,64,175,0.05); font-weight: 600; font-size: 1.15rem;
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+        }
+        .card-body { padding: 0.3rem 1.3rem 1.2rem; }
+        .row {
+            display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6;
+        }
+        .row:last-child { border-bottom: none; }
+        .label { font-weight: 600; color: var(--p); width: 40%; }
+        .value { width: 60%; text-align: right; }
+        .symbol { font-weight: 700; font-size: 1.45rem; font-family: monospace; color: var(--p); }
+        .highlight { font-weight: 700; color: #d97706; font-size: 1.1rem; }
+
+        /* Desktop Table */
+        @media (min-width: 768px) {
+            .ipo-card { display: none; }
+            table { display: table !important; width: 100%; border-collapse: separate; border-spacing: 0 12px; }
+            thead { display: table-header-group; background: var(--p); color: white; }
+            th { padding: 1.3rem 1rem; font-weight: 600; }
+            tbody tr { background: white; box-shadow: 0 5px 18px rgba(0,0,0,0.08); }
+            td { padding: 1.2rem 1rem; text-align: left; }
+            .priority td { background: #fffbeb; }
+        }
+        table { display: none; }
+
+        .content { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-top: 2.5rem; }
+        .content h2 { font-family: 'Playfair Display', serif; color: var(--p); font-size: 2rem; margin: 2rem 0 1rem; border-bottom: 2px solid #e0e7ff; padding-bottom: 0.5rem; }
+        .content ul, .content ol { padding-left: 1.5rem; margin: 1rem 0; }
+        .content li { margin: 0.6rem 0; }
+        .tip-box { background: #fefce8; padding: 1.2rem; border-radius: 12px; border-left: 5px solid var(--w); margin: 1.5rem 0; }
+
+        footer { text-align: center; padding: 3.5rem 1rem; background: #111827; color: white; margin-top: 5rem; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Upcoming IPO Nepal</h1>
+        <p class="tagline" id="np-month">Live SEBON Approved Pipeline – मंसिर २०८२</p>
+        <div class="badge">Today: <span id="today-en">November 21, 2025</span></div>
+    </header>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat"><div class="val" id="total">0</div><small>Total</small></div>
+            <div class="stat"><div class="val" id="priority">0</div><small>This Week + Ongoing 🔥</small></div>
+            <div class="stat"><div class="val" id="this-month">0</div><small>This Month</small></div>
+            <div class="stat"><div class="val" id="amount">₨ 0 B</div><small>Total Amount</small></div>
+        </div>
+
+        <div id="loading">
+            <i class="fas fa-spinner fa-spin fa-2x"></i><br><br>Loading live IPO data from GitHub...
+        </div>
+
+        <!-- Mobile View -->
+        <div id="mobile-view"></div>
+
+        <!-- Desktop Table -->
+        <table id="desktop-table">
+            <thead>
+                <tr>
+                    <th>S.N</th><th>Symbol</th><th>Company</th><th>Sector</th>
+                    <th>Units</th><th>Amount</th><th>Opening Date</th><th>Manager</th>
+                </tr>
+            </thead>
+            <tbody id="desktop-body"></tbody>
+        </table>
+
+        <!-- Rich Educational Content -->
+        <div class="content">
+            <h2>What is IPO (Initial Public Offering)?</h2>
+            <p>An <strong>Initial Public Offering (IPO)</strong> is when a private company offers its shares to the public for the first time and gets listed on the Nepal Stock Exchange (NEPSE). This allows ordinary investors like you to become part-owners of the company.</p>
+
+            <h2>Types of Public Issues in Nepal</h2>
+            <ul>
+                <li><strong>IPO</strong> – Initial Public Offering (first time)</li>
+                <li><strong>FPO</strong> – Follow-on Public Offering (already listed company issues more shares)</li>
+                <li><strong>Right Share</strong> – Existing shareholders get priority</li>
+                <li><strong>Bonus Share</strong> – Free shares from company profit</li>
+            </ul>
+
+            <h2>How to Apply for IPO in Nepal (Step-by-Step)</h2>
+            <ol>
+                <li>Open a <strong>Demat Account</strong> (through any broker or bank)</li>
+                <li>Open an <strong>ASBA-enabled bank account</strong> (Nabil, Global IME, NIC Asia, etc.)</li>
+                <li>Get your <strong>CRN Number</strong> from the bank</li>
+                <li>Link CRN with your Demat in <strong>MeroShare</strong></li>
+                <li>Apply through <strong>MeroShare.cdsc.com.np</strong> or your bank's app when IPO opens</li>
+                <li>Minimum 10 units, maximum as specified by company</li>
+            </ol>
+
+            <div class="tip-box">
+                <strong>Pro Tip:</strong> Most IPOs in Nepal are oversubscribed 50–500 times! Apply on the <strong>first day within the first few hours</strong> for higher allotment chances.
+            </div>
+
+            <h2>Why Invest in IPOs in Nepal?</h2>
+            <ul>
+                <li>Usually issued at <strong>₨100 face value</strong> – high listing gains</li>
+                <li>Many hydropower & bank IPOs give 100–500% return on listing day</li>
+                <li>Long-term wealth creation (e.g., Nabil Bank IPO buyers became millionaires)</li>
+                <li>10% shares reserved for Nepalis abroad</li>
+            </ul>
+
+            <h2>Important IPO Rules in Nepal (2025)</h2>
+            <ul>
+                <li>All IPOs at <strong>₨100</strong> unless premium approved</li>
+                <li>General public gets <strong>90%</strong> shares</li>
+                <li>Allotment within <strong>7–30 days</strong> after closing</li>
+                <li>Results published on company & issue manager website</li>
+                <li>Refund within 3 days if not allotted</li>
+            </ul>
+
+            <h2>Popular Sectors for IPO in Nepal</h2>
+            <ul>
+                <li><strong>Hydropower</strong> – Most IPOs, high demand</li>
+                <li><strong>Microfinance & Banks</strong></li>
+                <li><strong>Insurance Companies</strong></li>
+                <li><strong>Manufacturing & Cement</strong></li>
+                <li><strong>Hotels & Tourism</strong></li>
+            </ul>
+
+            <p style="margin-top:2rem; color:#6b7280; font-size:0.95rem;">
+                Last updated: <span id="updated-en">November 21, 2025</span> • Data sourced directly from SEBON-approved list
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Nepal IPO Live • Your Trusted Source for Upcoming & Ongoing IPOs in Nepal</p>
+    </footer>
+
+    <script>
+        const today = new Date();
+        document.getElementById("np-month").textContent = `Live SEBON Approved Pipeline – मंसिर २०८२`;
+        document.getElementById("today-en").textContent = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        document.getElementById("updated-en").textContent = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+        fetch("https://yosintv.github.io/filex/upcoming_ipo.json")
+            .then(r => r.ok ? r.json() : Promise.reject())
+            .then(data => {
+                const mobileContainer = document.getElementById("mobile-view");
+                const desktopBody = document.getElementById("desktop-body");
+                mobileContainer.innerHTML = "";
+                desktopBody.innerHTML = "";
+
+                let totalAmt = 0, priorityCount = 0, monthCount = 0;
+                const now = new Date();
+                const priorityItems = [];
+                const otherItems = [];
+
+                data.forEach(item => {
+                    if (!item.openDate) return;
+                    totalAmt += parseFloat(item.amount) || 0;
+
+                    const openDate = new Date(item.openDate);
+                    const diffDays = Math.ceil((openDate - now) / 86400000);
+
+                    const isOngoing = diffDays <= 0 && diffDays > -30;
+                    const isThisWeek = diffDays >= 0 && diffDays <= 7;
+                    const isThisMonth = openDate.getMonth() === now.getMonth() && openDate.getFullYear() === now.getFullYear();
+
+                    if (isThisMonth) monthCount++;
+                    if (isThisWeek || isOngoing) priorityCount++;
+
+                    const highlightText = isThisWeek ? "🔥 This Week!" : (isOngoing ? "🟢 Ongoing" : "");
+
+                    const cardHTML = `
+                        <div class="ipo-card ${isThisWeek || isOngoing ? 'priority' : ''} ${isOngoing ? 'ongoing' : ''}">
+                            <div class="card-header">
+                                <span class="symbol">${item.symbol}</span> — ${item.company}
+                                ${highlightText ? `<span class="highlight">${highlightText}</span>` : ''}
+                            </div>
+                            <div class="card-body">
+                                <div class="row"><span class="label">Sector</span><span class="value">${item.sector}</span></div>
+                                <div class="row"><span class="label">Units</span><span class="value">${(item.units || 0).toLocaleString()}</span></div>
+                                <div class="row"><span class="label">Amount</span><span class="value">₨ ${(item.amount || 0).toLocaleString()}</span></div>
+                                <div class="row"><span class="label">Opening Date</span><span class="value">${openDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span></div>
+                                <div class="row"><span class="label">Manager</span><span class="value">${item.manager || "-"}</span></div>
+                            </div>
+                        </div>`;
+
+                    const desktopRow = `
+                        <tr class="${isThisWeek || isOngoing ? 'priority' : ''}">
+                            <td>${item.sn || "-"}</td>
+                            <td><strong>${item.symbol}</strong></td>
+                            <td>${item.company}</td>
+                            <td>${item.sector}</td>
+                            <td>${(item.units || 0).toLocaleString()}</td>
+                            <td>₨ ${(item.amount || 0).toLocaleString()}</td>
+                            <td>${openDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} ${highlightText ? `<br><strong style="color:#d97706">${highlightText}</strong>` : ''}</td>
+                            <td>${item.manager || "-"}</td>
+                        </tr>`;
+
+                    if (isThisWeek || isOngoing || isThisMonth) {
+                        priorityItems.push({ card: cardHTML, row: desktopRow });
+                    } else {
+                        otherItems.push({ card: cardHTML, row: desktopRow });
+                    }
+                });
+
+                [...priorityItems, ...otherItems].forEach(item => {
+                    mobileContainer.innerHTML += item.card;
+                    desktopBody.innerHTML += item.row;
+                });
+
+                document.getElementById("total").textContent = data.length;
+                document.getElementById("priority").textContent = priorityCount;
+                document.getElementById("this-month").textContent = monthCount;
+                document.getElementById("amount").textContent = `₨ ${(totalAmt/1e9).toFixed(2)} B`;
+
+                document.getElementById("loading").style.display = "none";
+            })
+            .catch(() => {
+                document.getElementById("loading").innerHTML = "<p style='color:red'>Failed to load data. Please check your internet connection.</p>";
+            });
+    </script>
+</body>
+</html>
