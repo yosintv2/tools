@@ -44,7 +44,6 @@
         :root { --p: #1e40af; --pl: #3b82f6; --s: #10b981; --w: #f59e0b; --d: #ef4444; }
         * { margin:0; padding:0; box-sizing:border-box; }
         body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1f2937; line-height: 1.7; }
-
         header {
             background: linear-gradient(135deg, var(--p), var(--pl));
             color: white; text-align: center;
@@ -54,9 +53,7 @@
         @media (min-width: 640px) { h1 { font-size: 3.4rem; } }
         .tagline { font-size: 1.3rem; font-weight: 600; opacity: 0.95; }
         .badge { background: rgba(255,255,255,0.25); padding: 0.6rem 1.4rem; border-radius: 50px; margin-top: 0.8rem; display: inline-block; font-size: 1.05rem; }
-
         .container { max-width: 1400px; margin: 0 auto; padding: 1.5rem 1rem; }
-
         .stats {
             display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;
         }
@@ -66,9 +63,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
         .stat .val { font-size: 2.1rem; font-weight: 700; color: var(--p); }
-
         #loading { text-align: center; padding: 4rem 1rem; color: #6b7280; font-size: 1.2rem; }
-
         /* Mobile Cards */
         .ipo-card {
             background: white; border-radius: 16px; margin-bottom: 1.3rem;
@@ -90,7 +85,6 @@
         .label { font-weight: 600; color: var(--p); width: 40%; }
         .value { width: 60%; text-align: right; }
         .symbol { font-weight: 700; font-size: 1.45rem; font-family: monospace; color: var(--p); }
-
         /* Smaller & Cleaner Highlight Badge */
         .highlight {
             font-weight: 600;
@@ -104,7 +98,6 @@
         @media (min-width: 768px) {
             .highlight { font-size: 0.85rem; padding: 2px 7px; }
         }
-
         /* Desktop Table */
         @media (min-width: 768px) {
             .ipo-card { display: none; }
@@ -116,13 +109,11 @@
             .priority td { background: #fffbeb; }
         }
         table { display: none; }
-
         .content { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-top: 2.5rem; }
         .content h2 { font-family: 'Playfair Display', serif; color: var(--p); font-size: 2rem; margin: 2rem 0 1rem; border-bottom: 2px solid #e0e7ff; padding-bottom: 0.5rem; }
         .content ul, .content ol { padding-left: 1.5rem; margin: 1rem 0; }
         .content li { margin: 0.6rem 0; }
         .tip-box { background: #fefce8; padding: 1.2rem; border-radius: 12px; border-left: 5px solid var(--w); margin: 1.5rem 0; }
-
         footer { text-align: center; padding: 3.5rem 1rem; background: #111827; color: white; margin-top: 5rem; font-size: 0.95rem; }
     </style>
 </head>
@@ -131,13 +122,25 @@
     <header>
         <h1>Upcoming IPO Nepal</h1>
         <p class="tagline" id="np-month">Live SEBON Approved Pipeline – मंसिर २०८२</p>
-        <div class="badge">Today: <span id="today-en">November 21, 2025</span></div>
+        <div class="badge">Today: <span id="today-en"></span></div>
     </header>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5525538810839147"
+     data-ad-slot="4345862479"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
     <div class="container">
         <div class="stats">
             <div class="stat"><div class="val" id="total">0</div><small>Total</small></div>
-            <div class="stat"><div class="val" id="priority">0</div><small>This Week + Ongoing 🔥</small></div>
+            <div class="stat"><div class="val" id="priority">0</div><small>This Week + Ongoing</small></div>
             <div class="stat"><div class="val" id="this-month">0</div><small>This Month</small></div>
             <div class="stat"><div class="val" id="amount">₨ 0 B</div><small>Total Amount</small></div>
         </div>
@@ -159,6 +162,18 @@
             </thead>
             <tbody id="desktop-body"></tbody>
         </table>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5525538810839147"
+     data-ad-slot="4345862479"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
         <!-- Educational Content -->
         <div class="content">
@@ -203,7 +218,7 @@
             </ul>
 
             <p style="margin-top:2rem; color:#6b7280; font-size:0.95rem;">
-                Last updated: <span id="updated-en">November 21, 2025</span> • Source: SEBON Approved List
+                Last updated: <span id="updated-en"></span> • Source: SEBON Approved List
             </p>
         </div>
     </div>
@@ -212,12 +227,20 @@
         <p>© 2025 <a href="https://www.singhyogendra.com.np" style="color:#93c5fd;">Singh Yogendra</a> • <a href="https://www.singhyogendra.com.np/upcoming-ipo.html" style="color:#93c5fd;">www.singhyogendra.com.np/upcoming-ipo.html</a></p>
     </footer>
 
+    <!-- Dynamic Date Script (Auto-updates every day!) -->
     <script>
+        // Automatically update all dates
         const today = new Date();
-        document.getElementById("np-month").textContent = `Live SEBON Approved Pipeline – मंसिर २०८२`;
-        document.getElementById("today-en").textContent = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-        document.getElementById("updated-en").textContent = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = today.toLocaleDateString('en-US', options);
 
+        document.getElementById("today-en").textContent = formattedDate;
+        document.getElementById("updated-en").textContent = formattedDate;
+
+        // Keep Nepali month static as requested
+        document.getElementById("np-month").textContent = `Live SEBON Approved Pipeline – मंसिर २०८२`;
+
+        // Rest of your IPO loading script (unchanged)
         fetch("https://yosintv.github.io/filex/upcoming_ipo.json")
             .then(r => r.ok ? r.json() : Promise.reject())
             .then(data => {
@@ -301,9 +324,7 @@
             });
     </script>
 
-<!-- BEGIN: Powered by Supercounters.com -->
-<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1725041,"ffffff","e61c1c");</script><!-- END: Powered by Supercounters.com -->
-
-    
+    <!-- Visitor Counter -->
+    <center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1725041,"ffffff","e61c1c");</script></center>
 </body>
 </html>
