@@ -1,0 +1,58 @@
+name: Update News API
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch: # Allows you to run it manually for testing
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch and Merge News
+        run: |
+          # 1. Fetch latest 20 posts from API
+          curl "https://english.onlinekhabar.com/wp-json/wp/v2/posts?per_page=20&_embed" -o latest_news.json
+          
+          # 2. Use a simple Python script to merge without duplicates
+          python3 - <<EOF
+          import json
+          import os
+
+          # Load existing news
+          if os.path.exists('news.json'):
+              with open('news.json', 'r') as f:
+                  try:
+                      old_news = json.load(f)
+                  except:
+                      old_news = []
+          else:
+              old_news = []
+
+          # Load new news
+          with open('latest_news.json', 'r') as f:
+              new_news = json.load(f)
+
+          # Use IDs to prevent duplicates
+          existing_ids = {item['id'] for item in old_news}
+          unique_new_news = [item for item in new_news if item['id'] not in existing_ids]
+
+          # Prepend new news to the top
+          final_news = unique_new_news + old_news
+          
+          # Keep only the latest 200 items to keep the file size manageable (Optional)
+          final_news = final_news[:200]
+
+          with open('news.json', 'w') as f:
+              json.dump(final_news, f, indent=2)
+          EOF
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add news.json
+          git commit -m "Update news.json with latest posts" || exit 0
+          git push
