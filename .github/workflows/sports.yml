@@ -13,98 +13,90 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch All Feed History and Convert
+      - name: Fetch RSS and Archive Data
         run: |
           mkdir -p data
+          # Fetch the live RSS feed
+          curl -sL "https://english.onlinekhabar.com/category/sports/feed" -o sports_feed.xml
+          
           python3 - <<EOF
           import xml.etree.ElementTree as ET
           import json
           import os
           import re
-          import urllib.request
 
           def clean_text(text):
               if not text: return ""
               return re.sub('<[^<]+?>', '', text).strip()
 
-          def fetch_page(page_num):
-              url = f"https://english.onlinekhabar.com/category/sports/feed?paged={page_num}"
-              try:
-                  with urllib.request.urlopen(url) as response:
-                      return response.read()
-              except:
-                  return None
-
-          # 1. Load existing data
-          file_path = 'data/sports.json'
-          old_data = []
-          if os.path.exists(file_path):
-              with open(file_path, 'r') as f:
-                  try:
-                      old_data = json.load(f)
-                  except: pass
-          
-          existing_ids = {post['id'] for post in old_data}
-          newly_discovered = []
-          
-          # 2. Deep Fetch Loop
-          page = 1
-          while page <= 5: # Fetch up to 5 pages to find all missing data
-              print(f"Fetching page {page}...")
-              xml_data = fetch_page(page)
-              if not xml_data: break
-              
-              root = ET.fromstring(xml_data)
+          try:
+              # 1. Parse the fetched XML
+              tree = ET.parse('sports_feed.xml')
+              root = tree.getroot()
+              ns = {
+                  'content': 'http://purl.org/rss/1.0/modules/content/',
+                  'media': 'http://search.yahoo.com/mrss/'
+              }
               items = root.findall('./channel/item')
-              
-              found_new_on_this_page = False
-              page_items = []
-              
+
+              newly_fetched = []
               for item in items:
                   link = item.find('link').text
-                  if link not in existing_ids:
-                      found_new_on_this_page = True
-                      
-                      # Extract Image from <figure> or media tag
-                      content_tag = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
-                      full_content = content_tag.text if content_tag is not None else ""
-                      figure_match = re.search(r'<figure[^>]*class="wp-block-image[^>]*>.*?src="([^"]+)"', full_content, re.DOTALL)
-                      
-                      image = "https://via.placeholder.com/1080x1920?text=Sports"
-                      if figure_match:
-                          image = figure_match.group(1)
+                  title = item.find('title').text
+                  pub_date = item.find('pubDate').text
+                  
+                  # Extract full content for image searching
+                  content_tag = item.find('content:encoded', ns)
+                  full_content = content_tag.text if content_tag is not None else ""
+                  
+                  # Image Extraction: Look for the <figure> or <img> you described
+                  image_url = "https://via.placeholder.com/1080x1920?text=Sports"
+                  # This regex looks for src specifically within a figure or standard img tag
+                  img_match = re.search(r'<figure[^>]*>.*?src="([^"]+)"', full_content, re.DOTALL)
+                  if not img_match:
+                      img_match = re.search(r'<img[^>]*src="([^"]+)"', full_content)
+                  
+                  if img_match:
+                      image_url = img_match.group(1)
 
-                      page_items.append({
-                          "id": link,
-                          "date": item.find('pubDate').text,
-                          "title": {"rendered": item.find('title').text},
-                          "excerpt": {"rendered": clean_text(item.find('description').text or "")[:150] + "..."},
-                          "content": {"rendered": full_content},
-                          "featured_image": image
-                      })
-              
-              newly_discovered.extend(page_items)
-              existing_ids.update([p['id'] for p in page_items])
-              
-              # If a page contains only items we already have, we can stop
-              if not found_new_on_this_page:
-                  break
-              page += 1
+                  newly_fetched.append({
+                      "id": link,
+                      "date": pub_date,
+                      "title": {"rendered": title},
+                      "featured_image": image_url,
+                      "excerpt": {"rendered": clean_text(full_content)[:150] + "..."}
+                  })
 
-          # 3. Merge: New on top, Old below
-          final_json = newly_discovered + old_data
-          
-          # Keep the database healthy (max 500 items)
-          with open(file_path, 'w') as f:
-              json.dump(final_json[:500], f, indent=2)
-          
-          print(f"Added {len(newly_discovered)} new articles.")
+              # 2. Load existing archive
+              file_path = 'data/sports.json'
+              if os.path.exists(file_path):
+                  with open(file_path, 'r') as f:
+                      try:
+                          archive = json.load(f)
+                      except: archive = []
+              else:
+                  archive = []
+
+              # 3. Merge: Add only truly NEW items to the TOP
+              existing_ids = {post['id'] for post in archive}
+              unique_new = [p for p in newly_fetched if p['id'] not in existing_ids]
+              
+              # Newest at top, followed by old archive
+              final_data = unique_new + archive
+              
+              with open(file_path, 'w') as f:
+                  json.dump(final_data, f, indent=2)
+                  
+              print(f"Added {len(unique_new)} new articles to sports.json")
+
+          except Exception as e:
+              print(f"Error: {e}")
           EOF
 
-      - name: Commit Changes
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/sports.json
-          git commit -m "Deep Update sports.json" || exit 0
+          git commit -m "Archive Update: $(date)" || exit 0
           git push
