@@ -1,7 +1,7 @@
 name: Update Sports Feed
 on:
   schedule:
-    - cron: '0 * * * *' # Updates every hour
+    - cron: '0 * * * *'
   workflow_dispatch: 
 
 jobs:
@@ -16,7 +16,6 @@ jobs:
       - name: Fetch and Convert RSS
         run: |
           mkdir -p data
-          # Fetch the RSS feed
           curl -sL "https://english.onlinekhabar.com/category/sports/feed" -o sports_feed.xml
           
           python3 - <<EOF
@@ -34,45 +33,64 @@ jobs:
               root = tree.getroot()
               items = root.findall('./channel/item')
               
-              namespaces = {'media': 'http://search.yahoo.com/mrss/'}
+              namespaces = {
+                  'media': 'http://search.yahoo.com/mrss/',
+                  'content': 'http://purl.org/rss/1.0/modules/content/'
+              }
+              
               new_data = []
 
               for item in items:
                   title = item.find('title').text
                   link = item.find('link').text
                   pub_date = item.find('pubDate').text
-                  description = item.find('description').text if item.find('description') is not None else ""
                   
-                  # Find image in media tag or fallback to a placeholder
+                  # 1. Get description and content
+                  desc_tag = item.find('description')
+                  description = desc_tag.text if desc_tag is not None else ""
+                  
+                  content_tag = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
+                  full_content = content_tag.text if content_tag is not None else ""
+
+                  # 2. IMAGE EXTRACTION LOGIC
                   image = "https://via.placeholder.com/1080x1920?text=Sports"
+                  
+                  # Strategy A: Look for the <figure> tag you specified in full content
+                  # This regex targets: <figure ...><img ... src="URL" ...></figure>
+                  figure_match = re.search(r'<figure[^>]*class="wp-block-image[^>]*>.*?src="([^"]+)"', full_content, re.DOTALL)
+                  
+                  # Strategy B: Fallback to standard media tag
                   media_content = item.find('media:content', namespaces)
-                  if media_content is not None:
+                  
+                  # Strategy C: Fallback to any img tag in description
+                  desc_img_match = re.search(r'<img [^>]*src="([^"]+)"', description)
+
+                  if figure_match:
+                      image = figure_match.group(1)
+                  elif media_content is not None:
                       image = media_content.get('url')
+                  elif desc_img_match:
+                      image = desc_img_match.group(1)
 
                   new_data.append({
                       "id": link,
                       "date": pub_date,
                       "title": {"rendered": title},
                       "excerpt": {"rendered": clean_text(description)[:150] + "..."},
-                      "content": {"rendered": description},
+                      "content": {"rendered": full_content if full_content else description},
                       "featured_image": image
                   })
 
-              # Load existing sports.json
               file_path = 'data/sports.json'
+              old_data = []
               if os.path.exists(file_path):
                   with open(file_path, 'r') as f:
                       try:
                           old_data = json.load(f)
-                      except:
-                          old_data = []
-              else:
-                  old_data = []
+                      except: pass
 
-              # Prevent duplicates and prepend new news
               existing_ids = {post['id'] for post in old_data}
               unique_new = [p for p in new_data if p['id'] not in existing_ids]
-              
               final_json = unique_new + old_data
               
               with open(file_path, 'w') as f:
@@ -87,5 +105,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/sports.json
-          git commit -m "Update sports.json" || exit 0
+          git commit -m "Update sports.json with high-res images" || exit 0
           git push
