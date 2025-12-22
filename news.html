@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>YoSin News | Latest Nepal News</title>
+    <meta name="description" content="YoSin News - Vertical TikTok-style feed of latest Nepal English news">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] } } }
+        }
+    </script>
+    <style>
+        body { background-color: #000; color: #fff; overflow: hidden; margin: 0; }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(15px);
+            padding: 1.2rem 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(239,68,68,0.2);
+        }
+        #news-container {
+            height: 100vh;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            padding-top: 80px;
+        }
+        .news-slide {
+            height: 100vh;
+            scroll-snap-align: start;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0; left: 0;
+            z-index: 0;
+        }
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 45%, rgba(0,0,0,0.2) 80%, transparent 100%);
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            margin-top: auto;
+            max-width: 94%;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            text-shadow: 0 3px 15px rgba(0,0,0,0.9);
+        }
+        .excerpt {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            opacity: 0.96;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+            margin-bottom: 2rem;
+        }
+        .date {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .read-btn {
+            background: linear-gradient(to right, #ef4444, #dc2626);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 999px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 30px rgba(239,68,68,0.5);
+            transition: all 0.3s ease;
+        }
+        .read-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Professional Text Loading Effect */
+        .loader {
+            position: fixed;
+            inset: 0;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            gap: 1.5rem;
+        }
+        .loading-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        .loading-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .loading-bar {
+            width: 200px;
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .loading-progress {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(to right, #ef4444, #f97316);
+            animation: loading 2s infinite ease-in-out;
+        }
+        @keyframes loading {
+            0% { width: 0%; }
+            50% { width: 70%; }
+            100% { width: 100%; }
+        }
+
+        /* Hide scrollbar */
+        #news-container::-webkit-scrollbar { display: none; }
+        #news-container { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Enhanced Professional Modal */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.96);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 1rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease;
+        }
+        .modal-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background: #fff;
+            color: #111;
+            border-radius: 2rem;
+            max-width: 900px;
+            width: 100%;
+            max-height: 92vh;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+        }
+        .modal-header {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        .modal-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+        .modal-close:hover { background: #ef4444; transform: scale(1.1); }
+        .modal-body {
+            padding: 2.5rem;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .modal-body time {
+            color: #ef4444;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .modal-body h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: #111;
+        }
+        .modal-body .prose {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Professional Header -->
+    <header>
+        <h1 class="text-3xl font-extrabold tracking-tight">
+            YoSin<span class="text-red-600"> News</span>
+        </h1>
+        <p class="text-sm opacity-80 mt-1">Latest Nepal News • Swipe Up</p>
+    </header>
+
+    <!-- Professional "Latest Nepal" Loading Effect -->
+    <div id="loader" class="loader">
+        <div class="loading-text">YoSin News</div>
+        <div class="loading-subtitle">Latest Nepal</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Vertical Scroll Container -->
+    <div id="news-container"></div>
+
+    <!-- Professional Full Article Modal -->
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header" id="modal-header">
+                <div class="modal-close" onclick="closeModal()">×</div>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('news-container');
+        const loader = document.getElementById('loader');
+        const modal = document.getElementById('modal');
+        const modalHeader = document.getElementById('modal-header');
+        const modalBody = document.getElementById('modal-body');
+        let allPosts = [];
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' };
+            return date.toLocaleDateString('en-US', options).toUpperCase();
+        }
+
+        function openModal(post) {
+            let imgHtml = '<div style="background: linear-gradient(135deg, #1e293b, #0f172a); height: 100%; display: flex; align-items: center; justify-content: center;"><p class="text-3xl opacity-50">No Image</p></div>';
+            if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
+                imgHtml = `<img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post.title?.rendered || post.title}" loading="lazy">`;
+            } else if (post.featured_image) {
+                imgHtml = `<img src="${post.featured_image}" alt="${post.title?.rendered || post.title}" loading="lazy">`;
+            }
+            modalHeader.innerHTML = imgHtml + '<div class="modal-close" onclick="closeModal()">×</div>';
+
+            modalBody.innerHTML = `
+                <time>${formatDate(post.date || post.publish_date)}</time>
+                <h1>${post.title?.rendered || post.title || 'Untitled'}</h1>
+                <div class="prose">
+                    ${post.content?.rendered || post.content || '<p>No content available.</p>'}
+                </div>
+            `;
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('open');
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        async function loadNews() {
+            let posts = [];
+            try {
+                const res = await fetch('https://english.onlinekhabar.com/wp-json/wp/v2/posts?per_page=100&_embed');
+                if (res.ok) posts = await res.json();
+            } catch (e) {
+                console.warn('Main API failed, trying fallback...');
+                try {
+                    const res = await fetch('https://english.onlinekhabar.com/wp-json/okapi/v2/recent-news');
+                    if (res.ok) {
+                        const data = await res.json();
+                        posts = data.news || [];
+                    }
+                } catch (err) {
+                    container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-3xl">Failed to load news.<br/>Check your connection.</p></div>';
+                    loader.style.display = 'none';
+                    return;
+                }
+            }
+
+            if (posts.length === 0) {
+                container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-3xl">No news available.</p></div>';
+                loader.style.display = 'none';
+                return;
+            }
+
+            // Show ALL fetched posts (up to 100 from main API or ~30 from fallback)
+            allPosts = posts;
+
+            container.innerHTML = allPosts.map(post => {
+                const title = post.title?.rendered || post.title || 'Breaking News';
+                const excerpt = (post.excerpt?.rendered || post.excerpt || '').replace(/<[^>]*>/g, '').trim().substring(0, 200) + '...' || 'Swipe up for more...';
+                const date = formatDate(post.date || post.publish_date || new Date());
+
+                let imgUrl = 'https://via.placeholder.com/1080x1920/0f172a/1e293b?text=YoSin+News';
+                if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
+                    imgUrl = post._embedded['wp:featuredmedia'][0].source_url;
+                } else if (post.featured_image) {
+                    imgUrl = post.featured_image;
+                }
+
+                return `
+                <section class="news-slide">
+                    <img src="${imgUrl}" alt="${title}" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="date">${date}</div>
+                        <h1 class="title">${title}</h1>
+                        <p class="excerpt">${excerpt}</p>
+                        <button class="read-btn" onclick="event.stopPropagation(); openModal(${JSON.stringify(post).replace(/"/g, '&quot;')})">
+                            Read Full News
+                        </button>
+                    </div>
+                </section>`;
+            }).join('');
+
+            loader.style.display = 'none';
+        }
+
+        loadNews();
+    </script>
+</body>
+</html>
