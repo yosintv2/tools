@@ -1,8 +1,8 @@
 name: Update News API
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
-  workflow_dispatch: # Allows you to run it manually for testing
+    - cron: '0 * * * *' 
+  workflow_dispatch: 
 
 jobs:
   update-news:
@@ -13,17 +13,17 @@ jobs:
 
       - name: Fetch and Merge News
         run: |
-          # 1. Fetch latest 20 posts from API
           curl "https://english.onlinekhabar.com/wp-json/wp/v2/posts?per_page=20&_embed" -o latest_news.json
           
-          # 2. Use a simple Python script to merge without duplicates
           python3 - <<EOF
           import json
           import os
 
-          # Load existing news
-          if os.path.exists('news.json'):
-              with open('news.json', 'r') as f:
+          # Updated path to include 'data/' folder
+          file_path = 'data/news.json'
+          
+          if os.path.exists(file_path):
+              with open(file_path, 'r') as f:
                   try:
                       old_news = json.load(f)
                   except:
@@ -31,21 +31,22 @@ jobs:
           else:
               old_news = []
 
-          # Load new news
           with open('latest_news.json', 'r') as f:
               new_news = json.load(f)
 
-          # Use IDs to prevent duplicates
           existing_ids = {item['id'] for item in old_news}
           unique_new_news = [item for item in new_news if item['id'] not in existing_ids]
 
-          # Prepend new news to the top
+          # New news at the top, followed by old news
           final_news = unique_new_news + old_news
           
-          # Keep only the latest 200 items to keep the file size manageable (Optional)
+          # Keep last 200 items
           final_news = final_news[:200]
 
-          with open('news.json', 'w') as f:
+          # Ensure the directory exists (just in case)
+          os.makedirs('data', exist_ok=True)
+
+          with open(file_path, 'w') as f:
               json.dump(final_news, f, indent=2)
           EOF
 
@@ -53,6 +54,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add news.json
-          git commit -m "Update news.json with latest posts" || exit 0
+          git add data/news.json
+          git commit -m "Update data/news.json with latest posts" || exit 0
           git push
