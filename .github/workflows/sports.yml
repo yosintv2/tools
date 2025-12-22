@@ -1,29 +1,22 @@
-name: Update Sports RSS to JSON
+name: Update Sports Feed
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
-  workflow_dispatch: # Allows you to run manually
+    - cron: '0 * * * *' # Updates every hour
+  workflow_dispatch: 
 
 jobs:
-  update-sports:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Fetch RSS and Convert to JSON
+      - name: Fetch and Convert RSS
         run: |
-          # Create data directory
           mkdir -p data
-          
-          # Fetch the RSS Feed
+          # Fetch the RSS feed
           curl -sL "https://english.onlinekhabar.com/category/sports/feed" -o sports_feed.xml
           
           python3 - <<EOF
@@ -32,93 +25,67 @@ jobs:
           import os
           import re
 
-          def clean_html(raw_html):
-              if not raw_html: return ""
-              cleanr = re.compile('<.*?>')
-              return re.sub(cleanr, '', raw_html)
+          def clean_text(text):
+              if not text: return ""
+              return re.sub('<[^<]+?>', '', text).strip()
 
           try:
               tree = ET.parse('sports_feed.xml')
               root = tree.getroot()
-              
-              # RSS feeds use namespaces for content and media
-              namespaces = {
-                  'content': 'http://purl.org/rss/1.0/modules/content/',
-                  'media': 'http://search.yahoo.com/mrss/'
-              }
-
               items = root.findall('./channel/item')
-              new_fetched_data = []
+              
+              namespaces = {'media': 'http://search.yahoo.com/mrss/'}
+              new_data = []
 
               for item in items:
-                  title = item.find('title').text if item.find('title') is not None else "Sports Update"
-                  link = item.find('link').text if item.find('link') is not None else ""
-                  pub_date = item.find('pubDate').text if item.find('pubDate') is not None else ""
+                  title = item.find('title').text
+                  link = item.find('link').text
+                  pub_date = item.find('pubDate').text
+                  description = item.find('description').text if item.find('description') is not None else ""
                   
-                  # Extract description and clean it for the excerpt
-                  description_tag = item.find('description')
-                  description = description_tag.text if description_tag is not None else ""
-                  
-                  # Try to find a high-res image in the media namespace or description
-                  image_url = "https://via.placeholder.com/1080x1920?text=YoSin+Sports"
+                  # Find image in media tag or fallback to a placeholder
+                  image = "https://via.placeholder.com/1080x1920?text=Sports"
                   media_content = item.find('media:content', namespaces)
                   if media_content is not None:
-                      image_url = media_content.get('url')
-                  else:
-                      # Fallback: try to find img src in description via regex
-                      img_match = re.search(r'<img [^>]*src="([^"]+)"', description)
-                      if img_match:
-                          image_url = img_match.group(1)
+                      image = media_content.get('url')
 
-                  # Format to match your HTML's expectations
-                  post_obj = {
-                      "id": link, 
+                  new_data.append({
+                      "id": link,
                       "date": pub_date,
                       "title": {"rendered": title},
-                      "excerpt": {"rendered": clean_html(description)[:150] + "..."},
+                      "excerpt": {"rendered": clean_text(description)[:150] + "..."},
                       "content": {"rendered": description},
-                      "featured_image": image_url
-                  }
-                  new_fetched_data.append(post_obj)
+                      "featured_image": image
+                  })
 
-              # Merge with existing data/news.json
-              file_path = 'data/news.json'
+              # Load existing sports.json
+              file_path = 'data/sports.json'
               if os.path.exists(file_path):
                   with open(file_path, 'r') as f:
                       try:
                           old_data = json.load(f)
-                          if not isinstance(old_data, list): old_data = []
                       except:
                           old_data = []
               else:
                   old_data = []
 
-              # Prevent duplicates using link as ID
+              # Prevent duplicates and prepend new news
               existing_ids = {post['id'] for post in old_data}
-              unique_new = [p for p in new_fetched_data if p['id'] not in existing_ids]
-
-              # Add new sports news to the top
-              final_list = unique_new + old_data
-              final_list = final_list[:200] # Keep a history of 200 items
-
+              unique_new = [p for p in new_data if p['id'] not in existing_ids]
+              
+              final_json = unique_new + old_data
+              
               with open(file_path, 'w') as f:
-                  json.dump(final_list, f, indent=2)
+                  json.dump(final_json[:200], f, indent=2)
                   
-              print(f"Successfully added {len(unique_new)} new sports articles.")
-
           except Exception as e:
-              print(f"Error processing RSS: {e}")
-              exit(1)
+              print(f"Error: {e}")
           EOF
 
-      - name: Commit and Push Changes
+      - name: Commit Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/news.json
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Sports Feed Update: $(date)"
-            git push origin main
-          fi
+          git add data/sports.json
+          git commit -m "Update sports.json" || exit 0
+          git push
