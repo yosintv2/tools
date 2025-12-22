@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>YoSin News | Latest Nepal News</title>
-    <meta name="description" content="YoSin News - Premium vertical TikTok-style news feed">
+    <meta name="description" content="YoSin News - Clean vertical TikTok-style news feed">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -24,15 +24,32 @@
             z-index: 50;
             background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent);
             backdrop-filter: blur(20px);
-            padding: 1.5rem 0;
+            padding: 1rem 0;
             text-align: center;
+        }
+        .header-yosin {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #ef4444, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header-news {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: white;
+        }
+        .header-subtitle {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-top: 0.2rem;
         }
         #news-container {
             height: 100vh;
             scroll-snap-type: y mandatory;
             overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
-            padding-top: 90px;
+            padding-top: 70px;
         }
         .news-slide {
             height: 100vh;
@@ -58,44 +75,43 @@
         .content {
             position: relative;
             z-index: 2;
-            padding: 2rem 1.5rem 4rem 1.5rem;
+            padding: 1.8rem 1.5rem 5rem 1.5rem;
             margin-top: auto;
             max-width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 1.2rem;
+            gap: 1rem;
         }
         .title {
-            font-size: 1.95rem;
+            font-size: 1.7rem;
             font-weight: 800;
-            line-height: 1.15;
-            text-shadow: 0 3px 15px rgba(0,0,0,0.9);
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.9);
         }
         .excerpt {
-            font-size: 1.18rem;
-            line-height: 1.6;
-            opacity: 0.96;
-            text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+            font-size: 1.05rem;
+            line-height: 1.5;
+            opacity: 0.95;
+            text-shadow: 0 1px 8px rgba(0,0,0,0.9);
         }
         .date {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             opacity: 0.85;
             font-weight: 600;
-            letter-spacing: 0.5px;
         }
         .read-btn {
             background: linear-gradient(to right, #ef4444, #dc2626);
             color: white;
-            padding: 1rem 2.2rem;
+            padding: 0.9rem 2rem;
             border-radius: 999px;
             font-weight: 800;
-            font-size: 1.05rem;
+            font-size: 0.95rem;
             text-transform: uppercase;
-            letter-spacing: 1.2px;
-            box-shadow: 0 10px 35px rgba(239,68,68,0.6);
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(239,68,68,0.5);
             transition: all 0.3s ease;
             align-self: flex-start;
-            min-width: 230px;
+            min-width: 200px;
             text-align: center;
         }
         .read-btn:active {
@@ -103,17 +119,19 @@
         }
 
         @media (max-width: 480px) {
-            .title { font-size: 1.75rem; }
-            .excerpt { font-size: 1.12rem; }
-            .content { padding: 1.8rem 1.2rem 5rem 1.2rem; gap: 1rem; }
+            .header-yosin, .header-news { font-size: 2rem; }
+            .header-subtitle { font-size: 0.8rem; }
+            .title { font-size: 1.55rem; }
+            .excerpt { font-size: 1rem; }
+            .content { padding: 1.5rem 1.2rem 6rem 1.2rem; gap: 0.9rem; }
             .read-btn {
-                padding: 0.95rem 2rem;
-                font-size: 1rem;
-                min-width: 210px;
+                padding: 0.85rem 1.8rem;
+                font-size: 0.9rem;
+                min-width: 190px;
             }
         }
 
-        /* === LOADING EFFECT WITH "YoSin News" IN SAME ROW === */
+        /* Clean Loading */
         .loader {
             position: fixed;
             inset: 0;
@@ -123,50 +141,46 @@
             align-items: center;
             justify-content: center;
             z-index: 100;
-            gap: 2rem;
+            gap: 1.8rem;
         }
         .loading-main {
             display: flex;
             align-items: baseline;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
-        .loading-text {
-            font-size: 3.5rem;
+        .loading-yosin {
+            font-size: 3rem;
             font-weight: 800;
-            letter-spacing: 2px;
             background: linear-gradient(to right, #ef4444, #f97316);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .loading-news {
-            font-size: 2.2rem;
-            font-weight: 700;
-            opacity: 0.9;
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
         }
         .loading-subtitle {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             opacity: 0.9;
-            font-weight: 600;
         }
         .loading-bar {
-            width: 260px;
-            height: 6px;
+            width: 220px;
+            height: 5px;
             background: rgba(255,255,255,0.1);
             border-radius: 3px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         }
         .loading-progress {
             height: 100%;
             width: 0%;
             background: linear-gradient(to right, #ef4444, #f97316);
             border-radius: 3px;
-            animation: loading 2.5s infinite ease-in-out;
-            box-shadow: 0 0 20px rgba(239,68,68,0.7);
+            animation: loading 2s infinite ease-in-out;
         }
         @keyframes loading {
             0% { width: 0%; }
-            50% { width: 65%; }
+            50% { width: 60%; }
             100% { width: 100%; }
         }
 
@@ -174,7 +188,7 @@
         #news-container::-webkit-scrollbar { display: none; }
         #news-container { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* === FINAL MODAL WITH SMALLER TEXT + CLOSE BUTTON === */
+        /* Modal – No Header Image, Image Below Title */
         .modal-overlay {
             position: fixed;
             inset: 0;
@@ -186,7 +200,7 @@
             padding: 1rem;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.5s ease;
+            transition: opacity 0.4s ease;
         }
         .modal-overlay.open {
             opacity: 1;
@@ -195,109 +209,92 @@
         .modal-content {
             background: #fff;
             color: #111;
-            border-radius: 2.5rem;
-            max-width: 900px;
+            border-radius: 0.1rem;
+            max-width: 800px;
             width: 100%;
-            max-height: 92vh;
-            overflow: hidden;
-            box-shadow: 0 40px 100px rgba(0,0,0,0.8);
-            display: flex;
-            flex-direction: column;
-            animation: modalRise 0.6s ease-out;
-        }
-        @keyframes modalRise {
-            from { transform: translateY(60px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .modal-header {
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.7);
             position: relative;
-            height: 340px;
-            overflow: hidden;
-        }
-        .modal-header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 120px;
-            background: linear-gradient(transparent, #fff);
-        }
-        .modal-header img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .modal-close {
-            position: absolute;
-            top: 1.8rem;
-            right: 1.8rem;
-            background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(12px);
-            color: white;
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.4rem;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            box-shadow: 0 6px 25px rgba(0,0,0,0.5);
-        }
-        .modal-close:hover {
-            background: #ef4444;
-            transform: scale(1.15) rotate(90deg);
         }
         .modal-body {
-            padding: 2.8rem 2.5rem;
-            overflow-y: auto;
-            flex-grow: 1;
-            background: linear-gradient(to top, #f9fafb, #ffffff);
+            padding: 2.5rem 2rem;
+        }
+        .modal-body .article-image {
+            width: 100%;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
         .modal-body time {
             color: #ef4444;
-            font-weight: 800;
-            font-size: 0.95rem;
+            font-weight: 700;
+            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             display: block;
-            margin-bottom: 1.2rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 3px solid #ef4444;
+            margin-bottom: 1rem;
         }
         .modal-body h1 {
-            font-size: 2.1rem;
+            font-size: 1rem;
             font-weight: 800;
             line-height: 1.3;
-            margin-bottom: 1.6rem;
+            margin-bottom: 1.4rem;
             color: #111;
         }
         .modal-body .prose {
-            font-size: 1.05rem;
-            line-height: 1.75;
+            font-size: 1rem;
+            line-height: 1.7;
             color: #444;
         }
         .modal-body .prose p {
-            margin-bottom: 1.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Floating Rectangle Close Button */
+        .modal-floating-close {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #ef4444;
+            color: white;
+            padding: 0.4rem 1.4rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(239,68,68,0.6);
+            transition: all 0.3s ease;
+            z-index: 1200;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .modal-floating-close.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-floating-close:hover {
+            background: #dc2626;
+            transform: translateY(-3px);
         }
     </style>
 </head>
 <body>
 
-    <!-- Premium Header -->
+    <!-- Smaller Header for Mobile -->
     <header>
-        <h1 class="text-4xl font-extrabold tracking-tight">
-            YoSin<span class="text-red-600"> News</span>
+        <h1>
+            <span class="header-yosin">YoSin</span><span class="header-news"> News</span>
         </h1>
-        <p class="text-base opacity-85 mt-1 font-medium">Latest Nepal News • Swipe Up</p>
+        <p class="header-subtitle">Latest Nepal News • Swipe Up</p>
     </header>
 
-    <!-- Loading Effect: "YoSin News" in same row -->
+    <!-- Clean Loading -->
     <div id="loader" class="loader">
         <div class="loading-main">
-            <div class="loading-text">YoSin</div>
+            <div class="loading-yosin">YoSin</div>
             <div class="loading-news">News</div>
         </div>
         <div class="loading-subtitle">Latest Nepal</div>
@@ -309,22 +306,24 @@
     <!-- Vertical Scroll Container -->
     <div id="news-container"></div>
 
-    <!-- Modal with smaller text & prominent close button -->
+    <!-- Modal – No Top Header Image -->
     <div id="modal" class="modal-overlay">
         <div class="modal-content">
-            <div class="modal-header" id="modal-header">
-                <div class="modal-close" onclick="closeModal()">×</div>
-            </div>
             <div id="modal-body" class="modal-body"></div>
         </div>
+    </div>
+
+    <!-- Floating Rectangle Close Button -->
+    <div id="floating-close" class="modal-floating-close" onclick="closeModal()">
+        Close
     </div>
 
     <script>
         const container = document.getElementById('news-container');
         const loader = document.getElementById('loader');
         const modal = document.getElementById('modal');
-        const modalHeader = document.getElementById('modal-header');
         const modalBody = document.getElementById('modal-body');
+        const floatingClose = document.getElementById('floating-close');
         let allPosts = [];
 
         function formatDate(dateString) {
@@ -334,27 +333,34 @@
         }
 
         function openModal(post) {
-            let imgHtml = '<div style="background: linear-gradient(135deg, #0f172a, #1e293b); height: 100%; display: flex; align-items: center; justify-content: center;"><p class="text-5xl opacity-30 font-bold">YoSin News</p></div>';
+            let imgHtml = '';
+            let imgUrl = '';
             if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
-                imgHtml = `<img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post.title?.rendered || post.title}" loading="lazy">`;
+                imgUrl = post._embedded['wp:featuredmedia'][0].source_url;
             } else if (post.featured_image) {
-                imgHtml = `<img src="${post.featured_image}" alt="${post.title?.rendered || post.title}" loading="lazy">`;
+                imgUrl = post.featured_image;
             }
-            modalHeader.innerHTML = imgHtml + '<div class="modal-close" onclick="closeModal()">×</div>';
+
+            if (imgUrl) {
+                imgHtml = `<img src="${imgUrl}" alt="${post.title?.rendered || post.title}" class="article-image" loading="lazy">`;
+            }
 
             modalBody.innerHTML = `
                 <time>${formatDate(post.date || post.publish_date)}</time>
                 <h1>${post.title?.rendered || post.title || 'Untitled'}</h1>
+                ${imgHtml}
                 <div class="prose">
                     ${post.content?.rendered || post.content || '<p>No content available.</p>'}
                 </div>
             `;
             modal.classList.add('open');
+            floatingClose.classList.add('visible');
             document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
             modal.classList.remove('open');
+            floatingClose.classList.remove('visible');
             document.body.style.overflow = 'auto';
         }
 
@@ -376,14 +382,14 @@
                         posts = data.news || [];
                     }
                 } catch (err) {
-                    container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-3xl">Failed to load news.<br/>Check connection.</p></div>';
+                    container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-2xl">Failed to load news.</p></div>';
                     loader.style.display = 'none';
                     return;
                 }
             }
 
             if (posts.length === 0) {
-                container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-3xl">No news available.</p></div>';
+                container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-2xl">No news available.</p></div>';
                 loader.style.display = 'none';
                 return;
             }
@@ -392,10 +398,10 @@
 
             container.innerHTML = allPosts.map(post => {
                 const title = post.title?.rendered || post.title || 'Breaking News';
-                const excerpt = (post.excerpt?.rendered || post.excerpt || '').replace(/<[^>]*>/g, '').trim().substring(0, 220) + '...' || 'Swipe up for more stories...';
+                const excerpt = (post.excerpt?.rendered || post.excerpt || '').replace(/<[^>]*>/g, '').trim().substring(0, 200) + '...' || 'Swipe up for more...';
                 const date = formatDate(post.date || post.publish_date || new Date());
 
-                let imgUrl = 'https://via.placeholder.com/1080x1920/0f172a/1e293b?text=YoSin+News';
+                let imgUrl = 'https://via.placeholder.com/1080x1920/000000/111111?text=YoSin+News';
                 if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
                     imgUrl = post._embedded['wp:featuredmedia'][0].source_url;
                 } else if (post.featured_image) {
