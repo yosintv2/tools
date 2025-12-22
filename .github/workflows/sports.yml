@@ -13,11 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch RSS and Archive Data
+      - name: Fetch and Extract Figure Images
         run: |
           mkdir -p data
-          # Fetch the live RSS feed
-          curl -sL "https://english.onlinekhabar.com/category/sports/feed" -o sports_feed.xml
+          curl -sL -A "Mozilla/5.0" "https://english.onlinekhabar.com/category/sports/feed" -o sports_feed.xml
           
           python3 - <<EOF
           import xml.etree.ElementTree as ET
@@ -30,64 +29,65 @@ jobs:
               return re.sub('<[^<]+?>', '', text).strip()
 
           try:
-              # 1. Parse the fetched XML
               tree = ET.parse('sports_feed.xml')
               root = tree.getroot()
+              
+              # Define namespaces used in WordPress feeds
               ns = {
                   'content': 'http://purl.org/rss/1.0/modules/content/',
                   'media': 'http://search.yahoo.com/mrss/'
               }
-              items = root.findall('./channel/item')
 
               newly_fetched = []
-              for item in items:
+              for item in root.findall('.//item'):
                   link = item.find('link').text
                   title = item.find('title').text
                   pub_date = item.find('pubDate').text
                   
-                  # Extract full content for image searching
-                  content_tag = item.find('content:encoded', ns)
-                  full_content = content_tag.text if content_tag is not None else ""
+                  # Extract the CDATA content from <content:encoded>
+                  content_encoded = item.find('content:encoded', ns)
+                  full_html = content_encoded.text if content_encoded is not None else ""
                   
-                  # Image Extraction: Look for the <figure> or <img> you described
-                  image_url = "https://via.placeholder.com/1080x1920?text=Sports"
-                  # This regex looks for src specifically within a figure or standard img tag
-                  img_match = re.search(r'<figure[^>]*>.*?src="([^"]+)"', full_content, re.DOTALL)
-                  if not img_match:
-                      img_match = re.search(r'<img[^>]*src="([^"]+)"', full_content)
+                  # --- THE FIX: REACHING INTO CDATA ---
+                  image_url = "https://via.placeholder.com/1080x1920?text=No+Image+Found"
+                  
+                  # Search for the exact figure/img structure you mentioned
+                  # This regex targets the src inside the wp-block-image figure
+                  img_match = re.search(r'class="wp-block-image[^"]*".*?src="([^"]+)"', full_html, re.DOTALL)
                   
                   if img_match:
                       image_url = img_match.group(1)
+                  else:
+                      # Backup: search for any img tag if the specific class isn't found
+                      any_img = re.search(r'<img [^>]*src="([^"]+)"', full_html)
+                      if any_img:
+                          image_url = any_img.group(1)
 
                   newly_fetched.append({
                       "id": link,
                       "date": pub_date,
                       "title": {"rendered": title},
                       "featured_image": image_url,
-                      "excerpt": {"rendered": clean_text(full_content)[:150] + "..."}
+                      "excerpt": {"rendered": clean_text(full_html)[:150] + "..."}
                   })
 
-              # 2. Load existing archive
+              # Merge with existing data
               file_path = 'data/sports.json'
+              archive = []
               if os.path.exists(file_path):
                   with open(file_path, 'r') as f:
-                      try:
-                          archive = json.load(f)
-                      except: archive = []
-              else:
-                  archive = []
+                      try: archive = json.load(f)
+                      except: pass
 
-              # 3. Merge: Add only truly NEW items to the TOP
               existing_ids = {post['id'] for post in archive}
               unique_new = [p for p in newly_fetched if p['id'] not in existing_ids]
               
-              # Newest at top, followed by old archive
               final_data = unique_new + archive
               
               with open(file_path, 'w') as f:
-                  json.dump(final_data, f, indent=2)
+                  json.dump(final_data[:500], f, indent=2)
                   
-              print(f"Added {len(unique_new)} new articles to sports.json")
+              print(f"Successfully added {len(unique_new)} new articles.")
 
           except Exception as e:
               print(f"Error: {e}")
@@ -98,5 +98,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/sports.json
-          git commit -m "Archive Update: $(date)" || exit 0
+          git commit -m "Update: Extracted high-res figure images" || exit 0
           git push
