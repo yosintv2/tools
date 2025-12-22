@@ -1,0 +1,82 @@
+name: Update Job Listings Hourly
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour at minute 0
+  workflow_dispatch:  # Allows manual trigger
+
+permissions:
+  contents: write  # Required to commit changes
+
+jobs:
+  fetch-and-append-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Create data directory if not exists
+        run: mkdir -p data
+
+      - name: Fetch latest jobs from API
+        id: fetch
+        run: |
+          # Fetch up to 100 latest jobs (sorted by date desc)
+          curl -s "https://merorojgari.com/wp-json/wp/v2/job-listings?per_page=100&orderby=date&order=desc" > data/new-jobs.json
+
+      - name: Append new jobs to all-jobs.json (deduplicated by ID)
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+          const path = 'data/all-jobs.json';
+          const newPath = 'data/new-jobs.json';
+
+          let allJobs = [];
+          if (fs.existsSync(path)) {
+            const data = fs.readFileSync(path, 'utf8');
+            try {
+              allJobs = JSON.parse(data);
+            } catch (e) {
+              console.log('Invalid JSON in all-jobs.json, starting fresh');
+              allJobs = [];
+            }
+          }
+
+          const newJobs = JSON.parse(fs.readFileSync(newPath, 'utf8'));
+
+          // Create a Set of existing job IDs for fast lookup
+          const existingIds = new Set(allJobs.map(job => job.id));
+
+          // Filter only truly new jobs
+          const trulyNewJobs = newJobs.filter(job => !existingIds.has(job.id));
+
+          if (trulyNewJobs.length === 0) {
+            console.log('No new jobs to add');
+            fs.writeFileSync(path, JSON.stringify(allJobs, null, 2));
+          } else {
+            console.log(`Adding ${trulyNewJobs.length} new jobs`);
+            // Prepend new jobs (newest first)
+            const updatedJobs = [...trulyNewJobs, ...allJobs];
+            fs.writeFileSync(path, JSON.stringify(updatedJobs, null, 2));
+          }
+
+          // Clean up temporary file
+          fs.unlinkSync(newPath);
+          EOF
+
+      - name: Commit and push if new jobs were added
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/all-jobs.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update job listings: added new jobs (hourly sync)"
+            git push
+          fi
