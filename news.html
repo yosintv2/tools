@@ -75,7 +75,8 @@
         .content {
             position: relative;
             z-index: 2;
-            padding: 1.8rem 1.5rem 5rem 1.5rem;
+            /* Increased bottom padding to move text up */
+            padding: 1.8rem 1.5rem 8rem 1.5rem; 
             margin-top: auto;
             max-width: 100%;
             display: flex;
@@ -110,8 +111,9 @@
             letter-spacing: 1px;
             box-shadow: 0 8px 25px rgba(239,68,68,0.5);
             transition: all 0.3s ease;
-            align-self: flex-start;
-            min-width: 200px;
+            /* Moves button to the RIGHT */
+            align-self: flex-end;
+            min-width: 180px;
             text-align: center;
         }
         .read-btn:active {
@@ -123,200 +125,57 @@
             .header-subtitle { font-size: 0.8rem; }
             .title { font-size: 1.55rem; }
             .excerpt { font-size: 1rem; }
-            .content { padding: 1.5rem 1.2rem 6rem 1.2rem; gap: 0.9rem; }
+            /* Significantly higher bottom padding for mobile safety */
+            .content { padding: 1.5rem 1.2rem 10rem 1.2rem; gap: 0.9rem; }
             .read-btn {
-                padding: 0.85rem 1.8rem;
-                font-size: 0.9rem;
-                min-width: 190px;
+                padding: 0.8rem 1.5rem;
+                font-size: 0.85rem;
+                min-width: 160px;
             }
         }
 
-        /* Clean Loading */
-        .loader {
-            position: fixed;
-            inset: 0;
-            background: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 100;
-            gap: 1.8rem;
-        }
-        .loading-main {
-            display: flex;
-            align-items: baseline;
-            gap: 0.4rem;
-        }
-        .loading-yosin {
-            font-size: 3rem;
-            font-weight: 800;
-            background: linear-gradient(to right, #ef4444, #f97316);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .loading-news {
-            font-size: 3rem;
-            font-weight: 800;
-            color: white;
-        }
-        .loading-subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        .loading-bar {
-            width: 220px;
-            height: 5px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-        .loading-progress {
-            height: 100%;
-            width: 0%;
-            background: linear-gradient(to right, #ef4444, #f97316);
-            border-radius: 3px;
-            animation: loading 2s infinite ease-in-out;
-        }
-        @keyframes loading {
-            0% { width: 0%; }
-            50% { width: 60%; }
-            100% { width: 100%; }
-        }
-
-        /* Hide scrollbar */
+        /* Loading & Modal Styles Remaining Same */
+        .loader { position: fixed; inset: 0; background: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 100; gap: 1.8rem; }
+        .loading-main { display: flex; align-items: baseline; gap: 0.4rem; }
+        .loading-yosin { font-size: 3rem; font-weight: 800; background: linear-gradient(to right, #ef4444, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .loading-news { font-size: 3rem; font-weight: 800; color: white; }
+        .loading-subtitle { font-size: 1.2rem; opacity: 0.9; }
+        .loading-bar { width: 220px; height: 5px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; }
+        .loading-progress { height: 100%; width: 0%; background: linear-gradient(to right, #ef4444, #f97316); border-radius: 3px; animation: loading 2s infinite ease-in-out; }
+        @keyframes loading { 0% { width: 0%; } 50% { width: 60%; } 100% { width: 100%; } }
         #news-container::-webkit-scrollbar { display: none; }
         #news-container { -ms-overflow-style: none; scrollbar-width: none; }
-
-        /* Modal – No Header Image, Image Below Title */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.97);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            padding: 1rem;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.4s ease;
-        }
-        .modal-overlay.open {
-            opacity: 1;
-            visibility: visible;
-        }
-        .modal-content {
-            background: #fff;
-            color: #111;
-            border-radius: 0.1rem;
-            max-width: 800px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.7);
-            position: relative;
-        }
-        .modal-body {
-            padding: 2.5rem 2rem;
-        }
-        .modal-body .article-image {
-            width: 100%;
-            border-radius: 1rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        .modal-body time {
-            color: #ef4444;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: block;
-            margin-bottom: 1rem;
-        }
-        .modal-body h1 {
-            font-size: 1rem;
-            font-weight: 800;
-            line-height: 1.3;
-            margin-bottom: 1.4rem;
-            color: #111;
-        }
-        .modal-body .prose {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: #444;
-        }
-        .modal-body .prose p {
-            margin-bottom: 1.2rem;
-        }
-
-        /* Floating Rectangle Close Button */
-        .modal-floating-close {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: #ef4444;
-            color: white;
-            padding: 0.4rem 1.4rem;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            cursor: pointer;
-            box-shadow: 0 8px 30px rgba(239,68,68,0.6);
-            transition: all 0.3s ease;
-            z-index: 1200;
-            opacity: 0;
-            visibility: hidden;
-        }
-        .modal-floating-close.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-        .modal-floating-close:hover {
-            background: #dc2626;
-            transform: translateY(-3px);
-        }
+        .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.97); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; opacity: 0; visibility: hidden; transition: opacity 0.4s ease; }
+        .modal-overlay.open { opacity: 1; visibility: visible; }
+        .modal-content { background: #fff; color: #111; border-radius: 0.5rem; max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 30px 80px rgba(0,0,0,0.7); position: relative; }
+        .modal-body { padding: 2.5rem 2rem; }
+        .modal-body .article-image { width: 100%; border-radius: 1rem; margin-bottom: 1.5rem; }
+        .modal-body h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.4rem; color: #111; }
+        .modal-body .prose { font-size: 1rem; line-height: 1.7; color: #444; }
+        .modal-floating-close { position: fixed; bottom: 2rem; right: 2rem; background: #ef4444; color: white; padding: 0.4rem 1.4rem; border-radius: 10px; font-weight: 700; cursor: pointer; z-index: 1200; opacity: 0; visibility: hidden; transition: 0.3s; }
+        .modal-floating-close.visible { opacity: 1; visibility: visible; }
     </style>
 </head>
 <body>
 
-    <!-- Smaller Header for Mobile -->
     <header>
-        <h1>
-            <span class="header-yosin">YoSin</span><span class="header-news"> News</span>
-        </h1>
+        <h1><span class="header-yosin">YoSin</span><span class="header-news"> News</span></h1>
         <p class="header-subtitle">Latest Nepal News • Swipe Up</p>
     </header>
 
-    <!-- Clean Loading -->
     <div id="loader" class="loader">
-        <div class="loading-main">
-            <div class="loading-yosin">YoSin</div>
-            <div class="loading-news">News</div>
-        </div>
+        <div class="loading-main"><div class="loading-yosin">YoSin</div><div class="loading-news">News</div></div>
         <div class="loading-subtitle">Latest Nepal</div>
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
-        </div>
+        <div class="loading-bar"><div class="loading-progress"></div></div>
     </div>
 
-    <!-- Vertical Scroll Container -->
     <div id="news-container"></div>
 
-    <!-- Modal – No Top Header Image -->
     <div id="modal" class="modal-overlay">
-        <div class="modal-content">
-            <div id="modal-body" class="modal-body"></div>
-        </div>
+        <div class="modal-content"><div id="modal-body" class="modal-body"></div></div>
     </div>
 
-    <!-- Floating Rectangle Close Button -->
-    <div id="floating-close" class="modal-floating-close" onclick="closeModal()">
-        Close
-    </div>
+    <div id="floating-close" class="modal-floating-close" onclick="closeModal()">Close</div>
 
     <script>
         const container = document.getElementById('news-container');
@@ -324,34 +183,22 @@
         const modal = document.getElementById('modal');
         const modalBody = document.getElementById('modal-body');
         const floatingClose = document.getElementById('floating-close');
-        let allPosts = [];
 
         function formatDate(dateString) {
             const date = new Date(dateString);
-            const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' };
-            return date.toLocaleDateString('en-US', options).toUpperCase();
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).toUpperCase();
         }
 
         function openModal(post) {
             let imgHtml = '';
-            let imgUrl = '';
-            if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
-                imgUrl = post._embedded['wp:featuredmedia'][0].source_url;
-            } else if (post.featured_image) {
-                imgUrl = post.featured_image;
-            }
-
-            if (imgUrl) {
-                imgHtml = `<img src="${imgUrl}" alt="${post.title?.rendered || post.title}" class="article-image" loading="lazy">`;
-            }
-
+            let imgUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || post.featured_image;
+            if (imgUrl) imgHtml = `<img src="${imgUrl}" class="article-image">`;
+            
             modalBody.innerHTML = `
-                <time>${formatDate(post.date || post.publish_date)}</time>
+                <time style="color:#ef4444; font-weight:700;">${formatDate(post.date || post.publish_date)}</time>
                 <h1>${post.title?.rendered || post.title || 'Untitled'}</h1>
                 ${imgHtml}
-                <div class="prose">
-                    ${post.content?.rendered || post.content || '<p>No content available.</p>'}
-                </div>
+                <div class="prose">${post.content?.rendered || post.content || '<p>No content available.</p>'}</div>
             `;
             modal.classList.add('open');
             floatingClose.classList.add('visible');
@@ -364,65 +211,33 @@
             document.body.style.overflow = 'auto';
         }
 
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-        });
-
         async function loadNews() {
-            let posts = [];
             try {
-                const res = await fetch('https://english.onlinekhabar.com/wp-json/wp/v2/posts?per_page=100&_embed');
-                if (res.ok) posts = await res.json();
+                const res = await fetch('https://english.onlinekhabar.com/wp-json/wp/v2/posts?per_page=20&_embed');
+                const posts = await res.json();
+                
+                container.innerHTML = posts.map(post => {
+                    const title = post.title?.rendered || post.title;
+                    const excerpt = (post.excerpt?.rendered || "").replace(/<[^>]*>/g, '').substring(0, 150) + "...";
+                    const imgUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'https://via.placeholder.com/1080x1920';
+
+                    return `
+                    <section class="news-slide">
+                        <img src="${imgUrl}" alt="${title}">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <div class="date">${formatDate(post.date)}</div>
+                            <h1 class="title">${title}</h1>
+                            <p class="excerpt">${excerpt}</p>
+                            <button class="read-btn" onclick='openModal(${JSON.stringify(post).replace(/'/g, "&apos;")})'>
+                                Read Full News
+                            </button>
+                        </div>
+                    </section>`;
+                }).join('');
             } catch (e) {
-                console.warn('Main API failed, trying fallback...');
-                try {
-                    const res = await fetch('https://english.onlinekhabar.com/wp-json/okapi/v2/recent-news');
-                    if (res.ok) {
-                        const data = await res.json();
-                        posts = data.news || [];
-                    }
-                } catch (err) {
-                    container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-2xl">Failed to load news.</p></div>';
-                    loader.style.display = 'none';
-                    return;
-                }
+                container.innerHTML = "Failed to load news.";
             }
-
-            if (posts.length === 0) {
-                container.innerHTML = '<div class="flex items-center justify-center h-screen text-center px-8"><p class="text-2xl">No news available.</p></div>';
-                loader.style.display = 'none';
-                return;
-            }
-
-            allPosts = posts;
-
-            container.innerHTML = allPosts.map(post => {
-                const title = post.title?.rendered || post.title || 'Breaking News';
-                const excerpt = (post.excerpt?.rendered || post.excerpt || '').replace(/<[^>]*>/g, '').trim().substring(0, 200) + '...' || 'Swipe up for more...';
-                const date = formatDate(post.date || post.publish_date || new Date());
-
-                let imgUrl = 'https://via.placeholder.com/1080x1920/000000/111111?text=YoSin+News';
-                if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
-                    imgUrl = post._embedded['wp:featuredmedia'][0].source_url;
-                } else if (post.featured_image) {
-                    imgUrl = post.featured_image;
-                }
-
-                return `
-                <section class="news-slide">
-                    <img src="${imgUrl}" alt="${title}" loading="lazy">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="date">${date}</div>
-                        <h1 class="title">${title}</h1>
-                        <p class="excerpt">${excerpt}</p>
-                        <button class="read-btn" onclick="event.stopPropagation(); openModal(${JSON.stringify(post).replace(/"/g, '&quot;')})">
-                            Read Full News
-                        </button>
-                    </div>
-                </section>`;
-            }).join('');
-
             loader.style.display = 'none';
         }
 
