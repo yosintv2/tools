@@ -1,15 +1,15 @@
-name: Update Job Listings Hourly
+name: Update Job Listings Hourly (300 Latest + Cumulative Archive)
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour at minute 0
-  workflow_dispatch:  # Allows manual trigger
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Required to commit changes
+  contents: write
 
 jobs:
-  fetch-and-append-jobs:
+  fetch-and-update-jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,63 +20,105 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Create data directory if not exists
+      - name: Create data directory
         run: mkdir -p data
 
-      - name: Fetch latest jobs from API
-        id: fetch
+      - name: Fetch up to 300 latest jobs (3 pages of 100)
         run: |
-          # Fetch up to 100 latest jobs (sorted by date desc)
-          curl -s "https://merorojgari.com/wp-json/wp/v2/job-listings?per_page=100&orderby=date&order=desc" > data/new-jobs.json
+          API="https://merorojgari.com/wp-json/wp/v2/job-listings"
+          PER_PAGE=100
+          PAGES=3  # For 300 jobs max
 
-      - name: Append new jobs to all-jobs.json (deduplicated by ID)
+          # Fetch each page and collect into ndjson temp file
+          > data/temp-jobs.ndjson  # Clear/create file
+
+          for page in {1..3}; do
+            echo "Fetching page $page..."
+            curl -s --fail "$API?per_page=$PER_PAGE&page=$page&orderby=date&order=desc" > "data/page-$page.json"
+
+            # Append individual jobs as lines (ndjson)
+            jq -c '.[]' "data/page-$page.json" >> data/temp-jobs.ndjson || echo "Page $page empty or error"
+          done
+
+          # Combine into single sorted array (newest first, since API orders desc)
+          if [ -s data/temp-jobs.ndjson ]; then
+            jq -s '.' data/temp-jobs.ndjson > data/latest-300.json
+          else
+            echo "[]" > data/latest-300.json
+          fi
+
+          # Limit strictly to 300
+          jq '.[0:300]' data/latest-300.json > data/temp-latest.json
+          mv data/temp-latest.json data/latest-300.json
+
+          # Cleanup
+          rm -f data/page-*.json data/temp-jobs.ndjson
+
+      - name: Update cumulative all-jobs.json (prepend new unique jobs)
         run: |
           node - <<'EOF'
           const fs = require('fs');
-          const path = 'data/all-jobs.json';
-          const newPath = 'data/new-jobs.json';
 
+          const cumulativePath = 'data/all-jobs.json';
+          const latestPath = 'data/latest-300.json';
+
+          // Load existing cumulative archive
           let allJobs = [];
-          if (fs.existsSync(path)) {
-            const data = fs.readFileSync(path, 'utf8');
+          if (fs.existsSync(cumulativePath)) {
             try {
-              allJobs = JSON.parse(data);
+              allJobs = JSON.parse(fs.readFileSync(cumulativePath, 'utf8'));
             } catch (e) {
-              console.log('Invalid JSON in all-jobs.json, starting fresh');
+              console.error('Corrupted all-jobs.json, starting fresh');
               allJobs = [];
             }
           }
 
-          const newJobs = JSON.parse(fs.readFileSync(newPath, 'utf8'));
-
-          // Create a Set of existing job IDs for fast lookup
-          const existingIds = new Set(allJobs.map(job => job.id));
-
-          // Filter only truly new jobs
-          const trulyNewJobs = newJobs.filter(job => !existingIds.has(job.id));
-
-          if (trulyNewJobs.length === 0) {
-            console.log('No new jobs to add');
-            fs.writeFileSync(path, JSON.stringify(allJobs, null, 2));
-          } else {
-            console.log(`Adding ${trulyNewJobs.length} new jobs`);
-            // Prepend new jobs (newest first)
-            const updatedJobs = [...trulyNewJobs, ...allJobs];
-            fs.writeFileSync(path, JSON.stringify(updatedJobs, null, 2));
+          // Load freshly fetched latest jobs
+          let latestJobs = [];
+          try {
+            latestJobs = JSON.parse(fs.readFileSync(latestPath, 'utf8'));
+          } catch (e) {
+            console.error('No latest jobs fetched');
+            process.exit(0);
           }
 
-          // Clean up temporary file
-          fs.unlinkSync(newPath);
+          if (latestJobs.length === 0) {
+            console.log('No jobs fetched');
+            process.exit(0);
+          }
+
+          // Deduplicate: find jobs in latest not in cumulative
+          const existingIds = new Set(allJobs.map(j => j.id));
+          const newUniqueJobs = latestJobs.filter(j => !existingIds.has(j.id));
+
+          let updated = false;
+          if (newUniqueJobs.length > 0) {
+            console.log(`Found ${newUniqueJobs.length} new unique jobs to add`);
+            // Prepend so newest are first
+            allJobs = [...newUniqueJobs, ...allJobs];
+            updated = true;
+          } else {
+            console.log('No new unique jobs');
+          }
+
+          // Always write files (pretty formatted)
+          fs.writeFileSync(cumulativePath, JSON.stringify(allJobs, null, 2));
+          fs.writeFileSync(latestPath, JSON.stringify(latestJobs, null, 2));
+
+          if (!updated) {
+            console.log('No changes to cumulative archive');
+          }
           EOF
 
-      - name: Commit and push if new jobs were added
+      - name: Commit and push if changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/all-jobs.json
+          git add data/all-jobs.json data/latest-300.json
+
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No new jobs added – no commit needed"
           else
-            git commit -m "Update job listings: added new jobs (hourly sync)"
+            git commit -m "Hourly sync: added new job listings to archive"
             git push
           fi
