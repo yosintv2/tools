@@ -1,59 +1,73 @@
 name: Update News API
 on:
   schedule:
-    - cron: '0 * * * *' 
-  workflow_dispatch: 
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   update-news:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Fetch and Merge News
         run: |
-          curl "https://english.onlinekhabar.com/wp-json/wp/v2/posts?per_page=20&_embed" -o latest_news.json
+          # Create data folder if it doesn't exist
+          mkdir -p data
           
+          # 1. Fetch 100 posts (for the first run or filling up history)
+          curl "https://english.onlinekhabar.com/wp-json/wp/v2/posts?per_page=100&_embed" -o latest_news.json
+          
+          # 2. Run Python script to merge
           python3 - <<EOF
           import json
           import os
 
-          # Updated path to include 'data/' folder
           file_path = 'data/news.json'
           
+          # Load existing news from your repo
           if os.path.exists(file_path):
               with open(file_path, 'r') as f:
                   try:
                       old_news = json.load(f)
+                      if not isinstance(old_news, list): old_news = []
                   except:
                       old_news = []
           else:
               old_news = []
 
+          # Load the freshly fetched news
           with open('latest_news.json', 'r') as f:
-              new_news = json.load(f)
+              fetched_news = json.load(f)
 
+          # Filter out duplicates by checking IDs
           existing_ids = {item['id'] for item in old_news}
-          unique_new_news = [item for item in new_news if item['id'] not in existing_ids]
+          new_entries = [item for item in fetched_news if item['id'] not in existing_ids]
 
-          # New news at the top, followed by old news
-          final_news = unique_new_news + old_news
-          
-          # Keep last 200 items
-          final_news = final_news[:200]
-
-          # Ensure the directory exists (just in case)
-          os.makedirs('data', exist_ok=True)
-
-          with open(file_path, 'w') as f:
-              json.dump(final_news, f, indent=2)
+          if new_entries:
+              print(f"Success: Adding {len(new_entries)} new articles.")
+              # ADD NEW TO TOP, KEEP ALL OLD DATA BELOW
+              final_list = new_entries + old_news
+              
+              with open(file_path, 'w') as f:
+                  json.dump(final_list, f, indent=2)
+          else:
+              print("No new articles found since last update.")
           EOF
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
           git add data/news.json
-          git commit -m "Update data/news.json with latest posts" || exit 0
-          git push
+          
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No new data to save."
+          else
+            git commit -m "News Feed Updated: $(date)"
+            git push origin main
+          fi
