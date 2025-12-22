@@ -1,0 +1,124 @@
+name: Update Sports RSS to JSON
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch: # Allows you to run manually
+
+jobs:
+  update-sports:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Fetch RSS and Convert to JSON
+        run: |
+          # Create data directory
+          mkdir -p data
+          
+          # Fetch the RSS Feed
+          curl -sL "https://english.onlinekhabar.com/category/sports/feed" -o sports_feed.xml
+          
+          python3 - <<EOF
+          import xml.etree.ElementTree as ET
+          import json
+          import os
+          import re
+
+          def clean_html(raw_html):
+              if not raw_html: return ""
+              cleanr = re.compile('<.*?>')
+              return re.sub(cleanr, '', raw_html)
+
+          try:
+              tree = ET.parse('sports_feed.xml')
+              root = tree.getroot()
+              
+              # RSS feeds use namespaces for content and media
+              namespaces = {
+                  'content': 'http://purl.org/rss/1.0/modules/content/',
+                  'media': 'http://search.yahoo.com/mrss/'
+              }
+
+              items = root.findall('./channel/item')
+              new_fetched_data = []
+
+              for item in items:
+                  title = item.find('title').text if item.find('title') is not None else "Sports Update"
+                  link = item.find('link').text if item.find('link') is not None else ""
+                  pub_date = item.find('pubDate').text if item.find('pubDate') is not None else ""
+                  
+                  # Extract description and clean it for the excerpt
+                  description_tag = item.find('description')
+                  description = description_tag.text if description_tag is not None else ""
+                  
+                  # Try to find a high-res image in the media namespace or description
+                  image_url = "https://via.placeholder.com/1080x1920?text=YoSin+Sports"
+                  media_content = item.find('media:content', namespaces)
+                  if media_content is not None:
+                      image_url = media_content.get('url')
+                  else:
+                      # Fallback: try to find img src in description via regex
+                      img_match = re.search(r'<img [^>]*src="([^"]+)"', description)
+                      if img_match:
+                          image_url = img_match.group(1)
+
+                  # Format to match your HTML's expectations
+                  post_obj = {
+                      "id": link, 
+                      "date": pub_date,
+                      "title": {"rendered": title},
+                      "excerpt": {"rendered": clean_html(description)[:150] + "..."},
+                      "content": {"rendered": description},
+                      "featured_image": image_url
+                  }
+                  new_fetched_data.append(post_obj)
+
+              # Merge with existing data/news.json
+              file_path = 'data/news.json'
+              if os.path.exists(file_path):
+                  with open(file_path, 'r') as f:
+                      try:
+                          old_data = json.load(f)
+                          if not isinstance(old_data, list): old_data = []
+                      except:
+                          old_data = []
+              else:
+                  old_data = []
+
+              # Prevent duplicates using link as ID
+              existing_ids = {post['id'] for post in old_data}
+              unique_new = [p for p in new_fetched_data if p['id'] not in existing_ids]
+
+              # Add new sports news to the top
+              final_list = unique_new + old_data
+              final_list = final_list[:200] # Keep a history of 200 items
+
+              with open(file_path, 'w') as f:
+                  json.dump(final_list, f, indent=2)
+                  
+              print(f"Successfully added {len(unique_new)} new sports articles.")
+
+          except Exception as e:
+              print(f"Error processing RSS: {e}")
+              exit(1)
+          EOF
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Sports Feed Update: $(date)"
+            git push origin main
+          fi
