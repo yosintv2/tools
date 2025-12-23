@@ -29,8 +29,9 @@ def fetch_single_feed(url):
         feed = feedparser.parse(url, agent=headers['User-Agent'])
         source_name = feed.feed.get('title', url.split('/')[2].replace('www.', '')).split(' - ')[0].split(' : ')[0].strip()
         
-        for entry in feed.entries[:15]: # Fetch more to ensure we don't miss any
+        for entry in feed.entries[:15]:
             pub_date_parsed = entry.get('published_parsed', entry.get('updated_parsed', None))
+            # Use parsed time or current time as fallback
             ts = time.mktime(pub_date_parsed) if pub_date_parsed else time.time()
             
             entries.append({
@@ -39,27 +40,19 @@ def fetch_single_feed(url):
                 "description": entry.get('summary', entry.get('description', '')).replace('\n', ' '),
                 "pubDate": entry.get('published', entry.get('updated', 'Recently')),
                 "source": source_name,
-                "timestamp": ts # Keep this for sorting
+                "timestamp": ts 
             })
     except Exception as e:
         print(f"Error fetching {url}: {e}")
     return entries
 
 def fetch_and_sort():
-    # 1. Load Existing Data from news.json if it exists
+    # 1. Load Existing Data
     existing_data = []
     if os.path.exists('news.json'):
         try:
             with open('news.json', 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
-                # Re-add timestamp for sorting (convert pubDate back to ts if needed, 
-                # but better to store ts in news.json temporarily or parse pubDate)
-                for item in existing_data:
-                    if 'timestamp' not in item:
-                        try:
-                            item['timestamp'] = time.mktime(time.strptime(item['pubDate'], '%a, %d %b %Y %H:%M:%S %Z'))
-                        except:
-                            item['timestamp'] = 0
         except Exception as e:
             print(f"Error loading existing news.json: {e}")
 
@@ -70,28 +63,28 @@ def fetch_and_sort():
         for res in results:
             new_entries.extend(res)
 
-    # 3. Combine and De-duplicate (using Link as the unique key)
+    # 3. Combine and De-duplicate
     combined_dict = {item['link']: item for item in existing_data}
     for item in new_entries:
-        combined_dict[item['link']] = item # New items overwrite or add to dict
+        combined_dict[item['link']] = item 
 
-    # 4. Sort by Timestamp (Latest first)
-    sorted_list = sorted(combined_dict.values(), key=lambda x: x['timestamp'], reverse=True)
+    # 4. Filter for Last 3 Days Only
+    # 3 days = 3 * 24 * 60 * 60 seconds
+    three_days_ago = time.time() - (3 * 24 * 60 * 60)
+    
+    filtered_list = [
+        item for item in combined_dict.values() 
+        if item.get('timestamp', 0) > three_days_ago
+    ]
 
-    # 5. Final Cleanup: Keep top 200 items and remove internal timestamp
-    final_output = []
-    for e in sorted_list[:200]:
-        # We keep the timestamp inside news.json this time so future runs 
-        # know exactly when the old news was published. 
-        # If you want it removed for a cleaner frontend, comment out the line below.
-        # e.pop('timestamp', None) 
-        final_output.append(e)
+    # 5. Sort by Timestamp (Latest first)
+    sorted_list = sorted(filtered_list, key=lambda x: x['timestamp'], reverse=True)
 
     # 6. Save back to news.json
     with open('news.json', 'w', encoding='utf-8') as f:
-        json.dump(final_output, f, ensure_ascii=False, indent=4)
+        json.dump(sorted_list, f, ensure_ascii=False, indent=4)
     
-    print(f"Update Complete. Total stories: {len(final_output)}. Latest: {final_output[0]['title']}")
+    print(f"Clean-up complete. Kept {len(sorted_list)} articles from the last 3 days.")
 
 if __name__ == "__main__":
     fetch_and_sort()
