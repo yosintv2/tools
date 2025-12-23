@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nepal Latest News | Minimilastic News </title>
+    <title>Nepal Latest News</title>
     <meta name="description" content="A clean, minimalist feed of the latest news from Nepal.">
     <style>
         :root {
@@ -28,10 +28,18 @@
             display: flex;
             flex-direction: column;
         }
-        .container {
+        /* Fixed wrapper to prevent side cutting */
+        .wrapper {
             max-width: 640px;
             margin: 0 auto;
-            padding: 0 16px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .container {
+            padding: 0 20px; /* Consistent safe horizontal padding */
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -41,7 +49,7 @@
             top: 0;
             background: var(--header-bg);
             text-align: center;
-            padding: 10px 0;
+            padding: 10px 20px; /* Match container padding */
             border-bottom: 1px solid #e9ecef;
             z-index: 100;
             box-shadow: 0 4px 12px var(--header-shadow);
@@ -124,7 +132,7 @@
             text-decoration: underline;
         }
 
-        /* Initial & Bottom Loading */
+        /* Loading */
         #loading, #bottom-loading {
             text-align: center;
             padding: 80px 0;
@@ -165,7 +173,7 @@
         footer {
             background: var(--footer-bg);
             text-align: center;
-            padding: 20px 16px;
+            padding: 20px 20px; /* Match container padding */
             margin-top: 40px;
             border-top: 1px solid #e9ecef;
             box-shadow: 0 -4px 12px var(--footer-shadow);
@@ -195,45 +203,46 @@
         }
 
         @media (max-width: 480px) {
-            .container { padding: 0 12px; }
+            .container { padding: 0 16px; }
+            header { padding: 9px 20px; }
             #news-feed { margin-top: 16px; }
             .news-card { padding: 16px; margin-bottom: 14px; }
             .news-title { font-size: 1.18rem; }
             .news-description { font-size: 0.93rem; }
-            header { padding: 9px 0; }
             header h1 { font-size: 1.3rem; }
             header .subtitle { font-size: 0.70rem; }
-            footer { padding: 18px 12px; font-size: 0.82rem; }
+            footer { padding: 18px 20px; font-size: 0.82rem; }
             .footer-links a { margin: 0 8px; display: inline-block; }
         }
     </style>
 </head>
 <body>
-<div class="container">
+<div class="wrapper">
     <header>
         <h1>Nepal Latest News</h1>
         <div class="subtitle">Fresh headlines from across the country</div>
     </header>
-    <div id="news-feed">
-        <div id="loading">
-            <div class="spinner"></div>
-            <p>Loading latest news...</p>
+    <div class="container">
+        <div id="news-feed">
+            <div id="loading">
+                <div class="spinner"></div>
+                <p>Loading latest news...</p>
+            </div>
         </div>
-        <!-- Bottom loading spinner will be inserted here when near end -->
     </div>
-</div>
 
-<footer>
-    <div>Nepal Latest News — A simple, ad-free reading experience</div>
-    <div class="footer-links">
-        <a href="https://www.singhyogendra.com.np" target="_blank">Source Aggregator</a>
-        <span>•</span>
-        <a href="mailto:your-email@example.com">Contact</a>
-        <span>•</span>
-        <a href="#">Privacy</a>
-    </div>
-    <div>&copy; 2025 Nepal Latest News. All rights reserved.</div>
-</footer>
+    <footer>
+        <div>Nepal Latest News — A simple, ad-free reading experience</div>
+        <div class="footer-links">
+            <a href="https://www.singhyogendra.com.np" target="_blank">Source Aggregator</a>
+            <span>•</span>
+            <a href="mailto:contact@nepallatestnews.example">Contact</a>
+            <span>•</span>
+            <a href="#">Privacy</a>
+        </div>
+        <div>&copy; 2025 Nepal Latest News. All rights reserved.</div>
+    </footer>
+</div>
 
 <script>
     function getTimeAgo(dateInput) {
@@ -264,58 +273,25 @@
 
     const feedContainer = document.getElementById('news-feed');
     const loadingInitial = document.getElementById('loading');
-    let page = 1;
-    let isLoading = false;
-    let hasMore = true;
 
-    // Create bottom loading spinner
-    const bottomLoading = document.createElement('div');
-    bottomLoading.id = 'bottom-loading';
-    bottomLoading.innerHTML = `
-        <div class="spinner"></div>
-        <p>Loading more news...</p>
-    `;
-    bottomLoading.style.display = 'none';
-    feedContainer.appendChild(bottomLoading);
-
-    async function loadNews(append = false) {
-        if (isLoading || !hasMore) return;
-        isLoading = true;
-
-        if (!append) {
-            loadingInitial.style.display = 'block';
-        } else {
-            bottomLoading.style.display = 'block';
-        }
-
-        const apiURL = `https://www.singhyogendra.com.np/news.json`; // Assuming single JSON; adjust if paginated
-
+    async function loadNews() {
         try {
-            const response = await fetch(apiURL);
+            const response = await fetch('https://www.singhyogendra.com.np/news.json');
             if (!response.ok) throw new Error('Network error');
             const articles = await response.json();
 
-            if (!append) {
-                feedContainer.innerHTML = '';
-                feedContainer.appendChild(bottomLoading); // re-add if cleared
-            }
+            // Clear loading
+            feedContainer.innerHTML = '';
 
             if (articles.length === 0) {
-                hasMore = false;
-                bottomLoading.style.display = 'none';
-                if (!append) {
-                    feedContainer.innerHTML = '<p class="error-message">No news available at the moment.</p>';
-                }
-                isLoading = false;
+                feedContainer.innerHTML = '<p class="error-message">No news available at the moment.</p>';
                 return;
             }
 
-            // For this single JSON source, load all at once
             articles.forEach((article, index) => {
                 const card = document.createElement('div');
                 card.className = 'news-card';
-                const delayIndex = append ? document.querySelectorAll('.news-card').length + index : index;
-                card.style.animationDelay = `${delayIndex * 0.1}s`;
+                card.style.animationDelay = `${index * 0.1}s`;
 
                 const cleanDesc = (article.description || '')
                     .replace(/<[^>]*>/g, '')
@@ -333,34 +309,14 @@
                     <a href="${article.link}" target="_blank" rel="noopener" class="read-external">Read Full News →</a>
                 `;
 
-                feedContainer.insertBefore(card, bottomLoading);
+                feedContainer.appendChild(card);
             });
-
-            hasMore = false; // Assuming one-time load
-            bottomLoading.style.display = 'none';
-
         } catch (error) {
-            if (!append) {
-                feedContainer.innerHTML = `<p class="error-message">Unable to load news right now.<br>Please check your connection or try again later.</p>`;
-            }
-            bottomLoading.style.display = 'none';
+            feedContainer.innerHTML = `<p class="error-message">Unable to load news right now.<br>Please check your connection or try again later.</p>`;
             console.error('News fetch error:', error);
         }
-
-        if (!append) {
-            loadingInitial.style.display = 'none';
-        }
-        isLoading = false;
     }
 
-    // Infinite scroll detection
-    window.addEventListener('scroll', () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
-            loadNews(true);
-        }
-    });
-
-    // Initial load
     loadNews();
 </script>
 </body>
