@@ -25,15 +25,22 @@ RSS_URLS = [
     "https://english.onlinekhabar.com/feed/",
     "https://www.ajakoartha.com/feed/",
 
+    # cricket
     "https://crickettimes.com/feed/",
     "https://www.hindustantimes.com/feeds/rss/cricket/rssfeed.xml",
     "https://www.espncricinfo.com/rss/content/story/feeds/0.xml",
     "https://sports.ndtv.com/rss/cricket",
     "https://www.cbssports.com/rss/headlines/soccer/",
 
+    # football
     "https://www.theguardian.com/football/rss",
     "https://www.espn.com/espn/rss/soccer/news",
 
+    # technology
+    "https://www.wired.com/feed/rss",
+    "https://techcrunch.com/feed/"
+
+    
 ] #     "______",
 
 def extract_thumbnail(entry):
