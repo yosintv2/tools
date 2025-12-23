@@ -6,15 +6,19 @@ import os
 import re
 import concurrent.futures
 
-# Set global timeout
+# Set global timeout 
+# "________", "______",
 socket.setdefaulttimeout(15)
 
 RSS_URLS = [
-    "https://neplays.com/feed", "https://www.ratopati.com/feed", 
-    "https://www.setopati.com/feed", "https://nepalnews.com/feed/",
-    "https://www.nepalpress.com/feed/", "https://annapurnapost.com/rss/",
-    "https://lokaantar.com/rss/", "https://ujyaaloonline.com/rss/",
-    "https://farakdhar.com/feed/", "https://www.ajakoartha.com/feed"
+    "https://www.ratopati.com/feed", 
+    "https://www.setopati.com/feed", "https://nepalnews.com/feed",
+    "https://www.nepalpress.com/feed", "https://annapurnapost.com/rss",
+    "https://lokaantar.com/rss/", "https://ujyaaloonline.com/rss",
+    "https://baahrakhari.com/feed", "https://newsofnepal.com/feed/",
+    "https://farakdhar.com/rss/", "https://www.nepalviews.com/rss",
+    "https://techpana.com/rss", "https://english.onlinekhabar.com/feed",
+    "https://neplays.com/feed", "https://www.ajakoartha.com/feed"
 ]
 
 def extract_thumbnail(entry):
