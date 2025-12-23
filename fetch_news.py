@@ -6,7 +6,7 @@ import os
 import concurrent.futures
 from datetime import datetime
 
-# Set a global timeout for feed fetching
+# Set a global timeout
 socket.setdefaulttimeout(15)
 
 RSS_URLS = [
@@ -29,19 +29,23 @@ def fetch_single_feed(url):
         feed = feedparser.parse(url, agent=headers['User-Agent'])
         source_name = feed.feed.get('title', url.split('/')[2].replace('www.', '')).split(' - ')[0].split(' : ')[0].strip()
         
-        for entry in feed.entries[:15]:
+        for entry in feed.entries:
+            # CRITICAL: Get original source time only
             pub_date_parsed = entry.get('published_parsed', entry.get('updated_parsed', None))
-            # Use parsed time or current time as fallback
-            ts = time.mktime(pub_date_parsed) if pub_date_parsed else time.time()
             
-            entries.append({
-                "title": entry.get('title', 'No Title'),
-                "link": entry.get('link', '#'),
-                "description": entry.get('summary', entry.get('description', '')).replace('\n', ' '),
-                "pubDate": entry.get('published', entry.get('updated', 'Recently')),
-                "source": source_name,
-                "timestamp": ts 
-            })
+            if pub_date_parsed:
+                ts = time.mktime(pub_date_parsed)
+                entries.append({
+                    "title": entry.get('title', 'No Title'),
+                    "link": entry.get('link', '#'),
+                    "description": entry.get('summary', entry.get('description', '')).replace('\n', ' '),
+                    "pubDate": entry.get('published', entry.get('updated', '')),
+                    "source": source_name,
+                    "timestamp": ts # This is the original source Unix time
+                })
+            else:
+                # Skip articles that don't provide a valid source timestamp
+                continue
     except Exception as e:
         print(f"Error fetching {url}: {e}")
     return entries
@@ -63,13 +67,13 @@ def fetch_and_sort():
         for res in results:
             new_entries.extend(res)
 
-    # 3. Combine and De-duplicate
+    # 3. Combine and De-duplicate (using Link as the unique key)
+    # This keeps the original item if the link is the same
     combined_dict = {item['link']: item for item in existing_data}
     for item in new_entries:
         combined_dict[item['link']] = item 
 
-    # 4. Filter for Last 3 Days Only
-    # 3 days = 3 * 24 * 60 * 60 seconds
+    # 4. Filter for Last 3 Days Only (Strictly based on Source Timestamp)
     three_days_ago = time.time() - (3 * 24 * 60 * 60)
     
     filtered_list = [
@@ -77,14 +81,14 @@ def fetch_and_sort():
         if item.get('timestamp', 0) > three_days_ago
     ]
 
-    # 5. Sort by Timestamp (Latest first)
+    # 5. Sort by ORIGINAL SOURCE Timestamp (Latest first)
     sorted_list = sorted(filtered_list, key=lambda x: x['timestamp'], reverse=True)
 
     # 6. Save back to news.json
     with open('news.json', 'w', encoding='utf-8') as f:
         json.dump(sorted_list, f, ensure_ascii=False, indent=4)
     
-    print(f"Clean-up complete. Kept {len(sorted_list)} articles from the last 3 days.")
+    print(f"Update Complete. All news sorted by original source time.")
 
 if __name__ == "__main__":
     fetch_and_sort()
