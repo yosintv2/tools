@@ -1,249 +1,208 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>YoSin News | Latest Nepal News</title>
-    <meta name="description" content="YoSin News - Clean vertical TikTok-style news feed">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: { extend: { fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] } } }
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Latest News</title>
+    <meta name="description" content="A clean, minimalist feed of the latest news from Nepal.">
     <style>
-        body { background-color: #000; color: #fff; overflow: hidden; margin: 0; }
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-title: #1a1a1a;
+            --text-body: #333333;
+            --text-meta: #6c757d;
+            --accent: #005eb8;
+            --header-bg: rgba(255, 255, 255, 0.95);
+            --header-shadow: rgba(0, 0, 0, 0.08);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 16px 60px;
+        }
         header {
-            position: fixed;
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            z-index: 50;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent);
-            backdrop-filter: blur(20px);
-            padding: 1rem 0;
+            background: var(--header-bg);
             text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+            z-index: 100;
+            box-shadow: 0 4px 12px var(--header-shadow);
+            backdrop-filter: blur(12px);
         }
-        .header-yosin {
-            font-size: 2rem;
+        header h1 {
+            font-size: 1.35rem;
             font-weight: 800;
-            background: linear-gradient(to right, #ef4444, #f97316);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.8px;
+            margin: 0;
+            color: #000000; /* Black color as requested */
         }
-        .header-news {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: white;
-        }
-        .header-subtitle {
-            font-size: 0.85rem;
-            opacity: 0.8;
-            margin-top: 0.2rem;
-        }
-        #news-container {
-            height: 100vh;
-            scroll-snap-type: y mandatory;
-            overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
-            padding-top: 70px;
-        }
-        .news-slide {
-            height: 100vh;
-            scroll-snap-align: start;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
-        .news-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0; left: 0;
-            z-index: 0;
-        }
-        .overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 45%, rgba(0,0,0,0.2) 80%, transparent 100%);
-            z-index: 1;
-        }
-        .content {
-            position: relative;
-            z-index: 2;
-            /* Increased bottom padding to move text up */
-            padding: 1.8rem 1.5rem 8rem 1.5rem; 
-            margin-top: auto;
-            max-width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .title {
-            font-size: 1.7rem;
-            font-weight: 800;
-            line-height: 1.2;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.9);
-        }
-        .excerpt {
-            font-size: 1.05rem;
-            line-height: 1.5;
-            opacity: 0.95;
-            text-shadow: 0 1px 8px rgba(0,0,0,0.9);
-        }
-        .date {
-            font-size: 0.9rem;
+        header .subtitle {
+            font-size: 0.72rem;
+            color: var(--text-meta);
+            margin-top: 3px;
+            font-weight: 500;
+            letter-spacing: 0.4px;
             opacity: 0.85;
-            font-weight: 600;
         }
-        .read-btn {
-            background: linear-gradient(to right, #ef4444, #dc2626);
-            color: white;
-            padding: 0.9rem 2rem;
-            border-radius: 999px;
-            font-weight: 800;
+
+        /* Compact minimalistic news cards */
+        .news-card {
+            background: var(--card-bg);
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 16px;
+            border-left: 4px solid var(--accent);
+            transition: all 0.2s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+        .news-title {
+            font-size: 1.22rem;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--text-title);
+            margin: 0 0 8px 0;
+            display: block;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .news-title:hover {
+            color: var(--accent);
+        }
+        .news-description {
             font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 8px 25px rgba(239,68,68,0.5);
-            transition: all 0.3s ease;
-            /* Moves button to the RIGHT */
-            align-self: flex-end;
-            min-width: 180px;
-            text-align: center;
+            line-height: 1.55;
+            color: var(--text-body);
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
-        .read-btn:active {
-            transform: scale(0.95);
+        .meta-info {
+            font-size: 0.8rem;
+            color: var(--text-meta);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .read-external {
+            display: inline-block;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .read-external:hover {
+            text-decoration: underline;
+        }
+        #loading {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-meta);
+            padding: 60px 0;
+            font-style: italic;
+        }
+        .error-message {
+            text-align: center;
+            color: #dc3545;
+            padding: 40px 0;
+            font-size: 1rem;
         }
 
         @media (max-width: 480px) {
-            .header-yosin, .header-news { font-size: 2rem; }
-            .header-subtitle { font-size: 0.8rem; }
-            .title { font-size: 1.55rem; }
-            .excerpt { font-size: 1rem; }
-            /* Significantly higher bottom padding for mobile safety */
-            .content { padding: 1.5rem 1.2rem 10rem 1.2rem; gap: 0.9rem; }
-            .read-btn {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.85rem;
-                min-width: 160px;
-            }
+            .container { padding: 0 12px 40px; }
+            .news-card { padding: 16px; margin-bottom: 14px; }
+            .news-title { font-size: 1.18rem; }
+            .news-description { font-size: 0.93rem; }
+            header { padding: 9px 0; }
+            header h1 { font-size: 1.3rem; }
+            header .subtitle { font-size: 0.70rem; }
         }
-
-        /* Loading & Modal Styles Remaining Same */
-        .loader { position: fixed; inset: 0; background: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 100; gap: 1.8rem; }
-        .loading-main { display: flex; align-items: baseline; gap: 0.4rem; }
-        .loading-yosin { font-size: 3rem; font-weight: 800; background: linear-gradient(to right, #ef4444, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .loading-news { font-size: 3rem; font-weight: 800; color: white; }
-        .loading-subtitle { font-size: 1.2rem; opacity: 0.9; }
-        .loading-bar { width: 220px; height: 5px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; }
-        .loading-progress { height: 100%; width: 0%; background: linear-gradient(to right, #ef4444, #f97316); border-radius: 3px; animation: loading 2s infinite ease-in-out; }
-        @keyframes loading { 0% { width: 0%; } 50% { width: 60%; } 100% { width: 100%; } }
-        #news-container::-webkit-scrollbar { display: none; }
-        #news-container { -ms-overflow-style: none; scrollbar-width: none; }
-        .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.97); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; opacity: 0; visibility: hidden; transition: opacity 0.4s ease; }
-        .modal-overlay.open { opacity: 1; visibility: visible; }
-        .modal-content { background: #fff; color: #111; border-radius: 0.5rem; max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 30px 80px rgba(0,0,0,0.7); position: relative; }
-        .modal-body { padding: 2.5rem 2rem; }
-        .modal-body .article-image { width: 100%; border-radius: 1rem; margin-bottom: 1.5rem; }
-        .modal-body h1 { font-size: 1.2rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.4rem; color: #111; }
-        .modal-body .prose { font-size: 1rem; line-height: 1.7; color: #444; }
-        .modal-floating-close { position: fixed; bottom: 2rem; right: 2rem; background: #000000; color: white; padding: 0.4rem 1.4rem; border-radius: 10px; font-weight: 700; cursor: pointer; z-index: 1200; opacity: 0; visibility: hidden; transition: 0.3s; }
-        .modal-floating-close.visible { opacity: 1; visibility: visible; }
     </style>
 </head>
 <body>
-
+<div class="container">
     <header>
-        <h1><span class="header-yosin">YoSin</span><span class="header-news"> News</span></h1>
-        <p class="header-subtitle">Latest Nepal News • Swipe Up</p>
+        <h1>Nepal Latest News</h1>
+        <div class="subtitle">Fresh headlines from across the country</div>
     </header>
-
-    <div id="loader" class="loader">
-        <div class="loading-main"><div class="loading-yosin">YoSin</div><div class="loading-news">News</div></div>
-        <div class="loading-subtitle">Latest Nepal</div>
-        <div class="loading-bar"><div class="loading-progress"></div></div>
+    <div id="news-feed">
+        <p id="loading">Fetching the latest news...</p>
     </div>
+</div>
 
-    <div id="news-container"></div>
+<script>
+    function getTimeAgo(dateParam) {
+        if (!dateParam) return 'Recently';
+        const date = new Date(dateParam);
+        const now = new Date();
+        const seconds = Math.floor((now - date) / 1000);
 
-    <div id="modal" class="modal-overlay">
-        <div class="modal-content"><div id="modal-body" class="modal-body"></div></div>
-    </div>
+        if (seconds < 60) return 'just now';
+        if (seconds < 3600) return `${Math.floor(seconds / 60)} min ago`;
+        if (seconds < 86400) return `${Math.floor(seconds / 3600)} hour${Math.floor(seconds / 3600) > 1 ? 's' : ''} ago`;
+        if (seconds < 604800) return `${Math.floor(seconds / 86400)} day${Math.floor(seconds / 86400) > 1 ? 's' : ''} ago`;
 
-    <div id="floating-close" class="modal-floating-close" onclick="closeModal()">Close</div>
+        return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+    }
 
-    <script>
-        const container = document.getElementById('news-container');
-        const loader = document.getElementById('loader');
-        const modal = document.getElementById('modal');
-        const modalBody = document.getElementById('modal-body');
-        const floatingClose = document.getElementById('floating-close');
+    // Load news
+    async function loadNews() {
+        const feedContainer = document.getElementById('news-feed');
+        const apiURL = 'https://www.singhyogendra.com.np/news.json';
 
-        function formatDate(dateString) {
-            const date = new Date(dateString);
-            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).toUpperCase();
-        }
+        try {
+            const response = await fetch(apiURL);
+            if (!response.ok) throw new Error('Network error');
+            const articles = await response.json();
+            feedContainer.innerHTML = '';
 
-        function openModal(post) {
-            let imgHtml = '';
-            let imgUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || post.featured_image;
-            if (imgUrl) imgHtml = `<img src="${imgUrl}" class="article-image">`;
-            
-            modalBody.innerHTML = `
-                <time style="color:#ef4444; font-weight:700;">${formatDate(post.date || post.publish_date)}</time>
-                <h1>${post.title?.rendered || post.title || 'Untitled'}</h1>
-                ${imgHtml}
-                <div class="prose">${post.content?.rendered || post.content || '<p>No content available.</p>'}</div>
-            `;
-            modal.classList.add('open');
-            floatingClose.classList.add('visible');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            modal.classList.remove('open');
-            floatingClose.classList.remove('visible');
-            document.body.style.overflow = 'auto';
-        }
-
-        async function loadNews() {
-            try {
-                const res = await fetch('https://www.singhyogendra.com.np/data/news.json');
-                const posts = await res.json();
-                
-                container.innerHTML = posts.map(post => {
-                    const title = post.title?.rendered || post.title;
-                    const excerpt = (post.excerpt?.rendered || "").replace(/<[^>]*>/g, '').substring(0, 150) + "...";
-                    const imgUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'https://via.placeholder.com/1080x1920';
-
-                    return `
-                    <section class="news-slide">
-                        <img src="${imgUrl}" alt="${title}">
-                        <div class="overlay"></div>
-                        <div class="content">
-                            <div class="date">${formatDate(post.date)}</div>
-                            <h1 class="title">${title}</h1>
-                            <p class="excerpt">${excerpt}</p>
-                            <button class="read-btn" onclick='openModal(${JSON.stringify(post).replace(/'/g, "&apos;")})'>
-                                Read Full News
-                            </button>
-                        </div>
-                    </section>`;
-                }).join('');
-            } catch (e) {
-                container.innerHTML = "Failed to load news.";
+            if (articles.length === 0) {
+                feedContainer.innerHTML = '<p class="error-message">No news available at the moment.</p>';
+                return;
             }
-            loader.style.display = 'none';
-        }
 
-        loadNews();
-    </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"e7bdd92a5922446fb8c1272e20d136e3","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+            articles.forEach(article => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+
+                const cleanDesc = article.description
+                    .replace(/<[^>]*>/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim()
+                    .substring(0, 220);
+
+                const relativeTime = getTimeAgo(article.pubDate);
+
+                card.innerHTML = `
+                    <div class="meta-info">${relativeTime}</div>
+                    <a href="${article.link}" target="_blank" rel="noopener" class="news-title">${article.title}</a>
+                    <p class="news-description">${cleanDesc}...</p>
+                    <a href="${article.link}" target="_blank" rel="noopener" class="read-external">Read Full News →</a>
+                `;
+
+                feedContainer.appendChild(card);
+            });
+        } catch (error) {
+            feedContainer.innerHTML = `<p class="error-message">Unable to load news right now.<br>Please check your connection or try again later.</p>`;
+            console.error('News fetch error:', error);
+        }
+    }
+
+    loadNews();
+</script>
 </body>
 </html>
