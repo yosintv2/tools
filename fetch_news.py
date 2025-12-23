@@ -32,9 +32,12 @@ RSS_URLS = [
     "https://www.hindustantimes.com/feeds/rss/cricket/rssfeed.xml",
     "https://www.espncricinfo.com/rss/content/story/feeds/0.xml",
     "https://sports.ndtv.com/rss/cricket",
-    "https://www.cbssports.com/rss/headlines/soccer/"
+    "https://www.cbssports.com/rss/headlines/soccer/",
 
-]
+    "https://www.theguardian.com/football/rss",
+    "https://www.espn.com/espn/rss/soccer/news",
+
+] #     "______",
 
 def extract_thumbnail(entry):
     """Deep search for images in description, media tags, or content."""
