@@ -1,7 +1,11 @@
 import feedparser
 import json
 import time
+import socket
 from datetime import datetime
+
+# Set a global timeout for feed fetching (10 seconds per feed)
+socket.setdefaulttimeout(10)
 
 RSS_URLS = [
     "https://www.ajakoartha.com/feed", "https://nagariknews.nagariknetwork.com/feed",
@@ -18,33 +22,29 @@ RSS_URLS = [
 
 def get_image(entry):
     """Detects images in various common RSS formats."""
-    # 1. Check Media Content
     if 'media_content' in entry:
         return entry.media_content[0]['url']
-    # 2. Check Enclosures
     if 'links' in entry:
         for link in entry.links:
             if 'image' in link.get('type', ''):
                 return link.get('href', '')
-    # 3. Check for thumbnail
     if 'media_thumbnail' in entry:
         return entry.media_thumbnail[0]['url']
     return ""
 
 def fetch_and_sort():
     all_entries = []
-    # Use a custom user agent to avoid being blocked by news servers
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
     
     for url in RSS_URLS:
         print(f"Fetching: {url}")
         try:
-            # Parse feed with the custom agent
             feed = feedparser.parse(url, agent=headers['User-Agent'])
-            source_name = feed.feed.get('title', url.split('/')[2]) # Use domain if title is missing
+            # Use feed title or fall back to domain name
+            source_name = feed.feed.get('title', url.split('/')[2].replace('www.', ''))
             
-            for entry in feed.entries:
-                # Get the best possible date
+            # Take top 10 from each feed to ensure variety
+            for entry in feed.entries[:10]:
                 pub_date_parsed = entry.get('published_parsed', entry.get('updated_parsed', None))
                 
                 all_entries.append({
@@ -62,6 +62,17 @@ def fetch_and_sort():
     # SORT: Newest items first based on timestamp
     all_entries.sort(key=lambda x: x['timestamp'], reverse=True)
 
-    # Remove internal timestamp before saving to JSON
-    for e in all_entries:
-        e.pop('timestamp',
+    # CLEANUP: Remove internal timestamp and limit to top 150 total items
+    final_list = []
+    for e in all_entries[:150]:
+        e.pop('timestamp', None) # Corrected syntax here
+        final_list.append(e)
+
+    # Save to JSON
+    with open('news.json', 'w', encoding='utf-8') as f:
+        json.dump(final_list, f, ensure_ascii=False, indent=4)
+    
+    print(f"Successfully saved {len(final_list)} items to news.json")
+
+if __name__ == "__main__":
+    fetch_and_sort()
