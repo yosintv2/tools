@@ -80,8 +80,9 @@
         .menu-btn {
             font-size: 1.6rem;
             cursor: pointer;
-            padding: 8px;
+            padding: 10px;
             z-index: 110;
+            touch-action: manipulation; /* Improves touch response */
         }
         .side-menu {
             position: fixed;
@@ -92,9 +93,10 @@
             height: 100%;
             background: var(--menu-bg);
             box-shadow: 4px 0 20px var(--menu-shadow);
-            transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: left 0.3s ease; /* Faster and smoother */
             z-index: 105;
             overflow-y: auto;
+            will-change: left; /* Optimizes animation */
         }
         .side-menu.open {
             left: 0;
@@ -121,9 +123,10 @@
         .close-btn {
             font-size: 2rem;
             cursor: pointer;
-            padding: 8px;
+            padding: 10px;
             color: var(--text-meta);
             font-weight: 300;
+            touch-action: manipulation;
         }
         .menu-content {
             padding: 0 20px 30px;
@@ -186,14 +189,16 @@
             background: rgba(0, 0, 0, 0.45);
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.35s ease;
+            transition: opacity 0.3s ease;
             z-index: 100;
+            pointer-events: none; /* Prevents blocking when hidden */
         }
         .overlay.open {
             opacity: 1;
             visibility: visible;
+            pointer-events: auto;
         }
-        /* Back to Top Button (Bottom Right) */
+        /* Back to Top Button */
         .back-to-top {
             position: fixed;
             bottom: 20px;
@@ -212,7 +217,9 @@
             z-index: 90;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.3s, transform 0.2s, background 0.2s;
+            transition: opacity 0.3s ease, transform 0.2s, background 0.2s;
+            touch-action: manipulation;
+            will-change: opacity, transform;
         }
         .back-to-top.visible {
             opacity: 1;
@@ -421,13 +428,14 @@
 </div>
 
 <script>
-    // Menu Toggle
+    // Optimized for fast response
     const menuBtn = document.getElementById('menuBtn');
     const sideMenu = document.getElementById('sideMenu');
     const closeBtn = document.getElementById('closeBtn');
     const overlay = document.getElementById('overlay');
-    const menuContent = document.getElementById('menuContent');
+    const backToTop = document.getElementById('backToTop');
 
+    // Fast open/close functions
     function openMenu() {
         sideMenu.classList.add('open');
         overlay.classList.add('open');
@@ -440,26 +448,43 @@
         document.body.style.overflow = '';
     }
 
-    menuBtn.addEventListener('click', openMenu);
-    closeBtn.addEventListener('click', closeMenu);
-    overlay.addEventListener('click', closeMenu);
-    menuContent.addEventListener('click', (e) => e.stopPropagation());
+    // Use click instead of addEventListener for slightly faster response
+    menuBtn.onclick = openMenu;
+    closeBtn.onclick = closeMenu;
+    overlay.onclick = closeMenu;
 
-    // Back to Top Button
-    const backToTop = document.getElementById('backToTop');
-    backToTop.addEventListener('click', () => {
+    // Back to top with smooth scroll
+    backToTop.onclick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    };
 
+    // Show/hide back to top on scroll (optimized)
+    let ticking = false;
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+                ticking = false;
+            });
+            ticking = true;
         }
     });
 
-    // Defined RSS categories with display name and search keywords
+    // Rest of the news loading code (unchanged from previous perfect version)
+    const menuContent = document.getElementById('menuContent');
+    const feedContainer = document.getElementById('news-feed');
+    const paginationContainer = document.getElementById('pagination');
+    const currentFilterDisplay = document.getElementById('currentFilter');
+    const articlesPerPage = 50;
+    let currentPage = 1;
+    let allArticles = [];
+    let sortedArticles = [];
+    let filteredArticles = [];
+
     const rssCategories = [
         { category: '# Nepal', sources: [
             { display: 'Setopati', keywords: ['Setopati'] },
@@ -513,15 +538,6 @@
         return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
     }
 
-    const feedContainer = document.getElementById('news-feed');
-    const paginationContainer = document.getElementById('pagination');
-    const currentFilterDisplay = document.getElementById('currentFilter');
-    const articlesPerPage = 50;
-    let currentPage = 1;
-    let allArticles = [];
-    let sortedArticles = [];
-    let filteredArticles = [];
-
     async function loadNews() {
         try {
             const response = await fetch('https://www.singhyogendra.com.np/news.json');
@@ -572,7 +588,7 @@
             menuContent.innerHTML = menuHTML;
 
             document.querySelectorAll('.filter-link').forEach(link => {
-                link.addEventListener('click', (e) => {
+                link.onclick = (e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     if (link.classList.contains('most-recent')) {
@@ -583,10 +599,10 @@
                         const display = link.textContent.trim();
                         applyFilter({display, keywords});
                     }
-                });
+                };
             });
 
-            // Default: Nepal category most recent (since most visitors from Nepal)
+            // Default: # Nepal most recent
             const nepalCat = rssCategories[0];
             const nepalKeywords = nepalCat.sources.flatMap(s => s.keywords);
             applyFilter({display: nepalCat.category, keywords: nepalKeywords});
