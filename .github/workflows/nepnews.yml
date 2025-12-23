@@ -23,17 +23,20 @@ jobs:
           # 1. Fetch latest news from API
           curl -s "https://www.onlinekhabar.com/wp-json/okapi/v2/recent-news?limit=100" -o data/latest_temp.json
           
-          # 2. Check if the old file exists. If not, create an empty array.
-          if [ ! -f data/nepnews.json ]; then
+          # 2. Ensure nepnews.json exists and is a valid JSON array
+          if [ ! -f data/nepnews.json ] || [ ! -s data/nepnews.json ]; then
             echo "[]" > data/nepnews.json
           fi
 
-          # 3. Use jq to merge: [New Data] + [Old Data]
-          # We use 'unique_by(.post_id)' to prevent duplicates
-          # The result is saved back to data/nepnews.json
-          jq -s '.[0].recent + .[1] | unique_by(.post_id) | sort_by(.post_date) | reverse' \
-          data/latest_temp.json data/nepnews.json > data/merged_temp.json
+          # 3. Merge Logic: [New API Data] + [Existing File Data]
+          # We use 'try' to handle cases where the API might return an unexpected format
+          jq -s '
+            (.[0].recent // []) as $new | 
+            (.[1] // []) as $old | 
+            ($new + $old) | unique_by(.post_id) | sort_by(.post_date) | reverse
+          ' data/latest_temp.json data/nepnews.json > data/merged_temp.json
           
+          # 4. Finalize file
           mv data/merged_temp.json data/nepnews.json
           rm data/latest_temp.json
 
@@ -42,5 +45,10 @@ jobs:
           git config --global user.name "NepNews-Bot"
           git config --global user.email "bot@yosin.news"
           git add data/nepnews.json
-          git commit -m "NepNews Update: Archived old news & added latest $(date)" || echo "No new news to add."
-          git pushnepnews.yml
+          # Only push if there are changes to the file
+          if git diff --staged --quiet; then
+            echo "No new news to add."
+          else
+            git commit -m "NepNews Update: Archived old news & added latest $(date)"
+            git push
+          fi
