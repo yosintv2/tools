@@ -10,17 +10,14 @@ import concurrent.futures
 socket.setdefaulttimeout(20)
 
 RSS_URLS = [
-    "https://www.ratopati.com/feed", 
     "https://www.setopati.com/feed", 
     "https://nepalnews.com/feed/",
     "https://www.nepalpress.com/feed/", 
     "https://annapurnapost.com/rss/",
     "https://lokaantar.com/rss/", 
     "https://ujyaaloonline.com/rss/",
-    "https://baahrakhari.com/feed/", 
     "https://newsofnepal.com/feed/",
     "https://farakdhar.com/feed/", 
-    "https://www.nepalviews.com/feed/",
     "https://techpana.com/feed/", 
     "https://www.indiatvnews.com/rssnews/topstory-sports.xml",
     "https://www.indiatvnews.com/rssnews/topstory-world.xml",
