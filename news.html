@@ -85,8 +85,8 @@
         .side-menu {
             position: fixed;
             top: 0;
-            left: -70%;
-            width: 70%;
+            left: -100%; /* Fully hidden by default */
+            width: 80%;
             max-width: 320px;
             height: 100%;
             background: var(--menu-bg);
@@ -96,7 +96,7 @@
             overflow-y: auto;
         }
         .side-menu.open {
-            left: 0;
+            left: 0; /* Only visible when open */
         }
         .menu-top-bar {
             position: sticky;
@@ -148,8 +148,13 @@
             font-size: 1.2rem;
             margin: 30px 0 12px;
             color: var(--accent);
-            padding-bottom: 8px;
-            border-bottom: 2px solid rgba(0, 94, 184, 0.15);
+            padding: 14px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .category-title:hover {
+            background: rgba(0, 94, 184, 0.08);
         }
         .source-list {
             list-style: none;
@@ -467,7 +472,6 @@
     let allArticles = [];
     let sortedArticles = []; // Most recent first
     let filteredArticles = [];
-    let currentSourceFilter = null; // object with display and keywords
 
     async function loadNews() {
         try {
@@ -494,12 +498,13 @@
                 }
             });
 
-            // Build menu - only include sources that have matching data
+            // Build menu
             let menuHTML = '<a class="most-recent filter-link">Most Recent</a>';
 
             rssCategories.forEach(cat => {
                 let hasAny = false;
-                let catHTML = `<div class="category-title">${cat.category}</div><ul class="source-list">`;
+                let catKeywords = [];
+                let catHTML = `<div class="category-title filter-link" data-category="${cat.category}">${cat.category}</div><ul class="source-list">`;
                 cat.sources.forEach(src => {
                     const lowerKeywords = src.keywords.map(k => k.toLowerCase());
                     const matches = lowerKeywords.some(kw => 
@@ -507,23 +512,31 @@
                     );
                     if (matches) {
                         hasAny = true;
+                        catKeywords.push(...lowerKeywords);
                         catHTML += `<li><a class="filter-link" data-keywords="${src.keywords.join('|')}">${src.display}</a></li>`;
                     }
                 });
                 catHTML += '</ul>';
                 if (hasAny) {
+                    // Attach category keywords to the title element for filtering
+                    const titleEl = `<div class="category-title filter-link" data-keywords="${catKeywords.join('|')}">${cat.category}</div>`;
+                    menuHTML += titleEl + '<ul class="source-list">' + catHTML.split('<ul class="source-list">')[1];
                     menuHTML += catHTML;
                 }
             });
 
             menuContent.innerHTML = menuHTML;
 
-            // Attach handlers
+            // Attach handlers for all filter-links
             document.querySelectorAll('.filter-link').forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
                     if (link.classList.contains('most-recent')) {
                         applyFilter(null);
+                    } else if (link.classList.contains('category-title')) {
+                        const keywordsStr = link.dataset.keywords;
+                        const keywords = keywordsStr ? keywordsStr.split('|') : [];
+                        applyFilter({display: link.textContent.trim(), keywords});
                     } else {
                         const keywordsStr = link.dataset.keywords;
                         const keywords = keywordsStr ? keywordsStr.split('|') : [];
@@ -549,8 +562,12 @@
             const lowerKeywords = filterObj.keywords.map(k => k.toLowerCase());
             filteredArticles = allArticles.filter(article => 
                 article.source && lowerKeywords.some(kw => article.source.toLowerCase().includes(kw))
-            );
-            currentFilterDisplay.textContent = `Source: ${filterObj.display}`;
+            ).sort((a, b) => {
+                const dateA = a.timestamp ?? new Date(a.pubDate).getTime() / 1000;
+                const dateB = b.timestamp ?? new Date(b.pubDate).getTime() / 1000;
+                return dateB - dateA;
+            });
+            currentFilterDisplay.textContent = filterObj.display;
         }
         currentPage = 1;
         renderPage(currentPage);
