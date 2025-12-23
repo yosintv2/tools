@@ -4,9 +4,8 @@ import time
 import socket
 import os
 import concurrent.futures
-from datetime import datetime
 
-# Set a global timeout
+# Set global timeout
 socket.setdefaulttimeout(15)
 
 RSS_URLS = [
@@ -24,28 +23,28 @@ RSS_URLS = [
 
 def fetch_single_feed(url):
     entries = []
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+    headers = {'User-Agent': 'Mozilla/5.0'}
     try:
         feed = feedparser.parse(url, agent=headers['User-Agent'])
-        source_name = feed.feed.get('title', url.split('/')[2].replace('www.', '')).split(' - ')[0].split(' : ')[0].strip()
+        # Clean source name
+        source_name = feed.feed.get('title', url.split('/')[2]).split(' - ')[0].split(' : ')[0].strip()
         
         for entry in feed.entries:
-            # CRITICAL: Get original source time only
-            pub_date_parsed = entry.get('published_parsed', entry.get('updated_parsed', None))
+            # We ONLY take the time provided by the original source
+            parsed_time = entry.get('published_parsed') or entry.get('updated_parsed')
             
-            if pub_date_parsed:
-                ts = time.mktime(pub_date_parsed)
+            if parsed_time:
+                # Convert source time to a numeric timestamp just for internal sorting
+                sort_ts = time.mktime(parsed_time)
+                
                 entries.append({
                     "title": entry.get('title', 'No Title'),
                     "link": entry.get('link', '#'),
                     "description": entry.get('summary', entry.get('description', '')).replace('\n', ' '),
-                    "pubDate": entry.get('published', entry.get('updated', '')),
+                    "pubDate": entry.get('published') or entry.get('updated'),
                     "source": source_name,
-                    "timestamp": ts # This is the original source Unix time
+                    "sort_ts": sort_ts # We use this to ensure NEWEST is on TOP
                 })
-            else:
-                # Skip articles that don't provide a valid source timestamp
-                continue
     except Exception as e:
         print(f"Error fetching {url}: {e}")
     return entries
@@ -54,41 +53,45 @@ def fetch_and_sort():
     # 1. Load Existing Data
     existing_data = []
     if os.path.exists('news.json'):
-        try:
-            with open('news.json', 'r', encoding='utf-8') as f:
+        with open('news.json', 'r', encoding='utf-8') as f:
+            try:
                 existing_data = json.load(f)
-        except Exception as e:
-            print(f"Error loading existing news.json: {e}")
+            except:
+                existing_data = []
 
-    # 2. Fetch New Data in Parallel
+    # 2. Fetch New Data
     new_entries = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         results = list(executor.map(fetch_single_feed, RSS_URLS))
         for res in results:
             new_entries.extend(res)
 
-    # 3. Combine and De-duplicate (using Link as the unique key)
-    # This keeps the original item if the link is the same
+    # 3. Merge by Link (Prevents duplicates, keeps source data)
     combined_dict = {item['link']: item for item in existing_data}
     for item in new_entries:
         combined_dict[item['link']] = item 
 
-    # 4. Filter for Last 3 Days Only (Strictly based on Source Timestamp)
-    three_days_ago = time.time() - (3 * 24 * 60 * 60)
-    
+    # 4. Filter: Keep only last 3 days (259200 seconds)
+    three_days_ago = time.time() - 259200
     filtered_list = [
         item for item in combined_dict.values() 
-        if item.get('timestamp', 0) > three_days_ago
+        if item.get('sort_ts', 0) > three_days_ago
     ]
 
-    # 5. Sort by ORIGINAL SOURCE Timestamp (Latest first)
-    sorted_list = sorted(filtered_list, key=lambda x: x['timestamp'], reverse=True)
+    # 5. SORT: Newest Source Time First
+    # This ensures "New Data should show in first"
+    sorted_list = sorted(filtered_list, key=lambda x: x['sort_ts'], reverse=True)
 
-    # 6. Save back to news.json
+    # 6. Cleanup: Remove the internal sort_ts before saving so users don't see it
+    for item in sorted_list:
+        if 'sort_ts' in item:
+            del item['sort_ts']
+
+    # 7. Save
     with open('news.json', 'w', encoding='utf-8') as f:
         json.dump(sorted_list, f, ensure_ascii=False, indent=4)
     
-    print(f"Update Complete. All news sorted by original source time.")
+    print(f"Update Successful. Newest news is at the top.")
 
 if __name__ == "__main__":
     fetch_and_sort()
