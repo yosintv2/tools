@@ -26,7 +26,14 @@ RSS_URLS = [
     "https://www.indiatvnews.com/rssnews/topstory-world.xml",
     "https://www.indiatvnews.com/rssnews/topstory-technology.xml",
     "https://english.onlinekhabar.com/feed/",
-    "https://www.ajakoartha.com/feed/"
+    "https://www.ajakoartha.com/feed/",
+
+    "https://crickettimes.com/feed/",
+    "https://www.hindustantimes.com/feeds/rss/cricket/rssfeed.xml",
+    "https://www.espncricinfo.com/rss/content/story/feeds/0.xml",
+    "https://sports.ndtv.com/rss/cricket",
+    "https://www.cbssports.com/rss/headlines/soccer/"
+
 ]
 
 def extract_thumbnail(entry):
