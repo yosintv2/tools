@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nepal Latest News</title>
+    <title>Nepal Latest News | Minimilastic News </title>
     <meta name="description" content="A clean, minimalist feed of the latest news from Nepal.">
     <style>
         :root {
@@ -15,6 +15,8 @@
             --accent: #005eb8;
             --header-bg: rgba(255, 255, 255, 0.95);
             --header-shadow: rgba(0, 0, 0, 0.08);
+            --footer-bg: rgba(255, 255, 255, 0.95);
+            --footer-shadow: rgba(0, 0, 0, 0.08);
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -22,11 +24,17 @@
             margin: 0;
             color: var(--text-body);
             line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         .container {
             max-width: 640px;
             margin: 0 auto;
-            padding: 0 16px 60px;
+            padding: 0 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
         header {
             position: sticky;
@@ -44,7 +52,7 @@
             font-weight: 800;
             letter-spacing: 0.8px;
             margin: 0;
-            color: #000000; /* Black color as requested */
+            color: #000000;
         }
         header .subtitle {
             font-size: 0.72rem;
@@ -55,7 +63,11 @@
             opacity: 0.85;
         }
 
-        /* Compact minimalistic news cards */
+        #news-feed {
+            margin-top: 20px;
+            flex: 1;
+        }
+
         .news-card {
             background: var(--card-bg);
             padding: 18px;
@@ -64,6 +76,9 @@
             margin-bottom: 16px;
             border-left: 4px solid var(--accent);
             transition: all 0.2s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
         }
         .news-card:hover {
             transform: translateY(-3px);
@@ -108,13 +123,70 @@
         .read-external:hover {
             text-decoration: underline;
         }
-        #loading {
+
+        /* Initial & Bottom Loading */
+        #loading, #bottom-loading {
             text-align: center;
-            font-size: 1.1rem;
+            padding: 80px 0;
             color: var(--text-meta);
-            padding: 60px 0;
-            font-style: italic;
         }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e9ecef;
+            border-top: 4px solid var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        #loading p, #bottom-loading p {
+            font-size: 1rem;
+            margin: 0;
+            font-style: normal;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--footer-bg);
+            text-align: center;
+            padding: 20px 16px;
+            margin-top: 40px;
+            border-top: 1px solid #e9ecef;
+            box-shadow: 0 -4px 12px var(--footer-shadow);
+            backdrop-filter: blur(12px);
+            font-size: 0.85rem;
+            color: var(--text-meta);
+        }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-links {
+            margin: 10px 0;
+        }
+        .footer-links a {
+            margin: 0 12px;
+        }
+
         .error-message {
             text-align: center;
             color: #dc3545;
@@ -123,13 +195,16 @@
         }
 
         @media (max-width: 480px) {
-            .container { padding: 0 12px 40px; }
+            .container { padding: 0 12px; }
+            #news-feed { margin-top: 16px; }
             .news-card { padding: 16px; margin-bottom: 14px; }
             .news-title { font-size: 1.18rem; }
             .news-description { font-size: 0.93rem; }
             header { padding: 9px 0; }
             header h1 { font-size: 1.3rem; }
             header .subtitle { font-size: 0.70rem; }
+            footer { padding: 18px 12px; font-size: 0.82rem; }
+            .footer-links a { margin: 0 8px; display: inline-block; }
         }
     </style>
 </head>
@@ -140,52 +215,116 @@
         <div class="subtitle">Fresh headlines from across the country</div>
     </header>
     <div id="news-feed">
-        <p id="loading">Loading latest news...</p>
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Loading latest news...</p>
+        </div>
+        <!-- Bottom loading spinner will be inserted here when near end -->
     </div>
 </div>
 
-<script>
-    function getTimeAgo(dateParam) {
-        if (!dateParam) return 'Recently';
-        const date = new Date(dateParam);
-        const now = new Date();
-        const seconds = Math.floor((now - date) / 1000);
+<footer>
+    <div>Nepal Latest News — A simple, ad-free reading experience</div>
+    <div class="footer-links">
+        <a href="https://www.singhyogendra.com.np" target="_blank">Source Aggregator</a>
+        <span>•</span>
+        <a href="mailto:your-email@example.com">Contact</a>
+        <span>•</span>
+        <a href="#">Privacy</a>
+    </div>
+    <div>&copy; 2025 Nepal Latest News. All rights reserved.</div>
+</footer>
 
-        if (seconds < 60) return 'just now';
-        if (seconds < 3600) return `${Math.floor(seconds / 60)} min ago`;
-        if (seconds < 86400) return `${Math.floor(seconds / 3600)} hour${Math.floor(seconds / 3600) > 1 ? 's' : ''} ago`;
-        if (seconds < 604800) return `${Math.floor(seconds / 86400)} day${Math.floor(seconds / 86400) > 1 ? 's' : ''} ago`;
+<script>
+    function getTimeAgo(dateInput) {
+        let date;
+
+        if (typeof dateInput === 'number') {
+            const seconds = Math.floor(dateInput);
+            const milliseconds = (dateInput - seconds) * 1000;
+            date = new Date(seconds * 1000 + milliseconds);
+        } else if (typeof dateInput === 'string') {
+            date = new Date(dateInput);
+        } else {
+            return 'Recently';
+        }
+
+        if (isNaN(date.getTime())) return 'Recently';
+
+        const now = new Date();
+        const secondsAgo = Math.floor((now - date) / 1000);
+
+        if (secondsAgo < 60) return 'just now';
+        if (secondsAgo < 3600) return `${Math.floor(secondsAgo / 60)} min ago`;
+        if (secondsAgo < 86400) return `${Math.floor(secondsAgo / 3600)} hour${Math.floor(secondsAgo / 3600) > 1 ? 's' : ''} ago`;
+        if (secondsAgo < 604800) return `${Math.floor(secondsAgo / 86400)} day${Math.floor(secondsAgo / 86400) > 1 ? 's' : ''} ago`;
 
         return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
     }
 
-    // Load news
-    async function loadNews() {
-        const feedContainer = document.getElementById('news-feed');
-        const apiURL = 'https://www.singhyogendra.com.np/news.json';
+    const feedContainer = document.getElementById('news-feed');
+    const loadingInitial = document.getElementById('loading');
+    let page = 1;
+    let isLoading = false;
+    let hasMore = true;
+
+    // Create bottom loading spinner
+    const bottomLoading = document.createElement('div');
+    bottomLoading.id = 'bottom-loading';
+    bottomLoading.innerHTML = `
+        <div class="spinner"></div>
+        <p>Loading more news...</p>
+    `;
+    bottomLoading.style.display = 'none';
+    feedContainer.appendChild(bottomLoading);
+
+    async function loadNews(append = false) {
+        if (isLoading || !hasMore) return;
+        isLoading = true;
+
+        if (!append) {
+            loadingInitial.style.display = 'block';
+        } else {
+            bottomLoading.style.display = 'block';
+        }
+
+        const apiURL = `https://www.singhyogendra.com.np/news.json`; // Assuming single JSON; adjust if paginated
 
         try {
             const response = await fetch(apiURL);
             if (!response.ok) throw new Error('Network error');
             const articles = await response.json();
-            feedContainer.innerHTML = '';
+
+            if (!append) {
+                feedContainer.innerHTML = '';
+                feedContainer.appendChild(bottomLoading); // re-add if cleared
+            }
 
             if (articles.length === 0) {
-                feedContainer.innerHTML = '<p class="error-message">No news available at the moment.</p>';
+                hasMore = false;
+                bottomLoading.style.display = 'none';
+                if (!append) {
+                    feedContainer.innerHTML = '<p class="error-message">No news available at the moment.</p>';
+                }
+                isLoading = false;
                 return;
             }
 
-            articles.forEach(article => {
+            // For this single JSON source, load all at once
+            articles.forEach((article, index) => {
                 const card = document.createElement('div');
                 card.className = 'news-card';
+                const delayIndex = append ? document.querySelectorAll('.news-card').length + index : index;
+                card.style.animationDelay = `${delayIndex * 0.1}s`;
 
-                const cleanDesc = article.description
+                const cleanDesc = (article.description || '')
                     .replace(/<[^>]*>/g, '')
                     .replace(/\s+/g, ' ')
                     .trim()
                     .substring(0, 220);
 
-                const relativeTime = getTimeAgo(article.pubDate);
+                const timeSource = article.timestamp !== undefined ? article.timestamp : article.pubDate;
+                const relativeTime = getTimeAgo(timeSource);
 
                 card.innerHTML = `
                     <div class="meta-info">${relativeTime}</div>
@@ -194,14 +333,34 @@
                     <a href="${article.link}" target="_blank" rel="noopener" class="read-external">Read Full News →</a>
                 `;
 
-                feedContainer.appendChild(card);
+                feedContainer.insertBefore(card, bottomLoading);
             });
+
+            hasMore = false; // Assuming one-time load
+            bottomLoading.style.display = 'none';
+
         } catch (error) {
-            feedContainer.innerHTML = `<p class="error-message">Unable to load news right now.<br>Please check your connection or try again later.</p>`;
+            if (!append) {
+                feedContainer.innerHTML = `<p class="error-message">Unable to load news right now.<br>Please check your connection or try again later.</p>`;
+            }
+            bottomLoading.style.display = 'none';
             console.error('News fetch error:', error);
         }
+
+        if (!append) {
+            loadingInitial.style.display = 'none';
+        }
+        isLoading = false;
     }
 
+    // Infinite scroll detection
+    window.addEventListener('scroll', () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
+            loadNews(true);
+        }
+    });
+
+    // Initial load
     loadNews();
 </script>
 </body>
