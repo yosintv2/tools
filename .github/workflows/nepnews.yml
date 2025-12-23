@@ -1,0 +1,46 @@
+name: NepNews Hourly Update
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Create Data Directory
+        run: mkdir -p data
+
+      - name: Fetch and Merge News
+        run: |
+          # 1. Fetch latest news from API
+          curl -s "https://www.onlinekhabar.com/wp-json/okapi/v2/recent-news?limit=100" -o data/latest_temp.json
+          
+          # 2. Check if the old file exists. If not, create an empty array.
+          if [ ! -f data/nepnews.json ]; then
+            echo "[]" > data/nepnews.json
+          fi
+
+          # 3. Use jq to merge: [New Data] + [Old Data]
+          # We use 'unique_by(.post_id)' to prevent duplicates
+          # The result is saved back to data/nepnews.json
+          jq -s '.[0].recent + .[1] | unique_by(.post_id) | sort_by(.post_date) | reverse' \
+          data/latest_temp.json data/nepnews.json > data/merged_temp.json
+          
+          mv data/merged_temp.json data/nepnews.json
+          rm data/latest_temp.json
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "NepNews-Bot"
+          git config --global user.email "bot@yosin.news"
+          git add data/nepnews.json
+          git commit -m "NepNews Update: Archived old news & added latest $(date)" || echo "No new news to add."
+          git pushnepnews.yml
