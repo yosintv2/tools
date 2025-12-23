@@ -1,0 +1,33 @@
+name: Fetch Latest News
+
+on:
+  schedule:
+    # Runs every 5 minutes (the fastest GitHub allows)
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows you to run it manually for testing
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install feedparser
+
+      - name: Run Fetch Script
+        run: python fetch_news.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add news.json
+          git commit -m "Update news.json with latest feeds" || exit 0
+          git push
