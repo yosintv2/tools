@@ -23,7 +23,7 @@ RSS_URLS = [
     "https://www.nepalviews.com/feed/",
     "https://techpana.com/feed/", 
     "https://english.onlinekhabar.com/feed/",
-    "https://neplays.com/feed/", 
+    "https://neplays.com/rss.xml", 
     "https://www.ajakoartha.com/feed/"
 ]
 
