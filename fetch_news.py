@@ -22,6 +22,7 @@ RSS_URLS = [
     "https://farakdhar.com/feed/", 
     "https://www.nepalviews.com/feed/",
     "https://techpana.com/feed/", 
+    "https://www.indiatvnews.com/rssnews/topstory-sports.xml",
     "https://english.onlinekhabar.com/feed/",
     "https://www.ajakoartha.com/feed/"
 ]
