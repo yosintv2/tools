@@ -38,6 +38,7 @@
             display: flex;
             flex-direction: column;
             flex: 1;
+            position: relative;
         }
         .container {
             padding: 0 20px;
@@ -85,18 +86,18 @@
         .side-menu {
             position: fixed;
             top: 0;
-            left: -100%; /* Fully hidden by default */
+            left: -100%;
             width: 80%;
             max-width: 320px;
             height: 100%;
             background: var(--menu-bg);
             box-shadow: 4px 0 20px var(--menu-shadow);
-            transition: left 0.35s ease;
+            transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 105;
             overflow-y: auto;
         }
         .side-menu.open {
-            left: 0; /* Only visible when open */
+            left: 0;
         }
         .menu-top-bar {
             position: sticky;
@@ -191,6 +192,35 @@
         .overlay.open {
             opacity: 1;
             visibility: visible;
+        }
+        /* Back to Top Button (Bottom Right) */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 12px rgba(0, 94, 184, 0.3);
+            cursor: pointer;
+            z-index: 90;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, transform 0.2s, background 0.2s;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            background: #004a99;
+            transform: scale(1.1);
         }
         #news-feed {
             margin-top: 20px;
@@ -334,7 +364,7 @@
             #news-feed { margin-top: 16px; }
             .news-card { padding: 16px; margin-bottom: 14px; flex-direction: column; }
             .news-image { width: 100%; height: 180px; }
-            .side-menu { width: 80%; }
+            .side-menu { width: 85%; }
             header h1 { font-size: 1.3rem; }
             header .subtitle { font-size: 0.70rem; }
             footer { padding: 18px 16px; font-size: 0.82rem; }
@@ -365,8 +395,11 @@
 
     <div class="overlay" id="overlay"></div>
 
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">↑</div>
+
     <div class="container">
-        <div id="currentFilter" class="current-filter">Most Recent</div>
+        <div id="currentFilter" class="current-filter"># Nepal • Most Recent</div>
         <div id="news-feed">
             <div id="loading">
                 <div class="spinner"></div>
@@ -398,16 +431,33 @@
     function openMenu() {
         sideMenu.classList.add('open');
         overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
     }
 
     function closeMenu() {
         sideMenu.classList.remove('open');
         overlay.classList.remove('open');
+        document.body.style.overflow = '';
     }
 
     menuBtn.addEventListener('click', openMenu);
     closeBtn.addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
+    menuContent.addEventListener('click', (e) => e.stopPropagation());
+
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
 
     // Defined RSS categories with display name and search keywords
     const rssCategories = [
@@ -442,7 +492,6 @@
         ]}
     ];
 
-    // News loading and filtering
     function getTimeAgo(dateInput) {
         let date;
         if (typeof dateInput === 'number') {
@@ -470,7 +519,7 @@
     const articlesPerPage = 50;
     let currentPage = 1;
     let allArticles = [];
-    let sortedArticles = []; // Most recent first
+    let sortedArticles = [];
     let filteredArticles = [];
 
     async function loadNews() {
@@ -479,14 +528,12 @@
             if (!response.ok) throw new Error('Network error');
             allArticles = await response.json();
 
-            // Sort for Most Recent
             sortedArticles = [...allArticles].sort((a, b) => {
                 const dateA = a.timestamp ?? new Date(a.pubDate).getTime() / 1000;
                 const dateB = b.timestamp ?? new Date(b.pubDate).getTime() / 1000;
                 return dateB - dateA;
             });
 
-            // Collect actual lower-case source parts for matching
             const actualSourceLower = new Set();
             allArticles.forEach(article => {
                 if (article.source) {
@@ -498,13 +545,12 @@
                 }
             });
 
-            // Build menu
-            let menuHTML = '<a class="most-recent filter-link">Most Recent</a>';
+            let menuHTML = '<a class="most-recent filter-link">Most Recent (All)</a>';
 
             rssCategories.forEach(cat => {
                 let hasAny = false;
                 let catKeywords = [];
-                let catHTML = `<div class="category-title filter-link" data-category="${cat.category}">${cat.category}</div><ul class="source-list">`;
+                let catHTML = `<div class="category-title filter-link" data-keywords="">${cat.category}</div><ul class="source-list">`;
                 cat.sources.forEach(src => {
                     const lowerKeywords = src.keywords.map(k => k.toLowerCase());
                     const matches = lowerKeywords.some(kw => 
@@ -518,25 +564,19 @@
                 });
                 catHTML += '</ul>';
                 if (hasAny) {
-                    // Attach category keywords to the title element for filtering
-                    const titleEl = `<div class="category-title filter-link" data-keywords="${catKeywords.join('|')}">${cat.category}</div>`;
-                    menuHTML += titleEl + '<ul class="source-list">' + catHTML.split('<ul class="source-list">')[1];
-                    menuHTML += catHTML;
+                    const titleWithKeywords = `<div class="category-title filter-link" data-keywords="${catKeywords.join('|')}">${cat.category}</div>`;
+                    menuHTML += titleWithKeywords + catHTML.substring(catHTML.indexOf('<ul'));
                 }
             });
 
             menuContent.innerHTML = menuHTML;
 
-            // Attach handlers for all filter-links
             document.querySelectorAll('.filter-link').forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
+                    e.stopPropagation();
                     if (link.classList.contains('most-recent')) {
                         applyFilter(null);
-                    } else if (link.classList.contains('category-title')) {
-                        const keywordsStr = link.dataset.keywords;
-                        const keywords = keywordsStr ? keywordsStr.split('|') : [];
-                        applyFilter({display: link.textContent.trim(), keywords});
                     } else {
                         const keywordsStr = link.dataset.keywords;
                         const keywords = keywordsStr ? keywordsStr.split('|') : [];
@@ -546,8 +586,10 @@
                 });
             });
 
-            // Default: Most Recent
-            applyFilter(null);
+            // Default: Nepal category most recent (since most visitors from Nepal)
+            const nepalCat = rssCategories[0];
+            const nepalKeywords = nepalCat.sources.flatMap(s => s.keywords);
+            applyFilter({display: nepalCat.category, keywords: nepalKeywords});
         } catch (error) {
             feedContainer.innerHTML = `<p class="error-message">Unable to load news right now.<br>Please check your connection or try again later.</p>`;
             console.error('News fetch error:', error);
@@ -557,7 +599,7 @@
     function applyFilter(filterObj) {
         if (filterObj === null) {
             filteredArticles = sortedArticles;
-            currentFilterDisplay.textContent = 'Most Recent';
+            currentFilterDisplay.textContent = 'Most Recent (All)';
         } else {
             const lowerKeywords = filterObj.keywords.map(k => k.toLowerCase());
             filteredArticles = allArticles.filter(article => 
@@ -567,7 +609,7 @@
                 const dateB = b.timestamp ?? new Date(b.pubDate).getTime() / 1000;
                 return dateB - dateA;
             });
-            currentFilterDisplay.textContent = filterObj.display;
+            currentFilterDisplay.textContent = `${filterObj.display} • Most Recent`;
         }
         currentPage = 1;
         renderPage(currentPage);
