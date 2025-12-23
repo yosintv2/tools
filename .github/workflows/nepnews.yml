@@ -18,25 +18,34 @@ jobs:
       - name: Create Data Directory
         run: mkdir -p data
 
-      - name: Fetch and Merge News
+      - name: Fetch News & Debug
         run: |
-          # 1. Fetch latest news from API
+          # Fetch and save to a temporary file
           curl -s "https://www.onlinekhabar.com/wp-json/okapi/v2/recent-news?limit=100" -o data/latest_temp.json
           
-          # 2. Ensure nepnews.json exists and is a valid JSON array
+          # DEBUG: Show the first few lines of the API response in the log
+          echo "API Response Preview:"
+          head -c 200 data/latest_temp.json
+          echo -e "\n---"
+
+      - name: Merge News Safely
+        run: |
+          # 1. Initialize file if it doesn't exist or is empty
           if [ ! -f data/nepnews.json ] || [ ! -s data/nepnews.json ]; then
             echo "[]" > data/nepnews.json
           fi
 
-          # 3. Merge Logic: [New API Data] + [Existing File Data]
-          # We use 'try' to handle cases where the API might return an unexpected format
+          # 2. Advanced JQ Merge: 
+          # - Checks if API returned 'recent' or is already an array
+          # - Merges with existing archived data
+          # - Removes duplicates based on 'post_id'
+          # - Keeps everything in Nepali (UTF-8)
           jq -s '
-            (.[0].recent // []) as $new | 
-            (.[1] // []) as $old | 
+            (if .[0] | type == "object" then .[0].recent // [] else .[0] end) as $new |
+            (.[1] // []) as $old |
             ($new + $old) | unique_by(.post_id) | sort_by(.post_date) | reverse
           ' data/latest_temp.json data/nepnews.json > data/merged_temp.json
           
-          # 4. Finalize file
           mv data/merged_temp.json data/nepnews.json
           rm data/latest_temp.json
 
@@ -45,10 +54,9 @@ jobs:
           git config --global user.name "NepNews-Bot"
           git config --global user.email "bot@yosin.news"
           git add data/nepnews.json
-          # Only push if there are changes to the file
           if git diff --staged --quiet; then
-            echo "No new news to add."
+            echo "No new news found to update."
           else
-            git commit -m "NepNews Update: Archived old news & added latest $(date)"
+            git commit -m "NepNews Update: $(date)"
             git push
           fi
