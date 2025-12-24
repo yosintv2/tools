@@ -35,7 +35,11 @@ RSS_URLS = [
     # football
     "https://www.theguardian.com/football/rss",
     "https://www.espn.com/espn/rss/soccer/news",
+    "https://www.skysports.com/rss/11095",
+    "https://feeds.bbci.co.uk/sport/football/rss.xml",
+    "https://www.eyefootball.com/football_news.xml",
 
+    
     # technology
     "https://www.wired.com/feed/rss",
     "https://techcrunch.com/feed/"
