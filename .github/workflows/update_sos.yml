@@ -2,29 +2,32 @@ name: Update Daily Matches API
 
 on:
   schedule:
-    # This runs at 00:00 UTC every day
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Allows you to run it manually for testing
+    - cron: '0 0 * * *' # Runs every 24 hours
+  workflow_dispatch:   # Manual trigger button
+
+permissions:
+  contents: write      # Crucial for allowing the bot to save files
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '18.20.8'
 
       - name: Fetch and Save Match Data
-        run: node scraper.js
+        # We tell Node to run the file inside the data folder
+        run: node data/sos.js
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add matches.json
-          git commit -m "Update matches for $(date +'%Y-%m-%d')" || exit 0
+          git add data/matches.json
+          git commit -m "Auto-update matches: $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
