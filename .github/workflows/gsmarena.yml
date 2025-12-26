@@ -1,35 +1,35 @@
-name: GSMArena News Update
+name: Update GSMArena JSON
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
-  workflow_dispatch:      # Allows manual trigger from the Actions tab
+    - cron: '0 * * * *' # Every hour
+  workflow_dispatch:      # Manual run button
 
 permissions:
   contents: write
 
 jobs:
-  update-feed:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: pip install feedparser
 
-      - name: Run GSMArena Parser
+      - name: Run Script
         run: python data/gsmarena.py
 
-      - name: Commit and Push Changes
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add news.md
-          git commit -m "Update GSMArena Feed: $(date)" || echo "No changes to commit"
+          git add gsmarena.json
+          git commit -m "Update gsmarena.json: $(date)" || echo "No changes"
           git push
