@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yosin News | GSMArena Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d32f2f;
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #1a1a1b;
+            --text-muted: #5f6368;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg); 
+            color: var(--text-main); 
+            margin: 0; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 { font-weight: 800; letter-spacing: -1px; margin-bottom: 5px; }
+
+        #news-list { 
+            width: 100%; 
+            max-width: 700px; 
+            display: grid; 
+            gap: 20px; 
+        }
+
+        /* Modern News Card */
+        .news-card { 
+            background: var(--card-bg); 
+            padding: 20px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #eef0f2;
+        }
+
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive Image Support */
+        .news-card img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 12px; 
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .news-card h2 { 
+            font-size: 1.4rem; 
+            margin: 0 0 10px 0; 
+            line-height: 1.3;
+        }
+
+        .news-card h2 a { 
+            text-decoration: none; 
+            color: var(--text-main); 
+        }
+
+        .news-card h2 a:hover { color: var(--primary); }
+
+        .meta { 
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem; 
+            color: var(--text-muted); 
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .meta span.category {
+            background: #ffebee;
+            color: var(--primary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #3c4043;
+            margin-bottom: 20px;
+        }
+
+        /* Read Full News Button */
+        .read-more-btn {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .read-more-btn:hover {
+            background: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📱 GSMArena Feed</h1>
+    <p style="color: var(--text-muted)">Latest mobile updates, delivered every hour.</p>
+</header>
+
+<div id="feed-container">
+    <div id="news-list">Loading latest updates...</div>
+</div>
+
+<script>
+    // Function to calculate "Time Ago" (m/h/d)
+    function timeAgo(dateString) {
+        const now = new Date();
+        const past = new Date(dateString);
+        const diffInMs = now - past;
+        
+        const seconds = Math.floor(diffInMs / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+
+        if (days > 0) return `${days}d ago`;
+        if (hours > 0) return `${hours}h ago`;
+        if (minutes > 0) return `${minutes}m ago`;
+        return `Just now`;
+    }
+
+    async function fetchNews() {
+        try {
+            // Using your actual GitHub hosted URL
+            const response = await fetch('https://www.singhyogendra.com.np/gsmarena.json');
+            const data = await response.json();
+            const list = document.getElementById('news-list');
+            list.innerHTML = '';
+
+            // Handle both structure types (direct array or {articles: []})
+            const articles = data.articles || data;
+
+            articles.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+                
+                // Calculate relative time
+                const relativeTime = timeAgo(item.pubDate || item.date);
+
+                card.innerHTML = `
+                    <div class="meta">
+                        <span class="category">${item.category || 'NEWS'}</span>
+                        <span>•</span>
+                        <span>${relativeTime}</span>
+                    </div>
+                    <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+                    <div class="description">${item.description}</div>
+                    <a href="${item.link}" class="read-more-btn" target="_blank">Read Full News →</a>
+                `;
+                list.appendChild(card);
+            });
+        } catch (e) {
+            document.getElementById('news-list').innerHTML = 
+                `<p style="color:red; text-align:center;">Failed to load feed. Check if gsmarena.json exists at the URL.</p>`;
+        }
+    }
+
+    fetchNews();
+</script>
+</body>
+</html>
