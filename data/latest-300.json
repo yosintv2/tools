@@ -1,5 +1,236 @@
 [
   {
+    "id": 13882,
+    "date": "2025-12-27T20:42:43",
+    "date_gmt": "2025-12-27T14:57:43",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=13882"
+    },
+    "modified": "2025-12-27T20:42:43",
+    "modified_gmt": "2025-12-27T14:57:43",
+    "slug": "associate-qa-engineer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/associate-qa-engineer/",
+    "title": {
+      "rendered": "Associate QA Engineer"
+    },
+    "content": {
+      "rendered": "<p><strong>Position: </strong>Associate QA Engineer</p>\n<p><strong>Job Description</strong></p>\n<ul>\n<li>Should understand and implement QA processes within SDLC, STLC, and Agile/Scrum methodologies.</li>\n<li>Responsible for designing, writing, and executing test cases (Manual &amp; Automation) based on functional &amp; non-functional requirements.</li>\n<li>Perform application testing, including API testing (REST/SOAP) and database validations using SQL queries.</li>\n<li>Use test automation tools like Selenium, Cypress, Postman, and JUnit to develop and execute scripts.</li>\n<li>Document defects clearly with reproducible steps and follow through the defect lifecycle using tools like JIRA, Bugzilla, or similar.</li>\n<li>Strong analytical and problem-solving skills.</li>\n<li>Good communication and collaboration with developers, PMs, and stakeholders.</li>\n<li>Ability to work independently and mentor junior QA team members.<br />\n,</li>\n</ul>\n<p><strong>Job Specification:</strong></p>\n<ul>\n<li>Education: Bachelor&#8217;s degree in Computer Science, IT, or related field</li>\n<li>Experience: Upto 2 years of hands-on QA &amp; Automation</li>\n<li>Integrate automated tests into CI/CD pipelines for continuous testing.</li>\n<li>Analyze requirements and create detailed test plans, test cases, and test scripts.</li>\n<li>Identify, document, and track defects with clear reproduction steps.</li>\n<li>Develop, maintain, and enhance automated test scripts for regression and smoke testing.</li>\n<li>Perform API testing and validate data integrity</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 248,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://dishhome.rigojobs.com/job-detail?jobId=61",
+      "_company_name": "Dish Media Network Limited",
+      "_company_website": "https://dishhome.com.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      27
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-13882",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/13882",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/248"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=13882"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=13882"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=13882"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13882"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 13878,
     "date": "2025-12-27T19:56:09",
     "date_gmt": "2025-12-27T14:11:09",
@@ -46592,7 +46823,7 @@
       "rendered": "Government Job in Madhesh Pradehs &#8211; 9th Level Officer &#8211; 18 Vacancies"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-13045\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job.png\" alt=\"\" width=\"950\" height=\"6402\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job.png 950w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-152x1024.png 152w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-768x5176.png 768w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-228x1536.png 228w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-304x2048.png 304w\" sizes=\"(max-width: 950px) 100vw, 950px\" /></p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-13045\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job.png\" alt=\"\" width=\"950\" height=\"6402\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job.png 950w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-152x1024.png 152w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-768x5176.png 768w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-228x1536.png 228w, https://merorojgari.com/wp-content/uploads/2025/12/Madhesh-Pradehs-Lok-Sewa-Aayog-job-304x2048.png 304w\" sizes=\"(max-width: 950px) 100vw, 950px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -46827,7 +47058,7 @@
       "rendered": "Psychosocial Counselor, Firefighter"
     },
     "content": {
-      "rendered": "<p><strong>Position :</strong> Psychosocial Counselor<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position :</strong> Firefighter<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Rupandehi</p>\n<p><strong>Sainamaina Nagarpalika</strong></p>\n<p><strong>Website:</strong> <a href=\"https://janakpurmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://janakpurmun.gov.np/</a><br />\n<img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-13043\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20.png\" alt=\"\" width=\"1078\" height=\"1504\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20.png 1078w, https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20-215x300.png 215w, https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20-734x1024.png 734w, https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20-768x1071.png 768w\" sizes=\"(max-width: 1078px) 100vw, 1078px\" /></p>\n",
+      "rendered": "<p><strong>Position :</strong> Psychosocial Counselor<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position :</strong> Firefighter<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Rupandehi</p>\n<p><strong>Sainamaina Nagarpalika</strong></p>\n<p><strong>Website:</strong> <a href=\"https://janakpurmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://janakpurmun.gov.np/</a><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-13043\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20.png\" alt=\"\" width=\"1078\" height=\"1504\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20.png 1078w, https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20-215x300.png 215w, https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20-734x1024.png 734w, https://merorojgari.com/wp-content/uploads/2025/12/sainamaina-municipality-job-20-768x1071.png 768w\" sizes=\"(max-width: 1078px) 100vw, 1078px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -47062,7 +47293,7 @@
       "rendered": "City Police, Kuchikar &#8211; 16 Vacancies"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> City Police<br />\n<strong>No. of Vacancy:</strong> 6</p>\n<p><strong>Position :</strong> Kuchikar<br />\n<strong>No. of Vacancy:</strong> 10</p>\n<p><strong>Location:</strong> Dhanusha</p>\n<p><strong>Janakpurdham Upamahanagarpalika</strong></p>\n<p><strong>Website:</strong> <a href=\"https://janakpurmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://janakpurmun.gov.np/</a></p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-13039\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job.png\" alt=\"\" width=\"980\" height=\"663\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job.png 980w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-300x203.png 300w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-768x520.png 768w\" sizes=\"(max-width: 980px) 100vw, 980px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-13040\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1.png\" alt=\"\" width=\"900\" height=\"639\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1.png 900w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1-300x213.png 300w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1-768x545.png 768w\" sizes=\"(max-width: 900px) 100vw, 900px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> City Police<br />\n<strong>No. of Vacancy:</strong> 6</p>\n<p><strong>Position :</strong> Kuchikar<br />\n<strong>No. of Vacancy:</strong> 10</p>\n<p><strong>Location:</strong> Dhanusha</p>\n<p><strong>Janakpurdham Upamahanagarpalika</strong></p>\n<p><strong>Website:</strong> <a href=\"https://janakpurmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://janakpurmun.gov.np/</a></p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-13039\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job.png\" alt=\"\" width=\"980\" height=\"663\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job.png 980w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-300x203.png 300w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-768x520.png 768w\" sizes=\"(max-width: 980px) 100vw, 980px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-13040\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1.png\" alt=\"\" width=\"900\" height=\"639\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1.png 900w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1-300x213.png 300w, https://merorojgari.com/wp-content/uploads/2025/12/janakpurdham-upamahanagarpalika-job-1-768x545.png 768w\" sizes=\"(max-width: 900px) 100vw, 900px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69937,240 +70168,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=12588"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 12590,
-    "date": "2025-12-09T09:08:44",
-    "date_gmt": "2025-12-09T03:23:44",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=12590"
-    },
-    "modified": "2025-12-09T09:08:44",
-    "modified_gmt": "2025-12-09T03:23:44",
-    "slug": "anm-health-assistant-staff-nurse-ahw-office-helper-medical-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/anm-health-assistant-staff-nurse-ahw-office-helper-medical-officer/",
-    "title": {
-      "rendered": "ANM, Health Assistant, Staff Nurse, AHW, Office Helper, Medical Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Medical Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Health Assistant<br />\n<strong>No. of Vacancy:</strong> 5</p>\n<p><strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 5</p>\n<p><strong>Position:</strong> AHW<br />\nNo. of Vacancy: 2</p>\n<p><strong>Position</strong>: ANM<br />\n<strong>No. of Vacancy</strong>:4</p>\n<p><strong>Position:</strong> Office Helper<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Location:</strong> Parsa</p>\n<p><strong>Dhobini Gaunpalika</strong></p>\n<p><strong>Phone No.:</strong> 9845094219</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-12591\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job.png\" alt=\"\" width=\"889\" height=\"638\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job.png 889w, https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job-300x215.png 300w, https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job-768x551.png 768w\" sizes=\"(max-width: 889px) 100vw, 889px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-12593\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job-2.png\" alt=\"\" width=\"894\" height=\"761\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job-2.png 894w, https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job-2-300x255.png 300w, https://merorojgari.com/wp-content/uploads/2025/12/dhobini-rural-municipality-job-2-768x654.png 768w\" sizes=\"(max-width: 894px) 100vw, 894px\" /><br />\n<em> Source: Madhyanha National Daily, 9 December, 2025</em></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 27,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Parsa",
-      "_application": "",
-      "_company_name": "Dhobini Gaunpalika",
-      "_company_website": "https://dhobinimun.gov.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      14
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      97
-    ],
-    "class_list": {
-      "0": "post-12590",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-parsa",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/12590",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=12590"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=12590"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=12590"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=12590"
         }
       ],
       "curies": [
