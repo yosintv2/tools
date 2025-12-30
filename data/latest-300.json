@@ -1,5 +1,239 @@
 [
   {
+    "id": 14083,
+    "date": "2025-12-30T19:26:43",
+    "date_gmt": "2025-12-30T13:41:43",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14083"
+    },
+    "modified": "2025-12-30T19:26:43",
+    "modified_gmt": "2025-12-30T13:41:43",
+    "slug": "it-officer-10",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/it-officer-10/",
+    "title": {
+      "rendered": "IT Officer"
+    },
+    "content": {
+      "rendered": "<p><strong>Position: </strong>IT Officer<br />\n<strong>Location: </strong>Chhatapipra, Bara</p>\n<ul>\n<li>Bachelor of Technology (CSIT, BCA, BIT)</li>\n<li>Artwork Designing, Hardware and Networking</li>\n<li>Minimum 3/4 years experience in the same field</li>\n</ul>\n<p>Please send your resume to <strong>raj@everest-hcg.com</strong></p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 10449,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Bara",
+      "_application": "",
+      "_company_name": "Everest Parenterals Pvt. Ltd.",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      28
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      59
+    ],
+    "class_list": {
+      "0": "post-14083",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-bara",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14083",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/10449"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14083"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14083"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14083"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14083"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 14082,
     "date": "2025-12-30T18:32:49",
     "date_gmt": "2025-12-30T12:47:49",
@@ -222,6 +456,240 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14082"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14044,
+    "date": "2025-12-30T18:00:54",
+    "date_gmt": "2025-12-30T12:15:54",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14044"
+    },
+    "modified": "2025-12-30T19:58:08",
+    "modified_gmt": "2025-12-30T14:13:08",
+    "slug": "nimbus-nepal-khumaltar-lalitpur-full-time-accountant",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/nimbus-nepal-khumaltar-lalitpur-full-time-accountant/",
+    "title": {
+      "rendered": "Accountant"
+    },
+    "content": {
+      "rendered": "<p><strong>Position:</strong> Accountant<br />\n<strong>Location:</strong> Khumaltar, Lalitpur</p>\n<p><strong>Responsibilities:</strong></p>\n<ul>\n<li>Maintain daily accounting records</li>\n<li>Prepare bills, invoices, and vouchers</li>\n<li>Handle payments and receipts</li>\n<li>Perform bank reconciliation</li>\n<li>Assist in monthly and annual financial reports</li>\n</ul>\n<p><strong>Requirements:</strong></p>\n<ul>\n<li>Basic knowledge of accounting principles</li>\n<li>Experience with accounting software (preferred)</li>\n<li>Must have a bike and a valid driving license (compulsory)</li>\n<li>Good attention to detail and time management</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 405,
+    "featured_media": 2971,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Lalitpur",
+      "_application": "opportunities@nimbusnepal.com",
+      "_company_name": "Nimbus Nepal",
+      "_company_website": "https://nimbusnepal.com/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      12
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      81
+    ],
+    "class_list": {
+      "0": "post-14044",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-lalitpur",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14044",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/405"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/2971"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14044"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14044"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14044"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14044"
         }
       ],
       "curies": [
@@ -69707,471 +70175,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=12893"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 12890,
-    "date": "2025-12-14T07:57:55",
-    "date_gmt": "2025-12-14T02:12:55",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=12890"
-    },
-    "modified": "2025-12-14T07:57:55",
-    "modified_gmt": "2025-12-14T02:12:55",
-    "slug": "staff-nurse-hemodialysis-technician-ambulance-driver",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/staff-nurse-hemodialysis-technician-ambulance-driver/",
-    "title": {
-      "rendered": "Staff Nurse, Hemodialysis Technician, Ambulance Driver"
-    },
-    "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-12891\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-20.png\" alt=\"\" width=\"1115\" height=\"1421\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-20.png 1115w, https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-20-235x300.png 235w, https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-20-803x1024.png 803w, https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-20-768x979.png 768w\" sizes=\"(max-width: 1115px) 100vw, 1115px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-12892\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-21.png\" alt=\"\" width=\"1214\" height=\"1290\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-21.png 1214w, https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-21-282x300.png 282w, https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-21-964x1024.png 964w, https://merorojgari.com/wp-content/uploads/2025/12/lumbini-provincial-hospital-job-21-768x816.png 768w\" sizes=\"(max-width: 1214px) 100vw, 1214px\" /></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 27,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Butwal",
-      "_application": "",
-      "_company_name": "Lumbini Provincial Hospital",
-      "_company_website": "https://www.lphospital.gov.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      14
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      130
-    ],
-    "class_list": {
-      "0": "post-12890",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-butwal",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/12890",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=12890"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=12890"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=12890"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=12890"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 12888,
-    "date": "2025-12-14T07:44:07",
-    "date_gmt": "2025-12-14T01:59:07",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=12888"
-    },
-    "modified": "2025-12-14T07:44:07",
-    "modified_gmt": "2025-12-14T01:59:07",
-    "slug": "senior-assistant",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/senior-assistant/",
-    "title": {
-      "rendered": "Senior Assistant"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Senior Assistant &#8211; Data System<br />\n<strong>Job ID</strong>: HQ01862<br />\n<strong>Location:</strong> Nepal<br />\n<strong>Closing Date:</strong> 19-Dec-2025</p>\n<p><strong>About IRRI</strong></p>\n<p>The International Rice Research Institute (IRRI) is dedicated to reducing poverty and hunger through rice science; improving the health and welfare of rice farmers and consumers; and protecting the rice-growing environment for future generations. IRRI is an independent, nonprofit, research and educational institute, founded in 1960 by the Ford and Rockefeller foundations with support from the Philippine government. The institute, headquartered in Los Baños, Philippines, has offices in 17 rice-growing countries in Asia and Africa, and over 1,000 staff.</p>\n<p>Working with in-country partners, IRRI develops advanced rice varieties that yield more grain and better withstand pests and disease as well as flooding, drought, and other harmful effects of climate change.</p>\n<p><strong>Job Purpose</strong><br />\nThe International Livestock Research Institute (ILRI), on behalf of the International Rice Research Institute in Nepal seeks to hire one Senior Assistant &#8211; Data Systems. ILRI works to improve food and nutritional security and reduce poverty in developing countries through research for efficient, safe and sustainable use of livestock. It is the only one of 15 CGIAR research centres dedicated entirely to animal agriculture research for the developing world. Co-hosted by Kenya and Ethiopia, it has regional or country offices and projects in East, South and Southeast Asia as well as Central, East, Southern and West Africa. (www.ilri.org)</p>\n<p>The position is linked to the Asia Africa Dairy Genetic Gain Project (AADGG) Country Program and focuses on ICT and Data Management in Livestock Production and productivity in Nepal. Current and emerging Information and Communication Technology (ICT) and genomic tools as implemented by the Africa Dairy Genetic Gains (ADGG) program present new opportunities to hasten genetic gains in dairy productivity in Nepal. The data system assistant will help develop, domesticate and scale information and communication technology (ICT) tools to capture herd, cow level and other related data from small, medium and large scale farms, and integrate these into national herd performance recording and evaluation systems.</p>\n<p><strong>Roles and Responsibilities</strong></p>\n<ul>\n<li>Contribute to the development, enhancement, and management of livestock production, productivity, and genetic data systems — including data collation, processing, and secure storage — for effective use within the ADGG Country Program.</li>\n<li>Review and analyze existing data capture tools, and support the design and development of extended modules to improve their functionality and scope.</li>\n<li>Provide timely ICT support to farmers and field-based partner agents through various communication channels such as WhatsApp, Telegram, telephone, and field visits.</li>\n<li>Deliver technical support and troubleshooting for users of the AADGG web-based platform and mobile application.</li>\n<li>Implement, monitor, and ensure data quality, integrity, and consistency across all data collection and management activities.</li>\n<li>Organize and deliver operational training sessions and capacity-building programs for key stakeholders and end users to enhance system adoption and effective utilization.</li>\n<li>The data system assistant will engage with stakeholders in the livestock sector including the national actors involved in animal breeding.</li>\n<li>Engage with scientists and experts in academic institutions and national research institutions such as NARC and build effective partnerships.</li>\n<li>Communicate and connect with all relevant actors through participation in working group meetings, seminars and outreach workshops. The person will also communicate through communication products.</li>\n<li>Providing operational support regularly to the AADGG user in Nepal.</li>\n<li>Conduct capacity building training to the key stakeholders.</li>\n<li>Work to establish national level of AADGG platform.</li>\n<li>Data review, reporting as required. Convey information, deliver presentations and seek collaboration to develop community oriented breeding programs.</li>\n</ul>\n<p><strong>Qualifications</strong></p>\n<ul>\n<li>BA/BSc degree in Information Systems, Database Management, Computer Science or related discipline with at least 1 year of relevant work experience preferably in ICT/data management for research/agriculture.</li>\n</ul>\n<p><strong>Skills Required</strong></p>\n<p><strong>Mandatory:</strong></p>\n<ul>\n<li>Experience working with integrated database systems, preferably for research projects, including large-scale socioeconomic and/or biological surveys e.g., MySQL, MS SQL Server or Oracle.</li>\n<li>Advanced experience of SQL language for data extraction and management of databases.</li>\n<li>Knowledge and experience of Linux operative system.</li>\n</ul>\n<p><strong>Language</strong> &#8211; English &amp; Nepali</p>\n<p><strong>Preferred:</strong></p>\n<ul>\n<li>Experience in software programming</li>\n<li>Understanding and experience of working in applied agricultural research preferred.</li>\n<li>Experience working with farmers/field agents</li>\n<li>Excellent interpersonal communication and good personal organization skills.</li>\n<li>Good communication ability in English, spoken and written.</li>\n<li>Good judgment and willingness to take initiative when appropriate.</li>\n</ul>\n<p><strong>IRRI offers a highly extensive employee benefits package inclusive of globally covered medical insurance, retirement plan, life and accident insurance and other allowances.</strong></p>\n<p><strong>Join our team and be part of our story!</strong></p>\n<p>Please note that only shortlisted candidates will be contacted.</p>\n<p>This position will remain open until filled.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 12889,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "",
-      "_application": "https://www.irri.org/talentlink/details.html?id=Q7LFK026203F3VBQB79QWQWAS&nPostingID=2050&nPostingTargetID=3692&mask=irriext&lg=EN",
-      "_company_name": "International Rice Research Institute",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [],
-    "class_list": {
-      "0": "post-12888",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "7": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/12888",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/12889"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=12888"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=12888"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=12888"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=12888"
         }
       ],
       "curies": [
