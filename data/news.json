@@ -1,5 +1,744 @@
 [
   {
+    "id": 577445,
+    "date": "2026-01-02T12:48:00",
+    "date_gmt": "2026-01-02T07:03:00",
+    "guid": {
+      "rendered": "https://english.onlinekhabar.com/?p=577445"
+    },
+    "modified": "2026-01-02T12:48:04",
+    "modified_gmt": "2026-01-02T07:03:04",
+    "slug": "accidents-on-rise-along-under-construction-highway",
+    "status": "publish",
+    "type": "post",
+    "link": "https://english.onlinekhabar.com/accidents-on-rise-along-under-construction-highway.html",
+    "title": {
+      "rendered": "Accidents on rise along under-construction highway"
+    },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"810\" height=\"456\" src=\"http://english.onlinekhabar.com/wp-content/uploads/2025/12/accident.jpg\" alt=\"\" class=\"wp-image-576866\"/><figcaption class=\"wp-element-caption\">Photo: Wikimedia Commons</figcaption></figure>\n\n\n\n<p>Jhapa, January 2</p>\n\n\n\n<p>Scooter rider Laxmi Saha, 33, died when a loaded truck hit her scooter on Paliya Bridge at Mechinagar-6 along the under-construction Asian Highway on Thursday night. The truck (PB 02 BR 7765) had hit the scooter (Pr 1\u201301\u2013013 P 5888) while she was on the way from Kakadbhitta to Birtamod. Information officer at the District Police Office, Khagendra Bahadur Khadka, shared that Saha, a local of Mechinagar\u20136, was critically injured in the accident.</p>\n\n\n\n<p>She was immediately taken to Mechi AMDA Hospital in Dhulabari for treatment, where the doctors declared her dead, Khadka further informed. The police took control of 36-year-old truck driver Sandeep Singh from Punjab, India, and held him at the local police office. </p>\n\n\n\n<p>The public has complained about the distress caused due to the haphazard diversion on the under-construction Asian Highway and the uneven road. On the evening of December 20, 2025, two young people died in a motorcycle accident at a diversion near Buttawari Tea Garden in Birtamod\u20136. </p>\n\n\n\n<p>The public has also complained about not properly placing and maintaining diversion and signposts, and the unmanaged road conditions on the Kankadbhitta\u2013Birtamod section along the highway. Journalist Sabitra Dahal from Kankai-6 and Evan Luintel from Mechinagar-9 said that they met with an accident on the highway due to poor diversion. Dahal and Luintel have recently returned home after recovering their health following a long hospital stay</p>\n\n\n\n<p></p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Jhapa, January 2 Scooter rider Laxmi Saha, 33, died when a loaded truck hit her scooter on Paliya Bridge at Mechinagar-6 along the under-construction Asian Highway on Thursday night. The truck (PB 02 BR 7765) had hit the scooter (Pr 1\u201301\u2013013 P 5888) while she was on the way from Kakadbhitta to Birtamod. Information officer [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 12,
+    "featured_media": 576866,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "footnotes": ""
+    },
+    "categories": [
+      3
+    ],
+    "tags": [
+      4760
+    ],
+    "class_list": [
+      "post-577445",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-social",
+      "tag-accident"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/577445",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/12"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=577445"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/577445/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 577446,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/577445/revisions/577446"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/576866"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media?parent=577445"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories?post=577445"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags?post=577445"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 12,
+          "name": "Sangita Shrestha",
+          "url": "",
+          "description": "",
+          "link": "https://english.onlinekhabar.com/author/sangita",
+          "slug": "sangita",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/ea6bfb1e962da1375acc8256b985218a15e7e0f963b130909119b883bac9e3c0?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/ea6bfb1e962da1375acc8256b985218a15e7e0f963b130909119b883bac9e3c0?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/ea6bfb1e962da1375acc8256b985218a15e7e0f963b130909119b883bac9e3c0?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/12",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 576866,
+          "date": "2025-12-11T13:09:39",
+          "slug": "accident-16",
+          "type": "attachment",
+          "link": "https://english.onlinekhabar.com/22-injured-in-road-accident-in-dang.html/accident-16",
+          "title": {
+            "rendered": "accident"
+          },
+          "author": 12,
+          "featured_media": 0,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 810,
+            "height": 456,
+            "file": "2025/12/accident.jpg",
+            "filesize": 214021,
+            "sizes": {},
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2025/12/accident.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/576866",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/12"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=576866"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 576860,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/576860"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 3,
+            "link": "https://english.onlinekhabar.com/category/social",
+            "name": "Society",
+            "slug": "social",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/3",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=3"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "id": 4760,
+            "link": "https://english.onlinekhabar.com/tag/accident",
+            "name": "accident",
+            "slug": "accident",
+            "taxonomy": "post_tag",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags/4760",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?tags=4760"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "id": 577443,
+    "date": "2026-01-02T12:40:48",
+    "date_gmt": "2026-01-02T06:55:48",
+    "guid": {
+      "rendered": "https://english.onlinekhabar.com/?p=577443"
+    },
+    "modified": "2026-01-02T12:40:51",
+    "modified_gmt": "2026-01-02T06:55:51",
+    "slug": "around-300000-foreign-tourists-visit-annapurna-area-in-2025",
+    "status": "publish",
+    "type": "post",
+    "link": "https://english.onlinekhabar.com/around-300000-foreign-tourists-visit-annapurna-area-in-2025.html",
+    "title": {
+      "rendered": "Around 300,000 foreign tourists visit Annapurna area in 2025"
+    },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"533\" src=\"http://english.onlinekhabar.com/wp-content/uploads/2023/04/Annapurna_1_from_NE-E.jpg\" alt=\"Annapurna_1_from_NE-E\" class=\"wp-image-525869\" srcset=\"https://english.onlinekhabar.com/wp-content/uploads/2023/04/Annapurna_1_from_NE-E.jpg 800w, https://english.onlinekhabar.com/wp-content/uploads/2023/04/Annapurna_1_from_NE-E-300x200.jpg 300w, https://english.onlinekhabar.com/wp-content/uploads/2023/04/Annapurna_1_from_NE-E-768x512.jpg 768w\" sizes=\"auto, (max-width: 800px) 100vw, 800px\" /><figcaption class=\"wp-element-caption\">File</figcaption></figure>\n\n\n\n<p>Gandaki, January 2</p>\n\n\n\n<p>The Annapurna area welcomed 299,831 foreign tourists in 2025. Of them, 177,628 tourists from South Asian countries and 122,203 visitors from other countries visited the area, said Chief of Annapurna Conservation Area Project, Rabin Kadaria. </p>\n\n\n\n<p>A total of 244,045 tourists visited the area in 2024, while 181,000 visited in 2019. Annapurna Base Camp, Mardi Himal, Ghandruk, Tilicho Lake, Thorang La Bhanjyang, Upper Mustang, and the Muktinath area are major tourism destinations for both domestic and foreign tourists in the Annapurna region.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Gandaki, January 2 The Annapurna area welcomed 299,831 foreign tourists in 2025. Of them, 177,628 tourists from South Asian countries and 122,203 visitors from other countries visited the area, said Chief of Annapurna Conservation Area Project, Rabin Kadaria. A total of 244,045 tourists visited the area in 2024, while 181,000 visited in 2019. Annapurna Base [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 12,
+    "featured_media": 519730,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "footnotes": ""
+    },
+    "categories": [
+      9
+    ],
+    "tags": [
+      59
+    ],
+    "class_list": [
+      "post-577443",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-travel",
+      "tag-annapurna"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/577443",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/12"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=577443"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/577443/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 577444,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/577443/revisions/577444"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/519730"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media?parent=577443"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories?post=577443"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags?post=577443"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 12,
+          "name": "Sangita Shrestha",
+          "url": "",
+          "description": "",
+          "link": "https://english.onlinekhabar.com/author/sangita",
+          "slug": "sangita",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/ea6bfb1e962da1375acc8256b985218a15e7e0f963b130909119b883bac9e3c0?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/ea6bfb1e962da1375acc8256b985218a15e7e0f963b130909119b883bac9e3c0?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/ea6bfb1e962da1375acc8256b985218a15e7e0f963b130909119b883bac9e3c0?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/12",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 519730,
+          "date": "2023-02-15T10:06:15",
+          "slug": "trekking-in-nepal-1",
+          "type": "attachment",
+          "link": "https://english.onlinekhabar.com/a-guide-to-trekking-in-nepal.html/trekking-in-nepal-1",
+          "title": {
+            "rendered": "trekking in Nepal (1)"
+          },
+          "author": 6,
+          "featured_media": 0,
+          "caption": {
+            "rendered": "<p>A view from Annapurna base camp. Photo: Anuska Pradhan</p>\n"
+          },
+          "alt_text": "A view from Annapurna base camp. Photo: Anuska Pradhan",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 2560,
+            "height": 1920,
+            "file": "2023/02/trekking-in-Nepal-1-scaled.jpg",
+            "filesize": 1009809,
+            "sizes": {
+              "medium": {
+                "file": "trekking-in-Nepal-1-300x225.jpg",
+                "width": 300,
+                "height": 225,
+                "filesize": 19526,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-300x225.jpg"
+              },
+              "large": {
+                "file": "trekking-in-Nepal-1-1024x768.jpg",
+                "width": 1024,
+                "height": 768,
+                "filesize": 195802,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-1024x768.jpg"
+              },
+              "thumbnail": {
+                "file": "trekking-in-Nepal-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 7300,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "trekking-in-Nepal-1-768x576.jpg",
+                "width": 768,
+                "height": 576,
+                "filesize": 112962,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-768x576.jpg"
+              },
+              "1536x1536": {
+                "file": "trekking-in-Nepal-1-1536x1152.jpg",
+                "width": 1536,
+                "height": 1152,
+                "filesize": 417791,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-1536x1152.jpg"
+              },
+              "2048x2048": {
+                "file": "trekking-in-Nepal-1-2048x1536.jpg",
+                "width": 2048,
+                "height": 1536,
+                "filesize": 694409,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-2048x1536.jpg"
+              },
+              "full": {
+                "file": "trekking-in-Nepal-1-scaled.jpg",
+                "width": 2560,
+                "height": 1920,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            },
+            "original_image": "trekking-in-Nepal-1.jpg"
+          },
+          "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2023/02/trekking-in-Nepal-1-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/519730",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/6"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=519730"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 519621,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/519621"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 9,
+            "link": "https://english.onlinekhabar.com/category/travel",
+            "name": "Travel",
+            "slug": "travel",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/9",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=9"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "id": 59,
+            "link": "https://english.onlinekhabar.com/tag/annapurna",
+            "name": "Annapurna",
+            "slug": "annapurna",
+            "taxonomy": "post_tag",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags/59",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?tags=59"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
     "id": 577437,
     "date": "2026-01-01T17:16:06",
     "date_gmt": "2026-01-01T11:31:06",
