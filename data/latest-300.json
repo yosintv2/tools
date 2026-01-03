@@ -7877,7 +7877,7 @@
       "_company_tagline": "",
       "_company_twitter": "",
       "_company_video": "",
-      "_filled": 0,
+      "_filled": 1,
       "_featured": 0,
       "_remote_position": 0,
       "_job_salary": "",
@@ -7902,7 +7902,8 @@
       "4": "has-post-thumbnail",
       "5": "hentry",
       "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
+      "8": "job-type-full-time",
+      "9": "job_position_filled"
     },
     "_links": {
       "self": [
