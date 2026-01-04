@@ -1,4 +1,5 @@
-{
+[
+  {
   "lesson": 26,
   "title": "Minna no Nihongo Lesson 26: Situation Explanations (ん)です",
   "level": "N4",
@@ -99,4 +100,94 @@
       ]
     }
   ]
+},
+
+{
+  "lesson": 27,
+  "title": "Minna no Nihongo Lesson 27: Potential Form & Ability",
+  "level": "N4",
+  "connection_structure": {
+    "verbs": {
+      "form": "Potential Form (Kanou-kei)",
+      "rules": [
+        { "base": "Group 1 (Godan)", "example": "kakimasu (write) -> kakemasu", "potential": "kakemasu (can write)" },
+        { "base": "Group 2 (Ichidan)", "example": "tabemasu (eat) -> taberaremasu", "potential": "taberaremasu (can eat)" },
+        { "base": "Group 3 (Irregular)", "example": "kimasu (come) -> koraremasu", "potential": "koraremasu (can come)" },
+        { "base": "Group 3 (Irregular)", "example": "shimasu (do) -> dekimasu", "potential": "dekimasu (can do)" }
+      ]
+    },
+    "particles_change": {
+      "form": "Object Marker Shift",
+      "rules": [
+        { "base": "Standard", "example": "Nihongo o hanashimasu", "potential_shift": "Nihongo ga hanasemasu" }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "Potential Verbs (Ability/Possibility)",
+      "meaning": "Used to express that someone has the ability to do something or that an action is possible in a certain situation.",
+      "examples": [
+        {
+          "jp": "私は日本語が少し話せます。",
+          "romaji": "Watashi wa nihongo ga sukoshi hanasemasu.",
+          "en": "I can speak a little Japanese."
+        },
+        {
+          "jp": "この銀行でドルが換えられます。",
+          "romaji": "Kono ginkou de doru ga kaeraremasu.",
+          "en": "You can exchange dollars at this bank."
+        }
+      ]
+    },
+    {
+      "point": "Mieru vs. Mirareru & Kikoeru vs. Kikeru",
+      "meaning": "Mieru/Kikoeru are for natural perception (without effort); Mirareru/Kikeru are for intentional potentiality (with effort or opportunity).",
+      "examples": [
+        {
+          "jp": "窓から山が見えます。",
+          "romaji": "Mado kara yama ga miemasu.",
+          "en": "The mountain can be seen from the window (naturally)."
+        },
+        {
+          "jp": "忙しいですから、テレビが見られません。",
+          "romaji": "Isogashii desu kara, terebi ga miraremasen.",
+          "en": "Because I'm busy, I can't watch TV (opportunity/time)."
+        },
+        {
+          "jp": "ラジオの音が聞こえます。",
+          "romaji": "Rajio no oto ga kikoえます。",
+          "en": "The sound of the radio can be heard (naturally)."
+        }
+      ]
+    },
+    {
+      "point": "Shika ... Masen (Only)",
+      "meaning": "Used with a negative verb to mean 'only,' implying that the amount is less than expected.",
+      "examples": [
+        {
+          "jp": "ローマ字しか書けません。",
+          "romaji": "Rōmaji shika kakemasen.",
+          "en": "I can only write Romaji (and nothing else)."
+        },
+        {
+          "jp": "ひらがなだけ書けます。",
+          "romaji": "Hiragana dake kakemasu.",
+          "en": "I can write Hiragana (focusing on what I can do)."
+        }
+      ]
+    },
+    {
+      "point": "Particle 'Wa' for Contrast",
+      "meaning": "Used to contrast two things or emphasize a difference.",
+      "examples": [
+        {
+          "jp": "ワインは飲みますが、ビールは飲みません。",
+          "romaji": "Wain wa nomimasu ga, bīru wa nomimasen.",
+          "en": "I drink wine, but I don't drink beer."
+        }
+      ]
+    }
+  ]
 }
+]
