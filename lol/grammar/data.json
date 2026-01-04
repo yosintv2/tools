@@ -283,5 +283,144 @@
         ]
       }
     ]
-  }
+  },
+{
+  "lesson": 28,
+  "title": "みんなの日本語 第28課：意向・同時・前後",
+  "english_title": "Minna no Nihongo Lesson 28: Intention, Simultaneous Actions & Sequence",
+  "level": "N4",
+  "connection_structure": {
+    "volitional_form": {
+      "form": "意向形 (Volitional form / 〜よう・ましょう)",
+      "rules": [
+        {
+          "base": "五段動詞 (Godan verbs)",
+          "base_en": "u-verbs",
+          "example": "書く → 書こう",
+          "example_en": "write → let's write / I will write",
+          "form_result": "書こう / 書きましょう",
+          "form_result_en": "Let's write / I intend to write"
+        },
+        {
+          "base": "一段動詞 (Ichidan verbs)",
+          "base_en": "ru-verbs",
+          "example": "食べる → 食べよう",
+          "example_en": "eat → let's eat / I will eat",
+          "form_result": "食べよう / 食べましょう",
+          "form_result_en": "Let's eat / I intend to eat"
+        },
+        {
+          "base": "する (suru)",
+          "base_en": "do",
+          "example": "する → しよう",
+          "example_en": "do → let's do",
+          "form_result": "しよう / しましょう",
+          "form_result_en": "Let's do / I will do"
+        },
+        {
+          "base": "来る (kuru)",
+          "base_en": "come",
+          "example": "来る → 来よう",
+          "example_en": "come → let's come",
+          "form_result": "来よう / 来ましょう",
+          "form_result_en": "Let's come / I will come"
+        }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "〜よう / 〜ましょう (意向形)",
+      "point_en": "Volitional Form - Let's / I intend to",
+      "meaning": "提案（一緒に〜しよう）または自分の意向を表す",
+      "meaning_en": "Make suggestions (let's ...) or express one's own intention",
+      "examples": [
+        {
+          "jp": "今晩一緒に映画を見に行きましょう。",
+          "romaji": "Konban issho ni eiga o mi ni ikimashou.",
+          "en": "Let's go watch a movie together tonight."
+        },
+        {
+          "jp": "明日早く起きよう。",
+          "romaji": "Ashita hayaku okiyou.",
+          "en": "I will wake up early tomorrow. (personal intention)"
+        },
+        {
+          "jp": "もう少し休もうか。",
+          "romaji": "Mou sukoshi yasumou ka.",
+          "en": "Shall we rest a little more?"
+        }
+      ]
+    },
+    {
+      "point": "〜つもりだ",
+      "point_en": "〜tsumori da (intention / plan)",
+      "meaning": "自分の予定・意向を表す",
+      "meaning_en": "Express one's plan or intention",
+      "examples": [
+        {
+          "jp": "来年日本へ旅行するつもりです。",
+          "romaji": "Rainen Nihon e ryokou suru tsumori desu.",
+          "en": "I plan/intend to travel to Japan next year."
+        },
+        {
+          "jp": "今日は勉強しないつもりです。",
+          "romaji": "Kyou wa benkyou shinai tsumori desu.",
+          "en": "I don't intend to study today."
+        },
+        {
+          "jp": "ダイエットするつもりだったけど、失敗しました。",
+          "romaji": "Daietto suru tsumori datta kedo, shippai shimashita.",
+          "en": "I had intended to go on a diet, but I failed."
+        }
+      ]
+    },
+    {
+      "point": "〜前に / 〜た後で",
+      "point_en": "Mae ni (before) / Ato de (after)",
+      "meaning": "動作の前後関係を表す",
+      "meaning_en": "Express the sequence of actions: before doing / after doing",
+      "examples": [
+        {
+          "jp": "ご飯を食べる前に、手を洗います。",
+          "romaji": "Gohan o taberu mae ni, te o araimasu.",
+          "en": "I wash my hands before eating."
+        },
+        {
+          "jp": "宿題をした後で、ゲームをします。",
+          "romaji": "Shukudai o shita ato de, geemu o shimasu.",
+          "en": "I play games after doing my homework."
+        },
+        {
+          "jp": "日本に行く前に、日本語を勉強しました。",
+          "romaji": "Nihon ni iku mae ni, nihongo o benkyou shimashita.",
+          "en": "I studied Japanese before going to Japan."
+        }
+      ]
+    },
+    {
+      "point": "〜ながら",
+      "point_en": "〜nagara (while - simultaneous actions)",
+      "meaning": "二つの動作を同時に行う",
+      "meaning_en": "Do two actions at the same time (one is usually the main action)",
+      "examples": [
+        {
+          "jp": "音楽を聴きながら勉強します。",
+          "romaji": "Ongaku o kiki nagara benkyou shimasu.",
+          "en": "I study while listening to music."
+        },
+        {
+          "jp": "歩きながら電話をしています。",
+          "romaji": "Aruki nagara denwa o shite imasu.",
+          "en": "I'm talking on the phone while walking."
+        },
+        {
+          "jp": "テレビを見ながらご飯を食べないでください。",
+          "romaji": "Terebi o mi nagara gohan o tabenaide kudasai.",
+          "en": "Please don't eat while watching TV."
+        }
+      ]
+    }
+  ]
+}
 ]
