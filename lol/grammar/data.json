@@ -422,5 +422,183 @@
       ]
     }
   ]
+},
+
+{
+  "lesson": 29,
+  "title": "みんなの日本語 第29課：受身形・使役形・可能形の複合",
+  "english_title": "Minna no Nihongo Lesson 29: Passive, Causative, and Complex Forms",
+  "level": "N4",
+  "connection_structure": {
+    "passive_form": {
+      "form": "受身形 (Passive form / 〜られる)",
+      "rules": [
+        {
+          "base": "五段動詞 (Godan verbs)",
+          "base_en": "u-verbs",
+          "example": "書く → 書かれる",
+          "example_en": "write → be written"
+        },
+        {
+          "base": "一段動詞 (Ichidan verbs)",
+          "base_en": "ru-verbs",
+          "example": "食べる → 食べられる",
+          "example_en": "eat → be eaten"
+        },
+        {
+          "base": "する (suru)",
+          "base_en": "do",
+          "example": "する → される",
+          "example_en": "do → be done"
+        }
+      ]
+    },
+    "causative_form": {
+      "form": "使役形 (Causative form / 〜せる・させる)",
+      "rules": [
+        {
+          "base": "五段動詞 (Godan verbs)",
+          "base_en": "u-verbs",
+          "example": "書く → 書かせる",
+          "example_en": "write → make/let write"
+        },
+        {
+          "base": "一段動詞 (Ichidan verbs)",
+          "base_en": "ru-verbs",
+          "example": "食べる → 食べさせる",
+          "example_en": "eat → make/let eat"
+        },
+        {
+          "base": "する (suru)",
+          "base_en": "do",
+          "example": "する → させる",
+          "example_en": "do → make/let do"
+        }
+      ]
+    },
+    "causative_passive": {
+      "form": "使役受身形 (Causative-Passive / 〜せられる・させられる)",
+      "rules": [
+        {
+          "base": "五段動詞",
+          "example": "書かせる → 書かせられる",
+          "example_en": "be made to write"
+        },
+        {
+          "base": "一段動詞",
+          "example": "食べさせる → 食べさせられる",
+          "example_en": "be made to eat"
+        }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "受身形 (Passive Form)",
+      "point_en": "Passive Voice",
+      "meaning": "動作を受ける側を主語にする形で、何かをされる状況を表現する（迷惑のニュアンスが多い）",
+      "meaning_en": "Used when the subject receives an action (often implies inconvenience or annoyance)",
+      "examples": [
+        {
+          "jp": "私は友達に大事な誕生日ケーキを全部食べられてしまって、本当にがっかりしてしまいました。",
+          "romaji": "Watashi wa tomodachi ni daiji na tanjoubi keeki o zenbu taberarete shimatte, hontou ni gakkari shite shimaimashita.",
+          "en": "My important birthday cake was completely eaten by my friend, and I was really disappointed."
+        },
+        {
+          "jp": "宿題を先生にものすごくたくさん出されてしまって、週末はほとんど勉強することしかできなくなりました。",
+          "romaji": "Shukudai o sensei ni monosugoku takusan dasarete shimatte, shuumatsu wa hotondo benkyou suru koto shika dekinaku narimashita.",
+          "en": "I was given an enormous amount of homework by the teacher, and as a result I could hardly do anything but study over the weekend."
+        },
+        {
+          "jp": "大切な書類を弟に勝手に読まれてしまって、すごく怒ってしまって一晩中口をきかなかったです。",
+          "romaji": "Taisetsu na shorui o otouto ni katte ni yomarete shimatte, sugoku okotte shimatte hitobanjuu kuchi o kikanakatta desu.",
+          "en": "My important documents were read by my younger brother without permission, I got so angry that I didn't speak to him all night."
+        },
+        {
+          "jp": "電車の中で財布を誰かに盗まれてしまって、警察に届け出た後もかなり落ち込んでしまいました。",
+          "romaji": "Densha no naka de saifu o dareka ni nusumarete shimatte, keisatsu ni todoketa ato mo kanari ochikonde shimaimashita.",
+          "en": "My wallet was stolen by someone on the train, and even after reporting it to the police, I remained quite depressed."
+        },
+        {
+          "jp": "秘密の話を同僚に聞かれてしまって、会社でとても気まずい雰囲気になってしまいました。",
+          "romaji": "Himitsu no hanashi o douryou ni kikarete shimatte, kaisha de totemo kimazui fun'iki ni natte shimaimashita.",
+          "en": "My secret conversation was overheard by a colleague, and the atmosphere at work became extremely awkward."
+        },
+        {
+          "jp": "旅行の写真を家族全員に見られてしまって、恥ずかしくて顔を赤くしてしまいました。",
+          "romaji": "Ryokou no shashin o kazoku zen'in ni mirarete shimatte, hazukashikute kao o akaku shite shimaimashita.",
+          "en": "My travel photos were seen by the whole family, and I turned red with embarrassment."
+        }
+      ]
+    },
+    {
+      "point": "使役形 (Causative Form)",
+      "point_en": "Causative Voice",
+      "meaning": "誰かに何かをさせる状況を表し、許可・強制・面倒をかけるニュアンスを含む",
+      "meaning_en": "Make or let someone do something (can imply permission, coercion, or causing trouble)",
+      "examples": [
+        {
+          "jp": "親は私に毎日部屋を掃除させてくれますが、正直言うと時々本当に面倒くさいと感じてしまいます。",
+          "romaji": "Oya wa watashi ni mainichi heya o souji sasetekuremasu ga, shoujiki iu to tokidoki hontou ni mendokusai to kanjiteshimaimasu.",
+          "en": "My parents make me clean my room every day, but honestly sometimes I really feel it's troublesome."
+        },
+        {
+          "jp": "先生が生徒たちに難しい問題をたくさん解かせて、みんなが苦労している様子を見てとても満足そうでした。",
+          "romaji": "Sensei ga seito-tachi ni muzukashii mondai o takusan tokasete, minna ga kurou shite iru yousu o mite totemo manzoku sou deshita.",
+          "en": "The teacher made the students solve many difficult problems and looked very satisfied seeing everyone struggling."
+        },
+        {
+          "jp": "上司に急にプレゼンの資料を作らせられてしまって、徹夜で仕上げることになってしまいました。",
+          "romaji": "Joushi ni kyuu ni purezen no shiryou o tsukurasarete shimatte, tetsuya de shiage koto ni natte shimaimashita.",
+          "en": "I was suddenly made by my boss to prepare presentation materials, and ended up having to finish them overnight."
+        },
+        {
+          "jp": "子供に好きなアイスクリームを買わせてあげたら、とても嬉しそうな笑顔を見せてくれました。",
+          "romaji": "Kodomo ni suki na aisukuriimu o kawasete agetara, totemo ureshii sou na egao o misete kuremashita.",
+          "en": "When I let my child buy their favorite ice cream, they showed me a very happy smile."
+        },
+        {
+          "jp": "友達に運転を代わらせてあげたら、すごく緊張しながらも楽しそうに運転してくれました。",
+          "romaji": "Tomodachi ni unten o kawarasete agetara, sugoku kinchou shinagara mo tanoshii sou ni unten shite kuremashita.",
+          "en": "When I let my friend drive instead, they drove very nervously but seemed to enjoy it."
+        }
+      ]
+    },
+    {
+      "point": "使役受身形 (Causative-Passive Form)",
+      "point_en": "Causative-Passive",
+      "meaning": "誰かに強制されて何かをさせられる状況を表現する（迷惑感が強い）",
+      "meaning_en": "Being forced/made to do something by someone else (strong sense of annoyance)",
+      "examples": [
+        {
+          "jp": "私は上司に急に残業をさせられてしまって、家族との大切な約束をキャンセルせざるを得ませんでした。",
+          "romaji": "Watashi wa joushi ni kyuu ni zangyou o saserarete shimatte, kazoku to no taisetsu na yakusoku o kyanseru sezaru o emasen deshita.",
+          "en": "I was suddenly forced by my boss to work overtime, and had no choice but to cancel an important family appointment."
+        },
+        {
+          "jp": "子供の頃、母親に嫌いな野菜を無理やり食べさせられて、いつも泣きながら食べていたのを今でもはっきり覚えています。",
+          "romaji": "Kodomo no koro, hahaoya ni kirai na yasai o muri yari tabesaserarete, itsumo naki nagara tabete ita no o ima demo hakkiri oboete imasu.",
+          "en": "When I was a child, I was forced by my mother to eat vegetables I hated, and I still clearly remember always eating them while crying."
+        },
+        {
+          "jp": "同僚に自分の仕事を全部押し付けられてしまって、結局徹夜で終わらせるしかなくなってしまいました。",
+          "romaji": "Douryou ni jibun no shigoto o zenbu oshitsukerarete shimatte, kekkyoku tetsuya de owaraseru shika nakunatte shimaimashita.",
+          "en": "I was made to do all my colleague's work, and in the end I had no choice but to finish it by staying up all night."
+        },
+        {
+          "jp": "先生に難しい漢字を何十個も覚えさせられてしまって、頭がパンクしそうでした。",
+          "romaji": "Sensei ni muzukashii kanji o nanjuukko mo oboesaserarete shimatte, atama ga panku shisou deshita.",
+          "en": "I was made by the teacher to memorize dozens of difficult kanji, and my head felt like it was going to explode."
+        },
+        {
+          "jp": "先輩に嫌いなカラオケに行かせられてしまって、終電ギリギリまで歌わされて本当に疲れました。",
+          "romaji": "Senpai ni kirai na karaoke ni ikaserarete shimatte, shuuden girigiri made utawasarete hontou ni tsukaremashita.",
+          "en": "I was forced by my senior to go to karaoke which I hate, and made to sing until the last train — I was really exhausted."
+        }
+      ]
+    }
+  ]
 }
+
+  
 ]
