@@ -2,75 +2,106 @@
   {
     "lesson": 26,
     "title": "みんなの日本語 第26課：状況説明の「んです」",
+    "english_title": "Minna no Nihongo Lesson 26: Explaining Situations with ~n desu",
     "level": "N4",
     "connection_structure": {
       "verbs": {
-        "form": "普通形",
+        "form": "普通形 (Plain form)",
         "rules": [
           {
-            "base": "辞書形",
+            "base": "辞書形 (Dictionary form)",
+            "base_en": "Dictionary form (masu → plain)",
             "example": "行く",
-            "plus_ndesu": "行くんです"
+            "example_en": "go",
+            "plus_ndesu": "行くんです",
+            "plus_ndesu_en": "go (explanation)"
           },
           {
-            "base": "ない形",
+            "base": "ない形 (Negative plain form)",
+            "base_en": "Negative plain form",
             "example": "行かない",
-            "plus_ndesu": "行かないんです"
+            "example_en": "don't go",
+            "plus_ndesu": "行かないんです",
+            "plus_ndesu_en": "don't go (explanation)"
           },
           {
-            "base": "た形",
+            "base": "た形 (Past plain form)",
+            "base_en": "Past plain form",
             "example": "行った",
-            "plus_ndesu": "行ったんです"
+            "example_en": "went",
+            "plus_ndesu": "行ったんです",
+            "plus_ndesu_en": "went (explanation)"
           },
           {
-            "base": "なかった形",
+            "base": "なかった形 (Past negative plain form)",
+            "base_en": "Past negative plain form",
             "example": "行かなかった",
-            "plus_ndesu": "行かなかったんです"
+            "example_en": "didn't go",
+            "plus_ndesu": "行かなかったんです",
+            "plus_ndesu_en": "didn't go (explanation)"
           }
         ]
       },
       "i_adjectives": {
-        "form": "普通形",
+        "form": "普通形 (Plain form)",
         "rules": [
           {
-            "base": "現在形",
+            "base": "現在形 (Present)",
+            "base_en": "Present tense",
             "example": "暑い",
-            "plus_ndesu": "暑いんです"
+            "example_en": "hot",
+            "plus_ndesu": "暑いんです",
+            "plus_ndesu_en": "it's hot (explanation)"
           },
           {
-            "base": "過去形",
+            "base": "過去形 (Past)",
+            "base_en": "Past tense",
             "example": "暑かった",
-            "plus_ndesu": "暑かったんです"
+            "example_en": "was hot",
+            "plus_ndesu": "暑かったんです",
+            "plus_ndesu_en": "it was hot (explanation)"
           }
         ]
       },
       "na_adjectives": {
-        "form": "普通形（だ→な）",
+        "form": "普通形（だ→な） (Plain form: da → na)",
         "rules": [
           {
-            "base": "現在形",
+            "base": "現在形 (Present)",
+            "base_en": "Present tense",
             "example": "暇（だ）",
-            "plus_ndesu": "暇なんです"
+            "example_en": "free / bored (da)",
+            "plus_ndesu": "暇なんです",
+            "plus_ndesu_en": "I'm free/bored (explanation)"
           },
           {
-            "base": "過去形",
+            "base": "過去形 (Past)",
+            "base_en": "Past tense",
             "example": "暇だった",
-            "plus_ndesu": "暇だったんです"
+            "example_en": "was free/bored",
+            "plus_ndesu": "暇だったんです",
+            "plus_ndesu_en": "I was free/bored (explanation)"
           }
         ]
       },
       "nouns": {
-        "form": "名詞 + な",
+        "form": "名詞 + な (Noun + na)",
         "rules": [
           {
-            "base": "現在形",
+            "base": "現在形 (Present)",
+            "base_en": "Present tense",
             "example": "病気（だ）",
-            "plus_ndesu": "病気なんです"
+            "example_en": "sick (da)",
+            "plus_ndesu": "病気なんです",
+            "plus_ndesu_en": "I'm sick (explanation)"
           },
           {
-            "base": "過去形",
+            "base": "過去形 (Past)",
+            "base_en": "Past tense",
             "example": "病気だった",
-            "plus_ndesu": "病気だったんです"
+            "example_en": "was sick",
+            "plus_ndesu": "病気だったんです",
+            "plus_ndesu_en": "I was sick (explanation)"
           }
         ]
       }
@@ -78,7 +109,9 @@
     "grammar_points": [
       {
         "point": "説明・理由",
+        "point_en": "Explanation / Reason",
         "meaning": "状況の説明や理由を強調する",
+        "meaning_en": "Explains or emphasizes the reason for a situation",
         "examples": [
           {
             "jp": "どうして食べないんですか。お腹が痛いんですか。",
@@ -99,7 +132,9 @@
       },
       {
         "point": "依頼・お願い（丁寧）",
+        "point_en": "Polite Request with Background",
         "meaning": "丁寧な依頼をするときに背景を説明する",
+        "meaning_en": "Soft/polite request with explanation of situation",
         "examples": [
           {
             "jp": "生け花を習いたいんですけど、いい先生を紹介していただけませんか。",
@@ -110,17 +145,14 @@
             "jp": "エアコンが動かないんですけど、見ていただけませんか。",
             "romaji": "Eakon ga ugokanai n desu ga, mite itadakemasen ka?",
             "en": "The air conditioner isn't working. Could you please take a look?"
-          },
-          {
-            "jp": "道が分からないんですけど、教えていただけませんか。",
-            "romaji": "Michi ga wakaranai n desu ga, oshiete itadakemasen ka?",
-            "en": "I don't know the way. Could you please tell me?"
           }
         ]
       },
       {
         "point": "相談・アドバイスを求める",
+        "point_en": "Asking for Advice / Suggestion",
         "meaning": "どうしたらいいか、何をしたらいいかを尋ねる",
+        "meaning_en": "Asking what/how one should do (seeking advice)",
         "examples": [
           {
             "jp": "お寺を見学したいんですけど、どう行ったらいいですか。",
@@ -131,11 +163,6 @@
             "jp": "財布を忘れたんですけど、どうしたらいいですか。",
             "romaji": "Saifu o wasureta n desu ga, dou shitara ii desu ka?",
             "en": "I forgot my wallet. What should I do?"
-          },
-          {
-            "jp": "友達が結婚するんですけど、何をあげたらいいですか。",
-            "romaji": "Tomodachi ga kekkon suru n desu ga, nani o agetara ii desu ka?",
-            "en": "My friend is getting married. What should I give them?"
           }
         ]
       }
@@ -144,39 +171,55 @@
   {
     "lesson": 27,
     "title": "みんなの日本語 第27課：可能形・能力",
+    "english_title": "Minna no Nihongo Lesson 27: Potential Form & Ability",
     "level": "N4",
     "connection_structure": {
       "verbs": {
-        "form": "可能形（かのうけい）",
+        "form": "可能形 (Potential form / かのうけい)",
         "rules": [
           {
-            "base": "五段動詞",
+            "base": "五段動詞 (Group 1 / Godan verbs)",
+            "base_en": "Godan verbs (u-verbs)",
             "example": "書きます → 書けます",
-            "potential": "書けます"
+            "example_en": "write → can write",
+            "potential": "書けます",
+            "potential_en": "can write"
           },
           {
-            "base": "一段動詞",
+            "base": "一段動詞 (Group 2 / Ichidan verbs)",
+            "base_en": "Ichidan verbs (ru-verbs)",
             "example": "食べます → 食べられます",
-            "potential": "食べられます"
+            "example_en": "eat → can eat",
+            "potential": "食べられます",
+            "potential_en": "can eat"
           },
           {
-            "base": "不規則動詞（来る）",
+            "base": "不規則動詞 - 来る (Irregular - kuru)",
+            "base_en": "Irregular verb - come",
             "example": "来ます → 来られます",
-            "potential": "来られます"
+            "example_en": "come → can come",
+            "potential": "来られます",
+            "potential_en": "can come"
           },
           {
-            "base": "不規則動詞（する）",
+            "base": "不規則動詞 - する (Irregular - suru)",
+            "base_en": "Irregular verb - do",
             "example": "します → できます",
-            "potential": "できます"
+            "example_en": "do → can do",
+            "potential": "できます",
+            "potential_en": "can do"
           }
         ]
       },
       "particles_change": {
         "form": "目的語の助詞変化（を→が）",
+        "form_en": "Object particle change (o → ga)",
         "rules": [
           {
             "base": "日本語を話します",
-            "potential_shift": "日本語が話せます"
+            "base_en": "speak Japanese (normal)",
+            "potential_shift": "日本語が話せます",
+            "potential_shift_en": "can speak Japanese (potential form)"
           }
         ]
       }
@@ -184,60 +227,53 @@
     "grammar_points": [
       {
         "point": "可能動詞（能力・可能性）",
+        "point_en": "Potential Verbs (Ability / Possibility)",
         "meaning": "できること、可能なことを表現する",
+        "meaning_en": "Express ability or possibility",
         "examples": [
           {
             "jp": "私は日本語が少し話せます。",
             "romaji": "Watashi wa nihongo ga sukoshi hanasemasu.",
             "en": "I can speak a little Japanese."
-          },
-          {
-            "jp": "この銀行でドルが両替られます。",
-            "romaji": "Kono ginkou de doru ga kaeraremasu.",
-            "en": "You can exchange dollars at this bank."
           }
         ]
       },
       {
         "point": "見える・聞こえる vs 見られる・聞ける",
+        "point_en": "Mieru/Kikoeru vs Mirareru/Kikeru",
         "meaning": "自然に感じられる vs 努力・機会があってできる",
+        "meaning_en": "Natural/spontaneous vs intentional/possible with effort",
         "examples": [
           {
             "jp": "窓から山が見えます。",
             "romaji": "Mado kara yama ga miemasu.",
-            "en": "The mountains can be seen from the window. (naturally)"
+            "en": "Mountains can be seen from the window. (naturally)"
           },
           {
             "jp": "忙しいから、テレビが見られません。",
             "romaji": "Isogashii desu kara, terebi ga miraremasen.",
-            "en": "I'm busy, so I can't watch TV. (no time/opportunity)"
-          },
-          {
-            "jp": "ラジオの音が聞こえます。",
-            "romaji": "Rajio no oto ga kikoemasu.",
-            "en": "I can hear the radio. (naturally)"
+            "en": "I'm busy, so I can't watch TV. (no opportunity)"
           }
         ]
       },
       {
         "point": "しか…ません（～しかできない）",
+        "point_en": "Shika ... masen (only / nothing but)",
         "meaning": "期待より少ない量・程度を強調",
+        "meaning_en": "Emphasizes a small/limited amount (negative nuance)",
         "examples": [
           {
             "jp": "ローマ字しか書けません。",
             "romaji": "Rōmaji shika kakemasen.",
             "en": "I can only write in Roman letters."
-          },
-          {
-            "jp": "ひらがなだけ書けます。",
-            "romaji": "Hiragana dake kakemasu.",
-            "en": "I can write hiragana (focusing on what I can do)."
           }
         ]
       },
       {
         "point": "は（対比）",
+        "point_en": "Wa particle (contrast)",
         "meaning": "二つのことを対比させる",
+        "meaning_en": "Contrast between two items/states",
         "examples": [
           {
             "jp": "ワインは飲みますが、ビールは飲みません。",
