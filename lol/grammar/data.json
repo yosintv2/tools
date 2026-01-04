@@ -1,0 +1,102 @@
+{
+  "lesson": 26,
+  "title": "Minna no Nihongo Lesson 26: Situation Explanations (ん)です",
+  "level": "N4",
+  "connection_structure": {
+    "verbs": {
+      "form": "Plain Form",
+      "rules": [
+        { "base": "Dictionary", "example": "行く (iku)", "plus_ndesu": "行くんです (iku n desu)" },
+        { "base": "Nai-form", "example": "行かない (ikanai)", "plus_ndesu": "行かないんです (ikanai n desu)" },
+        { "base": "Ta-form", "example": "行った (itta)", "plus_ndesu": "行ったんです (itta n desu)" },
+        { "base": "Nakatta", "example": "行かなかった (ikanakatta)", "plus_ndesu": "行かなかったんです (ikanakatta n desu)" }
+      ]
+    },
+    "i_adjectives": {
+      "form": "Plain Form",
+      "rules": [
+        { "base": "Present", "example": "暑い (atsui)", "plus_ndesu": "暑いんです (atsui n desu)" },
+        { "base": "Past", "example": "暑かった (atsukatta)", "plus_ndesu": "暑かったんです (atsukatta n desu)" }
+      ]
+    },
+    "na_adjectives": {
+      "form": "Plain Form (Replace 'da' with 'na')",
+      "rules": [
+        { "base": "Present", "example": "暇[だ] (hima [da])", "plus_ndesu": "暇なんです (hima na n desu)" },
+        { "base": "Past", "example": "暇だった (hima datta)", "plus_ndesu": "暇だったんです (hima datta n desu)" }
+      ]
+    },
+    "nouns": {
+      "form": "Noun + な",
+      "rules": [
+        { "base": "Present", "example": "病気[だ] (byouki [da])", "plus_ndesu": "病気なんです (byouki na n desu)" },
+        { "base": "Past", "example": "病気だった (byouki datta)", "plus_ndesu": "病気だったんです (byouki datta n desu)" }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "～んです (Explanation/Reason)",
+      "meaning": "Provides an explanation or emphasizes the reason for a situation.",
+      "examples": [
+        {
+          "jp": "どうして食べないんですか。お腹が痛いんですか。",
+          "romaji": "Doushite tabenai n desu ka? Onaka ga itai n desu ka?",
+          "en": "Why aren't you eating? Does your stomach hurt?"
+        },
+        {
+          "jp": "昨日、飲みすぎたんです。",
+          "romaji": "Kinou, nomisugita n desu.",
+          "en": "It's because I drank too much yesterday."
+        },
+        {
+          "jp": "用事があるんです。お先に失礼します。",
+          "romaji": "Youji ga aru n desu. Osaki ni shitsurei shimasu.",
+          "en": "I have some business to attend to. Please excuse me for leaving early."
+        }
+      ]
+    },
+    {
+      "point": "～んですが、～ていただけませんか",
+      "meaning": "Could you please do [X]? (Very polite request with background context).",
+      "examples": [
+        {
+          "jp": "生け花を習いたいんですが、いい先生を紹介していただけませんか。",
+          "romaji": "Ikebana o naraitai n desu ga, ii sensei o shoukai shite itadakemasen ka?",
+          "en": "I want to learn Ikebana; would you mind introducing a good teacher to me?"
+        },
+        {
+          "jp": "エアコンが動かないんですが、見ていただけませんか。",
+          "romaji": "Eakon ga ugokanai n desu ga, mite itadakemasen ka?",
+          "en": "The air conditioner isn't working; could you please take a look at it?"
+        },
+        {
+          "jp": "道がわからないんですが、教えていただけませんか。",
+          "romaji": "Michi ga wakaranai n desu ga, oshiete itadakemasen ka?",
+          "en": "I don't know the way; could you please tell me?"
+        }
+      ]
+    },
+    {
+      "point": "～んですが、～たらいいですか",
+      "meaning": "What/How/Where should I [do X]? (Asking for advice/suggestions).",
+      "examples": [
+        {
+          "jp": "お寺を見学したいんですが、どう行ったらいいですか。",
+          "romaji": "Otera o kengaku shitai n desu ga, dou ittara ii desu ka?",
+          "en": "I want to visit the temple; how should I go there?"
+        },
+        {
+          "jp": "財布を忘れたんですが、どうしたらいいですか。",
+          "romaji": "Saifu o wasureta n desu ga, dou shitara ii desu ka?",
+          "en": "I forgot my wallet; what should I do?"
+        },
+        {
+          "jp": "友達が結婚するんですが、何をあげたらいいですか。",
+          "romaji": "Tomodachi ga kekkon suru n desu ga, nani o agetara ii desu ka?",
+          "en": "My friend is getting married; what should I give them?"
+        }
+      ]
+    }
+  ]
+}
