@@ -1,5 +1,193 @@
 [
 {
+  "lesson": 31,
+  "title": "みんなの日本語 第31課：条件形（たら・ば・なら・と）",
+  "english_title": "Minna no Nihongo Lesson 31: Conditional Forms (tara, ba, nara, to)",
+  "level": "N4",
+  "connection_structure": {
+    "tara": {
+      "form": "〜たら (Tara conditional)",
+      "rules": [
+        {
+          "base": "動詞た形 + ら",
+          "example": "行く → 行ったら",
+          "example_en": "go → if/when go"
+        },
+        {
+          "base": "い形容詞 + かったら",
+          "example": "高い → 高かったら",
+          "example_en": "expensive → if expensive"
+        },
+        {
+          "base": "な形容詞 + だったら",
+          "example": "静かだ → 静かだったら",
+          "example_en": "quiet → if quiet"
+        },
+        {
+          "base": "名詞 + だったら",
+          "example": "学生だ → 学生だったら",
+          "example_en": "student → if student"
+        }
+      ]
+    },
+    "ba": {
+      "form": "〜ば (Ba conditional)",
+      "rules": [
+        {
+          "base": "動詞ば形",
+          "example": "行く → 行けば",
+          "example_en": "go → if go"
+        },
+        {
+          "base": "い形容詞 + ければ",
+          "example": "高い → 高ければ",
+          "example_en": "expensive → if expensive"
+        },
+        {
+          "base": "な形容詞 + なら",
+          "example": "静かだ → 静かなら",
+          "example_en": "quiet → if quiet"
+        }
+      ]
+    },
+    "nara": {
+      "form": "〜なら (Nara conditional)",
+      "rules": [
+        {
+          "base": "普通形 + なら",
+          "example": "行く → 行くなら",
+          "example_en": "go → if it's the case that go"
+        },
+        {
+          "base": "名詞・な形容詞 + なら",
+          "example": "学生だ → 学生なら",
+          "example_en": "student → if it's student"
+        }
+      ]
+    },
+    "to": {
+      "form": "〜と (To conditional)",
+      "rules": [
+        {
+          "base": "普通形 + と",
+          "example": "行く → 行くと",
+          "example_en": "go → when/as soon as go"
+        }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "〜たら (Tara conditional)",
+      "point_en": "If/When (tara)",
+      "meaning": "条件や仮定を表し、順序性や発見のニュアンスを含むことが多い",
+      "meaning_en": "If/when... (often with sequence or discovery nuance)",
+      "examples": [
+        {
+          "jp": "明日雨が降ったら、ピクニックに行くのをやめて、家で映画を見ようと思います。",
+          "romaji": "Ashita ame ga futtara, pikunikku ni iku no o yamete, ie de eiga o miyou to omoimasu.",
+          "en": "If it rains tomorrow, I'll cancel the picnic and watch movies at home instead."
+        },
+        {
+          "jp": "駅に着いたら、すぐに連絡してください。待っていますから。",
+          "romaji": "Eki ni tsuitara, sugu ni renraku shite kudasai. Matte imasu kara.",
+          "en": "Please contact me as soon as you arrive at the station. I'll be waiting."
+        },
+        {
+          "jp": "このケーキを食べてみたら、思ったよりずっと甘くてびっくりしました。",
+          "romaji": "Kono keeki o tabete mitara, omotta yori zutto amakute bikkuri shimashita.",
+          "en": "When I tried this cake, it was much sweeter than I expected and I was surprised."
+        },
+        {
+          "jp": "お金が貯まったら、来年家族みんなで海外旅行に行きたいです。",
+          "romaji": "Okane ga tamattara, rainen kazoku minna de kaigai ryokou ni ikitai desu.",
+          "en": "When I've saved enough money, I want to go on an overseas trip with my whole family next year."
+        },
+        {
+          "jp": "試験が終わったら、友達とカラオケに行って、ストレスを全部発散しようと思います。",
+          "romaji": "Shiken ga owattara, tomodachi to karaoke ni itte, sutoresu o zenbu hassan shiyou to omoimasu.",
+          "en": "Once the exam is over, I'm planning to go to karaoke with friends and release all my stress."
+        },
+        {
+          "jp": "新しいスマホを買ったら、すぐに古い方を子供に譲ってあげようと思っています。",
+          "romaji": "Atarashii sumaho o kattara, sugu ni furui hou o kodomo ni yuzutte ageyou to omotte imasu.",
+          "en": "When I buy a new smartphone, I'm thinking of giving the old one to my child right away."
+        }
+      ]
+    },
+    {
+      "point": "〜ば (Ba conditional)",
+      "point_en": "If (ba)",
+      "meaning": "仮定の条件を表し、ば形は比較的フォーマルな響きを持つ",
+      "meaning_en": "If... (more formal/literary tone than tara)",
+      "examples": [
+        {
+          "jp": "早く起きれば、朝ごはんをゆっくり食べられて、気持ちよく学校に行けますよ。",
+          "romaji": "Hayaku okireba, asa gohan o yukkuri taberarete, kimochi yoku gakkou ni ikemasu yo.",
+          "en": "If you wake up early, you can eat breakfast slowly and go to school feeling good."
+        },
+        {
+          "jp": "この薬を飲めば、すぐに熱が下がるはずです。でも飲みすぎないでくださいね。",
+          "romaji": "Kono kusuri o nomeba, sugu ni netsu ga sagaru hazu desu. Demo nomisuginai de kudasai ne.",
+          "en": "If you take this medicine, your fever should go down quickly. But don't take too much."
+        },
+        {
+          "jp": "日本語が上手になれば、日本で仕事を見つけるのもずっと簡単になります。",
+          "romaji": "Nihongo ga jouzu ni nareba, Nihon de shigoto o mitsukeru no mo zutto kantan ni narimasu.",
+          "en": "If you become good at Japanese, finding a job in Japan will become much easier."
+        }
+      ]
+    },
+    {
+      "point": "〜なら (Nara conditional)",
+      "point_en": "If it is the case that... / then",
+      "meaning": "話題になっていることや前提に基づいた条件を表す",
+      "meaning_en": "If we're talking about..., then / in that case",
+      "examples": [
+        {
+          "jp": "明日休みなら、一緒に映画を見に行きませんか？とても面白い作品ですよ。",
+          "romaji": "Ashita yasumi nara, issho ni eiga o mi ni ikimasen ka? Totemo omoshiroi sakuhin desu yo.",
+          "en": "If you're free tomorrow, would you like to go see a movie together? It's a very interesting film."
+        },
+        {
+          "jp": "お金がないなら、僕が少し貸してあげてもいいですよ。でもすぐ返してくださいね。",
+          "romaji": "Okane ga nai nara, boku ga sukoshi kashite agetemo ii desu yo. Demo sugu kaeshite kudasai ne.",
+          "en": "If you don't have money, I can lend you some. But please return it soon."
+        },
+        {
+          "jp": "旅行に行くなら、京都がおすすめです。歴史的な場所がたくさんあって、食べ物も美味しいですから。",
+          "romaji": "Ryokou ni iku nara, Kyouto ga osusume desu. Rekishiteki na basho ga takusan atte, tabemono mo oishii desu kara.",
+          "en": "If you're going on a trip, I recommend Kyoto. There are many historical places, and the food is delicious too."
+        }
+      ]
+    },
+    {
+      "point": "〜と (To conditional)",
+      "point_en": "When / as soon as / whenever",
+      "meaning": "自然な結果や習慣的な出来事を表す（仮定ではなく事実的な条件）",
+      "meaning_en": "When / as soon as / whenever (natural consequence or habitual)",
+      "examples": [
+        {
+          "jp": "春になると、桜がきれいに咲いて、たくさんの人がお花見に来ます。",
+          "romaji": "Haru ni naru to, sakura ga kirei ni saite, takusan no hito ga ohanami ni kimasu.",
+          "en": "When spring comes, the cherry blossoms bloom beautifully and many people come to see them."
+        },
+        {
+          "jp": "このスイッチを押すと、自動的にドアが開きますので、便利ですよ。",
+          "romaji": "Kono suitchi o osu to, jidou teki ni doa ga akimasu node, benri desu yo.",
+          "en": "As soon as you press this switch, the door opens automatically, so it's very convenient."
+        },
+        {
+          "jp": "毎日運動すると、体が軽くなって、疲れにくくなります。",
+          "romaji": "Mainichi undou suru to, karada ga karuku natte, tsukare nikuku narimasu.",
+          "en": "Whenever I exercise every day, my body feels lighter and I get less tired."
+        }
+      ]
+    }
+  ]
+},
+  
+  {
   "lesson": 30,
   "title": "みんなの日本語 第30課：〜ておく・〜てしまう・〜ところ",
   "english_title": "Minna no Nihongo Lesson 30: Preparatory Actions, Completion/Regret, and Timing Expressions",
