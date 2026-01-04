@@ -1,1297 +1,178 @@
 [
 {
-  "lesson": 1,
-  "title": "JLPT N5 第1課：基本の文法（です・ですか・じゃないです）",
-  "english_title": "JLPT N5 Lesson 1: Basic Grammar (desu, desu ka, ja nai desu)",
-  "level": "N5",
-  "connection_structure": {
-    "desu": {
-      "form": "です (Polite copula - is/am/are)",
-      "rules": [
-        {
-          "base": "名詞 + です",
-          "example": "学生 + です",
-          "example_en": "student + is"
-        },
-        {
-          "base": "これ + は + 名詞 + です",
-          "example": "これは本です",
-          "example_en": "This is a book"
-        }
-      ]
-    },
-    "desu_ka": {
-      "form": "ですか (Polite question)",
-      "rules": [
-        {
-          "base": "名詞 + ですか",
-          "example": "学生ですか",
-          "example_en": "Are you a student?"
-        }
-      ]
-    },
-    "ja_nai_desu": {
-      "form": "じゃないです / ではありません (Negative polite)",
-      "rules": [
-        {
-          "base": "名詞 + じゃないです",
-          "example": "学生じゃないです",
-          "example_en": "is not a student (casual polite)"
-        },
-        {
-          "base": "名詞 + ではありません",
-          "example": "学生ではありません",
-          "example_en": "is not a student (very polite)"
-        }
-      ]
-    },
-    "mo": {
-      "form": "も (also / too)",
-      "rules": [
-        {
-          "base": "名詞 + も + です",
-          "example": "私も学生です",
-          "example_en": "I am also a student"
-        }
-      ]
-    },
-    "no": {
-      "form": "の (possession)",
-      "rules": [
-        {
-          "base": "名詞 + の + 名詞",
-          "example": "田中さんの本",
-          "example_en": "Tanaka's book"
-        }
-      ]
-    }
-  },
-  "grammar_points": [
-    {
-      "point": "です (Affirmative - is/am/are)",
-      "point_en": "Polite copula",
-      "meaning": "丁寧に「〜です」と述べて、自己紹介や物の説明をする",
-      "meaning_en": "Polite way to say 'is/am/are' for introductions or describing things",
-      "examples": [
-        {
-          "jp": "私は日本人です。毎日日本語を勉強しています。",
-          "romaji": "Watashi wa Nihonjin desu. Mainichi Nihongo o benkyou shite imasu.",
-          "en": "I am Japanese. I study Japanese every day."
-        },
-        {
-          "jp": "これは私の新しいスマホです。とても便利で気に入っています。",
-          "romaji": "Kore wa watashi no atarashii sumaho desu. Totemo benri de ki ni itte imasu.",
-          "en": "This is my new smartphone. It's very convenient and I like it a lot."
-        },
-        {
-          "jp": "あれは東京タワーです。夜になるときれいにライトアップされます。",
-          "romaji": "Are wa Tokyo Tawaa desu. Yoru ni naru to kirei ni raitoappu saremasu.",
-          "en": "That is Tokyo Tower. It gets beautifully lit up at night."
-        }
-      ]
-    },
-    {
-      "point": "ですか (Question form)",
-      "point_en": "Is it ...? / Are you ...?",
-      "meaning": "丁寧に質問するときに文末に付ける",
-      "meaning_en": "Polite question marker added at the end",
-      "examples": [
-        {
-          "jp": "あなたは学生ですか？大学はどこですか？",
-          "romaji": "Anata wa gakusei desu ka? Daigaku wa doko desu ka?",
-          "en": "Are you a student? Which university do you go to?"
-        },
-        {
-          "jp": "これは日本語の本ですか？とてもきれいな表紙ですね。",
-          "romaji": "Kore wa Nihongo no hon desu ka? Totemo kirei na hyoushi desu ne.",
-          "en": "Is this a Japanese book? The cover is very pretty, isn't it?"
-        },
-        {
-          "jp": "あの人は先生ですか？とても優しそうに見えます。",
-          "romaji": "Ano hito wa sensei desu ka? Totemo yasashisou ni miemasu.",
-          "en": "Is that person a teacher? They look very kind."
-        }
-      ]
-    },
-    {
-      "point": "ではありません / じゃないです (Negative form)",
-      "point_en": "is not / am not / are not",
-      "meaning": "否定の丁寧な表現。じゃないですは日常会話でよく使われる",
-      "meaning_en": "Polite negative. じゃないです is very common in daily speech",
-      "examples": [
-        {
-          "jp": "私は先生ではありません。ただの学生です。",
-          "romaji": "Watashi wa sensei dewa arimasen. Tada no gakusei desu.",
-          "en": "I am not a teacher. I'm just a student."
-        },
-        {
-          "jp": "これは猫じゃないです。犬ですよ、可愛いでしょう？",
-          "romaji": "Kore wa neko ja nai desu. Inu desu yo, kawaii deshou?",
-          "en": "This is not a cat. It's a dog. Cute, right?"
-        },
-        {
-          "jp": "あの人は日本人ではありません。韓国から来た留学生です。",
-          "romaji": "Ano hito wa Nihonjin dewa arimasen. Kankoku kara kita ryuugakusei desu.",
-          "en": "That person is not Japanese. They are an exchange student from Korea."
-        }
-      ]
-    },
-    {
-      "point": "も (also / too)",
-      "point_en": "Also / too",
-      "meaning": "「も」を付けて「〜も」という意味を出す",
-      "meaning_en": "Add 'mo' to mean 'also' or 'too'",
-      "examples": [
-        {
-          "jp": "私は学生です。友達も学生です。一緒に勉強しています。",
-          "romaji": "Watashi wa gakusei desu. Tomodachi mo gakusei desu. Issho ni benkyou shite imasu.",
-          "en": "I am a student. My friend is also a student. We study together."
-        },
-        {
-          "jp": "これは本です。あれも本です。たくさん本が好きです。",
-          "romaji": "Kore wa hon desu. Are mo hon desu. Takusan hon ga suki desu.",
-          "en": "This is a book. That one is a book too. I like books a lot."
-        }
-      ]
-    },
-    {
-      "point": "の (possession)",
-      "point_en": "'s (possessive)",
-      "meaning": "名詞と名詞をつなげて「〜の〜」という所有関係を示す",
-      "meaning_en": "Connects nouns to show possession ('s)",
-      "examples": [
-        {
-          "jp": "これは山田さんのノートです。中に日本語がたくさん書いてあります。",
-          "romaji": "Kore wa Yamada-san no nooto desu. Naka ni Nihongo ga takusan kaite arimasu.",
-          "en": "This is Yamada's notebook. There is a lot of Japanese written inside."
-        },
-        {
-          "jp": "あれは私の自転車です。赤くてとても速いです。",
-          "romaji": "Are wa watashi no jitensha desu. Akakute totemo hayai desu.",
-          "en": "That is my bicycle. It's red and very fast."
-        }
-      ]
-    }
-  ]
-},
-
-  {
-  "lesson": 32,
-  "title": "みんなの日本語 第32課：〜のに・〜ので・〜からです",
-  "english_title": "Minna no Nihongo Lesson 32: Although (~noni), Because (~node / ~kara desu)",
+  "lesson": 50,
+  "title": "みんなの日本語 第50課：謙譲語（お／ご〜します・特別な謙譲語）",
+  "english_title": "Minna no Nihongo Lesson 50: Humble Language (kenjougo) – お/ご〜します & Special Humble Forms",
   "level": "N4",
   "connection_structure": {
-    "noni": {
-      "form": "〜のに (Although / even though / despite)",
+    "o_go_shimasu": {
+      "form": "お／ご〜します (General humble form)",
       "rules": [
         {
-          "base": "普通形 + のに",
-          "example": "行く → 行くのに",
-          "example_en": "go → although go"
+          "base": "お + 漢語動詞 + します",
+          "example": "お手伝いします",
+          "example_en": "help (humbly)"
         },
         {
-          "base": "い形容詞 + のに",
-          "example": "高い → 高いのに",
-          "example_en": "expensive → although expensive"
-        },
-        {
-          "base": "な形容詞 + な + のに",
-          "example": "静かだ → 静かなのに",
-          "example_en": "quiet → although quiet"
-        },
-        {
-          "base": "名詞 + な + のに",
-          "example": "学生だ → 学生なのに",
-          "example_en": "student → although student"
+          "base": "ご + 漢語動詞 + します",
+          "example": "ご案内します",
+          "example_en": "guide (humbly)"
         }
       ]
     },
-    "node": {
-      "form": "〜ので (Because / so)",
+    "special_kenjougo_for_others": {
+      "form": "特別な謙譲語（目上の人のための行為）",
       "rules": [
         {
-          "base": "普通形 + ので",
-          "example": "行く → 行くので",
-          "example_en": "go → because go"
+          "base": "行く → 参ります / 伺います / 参上します",
+          "example": "伺います",
+          "example_en": "go/visit (humbly)"
         },
         {
-          "base": "い形容詞 + ので",
-          "example": "高い → 高いので",
-          "example_en": "expensive → because expensive"
+          "base": "来る → 参ります / 伺います / 参上します",
+          "example": "参ります",
+          "example_en": "come (humbly)"
         },
         {
-          "base": "な形容詞 + な + ので",
-          "example": "静かだ → 静かなので",
-          "example_en": "quiet → because quiet"
+          "base": "いる → おります",
+          "example": "おります",
+          "example_en": "be/exist (humbly)"
+        },
+        {
+          "base": "言う → 申します / 申し上げます",
+          "example": "申します",
+          "example_en": "say (humbly)"
+        },
+        {
+          "base": "する → いたします",
+          "example": "いたします",
+          "example_en": "do (humbly)"
         }
       ]
     },
-    "kara_desu": {
-      "form": "〜からです (Because / the reason is...)",
+    "special_kenjougo_for_self": {
+      "form": "特別な謙譲語（自分自身のこと）",
       "rules": [
         {
-          "base": "普通形 + からです",
-          "example": "行く → 行くからです",
-          "example_en": "go → because (the reason is) go"
+          "base": "食べる → いただきます",
+          "example": "いただきます",
+          "example_en": "eat/receive (humbly)"
+        },
+        {
+          "base": "飲む → いただきます",
+          "example": "いただきます",
+          "example_en": "drink/receive (humbly)"
+        },
+        {
+          "base": "見る → 拝見します",
+          "example": "拝見します",
+          "example_en": "see/look (humbly)"
+        },
+        {
+          "base": "聞く → 伺います / 拝聴します",
+          "example": "伺います",
+          "example_en": "hear/ask (humbly)"
         }
       ]
     }
   },
   "grammar_points": [
     {
-      "point": "〜のに (Although / even though / despite the fact that)",
-      "point_en": "Although / despite",
-      "meaning": "期待と反対の結果になることを表し、意外・残念・不満のニュアンスを含む",
-      "meaning_en": "Expresses a result contrary to expectation (often with surprise, regret, or dissatisfaction)",
+      "point": "お／ご〜します (General humble form)",
+      "point_en": "お/ご〜します – Humble general action",
+      "meaning": "自分の動作をへりくだって表現する最も基本的な謙譲語パターン",
+      "meaning_en": "Most common humble pattern to lower one's own action for respect",
       "examples": [
         {
-          "jp": "一生懸命勉強したのに、試験に落ちてしまって、本当に悔しくて泣いてしまいました。",
-          "romaji": "Isshoukenmei benkyou shita noni, shiken ni ochite shimatte, hontou ni kuyashikute naite shimaimashita.",
-          "en": "Even though I studied really hard, I failed the exam, and I was so frustrated that I cried."
+          "jp": "お客様のお荷物が重そうですね。私がお持ちしますので、どうぞご安心ください。",
+          "romaji": "Okyakusama no onimotsu ga omosou desu ne. Watashi ga omochi shimasu node, douzo goanshin kudasai.",
+          "en": "Your luggage looks heavy. I'll carry it for you, so please don't worry."
         },
         {
-          "jp": "高いお金を払ったのに、このレストランの料理は味が薄くて全然美味しくありませんでした。",
-          "romaji": "Takai okane o haratta noni, kono resutoran no ryouri wa aji ga usukute zenzen oishiku arimasen deshita.",
-          "en": "Despite paying so much money, the food at this restaurant was bland and not delicious at all."
+          "jp": "会議室までご案内します。こちらのエレベーターをお使いください。",
+          "romaji": "Kaigishitsu made goannai shimasu. Kochira no erebeetaa o o tsukai kudasai.",
+          "en": "I will guide you to the meeting room. Please use this elevator."
         },
         {
-          "jp": "天気がいいのに、友達が急に用事ができたと言って、デートをキャンセルされてしまいました。",
-          "romaji": "Tenki ga ii noni, tomodachi ga kyuu ni youji ga dekita to itte, deeto o kyanseru sarete shimaimashita.",
-          "en": "Even though the weather was nice, my friend suddenly said they had something to do and canceled our date."
+          "jp": "資料をお配りしますので、皆さんでご確認いただけますでしょうか。",
+          "romaji": "Shiryou o ohakari shimasu node, minasan de go-kakunin itadakemasu deshou ka.",
+          "en": "I will distribute the materials, so could everyone please check them?"
         },
         {
-          "jp": "毎日運動しているのに、体重が全然減らなくて、どうしていいかわかりません。",
-          "romaji": "Mainichi undou shite iru noni, taijuu ga zenzen heranakute, dou shite ii ka wakarimasen.",
-          "en": "Although I exercise every day, my weight isn't decreasing at all, and I don't know what to do."
+          "jp": "お電話をいたしますので、少々お待ちいただけますか。すぐに折り返します。",
+          "romaji": "O-denwa o itashimasu node, shou shou omachi itadakemasu ka. Sugu ni orikaeshimasu.",
+          "en": "I will call you back, so could you wait a moment? I'll get back to you right away."
         },
         {
-          "jp": "新しいスマホを買ったばかりなのに、昨日落として画面が割れてしまって、本当にショックでした。",
-          "romaji": "Atarashii sumaho o katta bakari na noni, kinou otoshite gamen ga warete shimatte, hontou ni shokku deshita.",
-          "en": "Even though I just bought a new smartphone, I dropped it yesterday and the screen cracked — I was really shocked."
-        },
-        {
-          "jp": "プレゼントを一生懸命選んだのに、相手にあまり喜んでもらえなくて、少し悲しくなりました。",
-          "romaji": "Purezento o isshoukenmei eranda noni, aite ni amari yorokonde moraenakute, sukoshi kanashiku narimashita.",
-          "en": "Although I carefully chose the present, the recipient didn't seem very happy, and I felt a bit sad."
+          "jp": "お手伝いしますので、何かお困りのことがありましたら遠慮なくおっしゃってください。",
+          "romaji": "O-tetsudai shimasu node, nanika o-komari no koto ga arimashitara enryo naku osshatte kudasai.",
+          "en": "I will help you, so please don't hesitate to tell me if there's anything you need."
         }
       ]
     },
     {
-      "point": "〜ので (Because / so)",
-      "point_en": "Because (node)",
-      "meaning": "理由や原因を丁寧に説明する形で、客観的なニュアンスが強い",
-      "meaning_en": "Because / so (polite, objective reason)",
+      "point": "特別な謙譲語（目上の人のための行為）",
+      "point_en": "Special humble forms (for actions toward superiors)",
+      "meaning": "特定の動詞に対して特別な謙譲語を使う（行く・来る・いる・言う・するなど）",
+      "meaning_en": "Special humble verbs for actions directed toward or for superiors",
       "examples": [
         {
-          "jp": "今日はとても疲れているので、早めに寝たいと思います。明日も仕事が忙しいですから。",
-          "romaji": "Kyou wa totemo tsukarete iru node, hayame ni netai to omoimasu. Ashita mo shigoto ga isogashii desu kara.",
-          "en": "Since I'm very tired today, I'd like to go to bed early. I have a busy workday tomorrow too."
+          "jp": "明日、部長のお宅に伺いますので、よろしくお願いいたします。",
+          "romaji": "Ashita, buchou no otaku ni ukagaimasu node, yoroshiku onegai itashimasu.",
+          "en": "I will visit the manager's home tomorrow, so thank you for your kind attention."
         },
         {
-          "jp": "電車が遅れているので、会議に少し遅れてしまうかもしれません。申し訳ありません。",
-          "romaji": "Densha ga okurete iru node, kaigi ni sukoshi okurete shimau kamo shiremasen. Moushiwake arimasen.",
-          "en": "Because the train is delayed, I might be a little late for the meeting. I'm very sorry."
+          "jp": "会議の資料を拝見いたしました。とても分かりやすくて助かりました。",
+          "romaji": "Kaigi no shiryou o haiken itashimashita. Totemo wakariyasukute tasukarimashita.",
+          "en": "I have looked over the meeting materials. They were very easy to understand and helpful."
         },
         {
-          "jp": "この店は人気があるので、週末はいつも混んでいて、予約しないと入れません。",
-          "romaji": "Kono mise wa ninki ga aru node, shuumatsu wa itsumo konde ite, yoyaku shinai to iremasen.",
-          "en": "Since this restaurant is very popular, it's always crowded on weekends and you can't get in without a reservation."
+          "jp": "社長は今おりますので、少々お待ちいただけますでしょうか。",
+          "romaji": "Shachou wa ima orimasu node, shou shou omachi itadakemasu deshou ka.",
+          "en": "The president is here now, so could you wait just a moment?"
         },
         {
-          "jp": "雨が降っているので、外で遊ぶのはやめて、家でゲームをすることにしました。",
-          "romaji": "Ame ga futte iru node, soto de asobu no wa yamete, ie de geemu o suru koto ni shimashita.",
-          "en": "Because it's raining, I decided not to play outside and to play games at home instead."
+          "jp": "後ほどお電話を差し上げます。ご都合の良い時間をお知らせください。",
+          "romaji": "Ato hodo o-denwa o sashiagemasu. Go-tsugou no yoi jikan o oshirase kudasai.",
+          "en": "I will call you later. Please let me know a convenient time."
         },
         {
-          "jp": "日本語がまだあまり上手ではないので、ゆっくり話していただけると助かります。",
-          "romaji": "Nihongo ga mada amari jouzu dewa nai node, yukkuri hanashite itadakeru to tasukarimasu.",
-          "en": "Since my Japanese is still not very good, it would help if you could speak slowly."
+          "jp": "本日、貴社にお伺いいたします。10時頃に到着予定でございます。",
+          "romaji": "Honjitsu, kisha ni o-ukagai itashimasu. Juuji goro ni touchaku yotei de gozaimasu.",
+          "en": "Today I will visit your company. I plan to arrive around 10 o'clock."
         }
       ]
     },
     {
-      "point": "〜からです (Because / the reason is...)",
-      "point_en": "Because (kara desu)",
-      "meaning": "理由を明確に述べる丁寧な表現で、説明や回答の最後に使う",
-      "meaning_en": "Because / the reason is... (used at the end of an explanation or answer)",
+      "point": "特別な謙譲語（自分自身のこと）",
+      "point_en": "Special humble forms (for one's own actions)",
+      "meaning": "自分自身の動作をへりくだって表現する特別な動詞（食べる・飲む・見る・聞くなど）",
+      "meaning_en": "Humble verbs used when describing your own actions toward superiors",
       "examples": [
         {
-          "jp": "遅れてすみません。電車が止まってしまったからです。申し訳ありませんでした。",
-          "romaji": "Okurete sumimasen. Densha ga tomatte shimatta kara desu. Moushiwake arimasen deshita.",
-          "en": "Sorry I'm late. The reason is that the train stopped. I'm very sorry."
+          "jp": "社長のお話を伺うことができて、とても光栄に存じます。",
+          "romaji": "Shachou no o-hanashi o ukagau koto ga dekite, totemo kouei ni zonjimasu.",
+          "en": "I feel greatly honored to have the chance to hear the president's words."
         },
         {
-          "jp": "この映画をおすすめするのは、ストーリーがとても感動的だからです。ぜひ見てみてください。",
-          "romaji": "Kono eiga o osusume suru no wa, sutōrī ga totemo kandouteki dakara desu. Zehi mite mite kudasai.",
-          "en": "The reason I recommend this movie is that the story is very moving. Please watch it."
+          "jp": "お食事をお召し上がりになりますか。私もいただきますので、一緒にどうぞ。",
+          "romaji": "O-shokuji o omeshiagari ni narimasu ka. Watashi mo itadakimasu node, issho ni douzo.",
+          "en": "Would you like to eat? I will have some too, so please join me."
         },
         {
-          "jp": "勉強が忙しいので、パーティーに行けません。ごめんなさい、本当に残念です。",
-          "romaji": "Benkyou ga isogashii node, paatii ni ikemasen. Gomen nasai, hontou ni zannen desu.",
-          "en": "I can't come to the party because I'm busy studying. I'm sorry — it's really a shame."
+          "jp": "資料を拝見させていただきました。ご丁寧な説明、ありがとうございます。",
+          "romaji": "Shiryou o haiken sasete itadakimashita. Go-teinei na setsumei, arigatou gozaimasu.",
+          "en": "I have had the honor of looking over the documents. Thank you for your detailed explanation."
         },
         {
-          "jp": "この服を買ったのは、色がとても気に入ったからです。デザインもシンプルでいいですよね。",
-          "romaji": "Kono fuku o katta no wa, iro ga totemo ki ni itta kara desu. Dezain mo shinpuru de ii desu yo ne.",
-          "en": "The reason I bought these clothes is that I really liked the color. The design is simple too, right?"
-        }
-      ]
-    }
-  ]
-},
-  {
-  "lesson": 31,
-  "title": "みんなの日本語 第31課：条件形（たら・ば・なら・と）",
-  "english_title": "Minna no Nihongo Lesson 31: Conditional Forms (tara, ba, nara, to)",
-  "level": "N4",
-  "connection_structure": {
-    "tara": {
-      "form": "〜たら (Tara conditional)",
-      "rules": [
-        {
-          "base": "動詞た形 + ら",
-          "example": "行く → 行ったら",
-          "example_en": "go → if/when go"
-        },
-        {
-          "base": "い形容詞 + かったら",
-          "example": "高い → 高かったら",
-          "example_en": "expensive → if expensive"
-        },
-        {
-          "base": "な形容詞 + だったら",
-          "example": "静かだ → 静かだったら",
-          "example_en": "quiet → if quiet"
-        },
-        {
-          "base": "名詞 + だったら",
-          "example": "学生だ → 学生だったら",
-          "example_en": "student → if student"
-        }
-      ]
-    },
-    "ba": {
-      "form": "〜ば (Ba conditional)",
-      "rules": [
-        {
-          "base": "動詞ば形",
-          "example": "行く → 行けば",
-          "example_en": "go → if go"
-        },
-        {
-          "base": "い形容詞 + ければ",
-          "example": "高い → 高ければ",
-          "example_en": "expensive → if expensive"
-        },
-        {
-          "base": "な形容詞 + なら",
-          "example": "静かだ → 静かなら",
-          "example_en": "quiet → if quiet"
-        }
-      ]
-    },
-    "nara": {
-      "form": "〜なら (Nara conditional)",
-      "rules": [
-        {
-          "base": "普通形 + なら",
-          "example": "行く → 行くなら",
-          "example_en": "go → if it's the case that go"
-        },
-        {
-          "base": "名詞・な形容詞 + なら",
-          "example": "学生だ → 学生なら",
-          "example_en": "student → if it's student"
-        }
-      ]
-    },
-    "to": {
-      "form": "〜と (To conditional)",
-      "rules": [
-        {
-          "base": "普通形 + と",
-          "example": "行く → 行くと",
-          "example_en": "go → when/as soon as go"
-        }
-      ]
-    }
-  },
-  "grammar_points": [
-    {
-      "point": "〜たら (Tara conditional)",
-      "point_en": "If/When (tara)",
-      "meaning": "条件や仮定を表し、順序性や発見のニュアンスを含むことが多い",
-      "meaning_en": "If/when... (often with sequence or discovery nuance)",
-      "examples": [
-        {
-          "jp": "明日雨が降ったら、ピクニックに行くのをやめて、家で映画を見ようと思います。",
-          "romaji": "Ashita ame ga futtara, pikunikku ni iku no o yamete, ie de eiga o miyou to omoimasu.",
-          "en": "If it rains tomorrow, I'll cancel the picnic and watch movies at home instead."
-        },
-        {
-          "jp": "駅に着いたら、すぐに連絡してください。待っていますから。",
-          "romaji": "Eki ni tsuitara, sugu ni renraku shite kudasai. Matte imasu kara.",
-          "en": "Please contact me as soon as you arrive at the station. I'll be waiting."
-        },
-        {
-          "jp": "このケーキを食べてみたら、思ったよりずっと甘くてびっくりしました。",
-          "romaji": "Kono keeki o tabete mitara, omotta yori zutto amakute bikkuri shimashita.",
-          "en": "When I tried this cake, it was much sweeter than I expected and I was surprised."
-        },
-        {
-          "jp": "お金が貯まったら、来年家族みんなで海外旅行に行きたいです。",
-          "romaji": "Okane ga tamattara, rainen kazoku minna de kaigai ryokou ni ikitai desu.",
-          "en": "When I've saved enough money, I want to go on an overseas trip with my whole family next year."
-        },
-        {
-          "jp": "試験が終わったら、友達とカラオケに行って、ストレスを全部発散しようと思います。",
-          "romaji": "Shiken ga owattara, tomodachi to karaoke ni itte, sutoresu o zenbu hassan shiyou to omoimasu.",
-          "en": "Once the exam is over, I'm planning to go to karaoke with friends and release all my stress."
-        },
-        {
-          "jp": "新しいスマホを買ったら、すぐに古い方を子供に譲ってあげようと思っています。",
-          "romaji": "Atarashii sumaho o kattara, sugu ni furui hou o kodomo ni yuzutte ageyou to omotte imasu.",
-          "en": "When I buy a new smartphone, I'm thinking of giving the old one to my child right away."
-        }
-      ]
-    },
-    {
-      "point": "〜ば (Ba conditional)",
-      "point_en": "If (ba)",
-      "meaning": "仮定の条件を表し、ば形は比較的フォーマルな響きを持つ",
-      "meaning_en": "If... (more formal/literary tone than tara)",
-      "examples": [
-        {
-          "jp": "早く起きれば、朝ごはんをゆっくり食べられて、気持ちよく学校に行けますよ。",
-          "romaji": "Hayaku okireba, asa gohan o yukkuri taberarete, kimochi yoku gakkou ni ikemasu yo.",
-          "en": "If you wake up early, you can eat breakfast slowly and go to school feeling good."
-        },
-        {
-          "jp": "この薬を飲めば、すぐに熱が下がるはずです。でも飲みすぎないでくださいね。",
-          "romaji": "Kono kusuri o nomeba, sugu ni netsu ga sagaru hazu desu. Demo nomisuginai de kudasai ne.",
-          "en": "If you take this medicine, your fever should go down quickly. But don't take too much."
-        },
-        {
-          "jp": "日本語が上手になれば、日本で仕事を見つけるのもずっと簡単になります。",
-          "romaji": "Nihongo ga jouzu ni nareba, Nihon de shigoto o mitsukeru no mo zutto kantan ni narimasu.",
-          "en": "If you become good at Japanese, finding a job in Japan will become much easier."
-        }
-      ]
-    },
-    {
-      "point": "〜なら (Nara conditional)",
-      "point_en": "If it is the case that... / then",
-      "meaning": "話題になっていることや前提に基づいた条件を表す",
-      "meaning_en": "If we're talking about..., then / in that case",
-      "examples": [
-        {
-          "jp": "明日休みなら、一緒に映画を見に行きませんか？とても面白い作品ですよ。",
-          "romaji": "Ashita yasumi nara, issho ni eiga o mi ni ikimasen ka? Totemo omoshiroi sakuhin desu yo.",
-          "en": "If you're free tomorrow, would you like to go see a movie together? It's a very interesting film."
-        },
-        {
-          "jp": "お金がないなら、僕が少し貸してあげてもいいですよ。でもすぐ返してくださいね。",
-          "romaji": "Okane ga nai nara, boku ga sukoshi kashite agetemo ii desu yo. Demo sugu kaeshite kudasai ne.",
-          "en": "If you don't have money, I can lend you some. But please return it soon."
-        },
-        {
-          "jp": "旅行に行くなら、京都がおすすめです。歴史的な場所がたくさんあって、食べ物も美味しいですから。",
-          "romaji": "Ryokou ni iku nara, Kyouto ga osusume desu. Rekishiteki na basho ga takusan atte, tabemono mo oishii desu kara.",
-          "en": "If you're going on a trip, I recommend Kyoto. There are many historical places, and the food is delicious too."
-        }
-      ]
-    },
-    {
-      "point": "〜と (To conditional)",
-      "point_en": "When / as soon as / whenever",
-      "meaning": "自然な結果や習慣的な出来事を表す（仮定ではなく事実的な条件）",
-      "meaning_en": "When / as soon as / whenever (natural consequence or habitual)",
-      "examples": [
-        {
-          "jp": "春になると、桜がきれいに咲いて、たくさんの人がお花見に来ます。",
-          "romaji": "Haru ni naru to, sakura ga kirei ni saite, takusan no hito ga ohanami ni kimasu.",
-          "en": "When spring comes, the cherry blossoms bloom beautifully and many people come to see them."
-        },
-        {
-          "jp": "このスイッチを押すと、自動的にドアが開きますので、便利ですよ。",
-          "romaji": "Kono suitchi o osu to, jidou teki ni doa ga akimasu node, benri desu yo.",
-          "en": "As soon as you press this switch, the door opens automatically, so it's very convenient."
-        },
-        {
-          "jp": "毎日運動すると、体が軽くなって、疲れにくくなります。",
-          "romaji": "Mainichi undou suru to, karada ga karuku natte, tsukare nikuku narimasu.",
-          "en": "Whenever I exercise every day, my body feels lighter and I get less tired."
-        }
-      ]
-    }
-  ]
-},
-  
-  {
-  "lesson": 30,
-  "title": "みんなの日本語 第30課：〜ておく・〜てしまう・〜ところ",
-  "english_title": "Minna no Nihongo Lesson 30: Preparatory Actions, Completion/Regret, and Timing Expressions",
-  "level": "N4",
-  "connection_structure": {
-    "te_oku": {
-      "form": "〜ておく (Preparatory / do in advance)",
-      "rules": [
-        {
-          "base": "動詞て形 + おく",
-          "example": "買う → 買っておく",
-          "example_en": "buy → buy in advance / keep bought"
-        },
-        {
-          "base": "動詞て形 + おく",
-          "example": "食べる → 食べておく",
-          "example_en": "eat → eat beforehand"
-        }
-      ]
-    },
-    "te_shimau": {
-      "form": "〜てしまう (Complete / unfortunately finish / regret)",
-      "rules": [
-        {
-          "base": "動詞て形 + しまう",
-          "example": "食べる → 食べてしまう",
-          "example_en": "eat → eat up / unfortunately eat"
-        },
-        {
-          "base": "動詞て形 + しまう",
-          "example": "忘れる → 忘れてしまう",
-          "example_en": "forget → end up forgetting"
-        }
-      ]
-    },
-    "tokoro": {
-      "form": "〜ところ (just about to / just finished / in the middle of)",
-      "rules": [
-        {
-          "base": "動詞る形 + ところ",
-          "example": "行く → 行くところ",
-          "example_en": "go → be about to go"
-        },
-        {
-          "base": "動詞た形 + ところ",
-          "example": "食べる → 食べたところ",
-          "example_en": "eat → just finished eating"
-        },
-        {
-          "base": "動詞ている形 + ところ",
-          "example": "勉強する → 勉強しているところ",
-          "example_en": "study → be in the middle of studying"
-        }
-      ]
-    }
-  },
-  "grammar_points": [
-    {
-      "point": "〜ておく (Do in advance / keep in a certain state)",
-      "point_en": "Preparatory Action / Leave in a state",
-      "meaning": "あらかじめ〜しておくことで、後で便利になる、または準備をしておく意味",
-      "meaning_en": "Do something in advance so it's ready later / leave something in a completed state",
-      "examples": [
-        {
-          "jp": "明日大事な会議があるので、今日のうちに資料を全部印刷しておきました。",
-          "romaji": "Ashita daiji na kaigi ga aru node, kyou no uchi ni shiryou o zenbu insatsu shite okimashita.",
-          "en": "Since there's an important meeting tomorrow, I printed all the materials in advance today."
-        },
-        {
-          "jp": "旅行に行く前に、冷蔵庫の中の食べ物を全部食べておかないと、腐ってしまうかもしれません。",
-          "romaji": "Ryokou ni iku mae ni, reizouko no naka no tabemono o zenbu tabete okanai to, kusatte shimau kamo shiremasen.",
-          "en": "Before going on a trip, I should eat up everything in the fridge in advance, or it might go bad."
-        },
-        {
-          "jp": "友達が来るので、部屋をきれいに掃除しておいて、気持ちよく迎えられるようにしました。",
-          "romaji": "Tomodachi ga kuru node, heya o kirei ni souji shite oite, kimochi yoku mukae rareru you ni shimashita.",
-          "en": "Since a friend is coming over, I cleaned the room thoroughly in advance so I could welcome them comfortably."
-        },
-        {
-          "jp": "試験の前日に教科書の内容を全部復習しておくと、当日とても安心して臨めます。",
-          "romaji": "Shiken no zenjitsu ni kyoukasho no naiyou o zenbu fukushuu shite oku to, toujitsu totemo anshin shite nozomenasai.",
-          "en": "If you review all the textbook content in advance the day before the exam, you can face the day very calmly."
-        },
-        {
-          "jp": "雨が降るかもしれない予報だったので、洗濯物を早めに取り込んでおきました。",
-          "romaji": "Ame ga furu kamo shirenai yohou datta node, sentaku mono o hayame ni torikonde okimashita.",
-          "en": "Since the forecast said it might rain, I took in the laundry early in advance."
-        },
-        {
-          "jp": "会社のパソコンを更新する前に、大事なファイルを全部バックアップしておくべきです。",
-          "romaji": "Kaisha no pasokon o koushin suru mae ni, daiji na fairu o zenbu bakkuappu shite oku beki desu.",
-          "en": "Before updating the company computer, you should back up all important files in advance."
-        }
-      ]
-    },
-    {
-      "point": "〜てしまう (Complete / end up doing / regretful completion)",
-      "point_en": "~te shimau (finish completely / unfortunately do)",
-      "meaning": "動作が完全に終わってしまう、または意図せず〜してしまったという後悔・残念の気持ちを表す",
-      "meaning_en": "Indicates something is completely finished / unintentionally did something (often with regret or surprise)",
-      "examples": [
-        {
-          "jp": "ケーキを冷蔵庫に入れておいたのに、弟に全部食べられてしまって、本当に悔しかったです。",
-          "romaji": "Keeki o reizouko ni irete oita noni, otouto ni zenbu taberarete shimatte, hontou ni kuyashikatta desu.",
-          "en": "Even though I put the cake in the fridge, my little brother ended up eating it all, and I was really frustrated."
-        },
-        {
-          "jp": "大事な約束をすっかり忘れてしまって、相手にすごく迷惑をかけてしまいました。",
-          "romaji": "Daiji na yakusoku o sukkari wasurete shimatte, aite ni sugoku meiwaku o kakete shimaimashita.",
-          "en": "I completely forgot an important appointment and ended up causing a lot of trouble for the other person."
-        },
-        {
-          "jp": "試験の前日に徹夜してしまったせいで、当日は頭がぼーっとして全然集中できませんでした。",
-          "romaji": "Shiken no zenjitsu ni tetsuya shite shimatta sei de, toujitsu wa atama ga bootto shite zenzen shuuchuu dekimasen deshita.",
-          "en": "Because I ended up staying up all night the day before the exam, my head was foggy on the day and I couldn't concentrate at all."
-        },
-        {
-          "jp": "プレゼントを隠しておいたのに、子供に見つかってしまって、サプライズが台無しになってしまいました。",
-          "romaji": "Purezento o kakushite oita noni, kodomo ni mitsukatte shimatte, sapuraizu ga dainashi ni natte shimaimashita.",
-          "en": "Even though I hid the present, my child found it, and the surprise was completely ruined."
-        },
-        {
-          "jp": "お金を貯めていたのに、急な出費で全部使ってしまって、また一から貯め直さなければなりません。",
-          "romaji": "Okane o tamete ita noni, kyuu na shuppi de zenbu tsukatte shimatte, mata ichi kara tamenakereba narimasen.",
-          "en": "I had been saving money, but due to a sudden expense I ended up using it all, so I have to start saving again from scratch."
-        }
-      ]
-    },
-    {
-      "point": "〜ところ (Just about to / just did / in the middle of)",
-      "point_en": "~tokoro (Timing expressions)",
-      "meaning": "動作のタイミングを表す：今まさに〜しようとしている／〜したばかり／〜している最中",
-      "meaning_en": "Expresses the exact timing: just about to do / just finished / right in the middle of doing",
-      "examples": [
-        {
-          "jp": "ちょうど今、家を出るところだったので、電話が鳴ってびっくりしてしまいました。",
-          "romaji": "Choudo ima, ie o deru tokoro datta node, denwa ga natte bikkuri shite shimaimashita.",
-          "en": "I was just about to leave the house right now, so when the phone rang, I got startled."
-        },
-        {
-          "jp": "ご飯を食べたところに友達が突然訪ねてきて、一緒にデザートを食べることになりました。",
-          "romaji": "Gohan o tabeta tokoro ni tomodachi ga totsuzen tazunete kite, issho ni dezaato o taberu koto ni narimashita.",
-          "en": "Right after I finished eating, a friend suddenly came over, so we ended up eating dessert together."
-        },
-        {
-          "jp": "今ちょうど宿題をしているところなので、もう少し待ってくれませんか。",
-          "romaji": "Ima choudo shukudai o shite iru tokoro na node, mou sukoshi matte kuremasen ka.",
-          "en": "I'm right in the middle of doing my homework now, so could you wait a little longer?"
-        },
-        {
-          "jp": "会議が終わったところに上司から急な電話がかかってきて、帰るのが遅くなってしまいました。",
-          "romaji": "Kaigi ga owatta tokoro ni joushi kara kyuu na denwa ga kakatte kite, kaeru no ga osoku natte shimaimashita.",
-          "en": "Right after the meeting ended, my boss called me suddenly, and I ended up going home late."
-        },
-        {
-          "jp": "駅に着いたところに電車がちょうど出てしまって、30分も待つことになってしまいました。",
-          "romaji": "Eki ni tsuita tokoro ni densha ga choudo dete shimatte, sanjuppun mo matsu koto ni natte shimaimashita.",
-          "en": "I arrived at the station just as the train was leaving, so I had to wait another 30 minutes."
-        },
-        {
-          "jp": "今からお風呂に入るところだったので、電話に出られなくてごめんなさい。",
-          "romaji": "Ima kara ofuro ni hairu tokoro datta node, denwa ni derarenakute gomen nasai.",
-          "en": "I was just about to take a bath, so I'm sorry I couldn't answer the phone."
-        }
-      ]
-    }
-  ]
-},
-  
-{
-    "lesson": 26,
-    "title": "みんなの日本語 第26課：状況説明の「んです」",
-    "english_title": "Minna no Nihongo Lesson 26: Explaining Situations with ~n desu",
-    "level": "N4",
-    "connection_structure": {
-      "verbs": {
-        "form": "普通形 (Plain form)",
-        "rules": [
-          {
-            "base": "辞書形 (Dictionary form)",
-            "base_en": "Dictionary form (masu → plain)",
-            "example": "行く",
-            "example_en": "go",
-            "plus_ndesu": "行くんです",
-            "plus_ndesu_en": "go (explanation)"
-          },
-          {
-            "base": "ない形 (Negative plain form)",
-            "base_en": "Negative plain form",
-            "example": "行かない",
-            "example_en": "don't go",
-            "plus_ndesu": "行かないんです",
-            "plus_ndesu_en": "don't go (explanation)"
-          },
-          {
-            "base": "た形 (Past plain form)",
-            "base_en": "Past plain form",
-            "example": "行った",
-            "example_en": "went",
-            "plus_ndesu": "行ったんです",
-            "plus_ndesu_en": "went (explanation)"
-          },
-          {
-            "base": "なかった形 (Past negative plain form)",
-            "base_en": "Past negative plain form",
-            "example": "行かなかった",
-            "example_en": "didn't go",
-            "plus_ndesu": "行かなかったんです",
-            "plus_ndesu_en": "didn't go (explanation)"
-          }
-        ]
-      },
-      "i_adjectives": {
-        "form": "普通形 (Plain form)",
-        "rules": [
-          {
-            "base": "現在形 (Present)",
-            "base_en": "Present tense",
-            "example": "暑い",
-            "example_en": "hot",
-            "plus_ndesu": "暑いんです",
-            "plus_ndesu_en": "it's hot (explanation)"
-          },
-          {
-            "base": "過去形 (Past)",
-            "base_en": "Past tense",
-            "example": "暑かった",
-            "example_en": "was hot",
-            "plus_ndesu": "暑かったんです",
-            "plus_ndesu_en": "it was hot (explanation)"
-          }
-        ]
-      },
-      "na_adjectives": {
-        "form": "普通形（だ→な） (Plain form: da → na)",
-        "rules": [
-          {
-            "base": "現在形 (Present)",
-            "base_en": "Present tense",
-            "example": "暇（だ）",
-            "example_en": "free / bored (da)",
-            "plus_ndesu": "暇なんです",
-            "plus_ndesu_en": "I'm free/bored (explanation)"
-          },
-          {
-            "base": "過去形 (Past)",
-            "base_en": "Past tense",
-            "example": "暇だった",
-            "example_en": "was free/bored",
-            "plus_ndesu": "暇だったんです",
-            "plus_ndesu_en": "I was free/bored (explanation)"
-          }
-        ]
-      },
-      "nouns": {
-        "form": "名詞 + な (Noun + na)",
-        "rules": [
-          {
-            "base": "現在形 (Present)",
-            "base_en": "Present tense",
-            "example": "病気（だ）",
-            "example_en": "sick (da)",
-            "plus_ndesu": "病気なんです",
-            "plus_ndesu_en": "I'm sick (explanation)"
-          },
-          {
-            "base": "過去形 (Past)",
-            "base_en": "Past tense",
-            "example": "病気だった",
-            "example_en": "was sick",
-            "plus_ndesu": "病気だったんです",
-            "plus_ndesu_en": "I was sick (explanation)"
-          }
-        ]
-      }
-    },
-    "grammar_points": [
-      {
-        "point": "説明・理由",
-        "point_en": "Explanation / Reason",
-        "meaning": "状況の説明や理由を強調する",
-        "meaning_en": "Explains or emphasizes the reason for a situation",
-        "examples": [
-          {
-            "jp": "どうして食べないんですか。お腹が痛いんですか。",
-            "romaji": "Doushite tabenai n desu ka? Onaka ga itai n desu ka?",
-            "en": "Why aren't you eating? Does your stomach hurt?"
-          },
-          {
-            "jp": "昨日飲みすぎたんです。",
-            "romaji": "Kinou nomisugita n desu.",
-            "en": "It's because I drank too much yesterday."
-          },
-          {
-            "jp": "用事があるんです。お先に失礼します。",
-            "romaji": "Youji ga aru n desu. Osaki ni shitsurei shimasu.",
-            "en": "I have something to do. Please excuse me for leaving early."
-          }
-        ]
-      },
-      {
-        "point": "依頼・お願い（丁寧）",
-        "point_en": "Polite Request with Background",
-        "meaning": "丁寧な依頼をするときに背景を説明する",
-        "meaning_en": "Soft/polite request with explanation of situation",
-        "examples": [
-          {
-            "jp": "生け花を習いたいんですけど、いい先生を紹介していただけませんか。",
-            "romaji": "Ikebana o naraitai n desu ga, ii sensei o shoukai shite itadakemasen ka?",
-            "en": "I want to learn Ikebana. Could you introduce me to a good teacher?"
-          },
-          {
-            "jp": "エアコンが動かないんですけど、見ていただけませんか。",
-            "romaji": "Eakon ga ugokanai n desu ga, mite itadakemasen ka?",
-            "en": "The air conditioner isn't working. Could you please take a look?"
-          }
-        ]
-      },
-      {
-        "point": "相談・アドバイスを求める",
-        "point_en": "Asking for Advice / Suggestion",
-        "meaning": "どうしたらいいか、何をしたらいいかを尋ねる",
-        "meaning_en": "Asking what/how one should do (seeking advice)",
-        "examples": [
-          {
-            "jp": "お寺を見学したいんですけど、どう行ったらいいですか。",
-            "romaji": "Otera o kengaku shitai n desu ga, dou ittara ii desu ka?",
-            "en": "I want to visit a temple. How should I go there?"
-          },
-          {
-            "jp": "財布を忘れたんですけど、どうしたらいいですか。",
-            "romaji": "Saifu o wasureta n desu ga, dou shitara ii desu ka?",
-            "en": "I forgot my wallet. What should I do?"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "lesson": 27,
-    "title": "みんなの日本語 第27課：可能形・能力",
-    "english_title": "Minna no Nihongo Lesson 27: Potential Form & Ability",
-    "level": "N4",
-    "connection_structure": {
-      "verbs": {
-        "form": "可能形 (Potential form / かのうけい)",
-        "rules": [
-          {
-            "base": "五段動詞 (Group 1 / Godan verbs)",
-            "base_en": "Godan verbs (u-verbs)",
-            "example": "書きます → 書けます",
-            "example_en": "write → can write",
-            "potential": "書けます",
-            "potential_en": "can write"
-          },
-          {
-            "base": "一段動詞 (Group 2 / Ichidan verbs)",
-            "base_en": "Ichidan verbs (ru-verbs)",
-            "example": "食べます → 食べられます",
-            "example_en": "eat → can eat",
-            "potential": "食べられます",
-            "potential_en": "can eat"
-          },
-          {
-            "base": "不規則動詞 - 来る (Irregular - kuru)",
-            "base_en": "Irregular verb - come",
-            "example": "来ます → 来られます",
-            "example_en": "come → can come",
-            "potential": "来られます",
-            "potential_en": "can come"
-          },
-          {
-            "base": "不規則動詞 - する (Irregular - suru)",
-            "base_en": "Irregular verb - do",
-            "example": "します → できます",
-            "example_en": "do → can do",
-            "potential": "できます",
-            "potential_en": "can do"
-          }
-        ]
-      },
-      "particles_change": {
-        "form": "目的語の助詞変化（を→が）",
-        "form_en": "Object particle change (o → ga)",
-        "rules": [
-          {
-            "base": "日本語を話します",
-            "base_en": "speak Japanese (normal)",
-            "potential_shift": "日本語が話せます",
-            "potential_shift_en": "can speak Japanese (potential form)"
-          }
-        ]
-      }
-    },
-    "grammar_points": [
-      {
-        "point": "可能動詞（能力・可能性）",
-        "point_en": "Potential Verbs (Ability / Possibility)",
-        "meaning": "できること、可能なことを表現する",
-        "meaning_en": "Express ability or possibility",
-        "examples": [
-          {
-            "jp": "私は日本語が少し話せます。",
-            "romaji": "Watashi wa nihongo ga sukoshi hanasemasu.",
-            "en": "I can speak a little Japanese."
-          }
-        ]
-      },
-      {
-        "point": "見える・聞こえる vs 見られる・聞ける",
-        "point_en": "Mieru/Kikoeru vs Mirareru/Kikeru",
-        "meaning": "自然に感じられる vs 努力・機会があってできる",
-        "meaning_en": "Natural/spontaneous vs intentional/possible with effort",
-        "examples": [
-          {
-            "jp": "窓から山が見えます。",
-            "romaji": "Mado kara yama ga miemasu.",
-            "en": "Mountains can be seen from the window. (naturally)"
-          },
-          {
-            "jp": "忙しいから、テレビが見られません。",
-            "romaji": "Isogashii desu kara, terebi ga miraremasen.",
-            "en": "I'm busy, so I can't watch TV. (no opportunity)"
-          }
-        ]
-      },
-      {
-        "point": "しか…ません（～しかできない）",
-        "point_en": "Shika ... masen (only / nothing but)",
-        "meaning": "期待より少ない量・程度を強調",
-        "meaning_en": "Emphasizes a small/limited amount (negative nuance)",
-        "examples": [
-          {
-            "jp": "ローマ字しか書けません。",
-            "romaji": "Rōmaji shika kakemasen.",
-            "en": "I can only write in Roman letters."
-          }
-        ]
-      },
-      {
-        "point": "は（対比）",
-        "point_en": "Wa particle (contrast)",
-        "meaning": "二つのことを対比させる",
-        "meaning_en": "Contrast between two items/states",
-        "examples": [
-          {
-            "jp": "ワインは飲みますが、ビールは飲みません。",
-            "romaji": "Wain wa nomimasu ga, bīru wa nomimasen.",
-            "en": "I drink wine, but I don't drink beer."
-          }
-        ]
-      }
-    ]
-  },
-{
-  "lesson": 28,
-  "title": "みんなの日本語 第28課：意向・同時・前後",
-  "english_title": "Minna no Nihongo Lesson 28: Intention, Simultaneous Actions & Sequence",
-  "level": "N4",
-  "connection_structure": {
-    "volitional_form": {
-      "form": "意向形 (Volitional form / 〜よう・ましょう)",
-      "rules": [
-        {
-          "base": "五段動詞 (Godan verbs)",
-          "base_en": "u-verbs",
-          "example": "書く → 書こう",
-          "example_en": "write → let's write / I will write",
-          "form_result": "書こう / 書きましょう",
-          "form_result_en": "Let's write / I intend to write"
-        },
-        {
-          "base": "一段動詞 (Ichidan verbs)",
-          "base_en": "ru-verbs",
-          "example": "食べる → 食べよう",
-          "example_en": "eat → let's eat / I will eat",
-          "form_result": "食べよう / 食べましょう",
-          "form_result_en": "Let's eat / I intend to eat"
-        },
-        {
-          "base": "する (suru)",
-          "base_en": "do",
-          "example": "する → しよう",
-          "example_en": "do → let's do",
-          "form_result": "しよう / しましょう",
-          "form_result_en": "Let's do / I will do"
-        },
-        {
-          "base": "来る (kuru)",
-          "base_en": "come",
-          "example": "来る → 来よう",
-          "example_en": "come → let's come",
-          "form_result": "来よう / 来ましょう",
-          "form_result_en": "Let's come / I will come"
-        }
-      ]
-    }
-  },
-  "grammar_points": [
-    {
-      "point": "〜よう / 〜ましょう (意向形)",
-      "point_en": "Volitional Form - Let's / I intend to",
-      "meaning": "提案（一緒に〜しよう）または自分の意向を表す",
-      "meaning_en": "Make suggestions (let's ...) or express one's own intention",
-      "examples": [
-        {
-          "jp": "今晩一緒に映画を見に行きましょう。",
-          "romaji": "Konban issho ni eiga o mi ni ikimashou.",
-          "en": "Let's go watch a movie together tonight."
-        },
-        {
-          "jp": "明日早く起きよう。",
-          "romaji": "Ashita hayaku okiyou.",
-          "en": "I will wake up early tomorrow. (personal intention)"
-        },
-        {
-          "jp": "もう少し休もうか。",
-          "romaji": "Mou sukoshi yasumou ka.",
-          "en": "Shall we rest a little more?"
-        }
-      ]
-    },
-    {
-      "point": "〜つもりだ",
-      "point_en": "〜tsumori da (intention / plan)",
-      "meaning": "自分の予定・意向を表す",
-      "meaning_en": "Express one's plan or intention",
-      "examples": [
-        {
-          "jp": "来年日本へ旅行するつもりです。",
-          "romaji": "Rainen Nihon e ryokou suru tsumori desu.",
-          "en": "I plan/intend to travel to Japan next year."
-        },
-        {
-          "jp": "今日は勉強しないつもりです。",
-          "romaji": "Kyou wa benkyou shinai tsumori desu.",
-          "en": "I don't intend to study today."
-        },
-        {
-          "jp": "ダイエットするつもりだったけど、失敗しました。",
-          "romaji": "Daietto suru tsumori datta kedo, shippai shimashita.",
-          "en": "I had intended to go on a diet, but I failed."
-        }
-      ]
-    },
-    {
-      "point": "〜前に / 〜た後で",
-      "point_en": "Mae ni (before) / Ato de (after)",
-      "meaning": "動作の前後関係を表す",
-      "meaning_en": "Express the sequence of actions: before doing / after doing",
-      "examples": [
-        {
-          "jp": "ご飯を食べる前に、手を洗います。",
-          "romaji": "Gohan o taberu mae ni, te o araimasu.",
-          "en": "I wash my hands before eating."
-        },
-        {
-          "jp": "宿題をした後で、ゲームをします。",
-          "romaji": "Shukudai o shita ato de, geemu o shimasu.",
-          "en": "I play games after doing my homework."
-        },
-        {
-          "jp": "日本に行く前に、日本語を勉強しました。",
-          "romaji": "Nihon ni iku mae ni, nihongo o benkyou shimashita.",
-          "en": "I studied Japanese before going to Japan."
-        }
-      ]
-    },
-    {
-      "point": "〜ながら",
-      "point_en": "〜nagara (while - simultaneous actions)",
-      "meaning": "二つの動作を同時に行う",
-      "meaning_en": "Do two actions at the same time (one is usually the main action)",
-      "examples": [
-        {
-          "jp": "音楽を聴きながら勉強します。",
-          "romaji": "Ongaku o kiki nagara benkyou shimasu.",
-          "en": "I study while listening to music."
-        },
-        {
-          "jp": "歩きながら電話をしています。",
-          "romaji": "Aruki nagara denwa o shite imasu.",
-          "en": "I'm talking on the phone while walking."
-        },
-        {
-          "jp": "テレビを見ながらご飯を食べないでください。",
-          "romaji": "Terebi o mi nagara gohan o tabenaide kudasai.",
-          "en": "Please don't eat while watching TV."
-        }
-      ]
-    }
-  ]
-},
-
-{
-  "lesson": 29,
-  "title": "みんなの日本語 第29課：受身形・使役形・可能形の複合",
-  "english_title": "Minna no Nihongo Lesson 29: Passive, Causative, and Complex Forms",
-  "level": "N4",
-  "connection_structure": {
-    "passive_form": {
-      "form": "受身形 (Passive form / 〜られる)",
-      "rules": [
-        {
-          "base": "五段動詞 (Godan verbs)",
-          "base_en": "u-verbs",
-          "example": "書く → 書かれる",
-          "example_en": "write → be written"
-        },
-        {
-          "base": "一段動詞 (Ichidan verbs)",
-          "base_en": "ru-verbs",
-          "example": "食べる → 食べられる",
-          "example_en": "eat → be eaten"
-        },
-        {
-          "base": "する (suru)",
-          "base_en": "do",
-          "example": "する → される",
-          "example_en": "do → be done"
-        }
-      ]
-    },
-    "causative_form": {
-      "form": "使役形 (Causative form / 〜せる・させる)",
-      "rules": [
-        {
-          "base": "五段動詞 (Godan verbs)",
-          "base_en": "u-verbs",
-          "example": "書く → 書かせる",
-          "example_en": "write → make/let write"
-        },
-        {
-          "base": "一段動詞 (Ichidan verbs)",
-          "base_en": "ru-verbs",
-          "example": "食べる → 食べさせる",
-          "example_en": "eat → make/let eat"
-        },
-        {
-          "base": "する (suru)",
-          "base_en": "do",
-          "example": "する → させる",
-          "example_en": "do → make/let do"
-        }
-      ]
-    },
-    "causative_passive": {
-      "form": "使役受身形 (Causative-Passive / 〜せられる・させられる)",
-      "rules": [
-        {
-          "base": "五段動詞",
-          "example": "書かせる → 書かせられる",
-          "example_en": "be made to write"
-        },
-        {
-          "base": "一段動詞",
-          "example": "食べさせる → 食べさせられる",
-          "example_en": "be made to eat"
-        }
-      ]
-    }
-  },
-  "grammar_points": [
-    {
-      "point": "受身形 (Passive Form)",
-      "point_en": "Passive Voice",
-      "meaning": "動作を受ける側を主語にする形で、何かをされる状況を表現する（迷惑のニュアンスが多い）",
-      "meaning_en": "Used when the subject receives an action (often implies inconvenience or annoyance)",
-      "examples": [
-        {
-          "jp": "私は友達に大事な誕生日ケーキを全部食べられてしまって、本当にがっかりしてしまいました。",
-          "romaji": "Watashi wa tomodachi ni daiji na tanjoubi keeki o zenbu taberarete shimatte, hontou ni gakkari shite shimaimashita.",
-          "en": "My important birthday cake was completely eaten by my friend, and I was really disappointed."
-        },
-        {
-          "jp": "宿題を先生にものすごくたくさん出されてしまって、週末はほとんど勉強することしかできなくなりました。",
-          "romaji": "Shukudai o sensei ni monosugoku takusan dasarete shimatte, shuumatsu wa hotondo benkyou suru koto shika dekinaku narimashita.",
-          "en": "I was given an enormous amount of homework by the teacher, and as a result I could hardly do anything but study over the weekend."
-        },
-        {
-          "jp": "大切な書類を弟に勝手に読まれてしまって、すごく怒ってしまって一晩中口をきかなかったです。",
-          "romaji": "Taisetsu na shorui o otouto ni katte ni yomarete shimatte, sugoku okotte shimatte hitobanjuu kuchi o kikanakatta desu.",
-          "en": "My important documents were read by my younger brother without permission, I got so angry that I didn't speak to him all night."
-        },
-        {
-          "jp": "電車の中で財布を誰かに盗まれてしまって、警察に届け出た後もかなり落ち込んでしまいました。",
-          "romaji": "Densha no naka de saifu o dareka ni nusumarete shimatte, keisatsu ni todoketa ato mo kanari ochikonde shimaimashita.",
-          "en": "My wallet was stolen by someone on the train, and even after reporting it to the police, I remained quite depressed."
-        },
-        {
-          "jp": "秘密の話を同僚に聞かれてしまって、会社でとても気まずい雰囲気になってしまいました。",
-          "romaji": "Himitsu no hanashi o douryou ni kikarete shimatte, kaisha de totemo kimazui fun'iki ni natte shimaimashita.",
-          "en": "My secret conversation was overheard by a colleague, and the atmosphere at work became extremely awkward."
-        },
-        {
-          "jp": "旅行の写真を家族全員に見られてしまって、恥ずかしくて顔を赤くしてしまいました。",
-          "romaji": "Ryokou no shashin o kazoku zen'in ni mirarete shimatte, hazukashikute kao o akaku shite shimaimashita.",
-          "en": "My travel photos were seen by the whole family, and I turned red with embarrassment."
-        }
-      ]
-    },
-    {
-      "point": "使役形 (Causative Form)",
-      "point_en": "Causative Voice",
-      "meaning": "誰かに何かをさせる状況を表し、許可・強制・面倒をかけるニュアンスを含む",
-      "meaning_en": "Make or let someone do something (can imply permission, coercion, or causing trouble)",
-      "examples": [
-        {
-          "jp": "親は私に毎日部屋を掃除させてくれますが、正直言うと時々本当に面倒くさいと感じてしまいます。",
-          "romaji": "Oya wa watashi ni mainichi heya o souji sasetekuremasu ga, shoujiki iu to tokidoki hontou ni mendokusai to kanjiteshimaimasu.",
-          "en": "My parents make me clean my room every day, but honestly sometimes I really feel it's troublesome."
-        },
-        {
-          "jp": "先生が生徒たちに難しい問題をたくさん解かせて、みんなが苦労している様子を見てとても満足そうでした。",
-          "romaji": "Sensei ga seito-tachi ni muzukashii mondai o takusan tokasete, minna ga kurou shite iru yousu o mite totemo manzoku sou deshita.",
-          "en": "The teacher made the students solve many difficult problems and looked very satisfied seeing everyone struggling."
-        },
-        {
-          "jp": "上司に急にプレゼンの資料を作らせられてしまって、徹夜で仕上げることになってしまいました。",
-          "romaji": "Joushi ni kyuu ni purezen no shiryou o tsukurasarete shimatte, tetsuya de shiage koto ni natte shimaimashita.",
-          "en": "I was suddenly made by my boss to prepare presentation materials, and ended up having to finish them overnight."
-        },
-        {
-          "jp": "子供に好きなアイスクリームを買わせてあげたら、とても嬉しそうな笑顔を見せてくれました。",
-          "romaji": "Kodomo ni suki na aisukuriimu o kawasete agetara, totemo ureshii sou na egao o misete kuremashita.",
-          "en": "When I let my child buy their favorite ice cream, they showed me a very happy smile."
-        },
-        {
-          "jp": "友達に運転を代わらせてあげたら、すごく緊張しながらも楽しそうに運転してくれました。",
-          "romaji": "Tomodachi ni unten o kawarasete agetara, sugoku kinchou shinagara mo tanoshii sou ni unten shite kuremashita.",
-          "en": "When I let my friend drive instead, they drove very nervously but seemed to enjoy it."
-        }
-      ]
-    },
-    {
-      "point": "使役受身形 (Causative-Passive Form)",
-      "point_en": "Causative-Passive",
-      "meaning": "誰かに強制されて何かをさせられる状況を表現する（迷惑感が強い）",
-      "meaning_en": "Being forced/made to do something by someone else (strong sense of annoyance)",
-      "examples": [
-        {
-          "jp": "私は上司に急に残業をさせられてしまって、家族との大切な約束をキャンセルせざるを得ませんでした。",
-          "romaji": "Watashi wa joushi ni kyuu ni zangyou o saserarete shimatte, kazoku to no taisetsu na yakusoku o kyanseru sezaru o emasen deshita.",
-          "en": "I was suddenly forced by my boss to work overtime, and had no choice but to cancel an important family appointment."
-        },
-        {
-          "jp": "子供の頃、母親に嫌いな野菜を無理やり食べさせられて、いつも泣きながら食べていたのを今でもはっきり覚えています。",
-          "romaji": "Kodomo no koro, hahaoya ni kirai na yasai o muri yari tabesaserarete, itsumo naki nagara tabete ita no o ima demo hakkiri oboete imasu.",
-          "en": "When I was a child, I was forced by my mother to eat vegetables I hated, and I still clearly remember always eating them while crying."
-        },
-        {
-          "jp": "同僚に自分の仕事を全部押し付けられてしまって、結局徹夜で終わらせるしかなくなってしまいました。",
-          "romaji": "Douryou ni jibun no shigoto o zenbu oshitsukerarete shimatte, kekkyoku tetsuya de owaraseru shika nakunatte shimaimashita.",
-          "en": "I was made to do all my colleague's work, and in the end I had no choice but to finish it by staying up all night."
-        },
-        {
-          "jp": "先生に難しい漢字を何十個も覚えさせられてしまって、頭がパンクしそうでした。",
-          "romaji": "Sensei ni muzukashii kanji o nanjuukko mo oboesaserarete shimatte, atama ga panku shisou deshita.",
-          "en": "I was made by the teacher to memorize dozens of difficult kanji, and my head felt like it was going to explode."
+          "jp": "お電話をいただきまして、誠にありがとうございます。すぐに折り返します。",
+          "romaji": "O-denwa o itadaki mashite, makoto ni arigatou gozaimasu. Sugu ni orikaeshimasu.",
+          "en": "Thank you very much for calling. I will call you back immediately."
         },
         {
-          "jp": "先輩に嫌いなカラオケに行かせられてしまって、終電ギリギリまで歌わされて本当に疲れました。",
-          "romaji": "Senpai ni kirai na karaoke ni ikaserarete shimatte, shuuden girigiri made utawasarete hontou ni tsukaremashita.",
-          "en": "I was forced by my senior to go to karaoke which I hate, and made to sing until the last train — I was really exhausted."
+          "jp": "お話を伺う機会をいただき、心から感謝しております。貴重なご意見をありがとうございます。",
+          "romaji": "O-hanashi o ukagau kikai o itadaki, kokoro kara kansha shite orimasu. Kichou na go-iken o arigatou gozaimasu.",
+          "en": "I am truly grateful for the opportunity to hear your words. Thank you for your valuable opinions."
         }
       ]
     }
