@@ -1,193 +1,251 @@
 [
   {
-  "lesson": 26,
-  "title": "Minna no Nihongo Lesson 26: Situation Explanations (n)desu",
-  "level": "N4",
-  "connection_structure": {
-    "verbs": {
-      "form": "Plain Form",
-      "rules": [
-        { "base": "Dictionary", "example": "iku (go)", "plus_ndesu": "iku n desu (go)" },
-        { "base": "Nai-form", "example": "I won't go (ikanai)", "plus_ndesu": "I won't go (ikanai n desu)" },
-        { "base": "Ta-form", "example": "I went (itta)", "plus_ndesu": "I went (itta n desu)" },
-        { "base": "Nakatta", "example": "I didn't go (ikanakatta)", "plus_ndesu": "I didn't go (ikanakatta n desu)" }
-      ]
+    "lesson": 26,
+    "title": "みんなの日本語 第26課：状況説明の「んです」",
+    "level": "N4",
+    "connection_structure": {
+      "verbs": {
+        "form": "普通形",
+        "rules": [
+          {
+            "base": "辞書形",
+            "example": "行く",
+            "plus_ndesu": "行くんです"
+          },
+          {
+            "base": "ない形",
+            "example": "行かない",
+            "plus_ndesu": "行かないんです"
+          },
+          {
+            "base": "た形",
+            "example": "行った",
+            "plus_ndesu": "行ったんです"
+          },
+          {
+            "base": "なかった形",
+            "example": "行かなかった",
+            "plus_ndesu": "行かなかったんです"
+          }
+        ]
+      },
+      "i_adjectives": {
+        "form": "普通形",
+        "rules": [
+          {
+            "base": "現在形",
+            "example": "暑い",
+            "plus_ndesu": "暑いんです"
+          },
+          {
+            "base": "過去形",
+            "example": "暑かった",
+            "plus_ndesu": "暑かったんです"
+          }
+        ]
+      },
+      "na_adjectives": {
+        "form": "普通形（だ→な）",
+        "rules": [
+          {
+            "base": "現在形",
+            "example": "暇（だ）",
+            "plus_ndesu": "暇なんです"
+          },
+          {
+            "base": "過去形",
+            "example": "暇だった",
+            "plus_ndesu": "暇だったんです"
+          }
+        ]
+      },
+      "nouns": {
+        "form": "名詞 + な",
+        "rules": [
+          {
+            "base": "現在形",
+            "example": "病気（だ）",
+            "plus_ndesu": "病気なんです"
+          },
+          {
+            "base": "過去形",
+            "example": "病気だった",
+            "plus_ndesu": "病気だったんです"
+          }
+        ]
+      }
     },
-    "i_adjectives": {
-      "form": "Plain Form",
-      "rules": [
-        { "base": "Present", "example": "It's hot (atsui)", "plus_ndesu": "It's hot (atsui n desu)" },
-        { "base": "Past", "example": "It was hot (atsukatta)", "plus_ndesu": "It was hot (atsukatta n desu)" }
-      ]
-    },
-    "na_adjectives": {
-      "form": "Plain Form (Replace 'da' with 'na')",
-      "rules": [
-        { "base": "Present", "example": "I'm bored (hima [da])", "plus_ndesu": "I'm bored (hima na n desu)" },
-        { "base": "Past", "example": "I was bored (hima datta)", "plus_ndesu": "I was bored (hima datta n desu)" }
-      ]
-    },
-    "nouns": {
-      "form": "Noun + な",
-      "rules": [
-        { "base": "Present", "example": "I'm sick (byouki [da])", "plus_ndesu": "I'm sick (byouki na n desu)" },
-        { "base": "Past", "example": "I was sick (byouki datta)", "plus_ndesu": "I was sick (byouki datta n desu)" }
-      ]
-    }
+    "grammar_points": [
+      {
+        "point": "説明・理由",
+        "meaning": "状況の説明や理由を強調する",
+        "examples": [
+          {
+            "jp": "どうして食べないんですか。お腹が痛いんですか。",
+            "romaji": "Doushite tabenai n desu ka? Onaka ga itai n desu ka?",
+            "en": "Why aren't you eating? Does your stomach hurt?"
+          },
+          {
+            "jp": "昨日飲みすぎたんです。",
+            "romaji": "Kinou nomisugita n desu.",
+            "en": "It's because I drank too much yesterday."
+          },
+          {
+            "jp": "用事があるんです。お先に失礼します。",
+            "romaji": "Youji ga aru n desu. Osaki ni shitsurei shimasu.",
+            "en": "I have something to do. Please excuse me for leaving early."
+          }
+        ]
+      },
+      {
+        "point": "依頼・お願い（丁寧）",
+        "meaning": "丁寧な依頼をするときに背景を説明する",
+        "examples": [
+          {
+            "jp": "生け花を習いたいんですけど、いい先生を紹介していただけませんか。",
+            "romaji": "Ikebana o naraitai n desu ga, ii sensei o shoukai shite itadakemasen ka?",
+            "en": "I want to learn Ikebana. Could you introduce me to a good teacher?"
+          },
+          {
+            "jp": "エアコンが動かないんですけど、見ていただけませんか。",
+            "romaji": "Eakon ga ugokanai n desu ga, mite itadakemasen ka?",
+            "en": "The air conditioner isn't working. Could you please take a look?"
+          },
+          {
+            "jp": "道が分からないんですけど、教えていただけませんか。",
+            "romaji": "Michi ga wakaranai n desu ga, oshiete itadakemasen ka?",
+            "en": "I don't know the way. Could you please tell me?"
+          }
+        ]
+      },
+      {
+        "point": "相談・アドバイスを求める",
+        "meaning": "どうしたらいいか、何をしたらいいかを尋ねる",
+        "examples": [
+          {
+            "jp": "お寺を見学したいんですけど、どう行ったらいいですか。",
+            "romaji": "Otera o kengaku shitai n desu ga, dou ittara ii desu ka?",
+            "en": "I want to visit a temple. How should I go there?"
+          },
+          {
+            "jp": "財布を忘れたんですけど、どうしたらいいですか。",
+            "romaji": "Saifu o wasureta n desu ga, dou shitara ii desu ka?",
+            "en": "I forgot my wallet. What should I do?"
+          },
+          {
+            "jp": "友達が結婚するんですけど、何をあげたらいいですか。",
+            "romaji": "Tomodachi ga kekkon suru n desu ga, nani o agetara ii desu ka?",
+            "en": "My friend is getting married. What should I give them?"
+          }
+        ]
+      }
+    ]
   },
-  "grammar_points": [
-    {
-      "point": "Explanation/Reason",
-      "meaning": "Provides an explanation or emphasizes the reason for a situation.",
-      "examples": [
-        {
-          "jp": "Why aren't you eating? Do you have a stomachache?",
-          "romaji": "Doushite tabenai n desu ka? Onaka ga itai n desu ka?",
-          "en": "Why aren't you eating? Does your stomach hurt?"
-        },
-        {
-          "jp": "I drank too much yesterday.",
-          "romaji": "Kinou, nomisugita n desu.",
-          "en": "It's because I drank too much yesterday."
-        },
-        {
-          "jp": "I have something to do. I'll be off now.",
-          "romaji": "Youji ga aru n desu. Osaki ni shitsurei shimasu.",
-          "en": "I have some business to attend to. Please excuse me for leaving early."
-        }
-      ]
+  {
+    "lesson": 27,
+    "title": "みんなの日本語 第27課：可能形・能力",
+    "level": "N4",
+    "connection_structure": {
+      "verbs": {
+        "form": "可能形（かのうけい）",
+        "rules": [
+          {
+            "base": "五段動詞",
+            "example": "書きます → 書けます",
+            "potential": "書けます"
+          },
+          {
+            "base": "一段動詞",
+            "example": "食べます → 食べられます",
+            "potential": "食べられます"
+          },
+          {
+            "base": "不規則動詞（来る）",
+            "example": "来ます → 来られます",
+            "potential": "来られます"
+          },
+          {
+            "base": "不規則動詞（する）",
+            "example": "します → できます",
+            "potential": "できます"
+          }
+        ]
+      },
+      "particles_change": {
+        "form": "目的語の助詞変化（を→が）",
+        "rules": [
+          {
+            "base": "日本語を話します",
+            "potential_shift": "日本語が話せます"
+          }
+        ]
+      }
     },
-    {
-      "point": "I'm wondering if you could do this for me",
-      "meaning": "Could you please do [X]? (Very polite request with background context).",
-      "examples": [
-        {
-          "jp": "I would like to learn flower arranging. Can you recommend a good teacher?",
-          "romaji": "Ikebana o naraitai n desu ga, ii sensei o shoukai shite itadakemasen ka?",
-          "en": "I want to learn Ikebana; would you mind introducing a good teacher to me?"
-        },
-        {
-          "jp": "My air conditioner isn't working, could you please take a look?",
-          "romaji": "Eakon ga ugokanai n desu ga, mite itadakemasen ka?",
-          "en": "The air conditioner isn't working; could you please take a look at it?"
-        },
-        {
-          "jp": "I don't know the way, could you please tell me?",
-          "romaji": "Michi ga wakaranai n desu ga, oshiete itadakemasen ka?",
-          "en": "I don't know the way; could you please tell me?"
-        }
-      ]
-    },
-    {
-      "point": "I'm doing ~, but would it be okay if I did ~",
-      "meaning": "What/How/Where should I [do X]? (Asking for advice/suggestions).",
-      "examples": [
-        {
-          "jp": "I want to visit a temple, how do I get there?",
-          "romaji": "Otera o kengaku shitai n desu ga, dou ittara ii desu ka?",
-          "en": "I want to visit the temple; how should I go there?"
-        },
-        {
-          "jp": "I forgot my wallet, what should I do?",
-          "romaji": "Saifu o wasureta n desu ga, dou shitara ii desu ka?",
-          "en": "I forgot my wallet; what should I do?"
-        },
-        {
-          "jp": "My friend is getting married, what should I give her?",
-          "romaji": "Tomodachi ga kekkon suru n desu ga, nani o agetara ii desu ka?",
-          "en": "My friend is getting married; what should I give them?"
-        }
-      ]
-    }
-  ]
-},
-
-{
-  "lesson": 27,
-  "title": "Minna no Nihongo Lesson 27: Potential Form & Ability",
-  "level": "N4",
-  "connection_structure": {
-    "verbs": {
-      "form": "Potential Form (Kanou-kei)",
-      "rules": [
-        { "base": "Group 1 (Godan)", "example": "kakimasu (write) -> kakemasu", "potential": "kakemasu (can write)" },
-        { "base": "Group 2 (Ichidan)", "example": "tabemasu (eat) -> taberaremasu", "potential": "taberaremasu (can eat)" },
-        { "base": "Group 3 (Irregular)", "example": "kimasu (come) -> koraremasu", "potential": "koraremasu (can come)" },
-        { "base": "Group 3 (Irregular)", "example": "shimasu (do) -> dekimasu", "potential": "dekimasu (can do)" }
-      ]
-    },
-    "particles_change": {
-      "form": "Object Marker Shift",
-      "rules": [
-        { "base": "Standard", "example": "Nihongo o hanashimasu", "potential_shift": "Nihongo ga hanasemasu" }
-      ]
-    }
-  },
-  "grammar_points": [
-    {
-      "point": "Potential Verbs (Ability/Possibility)",
-      "meaning": "Used to express that someone has the ability to do something or that an action is possible in a certain situation.",
-      "examples": [
-        {
-          "jp": "I can speak a little Japanese.",
-          "romaji": "Watashi wa nihongo ga sukoshi hanasemasu.",
-          "en": "I can speak a little Japanese."
-        },
-        {
-          "jp": "You can exchange dollars at this bank.",
-          "romaji": "Kono ginkou de doru ga kaeraremasu.",
-          "en": "You can exchange dollars at this bank."
-        }
-      ]
-    },
-    {
-      "point": "Mieru vs. Mirareru & Kikoeru vs. Kikeru",
-      "meaning": "Mieru/Kikoeru are for natural perception (without effort); Mirareru/Kikeru are for intentional potentiality (with effort or opportunity).",
-      "examples": [
-        {
-          "jp": "You can see the mountains from the window.",
-          "romaji": "Mado kara yama ga miemasu.",
-          "en": "The mountain can be seen from the window (naturally)."
-        },
-        {
-          "jp": "I'm busy, so I can't watch TV.",
-          "romaji": "Isogashii desu kara, terebi ga miraremasen.",
-          "en": "Because I'm busy, I can't watch TV (opportunity/time)."
-        },
-        {
-          "jp": "I can hear the radio.",
-          "romaji": "Rajio no oto ga kiko.",
-          "en": "The sound of the radio can be heard (naturally)."
-        }
-      ]
-    },
-    {
-      "point": "Shika ... Masen (Only)",
-      "meaning": "Used with a negative verb to mean 'only,' implying that the amount is less than expected.",
-      "examples": [
-        {
-          "jp": "I can only write in Roman characters.",
-          "romaji": "Rōmaji shika kakemasen.",
-          "en": "I can only write Romaji (and nothing else)."
-        },
-        {
-          "jp": "I can only write hiragana.",
-          "romaji": "Hiragana dake kakemasu.",
-          "en": "I can write Hiragana (focusing on what I can do)."
-        }
-      ]
-    },
-    {
-      "point": "Particle 'Wa' for Contrast",
-      "meaning": "Used to contrast two things or emphasize a difference.",
-      "examples": [
-        {
-          "jp": "I drink wine, but not beer.",
-          "romaji": "Wain wa nomimasu ga, bīru wa nomimasen.",
-          "en": "I drink wine, but I don't drink beer."
-        }
-      ]
-    }
-  ]
-}
+    "grammar_points": [
+      {
+        "point": "可能動詞（能力・可能性）",
+        "meaning": "できること、可能なことを表現する",
+        "examples": [
+          {
+            "jp": "私は日本語が少し話せます。",
+            "romaji": "Watashi wa nihongo ga sukoshi hanasemasu.",
+            "en": "I can speak a little Japanese."
+          },
+          {
+            "jp": "この銀行でドルが両替られます。",
+            "romaji": "Kono ginkou de doru ga kaeraremasu.",
+            "en": "You can exchange dollars at this bank."
+          }
+        ]
+      },
+      {
+        "point": "見える・聞こえる vs 見られる・聞ける",
+        "meaning": "自然に感じられる vs 努力・機会があってできる",
+        "examples": [
+          {
+            "jp": "窓から山が見えます。",
+            "romaji": "Mado kara yama ga miemasu.",
+            "en": "The mountains can be seen from the window. (naturally)"
+          },
+          {
+            "jp": "忙しいから、テレビが見られません。",
+            "romaji": "Isogashii desu kara, terebi ga miraremasen.",
+            "en": "I'm busy, so I can't watch TV. (no time/opportunity)"
+          },
+          {
+            "jp": "ラジオの音が聞こえます。",
+            "romaji": "Rajio no oto ga kikoemasu.",
+            "en": "I can hear the radio. (naturally)"
+          }
+        ]
+      },
+      {
+        "point": "しか…ません（～しかできない）",
+        "meaning": "期待より少ない量・程度を強調",
+        "examples": [
+          {
+            "jp": "ローマ字しか書けません。",
+            "romaji": "Rōmaji shika kakemasen.",
+            "en": "I can only write in Roman letters."
+          },
+          {
+            "jp": "ひらがなだけ書けます。",
+            "romaji": "Hiragana dake kakemasu.",
+            "en": "I can write hiragana (focusing on what I can do)."
+          }
+        ]
+      },
+      {
+        "point": "は（対比）",
+        "meaning": "二つのことを対比させる",
+        "examples": [
+          {
+            "jp": "ワインは飲みますが、ビールは飲みません。",
+            "romaji": "Wain wa nomimasu ga, bīru wa nomimasen.",
+            "en": "I drink wine, but I don't drink beer."
+          }
+        ]
+      }
+    ]
+  }
 ]
