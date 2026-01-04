@@ -1,5 +1,169 @@
 [
 {
+  "lesson": 32,
+  "title": "みんなの日本語 第32課：〜のに・〜ので・〜からです",
+  "english_title": "Minna no Nihongo Lesson 32: Although (~noni), Because (~node / ~kara desu)",
+  "level": "N4",
+  "connection_structure": {
+    "noni": {
+      "form": "〜のに (Although / even though / despite)",
+      "rules": [
+        {
+          "base": "普通形 + のに",
+          "example": "行く → 行くのに",
+          "example_en": "go → although go"
+        },
+        {
+          "base": "い形容詞 + のに",
+          "example": "高い → 高いのに",
+          "example_en": "expensive → although expensive"
+        },
+        {
+          "base": "な形容詞 + な + のに",
+          "example": "静かだ → 静かなのに",
+          "example_en": "quiet → although quiet"
+        },
+        {
+          "base": "名詞 + な + のに",
+          "example": "学生だ → 学生なのに",
+          "example_en": "student → although student"
+        }
+      ]
+    },
+    "node": {
+      "form": "〜ので (Because / so)",
+      "rules": [
+        {
+          "base": "普通形 + ので",
+          "example": "行く → 行くので",
+          "example_en": "go → because go"
+        },
+        {
+          "base": "い形容詞 + ので",
+          "example": "高い → 高いので",
+          "example_en": "expensive → because expensive"
+        },
+        {
+          "base": "な形容詞 + な + ので",
+          "example": "静かだ → 静かなので",
+          "example_en": "quiet → because quiet"
+        }
+      ]
+    },
+    "kara_desu": {
+      "form": "〜からです (Because / the reason is...)",
+      "rules": [
+        {
+          "base": "普通形 + からです",
+          "example": "行く → 行くからです",
+          "example_en": "go → because (the reason is) go"
+        }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "〜のに (Although / even though / despite the fact that)",
+      "point_en": "Although / despite",
+      "meaning": "期待と反対の結果になることを表し、意外・残念・不満のニュアンスを含む",
+      "meaning_en": "Expresses a result contrary to expectation (often with surprise, regret, or dissatisfaction)",
+      "examples": [
+        {
+          "jp": "一生懸命勉強したのに、試験に落ちてしまって、本当に悔しくて泣いてしまいました。",
+          "romaji": "Isshoukenmei benkyou shita noni, shiken ni ochite shimatte, hontou ni kuyashikute naite shimaimashita.",
+          "en": "Even though I studied really hard, I failed the exam, and I was so frustrated that I cried."
+        },
+        {
+          "jp": "高いお金を払ったのに、このレストランの料理は味が薄くて全然美味しくありませんでした。",
+          "romaji": "Takai okane o haratta noni, kono resutoran no ryouri wa aji ga usukute zenzen oishiku arimasen deshita.",
+          "en": "Despite paying so much money, the food at this restaurant was bland and not delicious at all."
+        },
+        {
+          "jp": "天気がいいのに、友達が急に用事ができたと言って、デートをキャンセルされてしまいました。",
+          "romaji": "Tenki ga ii noni, tomodachi ga kyuu ni youji ga dekita to itte, deeto o kyanseru sarete shimaimashita.",
+          "en": "Even though the weather was nice, my friend suddenly said they had something to do and canceled our date."
+        },
+        {
+          "jp": "毎日運動しているのに、体重が全然減らなくて、どうしていいかわかりません。",
+          "romaji": "Mainichi undou shite iru noni, taijuu ga zenzen heranakute, dou shite ii ka wakarimasen.",
+          "en": "Although I exercise every day, my weight isn't decreasing at all, and I don't know what to do."
+        },
+        {
+          "jp": "新しいスマホを買ったばかりなのに、昨日落として画面が割れてしまって、本当にショックでした。",
+          "romaji": "Atarashii sumaho o katta bakari na noni, kinou otoshite gamen ga warete shimatte, hontou ni shokku deshita.",
+          "en": "Even though I just bought a new smartphone, I dropped it yesterday and the screen cracked — I was really shocked."
+        },
+        {
+          "jp": "プレゼントを一生懸命選んだのに、相手にあまり喜んでもらえなくて、少し悲しくなりました。",
+          "romaji": "Purezento o isshoukenmei eranda noni, aite ni amari yorokonde moraenakute, sukoshi kanashiku narimashita.",
+          "en": "Although I carefully chose the present, the recipient didn't seem very happy, and I felt a bit sad."
+        }
+      ]
+    },
+    {
+      "point": "〜ので (Because / so)",
+      "point_en": "Because (node)",
+      "meaning": "理由や原因を丁寧に説明する形で、客観的なニュアンスが強い",
+      "meaning_en": "Because / so (polite, objective reason)",
+      "examples": [
+        {
+          "jp": "今日はとても疲れているので、早めに寝たいと思います。明日も仕事が忙しいですから。",
+          "romaji": "Kyou wa totemo tsukarete iru node, hayame ni netai to omoimasu. Ashita mo shigoto ga isogashii desu kara.",
+          "en": "Since I'm very tired today, I'd like to go to bed early. I have a busy workday tomorrow too."
+        },
+        {
+          "jp": "電車が遅れているので、会議に少し遅れてしまうかもしれません。申し訳ありません。",
+          "romaji": "Densha ga okurete iru node, kaigi ni sukoshi okurete shimau kamo shiremasen. Moushiwake arimasen.",
+          "en": "Because the train is delayed, I might be a little late for the meeting. I'm very sorry."
+        },
+        {
+          "jp": "この店は人気があるので、週末はいつも混んでいて、予約しないと入れません。",
+          "romaji": "Kono mise wa ninki ga aru node, shuumatsu wa itsumo konde ite, yoyaku shinai to iremasen.",
+          "en": "Since this restaurant is very popular, it's always crowded on weekends and you can't get in without a reservation."
+        },
+        {
+          "jp": "雨が降っているので、外で遊ぶのはやめて、家でゲームをすることにしました。",
+          "romaji": "Ame ga futte iru node, soto de asobu no wa yamete, ie de geemu o suru koto ni shimashita.",
+          "en": "Because it's raining, I decided not to play outside and to play games at home instead."
+        },
+        {
+          "jp": "日本語がまだあまり上手ではないので、ゆっくり話していただけると助かります。",
+          "romaji": "Nihongo ga mada amari jouzu dewa nai node, yukkuri hanashite itadakeru to tasukarimasu.",
+          "en": "Since my Japanese is still not very good, it would help if you could speak slowly."
+        }
+      ]
+    },
+    {
+      "point": "〜からです (Because / the reason is...)",
+      "point_en": "Because (kara desu)",
+      "meaning": "理由を明確に述べる丁寧な表現で、説明や回答の最後に使う",
+      "meaning_en": "Because / the reason is... (used at the end of an explanation or answer)",
+      "examples": [
+        {
+          "jp": "遅れてすみません。電車が止まってしまったからです。申し訳ありませんでした。",
+          "romaji": "Okurete sumimasen. Densha ga tomatte shimatta kara desu. Moushiwake arimasen deshita.",
+          "en": "Sorry I'm late. The reason is that the train stopped. I'm very sorry."
+        },
+        {
+          "jp": "この映画をおすすめするのは、ストーリーがとても感動的だからです。ぜひ見てみてください。",
+          "romaji": "Kono eiga o osusume suru no wa, sutōrī ga totemo kandouteki dakara desu. Zehi mite mite kudasai.",
+          "en": "The reason I recommend this movie is that the story is very moving. Please watch it."
+        },
+        {
+          "jp": "勉強が忙しいので、パーティーに行けません。ごめんなさい、本当に残念です。",
+          "romaji": "Benkyou ga isogashii node, paatii ni ikemasen. Gomen nasai, hontou ni zannen desu.",
+          "en": "I can't come to the party because I'm busy studying. I'm sorry — it's really a shame."
+        },
+        {
+          "jp": "この服を買ったのは、色がとても気に入ったからです。デザインもシンプルでいいですよね。",
+          "romaji": "Kono fuku o katta no wa, iro ga totemo ki ni itta kara desu. Dezain mo shinpuru de ii desu yo ne.",
+          "en": "The reason I bought these clothes is that I really liked the color. The design is simple too, right?"
+        }
+      ]
+    }
+  ]
+},
+  {
   "lesson": 31,
   "title": "みんなの日本語 第31課：条件形（たら・ば・なら・と）",
   "english_title": "Minna no Nihongo Lesson 31: Conditional Forms (tara, ba, nara, to)",
