@@ -1,99 +1,99 @@
 [
   {
   "lesson": 26,
-  "title": "Minna no Nihongo Lesson 26: Situation Explanations (ん)です",
+  "title": "Minna no Nihongo Lesson 26: Situation Explanations (n)desu",
   "level": "N4",
   "connection_structure": {
     "verbs": {
       "form": "Plain Form",
       "rules": [
-        { "base": "Dictionary", "example": "行く (iku)", "plus_ndesu": "行くんです (iku n desu)" },
-        { "base": "Nai-form", "example": "行かない (ikanai)", "plus_ndesu": "行かないんです (ikanai n desu)" },
-        { "base": "Ta-form", "example": "行った (itta)", "plus_ndesu": "行ったんです (itta n desu)" },
-        { "base": "Nakatta", "example": "行かなかった (ikanakatta)", "plus_ndesu": "行かなかったんです (ikanakatta n desu)" }
+        { "base": "Dictionary", "example": "iku (go)", "plus_ndesu": "iku n desu (go)" },
+        { "base": "Nai-form", "example": "I won't go (ikanai)", "plus_ndesu": "I won't go (ikanai n desu)" },
+        { "base": "Ta-form", "example": "I went (itta)", "plus_ndesu": "I went (itta n desu)" },
+        { "base": "Nakatta", "example": "I didn't go (ikanakatta)", "plus_ndesu": "I didn't go (ikanakatta n desu)" }
       ]
     },
     "i_adjectives": {
       "form": "Plain Form",
       "rules": [
-        { "base": "Present", "example": "暑い (atsui)", "plus_ndesu": "暑いんです (atsui n desu)" },
-        { "base": "Past", "example": "暑かった (atsukatta)", "plus_ndesu": "暑かったんです (atsukatta n desu)" }
+        { "base": "Present", "example": "It's hot (atsui)", "plus_ndesu": "It's hot (atsui n desu)" },
+        { "base": "Past", "example": "It was hot (atsukatta)", "plus_ndesu": "It was hot (atsukatta n desu)" }
       ]
     },
     "na_adjectives": {
       "form": "Plain Form (Replace 'da' with 'na')",
       "rules": [
-        { "base": "Present", "example": "暇[だ] (hima [da])", "plus_ndesu": "暇なんです (hima na n desu)" },
-        { "base": "Past", "example": "暇だった (hima datta)", "plus_ndesu": "暇だったんです (hima datta n desu)" }
+        { "base": "Present", "example": "I'm bored (hima [da])", "plus_ndesu": "I'm bored (hima na n desu)" },
+        { "base": "Past", "example": "I was bored (hima datta)", "plus_ndesu": "I was bored (hima datta n desu)" }
       ]
     },
     "nouns": {
       "form": "Noun + な",
       "rules": [
-        { "base": "Present", "example": "病気[だ] (byouki [da])", "plus_ndesu": "病気なんです (byouki na n desu)" },
-        { "base": "Past", "example": "病気だった (byouki datta)", "plus_ndesu": "病気だったんです (byouki datta n desu)" }
+        { "base": "Present", "example": "I'm sick (byouki [da])", "plus_ndesu": "I'm sick (byouki na n desu)" },
+        { "base": "Past", "example": "I was sick (byouki datta)", "plus_ndesu": "I was sick (byouki datta n desu)" }
       ]
     }
   },
   "grammar_points": [
     {
-      "point": "～んです (Explanation/Reason)",
+      "point": "Explanation/Reason",
       "meaning": "Provides an explanation or emphasizes the reason for a situation.",
       "examples": [
         {
-          "jp": "どうして食べないんですか。お腹が痛いんですか。",
+          "jp": "Why aren't you eating? Do you have a stomachache?",
           "romaji": "Doushite tabenai n desu ka? Onaka ga itai n desu ka?",
           "en": "Why aren't you eating? Does your stomach hurt?"
         },
         {
-          "jp": "昨日、飲みすぎたんです。",
+          "jp": "I drank too much yesterday.",
           "romaji": "Kinou, nomisugita n desu.",
           "en": "It's because I drank too much yesterday."
         },
         {
-          "jp": "用事があるんです。お先に失礼します。",
+          "jp": "I have something to do. I'll be off now.",
           "romaji": "Youji ga aru n desu. Osaki ni shitsurei shimasu.",
           "en": "I have some business to attend to. Please excuse me for leaving early."
         }
       ]
     },
     {
-      "point": "～んですが、～ていただけませんか",
+      "point": "I'm wondering if you could do this for me",
       "meaning": "Could you please do [X]? (Very polite request with background context).",
       "examples": [
         {
-          "jp": "生け花を習いたいんですが、いい先生を紹介していただけませんか。",
+          "jp": "I would like to learn flower arranging. Can you recommend a good teacher?",
           "romaji": "Ikebana o naraitai n desu ga, ii sensei o shoukai shite itadakemasen ka?",
           "en": "I want to learn Ikebana; would you mind introducing a good teacher to me?"
         },
         {
-          "jp": "エアコンが動かないんですが、見ていただけませんか。",
+          "jp": "My air conditioner isn't working, could you please take a look?",
           "romaji": "Eakon ga ugokanai n desu ga, mite itadakemasen ka?",
           "en": "The air conditioner isn't working; could you please take a look at it?"
         },
         {
-          "jp": "道がわからないんですが、教えていただけませんか。",
+          "jp": "I don't know the way, could you please tell me?",
           "romaji": "Michi ga wakaranai n desu ga, oshiete itadakemasen ka?",
           "en": "I don't know the way; could you please tell me?"
         }
       ]
     },
     {
-      "point": "～んですが、～たらいいですか",
+      "point": "I'm doing ~, but would it be okay if I did ~",
       "meaning": "What/How/Where should I [do X]? (Asking for advice/suggestions).",
       "examples": [
         {
-          "jp": "お寺を見学したいんですが、どう行ったらいいですか。",
+          "jp": "I want to visit a temple, how do I get there?",
           "romaji": "Otera o kengaku shitai n desu ga, dou ittara ii desu ka?",
           "en": "I want to visit the temple; how should I go there?"
         },
         {
-          "jp": "財布を忘れたんですが、どうしたらいいですか。",
+          "jp": "I forgot my wallet, what should I do?",
           "romaji": "Saifu o wasureta n desu ga, dou shitara ii desu ka?",
           "en": "I forgot my wallet; what should I do?"
         },
         {
-          "jp": "友達が結婚するんですが、何をあげたらいいですか。",
+          "jp": "My friend is getting married, what should I give her?",
           "romaji": "Tomodachi ga kekkon suru n desu ga, nani o agetara ii desu ka?",
           "en": "My friend is getting married; what should I give them?"
         }
@@ -129,12 +129,12 @@
       "meaning": "Used to express that someone has the ability to do something or that an action is possible in a certain situation.",
       "examples": [
         {
-          "jp": "私は日本語が少し話せます。",
+          "jp": "I can speak a little Japanese.",
           "romaji": "Watashi wa nihongo ga sukoshi hanasemasu.",
           "en": "I can speak a little Japanese."
         },
         {
-          "jp": "この銀行でドルが換えられます。",
+          "jp": "You can exchange dollars at this bank.",
           "romaji": "Kono ginkou de doru ga kaeraremasu.",
           "en": "You can exchange dollars at this bank."
         }
@@ -145,18 +145,18 @@
       "meaning": "Mieru/Kikoeru are for natural perception (without effort); Mirareru/Kikeru are for intentional potentiality (with effort or opportunity).",
       "examples": [
         {
-          "jp": "窓から山が見えます。",
+          "jp": "You can see the mountains from the window.",
           "romaji": "Mado kara yama ga miemasu.",
           "en": "The mountain can be seen from the window (naturally)."
         },
         {
-          "jp": "忙しいですから、テレビが見られません。",
+          "jp": "I'm busy, so I can't watch TV.",
           "romaji": "Isogashii desu kara, terebi ga miraremasen.",
           "en": "Because I'm busy, I can't watch TV (opportunity/time)."
         },
         {
-          "jp": "ラジオの音が聞こえます。",
-          "romaji": "Rajio no oto ga kikoえます。",
+          "jp": "I can hear the radio.",
+          "romaji": "Rajio no oto ga kiko.",
           "en": "The sound of the radio can be heard (naturally)."
         }
       ]
@@ -166,12 +166,12 @@
       "meaning": "Used with a negative verb to mean 'only,' implying that the amount is less than expected.",
       "examples": [
         {
-          "jp": "ローマ字しか書けません。",
+          "jp": "I can only write in Roman characters.",
           "romaji": "Rōmaji shika kakemasen.",
           "en": "I can only write Romaji (and nothing else)."
         },
         {
-          "jp": "ひらがなだけ書けます。",
+          "jp": "I can only write hiragana.",
           "romaji": "Hiragana dake kakemasu.",
           "en": "I can write Hiragana (focusing on what I can do)."
         }
@@ -182,7 +182,7 @@
       "meaning": "Used to contrast two things or emphasize a difference.",
       "examples": [
         {
-          "jp": "ワインは飲みますが、ビールは飲みません。",
+          "jp": "I drink wine, but not beer.",
           "romaji": "Wain wa nomimasu ga, bīru wa nomimasen.",
           "en": "I drink wine, but I don't drink beer."
         }
