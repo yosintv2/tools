@@ -1,5 +1,175 @@
 [
-  {
+{
+  "lesson": 30,
+  "title": "みんなの日本語 第30課：〜ておく・〜てしまう・〜ところ",
+  "english_title": "Minna no Nihongo Lesson 30: Preparatory Actions, Completion/Regret, and Timing Expressions",
+  "level": "N4",
+  "connection_structure": {
+    "te_oku": {
+      "form": "〜ておく (Preparatory / do in advance)",
+      "rules": [
+        {
+          "base": "動詞て形 + おく",
+          "example": "買う → 買っておく",
+          "example_en": "buy → buy in advance / keep bought"
+        },
+        {
+          "base": "動詞て形 + おく",
+          "example": "食べる → 食べておく",
+          "example_en": "eat → eat beforehand"
+        }
+      ]
+    },
+    "te_shimau": {
+      "form": "〜てしまう (Complete / unfortunately finish / regret)",
+      "rules": [
+        {
+          "base": "動詞て形 + しまう",
+          "example": "食べる → 食べてしまう",
+          "example_en": "eat → eat up / unfortunately eat"
+        },
+        {
+          "base": "動詞て形 + しまう",
+          "example": "忘れる → 忘れてしまう",
+          "example_en": "forget → end up forgetting"
+        }
+      ]
+    },
+    "tokoro": {
+      "form": "〜ところ (just about to / just finished / in the middle of)",
+      "rules": [
+        {
+          "base": "動詞る形 + ところ",
+          "example": "行く → 行くところ",
+          "example_en": "go → be about to go"
+        },
+        {
+          "base": "動詞た形 + ところ",
+          "example": "食べる → 食べたところ",
+          "example_en": "eat → just finished eating"
+        },
+        {
+          "base": "動詞ている形 + ところ",
+          "example": "勉強する → 勉強しているところ",
+          "example_en": "study → be in the middle of studying"
+        }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "〜ておく (Do in advance / keep in a certain state)",
+      "point_en": "Preparatory Action / Leave in a state",
+      "meaning": "あらかじめ〜しておくことで、後で便利になる、または準備をしておく意味",
+      "meaning_en": "Do something in advance so it's ready later / leave something in a completed state",
+      "examples": [
+        {
+          "jp": "明日大事な会議があるので、今日のうちに資料を全部印刷しておきました。",
+          "romaji": "Ashita daiji na kaigi ga aru node, kyou no uchi ni shiryou o zenbu insatsu shite okimashita.",
+          "en": "Since there's an important meeting tomorrow, I printed all the materials in advance today."
+        },
+        {
+          "jp": "旅行に行く前に、冷蔵庫の中の食べ物を全部食べておかないと、腐ってしまうかもしれません。",
+          "romaji": "Ryokou ni iku mae ni, reizouko no naka no tabemono o zenbu tabete okanai to, kusatte shimau kamo shiremasen.",
+          "en": "Before going on a trip, I should eat up everything in the fridge in advance, or it might go bad."
+        },
+        {
+          "jp": "友達が来るので、部屋をきれいに掃除しておいて、気持ちよく迎えられるようにしました。",
+          "romaji": "Tomodachi ga kuru node, heya o kirei ni souji shite oite, kimochi yoku mukae rareru you ni shimashita.",
+          "en": "Since a friend is coming over, I cleaned the room thoroughly in advance so I could welcome them comfortably."
+        },
+        {
+          "jp": "試験の前日に教科書の内容を全部復習しておくと、当日とても安心して臨めます。",
+          "romaji": "Shiken no zenjitsu ni kyoukasho no naiyou o zenbu fukushuu shite oku to, toujitsu totemo anshin shite nozomenasai.",
+          "en": "If you review all the textbook content in advance the day before the exam, you can face the day very calmly."
+        },
+        {
+          "jp": "雨が降るかもしれない予報だったので、洗濯物を早めに取り込んでおきました。",
+          "romaji": "Ame ga furu kamo shirenai yohou datta node, sentaku mono o hayame ni torikonde okimashita.",
+          "en": "Since the forecast said it might rain, I took in the laundry early in advance."
+        },
+        {
+          "jp": "会社のパソコンを更新する前に、大事なファイルを全部バックアップしておくべきです。",
+          "romaji": "Kaisha no pasokon o koushin suru mae ni, daiji na fairu o zenbu bakkuappu shite oku beki desu.",
+          "en": "Before updating the company computer, you should back up all important files in advance."
+        }
+      ]
+    },
+    {
+      "point": "〜てしまう (Complete / end up doing / regretful completion)",
+      "point_en": "~te shimau (finish completely / unfortunately do)",
+      "meaning": "動作が完全に終わってしまう、または意図せず〜してしまったという後悔・残念の気持ちを表す",
+      "meaning_en": "Indicates something is completely finished / unintentionally did something (often with regret or surprise)",
+      "examples": [
+        {
+          "jp": "ケーキを冷蔵庫に入れておいたのに、弟に全部食べられてしまって、本当に悔しかったです。",
+          "romaji": "Keeki o reizouko ni irete oita noni, otouto ni zenbu taberarete shimatte, hontou ni kuyashikatta desu.",
+          "en": "Even though I put the cake in the fridge, my little brother ended up eating it all, and I was really frustrated."
+        },
+        {
+          "jp": "大事な約束をすっかり忘れてしまって、相手にすごく迷惑をかけてしまいました。",
+          "romaji": "Daiji na yakusoku o sukkari wasurete shimatte, aite ni sugoku meiwaku o kakete shimaimashita.",
+          "en": "I completely forgot an important appointment and ended up causing a lot of trouble for the other person."
+        },
+        {
+          "jp": "試験の前日に徹夜してしまったせいで、当日は頭がぼーっとして全然集中できませんでした。",
+          "romaji": "Shiken no zenjitsu ni tetsuya shite shimatta sei de, toujitsu wa atama ga bootto shite zenzen shuuchuu dekimasen deshita.",
+          "en": "Because I ended up staying up all night the day before the exam, my head was foggy on the day and I couldn't concentrate at all."
+        },
+        {
+          "jp": "プレゼントを隠しておいたのに、子供に見つかってしまって、サプライズが台無しになってしまいました。",
+          "romaji": "Purezento o kakushite oita noni, kodomo ni mitsukatte shimatte, sapuraizu ga dainashi ni natte shimaimashita.",
+          "en": "Even though I hid the present, my child found it, and the surprise was completely ruined."
+        },
+        {
+          "jp": "お金を貯めていたのに、急な出費で全部使ってしまって、また一から貯め直さなければなりません。",
+          "romaji": "Okane o tamete ita noni, kyuu na shuppi de zenbu tsukatte shimatte, mata ichi kara tamenakereba narimasen.",
+          "en": "I had been saving money, but due to a sudden expense I ended up using it all, so I have to start saving again from scratch."
+        }
+      ]
+    },
+    {
+      "point": "〜ところ (Just about to / just did / in the middle of)",
+      "point_en": "~tokoro (Timing expressions)",
+      "meaning": "動作のタイミングを表す：今まさに〜しようとしている／〜したばかり／〜している最中",
+      "meaning_en": "Expresses the exact timing: just about to do / just finished / right in the middle of doing",
+      "examples": [
+        {
+          "jp": "ちょうど今、家を出るところだったので、電話が鳴ってびっくりしてしまいました。",
+          "romaji": "Choudo ima, ie o deru tokoro datta node, denwa ga natte bikkuri shite shimaimashita.",
+          "en": "I was just about to leave the house right now, so when the phone rang, I got startled."
+        },
+        {
+          "jp": "ご飯を食べたところに友達が突然訪ねてきて、一緒にデザートを食べることになりました。",
+          "romaji": "Gohan o tabeta tokoro ni tomodachi ga totsuzen tazunete kite, issho ni dezaato o taberu koto ni narimashita.",
+          "en": "Right after I finished eating, a friend suddenly came over, so we ended up eating dessert together."
+        },
+        {
+          "jp": "今ちょうど宿題をしているところなので、もう少し待ってくれませんか。",
+          "romaji": "Ima choudo shukudai o shite iru tokoro na node, mou sukoshi matte kuremasen ka.",
+          "en": "I'm right in the middle of doing my homework now, so could you wait a little longer?"
+        },
+        {
+          "jp": "会議が終わったところに上司から急な電話がかかってきて、帰るのが遅くなってしまいました。",
+          "romaji": "Kaigi ga owatta tokoro ni joushi kara kyuu na denwa ga kakatte kite, kaeru no ga osoku natte shimaimashita.",
+          "en": "Right after the meeting ended, my boss called me suddenly, and I ended up going home late."
+        },
+        {
+          "jp": "駅に着いたところに電車がちょうど出てしまって、30分も待つことになってしまいました。",
+          "romaji": "Eki ni tsuita tokoro ni densha ga choudo dete shimatte, sanjuppun mo matsu koto ni natte shimaimashita.",
+          "en": "I arrived at the station just as the train was leaving, so I had to wait another 30 minutes."
+        },
+        {
+          "jp": "今からお風呂に入るところだったので、電話に出られなくてごめんなさい。",
+          "romaji": "Ima kara ofuro ni hairu tokoro datta node, denwa ni derarenakute gomen nasai.",
+          "en": "I was just about to take a bath, so I'm sorry I couldn't answer the phone."
+        }
+      ]
+    }
+  ]
+},
+  
+{
     "lesson": 26,
     "title": "みんなの日本語 第26課：状況説明の「んです」",
     "english_title": "Minna no Nihongo Lesson 26: Explaining Situations with ~n desu",
@@ -599,6 +769,4 @@
     }
   ]
 }
-
-  
 ]
