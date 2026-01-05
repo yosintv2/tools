@@ -1,4 +1,160 @@
 [
+
+{
+  "lesson": 49,
+  "title": "みんなの日本語 第49課：〜ようにする・〜ようになる・〜ように見える／聞こえる",
+  "english_title": "Minna no Nihongo Lesson 49: Make an effort to (~you ni suru), Come to be able to (~you ni naru), Seem/look/sound like (~you ni mieru/kikoeru)",
+  "level": "N4",
+  "connection_structure": {
+    "you_ni_suru": {
+      "form": "〜ようにする (Make an effort to / try to do regularly)",
+      "rules": [
+        {
+          "base": "動詞辞書形 + ようにする",
+          "example": "勉強する → 勉強するようにする",
+          "example_en": "study → make an effort to study"
+        },
+        {
+          "base": "動詞ない形 + ようにする",
+          "example": "忘れる → 忘れないようにする",
+          "example_en": "forget → try not to forget"
+        }
+      ]
+    },
+    "you_ni_naru": {
+      "form": "〜ようになる (Come to be able to / become possible / it turns out that)",
+      "rules": [
+        {
+          "base": "動詞辞書形 + ようになる",
+          "example": "話せる → 話せるようになる",
+          "example_en": "be able to speak → come to be able to speak"
+        },
+        {
+          "base": "形容詞 + くなる",
+          "example": "上手だ → 上手になる",
+          "example_en": "good at → become good at"
+        }
+      ]
+    },
+    "you_ni_mieru_kikoeru": {
+      "form": "〜ように見える／聞こえる (Seem / look / sound like)",
+      "rules": [
+        {
+          "base": "動詞普通形 + ように見える",
+          "example": "疲れている → 疲れているように見える",
+          "example_en": "look tired"
+        },
+        {
+          "base": "動詞普通形 + ように聞こえる",
+          "example": "怒っている → 怒っているように聞こえる",
+          "example_en": "sound angry"
+        }
+      ]
+    }
+  },
+  "grammar_points": [
+    {
+      "point": "〜ようにする (Make an effort to / try to do regularly)",
+      "point_en": "Make an effort to / try to",
+      "meaning": "習慣的に〜しようと努力する・意識的に〜するようにする",
+      "meaning_en": "Try to do something regularly / make a habit of doing something",
+      "examples": [
+        {
+          "jp": "健康のために、毎日30分以上運動するようにしていますが、雨の日はなかなか続けられません。",
+          "romaji": "Kenkou no tame ni, mainichi sanjuppun ijou undou suru you ni shite imasu ga, ame no hi wa nakanaka tsuzukeraremasen.",
+          "en": "For my health, I make an effort to exercise for at least 30 minutes every day, but on rainy days it's hard to keep it up."
+        },
+        {
+          "jp": "日本語を上達させるために、毎日新しい単語を10個覚えるようにしています。とても効果があります。",
+          "romaji": "Nihongo o joutatsu saseru tame ni, mainichi atarashii tango o jukkgo oboeru you ni shite imasu. Totemo kouka ga arimasu.",
+          "en": "To improve my Japanese, I try to memorize 10 new words every day. It's very effective."
+        },
+        {
+          "jp": "遅刻しないように、いつも10分早く家を出るようにしていますが、電車が遅れると困ります。",
+          "romaji": "Chikoku shinai you ni, itsumo juppun hayaku ie o deru you ni shite imasu ga, densha ga okureru to komarimasu.",
+          "en": "To avoid being late, I make sure to leave home 10 minutes earlier, but if the train is delayed, I'm in trouble."
+        },
+        {
+          "jp": "ダイエットのために、夜遅くご飯を食べないようにしています。でもお腹が空くと我慢するのが大変です。",
+          "romaji": "Daietto no tame ni, yoru osoku gohan o tabenai you ni shite imasu. Demo onaka ga suku to gaman suru no ga taihen desu.",
+          "en": "For dieting, I try not to eat dinner late at night. But when I'm hungry, it's hard to resist."
+        },
+        {
+          "jp": "環境のために、プラスチックをできるだけ使わないようにしています。エコバッグをいつも持ち歩いています。",
+          "romaji": "Kankyou no tame ni, purasuchikku o dekiru dake tsukawanai you ni shite imasu. Eko baggu o itsumo mochiaruite imasu.",
+          "en": "For the environment, I make an effort to use as little plastic as possible. I always carry an eco bag."
+        }
+      ]
+    },
+    {
+      "point": "〜ようになる (Come to be able to / become possible / it turns out that)",
+      "point_en": "Come to be able to / become ~",
+      "meaning": "ある状態になる・できるようになることを表す",
+      "meaning_en": "Come to be able to do something / it becomes possible / it turns out that",
+      "examples": [
+        {
+          "jp": "毎日練習したおかげで、日本語がだんだん話せるようになって、すごく嬉しいです。",
+          "romaji": "Mainichi renshuu shita okage de, Nihongo ga dandan hanaseru you ni natte, sugoku ureshii desu.",
+          "en": "Thanks to practicing every day, I gradually became able to speak Japanese, and I'm really happy about it."
+        },
+        {
+          "jp": "日本に来てから、箸が自然に使えるようになって、自分でも驚いています。",
+          "romaji": "Nihon ni kite kara, hashi ga shizen ni tsukaeru you ni natte, jibun demo odoroite imasu.",
+          "en": "Since coming to Japan, I've come to be able to use chopsticks naturally, and I'm surprised myself."
+        },
+        {
+          "jp": "この町に住むようになってから、静かな生活がとても心地よいものだと気づきました。",
+          "romaji": "Kono machi ni sumu you ni natte kara, shizuka na seikatsu ga totemo kokochi yoi mono da to kizukimashita.",
+          "en": "Since I started living in this town, I've come to realize how comfortable a quiet life can be."
+        },
+        {
+          "jp": "長く日本にいるうちに、季節の変わり目が分かるようになって、とても楽しいです。",
+          "romaji": "Nagaku Nihon ni iru uchi ni, kisetsu no kawari me ga wakaru you ni natte, totemo tanoshii desu.",
+          "en": "After living in Japan for a long time, I've come to be able to notice the change of seasons, and it's very enjoyable."
+        },
+        {
+          "jp": "日本語のドラマをたくさん見るようになってから、日常会話がとても自然に聞こえるようになりました。",
+          "romaji": "Nihongo no dorama o takusan miru you ni natte kara, nichijou kaiwa ga totemo shizen ni kikoeru you ni narimashita.",
+          "en": "Since I started watching a lot of Japanese dramas, everyday conversations have come to sound very natural to me."
+        }
+      ]
+    },
+    {
+      "point": "〜ように見える／聞こえる (Seem / look / sound like)",
+      "point_en": "Seem / look / sound like",
+      "meaning": "見た目や聞こえ方で〜のように感じることを表す",
+      "meaning_en": "Look / seem / sound like (based on appearance or impression)",
+      "examples": [
+        {
+          "jp": "彼は疲れているように見えますね。昨日遅くまで仕事していたからでしょうか。",
+          "romaji": "Kare wa tsukarete iru you ni miemasu ne. Kinou osoku made shigoto shite ita kara deshou ka.",
+          "en": "He looks tired, doesn't he? Maybe because he was working late yesterday."
+        },
+        {
+          "jp": "このケーキはとても美味しそうに見えますが、カロリーが高そうですね。",
+          "romaji": "Kono keeki wa totemo oishisou ni miemasu ga, karorii ga takasou desu ne.",
+          "en": "This cake looks very delicious, but it seems high in calories, doesn't it?"
+        },
+        {
+          "jp": "あの人は怒っているように聞こえますが、実はただ声が大きいだけかもしれません。",
+          "romaji": "Ano hito wa okotte iru you ni kikoemasu ga, jitsu wa tada koe ga ookii dake kamo shiremasen.",
+          "en": "That person sounds angry, but maybe it's just that they have a loud voice."
+        },
+        {
+          "jp": "この音楽は悲しいように聞こえますが、実はとても前向きな歌詞なんですよ。",
+          "romaji": "Kono ongaku wa kanashii you ni kikoemasu ga, jitsu wa totemo maemuki na kashi nan desu yo.",
+          "en": "This music sounds sad, but actually the lyrics are very positive."
+        },
+        {
+          "jp": "彼女は忙しそうに見えますが、実は暇で、遊びに誘ってほしいと思っているかもしれません。",
+          "romaji": "Kanojo wa isogashisou ni miemasu ga, jitsu wa hima de, asobi ni sasotte hoshii to omotte iru kamo shiremasen.",
+          "en": "She looks busy, but she might actually be free and hoping someone invites her out."
+        }
+      ]
+    }
+  ]
+},
+  
 {
   "lesson": 50,
   "title": "みんなの日本語 第50課：謙譲語（お／ご〜します・特別な謙譲語）",
