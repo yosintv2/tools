@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>简单字符与单词计数器</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="将文本粘贴或输入后，即可立即查看字符数和单词数的简洁在线工具。100% 免费，无需上传，浏览器内完成。" />
+    <meta
+      name="keywords"
+      content="单词计数器, 字符计数器, 字符数统计, 在线单词计数器, 文本分析, 字符数, 单词数, 实时单词数, 隐私保护, 免费工具, 高速工具, 浏览器工具" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="zh" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/util/EasyLetterWordCounter/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/util/EasyLetterWordCounter" />
+    <meta property="og:title" content="简单字符与单词计数器 – 高速在线文本工具" />
+    <meta
+      property="og:description"
+      content="将文本粘贴或输入后，即可立即查看字符数与单词数。100% 隐私保护，无需上传。免费且高速运行。" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.singhyogendra.com.np/more/cn/util/EasyLetterWordCounter" />
+    <meta name="twitter:title" content="简单字符与单词计数器 – 高速在线文本工具" />
+    <meta
+      name="twitter:description"
+      content="将文本粘贴或输入后，即可立即查看字符数与单词数。100% 隐私保护，无需上传。" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <!-- Google 标签 (gtag.js) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background: #f8fbff;
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+      .container {
+        max-width: 420px;
+        margin: 36px auto 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px #13d2b033;
+        padding: 26px 16px 20px 16px;
+      }
+      .logo {
+        font-size: 1.2em;
+        color: #1588c7;
+        font-weight: bold;
+        margin-bottom: 6px;
+        text-align: center;
+      }
+      .desc {
+        color: #19788a;
+        text-align: center;
+        margin-bottom: 18px;
+        font-size: 1.08em;
+      }
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 100px;
+        border: 1.2px solid #b5e2f2;
+        border-radius: 10px;
+        padding: 13px;
+        font-size: 1.08em;
+        background: #fafdff;
+        font-family: inherit;
+        resize: vertical;
+        margin-bottom: 10px;
+        line-height: 1.6;
+        transition: border 0.2s;
+      }
+      textarea:focus { border-color: #1588c7; outline: none; }
+      .count-area {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        font-size: 1.1em;
+        color: #1a5c9b;
+        font-weight: bold;
+      }
+      .footer {
+        color: #aaa;
+        text-align: center;
+        font-size: 0.93em;
+        margin-top: 14px;
+      }
+      @media (max-width: 500px) {
+        .container { max-width: 99vw; padding: 10px 2vw 12px 2vw; }
+        textarea { font-size: 1em; }
+        .desc { font-size: 1em; }
+        .count-area { font-size: 1em; }
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #13b6a7;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #13d2b066;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition: background 0.15s, transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover { background: #0e8078; transform: translateX(-50%) scale(1.04); }
+      @media (max-width: 600px) {
+        #backBtn { bottom: 18px; font-size: 0.98em; padding: 0.48em 1em; }
+      }
+      section#faq { margin-top: 32px; }
+      section#faq h2 { margin-bottom: 13px; color: #1588c7; font-size: 1.11em; text-align: center; }
+      section#faq dt { font-weight: bold; margin-top: 8px; }
+      section#faq dd { margin: 0 0 7px 0; font-size: 0.99em; color: #19788a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container" itemscope itemtype="https://schema.org/WebApplication">
+        <h1 class="logo" itemprop="name">📝 字符与单词计数器</h1>
+        <p class="desc" itemprop="description">
+          在下方文本框粘贴或输入文本，<br />
+          <span style="color: #17a088">即可实时查看字符数和单词数！</span>
+        </p>
+        <textarea id="inputArea" placeholder="请在此输入或粘贴文本。"></textarea>
+        <div class="count-area">
+          <span id="charCount">字符数: 0</span>
+          <span id="wordCount">单词数: 0</span>
+        </div>
+        <div class="footer">
+          <b>提示：</b>空格和换行也会被计为字符。<br />
+          单词数通过空格分隔进行统计。<br />
+          <span style="color: #19788a">文本不会上传，所有计算均在浏览器内完成。</span>
+        </div>
+        <section aria-labelledby="faq-head" id="faq">
+          <h2 id="faq-head">常见问题 – 简单字符与单词计数器</h2>
+          <dl>
+            <dt>如何使用字符与单词计数器？</dt>
+            <dd>在文本框中输入或粘贴内容后，字符数和单词数会即时更新显示。</dd>
+            <dt>“字符”指的是什么？</dt>
+            <dd>包括空格、标点、换行等所有文本内容都会被计算在内。</dd>
+            <dt>如何计算单词数？</dt>
+            <dd>通过空格和换行分隔文本，并将连续的空格视为一个分隔符进行统计。</dd>
+            <dt>文本会上传到服务器吗？</dt>
+            <dd>不会，所有计算均在本地浏览器中完成，数据不会离开设备。</dd>
+            <dt>该工具是免费的吗？</dt>
+            <dd>是的，100% 完全免费，无需登录或注册即可使用。</dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+    <a href="../" id="backBtn">其他实用工具</a>
+    <script>
+      const inputArea = document.getElementById("inputArea");
+      const charCount = document.getElementById("charCount");
+      const wordCount = document.getElementById("wordCount");
+      function updateCounts() {
+        const text = inputArea.value;
+        charCount.textContent = "字符数: " + text.length;
+        const words = text.trim().split(/\s+/).filter(Boolean);
+        wordCount.textContent = "单词数: " + (text.trim() ? words.length : 0);
+      }
+      inputArea.addEventListener("input", updateCounts);
+      updateCounts();
+    </script>
+    <!-- FAQPage Schema 用于 SEO/SGE/GEO 富结果 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "如何使用字符与单词计数器？",
+          "acceptedAnswer": { "@type": "Answer", "text": "在文本框中输入或粘贴内容后，字符数和单词数会即时更新显示。" }
+        },
+        {
+          "@type": "Question",
+          "name": "“字符”指的是什么？",
+          "acceptedAnswer": { "@type": "Answer", "text": "包括空格、标点、换行等所有文本内容都会被计算在内。" }
+        },
+        {
+          "@type": "Question",
+          "name": "如何计算单词数？",
+          "acceptedAnswer": { "@type": "Answer", "text": "通过空格和换行分隔文本，并将连续的空格视为一个分隔符进行统计。" }
+        },
+        {
+          "@type": "Question",
+          "name": "文本会上传到服务器吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "不会，所有计算均在本地浏览器中完成，数据不会离开设备。" }
+        },
+        {
+          "@type": "Question",
+          "name": "该工具是免费的吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "是的，100% 完全免费，无需登录或注册即可使用。" }
+        }
+      ]
+    }
+    </script>
+  </body>
+</html>

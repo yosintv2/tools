@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>简单文本加锁与解锁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="使用密码或 Base64 简单地锁定和解锁文本。无需上传，一切在浏览器内即时完成！" />
+    <meta
+      name="keywords"
+      content="文本加锁, 文本解密, 简单加密, 简单解密, 密码, 在线, 安全, 隐私保护" />
+    <meta name="author" content="Itagi" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/util/textcrypto/" />
+    <meta property="og:title" content="简单文本加锁与解锁" />
+    <meta
+      property="og:description"
+      content="这是一款在浏览器内即可使用的超简便文本加锁/解锁工具。轻松隐藏或恢复秘密信息，无需上传！" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/util/textcrypto/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="简单文本加锁与解锁" />
+    <meta
+      name="twitter:description"
+      content="使用密码或 Base64 简单地加锁和解锁秘密信息。新手也能轻松使用，安全且隐私无忧。" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <!-- CryptoJS (AES/BASE64) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <style>
+      :root {
+        --main: #56b1dd;
+        --main-dark: #307093;
+        --bg: #f3faff;
+        --btn: #56b1dd;
+        --btn-hover: #399ac8;
+      }
+      body {
+        background: var(--bg);
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #224;
+      }
+      .container {
+        max-width: 400px;
+        margin: 38px auto 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 18px #56b1dd22;
+        padding: 28px 18px 17px 18px;
+      }
+      .title {
+        text-align: center;
+        font-size: 1.32em;
+        color: var(--main-dark);
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .subtitle {
+        text-align: center;
+        color: #3686a7;
+        font-size: 1.01em;
+        margin-bottom: 17px;
+      }
+      .step {
+        margin-bottom: 14px;
+      }
+      label {
+        font-weight: 600;
+        margin-bottom: 3px;
+        display: block;
+        color: #2874a4;
+        font-size: 1em;
+      }
+      .hint {
+        color: #319a6c;
+        font-size: 0.96em;
+        margin-bottom: 7px;
+        margin-top: -2px;
+      }
+      select,
+      input[type="password"] {
+        width: 100%;
+        padding: 8px 9px;
+        border-radius: 7px;
+        border: 1.2px solid #cbe0ee;
+        font-size: 1.05em;
+        margin-bottom: 4px;
+        background: #fafdff;
+        color: #224;
+        box-sizing: border-box;
+      }
+      textarea {
+        width: 100%;
+        min-height: 88px;
+        border-radius: 8px;
+        border: 1.2px solid #bee0ee;
+        padding: 10px;
+        font-size: 1.08em;
+        background: #fafdff;
+        font-family: "Fira Mono", "Menlo", monospace;
+        box-sizing: border-box;
+        margin-bottom: 4px;
+      }
+      .btn {
+        width: 100%;
+        background: var(--btn);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 13px 0;
+        font-size: 1.11em;
+        font-weight: bold;
+        margin: 14px 0 12px 0;
+        cursor: pointer;
+        box-shadow: 0 2px 10px #56b1dd2a;
+        transition: background 0.13s;
+      }
+      .btn:active,
+      .btn:hover {
+        background: var(--btn-hover);
+      }
+      .btn-copy {
+        width: 100%;
+        background: #319a6c;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 9px 0;
+        font-size: 1em;
+        margin-bottom: 3px;
+        cursor: pointer;
+        transition: background 0.12s;
+      }
+      .btn-copy:active,
+      .btn-copy:hover {
+        background: #247251;
+      }
+      .result-label {
+        font-weight: 600;
+        margin-top: 12px;
+        margin-bottom: 2px;
+        color: #2874a4;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.94em;
+        margin-top: 15px;
+        opacity: 0.89;
+      }
+      .msg {
+        color: #2a964b;
+        font-size: 0.99em;
+        text-align: center;
+        min-height: 1.4em;
+        margin-bottom: 4px;
+      }
+      .warn {
+        color: #c74321;
+        font-size: 0.97em;
+        text-align: center;
+        margin-top: 12px;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #56b1dd;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #56b1dd66;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #399ac8;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 540px) {
+        .container {
+          max-width: 99vw;
+          padding: 9px 2vw 10px 2vw;
+        }
+        .title {
+          font-size: 1.09em;
+        }
+        .btn {
+          font-size: 0.98em;
+        }
+        .btn-copy {
+          font-size: 0.97em;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">🔒 简易文本加密与解密</div>
+      <div class="subtitle">
+        轻松隐藏或恢复秘密信息。<br />
+        （所有操作均在浏览器内即时完成，完全无需上传！）
+      </div>
+      <div class="step">
+        <label for="modeSelect">请选择操作：</label>
+        <select id="modeSelect">
+          <option value="encrypt">🔑 加锁消息（隐藏）</option>
+          <option value="decrypt">🔓 解锁消息（显示）</option>
+        </select>
+      </div>
+      <div class="step">
+        <label for="algoSelect">请选择加锁／解锁方式：</label>
+        <select id="algoSelect">
+          <option value="aes">🔑 使用密码加锁（最安全）</option>
+          <option value="base64">📦 仅隐藏（Base64）</option>
+        </select>
+        <div class="hint">若想获得最高安全性，请选择“使用密码加锁”。</div>
+      </div>
+      <div class="step" id="passwordRow">
+        <label for="password">密码 <span style="font-weight: 400">(仅限 AES)</span></label>
+        <input type="password" id="password" autocomplete="off" placeholder="请输入 AES 专用密码" />
+        <div class="hint">建议使用字母和数字组合，设定强密码。</div>
+      </div>
+      <div class="step">
+        <label for="inputArea">消息</label>
+        <textarea id="inputArea" placeholder="请输入要加锁或解锁的文本！"></textarea>
+      </div>
+      <button class="btn" id="runBtn">加锁消息</button>
+      <div class="result-label">结果</div>
+      <textarea id="outputArea" readonly placeholder="加密或解密后的消息将显示在此。"></textarea>
+      <button class="btn-copy" id="copyBtn">复制结果</button>
+      <div class="msg" id="msg"></div>
+      <div class="warn">
+        <b>提示：</b>若使用密码加锁，请务必妥善保存密码！<br />
+        “仅隐藏”安全性较低，但使用便捷。
+      </div>
+      <div class="footer">
+        100% 在浏览器内运行 · 开源。<br />
+        <b>无需上传，无任何跟踪。</b><br />
+        永久永久免费！
+      </div>
+    </div>
+    <a href="../" id="backBtn">其他工具</a>
+    <script>
+      // 元素获取
+      const modeSelect = document.getElementById("modeSelect");
+      const algoSelect = document.getElementById("algoSelect");
+      const passwordRow = document.getElementById("passwordRow");
+      const password = document.getElementById("password");
+      const inputArea = document.getElementById("inputArea");
+      const outputArea = document.getElementById("outputArea");
+      const runBtn = document.getElementById("runBtn");
+      const copyBtn = document.getElementById("copyBtn");
+      const msg = document.getElementById("msg");
+
+      // 密码行显示/隐藏
+      function updateAlgo() {
+        passwordRow.style.display = algoSelect.value === "aes" ? "block" : "none";
+      }
+      algoSelect.onchange = updateAlgo;
+      updateAlgo();
+
+      // 模式切换时清空字段并更新按钮文字
+      function clearTextFields() {
+        inputArea.value = "";
+        outputArea.value = "";
+        msg.textContent = "";
+      }
+      modeSelect.onchange = function () {
+        clearTextFields();
+        runBtn.textContent =
+          modeSelect.value === "encrypt" ? "加锁消息" : "解锁消息";
+      };
+      modeSelect.dispatchEvent(new Event("change"));
+
+      // 执行加锁／解锁
+      runBtn.onclick = function () {
+        const mode = modeSelect.value;
+        const algo = algoSelect.value;
+        const text = inputArea.value;
+        const key = password.value;
+        outputArea.value = "";
+        msg.textContent = "";
+
+        if (!text) {
+          msg.textContent = "请输入消息！";
+          return;
+        }
+        if (algo === "aes") {
+          if (!key) {
+            msg.textContent = "请输入密码！";
+            return;
+          }
+          try {
+            if (mode === "encrypt") {
+              const encrypted = CryptoJS.AES.encrypt(text, key).toString();
+              outputArea.value = encrypted;
+              msg.textContent = "消息已加锁！（AES）";
+            } else {
+              const decrypted = CryptoJS.AES.decrypt(text, key);
+              const plain = decrypted.toString(CryptoJS.enc.Utf8);
+              if (!plain) {
+                msg.textContent = "解密失败（请检查密码或文本）。";
+                outputArea.value = "";
+                return;
+              }
+              outputArea.value = plain;
+              msg.textContent = "成功！消息已恢复！";
+            }
+          } catch (e) {
+            msg.textContent = "错误：" + e;
+          }
+        } else if (algo === "base64") {
+          try {
+            if (mode === "encrypt") {
+              const encoded = btoa(unescape(encodeURIComponent(text)));
+              outputArea.value = encoded;
+              msg.textContent = "消息已隐藏！（Base64）";
+            } else {
+              try {
+                const decoded = decodeURIComponent(escape(atob(text)));
+                outputArea.value = decoded;
+                msg.textContent = "解密完成！原始消息如下。";
+              } catch (err) {
+                msg.textContent = "无法解密（可能格式不正确）。";
+                outputArea.value = "";
+              }
+            }
+          } catch (e) {
+            msg.textContent = "错误：" + e;
+          }
+        }
+      };
+
+      // 复制结果
+      copyBtn.onclick = function () {
+        if (!outputArea.value) {
+          msg.textContent = "没有可复制的内容！";
+          return;
+        }
+        outputArea.select();
+        document.execCommand("copy");
+        msg.textContent = "复制成功！";
+      };
+    </script>
+    <section
+      style="
+        max-width: 320px;
+        margin: 48px auto 24px auto;
+        background: #1e1e1e;
+        border-radius: 18px;
+        box-shadow: 0 6px 24px #1236;
+        padding: 24px;
+        font-family: Arial, sans-serif;
+      ">
+      <div style="color: #8f94fb; font-size: 1.1em; font-weight: bold; margin-bottom: 14px">
+        ❓ 常见问题 – 文本加锁与解锁
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">消息会上传到服务器吗？</div>
+        <div style="color: #f0f0f0">
+          不会。所有加密与解密均在浏览器内即时处理，绝不会上传或保存到任何外部服务器。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">应该选择哪种模式？</div>
+        <div style="color: #f0f0f0">
+          <b>使用密码（AES）：</b> 强力加密，解密时需要密码。<br />
+          <b>仅隐藏（Base64）：</b> 简单的隐藏，安全性较低，但操作更便捷。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">如果忘记密码怎么办？</div>
+        <div style="color: #f0f0f0">
+          如果没有正确的密码，使用 AES 加密的消息将无法恢复。请务必妥善保管密码！
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">支持 Emoji、符号及多语言字符吗？</div>
+        <div style="color: #f0f0f0">
+          支持。本工具兼容 Emoji、中文、日文、韩文等各种字符与符号。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 0">
+        <div style="color: #8f94fb; font-weight: bold">此工具安全吗？</div>
+        <div style="color: #f0f0f0">
+          安全。本工具开源，可离线使用，数据不会以任何形式发送到服务器。
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

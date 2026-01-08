@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>文本摘要工具 – 快速提取长文要点！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="轻松为长文、文章和论文生成摘要。无需上传，免费且保护隐私，可在浏览器中立即使用！" />
+    <meta
+      name="keywords"
+      content="文本摘要, 自动摘要, 文章摘要, 在线摘要, 免费, 隐私保护, 浏览器工具" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="zh" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/util/textsummarizer/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <meta property="og:title" content="文本摘要工具 – 快速提取长文要点！" />
+    <meta
+      property="og:description"
+      content="即时为文章、文档和论文生成摘要。无需上传，免费且隐私保护。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/util/textsummarizer/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="文本摘要工具 – 快速提取长文要点！" />
+    <meta name="twitter:description" content="在浏览器中轻松为长文、文章或论文生成摘要。" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Google 标签 (gtag.js) -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      body {
+        background: #f7fcff;
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        color: #223;
+      }
+      .container {
+        max-width: 420px;
+        margin: 30px auto 0 auto;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 4px 22px #117c9a28;
+        padding: 22px 13px 18px 13px;
+      }
+      .logo {
+        font-size: 1.25em;
+        text-align: center;
+        color: #117c9a;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .desc {
+        text-align: center;
+        color: #127080;
+        margin-bottom: 15px;
+        font-size: 1.07em;
+      }
+      textarea {
+        width: 100%;
+        min-height: 110px;
+        border: 1.2px solid #b9eaf8;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 1.09em;
+        background: #fafdff;
+        margin-bottom: 11px;
+        font-family: inherit;
+      }
+      .input-row {
+        margin-bottom: 8px;
+      }
+      .slider-label {
+        color: #19788a;
+        font-size: 1.03em;
+        margin-right: 8px;
+      }
+      #summaryLength {
+        vertical-align: middle;
+      }
+      #lengthVal {
+        margin-left: 6px;
+        color: #127080;
+      }
+      .action-btn {
+        width: 100%;
+        background: #117c9a;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.17em;
+        font-weight: bold;
+        padding: 12px 0;
+        margin: 11px 0 10px 0;
+        cursor: pointer;
+      }
+      .action-btn:active {
+        background: #09506d;
+      }
+      .output-box {
+        min-height: 52px;
+        background: #f7fcff;
+        border: 1.1px solid #b2e0ee;
+        border-radius: 8px;
+        font-size: 1.07em;
+        padding: 12px 10px 10px 12px;
+        white-space: pre-wrap;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.93em;
+        margin-top: 14px;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #117c9a;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #117c9a22;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #09506d;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 10px 2vw 13px 2vw;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">📝 文本摘要工具</div>
+      <div class="desc">
+        请将长文本或文章粘贴到下方。<br />
+        单击 <b>“生成摘要”</b> 按钮，立即获得简洁要点！
+      </div>
+      <textarea id="inputText" placeholder="请在此粘贴长篇文本..."></textarea>
+      <div class="input-row">
+        <label class="slider-label" for="summaryLength">摘要长度：</label>
+        <input type="range" min="1" max="10" value="3" id="summaryLength" />
+        <span id="lengthVal">3</span> 句
+      </div>
+      <button class="action-btn" id="summarizeBtn">生成摘要</button>
+      <div class="output-box" id="summaryResult" style="margin-top: 8px"></div>
+      <div class="footer">
+        所有处理均在本地浏览器完成。<b>无需上传</b>，免费且保护隐私。<br />
+        <span style="color: #127080">提示：可用于新闻、维基百科、报告等任何长文！</span>
+      </div>
+    </div>
+    <a href="../" id="backBtn">其他工具</a>
+    <script>
+      const inputText = document.getElementById("inputText");
+      const summaryResult = document.getElementById("summaryResult");
+      const summarizeBtn = document.getElementById("summarizeBtn");
+      const summaryLength = document.getElementById("summaryLength");
+      const lengthVal = document.getElementById("lengthVal");
+
+      summaryLength.oninput = function () {
+        lengthVal.textContent = summaryLength.value;
+      };
+
+      // 简单的基于词频的摘要（不使用 AI）
+      function summarize(text, numSentences = 3) {
+        if (!text.trim()) return "请粘贴文本，然后点击“生成摘要”。";
+        // 按句子拆分
+        const sentences = text.match(/[^\.!\?]+[\.!\?]+/g) || [text];
+        if (sentences.length <= numSentences) return text;
+        // 计算词频
+        const freq = {};
+        const words = text
+          .replace(/[^\w\s]/g, "")
+          .toLowerCase()
+          .split(/\s+/);
+        words.forEach((w) => {
+          if (w.length > 2) freq[w] = (freq[w] || 0) + 1;
+        });
+        // 给每句打分（累加词频）
+        const scored = sentences.map((s) => {
+          const sw = s
+            .replace(/[^\w\s]/g, "")
+            .toLowerCase()
+            .split(/\s+/);
+          let score = 0;
+          sw.forEach((w) => {
+            if (freq[w]) score += freq[w];
+          });
+          return { sentence: s.trim(), score };
+        });
+        // 选出分数最高的前 N 句，然后按原顺序排序
+        const top = scored
+          .sort((a, b) => b.score - a.score)
+          .slice(0, numSentences)
+          .sort(
+            (a, b) =>
+              sentences.indexOf(a.sentence + ".") - sentences.indexOf(b.sentence + ".")
+          );
+        return top.map((t) => t.sentence).join(" ");
+      }
+
+      summarizeBtn.onclick = function () {
+        const text = inputText.value;
+        const num = parseInt(summaryLength.value, 10);
+        const summary = summarize(text, num);
+        summaryResult.textContent = summary;
+      };
+    </script>
+    <section
+      style="
+        max-width: 320px;
+        margin: 48px auto 24px auto;
+        background: #1e1e1e;
+        border-radius: 18px;
+        box-shadow: 0 6px 24px #1236;
+        padding: 24px;
+        font-family: Arial, sans-serif;
+      ">
+      <div style="color: #8f94fb; font-size: 1.1em; font-weight: bold; margin-bottom: 14px">
+        ❓ 常见问题 – 文本摘要工具
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">此工具使用 AI 或 ChatGPT 吗？</div>
+        <div style="color: #f0f0f0">
+          不使用。此工具基于词频算法提取关键句子，处理速度快且保护隐私，但无法达到 AI 摘要的精度。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">我的文本会被上传或保存吗？</div>
+        <div style="color: #f0f0f0">
+          绝对不会。所有操作都在本地浏览器中完成，不会发送到任何服务器。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">支持哪些语言？</div>
+        <div style="color: #f0f0f0">
+          主要针对英文进行优化。其他语言也能使用，但结果可能会有所差异。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">摘要效果如何？</div>
+        <div style="color: #f0f0f0">
+          通过计算词语出现频率，选择重要句子排序生成摘要。方法简单，但对快速了解文章内容非常有帮助。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 0">
+        <div style="color: #8f94fb; font-weight: bold">适用于哪些场景？</div>
+        <div style="color: #f0f0f0">
+          适合在需要快速获取新闻、博客、论文等长文要点时使用。
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

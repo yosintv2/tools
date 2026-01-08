@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="在 GREEN Click 中测试你的专注力和反应速度！只有当单词为绿色时才点击。简单上瘾，移动端优化，免费在线游戏！"
+        />
+        <meta
+            name="keywords"
+            content="GREEN Click, 反应游戏, 脑力训练, 颜色游戏, 快速游戏, 专注力, 点击挑战, 免费在线游戏, 移动端, 浏览器游戏, 反射神经, 休闲"
+        />
+        <meta name="author" content="Itagi" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/game/GREENClick" />
+
+        <meta property="og:title" content="GREEN Click – 免费在线反应游戏！" />
+        <meta
+            property="og:description"
+            content="只点绿色单词！在这款上瘾的在线游戏中挑战你的大脑和反应速度。"
+        />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/game/GREENClick" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GREEN Click – 免费在线反应游戏！" />
+        <meta
+            name="twitter:description"
+            content="仅在文字为绿色时点击！在这款快速脑力训练游戏中超越好友 – 在线免费畅玩。"
+        />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"
+        ></script>
+        <title>GREEN Click – 免费在线反应游戏！</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                user-select: none;
+            }
+
+            body {
+                font-family: "Segoe UI", sans-serif;
+                background-color: #1e1e1e;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+
+            h1 {
+                margin-bottom: 0.5rem;
+            }
+
+            #description {
+                margin-bottom: 20px;
+                font-size: 1rem;
+            }
+
+            #box {
+                width: 300px;
+                height: 300px;
+                margin: 10px auto;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                font-weight: bold;
+                background-color: #555;
+                transition: background-color 0.2s;
+                position: relative;
+                flex-direction: column;
+                cursor: pointer;
+            }
+
+            #word {
+                font-size: 2rem;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+
+            #score,
+            #message,
+            #finalScore {
+                font-size: 1.1rem;
+                margin: 10px;
+            }
+
+            #controls {
+                margin-top: 15px;
+                display: none;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                margin: 5px;
+                border: solid;
+                border-radius: 6px;
+                border-color: white;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color: #45a045;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><span style="color: green">GREEN</span> Click</h1>
+        <p id="description">你的眼睛会欺骗你。<br />只相信文字：“GREEN”。</p>
+
+        <div id="box">
+            <div id="word">点击开始</div>
+        </div>
+
+        <div id="score" style="font-size: x-large; font-weight: bold">得分：0</div>
+        <div id="message"></div>
+        <div id="finalScore"></div>
+
+        <div id="controls">
+            <button class="btn" onclick="startGame()">重新开始</button>
+            <button class="btn" onclick="shareScore()">分享</button>
+        </div>
+
+        <script>
+            const box = document.getElementById("box");
+            const wordDiv = document.getElementById("word");
+            const scoreDisplay = document.getElementById("score");
+            const message = document.getElementById("message");
+            const finalScore = document.getElementById("finalScore");
+            const controls = document.getElementById("controls");
+
+            const colors = ["GREEN", "RED", "BLUE", "YELLOW", "ORANGE", "PURPLE"];
+            const bgColors = ["green", "red", "blue", "yellow", "orange", "purple", "pink", "cyan", "lime", "gold"];
+
+            let currentText = "";
+            let score = 0;
+            let gameRunning = false;
+            let gameStarted = false;
+            let timeoutId = null;
+            let intervalId = null;
+
+            function getRandom(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            function updateBox() {
+                const bgColor = getRandom(bgColors);
+                box.style.backgroundColor = bgColor;
+
+                currentText = getRandom(colors);
+                wordDiv.textContent = currentText;
+
+                if (currentText === "GREEN") {
+                    timeoutId = setTimeout(() => {
+                        endGame("错过了 GREEN！");
+                    }, 1000);
+                }
+            }
+
+            function startGame() {
+                clearInterval(intervalId);
+                clearTimeout(timeoutId);
+                score = 0;
+                gameRunning = true;
+                gameStarted = true;
+                message.textContent = "";
+                finalScore.textContent = "";
+                scoreDisplay.textContent = "得分：0";
+                wordDiv.textContent = "";
+                box.style.pointerEvents = "auto";
+                controls.style.display = "none";
+
+                setTimeout(() => {
+                    updateBox();
+                    intervalId = setInterval(updateBox, 1200);
+                }, 500);
+            }
+
+            function endGame(reason) {
+                clearInterval(intervalId);
+                clearTimeout(timeoutId);
+                gameRunning = false;
+                box.style.backgroundColor = "#000";
+                wordDiv.textContent = "游戏结束";
+                box.style.pointerEvents = "none";
+
+                message.textContent = reason;
+                controls.style.display = "block";
+            }
+
+            function shareScore() {
+                const shareText = `🎯 GREEN Click 挑战得分 ${score}！\n快来挑战 👉 ${window.location.href}`;
+                if (navigator.share) {
+                    navigator
+                        .share({
+                            title: "GREEN Click 挑战",
+                            text: shareText,
+                            url: window.location.href
+                        })
+                        .catch(() => {
+                            navigator.clipboard.writeText(shareText);
+                            alert("链接已复制到剪贴板！ 📋");
+                        });
+                } else {
+                    navigator.clipboard.writeText(shareText);
+                    alert("链接已复制到剪贴板！ 📋");
+                }
+            }
+
+            box.addEventListener("click", () => {
+                if (!gameStarted) {
+                    startGame();
+                    return;
+                }
+
+                if (!gameRunning) return;
+
+                clearTimeout(timeoutId);
+
+                if (currentText === "GREEN") {
+                    score++;
+                    scoreDisplay.textContent = `得分：${score}`;
+                    let intervalTime = Math.max(400, 1200 - score * 50);
+
+                    clearInterval(intervalId);
+                    intervalId = setInterval(updateBox, intervalTime);
+                } else {
+                    endGame("错误！不是 GREEN。");
+                }
+            });
+        </script>
+        <button
+            style="
+                margin-top: 20px;
+                width: 90%;
+                height: 60px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #000;
+                cursor: pointer;
+                border-radius: 6px;
+                border: solid;
+                color: white;
+                border-color: white;
+            "
+            onclick="window.location.href='/'">
+            📂 更多游戏
+        </button>
+        <section
+            style="
+                width: 90%;
+                max-width: 420px;
+                margin: 60px auto;
+                padding: 20px;
+                font-family: 'Segoe UI', sans-serif;
+                background: #f0fff4;
+                color: #2d3436;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                line-height: 1.6;
+                font-size: 14px;
+            ">
+            <h2 style="font-size: 20px; margin-bottom: 1rem; color: #006400">❓ 常见问题 (FAQ)</h2>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q1. 如何玩 GREEN Click？</strong><br />
+                A. 只有当屏幕上的文字显示为 <strong>GREEN</strong> 时才点击——忽略背景颜色！
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q2. 游戏何时结束？</strong><br />
+                A. 点击了不是 GREEN 的文字，或者当 GREEN 显示时未在限定时间内点击，就会结束游戏。
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q3. 有时间限制吗？</strong><br />
+                A. 有！当文字变为 GREEN 时，大约有 1 秒钟时间来点击，否则游戏结束。
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q4. 游戏难度会增加吗？</strong><br />
+                A. 会的！随着分数提高，文字和背景切换的速度会越来越快。
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q5. 如何重新开始游戏？</strong><br />
+                A. 点击<strong>重新开始</strong>按钮即可随时重新挑战。
+            </div>
+
+            <div>
+                <strong>Q6. 如何分享分数？</strong><br />
+                A. 点击<strong>分享</strong>按钮即可复制游戏链接和分数，与好友一起PK！
+            </div>
+        </section>
+    </body>
+</html>

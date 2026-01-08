@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>随机分组生成器 – 在线团队分组</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="只需输入姓名并选择团队数量，即可立即随机分组！100% 在浏览器中完成，无需上传。" />
+    <meta
+      name="keywords"
+      content="随机团队, 分组, 姓名随机, 团队生成, 学习小组, 班级, 团队分配, 分组工具, 随机分配" />
+    <meta name="author" content="Itagi" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/util/teamgen/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <meta property="og:title" content="随机团队生成器 – 在线分组" />
+    <meta
+      property="og:description"
+      content="将姓名随机分配到团队/小组。迅速打乱，仅在浏览器中运行，无需上传数据。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/util/teamgen/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="随机团队生成器 – 在线分组" />
+    <meta
+      name="twitter:description"
+      content="将姓名随机分组，高速且注重隐私，全程在浏览器中处理！" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Google Analytics -->
+    <!-- Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      body {
+        background: #f3f9fe;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #182741;
+      }
+      .container {
+        max-width: 420px;
+        margin: 36px auto 0 auto;
+        background: #fff;
+        border-radius: 19px;
+        box-shadow: 0 5px 22px #0c7fc230;
+        padding: 30px 15px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .logo {
+        font-size: 1.25em;
+        font-weight: bold;
+        color: #1684e5;
+        text-align: center;
+        margin-bottom: 12px;
+        letter-spacing: -1px;
+      }
+      .desc {
+        text-align: center;
+        color: #1b6688;
+        margin-bottom: 19px;
+        font-size: 1.05em;
+      }
+      .input-row {
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .label {
+        color: #1684e5;
+        font-size: 0.99em;
+        margin-bottom: 2px;
+      }
+      textarea,
+      input[type="number"] {
+        width: 100%;
+        border-radius: 7px;
+        border: 1.2px solid #c9e8fa;
+        padding: 10px 10px;
+        font-size: 1.06em;
+        background: #fafdff;
+        color: #203b59;
+        box-sizing: border-box;
+        margin-bottom: 2px;
+        resize: none;
+        transition: border 0.13s;
+      }
+      textarea:focus,
+      input[type="number"]:focus {
+        border-color: #188cd4;
+        outline: none;
+      }
+      .control-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .team-num-input {
+        width: 85px;
+        font-size: 1.02em;
+      }
+      .gen-btn {
+        background: linear-gradient(90deg, #1684e5, #16b66e);
+        color: #fff;
+        border: none;
+        border-radius: 9px;
+        font-size: 1.09em;
+        font-weight: bold;
+        padding: 11px 18px;
+        cursor: pointer;
+        box-shadow: 0 2px 10px #1684e522;
+        letter-spacing: 0.01em;
+        transition: background 0.16s;
+      }
+      .gen-btn:active {
+        background: linear-gradient(90deg, #11608a, #17a964);
+      }
+      .result-list {
+        margin: 14px 0 15px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .team-block {
+        background: #f2faff;
+        border: 1.2px solid #b5dbf9;
+        border-radius: 12px;
+        padding: 13px 10px 10px 12px;
+        box-shadow: 0 2px 8px #1684e525;
+        font-size: 1.06em;
+        display: flex;
+        flex-direction: column;
+        min-height: 46px;
+        margin-bottom: 3px;
+      }
+      .team-title {
+        color: #1787e2;
+        font-weight: bold;
+        font-size: 1.09em;
+        margin-bottom: 7px;
+      }
+      .team-names {
+        color: #17658a;
+        font-size: 1em;
+        line-height: 1.7;
+      }
+      .hint {
+        color: #18b88a;
+        font-size: 0.97em;
+        margin: 5px 0 7px 0;
+        text-align: center;
+        min-height: 20px;
+      }
+      .adsense {
+        text-align: center;
+        margin: 8px 0 9px 0;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.93em;
+        margin-top: 11px;
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 12px 2vw 9px 2vw;
+        }
+        .result-row {
+          font-size: 1em;
+        }
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #13b6a7;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #13d2b066;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #0e8078;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">🔀 随机团队／分组生成</div>
+      <div class="desc">
+        将姓名粘贴或每行输入一个姓名。<br />
+        选择团队数量，<br />
+        立即获得随机分组结果！
+      </div>
+      <div class="input-row">
+        <label for="names" class="label">姓名（每行一个）：</label>
+        <textarea
+          id="names"
+          rows="6"
+          placeholder="山田太郎&#10;田中花子&#10;佐藤一郎&#10;..."></textarea>
+      </div>
+      <div class="control-row">
+        <label for="teamNum" class="label">团队数量</label>
+        <input id="teamNum" class="team-num-input" type="number" min="2" max="20" value="2" />
+        <button class="gen-btn" id="genBtn" title="随机分组">生成分组</button>
+      </div>
+      <div class="hint" id="hint"></div>
+      <div class="result-list" id="resultList"></div>
+      <a href="../" id="backBtn">其他工具</a>
+      <div class="footer">
+        100% 全程在浏览器中完成。无跟踪，无上传。<br />
+      </div>
+    </div>
+    <script>
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+      document.getElementById("genBtn").onclick = function () {
+        const namesRaw = document.getElementById("names").value;
+        const teamNum = parseInt(document.getElementById("teamNum").value, 10);
+        const resultList = document.getElementById("resultList");
+        const hint = document.getElementById("hint");
+        resultList.innerHTML = "";
+        hint.textContent = "";
+
+        let names = namesRaw
+          .split("\n")
+          .map((x) => x.trim())
+          .filter(Boolean);
+
+        if (names.length < 2) {
+          hint.textContent = "请输入至少两个人的姓名！";
+          return;
+        }
+        if (teamNum < 2 || teamNum > 20) {
+          hint.textContent = "团队数量必须在2到20之间。";
+          return;
+        }
+        if (teamNum > names.length) {
+          hint.textContent = "团队数量不得超过姓名人数！";
+          return;
+        }
+
+        shuffle(names);
+        let teams = Array.from({ length: teamNum }, () => []);
+        names.forEach((name, i) => {
+          teams[i % teamNum].push(name);
+        });
+        teams.forEach((team, i) => {
+          const block = document.createElement("div");
+          block.className = "team-block";
+          block.innerHTML = `<div class="team-title">团队 ${i + 1}</div>
+            <div class="team-names">${team.join(", ")}</div>`;
+          resultList.appendChild(block);
+        });
+      };
+    </script>
+    <section
+      style="
+        max-width: 320px;
+        margin: 48px auto 24px auto;
+        background: #1e1e1e;
+        border-radius: 18px;
+        box-shadow: 0 6px 24px #1236;
+        padding: 18px 18px 10px 18px;
+        font-family: Arial, sans-serif;
+      ">
+      <div style="color: #8f94fb; font-size: 1.15em; font-weight: bold; margin-bottom: 14px">
+        ❓ 常见问题
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">数据会被上传或保存吗？</div>
+        <div style="color: #f0f0f0">
+          不会。所有操作均在浏览器内完成，无上传、无保存、无跟踪。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">可以创建超过20个团队吗？</div>
+        <div style="color: #f0f0f0">
+          目前最多支持20个团队。为了易于查看而做了限制，如需更多团队请分多次生成。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">如何复制或导出团队结果？</div>
+        <div style="color: #f0f0f0">
+          可以直接选中结果文本复制，也可以截图分享。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">可以调整团队人数平衡吗？</div>
+        <div style="color: #f0f0f0">
+          不可以。本工具为完全随机分配，可能导致某些团队人数不平均。
+        </div>
+      </div>
+
+      <div style="margin-bottom: 0">
+        <div style="color: #8f94fb; font-weight: bold">每次生成结果都会不同吗？</div>
+        <div style="color: #f0f0f0">
+          是的，每次点击都会随机打乱并生成全新分组结果。
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

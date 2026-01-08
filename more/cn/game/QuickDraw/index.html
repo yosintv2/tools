@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="测试你的反应速度！快速拔枪对决！在DRAW信号后比对方更快地射击。这款有趣且高速的移动端优化网页游戏。" />
+        <meta
+            name="keywords"
+            content="快速拔枪, 牛仔对决, 反应游戏, 网页游戏, 即点即玩, 浏览器游戏, 手机游戏,免费游戏" />
+        <meta name="author" content="Itagi" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/game/QuickDraw" />
+
+        <meta property="og:title" content="快速拔枪对决 – 牛仔反应网页游戏" />
+        <meta
+            property="og:description"
+            content="比对方更快地射击！来玩免费的牛仔反应游戏。在移动端或 PC 上无需下载即可体验。" />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/game/QuickDraw" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="快速拔枪对决 – 牛仔反应网页游戏" />
+        <meta
+            name="twitter:description"
+            content="挑战好友！在这款有趣且即点即玩的西部牛仔游戏中看看谁是最快的！" />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"></script>
+        <title>快速拔枪对决</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: linear-gradient(to top, #fbeec1, #e0c097);
+                font-family: "Inter", sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: center;
+                position: relative;
+            }
+
+            h1 {
+                font-family: "Bangers", cursive;
+                font-size: 1.8em;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                color: #5a3e1b;
+                text-shadow: 2px 2px #fff0c4;
+            }
+
+            .arena {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 90%;
+                max-width: 400px;
+                margin: 10px 0;
+                font-size: 4em;
+                background: #fffef4;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                padding: 30px 10px;
+                border: 3px solid #d2b48c;
+            }
+
+            .cowboy {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: all 0.3s ease;
+            }
+
+            .cowboy span {
+                font-size: 1.1rem;
+                margin-top: 10px;
+                font-weight: bold;
+                color: #444;
+            }
+
+            #message {
+                font-size: 1.3em;
+                min-height: 2em;
+                margin-top: 10px;
+                color: #222;
+            }
+
+            .btn-group {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .btn {
+                padding: 12px 28px;
+                font-size: 1.1em;
+                cursor: pointer;
+                border: none;
+                border-radius: 12px;
+                background: #5a3e1b;
+                color: white;
+                font-weight: bold;
+                transition:
+                    transform 0.2s,
+                    background 0.2s;
+            }
+
+            .btn:hover {
+                background: #7b5633;
+                transform: scale(1.05);
+            }
+
+            .gun {
+                font-size: 1.2em;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .gun.show {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>快速拔枪对决</h1>
+        <p>比对方更快地射击！</p>
+        <div class="arena">
+            <div class="cowboy" id="enemy">
+                <div id="enemyFace">🤠</div>
+                <div id="enemyGun" class="gun">🔫</div>
+                <span>敌人</span>
+            </div>
+            <div class="cowboy" id="player">
+                <div id="playerFace">😐</div>
+                <div id="playerGun" class="gun">🔫</div>
+                <span>你</span>
+            </div>
+        </div>
+
+        <div id="message">点击“开始”按钮以开始游戏。</div>
+
+        <div class="btn-group">
+            <button class="btn" id="startBtn" onclick="startGame()">开始</button>
+            <button class="btn" id="shootBtn" onclick="handlePlayerShoot()" style="display: none; background: red">
+                射击！
+            </button>
+            <button class="btn" id="restartBtn" onclick="restartGame()" style="display: none">再玩一局</button>
+            <button class="btn" id="shareBtn" onclick="shareResult()" style="display: none">分享</button>
+        </div>
+
+        <script>
+            const message = document.getElementById("message");
+            const startBtn = document.getElementById("startBtn");
+            const restartBtn = document.getElementById("restartBtn");
+            const shootBtn = document.getElementById("shootBtn");
+            const shareBtn = document.getElementById("shareBtn");
+
+            const playerFace = document.getElementById("playerFace");
+            const playerGun = document.getElementById("playerGun");
+            const enemyFace = document.getElementById("enemyFace");
+            const enemyGun = document.getElementById("enemyGun");
+
+            let drawTimeout = null;
+            let enemyShotTimeout = null;
+            let drawTime = 0;
+            let gameStarted = false;
+            let readyToShoot = false;
+            let playerReacted = false;
+            let lastReaction = null;
+
+            function startGame() {
+                clearTimeout(drawTimeout);
+                clearTimeout(enemyShotTimeout);
+
+                resetCharacters();
+                gameStarted = true;
+                readyToShoot = false;
+                playerReacted = false;
+                lastReaction = null;
+
+                startBtn.style.display = "none";
+                restartBtn.style.display = "none";
+                shareBtn.style.display = "none";
+                shootBtn.style.display = "inline-block";
+                message.textContent = "请等待‘DRAW’信号...";
+
+                drawTimeout = setTimeout(
+                    () => {
+                        readyToShoot = true;
+                        drawTime = performance.now();
+                        message.textContent = "射击！🔫";
+                        enemyFace.textContent = "😠";
+                        playerFace.textContent = "😠";
+
+                        const enemyReactTime = Math.random() * 400 + 200;
+                        enemyShotTimeout = setTimeout(() => {
+                            if (!playerReacted) {
+                                enemyGun.classList.add("show");
+                                playerFace.textContent = "💀";
+                                endGame("太慢了...你输了！");
+                            }
+                        }, enemyReactTime);
+                    },
+                    Math.random() * 3000 + 2000
+                );
+            }
+
+            function endGame(result) {
+                message.textContent = result;
+                gameStarted = false;
+                restartBtn.style.display = "inline-block";
+                shareBtn.style.display = "inline-block";
+                shootBtn.style.display = "none";
+                clearTimeout(drawTimeout);
+                clearTimeout(enemyShotTimeout);
+            }
+
+            function resetCharacters() {
+                playerFace.textContent = "😐";
+                enemyFace.textContent = "🤠";
+                playerGun.classList.remove("show");
+                enemyGun.classList.remove("show");
+            }
+
+            function handlePlayerShoot() {
+                if (!gameStarted || playerReacted) return;
+
+                if (!readyToShoot) {
+                    playerFace.textContent = "😵";
+                    message.textContent = "太早了...你输了！";
+                    endGame("出手太早！");
+                    return;
+                }
+
+                const reactionTime = performance.now() - drawTime;
+                lastReaction = Math.round(reactionTime);
+                playerReacted = true;
+                playerGun.classList.add("show");
+                shootBtn.style.display = "none";
+
+                if (enemyGun.classList.contains("show")) {
+                    playerFace.textContent = "💀";
+                    endGame("太慢了...你输了！");
+                } else {
+                    enemyFace.textContent = "💀";
+                    endGame(`你赢了！（${lastReaction}ms）`);
+                }
+            }
+
+            function restartGame() {
+                startGame();
+            }
+
+            function shareResult() {
+                const baseUrl = "https://www.singhyogendra.com.np/more/QuickDraw/";
+                let text = "🔥 刚才我玩了《快速拔枪对决》！";
+                if (lastReaction !== null) {
+                    text = `🤠 我的反应速度是 ${lastReaction}ms！快来试试吧！`;
+                }
+
+                const shareData = {
+                    title: "快速拔枪对决",
+                    text: text,
+                    url: baseUrl
+                };
+
+                if (navigator.share) {
+                    navigator.share(shareData).catch(() => {
+                        fallbackCopy(`${text} ${baseUrl}`);
+                    });
+                } else {
+                    fallbackCopy(`${text} ${baseUrl}`);
+                }
+            }
+
+            function fallbackCopy(text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert("结果已复制到剪贴板！请粘贴到想分享的地方 😎");
+                });
+            }
+
+            document.body.addEventListener("click", (e) => {
+                if (e.target.classList.contains("btn")) return;
+                handlePlayerShoot();
+            });
+        </script>
+
+        <button
+            style="
+                margin-top: 20px;
+                width: 90%;
+                height: 60px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #5a3e1b;
+                cursor: pointer;
+                border-radius: 6px;
+                border: none;
+                color: white;
+            "
+            onclick="window.location.href='/'">
+            📂 其他游戏
+        </button>
+        <section style="max-width: 320px; width: 100%; margin: 48px auto 24px auto; font-family: 'Arial', sans-serif; font-size: 14px; background: #fff8e0; border-radius: 18px; box-shadow: 0 6px 24px #aa8844; padding: 20px; line-height: 1.6; color: #3e2c00;">
+          <h2 style="font-size: 1.4rem; margin-bottom: 14px; color: #5a3e1b;">❓ 常见问题</h2>
+
+          <div style="margin-bottom: 12px;">
+            <strong>Q1. 如何游玩？</strong><br/>
+            A. 点击“开始”后，等待“DRAW”信号出现，一旦出现，点击屏幕或按“射击！”按钮，争取比对手更快地射击。
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>Q2. 在信号出现前就射击会怎样？</strong><br/>
+            A. 提前射击会立即失败。请务必等到信号出现后再行动！
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>Q3. 可以在移动端游玩吗？</strong><br/>
+            A. 可以！只需点击屏幕即可射击，游戏无需点击按钮即可进行。
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>Q4. 什么反应速度算优秀？</strong><br/>
+            A. 如果能在 300ms 以内响应就很出色了。专业牛仔有时能做到 200ms 以下！
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>Q5. 如何分享结果？</strong><br/>
+            A. 游戏结束后点击“分享”按钮即可分享到社交媒体，展示你的反应速度。
+          </div>
+
+          <div style="margin-bottom: 0;">
+            <strong>Q6. 游戏每次都公平吗？</strong><br/>
+            A. 是的。信号时间和 AI 反应均随机生成，无法事先预测，保证公平对决。
+          </div>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>在线 卡片 制作器 – 名片、请柬、婚礼 邀请卡 生成器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="立即创建并下载名片、请柬、婚礼邀请卡。选择模板、输入内容，就能保存卡片图像。全部在浏览器内处理，100% 免费。" />
+    <meta
+      name="keywords"
+      content="卡片 制作器, 请柬, 名片, 婚礼 邀请卡, 图像 生成, 在线, 无需 上传, 免费" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="zh" />
+    <meta name="theme-color" content="#16b88a" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/util/cardgen/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="在线 卡片 制作器 – 名片、请柬、婚礼 邀请卡 生成器" />
+    <meta
+      property="og:description"
+      content="在线创建名片、请柬、婚礼邀请卡，并保存为图像。全部免费，无需上传。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/util/cardgen/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="在线 卡片 制作器 – 名片、请柬、婚礼 邀请卡 生成器" />
+    <meta
+      name="twitter:description"
+      content="在线创建名片、请柬、婚礼邀请卡，并保存为图像。全部免费，无需上传。" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Google 标签 (gtag.js) -->
+    <!-- Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      :root {
+        --main: #16b88a;
+        --main-dark: #1a7060;
+        --bg: #f7fbf9;
+      }
+      body {
+        background: var(--bg);
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #234;
+      }
+      .container {
+        max-width: 440px;
+        margin: 38px auto 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 26px #16b88a28;
+        padding: 32px 18px 22px 18px;
+        min-height: 620px;
+        position: relative;
+      }
+      .logo {
+        font-size: 1.35em;
+        font-weight: bold;
+        text-align: center;
+        color: var(--main-dark);
+        margin-bottom: 7px;
+        letter-spacing: -1px;
+      }
+      .desc {
+        text-align: center;
+        color: #23736d;
+        margin-bottom: 18px;
+        font-size: 0.82em;
+      }
+      .form-row {
+        margin-bottom: 11px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .form-row label {
+        font-size: 1em;
+        color: #197a64;
+        margin-bottom: 2px;
+        font-weight: 500;
+      }
+      .form-row input,
+      .form-row select,
+      .form-row textarea {
+        padding: 8px 10px;
+        font-size: 1.03em;
+        border: 1.1px solid #b2e7d3;
+        border-radius: 7px;
+        background: #fafdff;
+        color: #234;
+        resize: none;
+      }
+      .form-row textarea {
+        min-height: 46px;
+      }
+      .card-preview-wrap {
+        text-align: center;
+        margin: 17px 0 8px 0;
+      }
+      .card-preview {
+        display: inline-block;
+        background: #fff;
+        border: 1.2px solid #17b88733;
+        border-radius: 10px;
+        box-shadow: 0 2px 18px #16b88a19;
+        min-width: 320px;
+        min-height: 170px;
+      }
+      .action-btn {
+        background: var(--main);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 0;
+        width: 100%;
+        font-size: 1.13em;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-bottom: 13px;
+        box-shadow: 0 2px 12px #16b88a26;
+        transition: background 0.15s;
+      }
+      .action-btn:active {
+        background: var(--main-dark);
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.95em;
+        margin-top: 24px;
+        line-height: 1.6;
+        opacity: 0.89;
+      }
+      section#faq {
+        margin-top: 30px;
+      }
+      section#faq h2 {
+        margin-bottom: 13px;
+        color: #16b88a;
+        font-size: 1.15em;
+        text-align: center;
+      }
+      section#faq dt {
+        font-weight: bold;
+        margin-top: 8px;
+      }
+      section#faq dd {
+        margin: 0 0 7px 0;
+        font-size: 0.99em;
+        color: #23736d;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #16b88a;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #16b88a44;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #1a7060;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 12px 2vw 14px 2vw;
+        }
+        .card-preview {
+          min-width: 92vw;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container" itemscope itemtype="https://schema.org/WebApplication">
+        <h1 class="logo" itemprop="name">🎨 在线 卡片 制作器</h1>
+        <p class="desc" itemprop="description">
+          在线创建名片、请柬、婚礼邀请卡，并保存为图像。<br />
+          只需三步：选择模板 → 输入信息 → 下载图像！
+        </p>
+        <form id="cardForm" autocomplete="off">
+          <div class="form-row">
+            <label for="template">选择 模板</label>
+            <select id="template">
+              <option value="business">名片</option>
+              <option value="wedding">婚礼 请柬</option>
+              <option value="party">派对 请柬</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="name">姓名／标题</label>
+            <input type="text" id="name" maxlength="32" required />
+          </div>
+          <div class="form-row">
+            <label for="subtitle">副标题</label>
+            <input type="text" id="subtitle" maxlength="32" placeholder="（可选）" />
+          </div>
+          <div class="form-row">
+            <label for="details">详细 信息</label>
+            <textarea id="details" maxlength="120" placeholder="联系方式、地址、日期等"></textarea>
+          </div>
+          <button type="button" class="action-btn" id="downloadBtn">下载 图像</button>
+        </form>
+        <div class="card-preview-wrap">
+          <canvas id="cardCanvas" class="card-preview" width="380" height="210"></canvas>
+        </div>
+        <div class="footer">
+          无需上传，全部在浏览器本地处理。<br />
+          <b>提示：</b>点击卡片图像可预览全尺寸，然后再下载！
+        </div>
+        <!-- FAQ 部分 (SEO/SGE 用) -->
+        <section aria-labelledby="faq-head" id="faq">
+          <h2 id="faq-head">常见问题 – 在线 卡片 制作器</h2>
+          <dl>
+            <dt>可以创建哪些类型的卡片？</dt>
+            <dd>可即时创建名片、婚礼请柬和派对请柬。</dd>
+            <dt>需要注册或安装吗？</dt>
+            <dd>不需要。无需注册或安装，所有数据在浏览器本地处理，无需上传。</dd>
+            <dt>可以将卡片保存为图像吗？</dt>
+            <dd>可以。输入信息后，点击“下载 图像”按钮即可保存为 PNG 格式。</dd>
+            <dt>我的信息安全吗？</dt>
+            <dd>安全。所有数据仅在设备本地处理，不会上传到服务器。</dd>
+            <dt>下载前可以预览吗？</dt>
+            <dd>可以。点击画布区域会在新窗口中打开全尺寸预览。</dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+    <a href="../" id="backBtn">其他 实用 工具</a>
+    <script>
+      const cardCanvas = document.getElementById("cardCanvas");
+      const ctx = cardCanvas.getContext("2d");
+      const template = document.getElementById("template");
+      const nameInput = document.getElementById("name");
+      const subtitleInput = document.getElementById("subtitle");
+      const detailsInput = document.getElementById("details");
+      const downloadBtn = document.getElementById("downloadBtn");
+
+      function drawCard() {
+        // 卡片 基础 配色 和 装饰
+        let bgColor = "#fff",
+          accent = "#16b88a",
+          textColor = "#234",
+          decoColor = "#e0f5eb",
+          decoEmoji = "",
+          decoFont = "bold 22px serif";
+
+        if (template.value === "business") {
+          bgColor = "#fff";
+          accent = "#16b88a";
+          textColor = "#234";
+          decoColor = "#e0f5eb";
+          decoEmoji = "";
+        } else if (template.value === "wedding") {
+          bgColor = "#f9f6f2";
+          accent = "#c978c4";
+          textColor = "#853972";
+          decoColor = "#eedaf2";
+          decoEmoji = "💐";
+          decoFont = "bold 28px serif";
+        } else if (template.value === "party") {
+          bgColor = "#fffceb";
+          accent = "#fe995e";
+          textColor = "#7b3812";
+          decoColor = "#ffe2c7";
+          decoEmoji = "🎉";
+          decoFont = "bold 28px serif";
+        }
+
+        // 填充 背景
+        ctx.clearRect(0, 0, cardCanvas.width, cardCanvas.height);
+        ctx.fillStyle = bgColor;
+        ctx.fillRect(0, 0, cardCanvas.width, cardCanvas.height);
+
+        // 顶部 强调 条
+        ctx.fillStyle = accent;
+        ctx.fillRect(0, 0, cardCanvas.width, 16);
+
+        // 装饰 表情
+        if (decoEmoji) {
+          ctx.font = decoFont;
+          ctx.textAlign = "right";
+          ctx.fillStyle = decoColor;
+          ctx.fillText(decoEmoji, cardCanvas.width - 12, 46);
+        }
+
+        // 姓名／标题
+        ctx.font = "bold 1.5em Segoe UI, Arial, sans-serif";
+        ctx.textAlign = "left";
+        ctx.fillStyle = textColor;
+        ctx.fillText(nameInput.value || "姓名或标题", 24, 54);
+
+        // 副标题
+        ctx.font = "1.08em Segoe UI, Arial, sans-serif";
+        ctx.fillStyle = accent;
+        ctx.fillText(subtitleInput.value || "", 24, 84);
+
+        // 详细 信息（多行）
+        ctx.font = "1em Segoe UI, Arial, sans-serif";
+        ctx.fillStyle = "#397665";
+        const lines = (detailsInput.value || "").split("\n");
+        let y = 110;
+        lines.forEach((line) => {
+          if (line.trim()) {
+            ctx.fillText(line, 24, y);
+            y += 26;
+          }
+        });
+      }
+
+      // 当 输入 改变 时 重新 绘制 卡片
+      [template, nameInput, subtitleInput, detailsInput].forEach((inp) =>
+        inp.addEventListener("input", drawCard)
+      );
+      drawCard();
+
+      // 点击 下载 按钮 时 保存 图像
+      downloadBtn.onclick = function () {
+        drawCard();
+        const link = document.createElement("a");
+        link.download = (template.value + "_card.png").toLowerCase();
+        link.href = cardCanvas.toDataURL("image/png");
+        link.click();
+      };
+
+      // 点击 卡片 画布 时 全尺寸 预览
+      cardCanvas.onclick = function () {
+        drawCard();
+        const url = cardCanvas.toDataURL("image/png");
+        window.open(url, "_blank");
+      };
+    </script>
+    <!-- FAQPage Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "可以创建哪些类型的卡片？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可即时创建名片、婚礼请柬和派对请柬。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "需要注册或安装吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不需要。无需注册或安装，所有数据在浏览器本地处理，无需上传。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "可以将卡片保存为图像吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。输入信息后，点击“下载 图像”按钮即可保存为 PNG 格式。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的信息安全吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "安全。所有数据仅在设备本地处理，不会上传到服务器。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "下载前可以预览吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。点击画布区域会在新窗口中打开全尺寸预览。"
+            }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="测试你的地理知识！在“国旗探险”中通过查看国旗猜测国家。免费畅玩，移动端友好的浏览器闯关游戏。"
+        />
+        <meta
+            name="keywords"
+            content="国旗探险, 国旗竞猜, 地理, 国家竞猜, 国旗游戏, 免费在线游戏, 闯关, 浏览器游戏, 移动兼容, 世界国旗, 教育, 竞猜游戏"
+        />
+        <meta name="author" content="Itagi" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/game/FlagQuest" />
+
+        <meta property="og:title" content="国旗探险 – 免费在线国旗竞猜游戏!" />
+        <meta
+            property="og:description"
+            content="你能认出多少国旗？在“国旗探险”终极国旗竞猜游戏中检验实力，免费畅玩！"
+        />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/game/FlagQuest" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="国旗探险 – 免费在线国旗竞猜游戏!" />
+        <meta
+            name="twitter:description"
+            content="看看国旗猜国家，与朋友一较高下！免费在线畅玩国旗探险。"
+        />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"
+        ></script>
+        <title>国旗探险</title>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: "Quicksand", sans-serif;
+                background: linear-gradient(to bottom right, #fef6e4, #e0f2f1);
+                color: #333;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                color: #6c63ff;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            }
+
+            #flag {
+                width: 280px;
+                height: 180px;
+                object-fit: contain;
+                border: 4px solid #fff;
+                border-radius: 16px;
+                background: #fff;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                margin: 1.6rem 0;
+            }
+
+            .options {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 0.5rem;
+                gap: 1rem;
+            }
+
+            button {
+                background: #ffd6e0;
+                color: #333;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+                border: none;
+                border-radius: 12px;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+                font-weight: 600;
+                transition: all 0.25s ease;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #ffcad4;
+                transform: scale(1.05);
+            }
+
+            #feedback {
+                font-weight: 700;
+                font-size: 1.1rem;
+                color: #222;
+                min-height: 1.5rem;
+            }
+
+            #score {
+                font-size: 1.1rem;
+                margin-top: 1rem;
+            }
+
+            #gameover {
+                display: none;
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 0rem;
+                align-items: center;
+            }
+
+            #finalMessage {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: #6c63ff;
+            }
+
+            .result {
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+
+            .result button {
+                background: #bae6fd;
+            }
+
+            .result button:hover {
+                background: #7dd3fc;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>🏁 国旗探险</h1>
+        <p style="margin-top: 0rem">看看国旗猜国家！</p>
+        <img id="flag" src="" alt="国旗" />
+        <div class="options" id="options"></div>
+        <div id="feedback"></div>
+        <div id="score">得分: 0</div>
+
+        <div id="gameover">
+            <div
+                id="finalMessage"
+                style="
+                    background: #fff0f6;
+                    color: #6b21a8;
+                    padding: 1rem 1.5rem;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    max-width: 90%;
+                "
+            ></div>
+
+            <div class="result">
+                <button onclick="restartGame()">再玩一次</button>
+                <button onclick="shareScore()">分享</button>
+            </div>
+        </div>
+
+        <script src="flag_data_full_254_svg.js"></script>
+        <script>
+            let unusedFlags = [...flags];
+            let currentAnswer = "";
+            let score = 0;
+
+            function shuffle(array) {
+                return array.sort(() => Math.random() - 0.5);
+            }
+
+            function loadQuestion() {
+                if (unusedFlags.length < 4) {
+                    endGame("🎉 所有国旗已挑战完成！");
+                    return;
+                }
+                const questionSet = shuffle([...unusedFlags]).slice(0, 4);
+                const answer = questionSet[Math.floor(Math.random() * 4)];
+                currentAnswer = answer.country;
+
+                document.getElementById("flag").src = answer.img;
+                const optionsDiv = document.getElementById("options");
+                optionsDiv.innerHTML = "";
+
+                questionSet.forEach((item) => {
+                    const btn = document.createElement("button");
+                    btn.textContent = item.country;
+                    btn.onclick = () => checkAnswer(item.country);
+                    optionsDiv.appendChild(btn);
+                });
+
+                document.getElementById("feedback").textContent = "";
+            }
+
+            function checkAnswer(choice) {
+                if (choice === currentAnswer) {
+                    document.getElementById("feedback").textContent = "🌸 正确！";
+                    unusedFlags = unusedFlags.filter((f) => f.country !== currentAnswer);
+                    score++;
+                    document.getElementById("score").textContent = `得分: ${score}`;
+                    setTimeout(loadQuestion, 700);
+                } else {
+                    endGame(`😢 错误！正确答案是 ${currentAnswer}。`);
+                }
+            }
+
+            function endGame(message) {
+                document.getElementById("feedback").textContent = "";
+                document.getElementById("score").textContent = "";
+                document.getElementById("finalMessage").innerHTML = `${message}<br><br>共猜对 ${score} 题。`;
+                document.getElementById("gameover").style.display = "flex";
+                document.getElementById("options").innerHTML = "";
+                document.getElementById("flag").style.display = "none";
+            }
+
+            function restartGame() {
+                score = 0;
+                unusedFlags = [...flags];
+                document.getElementById("score").textContent = `得分: 0`;
+                document.getElementById("gameover").style.display = "none";
+                document.getElementById("flag").style.display = "block";
+                loadQuestion();
+            }
+
+            function shareScore() {
+                const text = `🏁 国旗探险得分 ${score}！快来挑战吧！`;
+                const url = window.location.href;
+
+                if (navigator.share) {
+                    navigator
+                        .share({
+                            title: "国旗探险",
+                            text: text,
+                            url: url
+                        })
+                        .then(() => console.log("分享成功！"))
+                        .catch((error) => console.error("分享失败:", error));
+                } else {
+                    navigator.clipboard.writeText(`${text} ${url}`).then(() => {
+                        alert("链接已复制到剪贴板！");
+                    });
+                }
+            }
+
+            loadQuestion();
+        </script>
+        <button
+            style="
+                margin-top: 20px;
+                width: 90%;
+                height: 60px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #fff;
+                cursor: pointer;
+                border-radius: 6px;
+                border: solid;
+                color: black;
+                border-color: black;
+            "
+            onclick="window.location.href='/'"
+        >
+            更多游戏
+        </button>
+        <section
+            style="
+                width: 90%;
+                max-width: 440px;
+                margin: 60px auto;
+                padding: 20px;
+                background: #fff;
+                border: 2px solid #e5e5e5;
+                border-radius: 14px;
+                font-family: &quot;Quicksand&quot;, sans-serif;
+                font-size: 14px;
+                line-height: 1.7;
+                color: #333;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            "
+        >
+            <h2 style="font-size: 18px; margin-bottom: 1rem; color: #6c63ff">❓ 常见问题 (FAQ)</h2>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q1. 国旗探险如何玩法？</strong><br />
+                A. 看到显示的国旗后，从四个选项中选择正确的国家。只要答错一次，游戏就结束！
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q2. 回答正确会发生什么？</strong><br />
+                A. 得分加1，然后显示新的国旗。游戏会持续到你答错或挑战完所有国旗为止！
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q3. 游戏中包含多少面国旗？</strong><br />
+                A. 本游戏包含250多面国旗。每一轮都会随机选择新的国旗来挑战。
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q4. 我可以随时重新开始吗？</strong><br />
+                A. 可以！在游戏结束或通关后，点击“再玩一次”按钮即可重置得分并从头开始。
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>Q5. 此游戏移动端兼容吗？</strong><br />
+                A. 当然！本游戏已针对手机和平板进行优化，随时随地畅玩无阻。
+            </div>
+
+            <div>
+                <strong>Q6. 如何分享我的得分？</strong><br />
+                A. 在游戏结束后，点击“分享”按钮即可将游戏链接和得分复制或发送给好友！
+            </div>
+        </section>
+    </body>
+</html>

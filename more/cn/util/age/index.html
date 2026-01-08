@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>年龄与出生年计算器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO & 应用元数据 -->
+    <meta
+      name="description"
+      content="提供公历年龄、韩国式年龄、下一个生日倒计时和出生年份推算功能。100% 在浏览器内运行，移动端友好。" />
+    <meta
+      name="keywords"
+      content="年龄计算, 出生年份, 年龄差, 周岁计算, 韩国式年龄, 生日, 倒计时, 出生日期, 在线工具" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="zh" />
+    <meta name="theme-color" content="#4e7efc" />
+    <meta name="application-name" content="年龄与出生年计算器" />
+    <meta name="apple-mobile-web-app-title" content="年龄计算器" />
+    <meta name="subject" content="免费在线年龄与出生年计算器" />
+    <meta name="robots" content="index,follow" />
+    <meta name="rating" content="General" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/util/age/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <!-- OG / Twitter 元数据 -->
+    <meta property="og:title" content="年龄与出生年计算器" />
+    <meta
+      property="og:description"
+      content="准确计算公历年龄、韩国式年龄、下一个生日倒计时，支持输入年龄推算出生年份。移动端友好，100% 浏览器内运行，隐私保护。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/util/age/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="年龄与出生年计算器" />
+    <meta name="twitter:description" content="快速计算年龄、韩国式年龄、生日倒计时、出生年份推算。100% 浏览器内工具，无需登录。" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:site" content="@itagi_tools" />
+    <!-- Google Analytics -->
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+
+    <!-- FAQ QAPage 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "QAPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "如何从出生日期计算准确的年龄？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "输入出生日期即可即时查看公历年龄、韩国式年龄以及距离下一个生日的倒计时。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "输入年龄后如何推算出生年份？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "输入当前年龄后，系统会根据今日日期计算并显示可推算的出生年份范围。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "此工具会保存或上传我的数据吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。所有计算均在本地浏览器中进行，不会保存或上传任何个人信息。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "年龄与出生年计算器提供哪些功能？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "提供公历年龄计算、韩国式年龄、下一个生日倒计时，以及输入年龄后推算出生年份。全部移动端优化，在浏览器内完成。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "如何在线计算年龄或出生年份",
+      "description": "输入出生日期即可算出公历年龄、韩国式年龄、下一个生日倒计时；或输入年龄以推算出生年份范围。",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "在“出生日期(yyyy-mm-dd)”处输入出生日期，查看公历年龄和距离下一个生日的天数。"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "或者在“当前年龄(岁)”处输入年龄，即可推算出生年份范围。"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "查看屏幕上显示的公历年龄、韩国式年龄、下一个生日倒计时或推算出的出生年份范围。"
+        }
+      ]
+    }
+    </script>
+
+    <!-- WebApplication 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "年龄与出生年计算器",
+      "url": "https://www.singhyogendra.com.np/more/cn/util/age/",
+      "applicationCategory": "Utility",
+      "operatingSystem": "All",
+      "description": "免费在线工具，可计算公历年龄、韩国式年龄、距离下次生日的倒计时，并支持输入年龄推算出生年份。无需登录，不会上传数据。",
+      "creator": {
+        "@type": "Person",
+        "name": "Itagi"
+      }
+    }
+    </script>
+
+    <style>
+      :root {
+        --main: #4e7efc;
+        --bg: #f8fafd;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+      }
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #233;
+      }
+      .container {
+        max-width: 400px;
+        margin: 38px auto 0 auto;
+        background: #fff;
+        border-radius: 17px;
+        box-shadow: 0 4px 20px #4e7efc1a;
+        padding: 27px 15px 22px 15px;
+      }
+      .title {
+        text-align: center;
+        font-size: 1.13em;
+        color: var(--main);
+        font-weight: bold;
+        margin-bottom: 14px;
+      }
+      .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 15px;
+      }
+      .form-row label {
+        font-size: 1em;
+        color: #225cc9;
+        font-weight: 500;
+      }
+      .form-row input[type="date"],
+      .form-row input[type="number"] {
+        padding: 10px 10px;
+        border-radius: 7px;
+        border: 1.2px solid #aee3f7;
+        font-size: 1.08em;
+        width: 100%;
+        background: #fafdff;
+        color: #234;
+        transition: border 0.14s;
+        box-sizing: border-box;
+      }
+      .form-row input:focus {
+        border-color: var(--main);
+      }
+      .result {
+        background: #e4eafe;
+        border-radius: 12px;
+        color: #2861b6;
+        font-size: 1.08em;
+        padding: 13px 11px 11px 11px;
+        text-align: center;
+        margin-bottom: 11px;
+        min-height: 38px;
+        font-weight: 500;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.94em;
+        margin-top: 14px;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #4e7efc;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #4e7efc33;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition: background 0.15s, transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #2550c6;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 500px) {
+        .container {
+          max-width: 98vw;
+          padding: 11px 2vw 10px 2vw;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+      .smallnote {
+        font-size: 0.93em;
+        color: #8590ad;
+        margin-top: 3px;
+        text-align: right;
+      }
+      .faq-list {
+        text-align: left;
+        max-width: 340px;
+        margin: 12px auto 0 auto;
+        padding-left: 18px;
+        font-size: 0.97em;
+        color: #476098;
+      }
+      .faq-list li {
+        margin-bottom: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">🎂 年龄与出生年计算器</div>
+      <form autocomplete="off">
+        <div class="form-row">
+          <label for="birth">出生日期 (yyyy-mm-dd)</label>
+          <input type="date" id="birth" max="9999-12-31" />
+          <div class="smallnote" id="todayInfo"></div>
+        </div>
+        <div class="result" id="ageResult"></div>
+        <div class="form-row">
+          <label for="age">当前年龄 (岁)</label>
+          <input type="number" min="0" max="150" id="age" placeholder="例如: 25" />
+        </div>
+        <div class="result" id="birthResult"></div>
+      </form>
+      <div class="footer">
+        输入出生日期后，可查看公历年龄、韩国式年龄以及距离下一个生日的倒计时。<br />
+        或者输入年龄，可推算出生年份范围。<br />
+        <b>所有计算均基于今日日期 (UTC+0)。</b><br />
+        数据不会保存或上传，100% 浏览器内工具。<br />
+        <div class="faq-list">
+          <b>常见问题：</b>
+          <ul>
+            <li>如何计算年龄？ – 请输入上方的出生日期。</li>
+            <li>如何推算出生年份？ – 输入年龄后，系统会显示出生年份范围。</li>
+            <li>什么是“韩国式年龄”？ – 韩国式年龄计算方法：今年年份 − 出生年份 + 1。</li>
+            <li>此工具会上传我的信息吗？ – 不会，所有计算均在您的设备上完成。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="../" id="backBtn">其他实用工具</a>
+    <script>
+      const birthInput = document.getElementById("birth");
+      const ageInput = document.getElementById("age");
+      const ageResult = document.getElementById("ageResult");
+      const birthResult = document.getElementById("birthResult");
+      const todayInfo = document.getElementById("todayInfo");
+
+      function pad2(n) {
+        return n < 10 ? "0" + n : n;
+      }
+
+      function getTodayStr() {
+        const now = new Date();
+        return now.getUTCFullYear() + "-" + pad2(now.getUTCMonth() + 1) + "-" + pad2(now.getUTCDate());
+      }
+
+      function calcAge(dateStr) {
+        if (!dateStr) return "";
+        const today = new Date();
+        const dob = new Date(dateStr);
+        if (isNaN(dob)) return "请输入有效的日期。";
+        // 公历年龄计算
+        let age = today.getFullYear() - dob.getFullYear();
+        const thisYearBirthday = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
+        if (today < thisYearBirthday) age -= 1;
+        // 韩国式年龄: 今年年份 - 出生年份 + 1
+        let korAge = today.getFullYear() - dob.getFullYear() + 1;
+        // 计算距离下一个生日的天数
+        let nextBirthday = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
+        if (today >= nextBirthday) {
+          nextBirthday.setFullYear(today.getFullYear() + 1);
+        }
+        const diffTime = nextBirthday - today;
+        const dday = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        let ddayStr = dday === 0 ? "🎉 今天是你的生日！" : `D−${dday}（距离下次生日）`;
+        // 返回结果字符串
+        return `
+        <b>公历年龄:</b> <span style="color:#3948bf">${age}</span> &nbsp; | &nbsp; <b>韩国式年龄:</b> <span style="color:#30b445">${korAge}</span><br>
+        <b>出生日期:</b> <span style="color:#1c5">${dob.getFullYear()}-${pad2(dob.getMonth() + 1)}-${pad2(dob.getDate())}</span><br>
+        <b>${ddayStr}</b>
+      `;
+      }
+
+      function estimateBirthYear(ageVal) {
+        if (ageVal === "" || ageVal === null || typeof ageVal === "undefined") return "";
+        ageVal = parseInt(ageVal, 10);
+        if (isNaN(ageVal) || ageVal < 0 || ageVal > 150) return "请输入有效的年龄。";
+        const today = new Date();
+        // 根据周岁推算出生年份范围
+        let birthYear1 = today.getFullYear() - ageVal;
+        let birthYear2 = birthYear1 + 1;
+        let month = today.getMonth() + 1;
+        let day = today.getDate();
+        return `
+        <b>推算出生年份:</b> <span style="color:#3948bf">${birthYear1} ～ ${birthYear2}</span><br>
+        （基于输入年龄在 ${today.getFullYear()}-${pad2(month)}-${pad2(day)} 计算）
+      `;
+      }
+
+      function updateTodayInfo() {
+        const now = new Date();
+        todayInfo.textContent =
+          "今天日期：" + now.getFullYear() + "-" + pad2(now.getMonth() + 1) + "-" + pad2(now.getDate());
+      }
+
+      birthInput.addEventListener("input", () => {
+        ageResult.innerHTML = calcAge(birthInput.value);
+      });
+      ageInput.addEventListener("input", () => {
+        birthResult.innerHTML = estimateBirthYear(ageInput.value);
+      });
+      window.addEventListener("DOMContentLoaded", () => {
+        updateTodayInfo();
+        ageResult.innerHTML = calcAge(birthInput.value);
+        birthResult.innerHTML = estimateBirthYear(ageInput.value);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <!-- Google 标签 (gtag.js) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickPlay 街机 – 简易网页游戏合集</title>
+
+    <!-- ✨ SEO: 搜索引擎优化 -->
+    <meta
+      name="description"
+      content="QuickPlay 街机提供免费、轻松玩的浏览器游戏。无需下载或登录，即刻享受！" />
+    <meta name="keywords" content="网页游戏、休闲游戏、浏览器游戏、手机游戏、打发时间、免费街机游戏" />
+    <meta name="author" content="Itagi" />
+
+    <!-- ✨ Open Graph: 社交分享优化 -->
+    <meta property="og:title" content="QuickPlay 街机 – 简易网页游戏合集" />
+    <meta
+      property="og:description"
+      content="为手机和桌面用户提供丰富的免费浏览器小游戏，马上体验轻松趣味！" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/game/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#4e54c8" />
+    <link rel="apple-touch-icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/game/" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(to bottom, #1c1c1c, #111);
+        color: #f5f5f5;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      header {
+        text-align: center;
+        padding: 2.5rem 1rem 2rem;
+        background: linear-gradient(90deg, #4e54c8, #8f94fb);
+        color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+        margin: 0;
+      }
+
+      header p {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+        opacity: 0.9;
+      }
+
+      #gotoUtilBtn {
+        top: 18px;
+        right: 22px;
+        background: #601ed6;
+        color: #fff;
+        font-weight: 700;
+        padding: 0.55rem 1.2rem;
+        border: 2px solid #fff;
+        border-radius: 2rem;
+        box-shadow: 0 2px 8px #0002;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition:
+          background 0.15s,
+          transform 0.1s;
+        z-index: 99;
+      }
+      #gotoUtilBtn:hover {
+        background: #4e54c8;
+        transform: scale(1.04);
+      }
+      header {
+        position: relative;
+      }
+      @media (max-width: 600px) {
+        #gotoUtilBtn {
+          top: 12px;
+          right: 10px;
+          padding: 0.45rem 1rem;
+          font-size: 0.93rem;
+        }
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        padding-left: 0.6rem;
+        border-left: 4px solid #8f94fb;
+      }
+
+      #searchInput {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none;
+        background-color: #2b2b2b;
+        color: #eee;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      #searchInput::placeholder {
+        color: #aaa;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+      }
+
+      li {
+        background: #1f1f1f;
+        border-radius: 12px;
+        padding: 1.2rem;
+        transition: transform 0.15s ease, box-shadow 0.2s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        position: relative;
+      }
+
+      li:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      li:active {
+        transform: scale(0.98);
+        background: #2a2a2a;
+      }
+
+      li a {
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #a0a8ff;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      li p {
+        font-size: 0.9rem;
+        color: #bbb;
+        line-height: 1.4;
+      }
+
+      #noResultMessage {
+        display: none;
+        text-align: center;
+        font-size: 1rem;
+        color: #999;
+        margin-top: 1rem;
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.85rem;
+        color: #aaa;
+        background: #181818;
+        border-top: 1px solid #333;
+      }
+    </style>
+
+    <script>
+      function launchGame(url) {
+        window.location.href = url;
+      }
+
+      function filterGames() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const items = document.querySelectorAll("ul li");
+        const noResult = document.getElementById("noResultMessage");
+
+        let anyVisible = false;
+
+        items.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          if (text.includes(input)) {
+            item.style.display = "block";
+            anyVisible = true;
+          } else {
+            item.style.display = "none";
+          }
+        });
+
+        noResult.style.display = anyVisible ? "none" : "block";
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>QuickPlay 街机</h1>
+      <p>轻触即可开始游戏的迷你游戏集合。无需登录或下载！</p>
+      <a href="https://www.singhyogendra.com.np/more/cn/util/" id="gotoUtilBtn">前往实用工具</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>介绍</h2>
+        <p>在休息时间即可轻松享受，集合了操作简单且速度快的触屏浏览器游戏。无需键盘，直观易玩。</p>
+      </section>
+
+      <section>
+        <h2>游戏列表</h2>
+
+        <!-- 🔍 搜索栏 -->
+        <input type="text" id="searchInput" placeholder="搜索游戏..." oninput="filterGames()" />
+
+        <!-- 🎮 游戏列表 -->
+        <ul>
+          <li onclick="launchGame('SnakeGame/')">
+            <a href="SnakeGame/">🐍 贪吃蛇</a>
+            <p>吃食物使身体变长，避免碰撞。愿好运相伴！</p>
+          </li>
+          <li onclick="launchGame('TetrisGame/')">
+            <a href="TetrisGame/">🧱 俄罗斯方块</a>
+            <p>堆叠方块消除行。经典名作！</p>
+          </li>
+          <li onclick="launchGame('MBTI/')">
+            <a href="MBTI/">🧠 MBTI 测试</a>
+            <p>通过简单问题诊断你的 MBTI 类型！</p>
+          </li>
+          <li onclick="launchGame('2048/')">
+            <a href="2048/">🔢 2048 游戏</a>
+            <p>合并数字，目标是 2048！</p>
+          </li>
+          <li onclick="launchGame('FlappyDot/')">
+            <a href="FlappyDot/">💥 Flappy Dot</a>
+            <p>躲避炸弹，挑战飞得更远！</p>
+          </li>
+          <li onclick="launchGame('Minesweeper/')">
+            <a href="Minesweeper/">💣 扫雷</a>
+            <p>打开方块，避免踩雷。</p>
+          </li>
+          <li onclick="launchGame('QuickDraw/')">
+            <a href="QuickDraw/">🔫 快速射击</a>
+            <p>等待“DRAW”信号，比对手先开枪！</p>
+          </li>
+          <li onclick="launchGame('GREENClick/')">
+            <a href="GREENClick/">🟩 绿色点击</a>
+            <p>眼睛可能会骗你，信任文字“GREEN”并点击！</p>
+          </li>
+          <li onclick="launchGame('STOPat5/')">
+            <a href="STOPat5/">5️⃣ 停在 5</a>
+            <p>精准停止于 5.000 秒！</p>
+          </li>
+          <li onclick="launchGame('SpeedTap/')">
+            <a href="SpeedTap/">👆 极速点击</a>
+            <p>在 5 秒内尽可能多地点击！</p>
+          </li>
+          <li onclick="launchGame('NumberHunt/')">
+            <a href="NumberHunt/">⏱️ 数字狩猎</a>
+            <p>从 1 到 50 按顺序尽快点击数字！</p>
+          </li>
+          <li onclick="launchGame('TicTacToe/')">
+            <a href="TicTacToe/">❌⭕️ 井字棋</a>
+            <p>挑战 AI 的经典井字棋！</p>
+          </li>
+          <li onclick="launchGame('Gomoku/')">
+            <a href="Gomoku/">⚪⚫ 五子棋</a>
+            <p>率先连成五子获胜。</p>
+          </li>
+          <li onclick="launchGame('FlagQuest/')">
+            <a href="FlagQuest/">🏁 旗帜任务</a>
+            <p>通过国旗猜测国家名称！</p>
+          </li>
+          <li onclick="launchGame('CardMatch/')">
+            <a href="CardMatch/">🃏 翻牌配对</a>
+            <p>翻开配对相同图案的卡牌，挑战限时！</p>
+          </li>
+          <li onclick="launchGame('AeroJump/')">
+            <a href="AeroJump/">🧗‍⬆️ 空中跳跃</a>
+            <p>不断往上跳，避免掉落！</p>
+          </li>
+          <li onclick="launchGame('BlockBreaker/')">
+            <a href="BlockBreaker/">🧱🏓 打砖块</a>
+            <p>用球击碎所有砖块！</p>
+          </li>
+          <li onclick="launchGame('PONGvsAI/')">
+            <a href="PONGvsAI/">🏓🤖 AI 对战乒乓</a>
+            <p>先得 10 分者获胜！</p>
+          </li>
+          <li onclick="launchGame('ConnectFour/')">
+            <a href="ConnectFour/">🔵🟡 四子连珠</a>
+            <p>连成四子，夺取胜利！</p>
+          </li>
+          <li onclick="launchGame('LandGrab/')">
+            <a href="LandGrab/">🟦🚩 领地争夺</a>
+            <p>扩张领地，同时躲避红球！</p>
+          </li>
+          <li onclick="launchGame('MatrixDefense/')">
+            <a href="MatrixDefense/">🛡️⚡ 矩阵防御</a>
+            <p>维持等离子防线，抵御攻势！</p>
+          </li>
+          <li onclick="launchGame('MarbleFlick/')">
+            <a href="MarbleFlick/">⚪⚫👆 大理石弹射</a>
+            <p>简单快速的在线弹珠对战游戏！</p>
+          </li>
+          <li onclick="launchGame('ZombieSurvival/')">
+            <a href="ZombieSurvival/">🧟 僵尸生存</a>
+            <p>在文字版僵尸末世中尽力生存更久！</p>
+          </li>
+          <li onclick="launchGame('SurvivorMini/')">
+            <a href="SurvivorMini/">🔫 生存小兵</a>
+            <p>节奏快速的动作生存游戏。躲避怪物，升级生存更久！</p>
+          </li>
+        </ul>
+        <!-- ❌ 无搜索结果时显示 -->
+        <div id="noResultMessage">暂无匹配的游戏。</div>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 QuickPlay 街机 · 制作者: Itagi<br />
+      Email : emfls24777@daum.net
+    </footer>
+  </body>
+</html>

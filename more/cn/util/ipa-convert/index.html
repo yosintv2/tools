@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>英语发音（IPA）转换工具</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google 标签 (gtag.js) -->
+    <!-- Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="将英语单词或句子转换为简易 IPA 风格的发音符号。基于规则，在浏览器内免费即时使用，无需上传，100% 在本地执行。" />
+    <meta
+      name="keywords"
+      content="english, ipa, pronunciation, converter, phonetic, phonics, pronunciation tool, phonetic transcription, online, study, education, 英语发音符号转换, ipa 工具, 免费, 浏览器, 英语发音, english pronunciation, phoneme" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="zh" />
+    <meta name="theme-color" content="#1875d1" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/util/ipa-convert/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="英语 IPA 发音转换工具 – 简易规则" />
+    <meta
+      property="og:description"
+      content="将英语单词或句子转换为简易 IPA 风格发音符号。仅在浏览器中免费快速使用。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/util/ipa-convert/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="英语 IPA 发音转换工具 – 简易规则" />
+    <meta
+      name="twitter:description"
+      content="可以即时将英语文本转换为 IPA 风格发音。基于规则，在浏览器内免费使用。" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <style>
+      /* ... 保持原有样式 ... */
+      body {
+        background: #f7f9fe;
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #234;
+      }
+      .container {
+        max-width: 430px;
+        margin: 40px auto 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px #2238;
+        padding: 30px 20px 18px 20px;
+      }
+      .logo {
+        font-size: 1.21em;
+        font-weight: bold;
+        text-align: center;
+        color: #154185;
+        margin-bottom: 10px;
+        letter-spacing: 0.02em;
+      }
+      .desc {
+        text-align: center;
+        color: #2262b3;
+        margin-bottom: 15px;
+        font-size: 1.03em;
+      }
+      .form-row {
+        margin-bottom: 14px;
+      }
+      input[type="text"] {
+        padding: 10px 11px;
+        border-radius: 7px;
+        border: 1.2px solid #bfd8ff;
+        font-size: 1.08em;
+        width: 100%;
+        background: #fafdff;
+        color: #234;
+        transition: border 0.15s;
+        box-sizing: border-box;
+      }
+      input[type="text"]:focus {
+        border-color: #2278d4;
+        outline: none;
+      }
+      .action-btn {
+        background: #1875d1;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 0;
+        width: 100%;
+        font-size: 1.13em;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 7px;
+        margin-bottom: 11px;
+        box-shadow: 0 2px 12px #1875d120;
+        transition: background 0.15s;
+      }
+      .action-btn:active {
+        background: #0e4775;
+      }
+      .result-block {
+        background: #f4f7fd;
+        border: 1.2px solid #bfe1fa;
+        border-radius: 9px;
+        padding: 18px 11px 13px 11px;
+        margin-bottom: 7px;
+        color: #194f9e;
+        font-size: 1.14em;
+        text-align: center;
+        word-break: break-all;
+      }
+      section#faq {
+        background: #f0f7fc;
+        border-radius: 15px;
+        padding: 18px 14px 13px 16px;
+        margin: 28px 0 0 0;
+        border: 1px solid #b9daf8;
+        font-size: 0.99em;
+      }
+      section#faq h3 {
+        font-weight: bold;
+        color: #1875d1;
+        margin-bottom: 6px;
+        font-size: 1.08em;
+        text-align: center;
+      }
+      section#faq dt {
+        color: #195269;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-weight: 500;
+      }
+      section#faq dd {
+        color: #265a7a;
+        margin-left: 7px;
+        margin-bottom: 7px;
+      }
+      .ipa {
+        font-size: 1.35em;
+        color: #1974b8;
+        background: #e6f4fc;
+        border-radius: 6px;
+        padding: 5px 12px;
+        display: inline-block;
+        margin: 8px 0 5px 0;
+        font-family: "Segoe UI", "Arial", "Times New Roman", serif;
+        letter-spacing: 1px;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.96em;
+        margin-top: 18px;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #1875d1;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #1875d133;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #0e4775;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 12px 2vw 14px 2vw;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">🔤 英语发音转换工具</div>
+      <div class="desc">
+        请输入英语单词或句子。<br />
+        将其转换为简易 IPA 风格的发音符号。<br />
+        <b>基于规则，供学习和娱乐使用（非正式 IPA）</b>
+      </div>
+      <form id="form" autocomplete="off">
+        <div class="form-row">
+          <input type="text" id="input" placeholder="输入英语单词（例如：enough, school, photo）" required />
+        </div>
+        <button type="submit" class="action-btn">转换</button>
+      </form>
+      <div id="result"></div>
+      <section id="faq" aria-labelledby="faq-head">
+        <h3 id="faq-head">常见问题 – 英语发音（IPA）转换工具</h3>
+        <dl>
+          <dt>这是正式的 IPA 吗？</dt>
+          <dd>不是。此工具使用简易规则大致表示英语发音，非语言学测试用途，仅供学习和娱乐。</dd>
+          <dt>输入的文本会发送到服务器吗？</dt>
+          <dd>不会。所有转换均在浏览器内完成，文本不会被发送到任何外部服务器。</dd>
+          <dt>使用的是哪种英语口音？</dt>
+          <dd>混合了美式和英式规则进行简化处理，无法完全对应任何特定方言。</dd>
+          <dt>可以输入句子吗？</dt>
+          <dd>可以。支持单词或句子输入，会逐词分别转换。</dd>
+          <dt>该工具收费吗？</dt>
+          <dd>不收费。此工具 100% 免费，任何人均可使用。</dd>
+        </dl>
+      </section>
+      <div class="footer">
+        基于简易规则将英语转换为大致 IPA 发音符号。<br />
+        仅供学习和娱乐使用。<br />
+        <span style="color: #bbb">100% 在浏览器内执行，无需数据上传。</span>
+      </div>
+    </div>
+    <a href="../" id="backBtn">其他工具</a>
+    <script>
+      // ... 保留原有 JS 逻辑 ...
+      function toIPA(word) {
+        if (!word.trim()) return "";
+        let w = word.toLowerCase();
+        // 优先应用长模式替换
+        const rules = [
+          // sch, ch, sh, th, ph, wh, qu
+          [/(sch)/g, "sk"],
+          [/ch/g, "tʃ"],
+          [/sh/g, "ʃ"],
+          [/th/g, "θ"],
+          [/ph/g, "f"],
+          [/wh/g, "w"],
+          [/qu/g, "kw"],
+          // 双元音 / 长元音
+          [/oo/g, "uː"],
+          [/ee/g, "iː"],
+          [/ea/g, "iː"],
+          [/ou/g, "aʊ"],
+          [/ow/g, "aʊ"],
+          [/ai/g, "eɪ"],
+          [/ay/g, "eɪ"],
+          [/oa/g, "oʊ"],
+          [/ie/g, "aɪ"],
+          [/igh/g, "aɪ"],
+          [/ei/g, "iː"],
+          [/oy/g, "ɔɪ"],
+          [/oi/g, "ɔɪ"],
+          // gn, kn, wr, mb
+          [/gn/g, "n"],
+          [/kn/g, "n"],
+          [/wr/g, "r"],
+          [/mb\b/g, "m"],
+          // 词尾静默 e
+          [/e\b/g, ""],
+          // 常见不规则词
+          [/\bthe\b/g, "ðə"],
+          [/\band\b/g, "ænd"],
+          [/\bof\b/g, "ʌv"],
+          [/\ba\b/g, "ə"],
+          [/\bto\b/g, "tuː"],
+          [/\bis\b/g, "ɪz"],
+          [/\byou\b/g, "juː"],
+          [/\bi\b/g, "aɪ"]
+        ];
+        // 单字母映射
+        const letters = {
+          a: "æ",
+          b: "b",
+          c: "k",
+          d: "d",
+          e: "ɛ",
+          f: "f",
+          g: "g",
+          h: "h",
+          i: "ɪ",
+          j: "dʒ",
+          k: "k",
+          l: "l",
+          m: "m",
+          n: "n",
+          o: "ɒ",
+          p: "p",
+          q: "k",
+          r: "r",
+          s: "s",
+          t: "t",
+          u: "ʌ",
+          v: "v",
+          w: "w",
+          x: "ks",
+          y: "j",
+          z: "z"
+        };
+        // 应用规则替换
+        for (const [pattern, rep] of rules) w = w.replace(pattern, rep);
+        // 字母逐个转换
+        let ipa = "";
+        for (let i = 0; i < w.length; ++i) {
+          const ch = w[i];
+          ipa += letters[ch] !== undefined ? letters[ch] : ch;
+        }
+        // 每个单词前后加斜杠
+        let output = ipa
+          .split(/\s+/)
+          .map((x) => (x ? "/" + x + "/" : ""))
+          .join(" ");
+        return output;
+      }
+      const form = document.getElementById("form");
+      const input = document.getElementById("input");
+      const result = document.getElementById("result");
+      form.onsubmit = function (e) {
+        e.preventDefault();
+        const val = input.value.trim();
+        if (!val) return;
+        const ipa = toIPA(val);
+        result.innerHTML = `<div class="ipa">${ipa}</div>`;
+      };
+      input.addEventListener("input", () => {
+        if (!input.value.trim()) {
+          result.innerHTML = "";
+          return;
+        }
+        const ipa = toIPA(input.value);
+        result.innerHTML = `<div class="ipa">${ipa}</div>`;
+      });
+      input.focus();
+    </script>
+    <!-- FAQPage 结构化数据 (SEO/SGE/支持) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "这是正式的 IPA 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。此工具使用简易规则大致表示英语发音，非语言学测试用途，仅供学习和娱乐。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "输入的文本会发送到服务器吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。所有转换均在浏览器内完成，文本不会被发送到任何外部服务器。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "使用的是哪种英语口音？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "混合了美式和英式规则进行简化处理，无法完全对应任何特定方言。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以输入句子吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。支持单词或句子输入，会逐词分别转换。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "该工具收费吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不收费。此工具 100% 免费，任何人均可使用。"
+          }
+        }
+      ]
+    }
+    </script>
+  </body>
+</html>

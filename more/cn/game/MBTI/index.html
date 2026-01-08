@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="基于情境的快速有趣 MBTI 性格测试！回答实际情境问题，即刻查看 MBTI 类型。免费，浏览器兼容，移动友好。" />
+        <meta
+            name="keywords"
+            content="MBTI 测试, 性格测验, 快速 MBTI, 网页游戏, 浏览器游戏, 心理测试, 免费, 在线测试, ENFP, INFP, INTJ, INFJ, MBTI 类型, 自我发现, 有趣测验, 即时结果" />
+        <meta name="author" content="Itagi" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/cn/game/MBTI" />
+
+        <meta property="og:title" content="快速测试：MBTI – 有趣的性格测试游戏" />
+        <meta
+            property="og:description"
+            content="你的 MBTI 类型是什么？回答实际情境问题，立即查看结果！免费且移动友好。" />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/cn/game/MBTI" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="快速测试：MBTI – 有趣的性格测试游戏" />
+        <meta
+            name="twitter:description"
+            content="通过情境问题快速进行 MBTI 测试！几分钟内发现你的性格类型。" />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"></script>
+        <title>快速测试：MBTI</title>
+        <style>
+            body {
+                margin: 0;
+                background-color: #121212;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            #progress {
+                margin-top: 30px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                color: #ccc;
+            }
+
+            .fade {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+
+            .show {
+                opacity: 1;
+            }
+
+            .card {
+                background: #1e1e1e;
+                padding-top: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 30px;
+                border-radius: 10px;
+                max-width: 300px;
+                text-align: center;
+                box-shadow: 0 0 10px #5c5cff;
+                width: 90%;
+            }
+
+            .option {
+                background-color: #3d3df7;
+                border: none;
+                color: white;
+                border-radius: 10px;
+                padding: 15px 20px;
+                margin: 10px;
+                font-size: 14px;
+                cursor: pointer;
+                width: 90%;
+                max-width: 290px;
+            }
+
+            .option:hover {
+                background-color: #5c5cff;
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .question {
+                font-weight: bold;
+                font-size: 20px;
+                color: #ffffff;
+                margin-bottom: 30px;
+            }
+
+            #result {
+                color: #222;
+                font-weight: 600;
+                text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+            }
+
+            p.description {
+                margin-bottom: 1rem;
+                font-size: 0.85rem;
+                color: #ccc;
+                text-align: center;
+                padding: 0 1rem;
+            }
+
+            h1 {
+                margin-bottom: 0.3rem;
+                font-size: 2rem;
+            }
+
+            .mbti-bg-ENFP {
+                background-color: #ffeaa7;
+            }
+
+            .mbti-bg-INFP {
+                background-color: #fab1a0;
+            }
+
+            .mbti-bg-INFJ {
+                background-color: #a29bfe;
+            }
+
+            .mbti-bg-INTJ {
+                background-color: #81ecec;
+            }
+
+            .mbti-bg-ENTP {
+                background-color: #fdcb6e;
+            }
+
+            .mbti-bg-ENFJ {
+                background-color: #ff7675;
+            }
+
+            .mbti-bg-ENTJ {
+                background-color: #55efc4;
+            }
+
+            .mbti-bg-INTP {
+                background-color: #74b9ff;
+            }
+
+            .mbti-bg-ISTP {
+                background-color: #dfe6e9;
+            }
+
+            .mbti-bg-ISFP {
+                background-color: #ffeaa7;
+            }
+
+            .mbti-bg-ISTJ {
+                background-color: #b2bec3;
+            }
+
+            .mbti-bg-ISFJ {
+                background-color: #dfe6e9;
+            }
+
+            .mbti-bg-ESTP {
+                background-color: #fab1a0;
+            }
+
+            .mbti-bg-ESFP {
+                background-color: #fd79a8;
+            }
+
+            .mbti-bg-ESTJ {
+                background-color: #a29bfe;
+            }
+
+            .mbti-bg-ESFJ {
+                background-color: #ffeaa7;
+            }
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            button.menu,
+            button.share {
+                padding: 1rem;
+                margin-top: 40px;
+                font-size: 1.1rem;
+                background-color: #4e54c8;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                width: 90%;
+                max-width: 400px;
+                transition: background-color 0.2s ease;
+                cursor: pointer;
+            }
+
+            button.menu:active,
+            button.share:active {
+                background-color: #6a72f8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><span style="color: #8f94fb">快速测试：</span><span style="color: #6f6"> MBTI</span></h1>
+        <p class="description">通过快速有趣的情境问题，发现你的 MBTI 类型！</p>
+
+        <div id="progress"></div>
+        <div class="card fade show" id="quiz">
+            <div class="question" id="question"></div>
+            <div id="options"></div>
+        </div>
+
+        <div class="card fade" id="result" style="display: none">
+            <h2>
+                MBTI ： <b><span id="mbti-type"></span></b>
+            </h2>
+            <p id="mbti-description"></p>
+            <button onclick="location.reload()"><b>再来一次</b></button>
+            <button onclick="shareResult()"><b>分享结果</b></button>
+        </div>
+
+        <script>
+            const questions = [
+                {
+                    q: "你参加了一个全是陌生同事的公司欢迎会。你会怎么做？",
+                    a: ["主动搭话结交朋友！", "先静静观察一下"],
+                    t: ["E", "I"]
+                },
+                {
+                    q: "星期五晚上朋友突然约你去喝酒！",
+                    a: ["当然去！马上出发！", "在家放松更好"],
+                    t: ["E", "I"]
+                },
+                {
+                    q: "你买了一个新设备，需要自己组装。",
+                    a: ["先认真读说明书", "直接动手边研究边组装"],
+                    t: ["S", "N"]
+                },
+                {
+                    q: "逛街时，你在两件衣服之间犹豫。",
+                    a: ["选择更实用、方便的那件", "凭直觉选择自己喜欢的那件！"],
+                    t: ["S", "N"]
+                },
+                {
+                    q: "团队成员的失误导致项目延期。你会如何反应？",
+                    a: ["分析原因并寻找解决方案", "先关心一下对方的感受"],
+                    t: ["T", "F"]
+                },
+                {
+                    q: "朋友突然提出一个有些为难的请求。",
+                    a: ["用逻辑解释为什么难以实现", "委婉拒绝以免伤人感情"],
+                    t: ["T", "F"]
+                },
+                {
+                    q: "旅行的前一晚，你在做什么？",
+                    a: ["列清单打包！", "早上再说，随性点！"],
+                    t: ["J", "P"]
+                },
+                {
+                    q: "朋友突然要改变约会的时间和地点。",
+                    a: ["有点生气", "好呀！很灵活！"],
+                    t: ["J", "P"]
+                },
+                {
+                    q: "你和陌生人一起乘电梯。你会？",
+                    a: ["打招呼或闲聊几句", "安静地待着"],
+                    t: ["E", "I"]
+                },
+                {
+                    q: "你通常如何规划周末？",
+                    a: ["喜欢提前计划", "当天心情决定！"],
+                    t: ["J", "P"]
+                },
+                {
+                    q: "开会时突然想起一个新点子。",
+                    a: ["立刻发言分享", "记下来，等合适时机再说"],
+                    t: ["E", "I"]
+                },
+                {
+                    q: "选餐厅时，你会怎么做？",
+                    a: ["先详细看评价", "凭感觉看上哪家就去"],
+                    t: ["S", "N"]
+                },
+                {
+                    q: "有人向你求助，希望给建议。",
+                    a: ["立刻着手解决问题", "先耐心听取并共情"],
+                    t: ["T", "F"]
+                },
+                {
+                    q: "有人告诉你他们对你很生气。你第一反应？",
+                    a: ["想搞清楚到底哪出问题", "哎呀，我是不是让他不高兴了？"],
+                    t: ["T", "F"]
+                },
+                {
+                    q: "重要安排因故全盘打乱！",
+                    a: ["可恶，一切都不按计划我受不了", "好吧，灵活应对吧！"],
+                    t: ["J", "P"]
+                },
+                {
+                    q: "和朋友旅行时迷路了。你？",
+                    a: ["查看地图找路", "哇，有点刺激，很兴奋！"],
+                    t: ["S", "N"]
+                }
+            ];
+
+            const descriptions = {
+                ENFP: "你充满能量与创造力！喜欢探索新想法，与人互动。是天生的社交达人！",
+                INFP: "你理想主义且深思熟虑，追求事物的意义与真实性。是一个深刻体验并深度思考的人。",
+                INFJ: "你是有远见的引导者，安静的领导者。具备同理心与洞察力，在背后创造改变。",
+                INTJ: "你战略性且独立，能清晰看见大局。是一个永远有计划的谋士。",
+                ENTP: "你机智且好奇，是天生的辩论者。享受挑战与新奇。",
+                ENFJ: "你富有同理心，能激励他人，为团队带来活力。人们在你身边感到安心。",
+                ENTJ: "你大胆且自信，是引领结果的远见型领导。",
+                INTP: "你逻辑且富有创造力，喜欢解决复杂问题与探索事物原理。",
+                ISTP: "你冷静且务实，善于迅速处理事务，专注于当下。行动导向且高效。",
+                ISFP: "你安静且富有艺术气质，总能在万物中发现美。是一个温和且具有创造力的灵魂。",
+                ISTJ: "你可靠且一丝不苟，总能稳妥完成任务。人们信赖且依赖你。",
+                ISFJ: "你富有同情心且细致，以温柔之力支持他人。总是照顾身边的人。",
+                ESTP: "你活跃且大胆，热爱冒险，享受刺激。擅长行动并创造机会。",
+                ESFP: "你充满活力，热爱欢乐，是聚会的中心。让生活变得丰富多彩！",
+                ESTJ: "你有秩序且具执行力，将混乱转化为秩序，善于管理与引导。",
+                ESFJ: "你热情忠诚，关心他人需求，是社区中的温暖存在。"
+            };
+
+            const resultCount = {
+                E: 0,
+                I: 0,
+                S: 0,
+                N: 0,
+                T: 0,
+                F: 0,
+                J: 0,
+                P: 0
+            };
+            let index = 0;
+
+            function showQuestion() {
+                const quizCard = document.getElementById("quiz");
+                quizCard.classList.remove("show");
+                setTimeout(() => {
+                    const q = questions[index];
+                    document.getElementById("question").innerText = q.q;
+                    document.getElementById("progress").innerText = `问题 ${index + 1} / ${questions.length}`;
+                    const options = document.getElementById("options");
+                    options.innerHTML = "";
+                    q.a.forEach((text, i) => {
+                        const btn = document.createElement("button");
+                        btn.className = "option";
+                        btn.innerText = text;
+                        btn.onclick = () => {
+                            resultCount[q.t[i]]++;
+                            index++;
+                            if (index < questions.length) {
+                                showQuestion();
+                            } else {
+                                showResult();
+                            }
+                        };
+                        options.appendChild(btn);
+                    });
+                    quizCard.classList.add("show");
+                }, 200);
+            }
+
+            function showResult() {
+                const resultCard = document.getElementById("result");
+                resultCard.classList.remove("show");
+                setTimeout(() => {
+                    document.getElementById("quiz").style.display = "none";
+                    const mbti =
+                        (resultCount.E >= resultCount.I ? "E" : "I") +
+                        (resultCount.S >= resultCount.N ? "S" : "N") +
+                        (resultCount.T >= resultCount.F ? "T" : "F") +
+                        (resultCount.J >= resultCount.P ? "J" : "P");
+                    const emojiMap = {
+                        ENFP: "💡🌈",
+                        INFP: "🌱📖",
+                        INFJ: "🧘‍♀️✨",
+                        INTJ: "🧠🛰️",
+                        ENTP: "🌀🎤",
+                        ENFJ: "🌟🤝",
+                        ENTJ: "📊🚀",
+                        INTP: "🔬🧩",
+                        ISTP: "🔧🛠️",
+                        ISFP: "🎨🎵",
+                        ISTJ: "📚🔒",
+                        ISFJ: "🧸🍪",
+                        ESTP: "🎮🚗",
+                        ESFP: "🎉📸",
+                        ESTJ: "📏📣",
+                        ESFJ: "🍰💬"
+                    };
+                    const emoji = emojiMap[mbti] || "✨";
+                    document.getElementById("mbti-type").innerText = `${mbti} ${emoji}`;
+                    document.getElementById("mbti-description").innerText =
+                        descriptions[mbti] || "未找到描述。";
+                    resultCard.className = "card fade mbti-bg-" + mbti;
+                    resultCard.style.display = "block";
+                    requestAnimationFrame(() => resultCard.classList.add("show"));
+                }, 300);
+            }
+
+            function shareResult() {
+                const mbti = document.getElementById("mbti-type").innerText;
+                const text = `📌 我的 MBTI 类型是 ${mbti} ！\n\n你也来测试一下吧！`;
+                if (navigator.share) {
+                    navigator
+                        .share({
+                            title: "MBTI 结果",
+                            text: text,
+                            url: window.location.href
+                        })
+                        .catch((err) => console.log("分享失败:", err));
+                } else {
+                    navigator.clipboard
+                        .writeText(text)
+                        .then(() => alert("结果已复制到剪贴板！"))
+                        .catch(() => alert("复制失败，请手动复制。"));
+                }
+            }
+
+            showQuestion();
+        </script>
+        <button class="menu" onclick="goToMain()">📂 其他游戏</button>
+        <script>
+            function goToMain() {
+                window.location.href = "/";
+            }
+        </script>
+        <section
+            style="
+                max-width: 320px;
+                width: 100%;
+                margin: 48px auto 24px auto;
+                font-family: 'Arial', sans-serif;
+                font-size: 14px;
+                background: #1e1e1e;
+                border-radius: 18px;
+                box-shadow: 0 6px 24px #1236;
+                padding: 20px;
+                line-height: 1.6;
+                color: #f0f0f0;
+            ">
+            <h2 style="font-size: 1.4rem; margin-bottom: 14px; color: #6a72f8">❓ 常见问题</h2>
+
+            <div style="margin-bottom: 12px">
+                <strong>Q1. 这个 MBTI 测试是什么？</strong><br />
+                A. 这是一款基于实际情境的 16 道题的快速有趣 MBTI 性格测试，浏览器内即可完成。
+            </div>
+
+            <div style="margin-bottom: 12px">
+                <strong>Q2. 有多少个问题？</strong><br />
+                A. 共 16 道情境题，帮助你判断 MBTI 类型。
+            </div>
+
+            <div style="margin-bottom: 12px">
+                <strong>Q3. 这个测试科学准确吗？</strong><br />
+                A. 虽然参考了 MBTI 理论，但主要用于娱乐和自我了解，并非临床评估。
+            </div>
+
+            <div style="margin-bottom: 12px">
+                <strong>Q4. 可以重新测试吗？</strong><br />
+                A. 可以！在结果页点击 <b>再来一次</b> 按钮即可重新测试。
+            </div>
+
+            <div style="margin-bottom: 12px">
+                <strong>Q5. 如何分享结果？</strong><br />
+                A. 点击 <b>分享结果</b> 按钮，通过设备的分享选项复制或分享到社交平台。
+            </div>
+
+            <div style="margin-bottom: 0">
+                <strong>Q6. 这个游戏支持移动设备吗？</strong><br />
+                A. 当然，桌面和移动设备均可流畅运行。
+            </div>
+        </section>
+    </body>
+</html>
