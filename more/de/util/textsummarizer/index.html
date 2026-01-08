@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text-Zusammenfassungstool – Schnell lange Texte zusammenfassen!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fasse lange Texte, Artikel oder Aufsätze einfach zusammen. Kostenlos, datenschutzfreundlich und direkt im Browser nutzbar!" />
+    <meta
+      name="keywords"
+      content="Text-Zusammenfassung, Zusammenfassung, automatische Zusammenfassung, Artikelsummarizer, kostenlos, online, Browser, kein Upload" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="de" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/util/textsummarizer/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <meta property="og:title" content="Text-Zusammenfassungstool – Schnell lange Texte zusammenfassen!" />
+    <meta
+      property="og:description"
+      content="Fasse Artikel, Dokumente und Aufsätze sofort zusammen. Kein Upload nötig, kostenlos und datenschutzfreundlich." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/util/textsummarizer/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Text-Zusammenfassungstool – Schnell lange Texte zusammenfassen!" />
+    <meta
+      name="twitter:description"
+      content="Fasse lange Texte, Artikel oder Aufsätze unkompliziert direkt im Browser zusammen." />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Google Tag (gtag.js) -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      body {
+        background: #f7fcff;
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        color: #223;
+      }
+      .container {
+        max-width: 420px;
+        margin: 30px auto 0 auto;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 4px 22px #117c9a28;
+        padding: 22px 13px 18px 13px;
+      }
+      .logo {
+        font-size: 1.25em;
+        text-align: center;
+        color: #117c9a;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .desc {
+        text-align: center;
+        color: #127080;
+        margin-bottom: 15px;
+        font-size: 1.07em;
+      }
+      textarea {
+        width: 100%;
+        min-height: 110px;
+        border: 1.2px solid #b9eaf8;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 1.09em;
+        background: #fafdff;
+        margin-bottom: 11px;
+        font-family: inherit;
+      }
+      .input-row {
+        margin-bottom: 8px;
+      }
+      .slider-label {
+        color: #19788a;
+        font-size: 1.03em;
+        margin-right: 8px;
+      }
+      #summaryLength {
+        vertical-align: middle;
+      }
+      #lengthVal {
+        margin-left: 6px;
+        color: #127080;
+      }
+      .action-btn {
+        width: 100%;
+        background: #117c9a;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.17em;
+        font-weight: bold;
+        padding: 12px 0;
+        margin: 11px 0 10px 0;
+        cursor: pointer;
+      }
+      .action-btn:active {
+        background: #09506d;
+      }
+      .output-box {
+        min-height: 52px;
+        background: #f7fcff;
+        border: 1.1px solid #b2e0ee;
+        border-radius: 8px;
+        font-size: 1.07em;
+        padding: 12px 10px 10px 12px;
+        white-space: pre-wrap;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.93em;
+        margin-top: 14px;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #117c9a;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #117c9a22;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #09506d;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 10px 2vw 13px 2vw;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">📝 Text-Zusammenfassungstool</div>
+      <div class="desc">
+        Fügen Sie unten einen langen Text oder Artikel ein.<br />
+        Klicken Sie auf <b>„Zusammenfassen“</b>, um schnell eine Zusammenfassung zu erhalten!
+      </div>
+      <textarea id="inputText" placeholder="Fügen Sie hier den langen Text ein..."></textarea>
+      <div class="input-row">
+        <label class="slider-label" for="summaryLength">Länge der Zusammenfassung:</label>
+        <input type="range" min="1" max="10" value="3" id="summaryLength" />
+        <span id="lengthVal">3</span> Sätze
+      </div>
+      <button class="action-btn" id="summarizeBtn">Zusammenfassen</button>
+      <div class="output-box" id="summaryResult" style="margin-top: 8px"></div>
+      <div class="footer">
+        Alle Berechnungen erfolgen lokal im Browser. <b>Kein Upload</b> · Kostenlos & datenschutzfreundlich.<br />
+        <span style="color: #127080">Tipp: Probieren Sie es mit News, Wikipedia-Artikeln oder Berichten!</span>
+      </div>
+    </div>
+    <a href="../" id="backBtn">Weitere Tools</a>
+    <script>
+      const inputText = document.getElementById("inputText");
+      const summaryResult = document.getElementById("summaryResult");
+      const summarizeBtn = document.getElementById("summarizeBtn");
+      const summaryLength = document.getElementById("summaryLength");
+      const lengthVal = document.getElementById("lengthVal");
+
+      summaryLength.oninput = function () {
+        lengthVal.textContent = summaryLength.value;
+      };
+
+      // Einfache, frequenzbasierte Zusammenfassung (ohne AI)
+      function summarize(text, numSentences = 3) {
+        if (!text.trim()) return "Bitte fügen Sie Text ein und klicken Sie auf \"Zusammenfassen\".";
+        // In Sätze aufteilen
+        const sentences = text.match(/[^\.!\?]+[\.!\?]+/g) || [text];
+        if (sentences.length <= numSentences) return text;
+        // Wortfrequenzen berechnen
+        const freq = {};
+        const words = text
+          .replace(/[^\wäöüÄÖÜß\s]/g, "")
+          .toLowerCase()
+          .split(/\s+/);
+        words.forEach((w) => {
+          if (w.length > 2) freq[w] = (freq[w] || 0) + 1;
+        });
+        // Satzbewertung anhand der Wortfrequenz
+        const scored = sentences.map((s) => {
+          const sw = s
+            .replace(/[^\wäöüÄÖÜß\s]/g, "")
+            .toLowerCase()
+            .split(/\s+/);
+          let score = 0;
+          sw.forEach((w) => {
+            if (freq[w]) score += freq[w];
+          });
+          return { sentence: s.trim(), score };
+        });
+        // Top N Sätze auswählen und in Originalreihenfolge sortieren
+        const top = scored
+          .sort((a, b) => b.score - a.score)
+          .slice(0, numSentences)
+          .sort(
+            (a, b) =>
+              sentences.indexOf(a.sentence + ".") - sentences.indexOf(b.sentence + ".")
+          );
+        return top.map((t) => t.sentence).join(" ");
+      }
+
+      summarizeBtn.onclick = function () {
+        const text = inputText.value;
+        const num = parseInt(summaryLength.value, 10);
+        const summary = summarize(text, num);
+        summaryResult.textContent = summary;
+      };
+    </script>
+    <section
+      style="
+        max-width: 320px;
+        margin: 48px auto 24px auto;
+        background: #1e1e1e;
+        border-radius: 18px;
+        box-shadow: 0 6px 24px #1236;
+        padding: 24px;
+        font-family: Arial, sans-serif;
+      ">
+      <div style="color: #8f94fb; font-size: 1.1em; font-weight: bold; margin-bottom: 14px">
+        ❓ FAQ – Text-Zusammenfassungstool
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">Verwendet dieses Tool KI oder ChatGPT?</div>
+        <div style="color: #f0f0f0">
+          Nein. Es nutzt einen Algorithmus basierend auf Worthäufigkeiten. Das ist schnell und schützt Ihre
+          Privatsphäre, bietet aber nicht die gleiche Leistung wie eine KI-Zusammenfassung.
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">Wird mein Text hochgeladen oder gespeichert?</div>
+        <div style="color: #f0f0f0">
+          Absolut nicht. Alles geschieht lokal im Browser, und keine Daten werden an einen Server gesendet.
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">Welche Sprachen werden unterstützt?</div>
+        <div style="color: #f0f0f0">
+          Das Tool ist hauptsächlich für Englisch optimiert. Andere Sprachen funktionieren ebenfalls, können
+          aber unterschiedliche Ergebnisse liefern.
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px">
+        <div style="color: #8f94fb; font-weight: bold">Wie genau ist die Zusammenfassung?</div>
+        <div style="color: #f0f0f0">
+          Es werden Sätze mit hoher Wortwiederholungsfrequenz ausgewählt. Das ist eine einfache Methode,
+          eignet sich aber gut, um schnell einen Überblick zu bekommen.
+        </div>
+      </div>
+
+      <div style="margin-bottom: 0">
+        <div style="color: #8f94fb; font-weight: bold">Wann sollte ich dieses Tool verwenden?</div>
+        <div style="color: #f0f0f0">
+          Ideal, wenn Sie lange Texte wie Nachrichtenartikel, Blogposts, Essays oder Berichte schnell
+          zusammenfassen möchten.
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

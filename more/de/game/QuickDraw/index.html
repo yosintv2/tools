@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Teste deine Reaktionszeit! Quick Draw Duell! Nachdem das DRAW-Signal erscheint, schieße schneller als dein Gegner. Ein schnelles, mobil-optimiertes Browsergame." />
+        <meta
+            name="keywords"
+            content="Quick Draw, Cowboy-Duell, Reaktionsspiel, Webgame, Sofortspielen, Browsergame, Mobilegame, Kostenloses Spiel" />
+        <meta name="author" content="Itagi" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/game/QuickDraw" />
+
+        <meta property="og:title" content="Quick Draw Duell – Cowboy-Reaktionsspiel im Browser" />
+        <meta
+            property="og:description"
+            content="Schieße schneller als dein Gegner! Spiele jetzt das kostenlose Cowboy-Reaktionsspiel direkt im Browser. Ohne Download, mobilfreundlich." />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/game/QuickDraw" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Quick Draw Duell – Cowboy-Reaktionsspiel im Browser" />
+        <meta
+            name="twitter:description"
+            content="Fordere Freunde heraus! Finde heraus, wer am schnellsten schießt, in diesem sofort spielbaren Western-Spiel." />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"></script>
+        <title>Quick Draw Duell</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: linear-gradient(to top, #fbeec1, #e0c097);
+                font-family: "Inter", sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: center;
+                position: relative;
+            }
+
+            h1 {
+                font-family: "Bangers", cursive;
+                font-size: 1.8em;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                color: #5a3e1b;
+                text-shadow: 2px 2px #fff0c4;
+            }
+
+            .arena {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 90%;
+                max-width: 400px;
+                margin: 10px 0;
+                font-size: 4em;
+                background: #fffef4;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                padding: 30px 10px;
+                border: 3px solid #d2b48c;
+            }
+
+            .cowboy {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: all 0.3s ease;
+            }
+
+            .cowboy span {
+                font-size: 1.1rem;
+                margin-top: 10px;
+                font-weight: bold;
+                color: #444;
+            }
+
+            #message {
+                font-size: 1.3em;
+                min-height: 2em;
+                margin-top: 10px;
+                color: #222;
+            }
+
+            .btn-group {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .btn {
+                padding: 12px 28px;
+                font-size: 1.1em;
+                cursor: pointer;
+                border: none;
+                border-radius: 12px;
+                background: #5a3e1b;
+                color: white;
+                font-weight: bold;
+                transition:
+                    transform 0.2s,
+                    background 0.2s;
+            }
+
+            .btn:hover {
+                background: #7b5633;
+                transform: scale(1.05);
+            }
+
+            .gun {
+                font-size: 1.2em;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .gun.show {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Quick Draw Duell</h1>
+        <p>Schieße schneller als dein Gegner!</p>
+        <div class="arena">
+            <div class="cowboy" id="enemy">
+                <div id="enemyFace">🤠</div>
+                <div id="enemyGun" class="gun">🔫</div>
+                <span>Gegner</span>
+            </div>
+            <div class="cowboy" id="player">
+                <div id="playerFace">😐</div>
+                <div id="playerGun" class="gun">🔫</div>
+                <span>Du</span>
+            </div>
+        </div>
+
+        <div id="message">Drücke „Start“, um das Spiel zu beginnen.</div>
+
+        <div class="btn-group">
+            <button class="btn" id="startBtn" onclick="startGame()">Start</button>
+            <button class="btn" id="shootBtn" onclick="handlePlayerShoot()" style="display: none; background: red">
+                Schießen!
+            </button>
+            <button class="btn" id="restartBtn" onclick="restartGame()" style="display: none">Nochmal spielen</button>
+            <button class="btn" id="shareBtn" onclick="shareResult()" style="display: none">Teilen</button>
+        </div>
+
+        <script>
+            const message = document.getElementById("message");
+            const startBtn = document.getElementById("startBtn");
+            const restartBtn = document.getElementById("restartBtn");
+            const shootBtn = document.getElementById("shootBtn");
+            const shareBtn = document.getElementById("shareBtn");
+
+            const playerFace = document.getElementById("playerFace");
+            const playerGun = document.getElementById("playerGun");
+            const enemyFace = document.getElementById("enemyFace");
+            const enemyGun = document.getElementById("enemyGun");
+
+            let drawTimeout = null;
+            let enemyShotTimeout = null;
+            let drawTime = 0;
+            let gameStarted = false;
+            let readyToShoot = false;
+            let playerReacted = false;
+            let lastReaction = null;
+
+            function startGame() {
+                clearTimeout(drawTimeout);
+                clearTimeout(enemyShotTimeout);
+
+                resetCharacters();
+                gameStarted = true;
+                readyToShoot = false;
+                playerReacted = false;
+                lastReaction = null;
+
+                startBtn.style.display = "none";
+                restartBtn.style.display = "none";
+                shareBtn.style.display = "none";
+                shootBtn.style.display = "inline-block";
+                message.textContent = "Warte auf das DRAW-Signal...";
+
+                drawTimeout = setTimeout(
+                    () => {
+                        readyToShoot = true;
+                        drawTime = performance.now();
+                        message.textContent = "Schießen!";
+                        enemyFace.textContent = "😠";
+                        playerFace.textContent = "😠";
+
+                        const enemyReactTime = Math.random() * 400 + 200;
+                        enemyShotTimeout = setTimeout(() => {
+                            if (!playerReacted) {
+                                enemyGun.classList.add("show");
+                                playerFace.textContent = "💀";
+                                endGame("Zu langsam... du verlierst!");
+                            }
+                        }, enemyReactTime);
+                    },
+                    Math.random() * 3000 + 2000
+                );
+            }
+
+            function endGame(result) {
+                message.textContent = result;
+                gameStarted = false;
+                restartBtn.style.display = "inline-block";
+                shareBtn.style.display = "inline-block";
+                shootBtn.style.display = "none";
+                clearTimeout(drawTimeout);
+                clearTimeout(enemyShotTimeout);
+            }
+
+            function resetCharacters() {
+                playerFace.textContent = "😐";
+                enemyFace.textContent = "🤠";
+                playerGun.classList.remove("show");
+                enemyGun.classList.remove("show");
+            }
+
+            function handlePlayerShoot() {
+                if (!gameStarted || playerReacted) return;
+
+                if (!readyToShoot) {
+                    playerFace.textContent = "😵";
+                    message.textContent = "Zu früh... du verlierst!";
+                    endGame("Zu früh geschossen!");
+                    return;
+                }
+
+                const reactionTime = performance.now() - drawTime;
+                lastReaction = Math.round(reactionTime);
+                playerReacted = true;
+                playerGun.classList.add("show");
+                shootBtn.style.display = "none";
+
+                if (enemyGun.classList.contains("show")) {
+                    playerFace.textContent = "💀";
+                    endGame("Zu langsam... du verlierst!");
+                } else {
+                    enemyFace.textContent = "💀";
+                    endGame(`Du hast gewonnen! (${lastReaction} ms)`);
+                }
+            }
+
+            function restartGame() {
+                startGame();
+            }
+
+            function shareResult() {
+                const baseUrl = "https://www.singhyogendra.com.np/more/QuickDraw/";
+                let text = "🔥 Ich habe gerade Quick Draw Duell gespielt!";
+                if (lastReaction !== null) {
+                    text = `🤠 Meine Reaktionszeit beträgt ${lastReaction} ms! Versuche es selbst:`;
+                }
+
+                const shareData = {
+                    title: "Quick Draw Duell",
+                    text: text,
+                    url: baseUrl
+                };
+
+                if (navigator.share) {
+                    navigator.share(shareData).catch(() => {
+                        fallbackCopy(`${text} ${baseUrl}`);
+                    });
+                } else {
+                    fallbackCopy(`${text} ${baseUrl}`);
+                }
+            }
+
+            function fallbackCopy(text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert("Ergebnis in die Zwischenablage kopiert! Teile es mit Freunden 😊");
+                });
+            }
+
+            document.body.addEventListener("click", (e) => {
+                if (e.target.classList.contains("btn")) return;
+                handlePlayerShoot();
+            });
+        </script>
+
+        <button
+            style="
+                margin-top: 20px;
+                width: 90%;
+                height: 60px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #5a3e1b;
+                cursor: pointer;
+                border-radius: 6px;
+                border: none;
+                color: white;
+            "
+            onclick="window.location.href='/'">
+            📂 Weitere Spiele
+        </button>
+        <section style="max-width: 320px; width: 100%; margin: 48px auto 24px auto; font-family: 'Arial', sans-serif; font-size: 14px; background: #fff8e0; border-radius: 18px; box-shadow: 0 6px 24px #aa8844; padding: 20px; line-height: 1.6; color: #3e2c00;">
+            <h2 style="font-size: 1.4rem; margin-bottom: 14px; color: #5a3e1b;">❓ Häufig gestellte Fragen</h2>
+
+            <div style="margin-bottom: 12px;">
+                <strong>F1. Wie spiele ich dieses Spiel?</strong><br/>
+                A. Nach Drücken von „Start“ warte auf das DRAW-Signal. Sobald „Schießen!“ angezeigt wird, tippe den Bildschirm oder drücke „Schießen!“, um schneller als dein Gegner zu sein.
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <strong>F2. Was passiert, wenn ich vor dem Signal schieße?</strong><br/>
+                A. Wenn du vor dem DRAW-Signal schießt, verlierst du sofort. Warte unbedingt auf das Signal!
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <strong>F3. Kann ich auch auf Mobilgeräten spielen?</strong><br/>
+                A. Ja! Tippe einfach auf den Bildschirm, um zu schießen. Du brauchst nicht unbedingt den Button zu drücken.
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <strong>F4. Welche Reaktionszeit ist gut?</strong><br/>
+                A. Unter 300 ms gilt als sehr gut. Profi-Cowboys erreichen oft unter 200 ms!
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <strong>F5. Kann ich mein Ergebnis teilen?</strong><br/>
+                A. Ja! Nach dem Duell drücke „Teilen“, um deine Reaktionszeit zu kopieren und zu verschicken.
+            </div>
+
+            <div style="margin-bottom: 0;">
+                <strong>F6. Ist das Spiel fair?</strong><br/>
+                A. Ja. Die Zeit bis zum DRAW-Signal und die Reaktion der KI sind bei jedem Duell zufällig, sodass niemand die Zeiten voraussagen kann.
+            </div>
+        </section>
+
+    </body>
+</html>

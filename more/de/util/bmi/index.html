@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>BMI-Rechner – Body-Mass-Index (BMI) Messung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta
+    name="description"
+    content="Gib deine Größe und dein Gewicht ein, um sofort deinen BMI (Body-Mass-Index) zu berechnen. Anzeige des BMI-Wertes, der Kategorie und des empfohlenen Bereichs. 100 % kostenlos, browserbasiert, mobiloptimiert." />
+  <meta name="keywords" content="BMI, Body-Mass-Index, Gesundheit, Rechner, Gewicht, Größe, Übergewicht, Fitness, Messung" />
+  <meta name="author" content="Itagi" />
+  <meta name="language" content="de" />
+  <meta name="theme-color" content="#2e74d1" />
+  <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/util/bmi/" />
+  <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+  <meta property="og:title" content="BMI-Rechner – Body-Mass-Index (BMI) Messung"/>
+  <meta property="og:description" content="Gib deine Größe und dein Gewicht ein, um in Sekunden deinen BMI (Body-Mass-Index) zu ermitteln! Sofortige Ergebnisse." />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/util/bmi/"/>
+  <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="BMI-Rechner – Body-Mass-Index (BMI) Messung"/>
+  <meta name="twitter:description" content="Gib deine Größe und dein Gewicht ein, um sofort deinen BMI zu berechnen. Erfahre den gesunden Gewichtsbereich. Kein Upload nötig, 100 % browserbasiert." />
+  <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png"/>
+  <!-- Google Analytics -->
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+    crossorigin="anonymous"></script>
+  <style>
+    :root { --main: #2e74d1; --bg: #f7fafd; }
+    html, body { margin: 0; padding: 0; background: var(--bg); }
+    body { font-family: "Segoe UI", Arial, sans-serif; color: #234; }
+    .container {
+      max-width: 370px;
+      margin: 34px auto 0 auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 22px #2e74d111;
+      padding: 28px 16px 21px 16px;
+    }
+    .title { text-align: center; font-size: 1.25em; color: var(--main); font-weight: bold; margin-bottom: 8px; }
+    .desc { text-align: center; color: #4a73a5; font-size: 1.02em; margin-bottom: 20px; }
+    .form-row {
+      display: flex; flex-direction: column; gap: 7px; margin-bottom: 13px;
+    }
+    .form-row label { font-size: 1em; color: #2264c3; font-weight: 500; }
+    .form-row input[type="number"] {
+      box-sizing: border-box;
+      padding: 10px 10px;
+      border-radius: 7px;
+      border: 1.2px solid #bfd8ff;
+      font-size: 1.09em;
+      width: 100%;
+      background: #fafdff;
+      color: #234;
+      transition: border 0.15s;
+    }
+    .form-row input[type="number"]:focus { border-color: var(--main); }
+    .btn {
+      background: var(--main); color: #fff; border: none; border-radius: 8px;
+      padding: 13px 0; width: 100%; font-size: 1.13em; font-weight: bold; cursor: pointer;
+      margin-top: 7px; margin-bottom: 9px; box-shadow: 0 2px 12px #2e74d122;
+      transition: background 0.16s;
+    }
+    .btn:active { background: #194e99; }
+    .result {
+      background: #eaf3ff;
+      border-radius: 12px;
+      color: #144c91;
+      font-size: 1.07em;
+      padding: 13px 11px 9px 11px;
+      text-align: center;
+      margin-bottom: 9px;
+      min-height: 44px;
+      font-weight: 500;
+      word-break: break-word;
+    }
+    .bmi-table {
+      margin: 15px auto 5px auto;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 0.98em;
+      background: #fafdff;
+      box-shadow: 0 2px 8px #bbe7ff24;
+    }
+    .bmi-table th, .bmi-table td {
+      border: 1px solid #c5e1fa;
+      padding: 6px 4px;
+      text-align: center;
+    }
+    .bmi-table th { background: #e1eefe; color: #2274ba; }
+    .bmi-table td { background: #fff; }
+    section#faq { margin-top: 26px; }
+    section#faq h2 { margin-bottom: 13px; color: #2e74d1; font-size: 1.14em; text-align: center; }
+    section#faq dt { font-weight: bold; margin-top: 9px; }
+    section#faq dd { margin: 0 0 7px 0; font-size: 0.99em; color: #24528a; }
+    .footer { color: #789; text-align: center; font-size: 0.94em; margin-top: 16px; }
+    #backBtn {
+      position: fixed; left: 50%; bottom: 32px; transform: translateX(-50%);
+      background: #2e74d1; color: #fff; font-weight: 700; border: none; border-radius: 2rem;
+      padding: 0.58em 1.5em; box-shadow: 0 4px 16px #2e74d166; font-size: 1.09em; text-decoration: none;
+      cursor: pointer; letter-spacing: 0.01em; transition: background 0.15s, transform 0.12s; z-index: 2000;
+    }
+    #backBtn:hover { background: #144c91; transform: translateX(-50%) scale(1.04); }
+    @media (max-width: 520px) {
+      .container { max-width: 98vw; padding: 11px 2vw 10px 2vw; }
+      #backBtn { bottom: 18px; font-size: 0.98em; padding: 0.48em 1em; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container" itemscope itemtype="https://schema.org/HealthApplication">
+      <h1 class="title" itemprop="name">🏃 BMI-Rechner</h1>
+      <p class="desc" itemprop="description">
+        Gib deine Größe (cm) und dein Gewicht (kg) ein, um sofort deinen BMI (Body-Mass-Index) zu berechnen.<br>
+        Die Ergebnisse werden direkt angezeigt!
+      </p>
+      <form id="bmiForm" autocomplete="off">
+        <div class="form-row">
+          <label for="height">Größe (cm)</label>
+          <input type="number" id="height" min="80" max="250" step="0.1" required placeholder="z.B.: 170" />
+        </div>
+        <div class="form-row">
+          <label for="weight">Gewicht (kg)</label>
+          <input type="number" id="weight" min="20" max="250" step="0.1" required placeholder="z.B.: 60" />
+        </div>
+        <button type="submit" class="btn">BMI berechnen</button>
+      </form>
+      <div class="result" id="bmiResult">Bitte gib Größe und Gewicht ein.</div>
+      <table class="bmi-table">
+        <tr><th>BMI-Bereich</th><th>Kategorie</th></tr>
+        <tr><td>&lt; 18,5</td><td>Untergewicht</td></tr>
+        <tr><td>18,5 – 24,9</td><td>Normalgewicht</td></tr>
+        <tr><td>25 – 29,9</td><td>Übergewicht</td></tr>
+        <tr><td>30 – 34,9</td><td>Adipositas Grad 1</td></tr>
+        <tr><td>35 – 39,9</td><td>Adipositas Grad 2</td></tr>
+        <tr><td>≥ 40</td><td>Adipositas Grad 3</td></tr>
+      </table>
+
+      <!-- FAQ-Bereich (SEO/SGE) -->
+      <section aria-labelledby="faq-head" id="faq">
+        <h2 id="faq-head">FAQ – BMI und Gesundheit</h2>
+        <dl>
+          <dt>Was ist der BMI?</dt>
+          <dd>Der BMI (Body-Mass-Index) ist eine berechnete Kennzahl aus Körpergröße und Gewicht, die zur Abschätzung des Körperfettanteils und zur Bewertung gesundheitlicher Risiken verwendet wird.</dd>
+          <dt>Ist der BMI genau?</dt>
+          <dd>Der BMI ist eine allgemeine Orientierung. Bei sehr muskulösen Personen oder Leistungssportlern kann der BMI vom tatsächlichen Körperfettanteil abweichen.</dd>
+          <dt>Was ist der normale BMI-Bereich?</dt>
+          <dd>Für Erwachsene gilt in der Regel ein BMI von 18,5 bis 24,9 als Normalgewicht.</dd>
+          <dt>Verändert sich der BMI je nach Alter oder Geschlecht?</dt>
+          <dd>Für erwachsene Männer und Frauen gelten dieselben BMI-Grenzwerte. Bei Kindern und Jugendlichen werden alters- und geschlechtsspezifische Perzentile verwendet.</dd>
+          <dt>Wie kann ich meinen BMI verbessern?</dt>
+          <dd>Eine ausgewogene Ernährung und regelmäßige Bewegung helfen, den BMI in den Normalbereich zu bringen. Konsultiere bei Bedarf Fachpersonal im Gesundheitswesen.</dd>
+        </dl>
+      </section>
+
+      <footer class="footer">
+        Der BMI dient nur als grobe Orientierung.<br>
+        Für eine umfassende Gesundheitsberatung solltest du medizinischen Rat einholen.
+      </footer>
+    </div>
+  </main>
+  <a href="../" id="backBtn">Andere Utilities</a>
+  <script>
+    const bmiForm = document.getElementById('bmiForm');
+    const bmiResult = document.getElementById('bmiResult');
+    function bmiCategory(bmi) {
+      if (bmi < 18.5) return "Untergewicht";
+      if (bmi < 25) return "Normalgewicht";
+      if (bmi < 30) return "Übergewicht";
+      if (bmi < 35) return "Adipositas Grad 1";
+      if (bmi < 40) return "Adipositas Grad 2";
+      return "Adipositas Grad 3";
+    }
+    bmiForm.onsubmit = function(e) {
+      e.preventDefault();
+      const h = parseFloat(document.getElementById('height').value) / 100.0;
+      const w = parseFloat(document.getElementById('weight').value);
+      if (!h || !w || h < 0.8 || w < 20) {
+        bmiResult.textContent = "Bitte gültige Größe und Gewicht eingeben.";
+        return;
+      }
+      const bmi = w / (h * h);
+      const cat = bmiCategory(bmi);
+      bmiResult.innerHTML = `<b>BMI: ${bmi.toFixed(1)}</b> – <span style="color:#1c7b49;font-weight:600">${cat}</span>`;
+    };
+  </script>
+  <!-- FAQPage Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der BMI?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Der BMI (Body-Mass-Index) ist eine berechnete Kennzahl aus Körpergröße und Gewicht, die zur Abschätzung des Körperfettanteils und zur Bewertung gesundheitlicher Risiken verwendet wird." }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist der BMI genau?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Der BMI ist eine allgemeine Orientierung. Bei sehr muskulösen Personen oder Leistungssportlern kann der BMI vom tatsächlichen Körperfettanteil abweichen." }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist der normale BMI-Bereich?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Für Erwachsene gilt in der Regel ein BMI von 18,5 bis 24,9 als Normalgewicht." }
+      },
+      {
+        "@type": "Question",
+        "name": "Verändert sich der BMI je nach Alter oder Geschlecht?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Für erwachsene Männer und Frauen gelten dieselben BMI-Grenzwerte. Bei Kindern und Jugendlichen werden alters- und geschlechtsspezifische Perzentile verwendet." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie kann ich meinen BMI verbessern?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Eine ausgewogene Ernährung und regelmäßige Bewegung helfen, den BMI in den Normalbereich zu bringen. Konsultiere bei Bedarf Fachpersonal im Gesundheitswesen." }
+      }
+    ]
+  }
+  </script>
+</body>
+</html>

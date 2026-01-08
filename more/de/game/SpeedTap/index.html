@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SpeedTap</title>
+        <meta name="robots" content="index, follow" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/game/SpeedTap" />
+
+        <!-- SEO Meta -->
+        <meta
+            name="description"
+            content="Wie schnell sind deine Finger? Tippe 5 Sekunden lang so oft wie möglich! Fordere Freunde heraus und lande in der Bestenliste. Kostenlos und mobil-optimiert." />
+        <meta
+            name="keywords"
+            content="SpeedTap, Tipp-Spiel, Reaktionsspiel, 5-Sekunden-Challenge, Klick-Spiel, mobiles Spiel, kostenloses Webgame, Browser-Spiel, Geschwindigkeitstest" />
+        <meta name="author" content="Itagi" />
+
+        <!-- Open Graph (Facebook, Kakao, Discord) -->
+        <meta property="og:title" content="SpeedTap" />
+        <meta
+            property="og:description"
+            content="Tippe 5 Sekunden lang so oft wie möglich! Fordere deine Freunde heraus. Kostenloses Webgame!" />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/game/SpeedTap" />
+        <meta property="og:type" content="website" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SpeedTap" />
+        <meta
+            name="twitter:description"
+            content="Sieh, ob du deine Freunde schlagen kannst! Tippe 5 Sekunden lang so schnell wie möglich!" />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+
+        <!-- Google Tag (gtag.js) -->
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                user-select: none;
+            }
+
+            body {
+                font-family: "Inter", sans-serif;
+                background: linear-gradient(135deg, #2c3e50, #34495e);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 4rem;
+                background: linear-gradient(90deg, #f9ca24, #e056fd);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                animation: bounceIn 1s ease;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+            }
+
+            @media (max-width: 500px) {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            @keyframes bounceIn {
+                0% {
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                60% {
+                    transform: scale(1.2);
+                    opacity: 1;
+                }
+                80% {
+                    transform: scale(0.95);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            #tapZone {
+                background: #1abc9c;
+                width: 280px;
+                height: 280px;
+                border-radius: 1.5rem;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                transition:
+                    background 0.2s ease,
+                    transform 0.1s ease;
+                cursor: pointer;
+                font-size: 2rem;
+                position: relative;
+                animation: none;
+                user-select: none;
+            }
+
+            #tapZone:active {
+                background: #16a085;
+            }
+
+            /* Zahlen-Pop-Effekt */
+            .pop {
+                animation: pop 0.2s ease;
+            }
+
+            @keyframes pop {
+                0% {
+                    transform: scale(1);
+                    color: #ffffff;
+                }
+                50% {
+                    transform: scale(1.3);
+                    color: #ffd700;
+                }
+                100% {
+                    transform: scale(1);
+                    color: #ffffff;
+                }
+            }
+
+            #result {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+                color: #fff;
+            }
+
+            .button-group {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+
+            button {
+                padding: 0.8rem 1.6rem;
+                font-size: 1rem;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                background-color: #f39c12;
+                color: white;
+                font-weight: bold;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+                transition:
+                    background 0.2s ease,
+                    transform 0.1s ease;
+            }
+
+            button:hover {
+                background-color: #e67e22;
+            }
+
+            button:active {
+                transform: scale(0.97);
+            }
+
+            @media (max-width: 500px) {
+                #tapZone {
+                    width: 220px;
+                    height: 220px;
+                }
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>SpeedTap</h1>
+        <p style="margin-top: -10px; margin-bottom: 30px">Tippe 5 Sekunden lang so schnell wie möglich!</p>
+
+        <div id="tapZone">Tippe zum Starten</div>
+
+        <div id="result"></div>
+
+        <div class="button-group" id="afterButtons" style="display: none">
+            <button id="restartBtn">Neu starten</button>
+            <button id="shareBtn">Teilen</button>
+        </div>
+
+        <script>
+            const tapZone = document.getElementById("tapZone");
+            const result = document.getElementById("result");
+            const restartBtn = document.getElementById("restartBtn");
+            const shareBtn = document.getElementById("shareBtn");
+            const afterButtons = document.getElementById("afterButtons");
+
+            let taps = 0;
+            let isPlaying = false;
+            let timer;
+
+            function updateFontSize() {
+                const baseSize = 2; // rem
+                const growthRate = 0.05;
+                const maxSize = 5;
+                let newSize = baseSize + taps * growthRate;
+                if (newSize > maxSize) newSize = maxSize;
+                tapZone.style.fontSize = `${newSize}rem`;
+            }
+
+            function startGame() {
+                taps = 0;
+                isPlaying = true;
+                result.textContent = "";
+                tapZone.textContent = "Los!";
+                tapZone.style.pointerEvents = "auto";
+                tapZone.style.fontSize = "2rem";
+                tapZone.classList.remove("pop");
+                afterButtons.style.display = "none";
+
+                timer = setTimeout(() => {
+                    isPlaying = false;
+                    tapZone.textContent = "⏰ Zeit abgelaufen!";
+                    tapZone.style.pointerEvents = "none";
+                    tapZone.style.fontSize = "2rem";
+                    tapZone.classList.remove("pop");
+                    result.textContent = `Du hast in 5 Sekunden ${taps} Taps erzielt!`;
+                    afterButtons.style.display = "flex";
+                }, 5000);
+            }
+
+            tapZone.addEventListener("click", () => {
+                if (!isPlaying) {
+                    startGame();
+                } else {
+                    taps++;
+                    tapZone.textContent = `${taps}`;
+                    updateFontSize();
+
+                    // Animation neu triggern
+                    tapZone.classList.remove("pop");
+                    void tapZone.offsetWidth; // Reflow erzwingen
+                    tapZone.classList.add("pop");
+                }
+            });
+
+            restartBtn.addEventListener("click", () => {
+                tapZone.textContent = "Tippe zum Starten";
+                result.textContent = "";
+                tapZone.style.fontSize = "2rem";
+                tapZone.classList.remove("pop");
+                afterButtons.style.display = "none";
+                tapZone.style.pointerEvents = "auto";
+            });
+
+            shareBtn.addEventListener("click", async () => {
+                const shareText = `💥 Ich habe in 5 Sekunden ${taps} Taps geschafft! Fordere mich heraus: ${window.location.href}`;
+                if (navigator.share) {
+                    try {
+                        await navigator.share({
+                            title: "SpeedTap-Challenge",
+                            text: shareText,
+                            url: window.location.href
+                        });
+                    } catch {
+                        alert("Teilen wurde abgebrochen oder ist fehlgeschlagen.");
+                    }
+                } else {
+                    await navigator.clipboard.writeText(shareText);
+                    alert("Punktestand und Link wurden in die Zwischenablage kopiert!");
+                }
+            });
+        </script>
+
+        <button
+            style="
+                background-color: #f39c12;
+                padding: 19px 20px 20px 20px;
+                border-radius: 20px;
+                margin-top: 30px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 90%;
+                max-width: 400px;
+                color: white;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            "
+            onclick="window.location.href='/'">
+            📂 Andere Spiele
+        </button>
+
+        <section style="max-width: 320px; width: 100%; margin: 48px auto 24px auto; font-family: 'Arial', sans-serif; font-size: 14px; background: #1e1e1e; border-radius: 18px; box-shadow: 0 6px 24px #1236; padding: 20px; line-height: 1.6; color: #f0f0f0;">
+          <h2 style="font-size: 1.4rem; margin-bottom: 14px; color: #8f94fb;">❓ Häufig gestellte Fragen</h2>
+
+          <div style="margin-bottom: 12px;">
+            <strong>F1. Wie spielt man SpeedTap?</strong><br/>
+            A. Tippe 5 Sekunden lang so schnell wie möglich auf den grünen Bereich. Deine Tipp-Anzahl ist dein Ergebnis.
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>F2. Wie lange dauert eine Runde?</strong><br/>
+            A. Eine Runde dauert genau 5 Sekunden. Danach wird sofort dein Ergebnis angezeigt.
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>F3. Wie starte ich neu?</strong><br/>
+            A. Drücke einfach den „Neu starten“-Button, um sofort wieder von vorne zu beginnen.
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>F4. Kann ich meinen Punktestand teilen?</strong><br/>
+            A. Ja! Drücke den „Teilen“-Button, um deinen Punktestand und den Link zu kopieren und mit Freunden zu teilen.
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <strong>F5. Verändert sich die Schriftgröße beim Tippen?</strong><br/>
+            A. Ja, jedes Tippen vergrößert kurz die Zahl als visuelles Feedback.
+          </div>
+
+          <div style="margin-bottom: 0;">
+            <strong>F6. Funktioniert es auf Mobilgeräten?</strong><br/>
+            A. Natürlich. Touch-Eingaben werden unterstützt, sodass du auch auf Smartphone oder Tablet spielen kannst.
+          </div>
+        </section>
+    </body>
+</html>

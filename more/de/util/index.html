@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Google Tags (gtag.js) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Util – Einfache Web-Utilities</title>
+    <!-- ✨ SEO -->
+    <meta
+      name="description"
+      content="QuickUtil Hub bietet kostenlose, schnelle und hilfreiche Web-Utilities. Keine Anmeldung oder Installation erforderlich – sofort einsatzbereit!" />
+    <meta
+      name="keywords"
+      content="Web-Utilities, Online-Tools, kostenlose Utilities, Produktivität, Browser-Tools, Quick-Tools, einfache Tools" />
+    <meta name="author" content="Itagi" />
+    <!-- ✨ Open Graph: Social Sharing -->
+    <meta property="og:title" content="QuickUtil Hub – Einfache Web-Utilities" />
+    <meta
+      property="og:description"
+      content="Steigern Sie Ihre Produktivität mit schnellen und kostenlosen Online-Tools. Keine Registrierung nötig, sofort nutzen." />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/util/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#4e54c8" />
+    <link rel="apple-touch-icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/util/" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(to bottom, #1c1c1c, #111);
+        color: #f5f5f5;
+        -webkit-tap-highlight-color: transparent;
+      }
+      header {
+        text-align: center;
+        padding: 2.5rem 1rem 2rem;
+        background: linear-gradient(90deg, #4e54c8, #8f94fb);
+        color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        position: relative;
+      }
+      header h1 {
+        font-size: 2.2rem;
+        margin: 0;
+      }
+      header p {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        opacity: 0.92;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        padding-left: 0.6rem;
+        border-left: 4px solid #8f94fb;
+      }
+      #searchInput {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none;
+        background-color: #2b2b2b;
+        color: #eee;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      #searchInput::placeholder {
+        color: #aaa;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+      }
+      li {
+        background: #1f1f1f;
+        border-radius: 12px;
+        padding: 1.2rem;
+        transition: transform 0.15s, box-shadow 0.2s;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        position: relative;
+      }
+      li:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+      li:active {
+        transform: scale(0.98);
+        background: #2a2a2a;
+      }
+      li a {
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #a0a8ff;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      li p {
+        font-size: 0.93rem;
+        color: #bbb;
+        line-height: 1.4;
+      }
+      #noResultMessage {
+        display: none;
+        text-align: center;
+        font-size: 1rem;
+        color: #999;
+        margin-top: 1rem;
+        animation: fadeIn 0.3s;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.85rem;
+        color: #aaa;
+        background: #181818;
+        border-top: 1px solid #333;
+      }
+      #gotoGameBtn {
+        top: 18px;
+        right: 22px;
+        background: #601ed6;
+        color: #fff;
+        font-weight: 700;
+        padding: 0.55rem 1.2rem;
+        border: 2px solid #fff;
+        border-radius: 2rem;
+        box-shadow: 0 2px 8px #0002;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition:
+          background 0.15s,
+          transform 0.1s;
+        z-index: 99;
+        position: absolute;
+      }
+      #gotoGameBtn:hover {
+        background: #4e54c8;
+        transform: scale(1.04);
+      }
+      @media (max-width: 600px) {
+        #gotoGameBtn {
+          top: 12px;
+          right: 10px;
+          padding: 0.45rem 1rem;
+          font-size: 0.93rem;
+        }
+      }
+    </style>
+    <script>
+      function launchUtil(url) {
+        window.location.href = url;
+      }
+      function filterUtils() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const items = document.querySelectorAll("ul li");
+        const noResult = document.getElementById("noResultMessage");
+        let anyVisible = false;
+        items.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          if (text.includes(input)) {
+            item.style.display = "block";
+            anyVisible = true;
+          } else {
+            item.style.display = "none";
+          }
+        });
+        noResult.style.display = anyVisible ? "none" : "block";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Quick Util</h1>
+      <p>Eine Sammlung praktischer Web-Utilities – keine Installation oder Anmeldung erforderlich.</p>
+      <a href="https://www.singhyogendra.com.np/more/de/game/" id="gotoGameBtn">Spieleübersicht</a>
+    </header>
+    <main>
+      <section>
+        <h2>Überblick</h2>
+        <p>
+          Eine Sammlung von Online-Tools, die jederzeit und überall schnell verfügbar sind.<br />
+          Kostenlos &amp; ohne Anmeldung – ideal für Smartphone und PC.
+        </p>
+      </section>
+      <section>
+        <h2>Utilities-Liste</h2>
+        <input type="text" id="searchInput" placeholder="Tool suchen..." oninput="filterUtils()" />
+        <ul>
+          <li onclick="launchUtil('EasyLetterWordCounter/')">
+            <a href="EasyLetterWordCounter/">📝 Zeichen- &amp; Wortzähler</a>
+            <p>Fügen Sie Text ein oder kopieren Sie ihn, um sofort Zeichen- und Wortanzahl zu sehen.</p>
+          </li>
+          <li onclick="launchUtil('ImageCompressor/')">
+            <a href="ImageCompressor/">🪄 Bildkompressor</a>
+            <p>Komprimieren und skalieren Sie Bilddateien schnell und einfach.</p>
+          </li>
+          <li onclick="launchUtil('SmartBeautifier/')">
+            <a href="SmartBeautifier/">✨ Code-Beautifier</a>
+            <p>Formatiert HTML-, CSS- und JS-Code automatisch mit schöner Einrückung.</p>
+          </li>
+          <li onclick="launchUtil('UniversalCodeMinifier/')">
+            <a href="UniversalCodeMinifier/">🧹 Code-Minimierungs-Tool</a>
+            <p>Entfernt Kommentare und minimiert JS-, CSS- und HTML-Code.</p>
+          </li>
+          <li onclick="launchUtil('pdftoolkit/')">
+            <a href="pdftoolkit/">📄 PDF-Toolkit</a>
+            <p>PDF zusammenfügen, komprimieren, teilen, verschlüsseln, drehen oder Bilder in PDF umwandeln.</p>
+          </li>
+          <li onclick="launchUtil('passwordgen/')">
+            <a href="passwordgen/">🔐 Passwortgenerator</a>
+            <p>Generieren Sie sofort sichere Passwörter, auch mit benutzerdefinierten Wörtern!</p>
+          </li>
+          <li onclick="launchUtil('qrcode/')">
+            <a href="qrcode/">🔳 QR-Code-Generator &amp; Scanner</a>
+            <p>Erstellen Sie QR-Codes aus Links oder Text und scannen Sie per Kamera oder Bilddatei.</p>
+          </li>
+          <li onclick="launchUtil('unitconverter/')">
+            <a href="unitconverter/">🔄 Einheitenumrechner</a>
+            <p>Konvertieren Sie Länge, Gewicht, Temperatur, Geschwindigkeit, Volumen und Fläche sofort.</p>
+          </li>
+          <li onclick="launchUtil('thumbnailgrabber/')">
+            <a href="thumbnailgrabber/">📸 Thumbnail-Downloader</a>
+            <p>Vorschau und Download von Thumbnails in verschiedenen Größen von YouTube, X (ehem. Twitter) und TikTok.</p>
+          </li>
+          <li onclick="launchUtil('barcode/')">
+            <a href="barcode/">📦 Barcode &amp; ISBN/UPC-Generator</a>
+            <p>Erzeugen Sie ISBN, UPC, EAN, Code128 und weitere Barcodes sofort.</p>
+          </li>
+          <li onclick="launchUtil('diff/')">
+            <a href="diff/">🔎 Text-Diff-Checker</a>
+            <p>Vergleichen Sie zwei Texte und heben Sie Hinzufügungen, Löschungen und Änderungen hervor.</p>
+          </li>
+          <li onclick="launchUtil('textcrypto/')">
+            <a href="textcrypto/">🔒 Einfache Textverschlüsselung &amp; -entschlüsselung</a>
+            <p>Verschlüsseln oder entschlüsseln Sie Text per Passwort oder Base64 – alles lokal im Browser.</p>
+          </li>
+          <li onclick="launchUtil('color-extractor/')">
+            <a href="color-extractor/">🎨 Farbpalette extrahieren &amp; umwandeln</a>
+            <p>Hauptfarben aus Bildern extrahieren und in HEX, RGB, HSL umwandeln, per Klick kopieren.</p>
+          </li>
+          <li onclick="launchUtil('dataconvert/')">
+            <a href="dataconvert/">🔄 Datenformat-Konverter</a>
+            <p>Konvertieren Sie JSON, XML und CSV mit syntaxhervorhebender Darstellung und Fehlererkennung.</p>
+          </li>
+          <li onclick="launchUtil('html2imgpdf/')">
+            <a href="html2imgpdf/">🖼️ HTML → Bild/PDF-Konverter</a>
+            <p>Wandeln Sie Webseiten oder HTML direkt im Browser in PNG, JPG oder PDF um.</p>
+          </li>
+          <li onclick="launchUtil('cardgen/')">
+            <a href="cardgen/">🎨 Online-Kartenersteller</a>
+            <p>Erstellen Sie Visitenkarten, Einladungen oder Hochzeitskarten per Template und speichern Sie sie als Bild.</p>
+          </li>
+          <li onclick="launchUtil('tts/')">
+            <a href="tts/">🔊 Text-zu-Sprache (TTS)</a>
+            <p>Konvertieren Sie Text oder Artikel in natürliche Sprache, abspielen oder als MP3 speichern.</p>
+          </li>
+          <li onclick="launchUtil('imageformatconverter/')">
+            <a href="imageformatconverter/">🖼️ Bildformat-Konverter</a>
+            <p>Konvertieren Sie Bilder in PNG, JPG, JPEG, GIF, BMP oder WebP.</p>
+          </li>
+          <li onclick="launchUtil('imagetool/')">
+            <a href="imagetool/">🖼️ Einfacher Bildeditor</a>
+            <p>Größe ändern, zuschneiden oder Wasserzeichen hinzufügen in Sekundenschnelle.</p>
+          </li>
+          <li onclick="launchUtil('textsummarizer/')">
+            <a href="textsummarizer/">📝 Text-Zusammenfassungstool</a>
+            <p>Fügen Sie lange Texte oder Artikel ein und erstellen Sie mit einem Klick eine kurze Zusammenfassung!</p>
+          </li>
+          <li onclick="launchUtil('crc/')">
+            <a href="crc/">🔢 CRC-Generator</a>
+            <p>Berechnen Sie CRC-Werte sofort aus Text oder hexadezimalen Eingaben.</p>
+          </li>
+          <li onclick="launchUtil('caseconverter/')">
+            <a href="caseconverter/">🔠 Textfall-Konverter</a>
+            <p>Konvertieren Sie Text sofort in Großbuchstaben, Kleinbuchstaben, Title Case, Sentence Case usw.</p>
+          </li>
+          <li onclick="launchUtil('quickmemo/')">
+            <a href="quickmemo/">📝 Schnellnotizen</a>
+            <p>Schnell Notizen oder To-Dos speichern – <b>automatisch im lokalen Speicher</b> gesichert.</p>
+          </li>
+          <li onclick="launchUtil('text-shuffle-sort/')">
+            <a href="text-shuffle-sort/">🔀 Text-Shuffle &amp; Sortierung</a>
+            <p>Mehrzeiligen Text einfügen und sofort zufällig mischen, aufsteigend oder absteigend sortieren!</p>
+          </li>
+          <li onclick="launchUtil('compound-interest/')">
+            <a href="compound-interest/">📈 Zinseszins-Rechner</a>
+            <p>Berechnen Sie, wie viel Ihr Geld bei einem Zinssatz über eine Laufzeit wächst.</p>
+          </li>
+          <li onclick="launchUtil('ipa-convert/')">
+            <a href="ipa-convert/">🔤 Englisch Lautschrift-Konverter</a>
+            <p>Konvertieren Sie englische Wörter oder Sätze in IPA-ähnliche Lautschrift (regelbasiert, nicht offiziell).</p>
+          </li>
+          <li onclick="launchUtil('bmi/')">
+            <a href="bmi/">🏃 BMI-Rechner</a>
+            <p>Berechnen Sie Ihren BMI sofort aus Größe und Gewicht.</p>
+          </li>
+          <li onclick="launchUtil('fin-calc/')">
+            <a href="fin-calc/">💸 Einfache Finanzrechner</a>
+            <p>Zinsen, Sparwachstum oder Kreditraten berechnen.</p>
+          </li>
+          <li onclick="launchUtil('time-diff/')">
+            <a href="time-diff/">⏳ Zeitdifferenz &amp; Countdown</a>
+            <p>
+              Berechnen Sie Tage, Stunden, Minuten und Sekunden zwischen zwei Daten und sehen Sie einen Echtzeit-Countdown!<br />
+              <b>Tipp:</b> Für reinen Countdown einfach nur das Enddatum eingeben.
+            </p>
+          </li>
+          <li onclick="launchUtil('age/')">
+            <a href="age/">🎂 Alters- &amp; Geburtstagsrechner</a>
+            <p>
+              Zeigt Ihr genaues Alter und die verbleibende Zeit bis zum nächsten Geburtstag an.<br />
+              Umgekehrte Berechnung des Geburtsjahres möglich.
+            </p>
+          </li>
+          <li onclick="launchUtil('nicknamegen/')">
+            <a href="nicknamegen/">✨ Zufälliger Spitznamengenerator</a>
+            <p>Generieren Sie <b>5 zufällige Spitznamen</b> auf einmal – kopieren Sie Ihre Favoriten!</p>
+          </li>
+          <li onclick="launchUtil('teamgen/')">
+            <a href="teamgen/">🔀 Zufällige Teameinteilung</a>
+            <p>Geben Sie Namen ein, wählen Sie Anzahl der Teams, und erhalten Sie zufällige Teamaufteilungen!</p>
+          </li>
+          <li onclick="launchUtil('fortune/')">
+            <a href="fortune/">🔮 Tagesglücksrechner</a>
+            <p>Checken Sie Ihr Tagesglück! (Spaßfunktion)</p>
+          </li>
+          <li onclick="launchUtil('dice3d/')">
+            <a href="dice3d/">🎲 3D-Würfel</a>
+            <p>Werfen Sie einen realistischen 3D-Würfel direkt im Browser.</p>
+          </li>
+          <li onclick="launchUtil('text-cleaner/')">
+            <a href="text-cleaner/">🧹 Textbereiniger</a>
+            <p>Entfernen Sie überflüssige Leerzeichen und Zeilenumbrüche, um Text aufzuräumen.</p>
+          </li>
+          <li onclick="launchUtil('recipe-finder/')">
+            <a href="recipe-finder/">🍳 Rezeptsuche</a>
+            <p>Geben Sie Zutaten ein oder wählen Sie sie aus und erhalten Sie einfache Rezeptvorschläge!</p>
+          </li>
+        </ul>
+        <div id="noResultMessage">Kein passendes Utility gefunden.</div>
+      </section>
+    </main>
+    <footer>
+      © 2025 Quick Util · Erstellt von Itagi<br />
+      E-Mail: emfls24777@daum.net
+    </footer>
+  </body>
+</html>

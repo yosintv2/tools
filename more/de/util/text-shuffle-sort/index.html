@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text-Shuffle- & Sortier-Tool – Zufällig, Aufsteigend, Absteigend</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Konvertieren Sie Textzeilen sofort im Browser in zufällige (Shuffle)-, aufsteigende (A→Z)- oder absteigende (Z→A)-Reihenfolge! Ideal für Listen, Manuskripte und Lernwerkzeuge. Kein Upload erforderlich, 100 % Datenschutz." />
+    <meta
+      name="keywords"
+      content="Text-Shuffle, Zufall, Sortierung, Absteigend, Zeilen-Sortierung, Browser, Kostenlos, Textsortierung, Shuffle, Zufällig, Umgekehrt, Zeilenumbruch" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="de" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/util/text-shuffle-sort/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <!-- Open Graph / Twitter meta -->
+    <meta property="og:title" content="Text-Shuffle- & Sortier-Tool – Zufällig, Aufsteigend, Absteigend" />
+    <meta
+      property="og:description"
+      content="Textzeilen schnell mischen, aufsteigend (A→Z) oder absteigend (Z→A) sortieren. Schnell, kostenlos und datenschutzfreundlich. Alles erfolgt direkt im Browser." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/util/text-shuffle-sort/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Text-Shuffle- & Sortier-Tool – Zufällig, Aufsteigend, Absteigend" />
+    <meta
+      name="twitter:description"
+      content="Textzeilen im Browser mischen, auf- oder absteigend sortieren. Kostenlos, datenschutzfreundlich und ohne Upload." />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      :root {
+        --main: #4671e8;
+        --main-dark: #29519b;
+        --bg: #f7f9fd;
+      }
+      body {
+        background: var(--bg);
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #222;
+      }
+      .container {
+        max-width: 430px;
+        margin: 38px auto 0 auto;
+        background: #fff;
+        border-radius: 17px;
+        box-shadow: 0 4px 22px #4671e824;
+        padding: 29px 17px 22px 17px;
+      }
+      .logo {
+        font-size: 1.22em;
+        font-weight: bold;
+        text-align: center;
+        color: var(--main-dark);
+        margin-bottom: 8px;
+      }
+      .desc {
+        text-align: center;
+        color: #315ba7;
+        margin-bottom: 15px;
+        font-size: 1.03em;
+      }
+      textarea {
+        width: 100%;
+        min-height: 140px;
+        font-size: 1.09em;
+        border: 1.2px solid #a4c9fa;
+        border-radius: 9px;
+        padding: 12px;
+        background: #fafdff;
+        color: #222;
+        resize: vertical;
+        margin-bottom: 11px;
+        font-family: "Fira Mono", "Menlo", monospace;
+        transition: border 0.16s;
+      }
+      textarea:focus {
+        border-color: var(--main);
+      }
+      .btn-row {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        margin-bottom: 11px;
+      }
+      .action-btn {
+        background: var(--main);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 0;
+        font-size: 1.09em;
+        font-weight: bold;
+        cursor: pointer;
+        flex: 1;
+        transition: background 0.15s;
+        box-shadow: 0 2px 12px #4671e81a;
+      }
+      .action-btn:active,
+      .action-btn:hover {
+        background: var(--main-dark);
+      }
+      .mini-btn {
+        background: #e4eefc;
+        color: #2759b0;
+        border: none;
+        border-radius: 7px;
+        font-size: 1em;
+        padding: 7px 15px;
+        cursor: pointer;
+        transition: background 0.12s;
+        font-weight: 500;
+        margin-left: 5px;
+      }
+      .mini-btn:active {
+        background: #bad0f8;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.95em;
+        margin-top: 16px;
+        opacity: 0.9;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #4671e8;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #4671e833;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #29519b;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 12px 2vw 13px 2vw;
+        }
+        textarea {
+          font-size: 1em;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+      .status-msg {
+        color: #41823c;
+        font-size: 0.98em;
+        text-align: right;
+        min-height: 18px;
+        margin-bottom: 2px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">🔀 Text-Shuffle- & Sortier-Tool</div>
+      <div class="desc">
+        Bitte geben Sie einen mehrzeiligen Text ein oder fügen Sie ihn ein.<br />
+        Wandeln Sie ihn sofort in zufällige (Shuffle)-, aufsteigende (A→Z)- oder absteigende (Z→A)-Reihenfolge um!
+      </div>
+      <div class="status-msg" id="statusMsg"></div>
+      <textarea id="inputArea" placeholder="Bitte fügen Sie eine Liste ein oder geben Sie sie ein. Eine Zeile pro Eintrag..."></textarea>
+      <div class="btn-row">
+        <button class="action-btn" id="shuffleBtn">Zufällig (Shuffle)</button>
+        <button class="action-btn" id="sortBtn">Aufsteigend (A→Z)</button>
+        <button class="action-btn" id="reverseBtn">Absteigend (Z→A)</button>
+      </div>
+      <div style="text-align: right; margin-bottom: 10px">
+        <button class="mini-btn" id="copyBtn">Kopieren</button>
+        <button class="mini-btn" id="clearBtn">Löschen</button>
+      </div>
+      <div class="footer">
+        Alle Vorgänge werden im Browser ausgeführt. Kein Upload erforderlich – 100 % Datenschutz.<br />
+        <b>Tipp:</b> Vielseitig einsetzbar, z. B. zum Erstellen zufälliger Reihenfolgen, von Quiz-Flashcards oder zur Listenorganisation!
+      </div>
+    </div>
+    <a href="../" id="backBtn">Weitere Tools</a>
+    <script>
+      const inputArea = document.getElementById("inputArea");
+      const statusMsg = document.getElementById("statusMsg");
+
+      // Fisher-Yates-Shuffle-Algorithmus
+      function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+      }
+
+      // Hauptfunktionalität
+      document.getElementById("shuffleBtn").onclick = function () {
+        let lines = inputArea.value.split(/\r?\n/).filter((l) => l.trim().length > 0);
+        if (!lines.length) return;
+        shuffleArray(lines);
+        inputArea.value = lines.join("\n");
+        showStatus("Shuffle abgeschlossen!");
+      };
+
+      document.getElementById("sortBtn").onclick = function () {
+        let lines = inputArea.value.split(/\r?\n/).filter((l) => l.trim().length > 0);
+        if (!lines.length) return;
+        lines.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+        inputArea.value = lines.join("\n");
+        showStatus("In aufsteigender Reihenfolge sortiert! (A→Z)");
+      };
+
+      document.getElementById("reverseBtn").onclick = function () {
+        let lines = inputArea.value.split(/\r?\n/).filter((l) => l.trim().length > 0);
+        if (!lines.length) return;
+        lines.sort((a, b) => b.localeCompare(a, undefined, { sensitivity: "base" }));
+        inputArea.value = lines.join("\n");
+        showStatus("In absteigender Reihenfolge sortiert! (Z→A)");
+      };
+
+      // Kopieren & Löschen
+      document.getElementById("copyBtn").onclick = function () {
+        const val = inputArea.value;
+        if (!val) return;
+        navigator.clipboard.writeText(val);
+        showStatus("Kopiert!");
+      };
+      document.getElementById("clearBtn").onclick = function () {
+        if (inputArea.value.length === 0) return;
+        if (confirm("Möchten Sie wirklich alles löschen?")) {
+          inputArea.value = "";
+          showStatus("Gelöscht!");
+        }
+      };
+
+      // Statusnachricht anzeigen
+      function showStatus(msg) {
+        statusMsg.textContent = msg;
+        setTimeout(() => {
+          statusMsg.textContent = "";
+        }, 1200);
+      }
+    </script>
+    <section
+      style="
+        max-width: 320px;
+        margin: 48px auto 24px auto;
+        background: #1e1e1e;
+        border-radius: 18px;
+        box-shadow: 0 6px 24px #1236;
+        padding: 24px;
+      ">
+      <div style="margin-bottom: 12px">
+        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">Was kann dieses Tool?</h3>
+        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
+          Mit diesem Tool können Sie eine Liste von Textzeilen sofort zufällig (Shuffle), aufsteigend (A→Z) oder absteigend (Z→A) sortieren.
+        </p>
+      </div>
+      <div style="margin-bottom: 12px">
+        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">Wie benutzt man es?</h3>
+        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
+          Geben Sie einen mehrzeiligen Text ein oder fügen Sie ihn ein und klicken Sie einfach auf die gewünschte Schaltfläche, um ihn zu mischen, auf- oder absteigend zu sortieren. Das Ergebnis kann kopiert oder gelöscht werden.
+        </p>
+      </div>
+      <div style="margin-bottom: 12px">
+        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">Funktioniert es auch offline?</h3>
+        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
+          Ja. Alle Operationen werden direkt im Browser ausgeführt, daher ist keine Internetverbindung oder ein Upload erforderlich.
+        </p>
+      </div>
+      <div style="margin-bottom: 12px">
+        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">Ist der Text sicher?</h3>
+        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
+          Absolut sicher. Der eingegebene Text wird nicht an externe Server gesendet und vollständig lokal verarbeitet.
+        </p>
+      </div>
+      <div style="margin-bottom: 0">
+        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">Wofür kann es verwendet werden?</h3>
+        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
+          Vielseitig einsetzbar, z. B. zum Zufällig-Erstellen von Quizfragen, zufälligen Zuweisen von Schülernamen, Organisieren von Einkaufslisten oder Anzeigen von Protokollen/Skripten in umgekehrter Reihenfolge.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zufälliger Spitznamen-Generator – Stilwahl, 5 auf einmal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Erzeuge fünf coole Spitznamen auf einmal! Wähle einen Stil und kopiere per Klick. Schnell, kostenlos und vollständig im Browser ausgeführt." />
+    <meta name="keywords" content="Spitznamen-Generator, Zufälliger Spitzname, Benutzername, ID, Stil, kostenlos, Massen-Generierung" />
+    <meta name="author" content="Itagi" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/util/nicknamegen/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <meta property="og:title" content="Zufälliger Spitznamen-Generator – Stilwahl, 5 auf einmal" />
+    <meta
+      property="og:description"
+      content="Erzeuge fünf zufällige Spitznamen auf einmal. Wähle deinen Stil und kopiere direkt!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/util/nicknamegen/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zufälliger Spitznamen-Generator – Stilwahl, 5 auf einmal" />
+    <meta
+      name="twitter:description"
+      content="Erzeuge fünf Spitznamen auf einmal. Wähle einen Stil und kopiere per Klick!" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Google Analytics (GA4) -->
+    <!-- Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      html,
+      body {
+        background: #f3f9fe;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #193147;
+      }
+      .container {
+        max-width: 410px;
+        margin: 36px auto 0 auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 6px 24px #0c7fc226;
+        padding: 32px 16px 18px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .logo {
+        font-size: 1.32em;
+        font-weight: bold;
+        color: #178ce7;
+        text-align: center;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+      }
+      .desc {
+        text-align: center;
+        color: #227188;
+        margin-bottom: 21px;
+        font-size: 1.06em;
+      }
+      .control-row {
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .style-select {
+        border-radius: 6px;
+        border: 1.3px solid #cae6fa;
+        padding: 7px 11px 7px 8px;
+        font-size: 1.02em;
+        background: #fafdff;
+        color: #1878b3;
+        transition: border 0.13s;
+        margin-right: 0;
+      }
+      .gen-btn {
+        background: linear-gradient(90deg, #178ce7, #19b16e);
+        color: #fff;
+        border: none;
+        border-radius: 11px;
+        font-size: 1.09em;
+        font-weight: bold;
+        padding: 10px 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 12px #178ce733;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.18s,
+          box-shadow 0.18s;
+      }
+      .gen-btn:active {
+        background: linear-gradient(90deg, #14589c, #18c68a);
+      }
+      .nick-list {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin-bottom: 16px;
+      }
+      .result-row {
+        display: flex;
+        align-items: center;
+        background: #f2faff;
+        border-radius: 10px;
+        border: 1.2px solid #cae6fa;
+        padding: 10px 9px;
+        font-size: 1.13em;
+        font-weight: 500;
+        min-height: 42px;
+        transition: box-shadow 0.2s;
+        box-shadow: 0 2px 7px #197a9033;
+      }
+      .nickname-text {
+        flex: 1;
+        text-align: left;
+        letter-spacing: 0.01em;
+        word-break: break-all;
+        color: #106fc9;
+        font-size: 1.07em;
+        margin-right: 8px;
+      }
+      .copy-btn {
+        background: linear-gradient(90deg, #18c68a, #1794e7);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 7px 13px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: bold;
+        transition: background 0.14s;
+      }
+      .copy-btn:active {
+        background: linear-gradient(90deg, #119e6d, #178ce7);
+      }
+      .hint {
+        color: #18b88a;
+        font-size: 0.97em;
+        margin-bottom: 10px;
+        text-align: center;
+        min-height: 24px;
+      }
+      .adsense {
+        text-align: center;
+        margin: 10px 0 8px 0;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.94em;
+        margin-top: 15px;
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 13px 2vw 10px 2vw;
+        }
+        .result-row {
+          font-size: 1em;
+        }
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #1875d1;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #1875d133;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #0e4775;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">✨ Zufälliger Spitznamen-Generator</div>
+      <div class="desc">
+        Erzeuge <b>5 zufällige Spitznamen</b> auf einmal.<br />
+        Wähle deinen Stil und kopiere sie direkt!
+      </div>
+      <div class="control-row">
+        <label for="styleSel" style="font-size: 0.98em; color: #188">Stil:</label>
+        <select id="styleSel" class="style-select">
+          <option value="0">Adjektiv + Tier + Zahl (z. B.: TapfererFuchs99)</option>
+          <option value="1">Tier_Nomen + Zahl (z. B.: Otter_Fluss7)</option>
+          <option value="2">Adjektiv + Nomen + Zahl (z. B.: GlücklicherStein77)</option>
+          <option value="random">Zufallsstil</option>
+        </select>
+        <button class="gen-btn" id="genBtn" title="Erneut 5 generieren">Generieren</button>
+      </div>
+      <div class="nick-list" id="nickList"></div>
+      <div class="hint" id="hint"></div>
+      <div class="footer">
+        Läuft 100 % im Browser. Keine Datenübertragung.<br />
+        Erstellt von Itagi – komplett kostenlos!
+      </div>
+    </div>
+    <a href="../" id="backBtn">Andere Tools</a>
+    <script>
+      // Spitznamen-Kombinationsdaten
+      const adjectives = [
+        "Fröhlich",
+        "Sonnig",
+        "Tapfer",
+        "Funky",
+        "Verrückt",
+        "Schüchtern",
+        "Magisch",
+        "Glücklich",
+        "Winzig",
+        "Riesig",
+        "Weise",
+        "Schnell",
+        "Cool",
+        "Mächtig",
+        "Fröhlich",
+        "Still",
+        "Stern",
+        "Niedlich",
+        "Rasant",
+        "Ruhig"
+      ];
+      const animals = [
+        "Tiger",
+        "Bär",
+        "Otter",
+        "Panda",
+        "Wolf",
+        "Fuchs",
+        "Löwe",
+        "Hase",
+        "Pinguin",
+        "Falke",
+        "Elch",
+        "Koala",
+        "Habicht",
+        "Adler",
+        "Seehund",
+        "Schildkröte",
+        "Hai",
+        "Corgi",
+        "Schwan",
+        "Rotkehlchen"
+      ];
+      const nouns = [
+        "Traum",
+        "Fluss",
+        "Stein",
+        "Wolke",
+        "Sonne",
+        "Blatt",
+        "Welle",
+        "Mond",
+        "Echo",
+        "Himmel",
+        "Nova",
+        "Licht",
+        "Wind",
+        "Regen",
+        "Flamme",
+        "Frost",
+        "Flügel",
+        "Sturm",
+        "Nebel",
+        "Staub"
+      ];
+      function randomNumStr(len = 2) {
+        return Math.random()
+          .toString()
+          .slice(2, 2 + len);
+      }
+      Array.prototype.pick = function () {
+        return this[Math.floor(Math.random() * this.length)];
+      };
+
+      function makeNickname(style) {
+        if (style === "0") return adjectives.pick() + animals.pick() + randomNumStr();
+        if (style === "1") return animals.pick() + "_" + nouns.pick() + randomNumStr(1);
+        if (style === "2") return adjectives.pick() + nouns.pick() + randomNumStr(2);
+        // Zufallsstil
+        const s = Math.floor(Math.random() * 3);
+        return makeNickname(String(s));
+      }
+
+      function updateNicknames() {
+        const style = document.getElementById("styleSel").value;
+        const nickList = document.getElementById("nickList");
+        nickList.innerHTML = "";
+        for (let i = 0; i < 5; ++i) {
+          const nn = makeNickname(style);
+          const row = document.createElement("div");
+          row.className = "result-row";
+          const span = document.createElement("span");
+          span.className = "nickname-text";
+          span.textContent = nn;
+          const btn = document.createElement("button");
+          btn.className = "copy-btn";
+          btn.textContent = "Kopieren";
+          btn.onclick = function () {
+            if (navigator.clipboard && window.isSecureContext) {
+              navigator.clipboard.writeText(nn).then(() => {
+                hint.textContent = "Kopiert!";
+              });
+            } else {
+              const ta = document.createElement("textarea");
+              ta.value = nn;
+              document.body.appendChild(ta);
+              ta.select();
+              try {
+                document.execCommand("copy");
+                hint.textContent = "Kopiert!";
+              } catch {
+                hint.textContent = "Kopieren fehlgeschlagen!";
+              }
+              document.body.removeChild(ta);
+            }
+          };
+          row.appendChild(span);
+          row.appendChild(btn);
+          nickList.appendChild(row);
+        }
+        document.getElementById("hint").textContent = "";
+      }
+      document.getElementById("genBtn").onclick = updateNicknames;
+      document.getElementById("styleSel").onchange = updateNicknames;
+      // Bei Seitenladevorgang automatisch erstellen
+      updateNicknames();
+      const hint = document.getElementById("hint");
+    </script>
+    <section style="max-width: 320px; margin: 48px auto 24px auto; background: #1e1e1e; border-radius: 18px; box-shadow: 0 6px 24px #1236; padding: 20px; font-family: Arial, sans-serif;">
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">🧪 Was ist dieses Tool?</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">Es erzeugt auf einen Schlag fünf zufällige Spitznamen. Abhängig vom gewählten Stil werden verschiedene Namenskombinationen vorgeschlagen!</p>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">🎨 Welche Stile stehen zur Auswahl?</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">„Adjektiv + Tier“, „Tier_Nomen“ oder „Adjektiv + Nomen“ sind auswählbar. Am Ende wird eine Zufallszahl hinzugefügt.</p>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">📋 Kann ich einen Spitznamen kopieren?</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">Ja! Klicke auf den „Kopieren“-Button neben dem Spitznamen, um ihn direkt in die Zwischenablage zu kopieren.</p>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">🔁 Kann ich neue Spitznamen generieren?</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">Klicke auf „Generieren“ oder ändere den Stil, um jederzeit fünf neue Spitznamen zu erhalten.</p>
+      </div>
+      <div style="margin-bottom: 0;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">🔒 Sind persönliche Daten sicher?</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">Ja. Dieses Tool läuft zu 100 % im Browser und sendet keinerlei Daten an Server.</p>
+      </div>
+    </section>
+  </body>
+</html>

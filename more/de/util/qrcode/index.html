@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <title>QR-Code-Erzeugung &amp; Scannen – Kostenloses Online-Tool</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Erstellen und scannen Sie QR-Codes sofort. Alles im Browser, ohne Upload. Download, Anpassung und Scannen – ein vielseitiges QR-Tool." />
+        <meta
+            name="keywords"
+            content="QR-Code, QR-Erzeugung, QR-Scanner, Online-QR, kostenloses QR-Tool, QR-Leser, Webcam-QR, Bild-QR, Datenschutz" />
+        <meta name="author" content="Itagi" />
+        <meta name="language" content="de" />
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/de/util/qrcode/" />
+        <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+        <meta property="og:title" content="QR-Code-Erzeugung &amp; Scannen – Kostenloses Online-Tool" />
+        <meta
+            property="og:description"
+            content="Erzeugen und scannen Sie QR-Codes für Text, URLs oder Kontakte. Alles im Browser, ohne Upload." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/de/util/qrcode/" />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="QR-Code-Erzeugung &amp; Scannen – Kostenloses Online-Tool" />
+        <meta
+            name="twitter:description"
+            content="QR-Codes sofort erstellen &amp; scannen. Alles im Browser, Ihre Daten bleiben privat." />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+
+        <!-- Google Tag (gtag.js) -->
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"></script>
+
+        <!-- qrcode.js (Erzeugung) -->
+        <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+        <!-- html5-qrcode (Scannen) -->
+        <script src="https://unpkg.com/html5-qrcode@2.3.8/minified/html5-qrcode.min.js"></script>
+
+        <style>
+            body {
+                background: #f6fcff;
+                margin: 0;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+            .container {
+                max-width: 470px;
+                margin: 40px auto 0 auto;
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 4px 22px #13d2b033;
+                padding: 30px 16px 24px 16px;
+            }
+            .logo {
+                font-size: 1.28em;
+                color: #1558b3;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 12px;
+            }
+            .desc {
+                color: #227088;
+                text-align: center;
+                margin-bottom: 22px;
+                font-size: 1.01em;
+            }
+            .tab-toggle {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+            .tab-btn {
+                flex: 1 1 120px;
+                background: #e9f1fa;
+                color: #1558b3;
+                border: 1.2px solid #b8d6fa;
+                border-radius: 8px;
+                font-size: 1.05em;
+                font-weight: 600;
+                padding: 0.7em 0;
+                cursor: pointer;
+                transition:
+                    background 0.13s,
+                    color 0.13s;
+                outline: none;
+                margin-bottom: 2px;
+            }
+            .tab-btn.active {
+                background: #1558b3;
+                color: #fff;
+                border-color: #1558b3;
+                box-shadow: 0 2px 10px #1558b311;
+            }
+            .section {
+                display: none;
+            }
+            .section.active {
+                display: block;
+            }
+            .label {
+                font-size: 0.98em;
+                color: #266;
+                margin-bottom: 7px;
+                margin-top: 11px;
+                display: block;
+            }
+            .input-area {
+                width: 100%;
+                min-height: 44px;
+                border: 1.2px solid #bad1ec;
+                border-radius: 8px;
+                padding: 10px;
+                font-size: 1em;
+                background: #fafdff;
+                margin-bottom: 14px;
+            }
+            #qrCode {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 16px auto 9px auto;
+            }
+            .qr-options {
+                text-align: center;
+                margin-bottom: 12px;
+            }
+            .qr-options label {
+                margin-right: 9px;
+                font-size: 0.98em;
+                color: #277;
+            }
+            .qr-btn {
+                background: #19b16e;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                padding: 10px 20px;
+                font-size: 1.06em;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 6px;
+                margin-left: 35%;
+                transition: background 0.13s;
+            }
+            .qr-btn:active {
+                background: #0e8051;
+            }
+            .qr-download {
+                display: block;
+                color: #1664a7;
+                margin: 11px auto 0 auto;
+                text-align: center;
+                font-size: 1.02em;
+                text-decoration: underline;
+            }
+            #reader {
+                margin-top: 17px;
+                margin-bottom: 18px;
+            }
+            #reader > div {
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            .or {
+                text-align: center;
+                color: #bbb;
+                font-size: 0.98em;
+                margin: 16px 0 7px 0;
+            }
+            .output-box {
+                text-align: center;
+                margin-top: 15px;
+                word-break: break-all;
+                font-size: 1.06em;
+                color: #146a3b;
+            }
+            .footer {
+                color: #888;
+                text-align: center;
+                font-size: 0.93em;
+                margin-top: 16px;
+            }
+            #backBtn {
+                position: fixed;
+                left: 50%;
+                bottom: 32px;
+                transform: translateX(-50%);
+                background: #13b6a7;
+                color: #fff;
+                font-weight: 700;
+                border: none;
+                border-radius: 2rem;
+                padding: 0.58em 1.5em;
+                box-shadow: 0 4px 16px #13d2b066;
+                font-size: 1.09em;
+                text-decoration: none;
+                cursor: pointer;
+                letter-spacing: 0.01em;
+                transition:
+                    background 0.15s,
+                    transform 0.12s;
+                z-index: 2000;
+            }
+            #backBtn:hover {
+                background: #0e8078;
+                transform: translateX(-50%) scale(1.04);
+            }
+            @media (max-width: 600px) {
+                .container {
+                    max-width: 99vw;
+                    padding: 9px 2vw 10px 2vw;
+                }
+                .tab-btn {
+                    font-size: 0.97em;
+                }
+                #backBtn {
+                    bottom: 18px;
+                    font-size: 0.98em;
+                    padding: 0.48em 1em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">🔳 QR-Code-Erzeugung &amp; Scannen</div>
+            <div class="desc">
+                Erstellen Sie QR-Codes für Text oder Links, und<br />
+                scannen Sie sie mit Ihrer Kamera oder einem Bild.<br />
+                <span style="color: #199aac; font-size: 0.97em">Alle Funktionen laufen vollständig im Browser.</span>
+            </div>
+            <div class="tab-toggle">
+                <button class="tab-btn active" id="genTab">Erzeugen</button>
+                <button class="tab-btn" id="readTab">Scannen</button>
+            </div>
+
+            <!-- Erzeugen-Sektion -->
+            <div class="section active" id="genSection">
+                <span class="label">Geben Sie Text, Link oder Daten ein:</span>
+                <textarea id="qrInput" class="input-area" placeholder="Text oder URL eingeben..."></textarea>
+                <div class="qr-options">
+                    <label>
+                        Größe
+                        <select id="qrSize">
+                            <option value="160">160×160</option>
+                            <option value="240" selected>240×240</option>
+                            <option value="320">320×320</option>
+                            <option value="400">400×400</option>
+                        </select>
+                    </label>
+                    <label>
+                        Fehlerkorrektur
+                        <select id="qrLevel">
+                            <option value="L">L (7 %)</option>
+                            <option value="M" selected>M (15 %)</option>
+                            <option value="Q">Q (25 %)</option>
+                            <option value="H">H (30 %)</option>
+                        </select>
+                    </label>
+                </div>
+                <button class="qr-btn" id="qrGenBtn">QR erzeugen</button>
+                <div id="qrCode"></div>
+                <a id="qrDownload" class="qr-download" style="display: none" download="qrcode.png"
+                    >Als PNG herunterladen</a
+                >
+            </div>
+
+            <!-- Scannen-Sektion -->
+            <div class="section" id="readSection">
+                <div class="qr-options">
+                    <button class="qr-btn" id="startCamBtn">Mit Kamera scannen</button>
+                    <button class="qr-btn" id="stopCamBtn" style="display: none">Kamera stoppen</button>
+                </div>
+                <div id="reader" style="width: 100%; max-width: 370px; margin: auto; display: none"></div>
+                <div class="or">oder</div>
+                <input type="file" id="imgUpload" accept="image/*" style="display: block; margin: auto" />
+                <div id="scanResult" class="output-box"></div>
+            </div>
+            <div class="footer">
+                Ohne Upload oder Tracking – alles im Browser.<br />
+                Verwendet <a href="https://github.com/davidshimjs/qrcodejs" target="_blank" style="color: #1664a7">QRCode.js</a>
+                und <a href="https://github.com/mebjas/html5-qrcode" target="_blank" style="color: #1664a7">html5-qrcode</a>.
+            </div>
+            <a href="../" id="backBtn">Andere Tools</a>
+        </div>
+        <script>
+            // Tab-Wechsel
+            const genTab = document.getElementById("genTab");
+            const readTab = document.getElementById("readTab");
+            const genSection = document.getElementById("genSection");
+            const readSection = document.getElementById("readSection");
+            genTab.onclick = () => {
+                genTab.classList.add("active");
+                readTab.classList.remove("active");
+                genSection.classList.add("active");
+                readSection.classList.remove("active");
+            };
+            readTab.onclick = () => {
+                readTab.classList.add("active");
+                genTab.classList.remove("active");
+                readSection.classList.add("active");
+                genSection.classList.remove("active");
+            };
+
+            // QR-Code-Erzeugung
+            let qrObj = null;
+            function updateQR() {
+                const text = document.getElementById("qrInput").value.trim();
+                const size = parseInt(document.getElementById("qrSize").value, 10);
+                const level = document.getElementById("qrLevel").value;
+                const qrCodeDiv = document.getElementById("qrCode");
+                qrCodeDiv.innerHTML = "";
+                if (!text) return;
+                qrObj = new QRCode(qrCodeDiv, {
+                    text: text,
+                    width: size,
+                    height: size,
+                    correctLevel: QRCode.CorrectLevel[level]
+                });
+                setTimeout(() => {
+                    // Download-Link anzeigen
+                    const canvas = qrCodeDiv.querySelector("canvas");
+                    if (canvas) {
+                        const url = canvas.toDataURL();
+                        const dl = document.getElementById("qrDownload");
+                        dl.href = url;
+                        dl.download = "qrcode.png";
+                        dl.style.display = "";
+                    }
+                }, 300);
+            }
+            document.getElementById("qrGenBtn").onclick = updateQR;
+            document.getElementById("qrInput").addEventListener("keyup", (e) => {
+                if (e.key === "Enter" && !e.shiftKey) updateQR();
+            });
+            document.getElementById("qrSize").onchange = updateQR;
+            document.getElementById("qrLevel").onchange = updateQR;
+
+            // QR-Code-Scan (Kamera & Bild)
+            let html5Qr = null;
+            const readerDiv = document.getElementById("reader");
+            const startCamBtn = document.getElementById("startCamBtn");
+            const stopCamBtn = document.getElementById("stopCamBtn");
+            const scanResult = document.getElementById("scanResult");
+            let camActive = false;
+            startCamBtn.onclick = () => {
+                readerDiv.style.display = "";
+                scanResult.textContent = "";
+                startCamBtn.style.display = "none";
+                stopCamBtn.style.display = "";
+                html5Qr = new Html5Qrcode("reader");
+                html5Qr.start(
+                    { facingMode: "environment" },
+                    { fps: 10, qrbox: 240 },
+                    (code) => {
+                        scanResult.innerHTML = `<b>Ergebnis:</b> ${escapeHtml(code)}`;
+                        html5Qr.stop();
+                        camActive = false;
+                        startCamBtn.style.display = "";
+                        stopCamBtn.style.display = "none";
+                    },
+                    (err) => {}
+                );
+                camActive = true;
+            };
+            stopCamBtn.onclick = () => {
+                if (html5Qr && camActive) {
+                    html5Qr.stop().then(() => {
+                        readerDiv.style.display = "none";
+                        startCamBtn.style.display = "";
+                        stopCamBtn.style.display = "none";
+                    });
+                }
+            };
+            window.addEventListener("beforeunload", () => {
+                if (html5Qr && camActive) html5Qr.stop();
+            });
+
+            // Scan aus Bild
+            document.getElementById("imgUpload").onchange = function (e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                scanResult.textContent = "Scanne...";
+                Html5Qrcode.getCameras().then(() => {
+                    Html5Qrcode.scanFile(file, true)
+                        .then((code) => {
+                            scanResult.innerHTML = `<b>Ergebnis:</b> ${escapeHtml(code)}`;
+                        })
+                        .catch(() => {
+                            scanResult.textContent = "Kein QR-Code im Bild erkannt.";
+                        });
+                });
+            };
+
+            // Einfaches HTML-Escape für Anzeige
+            function escapeHtml(text) {
+                if (!text) return "";
+                return text.replace(
+                    /[&<>"']/g,
+                    (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[ch]
+                );
+            }
+        </script>
+        <section
+            style="
+                max-width: 320px;
+                margin: 48px auto 24px auto;
+                background: #1e1e1e;
+                border-radius: 18px;
+                box-shadow: 0 6px 24px #1236;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+            ">
+            <div style="margin-bottom: 12px">
+                <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px">🔳 Was bietet dieses Tool?</h3>
+                <p style="color: #f0f0f0; font-size: 0.95em; margin: 0">
+                    Erzeugen Sie QR-Codes in Echtzeit für Text oder URLs und<br />
+                    scannen Sie QR-Codes mit Ihrer Kamera oder hochgeladenen Bildern. Alle Vorgänge geschehen im Browser.
+                </p>
+            </div>
+            <div style="margin-bottom: 12px">
+                <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px">📷 Wie scanne ich mit der Kamera?</h3>
+                <p style="color: #f0f0f0; font-size: 0.95em; margin: 0">
+                    Wählen Sie den Reiter „Scannen“ und klicken Sie auf „Mit Kamera scannen“ oder laden Sie ein Bild hoch. Nach Erkennung erscheint das Ergebnis sofort.
+                </p>
+            </div>
+            <div style="margin-bottom: 12px">
+                <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px">💾 Kann ich erzeugte QR-Codes speichern?</h3>
+                <p style="color: #f0f0f0; font-size: 0.95em; margin: 0">
+                    Ja. Nach Erzeugung erscheint ein Link „Als PNG herunterladen“. Klicken Sie darauf, um den QR-Code zu speichern.
+                </p>
+            </div>
+            <div style="margin-bottom: 12px">
+                <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px">⚙️ Was bedeuten Größe und Fehlertoleranz?</h3>
+                <p style="color: #f0f0f0; font-size: 0.95em; margin: 0">
+                    Größe gibt die Pixelmaße des QR-Codes an. Fehlertoleranz (L/M/Q/H) legt fest, wie viel Schaden der QR-Code verkraftet, um noch lesbar zu bleiben.
+                </p>
+            </div>
+            <div style="margin-bottom: 0">
+                <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px">🔐 Sind meine Daten sicher?</h3>
+                <p style="color: #f0f0f0; font-size: 0.95em; margin: 0">
+                    Ja. Alle Erzeugungs- und Scanvorgänge finden lokal im Browser statt. Keine Daten werden hochgeladen oder verfolgt. Ihre Privatsphäre bleibt geschützt.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
