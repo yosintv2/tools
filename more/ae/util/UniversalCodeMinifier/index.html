@@ -1,285 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>أداة تصغير الكود الشاملة – JS وCSS وHTML</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="قم بتصغير وتنظيم شفرة JS وCSS وHTML مجانًا عبر أداة عبر الإنترنت. سيؤدي ذلك إلى إزالة جميع التعليقات والمسافات الفارغة غير الضرورية على الفور داخل المتصفح. حماية للخصوصية 100%، لا حاجة للتحميل." />
-    <meta
-      name="keywords"
-      content="تصغير الكود, تصغير JS, تصغير CSS, تصغير HTML, تصغير عبر الإنترنت, ضغط الشفرة, إزالة التعليقات, تنظيم الكود, سريع, آمن, أداة متصفح, بدون تحميل, خصوصية, مطور ويب, فرونت إند, تصغير فوري" />
-    <meta name="author" content="Itagi" />
-    <meta property="og:title" content="أداة تصغير الكود الشاملة – ضغط JS/CSS/HTML عبر الإنترنت" />
-    <meta
-      property="og:description"
-      content="قم بتصغير وتنظيم الشفرة على الفور. لا حاجة للتحميل، حماية خصوصية 100%. دعم JS وCSS وHTML. أداة متصفح سريعة وسهلة." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/UniversalCodeMinifier/" />
-    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="أداة تصغير الكود الشاملة – ضغط JS/CSS/HTML عبر الإنترنت" />
-    <meta
-      name="twitter:description"
-      content="قم بتصغير JS وCSS وHTML في المتصفح على الفور. لا حاجة للتحميل، سريع، حماية خصوصية 100%." />
-    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-      crossorigin="anonymous"></script>
-    <style>
-      body {
-        background: #f6fcff;
-        margin: 0;
-        padding: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        direction: rtl;
-      }
-      .container {
-        max-width: 450px;
-        margin: 38px auto 0 auto;
-        background: #fff;
-        border-radius: 18px;
-        box-shadow: 0 4px 22px #13d2b033;
-        padding: 30px 14px 22px 14px;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.55em;
-        color: #13b6a7;
-        font-weight: bold;
-        gap: 8px;
-        margin-bottom: 7px;
-      }
-      .logo-icon {
-        font-size: 1.1em;
-      }
-      h2 {
-        text-align: center;
-        margin-bottom: 14px;
-        color: #135574;
-        font-size: 1.15em;
-      }
-      .desc {
-        color: #357890;
-        text-align: center;
-        margin-bottom: 22px;
-        font-size: 0.73em;
-      }
-      .input-area,
-      .output-area {
-        width: 100%;
-        height: 120px;
-        border: 1.2px solid #cce9ef;
-        border-radius: 9px;
-        padding: 11px;
-        font-size: 0.99em;
-        background: #fafdff;
-        font-family: "Fira Mono", "Menlo", monospace;
-        resize: vertical;
-        margin-bottom: 8px;
-      }
-      .output-area {
-        background: #e7f9f3;
-      }
-      .btn-minify,
-      .btn-copy {
-        background: #13b6a7;
-        color: #fff;
-        border: none;
-        border-radius: 7px;
-        padding: 10px 18px;
-        margin: 10px 0 0 7px;
-        cursor: pointer;
-        font-size: 1.03em;
-        transition: background 0.18s;
-      }
-      .btn-minify:active,
-      .btn-copy:active {
-        background: #088a78;
-      }
-      .label {
-        font-size: 0.97em;
-        color: #167088;
-        margin-bottom: 2px;
-        margin-top: 8px;
-        display: block;
-        text-align: right;
-      }
-      .info-msg {
-        color: #1c9b56;
-        font-size: 0.93em;
-        margin: 6px 0 10px 0;
-        text-align: center;
-      }
-      .footer {
-        color: #789;
-        text-align: center;
-        font-size: 0.95em;
-        margin-top: 24px;
-      }
-      @media (max-width: 600px) {
-        .container {
-          max-width: 99vw;
-          padding: 9px 2vw 12px 2vw;
-        }
-        .input-area,
-        .output-area {
-          height: 76px;
-          font-size: 0.97em;
-        }
-        .btn-minify,
-        .btn-copy {
-          width: 100%;
-          margin: 8px 0 0 0;
-        }
-      }
-      #backBtn {
-        position: fixed;
-        left: 50%;
-        bottom: 32px;
-        transform: translateX(-50%);
-        background: #13b6a7;
-        color: #fff;
-        font-weight: 700;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.58em 1.5em;
-        box-shadow: 0 4px 16px #13d2b066;
-        font-size: 1.09em;
-        text-decoration: none;
-        cursor: pointer;
-        letter-spacing: 0.01em;
-        transition:
-          background 0.15s,
-          transform 0.12s;
-        z-index: 2000;
-      }
-      #backBtn:hover {
-        background: #0e8078;
-        transform: translateX(-50%) scale(1.04);
-      }
-      @media (max-width: 600px) {
-        #backBtn {
-          bottom: 18px;
-          font-size: 0.98em;
-          padding: 0.48em 1em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="logo"><span class="logo-icon">🧹</span>أداة تصغير الكود الشاملة</div>
-      <h2>تصغير وتنظيم الشفرة تلقائيًا</h2>
-      <div class="desc">
-        قم بإزالة التعليقات وضغط شفرة JS أو CSS أو HTML فورًا.<br />
-        لا حاجة للتحميل – حماية خصوصية 100%، تعمل بالكامل في المتصفح.
-      </div>
-      <div class="label">قم بلصق الشفرة هنا:</div>
-      <textarea id="inputArea" class="input-area" placeholder="ألصق شفرة JS أو CSS أو HTML هنا..."></textarea>
-      <button class="btn-minify" id="minifyBtn">تصغير</button>
-      <div class="label">الشفرة المصغرة:</div>
-      <textarea id="outputArea" class="output-area" readonly placeholder="ستظهر النتيجة هنا"></textarea>
-      <button class="btn-copy" id="copyBtn">نسخ</button>
-      <div class="info-msg" id="infoMsg"></div>
-      <div class="footer">جميع العمليات تُنفّذ على جهازك فورًا. لا حاجة للتحميل أو القيود.</div>
-      <a href="../" id="backBtn">عرض أدوات أخرى</a>
-    </div>
-    <script>
-      // إزالة جميع التعليقات: JS وCSS وHTML
-      function removeAllComments(code) {
-        // تعليقات HTML
-        code = code.replace(/<!--[\s\S]*?-->/g, "");
-        // تعليقات JS/CSS متعددة الأسطر
-        code = code.replace(/\/\*[\s\S]*?\*\//g, "");
-        // تعليقات JS أحادية السطر (لا يشمل URL)
-        code = code.replace(/(^|[^\:])\/\/[^\n\r]*/g, (m, p1) => p1);
-        return code;
-      }
-      // تصغير بسيط للشفرة
-      function minifyCode(raw) {
-        let code = removeAllComments(raw);
-        // إزالة المسافات الزائدة في بداية ونهاية السطر
-        code = code.replace(/^[ \t]+|[ \t]+$/gm, "");
-        // استبدال الأسطر الجديدة بمسافة واحدة
-        code = code.replace(/[\r\n]+/g, " ");
-        // إزالة الفراغات المكررة
-        code = code.replace(/[ \t]{2,}/g, " ");
-        // دمج الفواصل والعلامات بدون مسافات زائدة
-        code = code.replace(/\s*([=\+\-\*\/\{\}\[\]\(\)\:\;\,><])\s*/g, "$1");
-        // إزالة الفراغ بين علامات HTML
-        code = code.replace(/>\s+</g, "><");
-        return code.trim();
-      }
-      const minifyBtn = document.getElementById("minifyBtn");
-      const inputArea = document.getElementById("inputArea");
-      const outputArea = document.getElementById("outputArea");
-      const copyBtn = document.getElementById("copyBtn");
-      const infoMsg = document.getElementById("infoMsg");
-
-      minifyBtn.onclick = function () {
-        const code = inputArea.value;
-        if (!code.trim()) {
-          infoMsg.textContent = "يرجى لصق الشفرة أولاً.";
-          outputArea.value = "";
-          return;
-        }
-        const minified = minifyCode(code);
-        outputArea.value = minified;
-        infoMsg.textContent = `تم التصغير! ${code.length} حرفًا → ${minified.length} حرفًا.`;
-      };
-
-      copyBtn.onclick = function () {
-        if (!outputArea.value) {
-          infoMsg.textContent = "لا توجد محتويات للنسخ.";
-          return;
-        }
-        outputArea.select();
-        document.execCommand("copy");
-        infoMsg.textContent = "تم النسخ!";
-      };
-    </script>
-    <section
-      style="
-        max-width: 320px;
-        margin: 48px auto 24px auto;
-        background: #1e1e1e;
-        border-radius: 18px;
-        box-shadow: 0 6px 24px #1236;
-        padding: 24px;
-        font-family: Arial, sans-serif;
-        color: #f0f0f0;
-        text-align: right;
-        line-height: 1.6;
-      ">
-      <div style="color: #8f94fb; font-size: 1.1em; font-weight: bold; margin-bottom: 14px">
-        ❓ الأسئلة الشائعة – أداة تصغير الكود
-      </div>
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">ما نوع الشفرة التي يدعمها الأداة؟</div>
-        <div>يمكن تصغير شفرة JavaScript وCSS وHTML بالكامل. سيتم اكتشاف النوع وضغطه تلقائيًا.</div>
-      </div>
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">هل تتم إزالة جميع التعليقات؟</div>
-        <div>نعم. سيؤدي ذلك إلى حذف جميع التعليقات من JS وCSS وHTML، مما يقلل حجم الملف ويساعد أيضًا في حماية الشفرة.</div>
-      </div>
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">هل يتم إرسال شفرتي إلى الخادم؟</div>
-        <div>لا. تتم جميع العمليات داخل المتصفح فقط. لا يتم إرسال أو حفظ أي بيانات خارج جهازك.</div>
-      </div>
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">هل يمكن أن يتلف التصغير الشفرة؟</div>
-        <div>هذه الأداة تقوم بتصغير أساسي. مع الأطر المعقدة، تأكد من اختبار الشفرة المصغرة قبل النشر.</div>
-      </div>
-      <div style="margin-bottom: 0">
-        <div style="color: #8f94fb; font-weight: bold">هل يمكن استعادة الشفرة الأصلية بعد التصغير؟</div>
-        <div>لا. التصغير لا يمكن عكسه. يُنصح بالاحتفاظ بنسخة احتياطية من الشفرة الأصلية.</div>
-      </div>
-    </section>
-  </body>
-</html>

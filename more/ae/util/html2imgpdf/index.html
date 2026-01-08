@@ -1,425 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8" />
-    <title>أداة تحويل HTML إلى صورة/PDF</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta
-        name="description"
-        content="حوّل صفحات الويب أو كود HTML الخاص بك إلى صورة عالية الجودة أو PDF فورًا. مجانية 100٪ مع احترام الخصوصية وتعمل بالكامل داخل المتصفح." />
-    <meta
-        name="keywords"
-        content="html تحويل إلى صورة, html تحويل إلى PDF, صفحة ويب لقطة شاشة, html2canvas, jsPDF, أداة متصفح, مجاني" />
-    <meta name="author" content="Itagi" />
-    <meta name="language" content="ar" />
-    <meta name="theme-color" content="#4653ce" />
-    <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/html2imgpdf/" />
-    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="أداة تحويل HTML إلى صورة & PDF" />
-    <meta
-        property="og:description"
-        content="حوّل صفحات الويب أو كود HTML الخاص بك إلى PNG أو JPG أو PDF مجانًا. تعمل بالكامل داخل المتصفح وتضمن الخصوصية." />
-    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/html2imgpdf/" />
-    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="أداة تحويل HTML إلى صورة & PDF" />
-    <meta
-        name="twitter:description"
-        content="حوّل صفحات الويب أو كود HTML إلى صورة أو PDF مباشرةً من المتصفح. لا حاجة لرفع البيانات." />
-    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-
-    <!-- Google Analytics -->
-    <!-- Google AdSense -->
-    <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-        crossorigin="anonymous"></script>
-    <!-- المكتبات -->
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.4/dist/purify.min.js"></script>
-    <style>
-        :root {
-            --main: #4653ce;
-            --main-dark: #283078;
-            --bg: #f4f7ff;
-        }
-        body {
-            background: var(--bg);
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            color: #234;
-        }
-        .container {
-            max-width: 540px;
-            margin: 38px auto 0 auto;
-            background: #fff;
-            border-radius: 18px;
-            box-shadow: 0 4px 22px #4653ce22;
-            padding: 30px 18px 26px 18px;
-        }
-        .logo {
-            font-size: 1.31em;
-            font-weight: bold;
-            color: var(--main-dark);
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .desc {
-            text-align: center;
-            color: #2b4899;
-            margin-bottom: 18px;
-            font-size: 1.07em;
-        }
-        .tab-row {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-bottom: 14px;
-        }
-        .tab-btn {
-            background: #ebf0ff;
-            color: #4653ce;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 10px;
-            font-size: 1.02em;
-            cursor: pointer;
-            font-weight: bold;
-            transition:
-                background 0.14s,
-                color 0.12s;
-        }
-        .tab-btn.active {
-            background: var(--main);
-            color: #fff;
-        }
-        .input-row {
-            margin-bottom: 13px;
-        }
-        .input-row label {
-            font-weight: bold;
-            color: #233c87;
-            margin-bottom: 6px;
-            display: block;
-            font-size: 1.04em;
-            text-align: right;
-        }
-        input[type="text"],
-        textarea {
-            width: 100%;
-            font-size: 1.05em;
-            border: 1.2px solid #b3bcf2;
-            border-radius: 8px;
-            padding: 10px 12px;
-            background: #fafdff;
-            margin-bottom: 6px;
-            font-family: inherit;
-            box-sizing: border-box;
-            text-align: right;
-        }
-        textarea {
-            min-height: 100px;
-            resize: vertical;
-        }
-        .action-btn {
-            background: var(--main);
-            color: #fff;
-            border: none;
-            border-radius: 9px;
-            padding: 13px 0;
-            width: 100%;
-            font-size: 1.11em;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            transition: background 0.15s;
-            box-shadow: 0 2px 10px #4653ce17;
-        }
-        .action-btn:active {
-            background: var(--main-dark);
-        }
-        .result-row {
-            margin-top: 16px;
-            text-align: center;
-        }
-        .img-preview {
-            max-width: 99%;
-            border: 1px solid #ccd;
-            border-radius: 11px;
-            margin-bottom: 9px;
-        }
-        .download-btn {
-            background: #dde5fd;
-            color: #2b4899;
-            border: none;
-            border-radius: 7px;
-            padding: 7px 20px;
-            font-size: 1.04em;
-            font-weight: bold;
-            margin: 0 6px;
-            cursor: pointer;
-            transition: background 0.14s;
-        }
-        .download-btn:active {
-            background: #bbc7fa;
-        }
-        .footer {
-            color: #789;
-            text-align: center;
-            font-size: 0.95em;
-            margin-top: 24px;
-        }
-        section#faq { margin-top: 35px; }
-        section#faq h2 { margin-bottom: 13px; color: #4653ce; font-size: 1.09em; text-align: center;}
-        section#faq dt { font-weight: bold; margin-top: 8px;}
-        section#faq dd { margin: 0 0 7px 0; font-size: 0.98em; color: #2b4899;}
-        #backBtn {
-            position: fixed;
-            left: 50%;
-            bottom: 32px;
-            transform: translateX(-50%);
-            background: var(--main);
-            color: #fff;
-            font-weight: 700;
-            border: none;
-            border-radius: 2rem;
-            padding: 0.58em 1.5em;
-            box-shadow: 0 4px 16px #4653ce33;
-            font-size: 1.09em;
-            text-decoration: none;
-            cursor: pointer;
-            letter-spacing: 0.01em;
-            transition:
-                background 0.15s,
-                transform 0.12s;
-            z-index: 2000;
-        }
-        #backBtn:hover {
-            background: #283078;
-            transform: translateX(-50%) scale(1.04);
-        }
-        @media (max-width: 600px) {
-            .container {
-                max-width: 99vw;
-                padding: 10px 2vw 12px 2vw;
-            }
-            #backBtn {
-                bottom: 18px;
-                font-size: 0.98em;
-                padding: 0.48em 1em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container" itemscope itemtype="https://schema.org/WebApplication">
-        <div class="logo" itemprop="name">🖼️ أداة تحويل HTML إلى صورة/PDF</div>
-        <div class="desc">
-            حوّل صفحات الويب أو كود HTML الخاص بك إلى PNG/JPG أو PDF. تعمل بالكامل داخل المتصفح.<br />مجانية تمامًا وبدون علامات مائية.
-        </div>
-        <div class="tab-row">
-            <button class="tab-btn active" id="urlTabBtn">تحويل من URL</button>
-            <button class="tab-btn" id="htmlTabBtn">إدخال كود HTML</button>
-        </div>
-        <!-- تبويب URL -->
-        <div id="urlTab" style="display: block">
-            <div class="input-row">
-                <label for="urlInput">رابط الصفحة</label>
-                <input type="text" id="urlInput" placeholder="https://example.com" />
-            </div>
-            <button class="action-btn" id="fetchUrlBtn">تحميل للمعاينة</button>
-            <div id="urlRenderBox" style="display: none; margin-top: 13px">
-                <div
-                    id="urlRender"
-                    style="background: #fafcff; border: 1px solid #ddd; border-radius: 10px; overflow: auto; padding: 19px;"></div>
-                <div class="result-row" id="urlResultRow" style="display: none">
-                    <button class="download-btn" id="downloadUrlImg">حفظ كـ PNG</button>
-                    <button class="download-btn" id="downloadUrlPdf">حفظ كـ PDF</button>
-                </div>
-            </div>
-        </div>
-        <!-- تبويب HTML -->
-        <div id="htmlTab" style="display: none">
-            <div class="input-row">
-                <label for="htmlInput">كود HTML</label>
-                <textarea id="htmlInput" placeholder="&lt;div&gt;مرحبا&lt;/div&gt;"></textarea>
-            </div>
-            <button class="action-btn" id="renderHtmlBtn">معاينة & تحويل</button>
-            <div id="htmlRenderBox" style="display: none; margin-top: 13px">
-                <div
-                    id="htmlRender"
-                    style="background: #fafcff; border: 1px solid #ddd; border-radius: 10px; overflow: auto; padding: 19px;"></div>
-                <div class="result-row" id="htmlResultRow" style="display: none">
-                    <button class="download-btn" id="downloadHtmlImg">حفظ كـ PNG</button>
-                    <button class="download-btn" id="downloadHtmlPdf">حفظ كـ PDF</button>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <b>ملاحظة:</b> قد تواجه بعض الصفحات قيود CORS أو عدم عرض صحيح إذا استخدمت JavaScript ديناميكي. للمحتوى المثالي، استخدم كود HTML بسيط.
-        </div>
-        <section id="faq" aria-labelledby="faq-head">
-            <h2 id="faq-head">الأسئلة الشائعة – أداة تحويل HTML إلى صورة/PDF</h2>
-            <dl>
-                <dt>ما وظيفة هذه الأداة؟</dt>
-                <dd>تحوّل صفحات الويب (من خلال URL) أو كود HTML الذي يدخله المستخدم إلى صورة PNG عالية الجودة أو ملف PDF مباشرةً في المتصفح.</dd>
-                <dt>هل تُرفع البيانات أو تُخزن؟</dt>
-                <dd>لا. كل العمليات تحدث بالكامل على جهاز المستخدم داخل المتصفح؛ لا يتم رفع أو تخزين أي بيانات خارجيًا.</dd>
-                <dt>هل يمكنني تحويل أي موقع ويب؟</dt>
-                <dd>يمكنك تجربة أي موقع ويب عام، لكن بعض المواقع قد تعاني من قيود CORS أو عدم تحميل JavaScript الديناميكي، مما قد يؤثر على النتيجة.</dd>
-                <dt>ما صيغ الإخراج المتاحة؟</dt>
-                <dd>يمكنك حفظ النتيجة كصورة PNG أو كملف PDF. كلاهما يُنشأ في المتصفح فورًا.</dd>
-                <dt>لماذا قد تختلف النتيجة عن الموقع الفعلي؟</dt>
-                <dd>الاعتماد على JavaScript الديناميكي، أو الخطوط والموارد الخارجية، أو قيود CORS يمكن أن يمنع عرض بعض العناصر بشكل صحيح. للحصول على أفضل نتيجة، أدخل HTML مباشرةً واضبط CSS.</dd>
-                <dt>هل الأداة مجانية؟</dt>
-                <dd>نعم! مجانية بالكامل ولا تحتاج لتسجيل أو دفع أي رسوم، ولا توجد علامة مائية على النتائج.</dd>
-            </dl>
-        </section>
-    </div>
-    <a href="../" id="backBtn">أدوات أخرى</a>
-    <script>
-        // منطق تبديل التبويبات
-        const urlTabBtn = document.getElementById("urlTabBtn");
-        const htmlTabBtn = document.getElementById("htmlTabBtn");
-        const urlTab = document.getElementById("urlTab");
-        const htmlTab = document.getElementById("htmlTab");
-        urlTabBtn.onclick = () => {
-            urlTab.style.display = "block";
-            htmlTab.style.display = "none";
-            urlTabBtn.classList.add("active");
-            htmlTabBtn.classList.remove("active");
-        };
-        htmlTabBtn.onclick = () => {
-            urlTab.style.display = "none";
-            htmlTab.style.display = "block";
-            htmlTabBtn.classList.add("active");
-            urlTabBtn.classList.remove("active");
-        };
-
-        // التحويل من URL
-        document.getElementById("fetchUrlBtn").onclick = async function () {
-            const url = document.getElementById("urlInput").value.trim();
-            if (!url) return alert("يرجى إدخال رابط صحيح.");
-            try {
-                const res = await fetch(url);
-                const text = await res.text();
-                const clean = DOMPurify.sanitize(text);
-                document.getElementById("urlRender").innerHTML = clean;
-                document.getElementById("urlRenderBox").style.display = "block";
-                document.getElementById("urlResultRow").style.display = "flex";
-            } catch {
-                alert("فشل في تحميل الصفحة أو عرضها (ربما بسبب CORS أو JavaScript الديناميكي).");
-            }
-        };
-        document.getElementById("downloadUrlImg").onclick = () => {
-            html2canvas(document.getElementById("urlRender")).then((canvas) => {
-                const link = document.createElement("a");
-                link.download = "page.png";
-                link.href = canvas.toDataURL();
-                link.click();
-            });
-        };
-        document.getElementById("downloadUrlPdf").onclick = () => {
-            html2canvas(document.getElementById("urlRender")).then((canvas) => {
-                const imgData = canvas.toDataURL("image/png");
-                const pdf = new window.jspdf.jsPDF();
-                const w = pdf.internal.pageSize.getWidth();
-                const h = (canvas.height * w) / canvas.width;
-                pdf.addImage(imgData, "PNG", 0, 0, w, h);
-                pdf.save("page.pdf");
-            });
-        };
-
-        // التحويل من كود HTML
-        document.getElementById("renderHtmlBtn").onclick = () => {
-            const html = document.getElementById("htmlInput").value;
-            const clean = DOMPurify.sanitize(html);
-            document.getElementById("htmlRender").innerHTML = clean;
-            document.getElementById("htmlRenderBox").style.display = "block";
-            document.getElementById("htmlResultRow").style.display = "flex";
-        };
-        document.getElementById("downloadHtmlImg").onclick = () => {
-            html2canvas(document.getElementById("htmlRender")).then((canvas) => {
-                const link = document.createElement("a");
-                link.download = "html.png";
-                link.href = canvas.toDataURL();
-                link.click();
-            });
-        };
-        document.getElementById("downloadHtmlPdf").onclick = () => {
-            html2canvas(document.getElementById("htmlRender")).then((canvas) => {
-                const imgData = canvas.toDataURL("image/png");
-                const pdf = new window.jspdf.jsPDF();
-                const w = pdf.internal.pageSize.getWidth();
-                const h = (canvas.height * w) / canvas.width;
-                pdf.addImage(imgData, "PNG", 0, 0, w, h);
-                pdf.save("html.pdf");
-            });
-        };
-    </script>
-    <!-- البيانات المهيكلة لصفحة الأسئلة الشائعة -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "ما وظيفة هذه الأداة؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "تحوّل صفحات الويب (من خلال URL) أو كود HTML الذي يدخلّه المستخدم إلى صورة PNG عالية الجودة أو ملف PDF مباشرةً في المتصفح."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل تُرفع البيانات أو تُخزن؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "لا. كل العمليات تحدث بالكامل على جهاز المستخدم داخل المتصفح؛ لا يتم رفع أو تخزين أي بيانات خارجيًا."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل يمكنني تحويل أي موقع ويب؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يمكنك تجربة أي موقع ويب عام، لكن بعض المواقع قد تعاني من قيود CORS أو عدم تحميل JavaScript الديناميكي، مما قد يؤثر على النتيجة."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما صيغ الإخراج المتاحة؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يمكنك حفظ النتيجة كصورة PNG أو كملف PDF. كلاهما يُنشأ في المتصفح فورًا."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "لماذا قد تختلف النتيجة عن الموقع الفعلي؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "الاعتماد على JavaScript الديناميكي، أو الخطوط والموارد الخارجية، أو قيود CORS يمكن أن يمنع عرض بعض العناصر بشكل صحيح. للحصول على أفضل نتيجة، أدخل HTML مباشرةً واضبط CSS."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل الأداة مجانية؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نعم! مجانية بالكامل ولا تحتاج تسجيل أو دفع أي رسوم، ولا توجد علامة مائية على النتائج."
-          }
-        }
-      ]
-    }
-    </script>
-</body>
-</html>

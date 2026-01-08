@@ -1,319 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="اختبر معارفك الجغرافية! في 'تحدي الأعلام'، انظر إلى العلم وحاول تسمية الدولة. لعبة مسلية مجانية ومتوافقة مع الجوّال في المتصفح." />
-        <meta
-            name="keywords"
-            content="تحدي الأعلام, اختبار الأعلام, جغرافيا, لعبة دول, لعبة أعلام, لعبة مجانية أونلاين, اختبار, لعبة متصفح, جوّال, أعلام العالم, تعليم, لعبة مسابقة" />
-        <meta name="author" content="Itagi" />
-        <meta name="robots" content="index, follow" />
-
-        <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/game/FlagQuest" />
-
-        <meta property="og:title" content="تحدي الأعلام – لعبة اختبار الأعلام أونلاين مجانية!" />
-        <meta
-            property="og:description"
-            content="كم علم تستطيع التعرف عليه؟ اختبر مهارتك في لعبة تحدي الأعلام النهائية المجانية!" />
-        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-        <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/game/FlagQuest" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="تحدي الأعلام – لعبة اختبار الأعلام أونلاين مجانية!" />
-        <meta
-            name="twitter:description"
-            content="انظر إلى العلم وحاول تسمية الدولة، ثم تحدّ أصدقاءك! العب تحدي الأعلام مجانًا على الإنترنت." />
-        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-        <title>تحدي الأعلام</title>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                margin: 0;
-                font-family: "Quicksand", sans-serif;
-                background: linear-gradient(to bottom right, #fef6e4, #e0f2f1);
-                color: #333;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0rem;
-            }
-
-            h1 {
-                font-size: 2.2rem;
-                margin-bottom: 1rem;
-                margin-top: 1rem;
-                color: #6c63ff;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-            }
-
-            #flag {
-                width: 280px;
-                height: 180px;
-                object-fit: contain;
-                border: 4px solid #fff;
-                border-radius: 16px;
-                background: #fff;
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-                margin: 1.6rem 0;
-            }
-
-            .options {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-bottom: 0.5rem;
-                gap: 1rem;
-            }
-
-            button {
-                background: #ffd6e0;
-                color: #333;
-                padding: 0.75rem 1.5rem;
-                font-size: 1rem;
-                border: none;
-                border-radius: 12px;
-                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-                font-weight: 600;
-                transition: all 0.25s ease;
-                cursor: pointer;
-            }
-
-            button:hover {
-                background: #ffcad4;
-                transform: scale(1.05);
-            }
-
-            #feedback {
-                font-weight: 700;
-                font-size: 1.1rem;
-                color: #222;
-                min-height: 1.5rem;
-            }
-
-            #score {
-                font-size: 1.1rem;
-                margin-top: 1rem;
-            }
-
-            #gameover {
-                display: none;
-                flex-direction: column;
-                gap: 1rem;
-                margin-top: 0rem;
-                align-items: center;
-            }
-
-            #finalMessage {
-                font-size: 1.3rem;
-                font-weight: bold;
-                color: #6c63ff;
-            }
-
-            .result {
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                margin-top: 1rem;
-            }
-
-            .result button {
-                background: #bae6fd;
-            }
-
-            .result button:hover {
-                background: #7dd3fc;
-            }
-        </style>
-    </head>
-
-    <body>
-        <h1>🏁 تحدي الأعلام</h1>
-        <p style="margin-top: 0rem">انظر إلى العلم وحاول تسمية الدولة!</p>
-        <img id="flag" src="" alt="علم الدولة" />
-        <div class="options" id="options"></div>
-        <div id="feedback"></div>
-        <div id="score">النقاط: 0</div>
-
-        <div id="gameover">
-            <div
-                id="finalMessage"
-                style="
-                    background: #fff0f6;
-                    color: #6b21a8;
-                    padding: 1rem 1.5rem;
-                    border-radius: 12px;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    max-width: 90%;
-                "
-            ></div>
-
-            <div class="result">
-                <button onclick="restartGame()">العب مرة أخرى</button>
-                <button onclick="shareScore()">مشاركة</button>
-            </div>
-        </div>
-
-        <script src="flag_data_full_254_svg.js"></script>
-        <script>
-            let unusedFlags = [...flags];
-            let currentAnswer = "";
-            let score = 0;
-
-            function shuffle(array) {
-                return array.sort(() => Math.random() - 0.5);
-            }
-
-            function loadQuestion() {
-                if (unusedFlags.length < 4) {
-                    endGame("🎉 لقد أجبت عن كل الأعلام!");
-                    return;
-                }
-                const questionSet = shuffle([...unusedFlags]).slice(0, 4);
-                const answer = questionSet[Math.floor(Math.random() * 4)];
-                currentAnswer = answer.country;
-
-                document.getElementById("flag").src = answer.img;
-                const optionsDiv = document.getElementById("options");
-                optionsDiv.innerHTML = "";
-
-                questionSet.forEach((item) => {
-                    const btn = document.createElement("button");
-                    btn.textContent = item.country;
-                    btn.onclick = () => checkAnswer(item.country);
-                    optionsDiv.appendChild(btn);
-                });
-
-                document.getElementById("feedback").textContent = "";
-            }
-
-            function checkAnswer(choice) {
-                if (choice === currentAnswer) {
-                    document.getElementById("feedback").textContent = "🌸 إجابة صحيحة!";
-                    unusedFlags = unusedFlags.filter((f) => f.country !== currentAnswer);
-                    score++;
-                    document.getElementById("score").textContent = `النقاط: ${score}`;
-                    setTimeout(loadQuestion, 700);
-                } else {
-                    endGame(`😢 إجابة خاطئة! الإجابة الصحيحة: ${currentAnswer}.`);
-                }
-            }
-
-            function endGame(message) {
-                document.getElementById("feedback").textContent = "";
-                document.getElementById("score").textContent = "";
-                document.getElementById("finalMessage").innerHTML = `${message}<br><br>لقد أجبت على ${score} سؤالًا بشكل صحيح.`;
-                document.getElementById("gameover").style.display = "flex";
-                document.getElementById("options").innerHTML = "";
-                document.getElementById("flag").style.display = "none";
-            }
-
-            function restartGame() {
-                score = 0;
-                unusedFlags = [...flags];
-                document.getElementById("score").textContent = `النقاط: 0`;
-                document.getElementById("gameover").style.display = "none";
-                document.getElementById("flag").style.display = "block";
-                loadQuestion();
-            }
-
-            function shareScore() {
-                const text = `🏁 حققت ${score} نقاط في تحدي الأعلام! هل تستطيع أن تتفوق علي؟`;
-                const url = window.location.href;
-
-                if (navigator.share) {
-                    navigator
-                        .share({
-                            title: "تحدي الأعلام",
-                            text: text,
-                            url: url
-                        })
-                        .then(() => console.log("تمت المشاركة بنجاح!"))
-                        .catch((error) => console.error("فشل في المشاركة:", error));
-                } else {
-                    navigator.clipboard.writeText(`${text} ${url}`).then(() => {
-                        alert("تم نسخ الرابط إلى الحافظة!");
-                    });
-                }
-            }
-
-            loadQuestion();
-        </script>
-        <button
-            style="
-                margin-top: 20px;
-                width: 90%;
-                height: 60px;
-                font-size: 16px;
-                font-weight: bold;
-                background-color: #fff;
-                cursor: pointer;
-                border-radius: 6px;
-                border: solid;
-                color: black;
-                border-color: black;
-            "
-            onclick="window.location.href='/'"
-        >
-            📂 ألعاب أخرى
-        </button>
-        <section
-            style="
-                width: 90%;
-                max-width: 440px;
-                margin: 60px auto;
-                padding: 20px;
-                background: #fff;
-                border: 2px solid #e5e5e5;
-                border-radius: 14px;
-                font-family: 'Quicksand', sans-serif;
-                font-size: 14px;
-                line-height: 1.7;
-                color: #333;
-                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-            "
-        >
-            <h2 style="font-size: 18px; margin-bottom: 1rem; color: #6c63ff">❓ الأسئلة الشائعة (FAQ)</h2>
-
-            <div style="margin-bottom: 1rem">
-                <strong>س1. كيف ألعب تحدي الأعلام؟</strong><br />
-                أ. انظر إلى العلم المعروض واختر الدولة الصحيحة من بين 4 خيارات. إذا أخطأت تنتهي اللعبة!
-            </div>
-
-            <div style="margin-bottom: 1rem">
-                <strong>س2. ماذا يحدث عند الإجابة الصحيحة؟</strong><br />
-                أ. تزيد نقاطك بمقدار 1 ويُعرض علم جديد. تستمر اللعبة حتى تخطئ أو تنتهي جميع الأعلام!
-            </div>
-
-            <div style="margin-bottom: 1rem">
-                <strong>س3. كم عدد الأعلام في اللعبة؟</strong><br />
-                أ. تحتوي هذه اللعبة على أكثر من 250 علمًا. يتم اختيار علم عشوائي جديد في كل جولة.
-            </div>
-
-            <div style="margin-bottom: 1rem">
-                <strong>س4. هل يمكنني إعادة بدء اللعبة في أي وقت؟</strong><br />
-                أ. نعم! عند انتهاء اللعبة أو إكمال جميع الأعلام، اضغط على "العب مرة أخرى" لإعادة التعيين والبدء من جديد.
-            </div>
-
-            <div style="margin-bottom: 1rem">
-                <strong>س5. هل اللعبة متوافقة مع الجوّال؟</strong><br />
-                أ. بالتأكيد! هذه اللعبة مصممة لتكون مثالية على الهواتف الذكية والأجهزة اللوحية.
-            </div>
-
-            <div>
-                <strong>س6. كيف أشارك نتيجتي؟</strong><br />
-                أ. عند انتهاء اللعبة، اضغط على زر "مشاركة" لنسخ الرابط والنقاط وإرسالها إلى أصدقائك!
-            </div>
-        </section>
-    </body>
-</html>

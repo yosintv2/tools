@@ -1,355 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="اختبر ردود فعلك في مبارزة المسدس السريع! بعد إشارة 'أطلق!'، كن الأسرع في إطلاق النار. لعبة ويب مُحسّنة للجوال ومجانية وسريعة." />
-        <meta
-            name="keywords"
-            content="مبارزة المسدس, رد الفعل السريع, لعبة ويب, لعبة جراوسية, صلاح, عربدة, مسدس, لعبة جوال, لعبة مجانية" />
-        <meta name="author" content="Itagi" />
-        <meta name="robots" content="index, follow" />
-
-        <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/game/QuickDraw" />
-
-        <meta property="og:title" content="مبارزة المسدس السريع – لعبة ويب كاوبوي ردود الفعل" />
-        <meta
-            property="og:description"
-            content="كن الأسرع في إطلاق النار! العب لعبة كاوبوي مجانية بدون تنزيل واستمتع على الجوال أو الحاسوب." />
-        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-        <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/game/QuickDraw" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="مبارزة المسدس السريع – لعبة ويب كاوبوي ردود الفعل" />
-        <meta
-            name="twitter:description"
-            content="تحدّ أصدقاءك! في هذه اللعبة الكاوبوي الممتعة والفورية، اعرف من الأسرع!" />
-        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-
-        <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-            crossorigin="anonymous"></script>
-        <title>مبارزة المسدس السريع</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap"
-            rel="stylesheet" />
-        <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-
-            body {
-                background: linear-gradient(to top, #fbeec1, #e0c097);
-                font-family: "Inter", sans-serif;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                text-align: center;
-                position: relative;
-            }
-
-            h1 {
-                font-family: "Bangers", cursive;
-                font-size: 1.8em;
-                margin-bottom: 10px;
-                margin-top: 10px;
-                color: #5a3e1b;
-                text-shadow: 2px 2px #fff0c4;
-            }
-
-            .arena {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                width: 90%;
-                max-width: 400px;
-                margin: 10px 0;
-                font-size: 4em;
-                background: #fffef4;
-                border-radius: 20px;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-                padding: 30px 10px;
-                border: 3px solid #d2b48c;
-            }
-
-            .cowboy {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                transition: all 0.3s ease;
-            }
-
-            .cowboy span {
-                font-size: 1.1rem;
-                margin-top: 10px;
-                font-weight: bold;
-                color: #444;
-            }
-
-            #message {
-                font-size: 1.3em;
-                min-height: 2em;
-                margin-top: 10px;
-                color: #222;
-            }
-
-            .btn-group {
-                display: flex;
-                gap: 10px;
-                margin-top: 10px;
-            }
-
-            .btn {
-                padding: 12px 28px;
-                font-size: 1.1em;
-                cursor: pointer;
-                border: none;
-                border-radius: 12px;
-                background: #5a3e1b;
-                color: white;
-                font-weight: bold;
-                transition:
-                    transform 0.2s,
-                    background 0.2s;
-            }
-
-            .btn:hover {
-                background: #7b5633;
-                transform: scale(1.05);
-            }
-
-            .gun {
-                font-size: 1.2em;
-                opacity: 0;
-                transition: opacity 0.3s;
-            }
-
-            .gun.show {
-                opacity: 1;
-            }
-        </style>
-    </head>
-
-    <body>
-        <h1>مبارزة المسدس السريع</h1>
-        <p>كن الأسرع في إطلاق النار!</p>
-        <div class="arena">
-            <div class="cowboy" id="enemy">
-                <div id="enemyFace">🤠</div>
-                <div id="enemyGun" class="gun">🔫</div>
-                <span>الخصم</span>
-            </div>
-            <div class="cowboy" id="player">
-                <div id="playerFace">😐</div>
-                <div id="playerGun" class="gun">🔫</div>
-                <span>أنت</span>
-            </div>
-        </div>
-
-        <div id="message">اضغط "ابدأ" لبدء اللعبة.</div>
-
-        <div class="btn-group">
-            <button class="btn" id="startBtn" onclick="startGame()">ابدأ</button>
-            <button class="btn" id="shootBtn" onclick="handlePlayerShoot()" style="display: none; background: red">
-                أطلق!
-            </button>
-            <button class="btn" id="restartBtn" onclick="restartGame()" style="display: none">أعد اللعب</button>
-            <button class="btn" id="shareBtn" onclick="shareResult()" style="display: none">مشاركة</button>
-        </div>
-
-        <script>
-            const message = document.getElementById("message");
-            const startBtn = document.getElementById("startBtn");
-            const restartBtn = document.getElementById("restartBtn");
-            const shootBtn = document.getElementById("shootBtn");
-            const shareBtn = document.getElementById("shareBtn");
-
-            const playerFace = document.getElementById("playerFace");
-            const playerGun = document.getElementById("playerGun");
-            const enemyFace = document.getElementById("enemyFace");
-            const enemyGun = document.getElementById("enemyGun");
-
-            let drawTimeout = null;
-            let enemyShotTimeout = null;
-            let drawTime = 0;
-            let gameStarted = false;
-            let readyToShoot = false;
-            let playerReacted = false;
-            let lastReaction = null;
-
-            function startGame() {
-                clearTimeout(drawTimeout);
-                clearTimeout(enemyShotTimeout);
-
-                resetCharacters();
-                gameStarted = true;
-                readyToShoot = false;
-                playerReacted = false;
-                lastReaction = null;
-
-                startBtn.style.display = "none";
-                restartBtn.style.display = "none";
-                shareBtn.style.display = "none";
-                shootBtn.style.display = "inline-block";
-                message.textContent = "انتظر إشارة 'أطلق!'...";
-
-                drawTimeout = setTimeout(
-                    () => {
-                        readyToShoot = true;
-                        drawTime = performance.now();
-                        message.textContent = "أطلق! 🔫";
-                        enemyFace.textContent = "😠";
-                        playerFace.textContent = "😠";
-
-                        const enemyReactTime = Math.random() * 400 + 200;
-                        enemyShotTimeout = setTimeout(() => {
-                            if (!playerReacted) {
-                                enemyGun.classList.add("show");
-                                playerFace.textContent = "💀";
-                                endGame("أبطأت... خسرت!");
-                            }
-                        }, enemyReactTime);
-                    },
-                    Math.random() * 3000 + 2000
-                );
-            }
-
-            function endGame(result) {
-                message.textContent = result;
-                gameStarted = false;
-                restartBtn.style.display = "inline-block";
-                shareBtn.style.display = "inline-block";
-                shootBtn.style.display = "none";
-                clearTimeout(drawTimeout);
-                clearTimeout(enemyShotTimeout);
-            }
-
-            function resetCharacters() {
-                playerFace.textContent = "😐";
-                enemyFace.textContent = "🤠";
-                playerGun.classList.remove("show");
-                enemyGun.classList.remove("show");
-            }
-
-            function handlePlayerShoot() {
-                if (!gameStarted || playerReacted) return;
-
-                if (!readyToShoot) {
-                    playerFace.textContent = "😵";
-                    message.textContent = "أطلقت مبكرًا... خسرت!";
-                    endGame("أطلقت مبكرًا!");
-                    return;
-                }
-
-                const reactionTime = performance.now() - drawTime;
-                lastReaction = Math.round(reactionTime);
-                playerReacted = true;
-                playerGun.classList.add("show");
-                shootBtn.style.display = "none";
-
-                if (enemyGun.classList.contains("show")) {
-                    playerFace.textContent = "💀";
-                    endGame("أبطأت... خسرت!");
-                } else {
-                    enemyFace.textContent = "💀";
-                    endGame(`لقد فزت! (${lastReaction} مللي ثانية)`);
-                }
-            }
-
-            function restartGame() {
-                startGame();
-            }
-
-            function shareResult() {
-                const baseUrl = "https://www.singhyogendra.com.np/more/QuickDraw/";
-                let text = "🔥 لعبت للتو مبارزة المسدس السريع!";
-                if (lastReaction !== null) {
-                    text = `🤠 زمن رد فعلي كان ${lastReaction} مللي ثانية! حاول أنت أيضًا!`;
-                }
-
-                const shareData = {
-                    title: "مبارزة المسدس السريع",
-                    text: text,
-                    url: baseUrl
-                };
-
-                if (navigator.share) {
-                    navigator.share(shareData).catch(() => {
-                        fallbackCopy(`${text} ${baseUrl}`);
-                    });
-                } else {
-                    fallbackCopy(`${text} ${baseUrl}`);
-                }
-            }
-
-            function fallbackCopy(text) {
-                navigator.clipboard.writeText(text).then(() => {
-                    alert("تم نسخ النتيجة إلى الحافظة! الصقها حيث تريد مشاركتها 😎");
-                });
-            }
-
-            document.body.addEventListener("click", (e) => {
-                if (e.target.classList.contains("btn")) return;
-                handlePlayerShoot();
-            });
-        </script>
-
-        <button
-            style="
-                margin-top: 20px;
-                width: 90%;
-                height: 60px;
-                font-size: 16px;
-                font-weight: bold;
-                background-color: #5a3e1b;
-                cursor: pointer;
-                border-radius: 6px;
-                border: none;
-                color: white;
-            "
-            onclick="window.location.href='/'">
-            📂 ألعاب أخرى
-        </button>
-        <section style="max-width: 320px; width: 100%; margin: 48px auto 24px auto; font-family: 'Arial', sans-serif; font-size: 14px; background: #fff8e0; border-radius: 18px; box-shadow: 0 6px 24px #aa8844; padding: 20px; line-height: 1.6; color: #3e2c00;">
-          <h2 style="font-size: 1.4rem; margin-bottom: 14px; color: #5a3e1b;">❓ الأسئلة الشائعة</h2>
-
-          <div style="margin-bottom: 12px;">
-            <strong>س1. كيف ألعب هذه اللعبة؟</strong><br/>
-            ج. بعد الضغط على "ابدأ"، انتظر إشارة "أطلق!" ثم اضغط على الشاشة أو زر "أطلق!" قبل الخصم.
-          </div>
-
-          <div style="margin-bottom: 12px;">
-            <strong>س2. ماذا يحدث إذا أطلقت قبل الإشارة؟</strong><br/>
-            ج. إذا أطلقت النار قبل أن تظهر الإشارة، تخسر فورًا. لذا انتظر الإشارة بحذر!
-          </div>
-
-          <div style="margin-bottom: 12px;">
-            <strong>س3. هل يمكن اللعب على الجوال؟</strong><br/>
-            ج. نعم! يمكنك لمس الشاشة لإطلاق النار دون الحاجة للضغط على الزر.
-          </div>
-
-          <div style="margin-bottom: 12px;">
-            <strong>س4. ما هو زمن رد الفعل الجيد؟</strong><br/>
-            ج. يعتبر زمن أقل من 300 مللي ثانية ممتازًا. الكاوبوي المحترف يمكن أن يصل إلى أقل من 200 مللي ثانية!
-          </div>
-
-          <div style="margin-bottom: 12px;">
-            <strong>س5. هل يمكنني مشاركة نتيجتي؟</strong><br/>
-            ج. نعم! بعد انتهاء المبارزة، اضغط زر "مشاركة" للتباهي بزمن رد فعلك.
-          </div>
-
-          <div style="margin-bottom: 0;">
-            <strong>س6. هل اللعبة عادلة في كل مرة؟</strong><br/>
-            ج. نعم. توقيت الإشارة ورد فعل الخصم يكونان عشوائيين في كل جولة، فلا يمكنك التنبؤ بهما.
-          </div>
-        </section>
-
-    </body>
-</html>

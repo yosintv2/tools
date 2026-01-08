@@ -1,330 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>مولّد CRC – حاسبة مجموع التحقق عبر الإنترنت</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="يمكنك إنشاء قيمة CRC لمقطع نصي أو بيانات سداسية عشرية (CRC32، CRC16، CRC-CCITT، وما إلى ذلك) بسرعة. أداة مجانية تعمل بالكامل في المتصفح وتحافظ على خصوصيتك." />
-    <meta
-      name="keywords"
-      content="CRC, مجموع التحقق, CRC32, CRC16, CRC-CCITT, هاش, حاسبة, أداة, متصفح, عبر الإنترنت" />
-    <meta name="author" content="Itagi" />
-    <meta name="language" content="ar" />
-    <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/crc/" />
-    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
-    <meta property="og:title" content="مولّد CRC – حاسبة مجموع التحقق عبر الإنترنت" />
-    <meta
-      property="og:description"
-      content="يمكنك حساب مجموع التحقق CRC32 أو CRC16 أو غيرها من بيانات نصية أو سداسية عشرية فوراً في المتصفح." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/crc/" />
-    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="مولّد CRC – حاسبة مجموع التحقق عبر الإنترنت" />
-    <meta
-      name="twitter:description"
-      content="يمكنك حساب مجموع التحقق CRC32 أو CRC16 وغيرها فوراً. يدعم النص والبيانات السداسية العشرية." />
-    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-      crossorigin="anonymous"></script>
-    <style>
-      :root {
-        --main: #20477f;
-      }
-      body {
-        background: #f8fbff;
-        font-family: "Segoe UI", Arial, sans-serif;
-        color: #223;
-        margin: 0;
-      }
-      .container {
-        max-width: 440px;
-        margin: 42px auto 0 auto;
-        background: #fff;
-        border-radius: 16px;
-        box-shadow: 0 4px 24px #1a305820;
-        padding: 30px 16px 24px 16px;
-      }
-      .logo {
-        font-size: 1.32em;
-        font-weight: bold;
-        color: var(--main);
-        text-align: center;
-        margin-bottom: 10px;
-      }
-      .desc {
-        text-align: center;
-        color: #286673;
-        margin-bottom: 15px;
-        font-size: 1.01em;
-      }
-      .input-row {
-        margin: 15px 0 8px 0;
-      }
-      .input-row label {
-        color: #234;
-        font-size: 1.03em;
-      }
-      textarea,
-      input[type="text"],
-      select {
-        width: 100%;
-        font-size: 1.06em;
-        border: 1.2px solid #b7d8f2;
-        border-radius: 8px;
-        padding: 10px;
-        margin-top: 4px;
-        box-sizing: border-box;
-        background: #fafdff;
-      }
-      select {
-        cursor: pointer;
-      }
-      .action-btn {
-        background: var(--main);
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        padding: 13px 0;
-        width: 100%;
-        font-size: 1.13em;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 16px;
-        margin-bottom: 10px;
-        box-shadow: 0 2px 12px #20477f18;
-        transition: background 0.15s;
-      }
-      .action-btn:active {
-        background: #18335e;
-      }
-      .result-area {
-        min-height: 36px;
-        text-align: center;
-        color: #234;
-        background: #f2f8ff;
-        border-radius: 7px;
-        margin-top: 12px;
-        font-size: 1.22em;
-        border: 1.2px solid #d5e6fa;
-        padding: 12px 6px;
-        word-break: break-all;
-        font-family: "Fira Mono", monospace;
-      }
-      .footer {
-        color: #789;
-        text-align: center;
-        font-size: 0.94em;
-        margin-top: 18px;
-      }
-      #backBtn {
-        position: fixed;
-        left: 50%;
-        bottom: 32px;
-        transform: translateX(-50%);
-        background: var(--main);
-        color: #fff;
-        font-weight: 700;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.58em 1.5em;
-        box-shadow: 0 4px 16px #20477f22;
-        font-size: 1.09em;
-        text-decoration: none;
-        cursor: pointer;
-        letter-spacing: 0.01em;
-        transition:
-          background 0.15s,
-          transform 0.12s;
-        z-index: 2000;
-      }
-      #backBtn:hover {
-        background: #18335e;
-        transform: translateX(-50%) scale(1.04);
-      }
-      @media (max-width: 600px) {
-        .container {
-          max-width: 99vw;
-          padding: 10px 2vw 12px 2vw;
-        }
-        #backBtn {
-          bottom: 18px;
-          font-size: 0.98em;
-          padding: 0.48em 1em;
-        }
-      }
-      section#faq { margin-top: 30px; }
-      section#faq h2 { margin-bottom: 13px; color: #20477f; font-size: 1.11em; text-align: center; }
-      section#faq dt { font-weight: bold; margin-top: 8px; }
-      section#faq dd { margin: 0 0 7px 0; font-size: 0.99em; color: #286673; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="container" itemscope itemtype="https://schema.org/WebApplication">
-        <h1 class="logo" itemprop="name">🔢 مولّد CRC</h1>
-        <p class="desc" itemprop="description">
-          أدخل نصًا أو بيانات سداسية عشرية، ثم اختر نوع CRC لحساب قيمة مجموع التحقق فورًا. <br />
-          <span style="color: #20477f; font-size: 0.96em">
-            لا تُرسل البيانات خارج متصفحك.
-          </span>
-        </p>
-
-        <div class="input-row">
-          <label for="crcType" id="crcTypeLabel">نوع CRC</label>
-          <select id="crcType">
-            <option value="crc32">CRC-32</option>
-            <option value="crc16">CRC-16-IBM</option>
-            <option value="crc16ccitt">CRC-16-CCITT</option>
-          </select>
-        </div>
-        <div class="input-row">
-          <label for="inputText" id="inputTextLabel">الإدخال (نص أو سداسي عشرية)</label>
-          <textarea id="inputText" rows="4" placeholder="أدخل نصًا أو سلسلة سداسية عشرية"></textarea>
-        </div>
-        <button class="action-btn" id="calcBtn">حساب CRC</button>
-
-        <div class="result-area" id="resultArea"></div>
-
-        <div class="footer" id="footer">
-          <b>نصيحة:</b> يمكنك استخدامه للتحقق من سلامة الفيرموير، حزم الشبكة، أو ملفات البيانات. <br />
-          <span style="color: #20477f">لا تُرسل أي بيانات خارج جهازك.</span>
-        </div>
-
-        <!-- FAQ セクション (SEO/SGE 用) -->
-        <section aria-labelledby="faq-head" id="faq">
-          <h2 id="faq-head">الأسئلة الشائعة – مولّد CRC ومجموع التحقق</h2>
-          <dl>
-            <dt>ما هو CRC؟</dt>
-            <dd>CRC (فحص التكرار الدوري) هو خوارزمية هاش تُستخدم لاكتشاف الأخطاء في البيانات أثناء النقل أو التخزين.</dd>
-            <dt>ما أنواع CRC المدعومة؟</dt>
-            <dd>هذه الأداة تدعم CRC-32 وCRC-16-IBM وCRC-16-CCITT. قد تُضاف خوارزميات إضافية مستقبلًا.</dd>
-            <dt>هل يمكنني إدخال بيانات سداسية عشرية؟</dt>
-            <dd>نعم. يمكنك إدخال سلاسل سداسية عشرية بصيغة "0x" أو بدونها، مع السماح بالمسافات. مثال: "0x12 34 56" أو "123456".</dd>
-            <dt>هل تُرفع البيانات أو تُحفظ؟</dt>
-            <dd>كلا. جميع العمليات تتم محليًا في المتصفح، ولا يتم رفع أو حفظ أي بيانات.</dd>
-            <dt>أين يُستخدم CRC عادةً؟</dt>
-            <dd>يُستخدم CRC للتحقق من سلامة الفيرموير، حزم الشبكة، التحقق من الملفات، وأنظمة التخزين لتعقب الأخطاء.</dd>
-          </dl>
-        </section>
-      </div>
-    </main>
-    <a href="../" id="backBtn">أدوات أخرى</a>
-    <script>
-      // دوال حساب CRC (تنفيذ مبسط)
-      function crc32(str) {
-        let crc = 0 ^ -1;
-        for (let i = 0; i < str.length; i++) {
-          crc =
-            (crc >>> 8) ^
-            [
-              0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419, 0x706af48f, 0xe963a535, 0x9e6495a3,
-              0x0edb8832, 0x79dcb8a4, 0xe0d5e91e, 0x97d2d988, 0x09b64c2b, 0x7eb17cbd, 0xe7b82d07, 0x90bf1d91
-            ][(crc ^ str.charCodeAt(i)) & 0x0f];
-        }
-        return ((crc ^ -1) >>> 0).toString(16).toUpperCase().padStart(8, "0");
-      }
-      function crc16(str) {
-        let crc = 0xffff;
-        for (let i = 0; i < str.length; i++) {
-          crc ^= str.charCodeAt(i) << 8;
-          for (let j = 0; j < 8; j++) {
-            if (crc & 0x8000) crc = (crc << 1) ^ 0x8005;
-            else crc = crc << 1;
-          }
-          crc &= 0xffff;
-        }
-        return crc.toString(16).toUpperCase().padStart(4, "0");
-      }
-      function crc16ccitt(str) {
-        let crc = 0xffff;
-        for (let i = 0; i < str.length; i++) {
-          crc ^= str.charCodeAt(i) << 8;
-          for (let j = 0; j < 8; j++) {
-            crc = crc & 0x8000 ? (crc << 1) ^ 0x1021 : crc << 1;
-          }
-          crc &= 0xffff;
-        }
-        return crc.toString(16).toUpperCase().padStart(4, "0");
-      }
-
-      document.getElementById("calcBtn").onclick = function () {
-        const type = document.getElementById("crcType").value;
-        let text = document.getElementById("inputText").value;
-        if (!text.trim()) {
-          document.getElementById("resultArea").textContent = "لم يتم إدخال أي نص.";
-          return;
-        }
-        // دعم إدخال السداسية العشرية: السماح بالبادئة 0x والمسافات
-        text = text.trim();
-        if (/^(0x)?[a-fA-F0-9\s]+$/.test(text)) {
-          text = text.replace(/0x/gi, "").replace(/\s+/g, "");
-          text =
-            text
-              .match(/.{1,2}/g)
-              ?.map((byte) => String.fromCharCode(parseInt(byte, 16)))
-              .join("") || "";
-        }
-        let result = "";
-        if (type === "crc32") result = crc32(text);
-        else if (type === "crc16") result = crc16(text);
-        else if (type === "crc16ccitt") result = crc16ccitt(text);
-        document.getElementById("resultArea").textContent = result ? "CRC: " + result : "حدث خطأ أثناء الحساب.";
-      };
-    </script>
-    <!-- FAQPage Schema for SGE/GEO/SEO Rich Results -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "ما هو CRC؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "CRC (فحص التكرار الدوري) هو خوارزمية هاش تُستخدم لاكتشاف الأخطاء في البيانات خلال النقل أو التخزين."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما أنواع CRC المدعومة؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "تدعم هذه الأداة CRC-32 وCRC-16-IBM وCRC-16-CCITT. قد تتم إضافة خوارزميات أخرى لاحقًا."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل يمكنني إدخال بيانات سداسية عشرية؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نعم. يمكنك إدخال سلاسل سداسية عشرية بصيغة '0x' أو بدونها، والسماح بوجود مسافات، مثل '0x12 34 56' أو '123456'."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل تُرفع البيانات أو تُحفظ؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "لا. تتم جميع العمليات محليًا في المتصفح دون رفع البيانات إلى الخادم."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "أين يُستخدم CRC عادةً؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يُستخدم CRC للتحقق من سلامة الفيرموير، حزم الشبكة، التحقق من الملفات، وأنظمة التخزين لاكتشاف الأخطاء."
-          }
-        }
-      ]
-    }
-    </script>
-  </body>
-</html>

@@ -1,493 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="اختبار MBTI سريع وممتع قائم على سيناريوهات حقيقية! أجب عن أسئلة مستمدة من أوقات حياتية حقيقية واكتشف نوع شخصيتك فورًا. مجاني، متوافق مع المتصفحات وجوال صديق للمستخدم." />
-        <meta
-            name="keywords"
-            content="اختبار MBTI, اختبار الشخصية, اختبار MBTI سريع, لعبة ويب, اختبار متصفح, اختبار نفسي, مجاني, اختبار أونلاين, ENFP, INFP, INTJ, INFJ, أنواع MBTI, اكتشاف الذات, اختبار ممتع, نتيجة فورية" />
-        <meta name="author" content="Itagi" />
-        <meta name="robots" content="index, follow" />
-
-        <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/game/MBTI" />
-
-        <meta property="og:title" content="الاختبار السريع: MBTI – لعبة اختبار الشخصية الممتعة" />
-        <meta
-            property="og:description"
-            content="ما نوع شخصيتك حسب MBTI؟ أجب عن أسئلة قائمة على سيناريوهات واقعية واكتشف نتيجتك فورًا! مجاني ومتوافق مع الجوال." />
-        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-        <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/game/MBTI" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="الاختبار السريع: MBTI – لعبة اختبار الشخصية الممتعة" />
-        <meta
-            name="twitter:description"
-            content="اختبار MBTI سريع قائم على سيناريوهات ممتعة! اكتشف نوع شخصيتك خلال دقائق." />
-        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-        <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-            crossorigin="anonymous"></script>
-        <title>الاختبار السريع: MBTI</title>
-        <style>
-            body {
-                margin: 0;
-                background-color: #121212;
-                color: #ffffff;
-                font-family: Arial, sans-serif;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-            }
-
-            #progress {
-                margin-top: 30px;
-                margin-bottom: 20px;
-                font-size: 16px;
-                color: #ccc;
-            }
-
-            .fade {
-                opacity: 0;
-                transition: opacity 0.5s ease;
-            }
-
-            .show {
-                opacity: 1;
-            }
-
-            .card {
-                background: #1e1e1e;
-                padding-top: 30px;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-bottom: 30px;
-                border-radius: 10px;
-                max-width: 300px;
-                text-align: center;
-                box-shadow: 0 0 10px #5c5cff;
-                width: 90%;
-            }
-
-            .option {
-                background-color: #3d3df7;
-                border: none;
-                color: white;
-                border-radius: 10px;
-                padding: 15px 20px;
-                margin: 10px;
-                font-size: 14px;
-                cursor: pointer;
-                width: 90%;
-                max-width: 290px;
-            }
-
-            .option:hover {
-                background-color: #5c5cff;
-            }
-
-            button {
-                margin-top: 20px;
-                padding: 10px 20px;
-                font-size: 16px;
-                border-radius: 8px;
-                border: none;
-                cursor: pointer;
-            }
-
-            .question {
-                font-weight: bold;
-                font-size: 20px;
-                color: #ffffff;
-                margin-bottom: 30px;
-            }
-
-            #result {
-                color: #222;
-                font-weight: 600;
-                text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
-            }
-
-            p.description {
-                margin-bottom: 1rem;
-                font-size: 0.85rem;
-                color: #ccc;
-                text-align: center;
-                padding: 0 1rem;
-            }
-
-            h1 {
-                margin-bottom: 0.3rem;
-                font-size: 2rem;
-            }
-
-            .mbti-bg-ENFP {
-                background-color: #ffeaa7;
-            }
-
-            .mbti-bg-INFP {
-                background-color: #fab1a0;
-            }
-
-            .mbti-bg-INFJ {
-                background-color: #a29bfe;
-            }
-
-            .mbti-bg-INTJ {
-                background-color: #81ecec;
-            }
-
-            .mbti-bg-ENTP {
-                background-color: #fdcb6e;
-            }
-
-            .mbti-bg-ENFJ {
-                background-color: #ff7675;
-            }
-
-            .mbti-bg-ENTJ {
-                background-color: #55efc4;
-            }
-
-            .mbti-bg-INTP {
-                background-color: #74b9ff;
-            }
-
-            .mbti-bg-ISTP {
-                background-color: #dfe6e9;
-            }
-
-            .mbti-bg-ISFP {
-                background-color: #ffeaa7;
-            }
-
-            .mbti-bg-ISTJ {
-                background-color: #b2bec3;
-            }
-
-            .mbti-bg-ISFJ {
-                background-color: #dfe6e9;
-            }
-
-            .mbti-bg-ESTP {
-                background-color: #fab1a0;
-            }
-
-            .mbti-bg-ESFP {
-                background-color: #fd79a8;
-            }
-
-            .mbti-bg-ESTJ {
-                background-color: #a29bfe;
-            }
-
-            .mbti-bg-ESFJ {
-                background-color: #ffeaa7;
-            }
-
-            h2 {
-                margin-bottom: 40px;
-            }
-
-            button.menu,
-            button.share {
-                padding: 1rem;
-                margin-top: 40px;
-                font-size: 1.1rem;
-                background-color: #4e54c8;
-                color: white;
-                border: none;
-                border-radius: 10px;
-                width: 90%;
-                max-width: 400px;
-                transition: background-color 0.2s ease;
-                cursor: pointer;
-            }
-
-            button.menu:active,
-            button.share:active {
-                background-color: #6a72f8;
-            }
-        </style>
-    </head>
-
-    <body>
-        <h1><span style="color: #8f94fb">الاختبار السريع:</span><span style="color: #6f6"> MBTI</span></h1>
-        <p class="description">اكتشف نوع شخصيتك MBTI بسرعة ومتعة من خلال أسئلة تستند إلى سيناريوهات حقيقية!</p>
-
-        <div id="progress"></div>
-        <div class="card fade show" id="quiz">
-            <div class="question" id="question"></div>
-            <div id="options"></div>
-        </div>
-
-        <div class="card fade" id="result" style="display: none">
-            <h2>
-                MBTI : <b><span id="mbti-type"></span></b>
-            </h2>
-            <p id="mbti-description"></p>
-            <button onclick="location.reload()"><b>مرة أخرى</b></button>
-            <button onclick="shareResult()"><b>مشاركة النتيجة</b></button>
-        </div>
-
-        <script>
-            const questions = [
-                {
-                    q: "حضرّت حفلة ترحيب في الشركة حيث لا تعرف أيًا من زملاء العمل. ماذا تفعل؟",
-                    a: ["أتوجه إليهم أولًا وأكوّن صداقات!", "أراقب الموقف بهدوء أولًا"],
-                    t: ["E", "I"]
-                },
-                {
-                    q: "في ليلة الجمعة، فجأة دعاك صديق للخروج لتناول مشروب! ماذا تفعل؟",
-                    a: ["بالطبع سأذهب! سأخرج فورًا!", "أفضل البقاء في المنزل والاسترخاء"],
-                    t: ["E", "I"]
-                },
-                {
-                    q: "اشتريت جهازًا جديدًا ويجب عليك تركيبه.",
-                    a: ["أقرأ الدليل بعناية أولًا", "أجرب تركيبها أولًا وأبحث أثناء العمل"],
-                    t: ["S", "N"]
-                },
-                {
-                    q: "أنت محتار بين قطعتين من الملابس أثناء التسوق.",
-                    a: ["أختار الأكثر عملية وفائدة", "أختار بناءً على إحساسي والفستان الذي أعجبني!"],
-                    t: ["S", "N"]
-                },
-                {
-                    q: "أخطأ أحد أعضاء الفريق مما أخر المشروع. كيف تتفاعل؟",
-                    a: ["أحلل السبب وأبحث عن حلول", "أبدأ بالتأكد من مشاعره أولًا"],
-                    t: ["T", "F"]
-                },
-                {
-                    q: "صديقك فجأة طلب منك طلبًا مستحيلاً. كيف ترد؟",
-                    a: ["أشرح له بصراحة الأسباب المنطقية التي تجعل الأمر صعبًا", "أرفض بلطف لتجنب إيذاء مشاعره"],
-                    t: ["T", "F"]
-                },
-                {
-                    q: "في الليلة التي تسبق الرحلة، ماذا تفعل؟",
-                    a: ["أقوم بإعداد قائمة تحقق وأجهز حقائبي!", "سأتعامل معه في الصباح، بدون توتر!"],
-                    t: ["J", "P"]
-                },
-                {
-                    q: "صديقك يريد فجأة تغيير وقت ومكان الموعد. كيف تتصرف؟",
-                    a: ["هذا يزعجني قليلًا", "حسنًا! سأكون مرنًا وأتأقلم"],
-                    t: ["J", "P"]
-                },
-                {
-                    q: "أنت في مصعد مع شخص غريب. ماذا تفعل؟",
-                    a: ["أُلقي تحية أو أجري حديثًا خفيفًا", "أفضل الصمت والاسترخاء"],
-                    t: ["E", "I"]
-                },
-                {
-                    q: "كيف تخطط عادةً لخطط نهاية الأسبوع؟",
-                    a: ["أحب التخطيط مسبقًا", "أقرر بناءً على مزاجي في ذلك اليوم!"],
-                    t: ["J", "P"]
-                },
-                {
-                    q: "جاءتك فكرة جديدة خلال اجتماع. ماذا تفعل؟",
-                    a: ["أتكلم فورًا وأشاركها", "أدوّنها وأنتظر التوقيت المناسب"],
-                    t: ["E", "I"]
-                },
-                {
-                    q: "عند اختيار مطعم، كيف تختار؟",
-                    a: ["أقرأ المراجعات التفصيلية أولًا", "أدخل بناءً على الحدس إلى المكان ذو الأجواء الجيدة"],
-                    t: ["S", "N"]
-                },
-                {
-                    q: "طلب منك شخص ما نصيحة حول مشكلة. كيف تتصرف؟",
-                    a: ["أتولى حل المشكلة فورًا", "أستمع بعناية أولًا وأُظهر التعاطف"],
-                    t: ["T", "F"]
-                },
-                {
-                    q: "قال لك شخص ما إنه غاضب منك. ما أول ما يخطر في بالك؟",
-                    a: ["أريد أن أفهم بالضبط ما الخطأ الذي ارتكبتُه", "أوه، هل شعرت بالإساءة؟"],
-                    t: ["T", "F"]
-                },
-                {
-                    q: "خُرب موعد مهم في اللحظة الأخيرة بسبب مشكلة! كيف تتفاعل؟",
-                    a: ["تبا، لا أستطيع تحمل أن الأمور لا تسير حسب الخطة", "حسنًا، سأتأقلم بمرونة!"],
-                    t: ["J", "P"]
-                },
-                {
-                    q: "ضعت أنت وصديقك أثناء السفر. ماذا تفعل؟",
-                    a: ["أتحقق من الخريطة وأجد الطريق", "واو، إنه أمر مثير قليلًا!"],
-                    t: ["S", "N"]
-                }
-            ];
-
-            const descriptions = {
-                ENFP: "أنت مليء بالطاقة والإبداع! تحب استكشاف الأفكار الجديدة والتواصل مع الناس. أنت الأفضل في التواصل الاجتماعي!",
-                INFP: "أنت مثالي ومتفكر، تبحث عن المعنى والصدق في كل شيء. تشعر بعمق وتفكر بعمق.",
-                INFJ: "أنت صاحب رؤية وقائد هادئ. لديك التعاطف والبصيرة وتحدث التغيير بهدوء من خلف الكواليس.",
-                INTJ: "أنت استراتيجي ومستقل، ترى الصورة الكبيرة بوضوح. دائمًا لديك خطة وخطوة محكمة.",
-                ENTP: "أنت بارع ونشيط الفضول، مناظِر بالفطرة. تستمتع بالتحدي والتجديد.",
-                ENFJ: "لديك تعاطف وقدرة على إلهام الآخرين، تجلب روحًا إيجابية للمجموعة. الناس يشعرون بالأمان حولك.",
-                ENTJ: "جريء وواثق من نفسه، أنت قائد رؤيوي يقود النتائج.",
-                INTP: "منطقي ومبدع، تحب حل المشكلات المعقدة واستكشاف الآليات.",
-                ISTP: "هين ومهني، تعالج الأمور بسرعة وتركز على اللحظة الحالية. عملي وكفء.",
-                ISFP: "هادئ وفني، تجد الجمال في كل شيء. روح هادئة ذات قدر إبداعي.",
-                ISTJ: "موثوق ودقيق، تنجز الأمور بشكل مضمون. الناس يثقون بك ويعتمدون عليك.",
-                ISFJ: "حكيم ومهتم، تدعم الآخرين بقوة هادئة. تهتم دائمًا بمشاعر الآخرين.",
-                ESTP: "نشط وجريء، تحب المغامرة وتستمتع بالإثارة. بارع في الابتكار والتحرك.",
-                ESFP: "مليء بالحيوية وتحب المرح، أنت نجم الحفلة. تستمتع بالحياة بكل ألوانها!",
-                ESTJ: "أنت منظم وقوي الدفع، ترتب الفوضى وتحب إدارة الأمور والقيادة.",
-                ESFJ: "دافئ ومخلص، تهتم باحتياجات الجميع. تقدم الدعم الحقيقي في كل مجتمع."
-            };
-
-            const resultCount = {
-                E: 0,
-                I: 0,
-                S: 0,
-                N: 0,
-                T: 0,
-                F: 0,
-                J: 0,
-                P: 0
-            };
-            let index = 0;
-
-            function showQuestion() {
-                const quizCard = document.getElementById("quiz");
-                quizCard.classList.remove("show");
-                setTimeout(() => {
-                    const q = questions[index];
-                    document.getElementById("question").innerText = q.q;
-                    document.getElementById("progress").innerText = `السؤال ${index + 1} / ${questions.length}`;
-                    const options = document.getElementById("options");
-                    options.innerHTML = "";
-                    q.a.forEach((text, i) => {
-                        const btn = document.createElement("button");
-                        btn.className = "option";
-                        btn.innerText = text;
-                        btn.onclick = () => {
-                            resultCount[q.t[i]]++;
-                            index++;
-                            if (index < questions.length) {
-                                showQuestion();
-                            } else {
-                                showResult();
-                            }
-                        };
-                        options.appendChild(btn);
-                    });
-                    quizCard.classList.add("show");
-                }, 200);
-            }
-
-            function showResult() {
-                const resultCard = document.getElementById("result");
-                resultCard.classList.remove("show");
-                setTimeout(() => {
-                    document.getElementById("quiz").style.display = "none";
-                    const mbti =
-                        (resultCount.E >= resultCount.I ? "E" : "I") +
-                        (resultCount.S >= resultCount.N ? "S" : "N") +
-                        (resultCount.T >= resultCount.F ? "T" : "F") +
-                        (resultCount.J >= resultCount.P ? "J" : "P");
-                    const emojiMap = {
-                        ENFP: "💡🌈",
-                        INFP: "🌱📖",
-                        INFJ: "🧘‍♀️✨",
-                        INTJ: "🧠🛰️",
-                        ENTP: "🌀🎤",
-                        ENFJ: "🌟🤝",
-                        ENTJ: "📊🚀",
-                        INTP: "🔬🧩",
-                        ISTP: "🔧🛠️",
-                        ISFP: "🎨🎵",
-                        ISTJ: "📚🔒",
-                        ISFJ: "🧸🍪",
-                        ESTP: "🎮🚗",
-                        ESFP: "🎉📸",
-                        ESTJ: "📏📣",
-                        ESFJ: "🍰💬"
-                    };
-                    const emoji = emojiMap[mbti] || "✨";
-                    document.getElementById("mbti-type").innerText = `${mbti} ${emoji}`;
-                    document.getElementById("mbti-description").innerText =
-                        descriptions[mbti] || "لم يتم العثور على وصف.";
-                    resultCard.className = "card fade mbti-bg-" + mbti;
-                    resultCard.style.display = "block";
-                    requestAnimationFrame(() => resultCard.classList.add("show"));
-                }, 300);
-            }
-
-            function shareResult() {
-                const mbti = document.getElementById("mbti-type").innerText;
-                const text = `📌 نوع شخصيتي حسب MBTI هو ${mbti}!\n\nجرب الاختبار بنفسك!`;
-                if (navigator.share) {
-                    navigator
-                        .share({
-                            title: "نتيجة MBTI",
-                            text: text,
-                            url: window.location.href
-                        })
-                        .catch((err) => console.log("فشل المشاركة:", err));
-                } else {
-                    navigator.clipboard
-                        .writeText(text)
-                        .then(() => alert("تم نسخ النتيجة إلى الحافظة!"))
-                        .catch(() => alert("فشل النسخ. الرجاء نسخه يدويًا."));
-                }
-            }
-
-            showQuestion();
-        </script>
-        <button class="menu" onclick="goToMain()">📂 ألعاب أخرى</button>
-        <script>
-            function goToMain() {
-                window.location.href = "/"; 
-            }
-        </script>
-        <section
-            style="
-                max-width: 320px;
-                width: 100%;
-                margin: 48px auto 24px auto;
-                font-family: 'Arial', sans-serif;
-                font-size: 14px;
-                background: #1e1e1e;
-                border-radius: 18px;
-                box-shadow: 0 6px 24px #1236;
-                padding: 20px;
-                line-height: 1.6;
-                color: #f0f0f0;
-            ">
-            <h2 style="font-size: 1.4rem; margin-bottom: 14px; color: #6a72f8">❓ الأسئلة الشائعة</h2>
-
-            <div style="margin-bottom: 12px">
-                <strong>س1. ما هذا الاختبار؟</strong><br />
-                ج: إنه اختبار قائم على المتصفح مكوّن من 16 سؤالًا تستند إلى سيناريوهات حقيقية لمساعدتك في اكتشاف نوع شخصيتك MBTI بسرعة ومتعة.
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <strong>س2. كم عدد الأسئلة؟</strong><br />
-                ج: يتكون الاختبار من 16 سؤالًا استنادًا إلى مواقف لمساعدتك في تحديد نوع شخصيتك.
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <strong>س3. هل هذا الاختبار دقيق علميًا؟</strong><br />
-                ج: يعتمد على نظرية MBTI كنموذج، ولكنه يُقدّم بشكل ترفيهي ولغرض فهم الذات بشكل عام.
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <strong>س4. هل يمكنني إعادة الاختبار مرة أخرى؟</strong><br />
-                ج: نعم! اضغط على زر "مرة أخرى" في شاشة النتائج لتعيد الاختبار.
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <strong>س5. كيف يمكنني مشاركة النتيجة؟</strong><br />
-                ج: اضغط على زر "مشاركة النتيجة" لاستخدام خيارات المشاركة في جهازك لنسخ أو نشر النتيجة.
-            </div>
-
-            <div style="margin-bottom: 0">
-                <strong>س6. هل يمكن تشغيل اللعبة على الهاتف المحمول؟</strong><br />
-                ج: بالتأكيد! يعمل بشكل مثالي على كل من سطح المكتب والهواتف المحمولة.
-            </div>
-        </section>
-    </body>
-</html>

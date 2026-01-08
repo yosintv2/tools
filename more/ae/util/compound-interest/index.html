@@ -1,462 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>حاسبة الفائدة المركبة مقابل البسيطة (بما في ذلك الإيداع الشهري)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google tag (gtag.js) -->
-    <!-- Google AdSense -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-      crossorigin="anonymous"></script>
-    <!-- SEO & Social meta -->
-    <meta
-      name="description"
-      content="قارن نمو الفائدة المركبة والفائدة البسيطة بإضافة الإيداع الشهري. يمكنك مشاهدة النتائج فوراً في جدول ورسم بياني تفاعلي." />
-    <meta
-      name="keywords"
-      content="فائدة مركبة, فائدة بسيطة, إيداع شهري, حاسبة, مالي, استثمار, ادخار, حاسبة على الإنترنت, مقارنة, رسم بياني" />
-    <meta name="author" content="Itagi" />
-    <meta name="language" content="ar" />
-    <meta name="theme-color" content="#1875d1" />
-    <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/compound-interest/" />
-    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
-    <!-- Open Graph -->
-    <meta property="og:title" content="حاسبة الفائدة المركبة الشهرية" />
-    <meta
-      property="og:description"
-      content="قارن الفائدة المركبة والفائدة البسيطة بإضافة الإيداع الشهري. شاهد النتائج فوراً. مجاني ويعمل في المتصفح." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/compound-interest/" />
-    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="حاسبة الفائدة المركبة مقابل البسيطة (بما في ذلك الإيداع الشهري)" />
-    <meta
-      name="twitter:description"
-      content="حاسبة لمقارنة نمو الفائدة المركبة والفائدة البسيطة مع الإيداع الشهري. نتائج فورية." />
-    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <style>
-      :root {
-        --main: #1875d1;
-        --main-dark: #0e4775;
-        --bg: #f8faff;
-      }
-      body {
-        background: var(--bg);
-        margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        color: #234;
-      }
-      .container {
-        max-width: 480px;
-        margin: 42px auto 0 auto;
-        background: #fff;
-        border-radius: 18px;
-        box-shadow: 0 4px 22px #1875d133;
-        padding: 30px 18px 22px 18px;
-      }
-      .logo {
-        font-size: 1.25em;
-        font-weight: bold;
-        text-align: center;
-        color: var(--main-dark);
-        margin-bottom: 10px;
-      }
-      .desc {
-        text-align: center;
-        color: #1e589e;
-        margin-bottom: 17px;
-        font-size: 1.04em;
-      }
-      .form-row {
-        margin-bottom: 13px;
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-      }
-      .form-row label {
-        font-size: 1em;
-        color: #186a9a;
-        font-weight: 500;
-      }
-      .form-row input,
-      .form-row select {
-        padding: 8px 10px;
-        font-size: 1.05em;
-        border: 1.1px solid #b6d5ef;
-        border-radius: 7px;
-        background: #fafdff;
-        color: #234;
-      }
-      .action-btn {
-        background: var(--main);
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        padding: 13px 0;
-        width: 100%;
-        font-size: 1.13em;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 9px;
-        margin-bottom: 13px;
-        box-shadow: 0 2px 12px #1875d120;
-        transition: background 0.15s;
-      }
-      .action-btn:active { background: var(--main-dark); }
-      .result-block {
-        background: #f7fafd;
-        border: 1.2px solid #c2e1fa;
-        border-radius: 9px;
-        padding: 18px 13px 12px 13px;
-        margin-bottom: 7px;
-        color: #1975be;
-        font-size: 1.11em;
-        text-align: center;
-      }
-      .footer {
-        color: #789;
-        text-align: center;
-        font-size: 0.93em;
-        margin-top: 16px;
-      }
-      #backBtn {
-        position: fixed;
-        left: 50%;
-        bottom: 32px;
-        transform: translateX(-50%);
-        background: #1875d1;
-        color: #fff;
-        font-weight: 700;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.58em 1.5em;
-        box-shadow: 0 4px 16px #1875d133;
-        font-size: 1.09em;
-        text-decoration: none;
-        cursor: pointer;
-        letter-spacing: 0.01em;
-        transition: background 0.15s, transform 0.12s;
-        z-index: 2000;
-      }
-      #backBtn:hover { background: #0e4775; transform: translateX(-50%) scale(1.04); }
-      @media (max-width: 600px) {
-        .container { max-width: 99vw; padding: 12px 2vw 14px 2vw; }
-        #backBtn { bottom: 18px; font-size: 0.98em; padding: 0.48em 1em; }
-      }
-      .table-block { margin: 15px 0 8px 0; overflow-x: auto; }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 0.98em;
-        background: #fff;
-      }
-      th, td {
-        border: 1px solid #e3ecf8;
-        padding: 5px 8px;
-        text-align: right;
-      }
-      th {
-        background: #e9f3ff;
-        color: #1975be;
-        font-weight: 600;
-      }
-      td.year {
-        text-align: center;
-        color: #1975be;
-        font-weight: 500;
-      }
-      .legend {
-        text-align: right;
-        font-size: 0.98em;
-        margin: 5px 0 0 0;
-      }
-      .legend span {
-        display: inline-block;
-        width: 14px;
-        height: 11px;
-        margin-right: 5px;
-        border-radius: 3px;
-        vertical-align: middle;
-      }
-      /* Chart */
-      #chart {
-        width: 100%;
-        max-width: 450px;
-        height: 230px;
-        background: #fafdff;
-        border-radius: 13px;
-        margin: 16px auto 7px auto;
-        box-shadow: 0 1px 8px #1875d118;
-        display: block;
-      }
-      section#faq { margin-top: 30px; }
-      section#faq h2 { margin-bottom: 13px; color: #1875d1; font-size: 1.11em; text-align: center; }
-      section#faq dt { font-weight: bold; margin-top: 8px; }
-      section#faq dd { margin: 0 0 7px 0; font-size: 0.99em; color: #1e589e; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="container" itemscope itemtype="https://schema.org/WebApplication">
-        <h1 class="logo" itemprop="name">📈 حاسبة الفائدة المركبة مقابل البسيطة</h1>
-        <p class="desc" itemprop="description">
-          يمكنك مقارنة نمو الفائدة المركبة والفائدة البسيطة فوراً.<br />
-          تدعم الإيداع الشهري أو الإيداع لمرة واحدة كرأس مال.
-        </p>
-        <form id="form" autocomplete="off">
-          <div class="form-row">
-            <label for="principal">الرأس المال ($)</label>
-            <input type="number" id="principal" min="0" step="0.01" value="10000" required />
-          </div>
-          <div class="form-row">
-            <label for="monthly">الإيداع الشهري ($)</label>
-            <input type="number" id="monthly" min="0" step="0.01" value="500" required />
-          </div>
-          <div class="form-row">
-            <label for="rate">معدل الفائدة السنوي (%)</label>
-            <input type="number" id="rate" min="0" step="0.01" value="5.00" required />
-          </div>
-          <div class="form-row">
-            <label for="years">المدة (سنوات)</label>
-            <input type="number" id="years" min="1" step="1" value="10" required />
-          </div>
-          <div class="form-row">
-            <label for="freq">تواتر التراكم</label>
-            <select id="freq">
-              <option value="1">مرة في السنة</option>
-              <option value="2">نصف سنوي</option>
-              <option value="4">ربع سنوي</option>
-              <option value="12" selected>شهرياً</option>
-              <option value="365">يوميًا</option>
-            </select>
-          </div>
-          <button type="submit" class="action-btn">احسب</button>
-        </form>
-        <div class="result-block" id="result"></div>
-        <canvas id="chart" width="420" height="230"></canvas>
-        <div class="legend">
-          <span style="background:#1975be"></span> الفائدة المركبة &nbsp;
-          <span style="background:#fc8642"></span> الفائدة البسيطة
-        </div>
-        <div class="table-block" id="tableBlock"></div>
-        <div class="footer">
-          يقدم مقارنة بين الفائدة المركبة والفائدة البسيطة مع الإيداع الشهري.<br />
-          يعمل 100% في المتصفح دون الحاجة لتسجيل أو إرسال بيانات.
-        </div>
-        <!-- FAQ セクション (SEO/SGE 用) -->
-        <section aria-labelledby="faq-head" id="faq">
-          <h2 id="faq-head">الأسئلة الشائعة – حاسبة الفائدة المركبة مقابل البسيطة</h2>
-          <dl>
-            <dt>ما الفرق بين الفائدة المركبة والفائدة البسيطة؟</dt>
-            <dd>الفائدة المركبة تُضاف على رأس المال والفوائد المترتبة سابقًا. الفائدة البسيطة تُضاف فقط على رأس المال الأصلي.</dd>
-            <dt>هل يمكن إضافة الإيداع الشهري؟</dt>
-            <dd>نعم، يمكنك إضافة مبلغ شهري ثابت. النتائج ستشمل الإيداع الشهري لكل من الفائدة المركبة والبسيطة.</dd>
-            <dt>ما هو أفضل تواتر للتراكم؟</dt>
-            <dd>كلما زاد تواتر التراكم (مثل مرة شهرية أو يومية)، قد يزداد العائد الإجمالي على المدى الطويل.</dd>
-            <dt>هل يتم رفع البيانات أو حفظها؟</dt>
-            <dd>لا. تتم جميع العمليات محليًا في المتصفح دون رفع أو حفظ المعلومات المالية.</dd>
-            <dt>هل الحاسبة مجانية؟</dt>
-            <dd>نعم، مجانية 100% ويمكن استخدامها على أجهزة الكمبيوتر والهواتف المحمولة.</dd>
-          </dl>
-        </section>
-      </div>
-    </main>
-    <a href="../" id="backBtn">أدوات أخرى</a>
-    <script>
-      const form = document.getElementById('form');
-      const result = document.getElementById('result');
-      const tableBlock = document.getElementById('tableBlock');
-      const chart = document.getElementById('chart');
-      const ctx = chart.getContext('2d');
-
-      function formatMoney(v) {
-        return '$' + Number(v).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
-      }
-      // حساب الفائدة المركبة مع الإيداع الشهري
-      function compoundWithDeposit(P, PMT, r, n, t) {
-        let periods = n * t;
-        let i = r / n;
-        let fvP = P * Math.pow(1 + i, periods);
-        let fvPMT = PMT > 0 ? PMT * ((Math.pow(1 + i, periods) - 1) / i) * (i > 0 ? 1 : 0) : 0;
-        if (n !== 12 && PMT > 0) {
-          let m_per_period = 12 / n;
-          let fvPMT_adj = 0;
-          for (let k = 1; k <= periods; k++) {
-            fvPMT_adj += PMT * Math.pow(1 + r / n, periods - k + 1) * (m_per_period > 1 ? m_per_period : 1);
-          }
-          fvPMT = fvPMT_adj;
-        }
-        return fvP + fvPMT;
-      }
-      // حساب الفائدة البسيطة مع الإيداع الشهري
-      function simpleWithDeposit(P, PMT, r, t) {
-        let fvP = P * (1 + r * t);
-        let fvPMT = PMT * 12 * t;
-        let interestPMT = fvPMT * r * t / 2;
-        return fvP + fvPMT + interestPMT;
-      }
-
-      function drawChart(years, compVals, simpVals) {
-        ctx.clearRect(0, 0, chart.width, chart.height);
-        let allVals = compVals.concat(simpVals);
-        let maxV = Math.max(...allVals) * 1.04;
-        let minV = Math.min(...allVals);
-        let W = chart.width - 40, H = chart.height - 35, ox = 35, oy = 18;
-        // رسم المحاور
-        ctx.strokeStyle = "#b3cae7";
-        ctx.lineWidth = 1.2;
-        ctx.beginPath();
-        ctx.moveTo(ox, oy); ctx.lineTo(ox, oy+H); ctx.lineTo(ox+W, oy+H);
-        ctx.stroke();
-        // تسميات المحور الصادي (Y)
-        ctx.fillStyle = "#3773b5";
-        ctx.font = "11px Segoe UI, Arial";
-        for (let i = 0; i <= 4; i++) {
-          let v = maxV - (maxV-minV)*i/4;
-          let y = oy + H * i/4;
-          ctx.fillText(formatMoney(v), 2, y+4);
-        }
-        // تسميات المحور السيني (X)
-        ctx.fillStyle = "#777";
-        for (let y = 1; y <= years; y++) {
-          let x = ox + (W) * (y-1) / (years-1);
-          ctx.fillText(y, x-4, oy+H+17);
-        }
-        // دالة رسم الخطوط
-        function drawLine(data, color) {
-          ctx.strokeStyle = color;
-          ctx.lineWidth = 2.7;
-          ctx.beginPath();
-          for (let y = 1; y <= years; y++) {
-            let val = data[y-1];
-            let px = ox + (W) * (y-1) / (years-1);
-            let py = oy + H - ((val - minV) / (maxV-minV)) * H;
-            if (y === 1) ctx.moveTo(px, py);
-            else ctx.lineTo(px, py);
-          }
-          ctx.stroke();
-          // رسم النقاط
-          ctx.fillStyle = color;
-          for (let y = 1; y <= years; y++) {
-            let val = data[y-1];
-            let px = ox + (W) * (y-1) / (years-1);
-            let py = oy + H - ((val - minV) / (maxV-minV)) * H;
-            ctx.beginPath(); ctx.arc(px, py, 3.1, 0, Math.PI*2); ctx.fill();
-          }
-        }
-        // ترسيم خطوط الفائدة المركبة والبسيطة
-        drawLine(compVals, "#1975be");
-        drawLine(simpVals, "#fc8642");
-      }
-
-      form.onsubmit = function(e) {
-        e.preventDefault();
-        let P = parseFloat(form.principal.value);
-        let PMT = parseFloat(form.monthly.value);
-        let r = parseFloat(form.rate.value) / 100;
-        let t = parseInt(form.years.value);
-        let n = parseInt(form.freq.value);
-        if (isNaN(P) || isNaN(PMT) || isNaN(r) || isNaN(t) || isNaN(n) || P < 0 || PMT < 0 || r < 0 || t < 1) {
-          result.innerHTML = '<span style="color:#d33;">يرجى إدخال قيم صحيحة.</span>';
-          tableBlock.innerHTML = '';
-          ctx.clearRect(0,0,chart.width,chart.height);
-          return;
-        }
-        // حساب لكل سنة
-        let compArr = [], simpArr = [];
-        for(let y=1; y<=t; y++) {
-          compArr.push(compoundWithDeposit(P, PMT, r, n, y));
-          simpArr.push(simpleWithDeposit(P, PMT, r, y));
-        }
-        // عرض القيم النهائية
-        let FV = compArr[t-1], FVsimple = simpArr[t-1];
-        let totalPaid = P + PMT*12*t;
-        let interest = FV - totalPaid, interestSimple = FVsimple - totalPaid;
-        result.innerHTML =
-          `<b>الفائدة المركبة:</b> <span style="color:#1975be">${formatMoney(FV)}</span> (إجمالي الفائدة: <b>${formatMoney(interest)}</b>)<br>
-           <b>الفائدة البسيطة:</b> <span style="color:#fc8642">${formatMoney(FVsimple)}</span> (إجمالي الفائدة: <b>${formatMoney(interestSimple)}</b>)<br>
-           <span style="color:#888;">إجمالي المبالغ المدفوعة: ${formatMoney(totalPaid)}</span>`;
-        // إنشاء جدول القيم السنوية
-        let rows = '';
-        for(let y=1; y<=t; y++) {
-          rows += `<tr>
-            <td class="year">${y}</td>
-            <td>${formatMoney(compArr[y-1])}</td>
-            <td>${formatMoney(simpArr[y-1])}</td>
-            <td>${formatMoney(compArr[y-1] - (P + PMT*12*y))}</td>
-            <td>${formatMoney(simpArr[y-1] - (P + PMT*12*y))}</td>
-          </tr>`;
-        }
-        tableBlock.innerHTML =
-          `<table>
-            <thead>
-              <tr>
-                <th>السنة</th>
-                <th>قيمة المركبة</th>
-                <th>قيمة البسيطة</th>
-                <th>فائدة مركبة</th>
-                <th>فائدة بسيطة</th>
-              </tr>
-            </thead>
-            <tbody>${rows}</tbody>
-          </table>`;
-        // رسم الرسم البياني
-        drawChart(t, compArr, simpArr);
-      };
-      // حساب أولي
-      form.onsubmit(new Event('submit'));
-    </script>
-    <!-- FAQPage Schema for SGE/GEO/SEO Rich Results -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "ما الفرق بين الفائدة المركبة والفائدة البسيطة؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "الفائدة المركبة تُضاف على رأس المال والفوائد المتراكمة سابقًا، بينما الفائدة البسيطة تُضاف فقط على رأس المال الأصلي."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل يمكن إضافة الإيداع الشهري؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نعم، يمكنك إضافة مبلغ شهري ثابت. التحليل سيشمل الإيداع الشهري في كلا الحالتين."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما هو أفضل تواتر للتراكم؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "كلما زاد تواتر التراكم (مثل تراكم شهري أو يومي)، قد يزيد العائد الإجمالي على المدى الطويل."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل يتم رفع البيانات أو حفظها؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "لا. جميع العمليات تتم محليًا في المتصفح دون رفع أو حفظ معلوماتك المالية."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل هذه الحاسبة مجانية؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نعم، مجانية 100% ويمكن استخدامها على أجهزة الكمبيوتر والهواتف المحمولة."
-          }
-        }
-      ]
-    }
-    </script>
-  </body>
-</html>

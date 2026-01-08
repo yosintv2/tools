@@ -1,292 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>أداة تلخيص النص – اختصر النصوص الطويلة بسرعة!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="اختصر المقالات أو التقارير أو المقالات الطويلة بسهولة. مجاني، يحافظ على الخصوصية، ويعمل مباشرةً في المتصفح!" />
-    <meta
-      name="keywords"
-      content="تلخيص النص، اختصار النص، تلخيص تلقائي، تلخيص المقال، مجاني، عبر الإنترنت، المتصفح، بدون رفع" />
-    <meta name="author" content="Itagi" />
-    <meta name="language" content="ar" />
-    <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/textsummarizer/" />
-    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
-    <meta property="og:title" content="أداة تلخيص النص – اختصر النصوص الطويلة بسرعة!" />
-    <meta
-      property="og:description"
-      content="اختصر المقالات أو الوثائق أو المقالات الطويلة فورًا. دون رفع، مجاني، ويحافظ على الخصوصية." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/textsummarizer/" />
-    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="أداة تلخيص النص – اختصر النصوص الطويلة بسرعة!" />
-    <meta name="twitter:description" content="اختصر المقالات أو التقارير أو المقالات الطويلة بسهولة في المتصفح." />
-    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <!-- Google Tag (gtag.js) -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-      crossorigin="anonymous"></script>
-    <style>
-      body {
-        background: #f7fcff;
-        font-family: "Segoe UI", Arial, sans-serif;
-        margin: 0;
-        color: #223;
-        direction: rtl;
-      }
-      .container {
-        max-width: 420px;
-        margin: 30px auto 0 auto;
-        background: #fff;
-        border-radius: 18px;
-        box-shadow: 0 4px 22px #117c9a28;
-        padding: 22px 13px 18px 13px;
-      }
-      .logo {
-        font-size: 1.25em;
-        text-align: center;
-        color: #117c9a;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .desc {
-        text-align: center;
-        color: #127080;
-        margin-bottom: 15px;
-        font-size: 1.07em;
-      }
-      textarea {
-        width: 100%;
-        min-height: 110px;
-        border: 1.2px solid #b9eaf8;
-        border-radius: 8px;
-        padding: 12px;
-        font-size: 1.09em;
-        background: #fafdff;
-        margin-bottom: 11px;
-        font-family: inherit;
-        direction: rtl;
-        text-align: right;
-      }
-      .input-row {
-        margin-bottom: 8px;
-        text-align: right;
-      }
-      .slider-label {
-        color: #19788a;
-        font-size: 1.03em;
-        margin-left: 8px;
-      }
-      #summaryLength {
-        vertical-align: middle;
-      }
-      #lengthVal {
-        margin-right: 6px;
-        color: #127080;
-      }
-      .action-btn {
-        width: 100%;
-        background: #117c9a;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.17em;
-        font-weight: bold;
-        padding: 12px 0;
-        margin: 11px 0 10px 0;
-        cursor: pointer;
-      }
-      .action-btn:active {
-        background: #09506d;
-      }
-      .output-box {
-        min-height: 52px;
-        background: #f7fcff;
-        border: 1.1px solid #b2e0ee;
-        border-radius: 8px;
-        font-size: 1.07em;
-        padding: 12px 10px 10px 12px;
-        white-space: pre-wrap;
-        direction: rtl;
-        text-align: right;
-      }
-      .footer {
-        color: #789;
-        text-align: center;
-        font-size: 0.93em;
-        margin-top: 14px;
-        direction: ltr;
-      }
-      #backBtn {
-        position: fixed;
-        left: 50%;
-        bottom: 32px;
-        transform: translateX(-50%);
-        background: #117c9a;
-        color: #fff;
-        font-weight: 700;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.58em 1.5em;
-        box-shadow: 0 4px 16px #117c9a22;
-        font-size: 1.09em;
-        text-decoration: none;
-        cursor: pointer;
-        letter-spacing: 0.01em;
-        transition:
-          background 0.15s,
-          transform 0.12s;
-        z-index: 2000;
-      }
-      #backBtn:hover {
-        background: #09506d;
-        transform: translateX(-50%) scale(1.04);
-      }
-      @media (max-width: 600px) {
-        .container {
-          max-width: 99vw;
-          padding: 10px 2vw 13px 2vw;
-        }
-        #backBtn {
-          bottom: 18px;
-          font-size: 0.98em;
-          padding: 0.48em 1em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="logo">📝 أداة تلخيص النص</div>
-      <div class="desc">
-        ألصق نصًّا طويلًا أو مقالًا في المربع أدناه.<br />
-        اضغط <b>تلخيص</b> لتحصل على مختصر سريع!
-      </div>
-      <textarea id="inputText" placeholder="أدخل النص الطويل هنا..."></textarea>
-      <div class="input-row">
-        <label class="slider-label" for="summaryLength">عدد الجمل في الملخص:</label>
-        <input type="range" min="1" max="10" value="3" id="summaryLength" />
-        <span id="lengthVal">3</span> جمل
-      </div>
-      <button class="action-btn" id="summarizeBtn">تلخيص</button>
-      <div class="output-box" id="summaryResult" style="margin-top: 8px"></div>
-      <div class="footer">
-        كل المعالجة تجري محليًا داخل المتصفح. <b>بدون رفع</b>، مجاني ويضمن الخصوصية.<br />
-        <span style="color: #127080">نصيحة: جرّبها على الأخبار أو ويكيبيديا أو أي نص طويل تريد تلخيصه!</span>
-      </div>
-    </div>
-    <a href="../" id="backBtn">أدوات أخرى</a>
-    <script>
-      const inputText = document.getElementById("inputText");
-      const summaryResult = document.getElementById("summaryResult");
-      const summarizeBtn = document.getElementById("summarizeBtn");
-      const summaryLength = document.getElementById("summaryLength");
-      const lengthVal = document.getElementById("lengthVal");
-
-      summaryLength.oninput = function () {
-        lengthVal.textContent = summaryLength.value;
-      };
-
-      // تلخيص بسيط يعتمد على تكرار الكلمات (دون استخدام الذكاء الاصطناعي)
-      function summarize(text, numSentences = 3) {
-        if (!text.trim()) return "الرجاء لصق النص في الأعلى ثم الضغط على \"تلخيص\".";
-        // تقسيم النص إلى جمل
-        const sentences = text.match(/[^\.!\?]+[\.!\?]+/g) || [text];
-        if (sentences.length <= numSentences) return text;
-        // حساب تكرار الكلمات
-        const freq = {};
-        const words = text
-          .replace(/[^\w\s]/g, "")
-          .toLowerCase()
-          .split(/\s+/);
-        words.forEach((w) => {
-          if (w.length > 2) freq[w] = (freq[w] || 0) + 1;
-        });
-        // احتساب درجة كل جملة بناءً على تكرار الكلمات فيها
-        const scored = sentences.map((s) => {
-          const sw = s
-            .replace(/[^\w\s]/g, "")
-            .toLowerCase()
-            .split(/\s+/);
-          let score = 0;
-          sw.forEach((w) => {
-            if (freq[w]) score += freq[w];
-          });
-          return { sentence: s.trim(), score };
-        });
-        // اختيار أعلى الجمل ترتيبًا ثم إرجاعها بترتيبها الأصلي
-        const top = scored
-          .sort((a, b) => b.score - a.score)
-          .slice(0, numSentences)
-          .sort(
-            (a, b) =>
-              sentences.indexOf(a.sentence + ".") - sentences.indexOf(b.sentence + ".")
-          );
-        return top.map((t) => t.sentence).join(" ");
-      }
-
-      summarizeBtn.onclick = function () {
-        const text = inputText.value;
-        const num = parseInt(summaryLength.value, 10);
-        const summary = summarize(text, num);
-        summaryResult.textContent = summary;
-      };
-    </script>
-    <section
-      style="
-        max-width: 320px;
-        margin: 48px auto 24px auto;
-        background: #1e1e1e;
-        border-radius: 18px;
-        box-shadow: 0 6px 24px #1236;
-        padding: 24px;
-        font-family: Arial, sans-serif;
-        color: #f0f0f0;
-        direction: rtl;
-        text-align: right;
-      ">
-      <div style="color: #8f94fb; font-size: 1.1em; font-weight: bold; margin-bottom: 14px">
-        ❓ الأسئلة الشائعة – أداة تلخيص النص
-      </div>
-
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">هل تستخدم هذه الأداة الذكاء الاصطناعي أو ChatGPT؟</div>
-        <div style="color: #f0f0f0">
-          لا. تعتمد على خوارزمية بسيطة لحساب تكرار الكلمات. سريعة وتحافظ على الخصوصية لكنها ليست بمستوى الذكاء الاصطناعي.
-        </div>
-      </div>
-
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">هل يتم رفع أو حفظ نصّي؟</div>
-        <div style="color: #f0f0f0">
-          لا. تتم كل العمليات داخل المتصفح فقط، ولا يُرسل أي نص للخادم.
-        </div>
-      </div>
-
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">ما اللغات المدعومة؟</div>
-        <div style="color: #f0f0f0">
-          الأداة مصممة أساسًا للغة الإنجليزية. قد تعمل على لغات أخرى لكن النتائج قد تختلف.
-        </div>
-      </div>
-
-      <div style="margin-bottom: 12px">
-        <div style="color: #8f94fb; font-weight: bold">ما مدى دقة الملخص؟</div>
-        <div style="color: #f0f0f0">
-          تقوم باختيار الجمل ذات الكلمات الأكثر تكرارًا. بسيطة لكنها مفيدة لفهم الفكرة العامة بسرعة.
-        </div>
-      </div>
-
-      <div style="margin-bottom: 0">
-        <div style="color: #8f94fb; font-weight: bold">في أي مواقف يمكنني استخدامها؟</div>
-        <div style="color: #f0f0f0">
-          تلخيص الأخبار أو المدونات أو الأوراق البحثية أو أي نص طويل يحتاج إلى عقدة سريعة.
-        </div>
-      </div>
-    </section>
-  </body>
-</html>

@@ -1,313 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>أداة خلط وترتيب النص – عشوائي، تصاعدي، تنازلي</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta
-      name="description"
-      content="في المتصفح، يمكنك خلط أسطر النص عشوائيًا أو ترتيبها تصاعديًا / تنازليًا على الفور! مثالي لقوائمك ونصوصك وأدوات الدراسة. بدون رفع، 100٪ خصوصية محفوظة." />
-    <meta
-      name="keywords"
-      content="خلط النص، ترتيب النص، تنازلي، تصاعدي، فرز الأسطر، المتصفح، مجاني، فرز نص، خلط عشوائي، عكس الترتيب، فواصل السطر" />
-    <meta name="author" content="Itagi" />
-    <meta name="language" content="ar" />
-    <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/text-shuffle-sort/" />
-    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
-    <!-- Open Graph / Twitter -->
-    <meta property="og:title" content="أداة خلط وترتيب النص – عشوائي، تصاعدي، تنازلي" />
-    <meta
-      property="og:description"
-      content="قم بخلط قائمة الأسطر أو ترتيبها تصاعديًا/تنازليًا فورًا. سريع، مجاني، ويحافظ على الخصوصية. كل المعالجة تتم داخل المتصفح." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/text-shuffle-sort/" />
-    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="أداة خلط وترتيب النص – عشوائي، تصاعدي، تنازلي" />
-    <meta
-      name="twitter:description"
-      content="خلط أسطر النص، ترتيبها تصاعديًا، أو تنازليًا بسهولة! جميع العمليات تتم داخل المتصفح." />
-    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-      crossorigin="anonymous"></script>
-    <style>
-      :root {
-        --main: #4671e8;
-        --main-dark: #29519b;
-        --bg: #f7f9fd;
-      }
-      body {
-        background: var(--bg);
-        margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        color: #222;
-        direction: rtl;
-      }
-      .container {
-        max-width: 430px;
-        margin: 38px auto 0 auto;
-        background: #fff;
-        border-radius: 17px;
-        box-shadow: 0 4px 22px #4671e824;
-        padding: 29px 17px 22px 17px;
-      }
-      .logo {
-        font-size: 1.22em;
-        font-weight: bold;
-        text-align: center;
-        color: var(--main-dark);
-        margin-bottom: 8px;
-      }
-      .desc {
-        text-align: center;
-        color: #315ba7;
-        margin-bottom: 15px;
-        font-size: 1.03em;
-      }
-      textarea {
-        width: 100%;
-        min-height: 140px;
-        font-size: 1.09em;
-        border: 1.2px solid #a4c9fa;
-        border-radius: 9px;
-        padding: 12px;
-        background: #fafdff;
-        color: #222;
-        resize: vertical;
-        margin-bottom: 11px;
-        font-family: "Fira Mono", "Menlo", monospace;
-        transition: border 0.16s;
-        direction: rtl;
-        text-align: right;
-      }
-      textarea:focus {
-        border-color: var(--main);
-        outline: none;
-      }
-      .btn-row {
-        display: flex;
-        gap: 10px;
-        justify-content: space-between;
-        margin-bottom: 11px;
-      }
-      .action-btn {
-        background: var(--main);
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        padding: 10px 0;
-        font-size: 1.09em;
-        font-weight: bold;
-        cursor: pointer;
-        flex: 1;
-        transition: background 0.15s;
-        box-shadow: 0 2px 12px #4671e81a;
-      }
-      .action-btn:active,
-      .action-btn:hover {
-        background: var(--main-dark);
-      }
-      .mini-btn {
-        background: #e4eefc;
-        color: #2759b0;
-        border: none;
-        border-radius: 7px;
-        font-size: 1em;
-        padding: 7px 15px;
-        cursor: pointer;
-        transition: background 0.12s;
-        font-weight: 500;
-        margin-left: 5px;
-      }
-      .mini-btn:active {
-        background: #bad0f8;
-      }
-      .status-msg {
-        color: #41823c;
-        font-size: 0.98em;
-        text-align: left;
-        min-height: 18px;
-        margin-bottom: 2px;
-        opacity: 0.8;
-      }
-      .footer {
-        color: #789;
-        text-align: center;
-        font-size: 0.95em;
-        margin-top: 16px;
-        opacity: 0.9;
-        direction: ltr;
-      }
-      #backBtn {
-        position: fixed;
-        left: 50%;
-        bottom: 32px;
-        transform: translateX(-50%);
-        background: #4671e8;
-        color: #fff;
-        font-weight: 700;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.58em 1.5em;
-        box-shadow: 0 4px 16px #4671e833;
-        font-size: 1.09em;
-        text-decoration: none;
-        cursor: pointer;
-        letter-spacing: 0.01em;
-        transition:
-          background 0.15s,
-          transform 0.12s;
-        z-index: 2000;
-      }
-      #backBtn:hover {
-        background: #29519b;
-        transform: translateX(-50%) scale(1.04);
-      }
-      @media (max-width: 600px) {
-        .container {
-          max-width: 99vw;
-          padding: 12px 2vw 13px 2vw;
-        }
-        textarea {
-          font-size: 1em;
-        }
-        #backBtn {
-          bottom: 18px;
-          font-size: 0.98em;
-          padding: 0.48em 1em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="logo">🔀 أداة خلط وترتيب النص</div>
-      <div class="desc">
-        أدخل أو الصق نصًا متعدد الأسطر أدناه.<br />
-        يمكنك الخلط العشوائي أو الترتيب تصاعديًا أو تنازليًا فورًا!
-      </div>
-      <div class="status-msg" id="statusMsg"></div>
-      <textarea id="inputArea" placeholder="أدخل القائمة أو الصقها هنا (سطر لكل عنصر)..."></textarea>
-      <div class="btn-row">
-        <button class="action-btn" id="shuffleBtn">خلط</button>
-        <button class="action-btn" id="sortBtn">ترتيب تصاعدي (أ→ي)</button>
-        <button class="action-btn" id="reverseBtn">ترتيب تنازلي (ي→أ)</button>
-      </div>
-      <div style="text-align: left; margin-bottom: 10px">
-        <button class="mini-btn" id="copyBtn">نسخ</button>
-        <button class="mini-btn" id="clearBtn">مسح</button>
-      </div>
-      <div class="footer">
-        جميع المعالجة تتم داخل المتصفح. بدون رفع، 100٪ خصوصية محفوظة.<br />
-        <b>نصيحة:</b> استخدمها لإنشاء ترتيب عشوائي للاختبارات، بطاقات فلاش، تقسيم الطلاب عشوائيًا، أو عكس سجلاتك بسهولة!
-      </div>
-    </div>
-    <a href="../" id="backBtn">أدوات أخرى</a>
-    <script>
-      const inputArea = document.getElementById("inputArea");
-      const statusMsg = document.getElementById("statusMsg");
-
-      // خوارزمية Fisher-Yates للخلط
-      function shuffleArray(arr) {
-        for (let i = arr.length - 1; i > 0; i--) {
-          let j = Math.floor(Math.random() * (i + 1));
-          [arr[i], arr[j]] = [arr[j], arr[i]];
-        }
-        return arr;
-      }
-
-      document.getElementById("shuffleBtn").onclick = function () {
-        let lines = inputArea.value.split(/\r?\n/).filter((l) => l.trim().length > 0);
-        if (!lines.length) return;
-        shuffleArray(lines);
-        inputArea.value = lines.join("\n");
-        showStatus("تم الخلط!");
-      };
-
-      document.getElementById("sortBtn").onclick = function () {
-        let lines = inputArea.value.split(/\r?\n/).filter((l) => l.trim().length > 0);
-        if (!lines.length) return;
-        lines.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
-        inputArea.value = lines.join("\n");
-        showStatus("تم الترتيب تصاعديًا (أ→ي)!");
-      };
-
-      document.getElementById("reverseBtn").onclick = function () {
-        let lines = inputArea.value.split(/\r?\n/).filter((l) => l.trim().length > 0);
-        if (!lines.length) return;
-        lines.sort((a, b) => b.localeCompare(a, undefined, { sensitivity: "base" }));
-        inputArea.value = lines.join("\n");
-        showStatus("تم الترتيب تنازليًا (ي→أ)!");
-      };
-
-      document.getElementById("copyBtn").onclick = function () {
-        const val = inputArea.value;
-        if (!val) return;
-        navigator.clipboard.writeText(val);
-        showStatus("تم النسخ!");
-      };
-
-      document.getElementById("clearBtn").onclick = function () {
-        if (inputArea.value.length === 0) return;
-        if (confirm("هل تريد مسح جميع النص؟")) {
-          inputArea.value = "";
-          showStatus("تم المسح!");
-        }
-      };
-
-      function showStatus(msg) {
-        statusMsg.textContent = msg;
-        setTimeout(() => {
-          statusMsg.textContent = "";
-        }, 1200);
-      }
-    </script>
-    <section
-      style="
-        max-width: 320px;
-        margin: 48px auto 24px auto;
-        background: #1e1e1e;
-        border-radius: 18px;
-        box-shadow: 0 6px 24px #1236;
-        padding: 24px;
-        font-family: Arial, sans-serif;
-        color: #f0f0f0;
-        direction: rtl;
-        text-align: right;
-      ">
-      <div style="margin-bottom: 12px">
-        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">ما هي هذه الأداة؟</h3>
-        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
-          يمكنك خلط أسطر النص عشوائيًا أو ترتيبها تصاعديًا (أ→ي) أو تنازليًا (ي→أ) فورًا.
-        </p>
-      </div>
-      <div style="margin-bottom: 12px">
-        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">كيف أستخدمها؟</h3>
-        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
-          أدخل أو الصق النص متعدد الأسطر، ثم اضغط زر "خلط" أو "ترتيب تصاعدي" أو "ترتيب تنازلي". يمكنك بعد ذلك نسخ النتيجة أو مسحها.
-        </p>
-      </div>
-      <div style="margin-bottom: 12px">
-        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">هل تعمل دون اتصال؟</h3>
-        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
-          نعم. تتم جميع العمليات داخل المتصفح على الفور، ولا تحتاج إلى اتصال إنترنت أو رفع للنص.
-        </p>
-      </div>
-      <div style="margin-bottom: 12px">
-        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">هل النص آمن؟</h3>
-        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
-          تمامًا. لا يُرسل أي نص خارجًا؛ كل المعالجة تتم محليًا في المتصفح.
-        </p>
-      </div>
-      <div style="margin-bottom: 0">
-        <h3 style="color: #8f94fb; font-family: Arial, sans-serif">ما هي استخداماته؟</h3>
-        <p style="color: #f0f0f0; font-family: Arial, sans-serif">
-          يمكنك استخدامه لإنشاء اختبارات عشوائية، بطاقات فلاش تعليمية، تقسيم الطلاب عشوائيًا، عرض السجلات بترتيب عكسي، أو ترتيب قوائمك بسهولة.
-        </p>
-      </div>
-    </section>
-  </body>
-</html>

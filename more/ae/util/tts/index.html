@@ -1,389 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8" />
-        <title>تحويل النص إلى صوت (TTS) – أداة قراءة المستندات عبر الإنترنت</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="حوّل النصوص والمستندات والمقالات إلى صوت عالي الجودة وقم بتنزيلها كملف WAV. سريع ومجاني ومعالجة 100% داخل المتصفح. لا حاجة للتحميل، وضمان الخصوصية." />
-        <meta
-            name="keywords"
-            content="تحويل نص إلى صوت, TTS, قراءة المستندات, نص إلى صوت WAV, قراءة المقالات, TTS عبر الإنترنت, متصفح, مجاني, بدون تحميل" />
-        <meta name="author" content="Itagi" />
-        <meta name="language" content="ar" />
-        <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/tts/" />
-        <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
-        <!-- Open Graph / Twitter -->
-        <meta property="og:title" content="تحويل النص إلى صوت (TTS) – أداة قراءة المستندات عبر الإنترنت" />
-        <meta
-            property="og:description"
-            content="حوّل النصوص والمستندات والمقالات إلى صوت واستمع إليها أو قم بتنزيلها كملف WAV. كل المعالجة تتم داخل المتصفح، مجانًا وبدون تحميل." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/tts/" />
-        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="تحويل النص إلى صوت (TTS) – أداة قراءة المستندات عبر الإنترنت" />
-        <meta
-            name="twitter:description"
-            content="حوّل النصوص والمستندات والمقالات إلى صوت واستمع إليها أو قم بتنزيلها كملف WAV. جميع العمليات تتم محليًا داخل المتصفح، مجانًا وبدون تحميل." />
-        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
-            crossorigin="anonymous"></script>
-        <style>
-            :root {
-                --main: #6c57d6;
-                --main-dark: #3a256c;
-                --bg: #f8f7fe;
-            }
-            body {
-                background: var(--bg);
-                margin: 0;
-                font-family: "Segoe UI", Arial, sans-serif;
-                color: #24234a;
-            }
-            .container {
-                max-width: 430px;
-                margin: 36px auto 0 auto;
-                background: #fff;
-                border-radius: 18px;
-                box-shadow: 0 4px 26px #6c57d620;
-                padding: 30px 18px 22px 18px;
-                min-height: 540px;
-                position: relative;
-            }
-            .logo {
-                font-size: 1.33em;
-                font-weight: bold;
-                text-align: center;
-                color: var(--main-dark);
-                margin-bottom: 9px;
-                letter-spacing: -1px;
-            }
-            .desc {
-                text-align: center;
-                color: #4b4699;
-                margin-bottom: 18px;
-                font-size: 1.05em;
-            }
-            .form-row {
-                margin-bottom: 12px;
-            }
-            .form-row label {
-                font-size: 1em;
-                color: #4a399e;
-                margin-bottom: 4px;
-                display: block;
-                font-weight: 500;
-            }
-            textarea {
-                width: 100%;
-                min-height: 110px;
-                border: 1.3px solid #bcb6f3;
-                border-radius: 8px;
-                padding: 12px;
-                font-size: 1.07em;
-                background: #fafdff;
-                color: #25235c;
-                resize: vertical;
-                font-family: inherit;
-            }
-            .options-row {
-                display: flex;
-                gap: 8px;
-                margin-bottom: 8px;
-                align-items: center;
-            }
-            .options-row label {
-                font-size: 0.98em;
-                color: #6c57d6;
-                font-weight: 500;
-                white-space: nowrap;
-            }
-            select,
-            input[type="range"] {
-                padding: 6px 8px;
-                font-size: 1em;
-                border-radius: 6px;
-                border: 1.1px solid #bcb6f3;
-                background: #fafdff;
-                color: #25235c;
-            }
-            .slider-label {
-                margin-left: 7px;
-                font-size: 0.96em;
-                color: #4b4699;
-                white-space: nowrap;
-            }
-            .action-btn {
-                background: var(--main);
-                color: #fff;
-                border: none;
-                border-radius: 8px;
-                padding: 14px 0;
-                width: 100%;
-                font-size: 1.13em;
-                font-weight: bold;
-                cursor: pointer;
-                margin-top: 12px;
-                margin-bottom: 13px;
-                box-shadow: 0 2px 12px #6c57d622;
-                transition: background 0.15s;
-            }
-            .action-btn:active {
-                background: var(--main-dark);
-            }
-            .footer {
-                color: #7c7c92;
-                text-align: center;
-                font-size: 0.96em;
-                margin-top: 18px;
-                opacity: 0.92;
-                line-height: 1.6;
-            }
-            #backBtn {
-                position: fixed;
-                left: 50%;
-                bottom: 32px;
-                transform: translateX(-50%);
-                background: #6c57d6;
-                color: #fff;
-                font-weight: 700;
-                border: none;
-                border-radius: 2rem;
-                padding: 0.58em 1.5em;
-                box-shadow: 0 4px 16px #6c57d666;
-                font-size: 1.09em;
-                text-decoration: none;
-                cursor: pointer;
-                letter-spacing: 0.01em;
-                transition:
-                    background 0.15s,
-                    transform 0.12s;
-                z-index: 2000;
-            }
-            #backBtn:hover {
-                background: #3a256c;
-                transform: translateX(-50%) scale(1.04);
-            }
-            @media (max-width: 600px) {
-                .container {
-                    max-width: 99vw;
-                    padding: 12px 2vw 14px 2vw;
-                }
-                #backBtn {
-                    bottom: 18px;
-                    font-size: 0.98em;
-                    padding: 0.48em 1em;
-                }
-            }
-            .tts-audio {
-                display: block;
-                margin: 18px auto 0 auto;
-                width: 100%;
-                max-width: 370px;
-            }
-            .msg-error {
-                color: #ba2b3b;
-                font-size: 0.97em;
-                text-align: center;
-                margin-top: 9px;
-            }
-            .msg-success {
-                color: #169e60;
-                font-size: 0.97em;
-                text-align: center;
-                margin-top: 9px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="logo">🔊 أداة تحويل النص إلى صوت (TTS)</div>
-            <div class="desc">
-                حوّل النصوص والمقالات والمستندات إلى صوت طبيعي.<br />
-                استمع إليه داخل المتصفح أو قم بتنزيله كملف WAV.<br />
-                <span style="color: #735edc; font-size: 0.97em"
-                    >جميع المعالجة تتم محليًا داخل المتصفح، ولا يتم رفع النصوص أبدًا.</span
-                >
-            </div>
-            <div class="form-row">
-                <label for="ttsText">النص المراد تحويله</label>
-                <textarea id="ttsText" placeholder="أدخل أو الصق النص أو المقال أو المستند هنا..."></textarea>
-            </div>
-            <div class="form-row options-row">
-                <label for="voice">اختر الصوت</label>
-                <select id="voice"></select>
-                <label for="rate">السرعة <span class="slider-label" id="rateVal">1.0×</span></label>
-                <input type="range" id="rate" min="0.5" max="2" step="0.05" value="1" />
-                <label for="pitch">النبرة <span class="slider-label" id="pitchVal">1.0</span></label>
-                <input type="range" id="pitch" min="0.5" max="2" step="0.05" value="1" />
-            </div>
-            <button class="action-btn" id="speakBtn">تشغيل الصوت</button>
-            <button class="action-btn" id="downloadBtn" style="background: #3a256c; margin-top: 4px">
-                تنزيل WAV
-            </button>
-            <audio controls id="audioPlayer" class="tts-audio" style="display: none"></audio>
-            <div id="ttsMsg"></div>
-            <div class="footer">
-                قد تختلف جودة الصوت حسب المتصفح والجهاز المستخدم.<br />
-                <b>تلميح:</b> لتجنب المشاكل مع النصوص الطويلة، قم بتقسيمها إلى فقرات واستخدمها تدريجيًا.<br />
-                <span style="color: #494ca4">خصوصيتك مضمونة – لا يتم حفظ أو إرسال النصوص أبدًا.</span>
-            </div>
-        </div>
-        <a href="../" id="backBtn">عرض أدوات أخرى</a>
-        <script>
-            // إعداد قائمة الأصوات
-            const ttsText = document.getElementById("ttsText");
-            const voiceSelect = document.getElementById("voice");
-            const rateInput = document.getElementById("rate");
-            const pitchInput = document.getElementById("pitch");
-            const speakBtn = document.getElementById("speakBtn");
-            const downloadBtn = document.getElementById("downloadBtn");
-            const audioPlayer = document.getElementById("audioPlayer");
-            const ttsMsg = document.getElementById("ttsMsg");
-            const rateVal = document.getElementById("rateVal");
-            const pitchVal = document.getElementById("pitchVal");
-
-            function populateVoices() {
-                voiceSelect.innerHTML = "";
-                const voices = window.speechSynthesis
-                    .getVoices()
-                    .filter((v) => v.localService || v.lang.startsWith("ja") || v.lang.startsWith("en") || v.lang.startsWith("ar"));
-                voices.forEach((voice, i) => {
-                    const opt = document.createElement("option");
-                    opt.value = i;
-                    opt.textContent = `${voice.name} (${voice.lang})${voice.localService ? " •" : ""}`;
-                    voiceSelect.appendChild(opt);
-                });
-            }
-            if ("speechSynthesis" in window) {
-                window.speechSynthesis.onvoiceschanged = populateVoices;
-                populateVoices();
-            }
-
-            rateInput.oninput = () => {
-                rateVal.textContent = rateInput.value + "×";
-            };
-            pitchInput.oninput = () => {
-                pitchVal.textContent = pitchInput.value;
-            };
-
-            // تشغيل الصوت
-            speakBtn.onclick = function () {
-                if (!ttsText.value.trim()) {
-                    ttsMsg.innerHTML = '<div class="msg-error">يرجى إدخال النص المراد تحويله أولاً.</div>';
-                    return;
-                }
-                ttsMsg.innerHTML = "";
-                audioPlayer.style.display = "none";
-                window.speechSynthesis.cancel();
-                const voices = window.speechSynthesis.getVoices();
-                const v = voices[voiceSelect.value] || voices[0];
-                const utter = new SpeechSynthesisUtterance(ttsText.value);
-                utter.voice = v;
-                utter.rate = parseFloat(rateInput.value);
-                utter.pitch = parseFloat(pitchInput.value);
-                window.speechSynthesis.speak(utter);
-            };
-
-            // تنزيل WAV داخل المتصفح
-            downloadBtn.onclick = async function () {
-                if (!ttsText.value.trim()) {
-                    ttsMsg.innerHTML = '<div class="msg-error">يرجى إدخال النص المراد تحويله أولاً.</div>';
-                    return;
-                }
-                ttsMsg.innerHTML = "";
-                try {
-                    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                    const dest = audioCtx.createMediaStreamDestination();
-                    const voices = window.speechSynthesis.getVoices();
-                    const v = voices[voiceSelect.value] || voices[0];
-                    const utter = new SpeechSynthesisUtterance(ttsText.value);
-                    utter.voice = v;
-                    utter.rate = parseFloat(rateInput.value);
-                    utter.pitch = parseFloat(pitchInput.value);
-
-                    // ربط مصدر الصوت بـ MediaRecorder
-                    const track = audioCtx.createMediaStreamSource(dest.stream);
-                    const recorder = new MediaRecorder(dest.stream);
-                    let chunks = [];
-                    recorder.ondataavailable = (e) => chunks.push(e.data);
-                    recorder.onstop = () => {
-                        const blob = new Blob(chunks, { type: "audio/wav" });
-                        const url = URL.createObjectURL(blob);
-                        audioPlayer.src = url;
-                        audioPlayer.style.display = "block";
-                        audioPlayer.play();
-                        // إنشاء رابط للتنزيل تلقائيًا
-                        const a = document.createElement("a");
-                        a.href = url;
-                        a.download = "tts_audio.wav";
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                    };
-                    recorder.start();
-                    utter.onend = () => {
-                        setTimeout(() => recorder.stop(), 400);
-                    };
-                    window.speechSynthesis.speak(utter);
-                } catch (err) {
-                    ttsMsg.innerHTML = `<div class="msg-error">عذرًا، هذا المتصفح لا يدعم تسجيل الصوت داخليًا.<br>يمكنك استخدام أداة تسجيل خارجية بعد تشغيل الصوت.</div>`;
-                }
-            };
-        </script>
-        <section
-            style="
-                max-width: 320px;
-                margin: 48px auto 24px auto;
-                background: #1e1e1e;
-                border-radius: 18px;
-                box-shadow: 0 6px 24px #1236;
-                padding: 24px;
-                font-family: Arial, sans-serif;
-            ">
-            <div style="color: #8f94fb; font-size: 1.1em; font-weight: bold; margin-bottom: 14px">
-                ❓ الأسئلة الشائعة – تحويل النص إلى صوت (TTS)
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <div style="color: #8f94fb; font-weight: bold">هل يتم رفع النصوص إلى الخادم؟</div>
-                <div style="color: #f0f0f0">
-                    لا. تتم جميع عمليات تحويل النص إلى صوت محليًا داخل المتصفح، ولا يتم إرسال أو تخزين أي نص.
-                </div>
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <div style="color: #8f94fb; font-weight: bold">هل يمكن تنزيل الصوت بصيغة MP3؟</div>
-                <div style="color: #f0f0f0">
-                    نظرًا لقيود المتصفح، يتم تنزيل الصوت كملف WAV. إذا كنت بحاجة إلى MP3، استخدم أداة تحويل خارجية بعد التنزيل.
-                </div>
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <div style="color: #8f94fb; font-weight: bold">لماذا لا تظهر بعض الأصوات في القائمة؟</div>
-                <div style="color: #f0f0f0">
-                    تختلف الأصوات المتاحة حسب المتصفح ونظام التشغيل. يُنصح باستخدام Chrome أو Edge للحصول على أفضل دعم.
-                </div>
-            </div>
-
-            <div style="margin-bottom: 12px">
-                <div style="color: #8f94fb; font-weight: bold">هل هناك حد لعدد الأحرف؟</div>
-                <div style="color: #f0f0f0">
-                    لا يوجد حد واضح، لكن النصوص الطويلة جدًا قد تؤدي إلى أخطاء في التشغيل أو التنزيل. يُفضل تقسيمها إلى فقرات.
-                </div>
-            </div>
-
-            <div style="margin-bottom: 0">
-                <div style="color: #8f94fb; font-weight: bold">هل يعمل على الهواتف المحمولة؟</div>
-                <div style="color: #f0f0f0">
-                    نعم، الأداة متوافقة مع الأجهزة المحمولة، لكن قد تختلف قدرات التشغيل والتنزيل حسب الجهاز والمتصفح.
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
