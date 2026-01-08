@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>حاسبة الفائدة البسيطة، الادخار، والتقسيط</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta
+    name="description"
+    content="احسب الفائدة البسيطة، توقع الادخار الشهري، وحساب التقسيط الشهري فورًا. مجانية، تعمل في المتصفح، متوافقة مع الجوال، ولا تحتاج لرفع البيانات." />
+  <meta
+    name="keywords"
+    content="حاسبة مالية, حساب الفائدة البسيطة, حساب الادخار, حساب التقسيط, حاسبة الفائدة, التوفير, التقسيط, مالية, فائدة بسيطة, ادخار, تقسيط" />
+  <meta name="author" content="Itagi" />
+  <meta name="language" content="ar" />
+  <meta name="theme-color" content="#198dae" />
+  <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/fin-calc/" />
+  <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+  <meta property="og:title" content="حاسبة الفائدة البسيطة، الادخار، والتقسيط"/>
+  <meta
+    property="og:description"
+    content="احسب الفائدة البسيطة، الادخار الشهري، وحساب القسط الشهري بسهولة. مجانية تمامًا، لا حاجة للتسجيل." />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/fin-calc/"/>
+  <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="حاسبة الفائدة البسيطة، الادخار، والتقسيط"/>
+  <meta
+    name="twitter:description"
+    content="قم بحساب الفائدة البسيطة، حساب الادخار، وحساب القسط الشهري بسهولة. لا حاجة لرفع البيانات، يعمل في المتصفح." />
+  <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png"/>
+  <!-- Google Analytics -->
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+    crossorigin="anonymous"></script>
+  <style>
+    :root { --main: #198dae; --bg: #f8fcff;}
+    html, body { margin: 0; padding: 0; background: var(--bg); direction: rtl; }
+    body { font-family: "Segoe UI", Arial, sans-serif; color: #234;}
+    .container {
+      max-width: 390px; margin: 38px auto 0 auto; background: #fff;
+      border-radius: 18px; box-shadow: 0 4px 22px #198dae18;
+      padding: 25px 14px 20px 14px;
+    }
+    .title { text-align: center; font-size: 1.19em; color: var(--main); font-weight: bold; margin-bottom: 8px; }
+    .tab-row { display: flex; gap: 6px; margin-bottom: 12px; justify-content: center;}
+    .tab-btn {
+      flex:1;
+      background: #e4f6fb; color: #1882b4; border:none;
+      border-radius: 7px 7px 0 0; padding: 10px 3px;
+      font-size: 1.05em; font-weight: 600; cursor: pointer;
+      transition: background 0.14s, color 0.11s;
+      box-shadow: 0 2px 7px #1882b40b;
+    }
+    .tab-btn.active {
+      background: var(--main);
+      color: #fff;
+      box-shadow: 0 2px 9px #1882b438;
+    }
+    form { margin-bottom: 0; }
+    .form-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 13px;}
+    .form-row label { font-size: 1em; color: #146078; font-weight: 500; text-align: right;}
+    .form-row input[type="number"] {
+      box-sizing: border-box;
+      padding: 10px 10px;
+      border-radius: 7px;
+      border: 1.2px solid #b9e6f7;
+      font-size: 1.09em;
+      width: 100%;
+      background: #fafdff;
+      color: #234;
+      transition: border 0.15s;
+      text-align: right;
+    }
+    .form-row input[type="number"]:focus { border-color: var(--main);}
+    .btn {
+      background: var(--main); color: #fff; border: none; border-radius: 8px;
+      padding: 13px 0; width: 100%; font-size: 1.13em; font-weight: bold; cursor: pointer;
+      margin-top: 7px; margin-bottom: 9px; box-shadow: 0 2px 12px #198dae22;
+      transition: background 0.16s;
+    }
+    .btn:active { background: #115b73; }
+    .result {
+      background: #e5f7fa;
+      border-radius: 12px;
+      color: #1882b4;
+      font-size: 1.07em;
+      padding: 13px 11px 10px 11px;
+      text-align: center;
+      margin-bottom: 9px;
+      min-height: 38px;
+      font-weight: 500;
+      word-break: break-word;
+    }
+    .footer { color: #789; text-align: center; font-size: 0.94em; margin-top: 14px;}
+    section#faq { margin-top: 32px;}
+    section#faq h2 { margin-bottom: 13px; color: #198dae; font-size: 1.09em; text-align: center;}
+    section#faq dt { font-weight: bold; margin-top: 8px; }
+    section#faq dd { margin: 0 0 7px 0; font-size: 0.98em; color: #1882b4; }
+    #backBtn {
+      position: fixed; left: 50%; bottom: 32px; transform: translateX(-50%);
+      background: #198dae; color: #fff; font-weight: 700; border: none; border-radius: 2rem;
+      padding: 0.58em 1.5em; box-shadow: 0 4px 16px #198dae33; font-size: 1.09em; text-decoration: none;
+      cursor: pointer; letter-spacing: 0.01em; transition: background 0.15s, transform 0.12s; z-index: 2000;
+    }
+    #backBtn:hover { background: #115b73; transform: translateX(-50%) scale(1.04);}
+    @media (max-width: 500px) {
+      .container { max-width: 98vw; padding: 10px 2vw 10px 2vw;}
+      #backBtn { bottom: 18px; font-size: 0.98em; padding: 0.48em 1em;}
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container" itemscope itemtype="https://schema.org/WebApplication">
+      <div class="title" itemprop="name">💸 الحاسبة المالية البسيطة</div>
+      <div class="tab-row">
+        <button class="tab-btn active" id="tab1">حساب الفائدة البسيطة</button>
+        <button class="tab-btn" id="tab2">حساب الادخار الشهري</button>
+        <button class="tab-btn" id="tab3">حساب التقسيط الشهري</button>
+      </div>
+      <!-- حساب الفائدة البسيطة -->
+      <form id="simpleForm">
+        <div class="form-row">
+          <label for="simple_principal">المبلغ الرئيسي (¥ أو $)</label>
+          <input type="number" id="simple_principal" min="0" required />
+        </div>
+        <div class="form-row">
+          <label for="simple_rate">نسبة الفائدة (٪ سنويًا)</label>
+          <input type="number" id="simple_rate" min="0" max="100" step="0.01" required />
+        </div>
+        <div class="form-row">
+          <label for="simple_years">المدة (سنوات)</label>
+          <input type="number" id="simple_years" min="0.1" step="0.01" required />
+        </div>
+        <button type="submit" class="btn">احسب</button>
+        <div class="result" id="simpleResult"></div>
+      </form>
+      <!-- حساب الادخار الشهري -->
+      <form id="savingForm" style="display:none">
+        <div class="form-row">
+          <label for="save_monthly">المبلغ الشهري للإيداع</label>
+          <input type="number" id="save_monthly" min="0" required />
+        </div>
+        <div class="form-row">
+          <label for="save_rate">نسبة الفائدة (٪ سنويًا)</label>
+          <input type="number" id="save_rate" min="0" max="100" step="0.01" required />
+        </div>
+        <div class="form-row">
+          <label for="save_years">المدة (سنوات)</label>
+          <input type="number" id="save_years" min="0.1" step="0.01" required />
+        </div>
+        <button type="submit" class="btn">احسب</button>
+        <div class="result" id="savingResult"></div>
+      </form>
+      <!-- حساب التقسيط الشهري -->
+      <form id="instForm" style="display:none">
+        <div class="form-row">
+          <label for="inst_principal">المبلغ الإجمالي للتقسيط</label>
+          <input type="number" id="inst_principal" min="0" required />
+        </div>
+        <div class="form-row">
+          <label for="inst_rate">نسبة الفائدة (٪ سنويًا)</label>
+          <input type="number" id="inst_rate" min="0" max="100" step="0.01" required />
+        </div>
+        <div class="form-row">
+          <label for="inst_months">عدد الأشهر</label>
+          <input type="number" id="inst_months" min="1" max="1200" required />
+        </div>
+        <button type="submit" class="btn">احسب</button>
+        <div class="result" id="instResult"></div>
+      </form>
+      <div class="footer">
+        يدعم حساب الفائدة البسيطة، حساب الادخار الشهري، وحساب القسط الشهري.<br>
+        <b>نصيحة:</b> تتم جميع الحسابات داخل المتصفح ولا يتم رفع أي بيانات.
+      </div>
+      <section aria-labelledby="faq-head" id="faq">
+        <h2 id="faq-head">الأسئلة الشائعة – الحاسبة المالية البسيطة</h2>
+        <dl>
+          <dt>ما أنواع الحسابات المتوفرة؟</dt>
+          <dd>تدعم الحاسبة حساب الفائدة البسيطة، الادخار الشهري (إيداع شهري)، وحساب التقسيط الشهري (رأس المال + الفائدة).</dd>
+          <dt>كيف يعمل حساب الفائدة البسيطة؟</dt>
+          <dd>تُحسب الفائدة البسيطة باستخدام <b>المبلغ الرئيسي × نسبة الفائدة × المدة</b>، ثم يُعرض مبلغ الفائدة والإجمالي (رأس المال + الفائدة).</dd>
+          <dt>كيف يعمل حساب الادخار الشهري؟</dt>
+          <dd>يُجمع مجموع المبالغ الشهرية ثم يُحسب الفائدة البسيطة عن كل إيداع بناءً على الفترة المتبقية ويُعرض الإجمالي.</dd>
+          <dt>كيف يعمل حساب التقسيط الشهري؟</dt>
+          <dd>يُحسب إجمالي المبلغ (رأس المال + الفائدة البسيطة على كامل الفترة)، ثم يُقسم على عدد الأشهر ليُحدد القسط الشهري.</dd>
+          <dt>هل تُرسل بياناتي المالية إلى خادم خارجي؟</dt>
+          <dd>لا. تتم جميع الحسابات داخل المتصفح المحلي دون رفع أو حفظ للبيانات.</dd>
+          <dt>هل هذه الأداة مجانية؟</dt>
+          <dd>نعم. هذه الأداة مجانية 100% ولا تتطلب تسجيل أو إذن دخول.</dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+  <a href="../" id="backBtn">أدوات أخرى</a>
+  <script>
+    // منطق تبديل علامات التبويب
+    const tabs = [
+      { btn: document.getElementById("tab1"), form: document.getElementById("simpleForm") },
+      { btn: document.getElementById("tab2"), form: document.getElementById("savingForm") },
+      { btn: document.getElementById("tab3"), form: document.getElementById("instForm") }
+    ];
+    tabs.forEach((t, i) => {
+      t.btn.onclick = () => {
+        tabs.forEach((tt, j) => {
+          tt.btn.classList.toggle("active", i === j);
+          tt.form.style.display = i === j ? "" : "none";
+        });
+      }
+    });
+
+    // حساب الفائدة البسيطة
+    document.getElementById("simpleForm").onsubmit = function(e){
+      e.preventDefault();
+      const p = +document.getElementById("simple_principal").value;
+      const r = +document.getElementById("simple_rate").value / 100;
+      const t = +document.getElementById("simple_years").value;
+      if(p <= 0 || r < 0 || t <= 0) return;
+      const interest = p * r * t;
+      const total = p + interest;
+      document.getElementById("simpleResult").innerHTML =
+        `الفائدة: <b>${interest.toLocaleString()}</b><br>الإجمالي (رأس المال + الفائدة): <b>${total.toLocaleString()}</b>`;
+    };
+
+    // حساب الادخار الشهري
+    document.getElementById("savingForm").onsubmit = function(e){
+      e.preventDefault();
+      const m = +document.getElementById("save_monthly").value;
+      const r = +document.getElementById("save_rate").value / 100;
+      const y = +document.getElementById("save_years").value;
+      if(m <= 0 || r < 0 || y <= 0) return;
+      const n = Math.round(y * 12);
+      let sum = 0, interest = 0;
+      for(let i = 0; i < n; i++) {
+        sum += m;
+        interest += m * r * ((n - i) / 12);
+      }
+      const total = sum + interest;
+      document.getElementById("savingResult").innerHTML =
+        `إجمالي المبالغ المودعة: <b>${sum.toLocaleString()}</b><br>الفائدة المكتسبة: <b>${interest.toLocaleString()}</b><br>الإجمالي: <b>${total.toLocaleString()}</b>`;
+    };
+
+    // حساب التقسيط الشهري (الفائدة البسيطة)
+    document.getElementById("instForm").onsubmit = function(e){
+      e.preventDefault();
+      const p = +document.getElementById("inst_principal").value;
+      const r = +document.getElementById("inst_rate").value / 100;
+      const n = +document.getElementById("inst_months").value;
+      if(p <= 0 || r < 0 || n <= 0) return;
+      const totalInterest = p * r * (n / 12);
+      const total = p + totalInterest;
+      const monthly = total / n;
+      document.getElementById("instResult").innerHTML =
+        `القسط الشهري: <b>${monthly.toLocaleString(undefined, {maximumFractionDigits:2})}</b><br>إجمالي الفائدة: <b>${totalInterest.toLocaleString()}</b><br>إجمالي السداد: <b>${total.toLocaleString()}</b>`;
+    };
+  </script>
+  <!-- FAQPage Schema for SEO/SGE/GEO Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما أنواع الحسابات المتوفرة؟",
+        "acceptedAnswer": { "@type": "Answer", "text": "تدعم الحاسبة حساب الفائدة البسيطة، الادخار الشهري (إيداع شهري)، وحساب التقسيط الشهري (رأس المال + الفائدة)." }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف يعمل حساب الفائدة البسيطة؟",
+        "acceptedAnswer": { "@type": "Answer", "text": "تُحسب الفائدة البسيطة باستخدام المبلغ الرئيسي × نسبة الفائدة × المدة، ثم يُعرض مبلغ الفائدة والإجمالي (رأس المال + الفائدة)." }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف يعمل حساب الادخار الشهري؟",
+        "acceptedAnswer": { "@type": "Answer", "text": "يُجمع مجموع المبالغ الشهرية ثم يُحسب الفائدة البسيطة عن كل إيداع بناءً على الفترة المتبقية ويُعرض الإجمالي." }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف يعمل حساب التقسيط الشهري؟",
+        "acceptedAnswer": { "@type": "Answer", "text": "يُحسب إجمالي المبلغ (رأس المال + الفائدة البسيطة على كامل الفترة)، ثم يُقسم على عدد الأشهر ليُحدد القسط الشهري." }
+      },
+      {
+        "@type": "Question",
+        "name": "هل تُرسل بياناتي المالية إلى خادم خارجي؟",
+        "acceptedAnswer": { "@type": "Answer", "text": "لا. تتم جميع الحسابات داخل المتصفح المحلي دون رفع أو حفظ للبيانات." }
+      },
+      {
+        "@type": "Question",
+        "name": "هل هذه الأداة مجانية؟",
+        "acceptedAnswer": { "@type": "Answer", "text": "نعم. هذه الأداة مجانية 100% ولا تتطلب تسجيل أو إذن دخول." }
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
