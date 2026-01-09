@@ -1,5 +1,474 @@
 [
   {
+    "id": 14851,
+    "date": "2026-01-09T12:52:11",
+    "date_gmt": "2026-01-09T07:07:11",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14851"
+    },
+    "modified": "2026-01-09T12:52:11",
+    "modified_gmt": "2026-01-09T07:07:11",
+    "slug": "system-engineer-executive-2",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/system-engineer-executive-2/",
+    "title": {
+      "rendered": "System Engineer Executive"
+    },
+    "content": {
+      "rendered": "<p><strong>Position:</strong> System Engineer Executive<br />\n<strong>Job Level:</strong> Mid level<br />\n<strong>Number of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelor&#8217;s degree in Computer Science, Information Technology, or a related field (or equivalent experience).<br />\n<strong>Experience:</strong> 1-2 years of experience in relevant field<br />\n<strong>Contract of Employment:</strong> Full-time<br />\n<strong>Job Location:</strong> Jawalakhel, Lalitpur</p>\n<p><strong>Skills and Knowledge</strong>:</p>\n<ul>\n<li>Strong problem-solving and analytical skills.</li>\n<li>Ability to work independently and within a team.</li>\n<li> Strong interpersonal skills for dealing with vendors and investigating bodies to ensure smooth communication and issue resolution.</li>\n<li> Excellent documentation and communication skills.</li>\n<li>Ability to manage multiple tasks and prioritise effectively.</li>\n</ul>\n<p><strong>Job Duties &amp; Responsibilities:</strong></p>\n<ul>\n<li> Server Management: Expertise in installing, configuring, and maintaining Linux (Ubuntu, CentOS, RHEL) and Windows Server environments.</li>\n</ul>\n<ul>\n<li>Virtualization: Hands-on experience with VMware (vSphere, ESXi, vCenter) for virtual infrastructure management.</li>\n<li> Networking &amp; Security: Understanding of TCP/IP, DNS, DHCP, VPNs, firewalls, and network security best practices.</li>\n<li>System Monitoring &amp; Troubleshooting: Experience with monitoring tools (Nagios, Zabbix,libreNMS, Prometheus ,cacti, smokeping, etc) and troubleshooting techniques.</li>\n<li> Scripting &amp; Automation: Basic knowledge of Bash, PowerShell, or Python for task automation.</li>\n<li>Storage &amp; Infrastructure: Understanding of RAID, SAN, NAS, and backup storage solutions.</li>\n</ul>\n<p><strong>Application Deadline</strong>: 2026-01-17</p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 1192,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Lalitpur",
+      "_application": "https://www.vianet.com.np/vacancy/system-engineer-executive-2/",
+      "_company_name": "Vianet Communication Ltd.",
+      "_company_website": "https://www.vianet.com.np",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      27
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      81
+    ],
+    "class_list": {
+      "0": "post-14851",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-lalitpur",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14851",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/1192"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14851"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14851"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14851"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14851"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14849,
+    "date": "2026-01-09T12:28:12",
+    "date_gmt": "2026-01-09T06:43:12",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14849"
+    },
+    "modified": "2026-01-09T12:41:22",
+    "modified_gmt": "2026-01-09T06:56:22",
+    "slug": "rural-women-upliftment-association-rwua-sarlahi-full-time-field-coordinator-child-sensitive-livelihood",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/rural-women-upliftment-association-rwua-sarlahi-full-time-field-coordinator-child-sensitive-livelihood/",
+    "title": {
+      "rendered": "Field Coordinator-Child Sensitive Livelihood"
+    },
+    "content": {
+      "rendered": "<p><strong>TITLE OF POSITION:</strong> Field Coordinator-Child Sensitive Livelihood</p>\n<p><strong>GRADE/LEVEL</strong>: Coordinator</p>\n<p><strong>LOCATION OF THE POSITION</strong>: RWUA Working Area</p>\n<p><strong>IMMEDIATE SUPERVISOR/ REPORTING TO:</strong> Sr./Project Coordinator/Manager</p>\n<p><strong>POSITION TO BE SUPERVISED:</strong> SUPERVISED: Officer/Supervisor</p>\n<p><strong>WORKING AREA</strong>: RWUA Working Area Sarlahi</p>\n<p><strong>CHILD SAFEGUARDING:</strong></p>\n<p>The position holder will frequently have direct contact with children and/or young people in their day-to-day work. S/he will have to abide by the child safeguarding, protection from sexual exploitation, abuse, and harassment (PSEAH) policy, including the RWUA code of conduct. S/he will have to maintain dual adult rules while visiting/meeting with children.</p>\n<p><strong>ROLE PURPOSE:</strong></p>\n<p>The Field Coordinator will operate under the guidance of the Sr./Project Coordinator/Manager to ensure the effective implementation of project activities, adhering to established standards and strategies. This role demands extensive field travel to project sites and collaboration with stakeholders to promote sustainable child poverty interventions. A key focus will be ensuring the sustainability of the Samunnati program’s learning, agriculture-related initiatives, and enterprise development efforts.</p>\n<p>The position involves direct coordination with local governments, public agencies, and private organizations to integrate project objectives with the broader developmental landscape, ensuring long-term impact. The Field Coordinator is tasked with managing program planning, budgeting, implementation, monitoring, technical support, and reporting under the sponsorship program&#8217;s child poverty theme.</p>\n<p>Additionally, the role includes responsibilities for training, mentoring, and capacity building of project staff, conducting field-level assessments, and documenting success stories and lessons learned to support continuous improvement and stakeholder engagement.</p>\n<p><strong><em>SCOPE OF ROLE:</em></strong></p>\n<p><strong>Reports to:</strong> Sr./Program Coordinator/Manager</p>\n<p><strong>Staff reporting to this post:</strong> Officer/Supervisor</p>\n<p><strong>Budget Responsibility:</strong> Sponsorship Program-Outcome-4</p>\n<p><strong>KEY AREAS OF ACCOUNTABILITY:</strong></p>\n<p><strong>Program Planning, Budgeting, and Monitoring</strong></p>\n<ul>\n<li>Develop annual budgets, implementation plans, and quarterly forecasts for the child poverty sub-theme.</li>\n<li>Regularly track achievements against plans, expenditures, and procurement progress.</li>\n<li>Identify deviations in project execution and provide justifications to ensure alignment with objectives.</li>\n</ul>\n<p><strong>Program Implementation</strong></p>\n<ul>\n<li>Implement livelihood interventions (on and off-farm), ensuring high-quality outcomes and adherence to annual and detailed implementation plans.</li>\n<li>Facilitate market linkages for micro and small-scale enterprises and enhance leadership capacities of community groups.</li>\n<li>Provide technical support for registration processes and financial linkages for entrepreneurs.</li>\n<li>Monitor enterprise activities and recommend improvements for sustainability and growth.</li>\n</ul>\n<p><strong>Capacity Building and Supervision</strong></p>\n<ul>\n<li>Conducted needs assessments and designed training programs for marginalized groups.</li>\n<li>Deliver technical training on business planning, financial management, and income generation.</li>\n<li>Provide coaching, mentoring, and on-site support to field staff and beneficiaries.</li>\n</ul>\n<p><strong>Coordination and Networking</strong></p>\n<ul>\n<li>Establish strong relationships with stakeholders, local governments, and private sector partners.</li>\n<li>Support farmer groups in accessing local planning resources and preparing proposals for funding.</li>\n<li>Develop market linkages and integrate project efforts with other thematic areas for enhanced impact.</li>\n</ul>\n<p><strong>Data Management and Reporting</strong></p>\n<ul>\n<li>Manage data through OPMIS and ensure timely reporting.</li>\n<li>Document case studies, lessons learned, and best practices for sharing with stakeholders and scaling up initiatives.</li>\n</ul>\n<p><strong>Representation</strong></p>\n<ul>\n<li>Represent the organization in educational forums, meetings, workshops, training, and seminars as directed.</li>\n</ul>\n<p><strong>Others</strong></p>\n<ul>\n<li>Perform dual roles in development and humanitarian work during emergencies.</li>\n<li>Undertaking additional tasks as assigned by the Line manager under the sponsorshipprogram portfolio.</li>\n<li>Prepared the Samunnati Program report according to the donor-required basic</li>\n<li>Prepared Quarterly/Semi-annual Report/Annual Report according to the Donor&#8217;s and Organization requirements</li>\n<li>Prepared AGM Report/organizational occasional program, Proposal Writing</li>\n<li>Own a two-wheeler and a Valid driving License</li>\n</ul>\n<p><strong>QUALIFICATION, SKILLS AND EXPERIENCE:</strong></p>\n<ul>\n<li><strong>Education:</strong> Bachelor’s degree in agriculture, Plant and Animal Science</li>\n<li><strong>Experience:</strong> At least three years of field experience in livelihood program implementation.</li>\n<li>Expertise in business counseling for both on- and off-farm enterprises.</li>\n<li>Familiarity with participatory community mobilization methods and child protection policies.</li>\n<li>Experience in building collaborative relationships with diverse stakeholders.</li>\n</ul>\n<p><strong>Skills:</strong></p>\n<ul>\n<li>Proficiency in computing skills.</li>\n<li>Strong communication, analytical, and report-writing abilities.</li>\n<li>Basic proficiency in written and spoken English and Nepali</li>\n<li>Enthusiasm for working with diverse, multidisciplinary teams and rural communities.</li>\n<li>Demonstrated ability to coordinate with relevant stakeholders.</li>\n</ul>\n<p><strong>Child Safeguarding</strong></p>\n<ul>\n<li>Ensure that all Program staff understand and respect the SC Child Safeguarding policy</li>\n<li>Report protection concerns to the Program Coordinator/Manager in line with the SC Child Safeguarding policy</li>\n<li>Ensure the Child Protection Policy and Code of Conduct are visible in all Save the Children activity locations</li>\n<li>Ensure in each location of Save the Children work there is a reporting mechanism and Child protection focal person to report Protection concerns</li>\n</ul>\n<p><strong>Well-being</strong></p>\n<ul>\n<li>Ensure that all staff in the Program team feel comfortable in the job and team and inform the Sr. /Program Coordinator/Manager if the employees face particular challenges or have specific needs</li>\n<li>He / She has to do any other job that the organization requires to make the program more effective and successful.</li>\n<li>Others</li>\n<li>Other tasks as requested by the Line Manager.</li>\n<li>Support Humanitarian responses where appropriate, ensuring timely and quality responses per SCI standards and principles.</li>\n<li>Facilitate Safer programming, Gender Diversity, and Climate resilience programming for long-term impact.</li>\n</ul>\n<p><strong>Child Safeguarding</strong></p>\n<ul>\n<li>Ensure that all Program staff understand and respect Save the Children’s Child Safeguarding and Child Protection Policies.</li>\n<li>Report on the protection concerns to the Sr. /Program Coordinator/Manager in line with the Save the Children’s Child Safeguarding Policy.</li>\n<li>Ensure the Child Protection Policy and Code of Conduct is visible at all Save the Children’s activity locations.</li>\n</ul>\n<p><strong>Well-being</strong></p>\n<ul>\n<li>Ensure that all staff members in the program team feel comfortable in the job and team and inform the Project Coordinator if the employees face particular challenges or have specific needs.</li>\n<li>The job responsibilities as explained above are not exhaustive, and the position holder may be required to carry out additional duties within the reasonableness of their level of skills and experience for the goodwill of the organization.</li>\n<li>Adopt and demonstrate the ‘Do No Harm’ Policy in each and every step of your assignments.</li>\n</ul>\n<p><strong>Note</strong></p>\n<p>Interested candidates aged above <strong>25 years but below 45 years</strong> are encouraged to apply by submitting their updated CV and cover letter to <strong>vacancy@rwua.org</strong>, clearly mentioning the position applied for in the subject line, addressed to<strong> The Human Resource Department, Rural Women Upliftment Association (RWUA), Sarlahi.</strong> Alternatively, applicants may submit a hard copy of their application to the Rural Women Upliftment Association (RWUA), Haripur Municipality–02, Sarlahi, no later than <strong>13 January 2026 by 4:00 PM.</strong></p>\n<p>Only shortlisted candidates will be contacted for the further selection process, telephone enquiries will not be entertained, and any form of inappropriate recommendation may result in automatic disqualification. RWUA maintains zero tolerance toward child abuse and strictly adheres to its Child Safeguarding Policy. RWUA is an equal opportunity employer and follows a strictly merit-based selection process. Qualified female and LGBTIQ candidates, individuals from disadvantaged communities, and local applicants with best-fit qualifications and competencies are strongly encouraged to apply. Applicants must clearly mention their age in years and state their expected basic salary in the application letter; applications not meeting these requirements may be considered invalid.</p>\n",
+      "protected": false
+    },
+    "author": 105,
+    "featured_media": 8333,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Sarlahi",
+      "_application": "vacancy@rwua.org",
+      "_company_name": "Rural Women Upliftment Association (RWUA)",
+      "_company_website": "https://rwua.com.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      39,
+      11
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      109
+    ],
+    "class_list": {
+      "0": "post-14849",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-sarlahi",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14849",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/105"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/8333"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14849"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14849"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14849"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14849"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 14846,
     "date": "2026-01-09T11:39:17",
     "date_gmt": "2026-01-09T05:54:17",
@@ -22983,7 +23452,7 @@
       "rendered": "Accountant"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Accountant<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Dang</p>\n<p><strong>Sunalo Savings and Credit Cooperative Ltd.</strong></p>\n<p><strong>Phone No.;</strong> 082-590848, 9844931438</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14410\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Sunalo-Savings-and-Credit-Cooperative-job.png\" alt=\"\" width=\"769\" height=\"832\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Sunalo-Savings-and-Credit-Cooperative-job.png 769w, https://merorojgari.com/wp-content/uploads/2026/01/Sunalo-Savings-and-Credit-Cooperative-job-277x300.png 277w\" sizes=\"(max-width: 769px) 100vw, 769px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Accountant<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Dang</p>\n<p><strong>Sunalo Savings and Credit Cooperative Ltd.</strong></p>\n<p><strong>Phone No.;</strong> 082-590848, 9844931438</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14410\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Sunalo-Savings-and-Credit-Cooperative-job.png\" alt=\"\" width=\"769\" height=\"832\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Sunalo-Savings-and-Credit-Cooperative-job.png 769w, https://merorojgari.com/wp-content/uploads/2026/01/Sunalo-Savings-and-Credit-Cooperative-job-277x300.png 277w\" sizes=\"(max-width: 769px) 100vw, 769px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23451,7 +23920,7 @@
       "rendered": "Psychosocial Counselor"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Psychosocial Counselor<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Rolpa</p>\n<p><strong>Paribartan Gaunpalika </strong></p>\n<p><strong>Website:</strong><a href=\"https://paribartanmun.gov.np\" target=\"_blank\" rel=\"noopener\"> https://paribartanmun.gov.np</a></p>\n<p><strong>Phone No.:</strong> 9857849002, 9857849004</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14398\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1.png\" alt=\"\" width=\"856\" height=\"1151\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1.png 856w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1-223x300.png 223w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1-762x1024.png 762w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1-768x1033.png 768w\" sizes=\"(max-width: 856px) 100vw, 856px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-14399\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-112.png\" alt=\"\" width=\"720\" height=\"370\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-112.png 720w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-112-300x154.png 300w\" sizes=\"(max-width: 720px) 100vw, 720px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Psychosocial Counselor<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Rolpa</p>\n<p><strong>Paribartan Gaunpalika </strong></p>\n<p><strong>Website:</strong><a href=\"https://paribartanmun.gov.np\" target=\"_blank\" rel=\"noopener\"> https://paribartanmun.gov.np</a></p>\n<p><strong>Phone No.:</strong> 9857849002, 9857849004</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14398\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1.png\" alt=\"\" width=\"856\" height=\"1151\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1.png 856w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1-223x300.png 223w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1-762x1024.png 762w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-1-768x1033.png 768w\" sizes=\"(max-width: 856px) 100vw, 856px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-14399\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-112.png\" alt=\"\" width=\"720\" height=\"370\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-112.png 720w, https://merorojgari.com/wp-content/uploads/2026/01/Paribartan-Gaunpalika-job-112-300x154.png 300w\" sizes=\"(max-width: 720px) 100vw, 720px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -24392,7 +24861,7 @@
       "rendered": "HA, AHW, ANM"
     },
     "content": {
-      "rendered": "<p><strong>Position</strong>: HA<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> AHW<br />\n<strong>No. of Vacancy:</strong> 3</p>\n<p><strong>Position:</strong> ANM<br />\n<strong>No. of Vacancy</strong>: 4</p>\n<p><strong>Location:</strong> Myagdi</p>\n<p><strong>Malika Gaunpalika</strong></p>\n<p><strong>Website: https:</strong>//malikamunmyagdi.gov.np/</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14391\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10.png\" alt=\"\" width=\"1000\" height=\"1119\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10-268x300.png 268w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10-915x1024.png 915w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10-768x859.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14392\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2.png\" alt=\"\" width=\"1000\" height=\"594\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2-300x178.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2-768x456.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>Position</strong>: HA<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> AHW<br />\n<strong>No. of Vacancy:</strong> 3</p>\n<p><strong>Position:</strong> ANM<br />\n<strong>No. of Vacancy</strong>: 4</p>\n<p><strong>Location:</strong> Myagdi</p>\n<p><strong>Malika Gaunpalika</strong></p>\n<p><strong>Website: https:</strong>//malikamunmyagdi.gov.np/</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14391\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10.png\" alt=\"\" width=\"1000\" height=\"1119\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10-268x300.png 268w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10-915x1024.png 915w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-10-768x859.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14392\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2.png\" alt=\"\" width=\"1000\" height=\"594\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2-300x178.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Malika-Rural-Municipality-Myagdi-job-2-768x456.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -46388,7 +46857,7 @@
       "rendered": "Market Representative"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Market Representative<br />\n<strong>No. of Vacancy</strong>: 5<br />\n<strong>Qualification:</strong> SEE Passed<br />\n<strong>Location:</strong> Kathmandu</p>\n<p><strong>Rochdel Saving &amp; Credit Co- operative Ltd.</strong></p>\n<p><strong>Phone No.:</strong> 4575199<br />\n<strong>Email:</strong> rochdelsaving15@gmail.com</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-13977\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/Rochdel-Saving-Credit-Co-operative-job-1.png\" alt=\"\" width=\"678\" height=\"430\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/Rochdel-Saving-Credit-Co-operative-job-1.png 678w, https://merorojgari.com/wp-content/uploads/2025/12/Rochdel-Saving-Credit-Co-operative-job-1-300x190.png 300w\" sizes=\"(max-width: 678px) 100vw, 678px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Market Representative<br />\n<strong>No. of Vacancy</strong>: 5<br />\n<strong>Qualification:</strong> SEE Passed<br />\n<strong>Location:</strong> Kathmandu</p>\n<p><strong>Rochdel Saving &amp; Credit Co- operative Ltd.</strong></p>\n<p><strong>Phone No.:</strong> 4575199<br />\n<strong>Email:</strong> rochdelsaving15@gmail.com</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-13977\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/Rochdel-Saving-Credit-Co-operative-job-1.png\" alt=\"\" width=\"678\" height=\"430\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/Rochdel-Saving-Credit-Co-operative-job-1.png 678w, https://merorojgari.com/wp-content/uploads/2025/12/Rochdel-Saving-Credit-Co-operative-job-1-300x190.png 300w\" sizes=\"(max-width: 678px) 100vw, 678px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -46854,7 +47323,7 @@
       "rendered": "Office Helper"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Office Helper<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Dang</p>\n<p><strong>Shree Naw Saraswati Primary Vidyalaya</strong></p>\n<p><strong>Phone No.:</strong> 9862415363, 9867735815</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-13975\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/shree-saraswati-secondary-school-job.png\" alt=\"\" width=\"624\" height=\"840\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/shree-saraswati-secondary-school-job.png 624w, https://merorojgari.com/wp-content/uploads/2025/12/shree-saraswati-secondary-school-job-223x300.png 223w\" sizes=\"(max-width: 624px) 100vw, 624px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Office Helper<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Dang</p>\n<p><strong>Shree Naw Saraswati Primary Vidyalaya</strong></p>\n<p><strong>Phone No.:</strong> 9862415363, 9867735815</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-13975\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/shree-saraswati-secondary-school-job.png\" alt=\"\" width=\"624\" height=\"840\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/shree-saraswati-secondary-school-job.png 624w, https://merorojgari.com/wp-content/uploads/2025/12/shree-saraswati-secondary-school-job-223x300.png 223w\" sizes=\"(max-width: 624px) 100vw, 624px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -48489,7 +48958,7 @@
       "rendered": "Staff Nurse, HA"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> HA<br />\n<strong>No. of Vacancy:</strong> Few M/F<br />\n<strong>Qualification</strong>: General Medicine</p>\n<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy</strong>: Few<br />\n<strong>Qualification:</strong> PCL</p>\n<p><strong>Location:</strong> Butwal</p>\n<p><strong>Siddhababa Hospital and Research Center Pvt. Ltd.</strong></p>\n<p>Phone No.: 071-539201, 539202, 539203</p>\n<p>Email: siddhababa.hospital@gmail.com</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-13951\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/Siddhababa-Hospital-and-Research-Center-Pvt.-Ltd.-job.jpg\" alt=\"\" width=\"720\" height=\"869\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/Siddhababa-Hospital-and-Research-Center-Pvt.-Ltd.-job.jpg 720w, https://merorojgari.com/wp-content/uploads/2025/12/Siddhababa-Hospital-and-Research-Center-Pvt.-Ltd.-job-249x300.jpg 249w\" sizes=\"(max-width: 720px) 100vw, 720px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> HA<br />\n<strong>No. of Vacancy:</strong> Few M/F<br />\n<strong>Qualification</strong>: General Medicine</p>\n<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy</strong>: Few<br />\n<strong>Qualification:</strong> PCL</p>\n<p><strong>Location:</strong> Butwal</p>\n<p><strong>Siddhababa Hospital and Research Center Pvt. Ltd.</strong></p>\n<p>Phone No.: 071-539201, 539202, 539203</p>\n<p>Email: siddhababa.hospital@gmail.com</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-13951\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/Siddhababa-Hospital-and-Research-Center-Pvt.-Ltd.-job.jpg\" alt=\"\" width=\"720\" height=\"869\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/Siddhababa-Hospital-and-Research-Center-Pvt.-Ltd.-job.jpg 720w, https://merorojgari.com/wp-content/uploads/2025/12/Siddhababa-Hospital-and-Research-Center-Pvt.-Ltd.-job-249x300.jpg 249w\" sizes=\"(max-width: 720px) 100vw, 720px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69767,475 +70236,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13564"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 13561,
-    "date": "2025-12-22T14:59:43",
-    "date_gmt": "2025-12-22T09:14:43",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=13561"
-    },
-    "modified": "2025-12-22T14:59:52",
-    "modified_gmt": "2025-12-22T09:14:52",
-    "slug": "supply-chain-management-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/supply-chain-management-officer/",
-    "title": {
-      "rendered": "Supply Chain Management Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position: </strong>Supply Chain Management Officer</p>\n<p><strong>Location:</strong> Hasanpur, Nepal</p>\n<p>With 75 years of experience, our focus is on helping the most vulnerable children overcome poverty and experience fullness of life. We help children of all backgrounds, even in the most dangerous places, inspired by our Christian faith.</p>\n<p>Come join our 33,000+ staff working in nearly 100 countries and share the joy of transforming vulnerable children’s life stories!</p>\n<p><strong>Employee Contract Type:</strong></p>\n<p>Local &#8211; Fixed Term Employee (Fixed Term)</p>\n<p><strong>Job Description:</strong></p>\n<p><strong>Procurement &amp; Supply Chain Portfolio Management</strong></p>\n<ul>\n<li>Execute the entire procurement cycle from purchase request to goods receipt and reverse logistics while ensuring efficiency, compliance, and transparency.</li>\n<li>Review and process Purchase Requisitions (PRs) through the Supply Chain Automation and Integration (SCAI) platform or other authorized systems.</li>\n<li>Lead sourcing activities including preparation of solicitation documents, communication with potential suppliers, documentation collation, and submission of vendor recommendations to relevant authorities or the Purchase Committee.</li>\n<li>Ensure all procurement bidding requirements are met for assigned purchase requests, including quotation registration, sealed bid submission, and sample verification reports.</li>\n<li>Promote and expand category-based Long-Term Agreements (LTAs) at the local level, guided by the annual procurement plan and sourcing strategy.</li>\n<li>Develop and regularly update a commodity catalogue for goods, works, and services procured by WVI Nepal and its Partner NGOs.</li>\n<li>Establish and maintain a pre-qualified supplier database to ensure reliable sourcing and value for money.</li>\n<li>Foster positive supplier relationships while upholding WVI Nepal’s core values, ethics, and procurement principles.</li>\n<li>Conduct market trend analyses to inform strategic sourcing decisions and adapt to changing business environments.</li>\n<li>Contribute to capacity building of Partner NGOs to strengthen compliance, enhance procurement skills, and promote strategic sourcing practices.</li>\n</ul>\n<p><strong>Risk Management, Compliance/Review &amp; Support</strong></p>\n<ul>\n<li>Ensure the Block Party Screening (BPS) before the process of procurement as per WVI Nepal Procurement manual.</li>\n<li>Conduct Supplier Orientation working with NGO Partners</li>\n<li>Managing contracting and evaluating the effective implementation according to agreed terms and conditions</li>\n<li>Support to mitigate the SCM risk and establish the control to improve the existing process and practice.</li>\n<li>Occasional field visits to monitor PNGO and implementing area to ensure the fair distribution.</li>\n<li>Assist to increase the cost savings through healthy negotiation and ensure to effective and efficient service and fast and flexible.</li>\n</ul>\n<p><strong>Reporting and Analysis</strong></p>\n<ul>\n<li>Prepare and submit periodic updates on procurement status, including PR tracking, purchase order progress, and contract implementation summaries for the Supply Chain Management &amp; Admin Coordinator.</li>\n<li>Report on the status of procurement documentation, highlighting compliance with standard procedures, use of approved templates, and areas requiring follow-up or corrective action.</li>\n<li>Compile and share reports on supplier performance, market trends, and pricing updates to support strategic sourcing and informed decision-making.</li>\n</ul>\n<p><strong>Required Professional Experience</strong></p>\n<ul>\n<li>At least 3 years’ experience in the field of procurement and supply chain management</li>\n<li>At least three years of professional experience in the field of humanitarian and development work.</li>\n</ul>\n<p><strong>Required Education, training, license, registration and certification</strong></p>\n<ul>\n<li>Bachelor’s degree in management, Business Administration, Procurement, or a related field</li>\n</ul>\n<p><strong>Preferred Knowledge and Qualifications</strong></p>\n<ul>\n<li>Sound understanding of procurement and supply chain management principles and practices.</li>\n<li>Strong computer literacy with proficiency in MS Office applications (Word, Excel, PowerPoint, and Internet tools).</li>\n<li>Excellent command of both English and Nepali languages, with strong written and verbal communication skills.</li>\n<li>Ability to articulate and present ideas clearly and effectively, both orally and in writing.</li>\n<li>Practical experience and applied knowledge in procurement and supply chain operations.</li>\n<li>Familiarity with global supply chain standards, financial systems, and procedural requirements.</li>\n<li>Demonstrated ability to effectively utilize digital platforms and technologies</li>\n</ul>\n<p><strong>Applicant Types Accepted:</strong> Local Applicants Only</p>\n<p><strong>End Date: J</strong>January 6, 2026</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 2327,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Hasanpur",
-      "_application": "https://worldvision.wd1.myworkdayjobs.com/en-US/WorldVisionInternational/details/Supply-Chain-Management-Officer_JR46592?locationCountry=96ff60d458734174895a1e037e1eab3c",
-      "_company_name": "World Vision International Nepal",
-      "_company_website": "https://www.wvi.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      229
-    ],
-    "class_list": {
-      "0": "post-13561",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-hasanpur",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/13561",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/2327"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=13561"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=13561"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=13561"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13561"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 13560,
-    "date": "2025-12-22T14:36:08",
-    "date_gmt": "2025-12-22T08:51:08",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=13560"
-    },
-    "modified": "2025-12-22T14:36:08",
-    "modified_gmt": "2025-12-22T08:51:08",
-    "slug": "it-assistant-4",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/it-assistant-4/",
-    "title": {
-      "rendered": "IT Assistant"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> IT Assistant</p>\n<p><strong>Location: </strong>Hasanpur</p>\n<p>With 75 years of experience, our focus is on helping the most vulnerable children overcome poverty and experience fullness of life. We help children of all backgrounds, even in the most dangerous places, inspired by our Christian faith.</p>\n<p>Come join our 33,000+ staff working in nearly 100 countries and share the joy of transforming vulnerable children’s life stories!</p>\n<p><strong>Key Responsibilities:</strong></p>\n<p><strong>Service Desk, Service Level Management and Service Improvement</strong></p>\n<ul>\n<li>First point of contact and day-to-day technical support to end users.</li>\n<li>Keep all IT equipment in working condition and install / configure them for customer use.</li>\n<li>Responds to Level 1 and Level 2 support and works with vendors on Level 3 support.</li>\n<li>Research troubleshoots issues which affect multiple clients.</li>\n<li>Works with vendor technical support personnel on solutions for clients.</li>\n<li>Collaborates in the development of service-level objectives and takes steps to meet or exceed targets.</li>\n<li>Monitors service-level objectives to ensure that requirements are met or exceeded.</li>\n<li>Follows up in a timely manner to ensure customer satisfaction.</li>\n<li>Reviews tracking log to identify recurring problems, or problems affecting a large number of clients.</li>\n<li>Recommends solutions to common problems and updates frequently asked questions documentation.</li>\n<li>Identifies customer training needs based on common problems.</li>\n</ul>\n<p><strong>Technical Support</strong></p>\n<ul>\n<li>Keep all technical resources available for meetings that include video conferencing and provide support whenever required.</li>\n<li>Engages the hardware vendors on issues to remedy issues or escalates for support.</li>\n<li>Diagnoses and resolves IT equipment’s and mobile devices hardware and software issues.</li>\n<li>Replace spare parts to make it workable by coordinating with supply chain department.</li>\n<li>Creates temporary solutions until permanent solutions can be implemented.</li>\n<li>Coordinates the resolution of escalated application, hardware and software problems.</li>\n<li>Maintain and support electrical and power backup.</li>\n</ul>\n<p><strong>Field Visit</strong></p>\n<ul>\n<li>Frequently visit WVI Nepal field offices for the purpose to fix technical issues.</li>\n<li>Perform yearly health checkup of IT equipment’s placed at WVI Nepal field offices and owned by WVI Nepal.</li>\n</ul>\n<p><strong>Inventory Management</strong></p>\n<ul>\n<li>Maintains IT inventory management for all IT equipment and/or software in accordance with company policy and procedures.</li>\n<li>Administrate end point and mobile device management portal and ensure it is up to date.</li>\n<li>Maintain IT equipment’s in stock.</li>\n</ul>\n<p><strong>Documentation</strong></p>\n<ul>\n<li>Creates, modifies and reviews documentation of issues resolutions.</li>\n<li>Develops and delivers documentation to ensure appropriate end-user support.</li>\n<li>Creates and submits documented resolution to Knowledge Base.</li>\n<li>Updates manuals/guides to incorporate new recommended products.</li>\n<li>Prepare report after IT equipment’s health checkup.</li>\n</ul>\n<p><strong>KNOWLEDGE/QUALIFICATIONS FOR THE ROLE</strong></p>\n<p><strong>Required Professional Experience</strong></p>\n<ul>\n<li>At least 6 moths to 1 years working experience in technology field in terms of providing customer support.</li>\n<li>Experience on help desk system.</li>\n<li>Hands-on experience with computer hardware, software installation, and troubleshooting.</li>\n<li>Good interpersonal and communication skills.</li>\n<li>Ability to prioritize tasks and work under supervision.</li>\n</ul>\n<p><strong>Required Education, training, license, registration and certification</strong></p>\n<ul>\n<li>At least bachelor degree in information technology, computer engineering or relevant technology field.</li>\n</ul>\n<p><strong>Preferred Knowledge and Qualifications</strong></p>\n<ul>\n<li>Basic knowledge of computer networking (LAN/Wi-Fi, IP configuration, printer sharing).</li>\n<li>Familiarity with Windows, Microsoft 365, and mobile device setup.</li>\n<li>Eagerness to learn new technologies and have problem solving nature.</li>\n</ul>\n<p><strong>Applicant Types Accepted:</strong> Local Applicants Only</p>\n<p><strong>End Date:</strong> January 6, 2026 </p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 2327,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Hasanpur",
-      "_application": "https://worldvision.wd1.myworkdayjobs.com/en-US/WorldVisionInternational/details/IT-Assistant---WFO_JR45047-1?locationCountry=96ff60d458734174895a1e037e1eab3c",
-      "_company_name": "World Vision International Nepal",
-      "_company_website": "https://www.wvi.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      28,
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      229
-    ],
-    "class_list": {
-      "0": "post-13560",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-hasanpur",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/13560",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/2327"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=13560"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=13560"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=13560"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13560"
         }
       ],
       "curies": [
