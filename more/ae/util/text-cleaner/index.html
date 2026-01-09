@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>منظف النصوص – إزالة الفراغات وفواصل السطر (فوري!)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="قم بتنظيف النص بسرعة! إزالة الفراغات الزائدة وفواصل السطر والمساحات في البداية والنهاية. يدعم أوضاع تنظيف متعددة. معالجة داخل المتصفح بنسبة 100%، مجاني، بدون رفع." />
+        <meta
+            name="keywords"
+            content="منظف النصوص, تنظيق فوري, إزالة الفراغات, إزالة فواصل السطر, مساحات بيضاء, تنسيق النص عبر الإنترنت, مجاني, بدون رفع" />
+        <meta name="author" content="Itagi" />
+        <meta name="language" content="ar" />
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/text-cleaner/" />
+        <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+        <!-- Open Graph & Twitter -->
+        <meta property="og:title" content="منظف النصوص – إزالة الفراغات وفواصل السطر (فوري!)" />
+        <meta
+            property="og:description"
+            content="احذف الفراغات الزائدة وفواصل السطر فورًا. ألصق النص ونظمه، ثم انسخ النتيجة. معالجة داخل المتصفح بنسبة 100%، مجاني، بدون رفع." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/text-cleaner/" />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="منظف النصوص – إزالة الفراغات وفواصل السطر (فوري!)" />
+        <meta
+            property="twitter:description"
+            content="نظف النص فورًا: احذف الفراغات الزائدة، الفواصل المتكررة، والمساحات في البداية والنهاية." />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+
+        <!-- Google tag (gtag.js) -->
+        <!-- Google AdSense -->
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"></script>
+        <style>
+            body {
+                background: #f7fbff;
+                margin: 0;
+                font-family: "Segoe UI", Arial, sans-serif;
+                color: #234;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+                direction: rtl;
+            }
+            .container {
+                margin: 42px auto 0 auto;
+                max-width: 480px;
+                background: #fff;
+                border-radius: 18px;
+                box-shadow: 0 4px 22px #13d2b033;
+                padding: 28px 15px 18px 15px;
+                width: 95vw;
+                min-width: 270px;
+            }
+            .logo {
+                font-size: 1.22em;
+                font-weight: bold;
+                text-align: center;
+                color: #1763a8;
+                margin-bottom: 9px;
+                letter-spacing: 0.01em;
+            }
+            .desc {
+                text-align: center;
+                color: #2172a2;
+                margin-bottom: 17px;
+                font-size: 1.04em;
+            }
+            textarea {
+                width: 100%;
+                min-height: 90px;
+                border-radius: 8px;
+                border: 1.2px solid #bde0fc;
+                padding: 11px;
+                font-size: 1.07em;
+                background: #fafdff;
+                color: #234;
+                resize: vertical;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                direction: rtl;
+                text-align: right;
+            }
+            .options {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 13px;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .options label {
+                font-size: 1em;
+                color: #206589;
+                background: #eef8fd;
+                border-radius: 6px;
+                padding: 5px 13px 5px 8px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                border: 1px solid #bde0fc;
+                transition:
+                    background 0.13s,
+                    border 0.13s;
+            }
+            .options input[type="radio"] {
+                margin-left: 6px;
+                accent-color: #1763a8;
+            }
+            .result-block {
+                background: #f4f7fd;
+                border: 1.2px solid #bfe1fa;
+                border-radius: 9px;
+                padding: 15px 10px 11px 10px;
+                margin-bottom: 8px;
+                color: #185490;
+                font-size: 1.11em;
+                min-height: 44px;
+                word-break: break-all;
+                position: relative;
+                direction: rtl;
+                text-align: right;
+            }
+            .copy-btn {
+                position: absolute;
+                top: 8px;
+                left: 14px;
+                background: #19b16e;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                padding: 6px 13px;
+                cursor: pointer;
+                font-size: 0.97em;
+                font-weight: bold;
+                box-shadow: 0 2px 8px #14b26e11;
+                transition: background 0.13s;
+            }
+            .copy-btn:active {
+                background: #116847;
+            }
+            .footer {
+                color: #789;
+                text-align: center;
+                font-size: 0.93em;
+                margin-top: 19px;
+                direction: ltr;
+            }
+            #backBtn {
+                position: fixed;
+                left: 50%;
+                bottom: 32px;
+                transform: translateX(-50%);
+                background: #1763a8;
+                color: #fff;
+                font-weight: 700;
+                border: none;
+                border-radius: 2rem;
+                padding: 0.58em 1.5em;
+                box-shadow: 0 4px 16px #13d2b066;
+                font-size: 1.09em;
+                text-decoration: none;
+                cursor: pointer;
+                letter-spacing: 0.01em;
+                transition:
+                    background 0.15s,
+                    transform 0.12s;
+                z-index: 2000;
+            }
+            #backBtn:hover {
+                background: #0f3e66;
+                transform: translateX(-50%) scale(1.04);
+            }
+            @media (max-width: 600px) {
+                .container {
+                    padding: 11px 2vw 11px 2vw;
+                }
+                .logo {
+                    font-size: 1.08em;
+                }
+                #backBtn {
+                    bottom: 18px;
+                    font-size: 0.98em;
+                    padding: 0.48em 1em;
+                }
+                .result-block {
+                    font-size: 0.99em;
+                }
+                .options label {
+                    font-size: 0.98em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">🧹 منظف النصوص</div>
+            <div class="desc">
+                ألصق النص أسفله أو اكتب هنا.<br />
+                يتم تطبيق التغييرات فورًا. اختر الوضع المناسب!
+            </div>
+            <div class="options">
+                <label><input type="radio" name="mode" value="full" checked /> الكامل (فراغات وفواصل سطر)</label>
+                <label><input type="radio" name="mode" value="breaks" /> احذف جميع فواصل السطر</label>
+                <label><input type="radio" name="mode" value="spaces" /> احذف الفراغات الزائدة فقط</label>
+                <label><input type="radio" name="mode" value="trimline" /> نظف بداية/نهاية كل سطر</label>
+            </div>
+            <textarea id="input" placeholder="ألصق النص هنا..."></textarea>
+            <div class="result-block" id="resultBlock" style="display: none">
+                <button class="copy-btn" id="copyBtn" style="display: none">نسخ</button>
+                <span id="result"></span>
+            </div>
+            <div class="footer">
+                بدون رفع. جميع عمليات التنظيف تتم فورًا داخل المتصفح.<br />
+                مجاني، يحترم الخصوصية، من إعداد <b>Itagi</b>.
+            </div>
+            <a href="../" id="backBtn">أدوات أخرى</a>
+        </div>
+        <script>
+            const input = document.getElementById("input");
+            const resultBlock = document.getElementById("resultBlock");
+            const result = document.getElementById("result");
+            const copyBtn = document.getElementById("copyBtn");
+            const radios = document.querySelectorAll('input[name="mode"]');
+
+            function cleanText(txt, mode) {
+                if (!txt) return "";
+                switch (mode) {
+                    case "breaks":
+                        // احذف جميع فواصل السطر، ادمج الأسطر وفراغ واحد
+                        return txt
+                            .replace(/[\r\n]+/g, " ")
+                            .replace(/ +/g, " ")
+                            .trim();
+                    case "spaces":
+                        // احذف الفراغات المتكررة، احتفظ بالفواصل، اجعل الفراغ الواحد
+                        return txt
+                            .replace(/[ \t]+/g, " ")
+                            .replace(/\n{2,}/g, "\n")
+                            .split("\n")
+                            .map((l) => l.trim())
+                            .join("\n")
+                            .trim();
+                    case "trimline":
+                        // نظف بداية ونهاية كل سطر فقط
+                        return txt
+                            .split(/[\r\n]/)
+                            .map((l) => l.trim())
+                            .join("\n")
+                            .trim();
+                    case "full":
+                    default:
+                        // الوضع الكامل: نظم الفراغات والفواصل
+                        txt = txt.replace(/\r\n?/g, "\n");
+                        txt = txt.replace(/[ \t]+/g, " ");
+                        txt = txt.replace(/\n{2,}/g, "\n");
+                        txt = txt
+                            .split("\n")
+                            .map((line) => line.trim())
+                            .join("\n");
+                        return txt.trim();
+                }
+            }
+
+            function updateResult() {
+                const raw = input.value;
+                const mode = document.querySelector('input[name="mode"]:checked').value;
+                const cleaned = cleanText(raw, mode);
+                result.textContent = cleaned;
+                resultBlock.style.display = cleaned ? "block" : "none";
+                copyBtn.style.display = cleaned ? "block" : "none";
+            }
+
+            input.addEventListener("input", updateResult);
+            radios.forEach((r) => r.addEventListener("change", updateResult));
+            updateResult();
+
+            copyBtn.onclick = () => {
+                const txt = result.textContent;
+                if (!txt) return;
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(txt);
+                } else {
+                    const ta = document.createElement("textarea");
+                    ta.value = txt;
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(ta);
+                }
+                copyBtn.textContent = "تم النسخ!";
+                setTimeout(() => (copyBtn.textContent = "نسخ"), 1200);
+            };
+        </script>
+        <section
+            style="
+                max-width: 320px;
+                margin: 48px auto 24px auto;
+                background: #1e1e1e;
+                border-radius: 18px;
+                box-shadow: 0 6px 24px #1236;
+                font-family: Arial, sans-serif;
+                color: #f0f0f0;
+                direction: rtl;
+                text-align: right;
+            ">
+            <div style="color: #8f94fb; font-size: 1.1em; font-weight: bold; padding: 16px 16px 0 16px">
+                ❓ الأسئلة الشائعة – منظف النصوص
+            </div>
+
+            <div style="margin-bottom: 12px; padding: 12px 16px 0 16px">
+                <div style="color: #8f94fb; font-weight: bold">ماذا ينظف وضع "الكامل"؟</div>
+                <div style="color: #f0f0f0">
+                    يحذف الفراغات الزائدة، ينظم بداية ونهاية كل سطر، ويقلل فواصل السطر المتكررة إلى سطر واحد.
+                </div>
+            </div>
+
+            <div style="margin-bottom: 12px; padding: 0 16px">
+                <div style="color: #8f94fb; font-weight: bold">هل يتم رفع البيانات؟</div>
+                <div style="color: #f0f0f0">
+                    لا. تتم جميع العمليات داخل المتصفح، ولا يتم إرسال أي محتوى إلى جهة خارجية.
+                </div>
+            </div>
+
+            <div style="margin-bottom: 12px; padding: 0 16px">
+                <div style="color: #8f94fb; font-weight: bold">ما الفرق بين الأوضاع؟</div>
+                <div style="color: #f0f0f0">
+                    <ul style="padding-left: 20px; margin: 0; text-align: right; direction: rtl">
+                        <li><b>الكامل:</b> ينظم الفراغات والفواصل في جميع أنحاء النص.</li>
+                        <li><b>احذف جميع فواصل السطر:</b> يدمج جميع الأسطر في سطر واحد.</li>
+                        <li><b>احذف الفراغات الزائدة فقط:</b> يزيل الفراغات الزائدة ويحافظ على فواصل السطر.</li>
+                        <li><b>نظف بداية/نهاية كل سطر:</b> يزيل المساحات في بداية ونهاية كل سطر فقط.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 12px; padding: 0 16px">
+                <div style="color: #8f94fb; font-weight: bold">هل يمكن لصق نص طويل؟</div>
+                <div style="color: #f0f0f0">
+                    نعم. يمكنك لصق كميات كبيرة من النص، وسيتم المعالجة بسرعة وعرض النتيجة فورًا.
+                </div>
+            </div>
+
+            <div style="margin-bottom: 0; padding: 0 16px 16px 16px">
+                <div style="color: #8f94fb; font-weight: bold">هل يدعم لغات أخرى؟</div>
+                <div style="color: #f0f0f0">
+                    نعم. يدعم جميع اللغات بما في ذلك العربية والكورية والرموز التعبيرية.
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

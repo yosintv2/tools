@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>أداة تحويل النطق الإنجليزي إلى IPA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google 태그 (gtag.js) -->
+    <!-- Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="حوّل الكلمات أو الجمل الإنجليزية إلى علامات نطق بسيطة بنمط IPA. قائم على قواعد، مجاناً وفي المتصفح فوراً دون رفع." />
+    <meta
+      name="keywords"
+      content="إنجليزي, ipa, نطق, محول, صوتيات, phonetic, تعليم, أداة النطق, تحويل نص لرموز, عبر الإنترنت, دراسة, تعليم" />
+    <meta name="author" content="Itagi" />
+    <meta name="language" content="ar" />
+    <meta name="theme-color" content="#1875d1" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/ipa-convert/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="أداة تحويل النطق الإنجليزي إلى IPA – بسيطة مع قواعد" />
+    <meta
+      property="og:description"
+      content="حوّل الكلمات أو الجمل الإنجليزية إلى علامات نطق بنمط IPA بسهولة. مجاني ويعمل في المتصفح دون رفع." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/ipa-convert/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="أداة تحويل النطق الإنجليزي إلى IPA – بسيطة مع قواعد" />
+    <meta
+      name="twitter:description"
+      content="حوّل النص الإنجليزي إلى نطق نمطي IPA فوراً في المتصفح مجاناً." />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <style>
+      /* ... الحفاظ على الأنماط الأساسية ... */
+      body {
+        background: #f7f9fe;
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #234;
+      }
+      .container {
+        max-width: 430px;
+        margin: 40px auto 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px #2238;
+        padding: 30px 20px 18px 20px;
+      }
+      .logo {
+        font-size: 1.21em;
+        font-weight: bold;
+        text-align: center;
+        color: #154185;
+        margin-bottom: 10px;
+        letter-spacing: 0.02em;
+      }
+      .desc {
+        text-align: center;
+        color: #2262b3;
+        margin-bottom: 15px;
+        font-size: 1.03em;
+      }
+      .form-row {
+        margin-bottom: 14px;
+      }
+      input[type="text"] {
+        padding: 10px 11px;
+        border-radius: 7px;
+        border: 1.2px solid #bfd8ff;
+        font-size: 1.08em;
+        width: 100%;
+        background: #fafdff;
+        color: #234;
+        transition: border 0.15s;
+        box-sizing: border-box;
+      }
+      input[type="text"]:focus {
+        border-color: #2278d4;
+        outline: none;
+      }
+      .action-btn {
+        background: #1875d1;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 0;
+        width: 100%;
+        font-size: 1.13em;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 7px;
+        margin-bottom: 11px;
+        box-shadow: 0 2px 12px #1875d120;
+        transition: background 0.15s;
+      }
+      .action-btn:active {
+        background: #0e4775;
+      }
+      .result-block {
+        background: #f4f7fd;
+        border: 1.2px solid #bfe1fa;
+        border-radius: 9px;
+        padding: 18px 11px 13px 11px;
+        margin-bottom: 7px;
+        color: #194f9e;
+        font-size: 1.14em;
+        text-align: center;
+        word-break: break-all;
+      }
+      section#faq {
+        background: #f0f7fc;
+        border-radius: 15px;
+        padding: 18px 14px 13px 16px;
+        margin: 28px 0 0 0;
+        border: 1px solid #b9daf8;
+        font-size: 0.99em;
+        text-align: right;
+      }
+      section#faq h3 {
+        font-weight: bold;
+        color: #1875d1;
+        margin-bottom: 6px;
+        font-size: 1.08em;
+        text-align: center;
+      }
+      section#faq dt {
+        color: #195269;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-weight: 500;
+      }
+      section#faq dd {
+        color: #265a7a;
+        margin-left: 7px;
+        margin-bottom: 7px;
+      }
+      .ipa {
+        font-size: 1.35em;
+        color: #1974b8;
+        background: #e6f4fc;
+        border-radius: 6px;
+        padding: 5px 12px;
+        display: inline-block;
+        margin: 8px 0 5px 0;
+        font-family: "Segoe UI", "Arial", "Times New Roman", serif;
+        letter-spacing: 1px;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.96em;
+        margin-top: 18px;
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #1875d1;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #1875d133;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition:
+          background 0.15s,
+          transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #0e4775;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 12px 2vw 14px 2vw;
+        }
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">🔤 أداة تحويل النطق إلى IPA</div>
+      <div class="desc">
+        أدخل كلمة إنجليزية أو جملة أدناه.<br />
+        ستتحول إلى نطق بنمط IPA مبسط.<br />
+        <b>مبني على قواعد تعليمية وممتعة (ليس IPA رسمي!)</b>
+      </div>
+      <form id="form" autocomplete="off">
+        <div class="form-row">
+          <input type="text" id="input" placeholder="أدخل كلمة إنجليزية (مثال: enough, school, photo)" required />
+        </div>
+        <button type="submit" class="action-btn">تحويل</button>
+      </form>
+      <div id="result"></div>
+      <section id="faq" aria-labelledby="faq-head">
+        <h3 id="faq-head">الأسئلة الشائعة – أداة تحويل النطق الإنجليزي إلى IPA</h3>
+        <dl>
+          <dt>هل هذا IPA حقيقي؟</dt>
+          <dd>لا. هذه الأداة تستخدم قواعد مبسطة لتمثيل نطق الإنجليزية بشكل تقريبي. ليست مخصصة للدراسة الأكاديمية أو الاختبارات، بل للتعلم والترفيه.</dd>
+          <dt>هل يُرسل النص الذي أدخله إلى الخادم؟</dt>
+          <dd>لا. كل التحويلات تتم داخل المتصفح فقط، ولا يتم إرسال أي نص إلى خارج جهازك.</dd>
+          <dt>ما هو لهجة الإنجليزية المستخدمة؟</dt>
+          <dd>هذا المحول يمزج قواعد اللهجة الأمريكية والبريطانية بشكل مبسط. لا يتطابق تماماً مع أي لهجة حقيقية ولكن يعطي تقديراً عاماً.</dd>
+          <dt>هل يمكن إدخال جملة كاملة؟</dt>
+          <dd>نعم. يمكنك إدخال كلمة أو جملة، وسيتم تحويل كل كلمة إلى نطقها بشكل منفصل.</dd>
+          <dt>هل هذه الأداة مجانية؟</dt>
+          <dd>نعم. هذه الأداة مجانية بالكامل ويمكن لأي شخص استخدامها بدون قيود.</dd>
+        </dl>
+      </section>
+      <div class="footer">
+        يحوّل النص الإنجليزي بناءً على قواعد بسيطة إلى نطق بنمط IPA.<br />
+        مخصص للتعلم والترفيه فقط.<br />
+        <span style="color: #bbb">يعمل 100% في المتصفح دون رفع أي بيانات.</span>
+      </div>
+    </div>
+    <a href="../" id="backBtn">أدوات أخرى</a>
+    <script>
+      // ... الرموز البرمجية الأصلية دون تغيير مع تطبيق العربية ...
+      function toIPA(word) {
+        if (!word.trim()) return "";
+        let w = word.toLowerCase();
+        // قواعد أولاً للنصوص الأطول
+        const rules = [
+          // ch, sh, th, ph, wh, qu
+          [/(sch)/g, "sk"],
+          [/ch/g, "tʃ"],
+          [/sh/g, "ʃ"],
+          [/th/g, "θ"],
+          [/ph/g, "f"],
+          [/wh/g, "w"],
+          [/qu/g, "kw"],
+          // حروف العلة المزدوجة / الحروف الطويلة
+          [/oo/g, "uː"],
+          [/ee/g, "iː"],
+          [/ea/g, "iː"],
+          [/ou/g, "aʊ"],
+          [/ow/g, "aʊ"],
+          [/ai/g, "eɪ"],
+          [/ay/g, "eɪ"],
+          [/oa/g, "oʊ"],
+          [/ie/g, "aɪ"],
+          [/igh/g, "aɪ"],
+          [/ei/g, "iː"],
+          [/oy/g, "ɔɪ"],
+          [/oi/g, "ɔɪ"],
+          // gn, kn, wr, mb
+          [/gn/g, "n"],
+          [/kn/g, "n"],
+          [/wr/g, "r"],
+          [/mb\b/g, "m"],
+          // e الصامتة في نهاية الكلمات
+          [/e\b/g, ""],
+          // كلمات شائعة (غير منتظمة)
+          [/\bthe\b/g, "ðə"],
+          [/\band\b/g, "ænd"],
+          [/\bof\b/g, "ʌv"],
+          [/\ba\b/g, "ə"],
+          [/\bto\b/g, "tuː"],
+          [/\bis\b/g, "ɪz"],
+          [/\byou\b/g, "juː"],
+          [/\bi\b/g, "aɪ"]
+        ];
+        // قواعد الحروف المفردة
+        const letters = {
+          a: "æ",
+          b: "b",
+          c: "k",
+          d: "d",
+          e: "ɛ",
+          f: "f",
+          g: "g",
+          h: "h",
+          i: "ɪ",
+          j: "dʒ",
+          k: "k",
+          l: "l",
+          m: "m",
+          n: "n",
+          o: "ɒ",
+          p: "p",
+          q: "k",
+          r: "r",
+          s: "s",
+          t: "t",
+          u: "ʌ",
+          v: "v",
+          w: "w",
+          x: "ks",
+          y: "j",
+          z: "z"
+        };
+        // تطبيق القواعد على النص
+        for (const [pattern, rep] of rules) w = w.replace(pattern, rep);
+        // التحويل الحرفي المتبقي
+        let ipa = "";
+        for (let i = 0; i < w.length; ++i) {
+          const ch = w[i];
+          ipa += letters[ch] !== undefined ? letters[ch] : ch;
+        }
+        // إضافة / لكل كلمة
+        let output = ipa
+          .split(/\s+/)
+          .map((x) => (x ? "/" + x + "/" : ""))
+          .join(" ");
+        return output;
+      }
+      const form = document.getElementById("form");
+      const input = document.getElementById("input");
+      const result = document.getElementById("result");
+      form.onsubmit = function (e) {
+        e.preventDefault();
+        const val = input.value.trim();
+        if (!val) return;
+        const ipa = toIPA(val);
+        result.innerHTML = `<div class="ipa">${ipa}</div>`;
+      };
+      input.addEventListener("input", () => {
+        if (!input.value.trim()) {
+          result.innerHTML = "";
+          return;
+        }
+        const ipa = toIPA(input.value);
+        result.innerHTML = `<div class="ipa">${ipa}</div>`;
+      });
+      input.focus();
+    </script>
+    <!-- FAQPage بنية البيانات المهيكلة (SEO/SGE/دعم Google rich) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل هذا IPA حقيقي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. هذه الأداة تستخدم قواعد مبسطة لتمثيل نطق الإنجليزية بشكل تقريبي. ليست مخصصة للدراسة الأكاديمية أو الاختبارات، بل للتعلم والترفيه."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يُرسل النص الذي أدخله إلى الخادم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. كل التحويلات تتم داخل المتصفح فقط، ولا يتم إرسال أي نص إلى خارج جهازك."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هو لهجة الإنجليزية المستخدمة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "هذا المحول يمزج قواعد اللهجة الأمريكية والبريطانية بشكل مبسط. لا يتطابق تماماً مع أي لهجة حقيقية ولكن يعطي تقديراً عاماً."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن إدخال جملة كاملة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. يمكنك إدخال كلمة أو جملة، وسيتم تحويل كل كلمة إلى نطقها بشكل منفصل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل هذه الأداة مجانية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. هذه الأداة مجانية بالكامل ويمكن لأي شخص استخدامها بدون قيود."
+          }
+        }
+      ]
+    }
+    </script>
+  </body>
+</html>

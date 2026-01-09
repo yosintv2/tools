@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- メタ情報（アラビア語化、author はそのまま） -->
+    <meta
+      name="description"
+      content="استمتع بلعبة 2048 الكلاسيكية مجاناً في المتصفح! ادمج البلاطات لتصل إلى 2048. لعبة أرقام بسيطة وممتعة!" />
+    <meta
+      name="keywords"
+      content="2048, لعبة 2048, لعبة ألغاز, لعبة مجانية, لعبة متصفح, لعبة أرقام, لعبة محمولة, لعبة كلاسيكية" />
+    <meta name="author" content="Itagi" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph（アラビア語化、SNSプレビュー用） -->
+    <meta property="og:title" content="لعبة 2048 أونلاين – متعة أرقام لا تُقاوم!" />
+    <meta
+      property="og:description"
+      content="ادمج بلاطات 2048 وسجل أعلى النقاط! لعبة أرقام بسيطة وشيقة، العب الآن!" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/game/2048" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card（アラビア語化） -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="لعبة 2048 أونلاين – العب مجاناً!" />
+    <meta
+      name="twitter:description"
+      content="استمتع بلعبة 2048 الرقمية الكلاسيكية مجاناً! متوافقة مع الأجهزة المحمولة وسهلة الاستخدام!" />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <title>لعبة 2048</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #faf8ef;
+        align-items: flex-start;
+        padding-top: 40px;
+      }
+
+      #game {
+        display: grid;
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(4, 70px);
+        gap: 10px;
+        background: #bbada0;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 80px;
+      }
+
+      .tile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 5px;
+        background: #cdc1b4;
+        color: #776e65;
+      }
+
+      div > button {
+        border: 0;
+        background: #cdc1b4;
+        color: #776e65;
+        border-radius: 5px;
+      }
+
+      div > button:active {
+        background-color: #666;
+      }
+
+      .tile-2 {
+        background: #eee4da;
+      }
+
+      .tile-4 {
+        background: #ede0c8;
+      }
+
+      .tile-8 {
+        background: #f2b179;
+        color: #f9f6f2;
+      }
+
+      .tile-16 {
+        background: #f59563;
+        color: #f9f6f2;
+      }
+
+      .tile-32 {
+        background: #f67c5f;
+        color: #f9f6f2;
+      }
+
+      .tile-64 {
+        background: #f65e3b;
+        color: #f9f6f2;
+      }
+
+      .tile-128 {
+        background: #edcf72;
+        color: #f9f6f2;
+        font-size: 20px;
+      }
+
+      .tile-256 {
+        background: #edcc61;
+        color: #f9f6f2;
+        font-size: 20px;
+      }
+
+      .tile-512 {
+        background: #edc850;
+        color: #f9f6f2;
+        font-size: 20px;
+      }
+
+      .tile-1024 {
+        background: #edc53f;
+        color: #f9f6f2;
+        font-size: 16px;
+      }
+
+      .tile-2048 {
+        background: #edc22e;
+        color: #f9f6f2;
+        font-size: 16px;
+      }
+
+      button.menu {
+        position: absolute;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        background-color: #776e65;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 80%;
+        transition: background-color 0.2s ease;
+        cursor: pointer;
+      }
+
+      button.menu:active {
+        background-color: #cdc1b4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      style="
+        text-align: center;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+      ">
+      <div style="font-size: 28px; font-weight: bold; color: #776e65">2048</div>
+      <div style="font-size: 14px; color: #8f7a66">ادمج الأرقام لتصل إلى 2048!</div>
+    </div>
+    <div
+      id="score"
+      style="
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: bold;
+        color: #776e65;
+      ">
+      النتيجة: 0
+    </div>
+    <button
+      id="start-button"
+      onclick="startGame()"
+      style="
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        padding: 10px 20px;
+        background: #8f7a66;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      ">
+      ابدأ اللعبة
+    </button>
+    <div id="game"></div>
+    <div
+      id="game-over"
+      style="
+        display: none;
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px 30px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #776e65;
+      ">
+      انتهت اللعبة<br /><br />
+      <button
+        onclick="shareScore()"
+        style="
+          font-size: 16px;
+          padding: 8px 16px;
+          background: #f57c00;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        ">
+        شارك نتيجتك
+      </button
+      ><br />
+      <button
+        onclick="startGame()"
+        style="
+          font-size: 16px;
+          padding: 8px 16px;
+          background: #8f7a66;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        ">
+        إعادة البدء
+      </button>
+    </div>
+    <script>
+      const game = document.getElementById("game");
+      let board = Array(4)
+        .fill()
+        .map(() => Array(4).fill(0));
+      let score = 0;
+
+      function drawBoard() {
+        game.innerHTML = "";
+        board.flat().forEach((value) => {
+          const tile = document.createElement("div");
+          tile.className = "tile" + (value ? " tile-" + value : "");
+          tile.textContent = value ? value : "";
+          game.appendChild(tile);
+        });
+      }
+
+      function addRandomTile() {
+        let empty = [];
+        board.forEach((row, i) => {
+          row.forEach((val, j) => {
+            if (val === 0) empty.push([i, j]);
+          });
+        });
+        if (empty.length > 0) {
+          let [i, j] = empty[Math.floor(Math.random() * empty.length)];
+          board[i][j] = Math.random() < 0.9 ? 2 : 4;
+        }
+      }
+
+      function moveLeft() {
+        let moved = false;
+        for (let i = 0; i < 4; i++) {
+          let row = board[i].filter((val) => val);
+          for (let j = 0; j < row.length - 1; j++) {
+            if (row[j] === row[j + 1]) {
+              row[j] *= 2;
+              score += row[j];
+              row[j + 1] = 0;
+              moved = true;
+            }
+          }
+          row = row.filter((val) => val);
+          while (row.length < 4) row.push(0);
+          if (!board[i].every((val, j) => val === row[j])) moved = true;
+          board[i] = row;
+        }
+        return moved;
+      }
+
+      function rotateBoard() {
+        board = board[0].map((_, i) => board.map((row) => row[i]).reverse());
+      }
+
+      function isGameOver() {
+        for (let i = 0; i < 4; i++) {
+          for (let j = 0; j < 4; j++) {
+            if (board[i][j] === 0) return false;
+            if (j < 3 && board[i][j] === board[i][j + 1]) return false;
+            if (i < 3 && board[i][j] === board[i + 1][j]) return false;
+          }
+        }
+        return true;
+      }
+
+      function handleKey(e) {
+        let moved = false;
+        if (e.key === "ArrowLeft") moved = moveLeft();
+        else if (e.key === "ArrowRight") {
+          board.forEach((row) => row.reverse());
+          moved = moveLeft();
+          board.forEach((row) => row.reverse());
+        } else if (e.key === "ArrowUp") {
+          rotateBoard();
+          rotateBoard();
+          rotateBoard();
+          moved = moveLeft();
+          rotateBoard();
+        } else if (e.key === "ArrowDown") {
+          rotateBoard();
+          moved = moveLeft();
+          rotateBoard();
+          rotateBoard();
+          rotateBoard();
+        }
+        if (moved) addRandomTile();
+        drawBoard();
+        document.getElementById("score").textContent = `النتيجة: ${score}`;
+        if (isGameOver()) {
+          document.getElementById("game-over").style.display = "block";
+        }
+      }
+
+      function startGame() {
+        score = 0;
+        document.getElementById("score").textContent = "النتيجة: 0";
+        document.getElementById("start-button").style.display = "none";
+        document.getElementById("game-over").style.display = "none";
+        board = Array(4)
+          .fill()
+          .map(() => Array(4).fill(0));
+        addRandomTile();
+        addRandomTile();
+        drawBoard();
+      }
+      document.addEventListener("keydown", handleKey);
+
+      function shareScore() {
+        const text = `I just scored ${score} points in the 2048 Game! Can you beat me?`;
+        if (navigator.share) {
+          navigator
+            .share({
+              title: "2048 Game",
+              text,
+              url: window.location.href
+            })
+            .catch(console.error);
+        } else {
+          navigator.clipboard
+            .writeText(`${text} ${window.location.href}`)
+            .then(() => alert("Score copied to clipboard!"))
+            .catch(() => alert("Failed to copy score."));
+        }
+      }
+    </script>
+    <div
+      id="mobile-controls"
+      style="
+        position: absolute;
+        top: 465px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        grid-template-rows: repeat(3, 50px);
+        gap: 5px;
+      ">
+      <div></div>
+      <button onclick="handleKey({ key: 'ArrowUp' })" style="font-size: 27px">▲</button>
+      <div></div>
+      <button onclick="handleKey({ key: 'ArrowLeft' })" style="font-size: 24px">◀</button>
+      <div></div>
+      <button onclick="handleKey({ key: 'ArrowRight' })" style="font-size: 24px">▶</button>
+      <div></div>
+      <button onclick="handleKey({ key: 'ArrowDown' })" style="font-size: 27px">▼</button>
+      <div></div>
+    </div>
+    <button style="position: absolute; top: 640px" class="menu" onclick="goToMain()">📂 ألعاب أخرى</button>
+    <script>
+      function goToMain() {
+        window.location.href = "../../"; // または ''
+      }
+    </script>
+    <section
+      style="
+        width: 90%;
+        max-width: 420px;
+        margin: 40px auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background: #fffbea;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        position: absolute;
+        margin-top: 44rem;
+      ">
+      <h2 style="font-size: 20px; margin-bottom: 1rem; color: #8f7a66">❓ الأسئلة الشائعة</h2>
+
+      <div style="margin-bottom: 1rem">
+        <strong>س1: كيف أبدأ اللعبة؟</strong><br />
+        أ. اضغط على زر <strong>“ابدأ اللعبة”</strong> في المنتصف لبدء اللعبة. سيظهر بلاطان عشوائيتان.
+      </div>
+
+      <div style="margin-bottom: 1rem">
+        <strong>س2: كيف أتحكم في اللعبة؟</strong><br />
+        أ. على سطح المكتب استخدم مفاتيح الاتجاه (← ↑ → ↓)، وعلى الجوال استخدم أزرار التحكم على الشاشة (▲ ◀ ▶ ▼).
+      </div>
+
+      <div style="margin-bottom: 1rem">
+        <strong>س3: كيف يتم احتساب النتيجة؟</strong><br />
+        أ. تزداد النتيجة في كل مرة تُدمج فيها بلاطات بنفس الرقم. كلما كان الرقم أكبر، تحصل على نقاط أكثر.
+      </div>
+
+      <div style="margin-bottom: 1rem">
+        <strong>س4: متى تنتهي اللعبة؟</strong><br />
+        أ. تنتهي اللعبة عندما لا يكون هناك مساحة فارغة ولا يمكن دمج أي بلاطات إضافية، عندها يُظهر “انتهت اللعبة”.
+      </div>
+
+      <div style="margin-bottom: 1rem">
+        <strong>س5: كيف أشارك نتيجتي؟</strong><br />
+        أ. بعد انتهاء اللعبة اضغط على زر <strong>“شارك نتيجتك”</strong> لاستخدام ميزة المشاركة في جهازك أو لنسخ الرابط.
+      </div>
+
+      <div>
+        <strong>س6: هل هناك ألعاب أخرى؟</strong><br />
+        أ. نعم! اضغط على زر <strong>“📂 ألعاب أخرى”</strong> أدناه لعرض قائمة الألعاب كاملة.
+      </div>
+    </section>
+  </body>
+</html>

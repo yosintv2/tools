@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="اختبر تركيزك وسرعة رد فعلك مع GREEN Click! انقر فقط عندما تكون الكلمة باللون الأخضر. لعبة مجانية أونلاين بسيطة وإدمانية ومتوافقة مع الجوال!" />
+        <meta
+            name="keywords"
+            content="GREEN Click, لعبة رد الفعل, ألعاب تنشيط الدماغ, لعبة الألوان, لعبة سريعة, تركيز, تحدي النقر, لعبة أونلاين مجانية, جوّال, لعبة متصفح, لعبة سرعة رد الفعل, كاجوال" />
+        <meta name="author" content="Itagi" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/game/GREENClick" />
+
+        <meta property="og:title" content="GREEN Click – لعبة رد الفعل أونلاين مجانية!" />
+        <meta
+            property="og:description"
+            content="انقر فقط عندما تكون الكلمة 'GREEN' باللون الأخضر! اختبر سرعة دماغك ورد فعلك في هذه اللعبة الإدمانية." />
+        <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/game/GREENClick" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GREEN Click – لعبة رد الفعل أونلاين مجانية!" />
+        <meta
+            name="twitter:description"
+            content="انقر فقط عندما تكون الكلمة 'GREEN' باللون الأخضر! تحدَّ أصدقاءك في لعبة تنشيط الدماغ السريعة هذه." />
+        <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+            crossorigin="anonymous"></script>
+        <title>GREEN Click – لعبة رد الفعل أونلاين مجانية!</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                user-select: none;
+            }
+
+            body {
+                font-family: "Segoe UI", sans-serif;
+                background-color: #1e1e1e;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+
+            h1 {
+                margin-bottom: 0.5rem;
+            }
+
+            #description {
+                margin-bottom: 20px;
+                font-size: 1rem;
+            }
+
+            #box {
+                width: 300px;
+                height: 300px;
+                margin: 10px auto;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                font-weight: bold;
+                background-color: #555;
+                transition: background-color 0.2s;
+                position: relative;
+                flex-direction: column;
+                cursor: pointer;
+            }
+
+            #word {
+                font-size: 2rem;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+
+            #score,
+            #message,
+            #finalScore {
+                font-size: 1.1rem;
+                margin: 10px;
+            }
+
+            #controls {
+                margin-top: 15px;
+                display: none;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                margin: 5px;
+                border: solid;
+                border-radius: 6px;
+                border-color: white;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color: #45a045;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><span style="color: green">GREEN</span> Click</h1>
+        <p id="description">عيونك تخدعك. <br />ثق فقط بالكلمة: GREEN.</p>
+
+        <div id="box">
+            <div id="word">انقر للبدء</div>
+        </div>
+
+        <div id="score" style="font-size: x-large; font-weight: bold">النقاط: 0</div>
+        <div id="message"></div>
+        <div id="finalScore"></div>
+
+        <div id="controls">
+            <button class="btn" onclick="startGame()">إعادة البدء</button>
+            <button class="btn" onclick="shareScore()">مشاركة</button>
+        </div>
+
+        <script>
+            const box = document.getElementById("box");
+            const wordDiv = document.getElementById("word");
+            const scoreDisplay = document.getElementById("score");
+            const message = document.getElementById("message");
+            const finalScore = document.getElementById("finalScore");
+            const controls = document.getElementById("controls");
+
+            const colors = ["GREEN", "RED", "BLUE", "YELLOW", "ORANGE", "PURPLE"];
+            const bgColors = ["green", "red", "blue", "yellow", "orange", "purple", "pink", "cyan", "lime", "gold"];
+
+            let currentText = "";
+            let score = 0;
+            let gameRunning = false;
+            let gameStarted = false;
+            let timeoutId = null;
+            let intervalId = null;
+
+            function getRandom(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            function updateBox() {
+                const bgColor = getRandom(bgColors);
+                box.style.backgroundColor = bgColor;
+
+                currentText = getRandom(colors);
+                wordDiv.textContent = currentText;
+
+                if (currentText === "GREEN") {
+                    timeoutId = setTimeout(() => {
+                        endGame("لقد فاتك GREEN!");
+                    }, 1000);
+                }
+            }
+
+            function startGame() {
+                clearInterval(intervalId);
+                clearTimeout(timeoutId);
+                score = 0;
+                gameRunning = true;
+                gameStarted = true;
+                message.textContent = "";
+                finalScore.textContent = "";
+                scoreDisplay.textContent = "النقاط: 0";
+                wordDiv.textContent = "";
+                box.style.pointerEvents = "auto";
+                controls.style.display = "none";
+
+                setTimeout(() => {
+                    updateBox();
+                    intervalId = setInterval(updateBox, 1200);
+                }, 500);
+            }
+
+            function endGame(reason) {
+                clearInterval(intervalId);
+                clearTimeout(timeoutId);
+                gameRunning = false;
+                box.style.backgroundColor = "#000";
+                wordDiv.textContent = "انتهت اللعبة";
+                box.style.pointerEvents = "none";
+
+                message.textContent = reason;
+                controls.style.display = "block";
+            }
+
+            function shareScore() {
+                const shareText = `🎯 حصلت على ${score} نقاط في تحدي GREEN Click! \nتحدَّ أصدقاءك 👉 ${window.location.href}`;
+                if (navigator.share) {
+                    navigator
+                        .share({
+                            title: "تحدي GREEN Click",
+                            text: shareText,
+                            url: window.location.href
+                        })
+                        .catch(() => {
+                            navigator.clipboard.writeText(shareText);
+                            alert("تم نسخ الرابط إلى الحافظة! 📋");
+                        });
+                } else {
+                    navigator.clipboard.writeText(shareText);
+                    alert("تم نسخ الرابط إلى الحافظة! 📋");
+                }
+            }
+
+            box.addEventListener("click", () => {
+                if (!gameStarted) {
+                    startGame();
+                    return;
+                }
+
+                if (!gameRunning) return;
+
+                clearTimeout(timeoutId);
+
+                if (currentText === "GREEN") {
+                    score++;
+                    scoreDisplay.textContent = `النقاط: ${score}`;
+                    let intervalTime = Math.max(400, 1200 - score * 50);
+
+                    clearInterval(intervalId);
+                    intervalId = setInterval(updateBox, intervalTime);
+                } else {
+                    endGame("خطأ! لم تكن GREEN.");
+                }
+            });
+        </script>
+        <button
+            style="
+                margin-top: 20px;
+                width: 90%;
+                height: 60px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #000;
+                cursor: pointer;
+                border-radius: 6px;
+                border: solid;
+                color: white;
+                border-color: white;
+            "
+            onclick="window.location.href='/'">
+            📂 ألعاب أخرى
+        </button>
+        <section
+            style="
+                width: 90%;
+                max-width: 420px;
+                margin: 60px auto;
+                padding: 20px;
+                font-family: 'Segoe UI', sans-serif;
+                background: #f0fff4;
+                color: #2d3436;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                line-height: 1.6;
+                font-size: 14px;
+            ">
+            <h2 style="font-size: 20px; margin-bottom: 1rem; color: #006400">❓ الأسئلة الشائعة (FAQ)</h2>
+
+            <div style="margin-bottom: 1rem">
+                <strong>س1. كيف تلعب GREEN Click؟</strong><br />
+                أ. عندما تظهر الكلمة <strong>GREEN</strong> فقط انقر على الصندوق – لا تهتم بلون الخلفية!
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>س2. متى تنتهي اللعبة؟</strong><br />
+                أ. إذا نقرت على كلمة ليست <strong>GREEN</strong> أو لم تنقر خلال الوقت المحدد عندما تظهر <strong>GREEN</strong>، تنتهي اللعبة.
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>س3. هل هناك حد زمني؟</strong><br />
+                أ. نعم! إذا لم تنقر خلال حوالي ثانية عندما تظهر <strong>GREEN</strong>، تنتهي اللعبة.
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>س4. هل تصبح اللعبة أصعب؟</strong><br />
+                أ. نعم! كلما زادت نقاطك، تصبح السرعة أسرع.
+            </div>
+
+            <div style="margin-bottom: 1rem">
+                <strong>س5. هل يمكن إعادة بدء اللعبة؟</strong><br />
+                أ. بالتأكيد! انقر على "<strong>إعادة البدء</strong>" للعب مرة أخرى في أي وقت.
+            </div>
+
+            <div>
+                <strong>س6. كيف أشارك نتيجتي؟</strong><br />
+                أ. انقر على "<strong>مشاركة</strong>" لنسخ الرابط والنقاط ومشاركة التحدي مع أصدقائك!
+            </div>
+        </section>
+    </body>
+</html>

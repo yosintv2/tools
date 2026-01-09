@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>قُسيمة الحظ – تحقق من حظك اليوم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="احصل على حظك لليوم فورًا! أداة ممتعة ومجانية، تعمل داخل المتصفح دون مراقبة أو رفع بيانات." />
+    <meta
+      name="keywords"
+      content="حظ, حظ اليوم, توقيع الحظ, سعيد, رسالة إيجابية, رسالة عشوائية, حظ مجاني, تنبؤ, إلهام" />
+    <meta name="author" content="Itagi" />
+    <link rel="canonical" href="https://www.singhyogendra.com.np/more/ae/util/fortune/" />
+    <link rel="icon" href="https://www.singhyogendra.com.np/more/icon-192.png" />
+    <meta property="og:title" content="قُسيمة الحظ – تحقق من حظك اليوم" />
+    <meta
+      property="og:description"
+      content="انقر الزر لعرض حظك اليوم! تعمل الأداة 100% داخل المتصفح، بدون رفع أو تتبع." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.singhyogendra.com.np/more/ae/util/fortune/" />
+    <meta property="og:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="قُسيمة الحظ – تحقق من حظك اليوم" />
+    <meta
+      name="twitter:description"
+      content="احصل على حظك اليوم فورًا! أداة ممتعة ومجانية، تعمل داخل المتصفح." />
+    <meta name="twitter:image" content="https://www.singhyogendra.com.np/more/thumbnail.png" />
+    <!-- Google Analytics -->
+    <!-- Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+      crossorigin="anonymous"></script>
+    <style>
+      body {
+        background: #f3f5ff;
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #24325b;
+      }
+      .container {
+        max-width: 390px;
+        margin: 42px auto 0 auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 6px 28px #2037a033;
+        padding: 28px 17px 19px 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .logo {
+        font-size: 1.23em;
+        font-weight: bold;
+        color: #7d4ae9;
+        text-align: center;
+        margin-bottom: 8px;
+        letter-spacing: -1px;
+      }
+      .desc {
+        text-align: center;
+        color: #2037a0;
+        margin-bottom: 17px;
+        font-size: 1.05em;
+      }
+      .fortune-btn {
+        background: linear-gradient(90deg, #9e72ff, #69e0d1);
+        color: #fff;
+        border: none;
+        border-radius: 9px;
+        font-size: 1.11em;
+        font-weight: bold;
+        padding: 14px 0;
+        cursor: pointer;
+        box-shadow: 0 2px 12px #6d63ff33;
+        letter-spacing: 0.01em;
+        margin-bottom: 17px;
+        transition: background 0.17s;
+      }
+      .fortune-btn:active {
+        background: linear-gradient(90deg, #5b3ca4, #1bc6a4);
+      }
+      .result-block {
+        background: #faf6ff;
+        border: 1.2px solid #dacffd;
+        border-radius: 13px;
+        padding: 17px 14px 12px 14px;
+        box-shadow: 0 2px 7px #bbacf533;
+        font-size: 1.13em;
+        text-align: center;
+        margin-bottom: 9px;
+        min-height: 65px;
+        color: #643cc3;
+        line-height: 1.7;
+        word-break: keep-all;
+        position: relative;
+      }
+      .copy-btn {
+        background: #7d4ae9;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 7px 19px;
+        cursor: pointer;
+        font-size: 0.97em;
+        font-weight: bold;
+        margin: 0 auto 5px auto;
+        display: block;
+        transition: background 0.12s;
+        box-shadow: 0 2px 6px #7d4ae933;
+      }
+      .copy-btn:active {
+        background: #4328a3;
+      }
+      .hint {
+        color: #18b88a;
+        font-size: 0.96em;
+        margin: 2px 0 7px 0;
+        text-align: center;
+        min-height: 18px;
+        transition: color 0.14s;
+      }
+      .adsense {
+        text-align: center;
+        margin: 12px 0 13px 0;
+      }
+      .footer {
+        color: #789;
+        text-align: center;
+        font-size: 0.93em;
+        margin-top: 13px;
+      }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 99vw;
+          padding: 12px 2vw 9px 2vw;
+        }
+        .result-block {
+          font-size: 1em;
+        }
+      }
+      #backBtn {
+        position: fixed;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        background: #198dae;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.58em 1.5em;
+        box-shadow: 0 4px 16px #198dae33;
+        font-size: 1.09em;
+        text-decoration: none;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        transition: background 0.15s, transform 0.12s;
+        z-index: 2000;
+      }
+      #backBtn:hover {
+        background: #115b73;
+        transform: translateX(-50%) scale(1.04);
+      }
+      @media (max-width: 500px) {
+        #backBtn {
+          bottom: 18px;
+          font-size: 0.98em;
+          padding: 0.48em 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">🔮 قُسيمة الحظ</div>
+      <div class="desc">
+        انقر الزر لعرض حظك اليوم!<br />
+        (أداة للمرح والطاقة الإيجابية)
+      </div>
+      <button class="fortune-btn" id="fortuneBtn">تحقق من حظك</button>
+      <div class="result-block" id="resultBlock">انقر الزر أو انقر هنا للحصول على حظك اليوم!</div>
+      <button class="copy-btn" id="copyBtn" style="display: none">نسخ الحظ</button>
+      <div class="hint" id="hint"></div>
+      <div class="adsense">
+        <!-- Google AdSense -->
+        <ins
+          class="adsbygoogle"
+          style="display: block; text-align: center"
+          data-ad-client="ca-pub-5525538810839147"
+          data-ad-slot="1598987855"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <div class="footer">
+        100% تعمل داخل المتصفح. لا رفع أو تتبع للبيانات.<br />
+        من إعداد Itagi – مجانية بالكامل!
+      </div>
+    </div>
+    <a href="../" id="backBtn">أدوات أخرى</a>
+    <script>
+      // مجموعة من 30 رسالة حظ
+      const fortunes = [
+        "✨ فرصة جديدة تلوح في الأفق. اتخذ قرارك بشجاعة!",
+        "🍀 الحظ يقف إلى جانبك اليوم. فعل صديق بسيط قد يجلب لك الكثير.",
+        "🌈 خبر سار سيصل إليك قريبًا.",
+        "🔥 تحدٍ جديد سيؤدي إلى نجاح غير متوقع.",
+        "💡 الإجابة أقرب مما تعتقد. انظر حولك بانتباه.",
+        "🌱 عادة صغيرة تبدأها اليوم قد تغير حياتك.",
+        "⭐ محادثة مع شخص قد تمنحك إلهامًا عظيمًا.",
+        "🎁 قد تتلقى هدية غير متوقعة أو لفتة طيبة.",
+        "🚦 خذ استراحة قصيرة—فرصة أكبر في انتظارك.",
+        "🌞 لا تنس الابتسامة. الطاقة الإيجابية تجذب الأشخاص الجيدين.",
+        "🦉 اترك بعض همومك جانبًا—لا بأس في التخلي قليلًا.",
+        "🌊 المرونة ستساعدك على التكيف مع التغيير.",
+        "🪴 نعمة صغيرة ستضيء يومك بهدوء.",
+        "💬 كن منفتحًا في التواصل—الحظ سيتحسن.",
+        "🍎 العناية بصحتك تجلب المزيد من الأمور الجيدة.",
+        "🏃‍♂️ تصرفك اليوم يصنع نتائج الغد.",
+        "📚 بالاستمرار في التعلم، ستُفتح أمامك أبواب جديدة.",
+        "⚡ حدسك اليوم قوي. ثق بأول فكرة تخطر ببالك.",
+        "🧭 نزهة قصيرة أو رحلة صغيرة ستنعش ذهنك.",
+        "🛡️ قبول المساعدة من حولك يجعل الحياة أسهل.",
+        "🛤️ تعديل بسيط في خطتك قد يؤدي إلى نتائج كبيرة.",
+        "🎉 مفاجأة سارة قادمة قريبًا.",
+        "💸 إنفاق معتدل اليوم يجلب عليك منافع أكبر.",
+        "🌠 قرارك اليوم يصنع مستقبلك.",
+        "🔑 كونك منفتح الذهن يجلب الحظ.",
+        "🚀 إذا كنت مترددًا، اليوم هو أفضل وقت للبدء.",
+        "🕊️ تخلص من التوتر واستمتع بالحرية.",
+        "🎨 خيالك اليوم خصب. جرب شيئًا جديدًا.",
+        "🧡 الحب والصداقة سيتعززان اليوم.",
+        "🪐 رؤية الأمور من منظور أوسع تكشف فرصًا جديدة."
+      ];
+      const resultBlock = document.getElementById("resultBlock");
+      const copyBtn = document.getElementById("copyBtn");
+      const fortuneBtn = document.getElementById("fortuneBtn");
+      const hint = document.getElementById("hint");
+
+      function pickFortune() {
+        const idx = Math.floor(Math.random() * fortunes.length);
+        resultBlock.textContent = fortunes[idx];
+        copyBtn.style.display = "block";
+        hint.textContent = "";
+      }
+
+      fortuneBtn.onclick = pickFortune;
+      resultBlock.onclick = pickFortune;
+
+      copyBtn.onclick = function () {
+        const text = resultBlock.textContent;
+        if (!text || text.startsWith("انقر")) {
+          hint.textContent = "يرجى الحصول على حظك أولاً!";
+          hint.style.color = "#ff416c";
+          return;
+        }
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(() => {
+            hint.textContent = "تم نسخ الحظ!";
+            hint.style.color = "#18b88a";
+          });
+        } else {
+          // للمتصفحات القديمة
+          const textarea = document.createElement("textarea");
+          textarea.value = text;
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+            document.execCommand("copy");
+            hint.textContent = "تم نسخ الحظ!";
+            hint.style.color = "#18b88a";
+          } catch {
+            hint.textContent = "فشل النسخ. يرجى النسخ يدويًا.";
+            hint.style.color = "#ff416c";
+          }
+          document.body.removeChild(textarea);
+        }
+      };
+    </script>
+    <section style="
+        max-width: 320px;
+        margin: 48px auto 24px auto;
+        background: #1e1e1e;
+        border-radius: 18px;
+        box-shadow: 0 6px 24px #1236;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      ">
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">🔮 ما هذه الأداة؟</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">
+          أداة تُظهر رسالة حظ عشوائية لليوم. فقط اضغط الزر وسيظهر لك فورًا حظك!
+        </p>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">📋 هل يمكن نسخ الحظ؟</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">
+          نعم! بعد ظهور الحظ، انقر "نسخ الحظ" لنسخه إلى الحافظة وشاركه مع أصدقائك أو احتفظ به.
+        </p>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">📱 هل تعمل على الجوال؟</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">
+          بالتأكيد. تم تصميم الموقع بالكامل بتوافق تام مع الجوال، ويعمل على الهواتف الذكية والأجهزة اللوحية وسطح المكتب.
+        </p>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">🧠 هل هذه تنبؤات حقيقية؟</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">
+          لا – إنها أداة ترفيهية وإلهام إيجابي فقط! ليست تنبؤًا حقيقيًا، بل رسالة لإضفاء جوٍّ من التفاؤل.
+        </p>
+      </div>
+      <div style="margin-bottom: 0;">
+        <h3 style="color: #8f94fb; font-size: 1.1em; margin-bottom: 6px;">🔒 هل خصوصيتي آمنة؟</h3>
+        <p style="color: #f0f0f0; font-size: 0.95em; margin: 0;">
+          نعم. لا حاجة للتسجيل أو إدخال المعلومات، وتعمل الأداة 100% داخل المتصفح مع حماية كاملة للخصوصية.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
