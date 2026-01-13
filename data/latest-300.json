@@ -1,5 +1,939 @@
 [
   {
+    "id": 15090,
+    "date": "2026-01-13T09:01:58",
+    "date_gmt": "2026-01-13T03:16:58",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=15090"
+    },
+    "modified": "2026-01-13T09:03:43",
+    "modified_gmt": "2026-01-13T03:18:43",
+    "slug": "ishan-children-and-womens-hospital-kathmandu-full-time-admin-assistant",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/ishan-children-and-womens-hospital-kathmandu-full-time-admin-assistant/",
+    "title": {
+      "rendered": "Admin Assistant"
+    },
+    "content": {
+      "rendered": "<p><strong>Position:</strong> Admin Assistant (Male)<br />\n<strong>No. of Vacancy</strong>: Few</p>\n<p><strong>Description</strong></p>\n<ul>\n<li>Qualification: Diploma/Bachelor Degree in Administration (Running)</li>\n<li>Experience: Preference will be given to experienced one</li>\n</ul>\n<p>Send your updated CV to:<strong> careeratishan@gmail.com</strong></p>\n",
+      "protected": false
+    },
+    "author": 294,
+    "featured_media": 9840,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "careeratishan@gmail.com",
+      "_company_name": "Ishan Children and Women's Hospital",
+      "_company_website": "https://ishanhospital.com.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      30
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-15090",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/15090",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/294"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/9840"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=15090"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=15090"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=15090"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=15090"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 15088,
+    "date": "2026-01-13T08:46:02",
+    "date_gmt": "2026-01-13T03:01:02",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=15088"
+    },
+    "modified": "2026-01-13T08:48:33",
+    "modified_gmt": "2026-01-13T03:03:33",
+    "slug": "project-officer-9",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/project-officer-9/",
+    "title": {
+      "rendered": "Project Officer"
+    },
+    "content": {
+      "rendered": "<p><strong>​Position Title:</strong> Project Officer</p>\n<p><strong>​Location:</strong> Kathmandu, Nepal</p>\n<p><strong>Reports to:</strong> Programme Manager</p>\n<p><strong>Application Deadline</strong>: January 25, 2025</p>\n<p><strong>Contract Type:</strong> Full-Time</p>\n<p><strong>About CBM Global</strong></p>\n<p>CBM Global works alongside people with disabilities in low- and middle-income countries to fight poverty and exclusion and transform lives. Check out our website and LinkedIn profile to learn more. Drawing on over 100 years of experience, we work with the most marginalised in society to:</p>\n<ul>\n<li>Break the cycle of poverty and disability</li>\n<li>Treat and prevent conditions that lead to disability; and</li>\n<li>Build inclusive communities where everyone can enjoy their human rights and achieve their full potential.</li>\n</ul>\n<p>We work in over 20 countries, investing in long-term, authentic partnerships with the Disability Movement and multiplying our impact by delivering a combination of inclusive community-based programmes, advocacy for national and global policy change and inclusion advice to other organisations. CBM Global is a worldwide federation with the following Members: CBM Australia, CBM Ireland, CBM Kenya, CBM New Zealand, CBM Switzerland, and CBM UK.</p>\n<p><strong>About the Role</strong></p>\n<p>​</p>\n<p>CBM Global Nepal has launched SAMAVESH: Supporting Active Measures Advancing Voices, Equality, Solidarity and Harmony, a three-year EU-funded project aimed at strengthening the meaningful political participation and representation of persons with disabilities in Nepal. Implemented with CBM Ireland, CBM Global Nepal, NFDN, and FWDN, the project will work with Organisations of Persons with Disabilities (OPDs), government bodies, political institutions, media, and civil society to build leadership, civic awareness, and disability-inclusive policymaking. Engaging around 700 key actors and reaching over 9,200 direct and 150,000 indirect beneficiaries across Bagmati and Karnali Provinces, SAMAVESH will particularly empower women and youth with disabilities, enhance OPD governance, and contribute to inclusive democratic systems ahead of Nepal’s upcoming federal elections.<br />\n​</p>\n<p>The Project Officer will be responsible for effective coordination, implementation, monitoring, and reporting of the SAMAVESH Project. The position will serve as the primary focal person from CBM Global Nepal, ensuring high-quality delivery of project activities, partner support, compliance with EU requirements, and strong collaboration with OPDs.</p>\n<p>​</p>\n<p><strong>This will be your team:</strong></p>\n<p>The Country Team that you will be joining has 25 employees. You will report to the Programme Manager and join a team of 5 people. You will have no direct reports.</p>\n<p>​</p>\n<p><strong>Key Responsibilities</strong></p>\n<p><strong>​</strong></p>\n<p><strong>A. Project Management &amp; Coordination</strong></p>\n<ul>\n<li> Lead day-to-day coordination of project activities on behalf of CBM Global Nepal.</li>\n<li>Ensure timely and quality implementation of activities ensuring they adhere to the approved work plan, logical framework, EU Grant Agreement requirements including schedules, deliverables and milestones as well as CBM Global standards.</li>\n<li> Maintain effective communication and coordination with implementing partners, OPDs, and relevant stakeholders.</li>\n<li> Facilitate regular project review meetings, planning sessions, and joint monitoring.</li>\n<li>Maintain comprehensive and accurate project documentation files (technical and administrative) to support compliance checks and audits.</li>\n<li>Identify, assess and proactively manage project risks, including operational delays, compliance issues, and partner challenges.</li>\n<li>Ensure project communication and visibility are delivered in accordance with EU visibility rules and branding guidelines (logo use, disclaimers, public materials).</li>\n</ul>\n<p>​</p>\n<p><strong>B. Partner Support &amp; Capacity Strengthening</strong></p>\n<ul>\n<li> Provide technical and operational support to local implementing partners (NFDN and FWDN), local OPDs and CSOs.</li>\n<li> Strengthening partners’ capacity in project management, safeguarding, disability inclusion, and reporting.</li>\n<li> Guide partners on compliance with EU contractual conditions, project delivery and CBM Global procedures.</li>\n<li>Conduct periodic internal compliance reviews of partner implementation and documentation.</li>\n<li>Monitor sub-grants to OPDs/CSOs for contractual compliance, deliverables and financial eligibility</li>\n</ul>\n<p>​</p>\n<p><strong>C. Monitoring, Evaluation, and Learning (MEL)</strong></p>\n<ul>\n<li> Monitor field activities to ensure progress, quality, and adherence to the project log frame.</li>\n<li>Conduct internal quality checks of all reports (interim, technical, final) ensuring compliance with CBM Global and EU templates, deadlines and content expectations.</li>\n<li>Collect, verify, and analyse data for project reporting and learning.</li>\n<li>Document best practices, case stories, and lessons learned.</li>\n</ul>\n<p>​</p>\n<p><strong>D. Reporting &amp; Compliance</strong></p>\n<ul>\n<li>Lead the consolidation and preparation of high-quality technical reports for submission to EU via CBM.</li>\n<li>Ensure timely reporting from partners, complete documentation, and compliance with donor rules.</li>\n<li>Support financial tracking and coordinate with the finance team to ensure expenditures align with the approved budget lines and eligibility criteria under EU rules</li>\n</ul>\n<p>​</p>\n<p><strong>E. Stakeholder Engagement &amp; OPD Collaboration</strong></p>\n<ul>\n<li> Facilitate meaningful participation and engagement of OPDs throughout the project cycle.</li>\n<li> Maintain coordination with government bodies, civil society, and EU representatives as needed.</li>\n<li> Represent CBM in project events, workshops, and coordination forums.</li>\n</ul>\n<p>​</p>\n<p><strong>F. Humanitarian Action</strong></p>\n<ul>\n<li> In the event of a humanitarian emergency and subject to organisational priorities, the post holder may be requested to provide time-bound support to emergency response initiatives, while ensuring continuity of EU project obligations</li>\n</ul>\n<p>​</p>\n<p><strong>G. Safeguarding</strong></p>\n<p><strong>​</strong></p>\n<p><strong>Knowledge</strong></p>\n<p>Understands the incident management framework and their first responder role in recording, responding and reporting incidents.</p>\n<p>Understands the survivor-centred approach and how to apply it when receiving a complaint or responding to an incident. Knows local support services available in the community or region, and how to engage them.</p>\n<p>​</p>\n<p><strong>Skills</strong></p>\n<p>Able to listen and accurately document reported concerns and complaints. Able to respect the confidentiality of safeguarding allegations. Able to appropriately apply the survivor-centred approach.</p>\n<p>​</p>\n<p><strong>Behaviours</strong></p>\n<p>Treats the survivor and others involved in an incident with dignity and respect.</p>\n<p>Be assertive in implementing the initial incident response protocols by gaining the trust and cooperation of parties involved.</p>\n<p>​</p>\n<p><strong>Who We’re Looking For</strong></p>\n<p>​</p>\n<p>We are looking for a candidate who brings the following experience and qualities:</p>\n<p>All the following requirements are Essential, unless marked with a * when they are Desirable.</p>\n<p>​</p>\n<p><strong>Experience and Knowledge</strong></p>\n<ul>\n<li>​Demonstrated expertise in project coordination and management with a minimum of five (5) years of relevant experience.</li>\n<li>Experience of working with partners, organizations of people with disabilities (OPDs) and community-based organizations.</li>\n<li>Strong knowledge of disability inclusion, rights-based approaches, and partnership management.</li>\n<li>Demonstrated capacity to lead technical and financial reporting to institutional donors.</li>\n<li>​Experience with EU funded projects will be an asset.</li>\n<li>Familiarity with EU compliance, reporting formats, visibility rule, finance rules and audit processes.</li>\n<li>Experience in facilitating training and multi-stakeholder coordination.</li>\n<li>Formal training or certification in project management methodologies (e.g., EU Project Cycle Management, PRINCE2, PM²) or specific EU project courses.</li>\n</ul>\n<p>​</p>\n<p><strong>Skills/Competencies/Personal Qualities</strong></p>\n<ul>\n<li>Strong project management skills</li>\n<li>Excellent communications and coordination skills.</li>\n<li>Strong competency in documentation and reporting.</li>\n<li>Demonstrated capacity building skills.</li>\n<li>Knowledge of safeguarding, gender equality, and inclusive development.</li>\n<li>Cultural and political sensitivity when engaging institutions</li>\n<li>​Experience working in cross-cultural teams and diverse environments.</li>\n<li>​Committed, excited, and passionate about disability inclusion and the rights of people with disabilities.</li>\n</ul>\n<p>​Open to work collaboratively.</p>\n<p>Alignment to our CBM Global values (Our Vision, Mission and Values | CBM Global) and our Safeguarding Policy (CBM-Global-Policy-Safeguarding.pdf) and Code of Conduct (CBM-Global-Code-of-Conduct.pdf)<br />\n​</p>\n<p><strong>Qualifications</strong></p>\n<ul>\n<li>Master’s degree in Social Sciences, Development Studies, Human Rights, or related field.​</li>\n</ul>\n<p><strong>We welcome and encourage applications from people with lived experience of disability.</strong></p>\n<p><strong>​</strong></p>\n<p><strong>We proactively work on achieving a diverse and inclusive work environment for people from all backgrounds and abilities.</strong></p>\n<p>​</p>\n<p><strong>Why work with Us?</strong></p>\n<p>​</p>\n<ul>\n<li>A chance to be part of a global movement pursuing an inclusive world for people with disabilities.</li>\n<li>A supportive, flexible, and inclusive work environment.</li>\n<li>Flexible working arrangements.</li>\n<li>A culture that champions Mental Health and Wellbeing.</li>\n<li>Opportunities for learning, growth, and international collaboration.</li>\n<li>Competitive remuneration and benefits.​</li>\n</ul>\n<p><strong>Hear from our colleagues</strong></p>\n<p>​</p>\n<p><strong>Colleagues from Philippines Country Team say:</strong></p>\n<p>”Join CBM Global: We embody the culture of support, growth, and impact.”</p>\n<p>​</p>\n<p><strong>Colleagues from Nigeria Country Team say:</strong></p>\n<p>”At CBM Global you are not just a staff but a change maker.”</p>\n<p>Colleagues from Zimbabwe Country Team say:</p>\n<p>”One Team. One Purpose. Transforming lives through Inclusive Partnerships.”</p>\n<p>​</p>\n<p>Colleagues from Lao PDR Country Team say:</p>\n<p>&#8220;We are privileged and honored to work with CBM Global, where we feel like a family and trust each other. We are satisfied with the learning opportunities and growth, and are truly motivated to continue promoting and advocating for disability inclusion and an inclusive society.&#8221;</p>\n<p>​</p>\n<p>Colleagues from Nepal Country Team say:</p>\n<p>”At CBM Global, we believe in a collaborative approach. Guided by a shared mission, we foster a strong sense of ownership and purpose in everything we do.”</p>\n<p>​</p>\n<p>You are passionate, committed, and excited about disability inclusion and the rights of people with disabilities?</p>\n<p>​</p>\n<p>Then Join Us and Be Part of the Change!</p>\n<p>​</p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 7330,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "https://cbmglobal.peoplehr.net/Pages/JobBoard/Opening.aspx?v=d80945a6-e8ed-470f-b641-146e0c0f29a5",
+      "_company_name": "CBM Global",
+      "_company_website": "https://cbm-global.org/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-15088",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/15088",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/7330"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=15088"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=15088"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=15088"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=15088"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 15082,
+    "date": "2026-01-13T08:08:27",
+    "date_gmt": "2026-01-13T02:23:27",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=15082"
+    },
+    "modified": "2026-01-13T08:11:37",
+    "modified_gmt": "2026-01-13T02:26:37",
+    "slug": "nepal-cancer-hospital-research-center-lalitpur-full-time-assistant-store",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/nepal-cancer-hospital-research-center-lalitpur-full-time-assistant-store/",
+    "title": {
+      "rendered": "Assistant-Store"
+    },
+    "content": {
+      "rendered": "<p><strong>Nepal Cancer Hospital &amp; Research Center (NCHRC) Ltd.</strong> is the first comprehensive cancer hospital providing international standard cancer care services from its own state-of-the-art hospital located at Harisiddhi, Lalitpur. The NCHRC is seeking applications from dedicated, result oriented, self-driven candidates to fulfill the following positions:</p>\n<p><strong>Position:</strong> Assistant-Store (52/082/083)<br />\n{Fixed term contract for 2 months}<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Requirement:</strong></p>\n<ul>\n<li>Intermediate degree in any discipline.</li>\n<li>Candidate with experience in a related field will be given</li>\n</ul>\n<p>Intermediate degree in any discipline Typing skill is must Interested candidates are required to send an updated resume to <strong>vacancy@nch.com.np</strong> within 7 days from the date of publication. The NCHRC reserves the right to select or reject or any application without disclosing any reason. Only shortlisted candidates will be called for an interview</p>\n",
+      "protected": false
+    },
+    "author": 134,
+    "featured_media": 1395,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Lalitpur",
+      "_application": "vacancy@nch.com.np",
+      "_company_name": "Nepal Cancer Hospital & Research Center",
+      "_company_website": "https://www.nch.com.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      39
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      81
+    ],
+    "class_list": {
+      "0": "post-15082",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-lalitpur",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/15082",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/134"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/1395"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=15082"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=15082"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=15082"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=15082"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 15080,
+    "date": "2026-01-13T07:57:00",
+    "date_gmt": "2026-01-13T02:12:00",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=15080"
+    },
+    "modified": "2026-01-13T08:01:54",
+    "modified_gmt": "2026-01-13T02:16:54",
+    "slug": "blind-youth-association-nepal-morang-full-time-project-officer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/blind-youth-association-nepal-morang-full-time-project-officer/",
+    "title": {
+      "rendered": "Project Officer"
+    },
+    "content": {
+      "rendered": "<p><strong>Position:</strong> Project Officer</p>\n<p><strong>Number of Positions:</strong> 1</p>\n<p><strong>Location</strong>: Belbari, Morang</p>\n<p><strong>Time:</strong> Full-time</p>\n<p><strong>Salary:</strong> Negotiable</p>\n<p><strong>Reporting to:</strong> Director</p>\n<p><strong>Project</strong>: Advancing Rights and Inclusion in Sexual and Reproductive Health and Education (ARISE)</p>\n<p><strong>Duration:</strong> 1.5 years</p>\n<p><strong>Position Description</strong></p>\n<p>Blind Youth Association Nepal (BYAN) is seeking a qualified and experienced candidate for the position of Project Officer based in Belbari, Morang. The Project Officer will work primarily in the field and will report directly to the Director, while carrying out activities under the close supervision of both the Director and the Chapter President.</p>\n<p>The Project Officer will be responsible for the effective implementation of the project at the field level, coordinating with partners and stakeholders including government agencies, civil society organizations, organizations of persons with disabilities, children and young people with disabilities, and their parents/teachers. The role requires ensuring that project activities are completed on time, within budget, and to the highest quality standards.</p>\n<p><strong>About the Project</strong></p>\n<p>The project “Advancing Rights and Inclusion in Sexual and Reproductive Health and Education (ARISE)” aims to strengthen disability-inclusive sexual and reproductive health and rights (SRHR) in Morang and Jhapa of Koshi province by empowering young people with disabilities through access to SRHR knowledge and information, sensitizing parents, teachers, schools, decision-makers, and service providers on the SRHR issues of young people with disabilities, improving SRHR services, and strengthening the disability movement by working with OPDs, CSOs, and other agencies. The project also advocates for improved SRHR policies and their effective implementation at provincial and local levels.</p>\n<p><strong>Key Responsibilities</strong></p>\n<ul>\n<li>Lead the planning, implementation, and day-to-day management of the project in line with organizational values and project objectives.</li>\n<li>Develop detailed work plans, budgets, and implementation schedules and ensure timely delivery of project outputs.</li>\n<li>Prepare and maintain high-quality project documentation, including progress reports, financial tracking inputs, case stories, and learning briefs.</li>\n<li>Coordinate and maintain strong working relationships with provincial and local governments, OPDs, CSOs, schools, health service providers, community groups, and donors.</li>\n<li>Lead advocacy initiatives at local and provincial levels to promote disability-inclusive SRHR and CSE policies and practices.</li>\n<li>Mobilize, mentor, and support SRHR champions to deliver community-level SRHR and CSE sessions.</li>\n<li>Facilitate SRHR, CSE, and disability orientation sessions in schools, health facilities, and community platforms.</li>\n<li>Oversee the design, production, and dissemination of research and SRHR/CSE-related IEC materials in accessible formats.</li>\n<li>Coordinate with media agencies and communication teams to promote positive narratives on disability and SRHR.</li>\n<li>Ensure effective monitoring, documentation, data management, and timely reporting in line with donor and organizational requirements.</li>\n<li>Ensure safeguarding, ethical standards, and confidentiality are maintained while working with children, young people, and marginalized communities.</li>\n<li>Perform field-level activities as required and report to the Director, working in close coordination with the Chapter President and Central Office.</li>\n</ul>\n<p><strong>Job Specifications</strong></p>\n<ul>\n<li>Bachelor’s degree in Public Health or a related Social Science field with at least two years of relevant professional experience; experience in project coordination or management is preferred.</li>\n<li>Strong knowledge of national and international frameworks related to SRHR, CSE, and disability, including UNCRPD, SDGs, the Act Relating to Rights of Persons with Disabilities, and the Constitution of Nepal.</li>\n<li>Demonstrated understanding of SRHR issues faced by young people, particularly persons with disabilities.</li>\n<li>Experience in advocacy, community mobilization, and stakeholder coordination.</li>\n<li>Proficiency in Microsoft Office applications (Word, Excel, PowerPoint) and social media campaigning.</li>\n<li>Strong organizational, communication, and interpersonal skills, with the ability to work effectively in diverse and inclusive environments.</li>\n<li>Proactive, self-motivated, and able to work independently in field-based settings.</li>\n<li>Fluency in both Nepali and English is required; knowledge of sign language or accessible communication methods is an added advantage.</li>\n<li>Prior experience working with children and young people with disabilities and/or the LGBTIQ+ community is an added advantage.</li>\n</ul>\n<p><strong>Application Deadline</strong></p>\n<p>The deadline for submitting applications is <strong>20th Jan, 2026.</strong></p>\n<p><strong>How to Apply:</strong></p>\n<p>Interested and eligible candidates are requested to send their application, along with an updated CV and expected salary, to hr@byanepal.org with the subject line: “Application for the Post of Project Officer – Morang.”</p>\n<p>We encourage online submission of proposals. Phone calls, video calls, and SMS will not be entertained.</p>\n<p>BYAN promotes inclusion across gender, caste, ethnicity, Dalit, and disability. Persons with disabilities and LGBTIQ+ individuals are strongly encouraged to apply. Only shortlisted candidates will be contacted for further processes. The organization reserves the right to reject any/all applications without assigning reasons.</p>\n",
+      "protected": false
+    },
+    "author": 976,
+    "featured_media": 8275,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Morang",
+      "_application": "hr@byanepal.org",
+      "_company_name": "Blind Youth Association Nepal",
+      "_company_website": "https://byanepal.org/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      11
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      89
+    ],
+    "class_list": {
+      "0": "post-15080",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-morang",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/15080",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/976"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/8275"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=15080"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=15080"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=15080"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=15080"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 15056,
     "date": "2026-01-12T17:55:18",
     "date_gmt": "2026-01-12T12:10:18",
@@ -22487,7 +23421,7 @@
       "rendered": "Staff Nurse, Pharmacy Assistant"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy</strong>: 2</p>\n<p><strong>Position:</strong> Pharmacy Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> Nuwakot</p>\n<p><strong>Trishuli Hospital</strong></p>\n<p><strong>Email:</strong> thvacancy@gmail.com</p>\n<p><strong>Website:</strong> https://trishulihospital.bagamati.gov.np</p>\n<p><strong>Phone No.:</strong> 9841579994</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14662\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1.png\" alt=\"\" width=\"926\" height=\"1348\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1.png 926w, https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1-206x300.png 206w, https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1-703x1024.png 703w, https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1-768x1118.png 768w\" sizes=\"(max-width: 926px) 100vw, 926px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy</strong>: 2</p>\n<p><strong>Position:</strong> Pharmacy Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> Nuwakot</p>\n<p><strong>Trishuli Hospital</strong></p>\n<p><strong>Email:</strong> thvacancy@gmail.com</p>\n<p><strong>Website:</strong> https://trishulihospital.bagamati.gov.np</p>\n<p><strong>Phone No.:</strong> 9841579994</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14662\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1.png\" alt=\"\" width=\"926\" height=\"1348\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1.png 926w, https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1-206x300.png 206w, https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1-703x1024.png 703w, https://merorojgari.com/wp-content/uploads/2026/01/trishuli-hospital-job-1-768x1118.png 768w\" sizes=\"(max-width: 926px) 100vw, 926px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -22721,7 +23655,7 @@
       "rendered": "Staff Nurse"
     },
     "content": {
-      "rendered": "<p><strong>Position: </strong>Staff Nurse<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Location: </strong>Solukhumbu</p>\n<p><strong>Solududhkunda Nagarpalika</strong></p>\n<p><strong>Email</strong>: splidudhkundamun@gmail.com</p>\n<p><strong>Phone No.:</strong> 038-520264<br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14660\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1.png\" alt=\"\" width=\"1000\" height=\"1267\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1-237x300.png 237w, https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1-808x1024.png 808w, https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1-768x973.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>Position: </strong>Staff Nurse<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Location: </strong>Solukhumbu</p>\n<p><strong>Solududhkunda Nagarpalika</strong></p>\n<p><strong>Email</strong>: splidudhkundamun@gmail.com</p>\n<p><strong>Phone No.:</strong> 038-520264<br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-14660\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1.png\" alt=\"\" width=\"1000\" height=\"1267\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1-237x300.png 237w, https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1-808x1024.png 808w, https://merorojgari.com/wp-content/uploads/2026/01/solududhkunda-Nagarpalika-job-1-768x973.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -22957,7 +23891,7 @@
       "rendered": "Staff Nurse, Health Assistant, Lab Technician, Dental Hygienist"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 4</p>\n<p><strong>Position: </strong>Health Assistant<br />\n<strong>No. of Vacancy</strong>: 4</p>\n<p><strong>Position:</strong> Dental Hygienist<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Lab Technician<br />\n<strong>No. of Vacancy</strong>: 2</p>\n<p><strong>Location:</strong> Sindhupalchok</p>\n<p><strong>Melamchi Nagarpalika</strong></p>\n<p><strong>Email</strong>: prasasan.melamchimun@gmail.com</p>\n<p><strong>Phone No.:</strong> 9861155895</p>\n<p><strong>Website:</strong> https://melamchimun.gov.np/</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14656\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1.png\" alt=\"\" width=\"1000\" height=\"1275\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1-235x300.png 235w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1-803x1024.png 803w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1-768x979.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14657\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2.png\" alt=\"\" width=\"1000\" height=\"797\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2-300x239.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2-768x612.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 4</p>\n<p><strong>Position: </strong>Health Assistant<br />\n<strong>No. of Vacancy</strong>: 4</p>\n<p><strong>Position:</strong> Dental Hygienist<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Lab Technician<br />\n<strong>No. of Vacancy</strong>: 2</p>\n<p><strong>Location:</strong> Sindhupalchok</p>\n<p><strong>Melamchi Nagarpalika</strong></p>\n<p><strong>Email</strong>: prasasan.melamchimun@gmail.com</p>\n<p><strong>Phone No.:</strong> 9861155895</p>\n<p><strong>Website:</strong> https://melamchimun.gov.np/</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14656\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1.png\" alt=\"\" width=\"1000\" height=\"1275\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1-235x300.png 235w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1-803x1024.png 803w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job-1-768x979.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14657\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2.png\" alt=\"\" width=\"1000\" height=\"797\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2-300x239.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Melamchi-Nagarpalika-job2-768x612.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23429,7 +24363,7 @@
       "rendered": "ANM"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> ANM<br />\n<strong>No. of Vacancy</strong>: 3<br />\n<strong>Location:</strong> kavrepalanchok</p>\n<p><strong>Bhumlu Gaunpalika</strong></p>\n<p><strong>Email</strong>: vacancy.bhumlu@gmail.com<br />\n<strong>Phone No.:</strong> 9851201443<br />\n<strong>Website</strong>: www.bhumlumun.gov.np</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14651\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20.jpg\" alt=\"\" width=\"1377\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20.jpg 1377w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-202x300.jpg 202w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-689x1024.jpg 689w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-768x1142.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-1033x1536.jpg 1033w\" sizes=\"(max-width: 1377px) 100vw, 1377px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> ANM<br />\n<strong>No. of Vacancy</strong>: 3<br />\n<strong>Location:</strong> kavrepalanchok</p>\n<p><strong>Bhumlu Gaunpalika</strong></p>\n<p><strong>Email</strong>: vacancy.bhumlu@gmail.com<br />\n<strong>Phone No.:</strong> 9851201443<br />\n<strong>Website</strong>: www.bhumlumun.gov.np</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14651\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20.jpg\" alt=\"\" width=\"1377\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20.jpg 1377w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-202x300.jpg 202w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-689x1024.jpg 689w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-768x1142.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-joib-20-1033x1536.jpg 1033w\" sizes=\"(max-width: 1377px) 100vw, 1377px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23664,7 +24598,7 @@
       "rendered": "Pharmacy Supervisor"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Pharmacy Supervisor<br />\n<strong>No. of Vacancy:</strong> 4<br />\n<strong>Location: </strong>Jhapa</p>\n<p><strong>Birtamode Naagrpalika </strong></p>\n<p><strong>Weviste: </strong><a href=\"https://birtamodmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://birtamodmun.gov.np/</a></p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14648\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job.jpg\" alt=\"\" width=\"826\" height=\"1280\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job.jpg 826w, https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job-194x300.jpg 194w, https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job-661x1024.jpg 661w, https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job-768x1190.jpg 768w\" sizes=\"(max-width: 826px) 100vw, 826px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Pharmacy Supervisor<br />\n<strong>No. of Vacancy:</strong> 4<br />\n<strong>Location: </strong>Jhapa</p>\n<p><strong>Birtamode Naagrpalika </strong></p>\n<p><strong>Weviste: </strong><a href=\"https://birtamodmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://birtamodmun.gov.np/</a></p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14648\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job.jpg\" alt=\"\" width=\"826\" height=\"1280\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job.jpg 826w, https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job-194x300.jpg 194w, https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job-661x1024.jpg 661w, https://merorojgari.com/wp-content/uploads/2026/01/Birtamode-Naagrpalika-job-768x1190.jpg 768w\" sizes=\"(max-width: 826px) 100vw, 826px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23900,7 +24834,7 @@
       "rendered": "Teacher &#8211; Math, Science, Child Development Facilitator"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Child Development Facilitator<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Position:</strong> Teacher<br />\n<strong>Level</strong>: Lower Secondary<br />\n<strong>Subject</strong>: Math, Science<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> kavrepalanchok</p>\n<p><strong>Bhumlu Gaunpalika</strong></p>\n<p><strong>Email</strong>: vacancy.bhumlu@gmail.com</p>\n<p><strong>Phone No.</strong>: 9841026260</p>\n<p><strong>Websit</strong>e: www.bhumlumun.gov.np</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14646\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1.png\" alt=\"\" width=\"1080\" height=\"1574\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-206x300.png 206w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-703x1024.png 703w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-768x1119.png 768w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-1054x1536.png 1054w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Child Development Facilitator<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Position:</strong> Teacher<br />\n<strong>Level</strong>: Lower Secondary<br />\n<strong>Subject</strong>: Math, Science<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> kavrepalanchok</p>\n<p><strong>Bhumlu Gaunpalika</strong></p>\n<p><strong>Email</strong>: vacancy.bhumlu@gmail.com</p>\n<p><strong>Phone No.</strong>: 9841026260</p>\n<p><strong>Websit</strong>e: www.bhumlumun.gov.np</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14646\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1.png\" alt=\"\" width=\"1080\" height=\"1574\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-206x300.png 206w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-703x1024.png 703w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-768x1119.png 768w, https://merorojgari.com/wp-content/uploads/2026/01/Bhumlu-Gaunpalika-job-1-1054x1536.png 1054w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -45922,7 +46856,7 @@
       "rendered": "Lab Technician, Ophthalmic Assistant"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Lab Technician<br />\n<strong>No. of Vacancy:</strong> 4</p>\n<p><strong>Position</strong>: Ophthalmic Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> Biratnagar</p>\n<p><strong>Koshi Hospital</strong></p>\n<p>Website:<a href=\"http://koshihospital.gov.np/\" target=\"_blank\" rel=\"noopener\"> http://koshihospital.gov.np/</a><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14183\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/koshi-hospital-job.jpg\" alt=\"\" width=\"648\" height=\"900\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/koshi-hospital-job.jpg 648w, https://merorojgari.com/wp-content/uploads/2026/01/koshi-hospital-job-216x300.jpg 216w\" sizes=\"(max-width: 648px) 100vw, 648px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Lab Technician<br />\n<strong>No. of Vacancy:</strong> 4</p>\n<p><strong>Position</strong>: Ophthalmic Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> Biratnagar</p>\n<p><strong>Koshi Hospital</strong></p>\n<p>Website:<a href=\"http://koshihospital.gov.np/\" target=\"_blank\" rel=\"noopener\"> http://koshihospital.gov.np/</a><br />\n<img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14183\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/koshi-hospital-job.jpg\" alt=\"\" width=\"648\" height=\"900\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/koshi-hospital-job.jpg 648w, https://merorojgari.com/wp-content/uploads/2026/01/koshi-hospital-job-216x300.jpg 216w\" sizes=\"(max-width: 648px) 100vw, 648px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -46628,7 +47562,7 @@
       "rendered": "Chartered Accountant"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14173\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job.png\" alt=\"\" width=\"916\" height=\"1133\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job.png 916w, https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job-243x300.png 243w, https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job-828x1024.png 828w, https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job-768x950.png 768w\" sizes=\"(max-width: 916px) 100vw, 916px\" /></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14173\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job.png\" alt=\"\" width=\"916\" height=\"1133\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job.png 916w, https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job-243x300.png 243w, https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job-828x1024.png 828w, https://merorojgari.com/wp-content/uploads/2026/01/Securities-Board-of-Nepal-job-768x950.png 768w\" sizes=\"(max-width: 916px) 100vw, 916px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -47329,7 +48263,7 @@
       "rendered": "Monitoring, Evaluation, Research and Learning (MERL) Specialist"
     },
     "content": {
-      "rendered": "<p><strong>Title:</strong> Monitoring, Evaluation, Research and Learning (MERL) Specialist- Short-Term<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Functional Area:</strong> Programme Quality Innovation (PQI)<br />\n<strong>Reports to:</strong> MERL Manager<br />\n<strong>Location:</strong> Kathmandu (CO)<br />\n<strong>Travel required:</strong> Plan International Nepal working districts<br />\n<strong>Grade:</strong> D1<br />\n<strong>Type:</strong> Open to all applicants, Short-term employment up to 1 year; based in Country Office</p>\n<p><strong>ABOUT PLAN INTERNATIONAL:</strong></p>\n<p>Plan International is a development and humanitarian organization that advances children’s rights and equality for girls. We strive for a just world, working together with children, young people, our supporters and partners in over 75 countries. Our programs are underpinned by a core of defined values, including transparency and accountability, team collaboration, inclusion and integration, as well as the overall ambition to empower girls and young women as legacy.</p>\n<p>Plan International has been working in Nepal since 1978 and developed a strong reputation as a respected development and humanitarian actor helping marginalized children, their families and communities to access their rights to health, education, economic security and protection. Through the support of local partners, Plan International has worked in 42 districts in Nepal since 1978.</p>\n<p>Plan International strives for a just world that advances children’s rights and equality for girls. Our ambition from now to 2027 is to see All Girls Standing Strong Creating Global Change.</p>\n<p>Plan international Nepal seeks candidates who practice feminist leadership, promote diversity, actively seek innovative solutions for problems, courageously and respectfully share their opinions and ideas, break down barriers and engender cross-department collaboration, practice active listening, maintain confidentiality, build trust and are passionate about children’s rights and equality for girls.</p>\n<p><strong>ROLE PURPOSE:</strong></p>\n<p>Monitoring, Evaluation, Research and Learning (MERL) Specialist based in the Country Office (CO) will ensure an effective MERL system is in place for Plan International Nepal programs/projects. The MERL Specialist will be primarily responsible to facilitate the programme/project team with development of results framework. He/she will be assigned with the task of critically/strategically analysing Plan’s ongoing programme/project (in collaboration with other MERL specialists) to inform the technical team and new opportunities. He/she will also be responsible for development and standardization of MERL systems and tools across all projects, and use standard tools to ensure it appropriately captures PMERL and MERL needs. The MERL Specialist will provide inputs to senior technical advisors and project managers in project design to ensure effective application of program learning as well as to lead on baselines, mid-term and endline evaluations and research for the projects assigned by the line manager.</p>\n<p><strong>Apply Before:</strong> Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n<p><strong>Description</strong><br />\n<strong>DIMENSIONS OF THE ROLE:</strong></p>\n<p><strong>Direct Line Manager</strong>: MERL Manager</p>\n<p><strong>Dotted Line Manager:</strong> N/A</p>\n<p><strong>Budget Accountability:</strong> N/A</p>\n<p><strong>Number of direct reports</strong>: N/A</p>\n<p><strong>External relationships and representation:</strong></p>\n<p>As assigned by the supervisor/Line Manager this position holder is responsible to represent Plan at national and international workshops, seminar and conferences related to monitoring and evaluation. S/he is also responsible for representing the organisation for providing various services to other NGOs or INGO Forums as assigned by the supervisor.</p>\n<p><strong>Risk management:</strong></p>\n<p>In accordance with Plan International’s Ethical MERL Framework and Child and Youth Safeguarding Policy, the organisation is committed to ensure that the rights of the children, adolescents and youth who are participating in monitoring and evaluation activities are respected and protected. Therefore, the position holder should be proactive that all ethical issues are ensured.</p>\n<p><strong>Reach/breadth of the post/ or area of responsibilities:</strong></p>\n<p>This position holder will work closely with the Head of MERL to develop thematic/programmatic TOC, result framework, indicators to measure success. The MERL Specialist will work closely with the MERL team primarily in designing grants, capacity building of Plan and partners and where organizational level support is needed including CPAC, Annual Planning, Programme review and reflection.</p>\n<p>The MERL Specialist will develop methods to track outputs and assess outcomes and report about these periodically to programme team and management. This position holder will be responsible for developing tools for data quality assurance and rolling out to ensure quality data for reporting to donors and GH for 200 million reasons. The MERL Specialist will conduct process monitoring regularly at project level to ensure interventions are delivered as per agreed standard and share the monitoring findings with concerned staff members in programme.</p>\n<p>Capacity building of Plan and Partner staff in programme monitoring will be one of the key responsibilities.</p>\n<p><strong>KEY RELATIONSHIPS:</strong><br />\n<img fetchpriority=\"high\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/plan-international-job-60.png\" alt=\"\" width=\"599\" height=\"147\" class=\"alignnone size-full wp-image-14170\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/plan-international-job-60.png 599w, https://merorojgari.com/wp-content/uploads/2026/01/plan-international-job-60-300x74.png 300w\" sizes=\"(max-width: 599px) 100vw, 599px\" /><br />\n<strong>ACCOUNTABILITIES:</strong></p>\n<ul>\n<li>Contribute to project design and reporting:</li>\n<li>Provide inputs in program development and facilitate planning activities including the design of project theory of change and/or logical. framework in line with programme in country strategy during proposal development.</li>\n<li>Compile and provide required data for reporting to donors and Plan International requirements.</li>\n<li>Ensure all projects meet Programme and Influence Quality Policy and Procedure Requirements.</li>\n<li>Ensure that all new assigned projects have allocated sufficient time and budget for MERL activities.</li>\n</ul>\n<p><strong>Establish effective project monitoring system:</strong></p>\n<ul>\n<li>Design Monitoring and evaluation framework for all assigned projects.</li>\n<li>Work with the program team to develop data collection tools for the assigned projects.</li>\n<li>Determine pre-defined indicators for global reporting as per AOGD.</li>\n<li>Ensure monitoring data is collected, consolidated and analysed according to the MERL Standard.</li>\n<li>Perform regular field visits to ensure the quality of data collected by program and partner staff and to verify the accuracy of reported data.</li>\n<li>Prepare, disseminate and follow up MERL report as part of Plan International’s information management system.</li>\n</ul>\n<p><strong>Implementation of M&amp;E Systems like PMERL, MIS across the projects of Plan International Nepal:</strong></p>\n<ul>\n<li>Contribute to build up capacity of the Project team to implement and measure the performance through PMERL.</li>\n<li>Support project team to set up and implement PMERL for their project.</li>\n<li>Capacity building to the PNGO staffs of the project team to set up and implementation of MIS system.</li>\n</ul>\n<p><strong>Facilitate accountability and stakeholder feedback mechanisms:</strong></p>\n<ul>\n<li>Support in conducting quarterly review and reflection with partner organisations and communities.</li>\n<li>Design, plan and carry out social audit.</li>\n<li>Develop and follow up plan of action based on recommendations from review/reflection and social audit events.</li>\n<li>Support the program team to establish complaints and feedback mechanism for assigned programmes/projects to respond to the complaints/feedbacks/concern from community and beneficiaries, including analysis of data with management actions identified.</li>\n</ul>\n<p><strong>Evaluations, research and learning generation:</strong></p>\n<ul>\n<li>In collaboration with the senior technical advisors and the Research, Evaluation and Knowledge Management Specialist, define the learning agenda.</li>\n<li>In collaboration with the Research, Evaluation and Knowledge Management Specialist, lead all evaluations and research activities.</li>\n<li>Participate in the development of data collection tools and the design of evaluations and research.</li>\n<li>Perform quantitative analyses using appropriate software (i.e., SPSS, or STATA or any statistical application).</li>\n<li>Work with program teams to utilise data for quality improvements.</li>\n<li>Document good practices, lessons learned and feedback to influence and guide the design and implementation of our programs.</li>\n<li>Organize learning events and workshops for to document lessons learnt, good practices and areas of improvement.</li>\n</ul>\n<p><strong>Develop capacity of Plan International Nepal and partner staff:</strong></p>\n<ul>\n<li>Identify the capacity gaps and work with MERL Manager and senior technical advisors to build the capacity of the monitoring staff at Field and those of partners to ensure smooth implementation of MERL system, participatory monitoring and evaluation and improved for capacity.</li>\n<li>Support the MERL Manager in providing capacity building, training and mentoring in MERL to relevant staff in the country office, field offices and partner organisation.</li>\n</ul>\n<p>Any other tasks as assigned by line manager in accordance to organizational mandate and priority.</p>\n<ul>\n<li>Ensures that Plan International’s global policies for Safeguarding Children and Program Participants and Gender Equality and Inclusion (DEI) are fully embedded in accordance with the principles and requirements of the policy including relevant</li>\n<li>Implementation Standards and Guidelines as applicable to their area of responsibility. This includes, but is not limited to, ensuring staff and associates are aware of and understand their responsibilities under these policies and Plan International’s Code of Conduct (CoC), their relevance to their area of work, and that concerns are reported and managed in accordance with the appropriate procedures.</li>\n</ul>\n<p><strong>TECHNICAL EXPERTISE, SKILLS AND KNOWLEDGE:</strong></p>\n<p><strong>Education qualification and experience:</strong></p>\n<ul>\n<li>Master’s degree in social sciences, social research, development studies, public health or a related field oriented to monitoring and evaluation methods with at least 3 years of relevant experience OR, Bachelor’s degree in related field with at least 5 years of leading monitoring, evaluation, research, and accountability in national/international development organizations.</li>\n<li>Excellent spoken and written communication skills in English and Nepali.</li>\n<li>Proven experience in a technical capacity involving design and implementation of evaluations/research or leading evaluation/research teams and drafting technical reports.</li>\n<li>Proven experience with quantitative and qualitative data collection and analysis.</li>\n</ul>\n<p><strong>Knowledge:</strong></p>\n<ul>\n<li>Ability to implement data quality assurance mechanism for project level.</li>\n<li>Knowledge on digital data collection tools and procedure.</li>\n<li>Proven experience in managing multiple and competing tasks while maintaining quality of deliverables within deadlines.</li>\n<li>Experience of managing large datasets. Experience of using SQL server is an asset.</li>\n<li>Experience in use of statistical packages such as SPSS, R or STATA for inferential analysis.</li>\n<li>Experience in use of data visualization tools like Power Bi, Tableau, GIS.</li>\n<li>Experience in use of electronic data collection platforms like Kobo toolbox, ODK, ONA.</li>\n<li>Experienced in rights-based approach to development.</li>\n</ul>\n<p><strong>Skills:</strong></p>\n<ul>\n<li>Skill to critically analyse data and produce comprehensive useful report to support programme to take decision.</li>\n<li>Experienced in TOR development and coordinate evaluations to get quality deliverable from consultants.</li>\n<li>Experience conducting interviews with young people, children and communities.</li>\n<li>Strong capacity and creativity in leading and facilitating participatory methodologies to meaningfully engage beneficiaries, including children, and receiving their feedback through approaches such as social audit, employing quality benchmarks.</li>\n<li>Experience in capacity development of staff or partners in project monitoring, evaluation or research.</li>\n<li>Facilitating child led/focused monitoring, evaluation or research.</li>\n</ul>\n<p><strong>PLAN INTERNATIONAL’S VALUES IN PRACTICE:</strong></p>\n<p><strong>We are open and accountable</strong></p>\n<p>We create a climate of trust inside and outside the organization by being open, honest and transparent. We hold ourselves and others to account for the decisions we make and for our impact on others, while doing what we say we will do.</p>\n<p><strong>We strive for lasting impact</strong></p>\n<p>We strive to achieve significant and lasting impact on the lives of children and young people, and to secure equality for girls. We challenge ourselves to be bold, courageous, responsive, focused and innovative.</p>\n<p><strong>We work well together</strong></p>\n<p>We succeed by working effectively with others, inside and outside the organisation, including our sponsors and donors. We actively support our colleagues, helping them to achieve their goals. We come together to create and implement solutions in our teams, across Plan International, with children, girls, young people, communities and our partners.</p>\n<p><strong>We are inclusive and empowering</strong></p>\n<p>We respect all people, appreciate differences and challenge inequality in our programmes and our workplace. We support children, girls and young people to increase their confidence and to change their own lives. We empower our staff to give their best and develop their potential.</p>\n<p><strong>PHYSICAL ENVIRONMENT:</strong></p>\n<p>This position is based in Kathmandu, with frequent travel to field as necessary.</p>\n<p><strong>LEVEL OF CONTACT WITH CHILDREN:</strong></p>\n<p>Medium level: Medium interaction with children.</p>\n<p><strong>&#8220;Say Yes ! To Keeping Children and Young people safe and Protected&#8221;</strong></p>\n<p><strong>Application Deadline:</strong> Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n",
+      "rendered": "<p><strong>Title:</strong> Monitoring, Evaluation, Research and Learning (MERL) Specialist- Short-Term<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Functional Area:</strong> Programme Quality Innovation (PQI)<br />\n<strong>Reports to:</strong> MERL Manager<br />\n<strong>Location:</strong> Kathmandu (CO)<br />\n<strong>Travel required:</strong> Plan International Nepal working districts<br />\n<strong>Grade:</strong> D1<br />\n<strong>Type:</strong> Open to all applicants, Short-term employment up to 1 year; based in Country Office</p>\n<p><strong>ABOUT PLAN INTERNATIONAL:</strong></p>\n<p>Plan International is a development and humanitarian organization that advances children’s rights and equality for girls. We strive for a just world, working together with children, young people, our supporters and partners in over 75 countries. Our programs are underpinned by a core of defined values, including transparency and accountability, team collaboration, inclusion and integration, as well as the overall ambition to empower girls and young women as legacy.</p>\n<p>Plan International has been working in Nepal since 1978 and developed a strong reputation as a respected development and humanitarian actor helping marginalized children, their families and communities to access their rights to health, education, economic security and protection. Through the support of local partners, Plan International has worked in 42 districts in Nepal since 1978.</p>\n<p>Plan International strives for a just world that advances children’s rights and equality for girls. Our ambition from now to 2027 is to see All Girls Standing Strong Creating Global Change.</p>\n<p>Plan international Nepal seeks candidates who practice feminist leadership, promote diversity, actively seek innovative solutions for problems, courageously and respectfully share their opinions and ideas, break down barriers and engender cross-department collaboration, practice active listening, maintain confidentiality, build trust and are passionate about children’s rights and equality for girls.</p>\n<p><strong>ROLE PURPOSE:</strong></p>\n<p>Monitoring, Evaluation, Research and Learning (MERL) Specialist based in the Country Office (CO) will ensure an effective MERL system is in place for Plan International Nepal programs/projects. The MERL Specialist will be primarily responsible to facilitate the programme/project team with development of results framework. He/she will be assigned with the task of critically/strategically analysing Plan’s ongoing programme/project (in collaboration with other MERL specialists) to inform the technical team and new opportunities. He/she will also be responsible for development and standardization of MERL systems and tools across all projects, and use standard tools to ensure it appropriately captures PMERL and MERL needs. The MERL Specialist will provide inputs to senior technical advisors and project managers in project design to ensure effective application of program learning as well as to lead on baselines, mid-term and endline evaluations and research for the projects assigned by the line manager.</p>\n<p><strong>Apply Before:</strong> Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n<p><strong>Description</strong><br />\n<strong>DIMENSIONS OF THE ROLE:</strong></p>\n<p><strong>Direct Line Manager</strong>: MERL Manager</p>\n<p><strong>Dotted Line Manager:</strong> N/A</p>\n<p><strong>Budget Accountability:</strong> N/A</p>\n<p><strong>Number of direct reports</strong>: N/A</p>\n<p><strong>External relationships and representation:</strong></p>\n<p>As assigned by the supervisor/Line Manager this position holder is responsible to represent Plan at national and international workshops, seminar and conferences related to monitoring and evaluation. S/he is also responsible for representing the organisation for providing various services to other NGOs or INGO Forums as assigned by the supervisor.</p>\n<p><strong>Risk management:</strong></p>\n<p>In accordance with Plan International’s Ethical MERL Framework and Child and Youth Safeguarding Policy, the organisation is committed to ensure that the rights of the children, adolescents and youth who are participating in monitoring and evaluation activities are respected and protected. Therefore, the position holder should be proactive that all ethical issues are ensured.</p>\n<p><strong>Reach/breadth of the post/ or area of responsibilities:</strong></p>\n<p>This position holder will work closely with the Head of MERL to develop thematic/programmatic TOC, result framework, indicators to measure success. The MERL Specialist will work closely with the MERL team primarily in designing grants, capacity building of Plan and partners and where organizational level support is needed including CPAC, Annual Planning, Programme review and reflection.</p>\n<p>The MERL Specialist will develop methods to track outputs and assess outcomes and report about these periodically to programme team and management. This position holder will be responsible for developing tools for data quality assurance and rolling out to ensure quality data for reporting to donors and GH for 200 million reasons. The MERL Specialist will conduct process monitoring regularly at project level to ensure interventions are delivered as per agreed standard and share the monitoring findings with concerned staff members in programme.</p>\n<p>Capacity building of Plan and Partner staff in programme monitoring will be one of the key responsibilities.</p>\n<p><strong>KEY RELATIONSHIPS:</strong><br />\n<img decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/plan-international-job-60.png\" alt=\"\" width=\"599\" height=\"147\" class=\"alignnone size-full wp-image-14170\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/plan-international-job-60.png 599w, https://merorojgari.com/wp-content/uploads/2026/01/plan-international-job-60-300x74.png 300w\" sizes=\"(max-width: 599px) 100vw, 599px\" /><br />\n<strong>ACCOUNTABILITIES:</strong></p>\n<ul>\n<li>Contribute to project design and reporting:</li>\n<li>Provide inputs in program development and facilitate planning activities including the design of project theory of change and/or logical. framework in line with programme in country strategy during proposal development.</li>\n<li>Compile and provide required data for reporting to donors and Plan International requirements.</li>\n<li>Ensure all projects meet Programme and Influence Quality Policy and Procedure Requirements.</li>\n<li>Ensure that all new assigned projects have allocated sufficient time and budget for MERL activities.</li>\n</ul>\n<p><strong>Establish effective project monitoring system:</strong></p>\n<ul>\n<li>Design Monitoring and evaluation framework for all assigned projects.</li>\n<li>Work with the program team to develop data collection tools for the assigned projects.</li>\n<li>Determine pre-defined indicators for global reporting as per AOGD.</li>\n<li>Ensure monitoring data is collected, consolidated and analysed according to the MERL Standard.</li>\n<li>Perform regular field visits to ensure the quality of data collected by program and partner staff and to verify the accuracy of reported data.</li>\n<li>Prepare, disseminate and follow up MERL report as part of Plan International’s information management system.</li>\n</ul>\n<p><strong>Implementation of M&amp;E Systems like PMERL, MIS across the projects of Plan International Nepal:</strong></p>\n<ul>\n<li>Contribute to build up capacity of the Project team to implement and measure the performance through PMERL.</li>\n<li>Support project team to set up and implement PMERL for their project.</li>\n<li>Capacity building to the PNGO staffs of the project team to set up and implementation of MIS system.</li>\n</ul>\n<p><strong>Facilitate accountability and stakeholder feedback mechanisms:</strong></p>\n<ul>\n<li>Support in conducting quarterly review and reflection with partner organisations and communities.</li>\n<li>Design, plan and carry out social audit.</li>\n<li>Develop and follow up plan of action based on recommendations from review/reflection and social audit events.</li>\n<li>Support the program team to establish complaints and feedback mechanism for assigned programmes/projects to respond to the complaints/feedbacks/concern from community and beneficiaries, including analysis of data with management actions identified.</li>\n</ul>\n<p><strong>Evaluations, research and learning generation:</strong></p>\n<ul>\n<li>In collaboration with the senior technical advisors and the Research, Evaluation and Knowledge Management Specialist, define the learning agenda.</li>\n<li>In collaboration with the Research, Evaluation and Knowledge Management Specialist, lead all evaluations and research activities.</li>\n<li>Participate in the development of data collection tools and the design of evaluations and research.</li>\n<li>Perform quantitative analyses using appropriate software (i.e., SPSS, or STATA or any statistical application).</li>\n<li>Work with program teams to utilise data for quality improvements.</li>\n<li>Document good practices, lessons learned and feedback to influence and guide the design and implementation of our programs.</li>\n<li>Organize learning events and workshops for to document lessons learnt, good practices and areas of improvement.</li>\n</ul>\n<p><strong>Develop capacity of Plan International Nepal and partner staff:</strong></p>\n<ul>\n<li>Identify the capacity gaps and work with MERL Manager and senior technical advisors to build the capacity of the monitoring staff at Field and those of partners to ensure smooth implementation of MERL system, participatory monitoring and evaluation and improved for capacity.</li>\n<li>Support the MERL Manager in providing capacity building, training and mentoring in MERL to relevant staff in the country office, field offices and partner organisation.</li>\n</ul>\n<p>Any other tasks as assigned by line manager in accordance to organizational mandate and priority.</p>\n<ul>\n<li>Ensures that Plan International’s global policies for Safeguarding Children and Program Participants and Gender Equality and Inclusion (DEI) are fully embedded in accordance with the principles and requirements of the policy including relevant</li>\n<li>Implementation Standards and Guidelines as applicable to their area of responsibility. This includes, but is not limited to, ensuring staff and associates are aware of and understand their responsibilities under these policies and Plan International’s Code of Conduct (CoC), their relevance to their area of work, and that concerns are reported and managed in accordance with the appropriate procedures.</li>\n</ul>\n<p><strong>TECHNICAL EXPERTISE, SKILLS AND KNOWLEDGE:</strong></p>\n<p><strong>Education qualification and experience:</strong></p>\n<ul>\n<li>Master’s degree in social sciences, social research, development studies, public health or a related field oriented to monitoring and evaluation methods with at least 3 years of relevant experience OR, Bachelor’s degree in related field with at least 5 years of leading monitoring, evaluation, research, and accountability in national/international development organizations.</li>\n<li>Excellent spoken and written communication skills in English and Nepali.</li>\n<li>Proven experience in a technical capacity involving design and implementation of evaluations/research or leading evaluation/research teams and drafting technical reports.</li>\n<li>Proven experience with quantitative and qualitative data collection and analysis.</li>\n</ul>\n<p><strong>Knowledge:</strong></p>\n<ul>\n<li>Ability to implement data quality assurance mechanism for project level.</li>\n<li>Knowledge on digital data collection tools and procedure.</li>\n<li>Proven experience in managing multiple and competing tasks while maintaining quality of deliverables within deadlines.</li>\n<li>Experience of managing large datasets. Experience of using SQL server is an asset.</li>\n<li>Experience in use of statistical packages such as SPSS, R or STATA for inferential analysis.</li>\n<li>Experience in use of data visualization tools like Power Bi, Tableau, GIS.</li>\n<li>Experience in use of electronic data collection platforms like Kobo toolbox, ODK, ONA.</li>\n<li>Experienced in rights-based approach to development.</li>\n</ul>\n<p><strong>Skills:</strong></p>\n<ul>\n<li>Skill to critically analyse data and produce comprehensive useful report to support programme to take decision.</li>\n<li>Experienced in TOR development and coordinate evaluations to get quality deliverable from consultants.</li>\n<li>Experience conducting interviews with young people, children and communities.</li>\n<li>Strong capacity and creativity in leading and facilitating participatory methodologies to meaningfully engage beneficiaries, including children, and receiving their feedback through approaches such as social audit, employing quality benchmarks.</li>\n<li>Experience in capacity development of staff or partners in project monitoring, evaluation or research.</li>\n<li>Facilitating child led/focused monitoring, evaluation or research.</li>\n</ul>\n<p><strong>PLAN INTERNATIONAL’S VALUES IN PRACTICE:</strong></p>\n<p><strong>We are open and accountable</strong></p>\n<p>We create a climate of trust inside and outside the organization by being open, honest and transparent. We hold ourselves and others to account for the decisions we make and for our impact on others, while doing what we say we will do.</p>\n<p><strong>We strive for lasting impact</strong></p>\n<p>We strive to achieve significant and lasting impact on the lives of children and young people, and to secure equality for girls. We challenge ourselves to be bold, courageous, responsive, focused and innovative.</p>\n<p><strong>We work well together</strong></p>\n<p>We succeed by working effectively with others, inside and outside the organisation, including our sponsors and donors. We actively support our colleagues, helping them to achieve their goals. We come together to create and implement solutions in our teams, across Plan International, with children, girls, young people, communities and our partners.</p>\n<p><strong>We are inclusive and empowering</strong></p>\n<p>We respect all people, appreciate differences and challenge inequality in our programmes and our workplace. We support children, girls and young people to increase their confidence and to change their own lives. We empower our staff to give their best and develop their potential.</p>\n<p><strong>PHYSICAL ENVIRONMENT:</strong></p>\n<p>This position is based in Kathmandu, with frequent travel to field as necessary.</p>\n<p><strong>LEVEL OF CONTACT WITH CHILDREN:</strong></p>\n<p>Medium level: Medium interaction with children.</p>\n<p><strong>&#8220;Say Yes ! To Keeping Children and Young people safe and Protected&#8221;</strong></p>\n<p><strong>Application Deadline:</strong> Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n",
       "protected": false
     },
     "author": 2,
@@ -47563,7 +48497,7 @@
       "rendered": "Grants and Compliance Coordinator"
     },
     "content": {
-      "rendered": "<p><strong>Title: </strong>Grants and Compliance Coordinator (Business Development)- Short-Term<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Functional Area: </strong>Business Development<br />\n<strong>Reports to:</strong> Grants and Compliance Manager<br />\n<strong>Location:</strong> Country Office -Kathmandu<br />\n<strong>Travel required:</strong> 25%<br />\n<strong>Grade:</strong> C2<br />\n<strong>Type:</strong> Open to all applicants, Short-term employment up to 1 year; based in Country Office</p>\n<p><strong><br />\nABOUT PLAN INTERNATIONAL:</strong></p>\n<p>Plan International is a development and humanitarian organization dedicated to advancing children’s rights and achieving equality for girls. With a presence in over 75 countries, we work alongside children, young people, supporters, and partners to create a just world. Our work is guided by core values such as transparency, accountability, collaboration, inclusion, and the overarching ambition to empower girls and young women as part of our legacy.</p>\n<p>Plan International has been operating in Nepal since 1978, earning a strong reputation as a trusted development and humanitarian actor. Over the years, we have worked in 23 districts across the country, helping marginalized children, their families, and communities access their rights to health, education, economic security, and protection.</p>\n<p>Committed to feminist leadership and a gender-transformative approach, Plan International Nepal collaborates with local partners to ensure sustainable impact and foster equality, particularly for girls and young women.</p>\n<p>Plan International Nepal strives for an inclusive, just, and safe society that advances children’s rights and equality for girls. Our mission from 2023 to 2028 is to see all girls and young women standing strong enjoying their rights, and freedom with dignity in Nepal.</p>\n<p>Plan International Nepal is looking for candidates who embrace feminist leadership, value diversity, and are driven to find innovative solutions to challenges. Ideal candidates should respectfully and boldly share their ideas, foster cross-department collaboration, practice active listening, uphold confidentiality, build trust, and demonstrate a strong passion for advancing children’s rights and promoting equality for girls.</p>\n<p><strong>ROLE PURPOSE:</strong></p>\n<p>The Business Development (BD) Department of Plan International Nepal focusses specifically on the business growth, resource mobilisation and grants management and compliances areas of work, encompassing identification and strategic actions on a wide variety of funding opportunities, full proposal development complemented by qualitative grants management through organisational compliances and processes. The unit/team is thus tasked with the development of a long-term financial growth strategy to ensure Plan Nepal’s financial sustainability through a balanced portfolio of suitable, medium and large-scale grants and pipeline of/for future funding. With an annual funding target of a minimum of Euros 12 million through grants, the BD unit will also lead and facilitate all units of Plan Nepal towards a clear, systematic and well-coordinated approach, internally and externally, to meet the objectives of the new Country Strategy for 2024-2028.</p>\n<p>Henceforth, the Grants and Compliance Coordinator (GCC), as a key member of the BD Department, will be primarily responsible towards supporting the Grants and Compliance Manager (GCM) in donor compliance management through quality assurance and standards, with emphasis on grants healthiness review and oversight. The GRC is expected to do so with active engagement support to programme and project teams on adequate and appropriate delivery of restricted funds. She/he will also ensure that all grants data and relevant documentation is updated in all Plan internal applications and platforms; through management guidance of the GCM, will liaise with all relevant Plan teams and colleagues towards enabling a multi-unit cohesive working environment. The GRC may also act as a secondary focal point for external liaison either in the absence of the GCM or when duly assigned.</p>\n<p><strong>Apply Before:</strong> Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n<p><strong>Description</strong><br />\n<strong>DIMENSIONS OF THE ROLE:</strong></p>\n<p><strong>Direct Line Manager:</strong> Grants and Compliance Manger</p>\n<p><strong>Budget Accountability:</strong> N/A</p>\n<p><strong>Number of direct reports:</strong> N/A</p>\n<p><strong>External relationships and representation:</strong> N/A</p>\n<p><strong>KEY RELATIONSHIPS:</strong><br />\n<img decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Plan-International-job.png\" alt=\"\" width=\"599\" height=\"69\" class=\"alignnone size-full wp-image-14163\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Plan-International-job.png 599w, https://merorojgari.com/wp-content/uploads/2026/01/Plan-International-job-300x35.png 300w\" sizes=\"(max-width: 599px) 100vw, 599px\" /><br />\n<strong>ACCOUNTABILITIES:</strong></p>\n<p><strong>Grant Agreement Documentation (20%)</strong></p>\n<ul>\n<li>Prepare the FAD and get it validated from concerned Manager.</li>\n<li>Manage FAD on Plan International&#8217;s systems, including grants module of SAP and regular coordination with finance department for updating the same.</li>\n<li>Set up FAD for signatures ensuring timeliness and quality.</li>\n<li>Monitor FAD requirements until its closure, complete post closure activities and provide related information to relevant departments in the organisation.</li>\n<li>Manage the relevant FAD files and keep them up-to-date.</li>\n<li>Prepare updates/briefs on grants; organising, filtering and analysing relevant grant information for sharing with GCM.</li>\n</ul>\n<p><strong>Grant Management (30%)</strong></p>\n<ul>\n<li>Support GCM in ensuring that grant management systems and processes are successfully implemented across the life of the grant, and that key controls are in place to support effective management of the grant portfolio and compliance with the donor requirements.</li>\n<li>Facilitate the coordination of startup workshops meetings, keep minutes on agreed actions.</li>\n<li>Review and assess quality standards for narrative and financial reports for grants, communicate all/any serious reporting issues or concerns to GCM.<br />\nCoordinate and support teams to respond to all donor queries on FAD and narrative and financial reports.</li>\n<li>Keep abreast of field office progress in grants compliances and reporting, keep all layers of management duly communicated and updated through scheduled meetings with GCM and/or team meets.</li>\n<li>Support the GCM to identify potential issues and amendment requests and ensure they are flagged promptly to donors via the relevant national office.</li>\n<li>Support grant close-out, helping project leads to ensure all tasks are completed as per the close out checklist and that all required close-out documentations are in place. Ensure grant close out processes are officially completed in SAP.</li>\n<li>Facilitate effective and prompt communication with the national offices/donors on their grants.</li>\n<li>Update Business Development tracker (grants tracker, national office and donor contacts, reporting tracker) and weekly meeting calendars and submit to the Manager.<br />\nSupport the GCM in regular updating of Plan International Nepal’s grant portfolio in GPMT and all relevant/required Plan International&#8217;s portals and information sites including SAP Grant module.</li>\n</ul>\n<p><strong>Donor Servicing (10%)</strong></p>\n<ul>\n<li>Coordinate and facilitate donor visits with programme, operations, finance and field teams as and when required/necessary.</li>\n<li>Ensure timely, accurate and effective donor servicing in terms of standard processes, such as timely dispatch of donor receipts, tax certificates, sharing of key communication and documents, etc.</li>\n<li>Support GCM towards providing timely resolution of queries raised by NOs and/or Institutional/Foundation/Corporate donors.</li>\n<li>Any other work as assigned by the Line Manager or the Department Director.</li>\n</ul>\n<p><strong>Partnership Management (40%)</strong></p>\n<ul>\n<li>Partner Selection:</li>\n<li>Create ToR, Create EoI, Publish notice in Dashboard and actual publication through Operations team.</li>\n<li>Focal point for partner selection – supporting organization applying during EoI.</li>\n<li>Download EOI selection document and archive in dashboard repository, hard copy and Aitamaya.</li>\n<li>Due Diligence support as part of selection.</li>\n<li>Partnership Onboarding (dashboard orientation, agreement processes, key compliance requirements).<br />\ntwo steps of partnership management [Signing agreements including partnership number assignment) and Exit and Sustainability].</li>\n<li>Managing Partnership Dashboard – user creation, role setting, project set-up, problem-solution.</li>\n<li>Partnership Agreement Template review.</li>\n<li>Partnership Agreement reviews.</li>\n<li>Partnership communication.</li>\n<li>Documentation archiving.</li>\n</ul>\n<p>Ensures that Plan International’s global policies for Safeguarding Children and Programme Participants and Diversity, Equality and Inclusion (DEI) are fully embedded in accordance with the principles and requirements of the policy including relevant Implementation Standards and Guidelines as applicable to their area of responsibility. This includes, but is not limited to, ensuring staff and associates are aware of and understand their responsibilities under these policies and Plan International’s Code of Conduct (CoC), their relevance to their area of work, and that concerns are reported and managed in accordance with the appropriate procedures.</p>\n<p><strong>TECHNICAL EXPERTISE, SKILLS AND KNOWLEDGE:</strong></p>\n<p><strong>Education Qualification and Experience:</strong></p>\n<ul>\n<li>Master’s Degree in social science or any other relevant subject with minimum 3 years of experience OR, Bachelor’s Degree with 5 years of experience.</li>\n<li>Experience in grants management including donor report writing and/or Monitoring &amp; Evaluation of grant project with good understanding of project management cycle.</li>\n</ul>\n<p><strong>Skills:</strong></p>\n<ul>\n<li>Knowledge and skills in donor reporting, compliance, data management and MS Excel.</li>\n<li>Have aptitude for fundraising, marketing and donor engagement.</li>\n<li>Ability to build strong relationships with both internal and external stakeholders.</li>\n<li>Ability to work independently.</li>\n</ul>\n<p><strong>PLAN INTERNATIONAL’S VALUES IN PRACTICE:</strong></p>\n<p><strong>We are open and accountable</strong></p>\n<p>We create a climate of trust inside and outside the organization by being open, honest and transparent. We hold ourselves and others to account for the decisions we make and for our impact on others, while doing what we say we will do.</p>\n<p><strong>We strive for lasting impact</strong></p>\n<p>We strive to achieve significant and lasting impact on the lives of children and young people, and to secure equality for girls. We challenge ourselves to be bold, courageous, responsive, focused and innovative.</p>\n<p><strong>We work well together</strong></p>\n<p>We succeed by working effectively with others, inside and outside the organisation, including our sponsors and donors. We actively support our colleagues, helping them to achieve their goals. We come together to create and implement solutions in our teams, across Plan International, with children, girls, young people, communities and our partners.</p>\n<p><strong>We are inclusive and empowering</strong></p>\n<p>We respect all people, appreciate differences and challenge inequality in our programmes and our workplace. We support children, girls and young people to increase their confidence and to change their own lives. We empower our staff to give their best and develop their potential.</p>\n<p><strong>PHYSICAL ENVIRONMENT:</strong></p>\n<p>This position is based in Plan International Nepal Country Office – Kathmandu with field visits as necessary.</p>\n<p><strong>LEVEL OF CONTACT WITH CHILDREN:</strong></p>\n<p><strong>Low Level:</strong> Less interaction with children.</p>\n<p><strong>&#8220;Say Yes ! To Keeping Children and Young people safe and Protected&#8221;</strong></p>\n<p><strong>Application Deadline</strong>: Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n",
+      "rendered": "<p><strong>Title: </strong>Grants and Compliance Coordinator (Business Development)- Short-Term<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Functional Area: </strong>Business Development<br />\n<strong>Reports to:</strong> Grants and Compliance Manager<br />\n<strong>Location:</strong> Country Office -Kathmandu<br />\n<strong>Travel required:</strong> 25%<br />\n<strong>Grade:</strong> C2<br />\n<strong>Type:</strong> Open to all applicants, Short-term employment up to 1 year; based in Country Office</p>\n<p><strong><br />\nABOUT PLAN INTERNATIONAL:</strong></p>\n<p>Plan International is a development and humanitarian organization dedicated to advancing children’s rights and achieving equality for girls. With a presence in over 75 countries, we work alongside children, young people, supporters, and partners to create a just world. Our work is guided by core values such as transparency, accountability, collaboration, inclusion, and the overarching ambition to empower girls and young women as part of our legacy.</p>\n<p>Plan International has been operating in Nepal since 1978, earning a strong reputation as a trusted development and humanitarian actor. Over the years, we have worked in 23 districts across the country, helping marginalized children, their families, and communities access their rights to health, education, economic security, and protection.</p>\n<p>Committed to feminist leadership and a gender-transformative approach, Plan International Nepal collaborates with local partners to ensure sustainable impact and foster equality, particularly for girls and young women.</p>\n<p>Plan International Nepal strives for an inclusive, just, and safe society that advances children’s rights and equality for girls. Our mission from 2023 to 2028 is to see all girls and young women standing strong enjoying their rights, and freedom with dignity in Nepal.</p>\n<p>Plan International Nepal is looking for candidates who embrace feminist leadership, value diversity, and are driven to find innovative solutions to challenges. Ideal candidates should respectfully and boldly share their ideas, foster cross-department collaboration, practice active listening, uphold confidentiality, build trust, and demonstrate a strong passion for advancing children’s rights and promoting equality for girls.</p>\n<p><strong>ROLE PURPOSE:</strong></p>\n<p>The Business Development (BD) Department of Plan International Nepal focusses specifically on the business growth, resource mobilisation and grants management and compliances areas of work, encompassing identification and strategic actions on a wide variety of funding opportunities, full proposal development complemented by qualitative grants management through organisational compliances and processes. The unit/team is thus tasked with the development of a long-term financial growth strategy to ensure Plan Nepal’s financial sustainability through a balanced portfolio of suitable, medium and large-scale grants and pipeline of/for future funding. With an annual funding target of a minimum of Euros 12 million through grants, the BD unit will also lead and facilitate all units of Plan Nepal towards a clear, systematic and well-coordinated approach, internally and externally, to meet the objectives of the new Country Strategy for 2024-2028.</p>\n<p>Henceforth, the Grants and Compliance Coordinator (GCC), as a key member of the BD Department, will be primarily responsible towards supporting the Grants and Compliance Manager (GCM) in donor compliance management through quality assurance and standards, with emphasis on grants healthiness review and oversight. The GRC is expected to do so with active engagement support to programme and project teams on adequate and appropriate delivery of restricted funds. She/he will also ensure that all grants data and relevant documentation is updated in all Plan internal applications and platforms; through management guidance of the GCM, will liaise with all relevant Plan teams and colleagues towards enabling a multi-unit cohesive working environment. The GRC may also act as a secondary focal point for external liaison either in the absence of the GCM or when duly assigned.</p>\n<p><strong>Apply Before:</strong> Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n<p><strong>Description</strong><br />\n<strong>DIMENSIONS OF THE ROLE:</strong></p>\n<p><strong>Direct Line Manager:</strong> Grants and Compliance Manger</p>\n<p><strong>Budget Accountability:</strong> N/A</p>\n<p><strong>Number of direct reports:</strong> N/A</p>\n<p><strong>External relationships and representation:</strong> N/A</p>\n<p><strong>KEY RELATIONSHIPS:</strong><br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Plan-International-job.png\" alt=\"\" width=\"599\" height=\"69\" class=\"alignnone size-full wp-image-14163\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Plan-International-job.png 599w, https://merorojgari.com/wp-content/uploads/2026/01/Plan-International-job-300x35.png 300w\" sizes=\"(max-width: 599px) 100vw, 599px\" /><br />\n<strong>ACCOUNTABILITIES:</strong></p>\n<p><strong>Grant Agreement Documentation (20%)</strong></p>\n<ul>\n<li>Prepare the FAD and get it validated from concerned Manager.</li>\n<li>Manage FAD on Plan International&#8217;s systems, including grants module of SAP and regular coordination with finance department for updating the same.</li>\n<li>Set up FAD for signatures ensuring timeliness and quality.</li>\n<li>Monitor FAD requirements until its closure, complete post closure activities and provide related information to relevant departments in the organisation.</li>\n<li>Manage the relevant FAD files and keep them up-to-date.</li>\n<li>Prepare updates/briefs on grants; organising, filtering and analysing relevant grant information for sharing with GCM.</li>\n</ul>\n<p><strong>Grant Management (30%)</strong></p>\n<ul>\n<li>Support GCM in ensuring that grant management systems and processes are successfully implemented across the life of the grant, and that key controls are in place to support effective management of the grant portfolio and compliance with the donor requirements.</li>\n<li>Facilitate the coordination of startup workshops meetings, keep minutes on agreed actions.</li>\n<li>Review and assess quality standards for narrative and financial reports for grants, communicate all/any serious reporting issues or concerns to GCM.<br />\nCoordinate and support teams to respond to all donor queries on FAD and narrative and financial reports.</li>\n<li>Keep abreast of field office progress in grants compliances and reporting, keep all layers of management duly communicated and updated through scheduled meetings with GCM and/or team meets.</li>\n<li>Support the GCM to identify potential issues and amendment requests and ensure they are flagged promptly to donors via the relevant national office.</li>\n<li>Support grant close-out, helping project leads to ensure all tasks are completed as per the close out checklist and that all required close-out documentations are in place. Ensure grant close out processes are officially completed in SAP.</li>\n<li>Facilitate effective and prompt communication with the national offices/donors on their grants.</li>\n<li>Update Business Development tracker (grants tracker, national office and donor contacts, reporting tracker) and weekly meeting calendars and submit to the Manager.<br />\nSupport the GCM in regular updating of Plan International Nepal’s grant portfolio in GPMT and all relevant/required Plan International&#8217;s portals and information sites including SAP Grant module.</li>\n</ul>\n<p><strong>Donor Servicing (10%)</strong></p>\n<ul>\n<li>Coordinate and facilitate donor visits with programme, operations, finance and field teams as and when required/necessary.</li>\n<li>Ensure timely, accurate and effective donor servicing in terms of standard processes, such as timely dispatch of donor receipts, tax certificates, sharing of key communication and documents, etc.</li>\n<li>Support GCM towards providing timely resolution of queries raised by NOs and/or Institutional/Foundation/Corporate donors.</li>\n<li>Any other work as assigned by the Line Manager or the Department Director.</li>\n</ul>\n<p><strong>Partnership Management (40%)</strong></p>\n<ul>\n<li>Partner Selection:</li>\n<li>Create ToR, Create EoI, Publish notice in Dashboard and actual publication through Operations team.</li>\n<li>Focal point for partner selection – supporting organization applying during EoI.</li>\n<li>Download EOI selection document and archive in dashboard repository, hard copy and Aitamaya.</li>\n<li>Due Diligence support as part of selection.</li>\n<li>Partnership Onboarding (dashboard orientation, agreement processes, key compliance requirements).<br />\ntwo steps of partnership management [Signing agreements including partnership number assignment) and Exit and Sustainability].</li>\n<li>Managing Partnership Dashboard – user creation, role setting, project set-up, problem-solution.</li>\n<li>Partnership Agreement Template review.</li>\n<li>Partnership Agreement reviews.</li>\n<li>Partnership communication.</li>\n<li>Documentation archiving.</li>\n</ul>\n<p>Ensures that Plan International’s global policies for Safeguarding Children and Programme Participants and Diversity, Equality and Inclusion (DEI) are fully embedded in accordance with the principles and requirements of the policy including relevant Implementation Standards and Guidelines as applicable to their area of responsibility. This includes, but is not limited to, ensuring staff and associates are aware of and understand their responsibilities under these policies and Plan International’s Code of Conduct (CoC), their relevance to their area of work, and that concerns are reported and managed in accordance with the appropriate procedures.</p>\n<p><strong>TECHNICAL EXPERTISE, SKILLS AND KNOWLEDGE:</strong></p>\n<p><strong>Education Qualification and Experience:</strong></p>\n<ul>\n<li>Master’s Degree in social science or any other relevant subject with minimum 3 years of experience OR, Bachelor’s Degree with 5 years of experience.</li>\n<li>Experience in grants management including donor report writing and/or Monitoring &amp; Evaluation of grant project with good understanding of project management cycle.</li>\n</ul>\n<p><strong>Skills:</strong></p>\n<ul>\n<li>Knowledge and skills in donor reporting, compliance, data management and MS Excel.</li>\n<li>Have aptitude for fundraising, marketing and donor engagement.</li>\n<li>Ability to build strong relationships with both internal and external stakeholders.</li>\n<li>Ability to work independently.</li>\n</ul>\n<p><strong>PLAN INTERNATIONAL’S VALUES IN PRACTICE:</strong></p>\n<p><strong>We are open and accountable</strong></p>\n<p>We create a climate of trust inside and outside the organization by being open, honest and transparent. We hold ourselves and others to account for the decisions we make and for our impact on others, while doing what we say we will do.</p>\n<p><strong>We strive for lasting impact</strong></p>\n<p>We strive to achieve significant and lasting impact on the lives of children and young people, and to secure equality for girls. We challenge ourselves to be bold, courageous, responsive, focused and innovative.</p>\n<p><strong>We work well together</strong></p>\n<p>We succeed by working effectively with others, inside and outside the organisation, including our sponsors and donors. We actively support our colleagues, helping them to achieve their goals. We come together to create and implement solutions in our teams, across Plan International, with children, girls, young people, communities and our partners.</p>\n<p><strong>We are inclusive and empowering</strong></p>\n<p>We respect all people, appreciate differences and challenge inequality in our programmes and our workplace. We support children, girls and young people to increase their confidence and to change their own lives. We empower our staff to give their best and develop their potential.</p>\n<p><strong>PHYSICAL ENVIRONMENT:</strong></p>\n<p>This position is based in Plan International Nepal Country Office – Kathmandu with field visits as necessary.</p>\n<p><strong>LEVEL OF CONTACT WITH CHILDREN:</strong></p>\n<p><strong>Low Level:</strong> Less interaction with children.</p>\n<p><strong>&#8220;Say Yes ! To Keeping Children and Young people safe and Protected&#8221;</strong></p>\n<p><strong>Application Deadline</strong>: Wednesday, 14th Jan 2026 (4:00 PM Nepal Time)</p>\n",
       "protected": false
     },
     "author": 2,
@@ -48031,7 +48965,7 @@
       "rendered": "Pharmacy Assistant, Pharmacy Officer, Biomedical Engineer, Medical Officer,  Associate Professor"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14154\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job.png\" alt=\"\" width=\"817\" height=\"841\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job.png 817w, https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-291x300.png 291w, https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-768x791.png 768w\" sizes=\"(max-width: 817px) 100vw, 817px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14155\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-1.png\" alt=\"\" width=\"769\" height=\"364\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-1.png 769w, https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-1-300x142.png 300w\" sizes=\"(max-width: 769px) 100vw, 769px\" /></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14154\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job.png\" alt=\"\" width=\"817\" height=\"841\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job.png 817w, https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-291x300.png 291w, https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-768x791.png 768w\" sizes=\"(max-width: 817px) 100vw, 817px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14155\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-1.png\" alt=\"\" width=\"769\" height=\"364\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-1.png 769w, https://merorojgari.com/wp-content/uploads/2026/01/Pokhara-University-Teaching-Hospital-job-1-300x142.png 300w\" sizes=\"(max-width: 769px) 100vw, 769px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69286,942 +70220,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13827"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 13825,
-    "date": "2025-12-26T18:25:26",
-    "date_gmt": "2025-12-26T12:40:26",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=13825"
-    },
-    "modified": "2025-12-26T18:25:26",
-    "modified_gmt": "2025-12-26T12:40:26",
-    "slug": "nepali-teacher-17",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/nepali-teacher-17/",
-    "title": {
-      "rendered": "Nepali Teacher"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Teacher<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Level:</strong> Secondary<br />\n<strong>Subject:</strong> Nepali<br />\n<strong>Location:</strong> Khotang`</p>\n<p><strong>Tribhuvan Madhyamik Vidyalaya</strong></p>\n<p><strong>Phone No.:</strong> 9862853436, 9862686958, 9841995837<br />\n<strong>Email:</strong> tribhuvanss82@gmail.com</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-13826\" src=\"https://merorojgari.com/wp-content/uploads/2025/12/tribhuvan-Madhyamik-Vidyalaya-job.jpg\" alt=\"\" width=\"884\" height=\"1350\" srcset=\"https://merorojgari.com/wp-content/uploads/2025/12/tribhuvan-Madhyamik-Vidyalaya-job.jpg 884w, https://merorojgari.com/wp-content/uploads/2025/12/tribhuvan-Madhyamik-Vidyalaya-job-196x300.jpg 196w, https://merorojgari.com/wp-content/uploads/2025/12/tribhuvan-Madhyamik-Vidyalaya-job-671x1024.jpg 671w, https://merorojgari.com/wp-content/uploads/2025/12/tribhuvan-Madhyamik-Vidyalaya-job-768x1173.jpg 768w\" sizes=\"(max-width: 884px) 100vw, 884px\" /></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 7940,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Khotang",
-      "_application": "",
-      "_company_name": "Tribhuvan Madhyamik Vidyalaya",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      9
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      80
-    ],
-    "class_list": {
-      "0": "post-13825",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-khotang",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/13825",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/7940"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=13825"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=13825"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=13825"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13825"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 13818,
-    "date": "2025-12-26T16:18:14",
-    "date_gmt": "2025-12-26T10:33:14",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=13818"
-    },
-    "modified": "2025-12-26T16:23:36",
-    "modified_gmt": "2025-12-26T10:38:36",
-    "slug": "star-hospital-limited-lalitpur-full-time-staff-nurse",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/star-hospital-limited-lalitpur-full-time-staff-nurse/",
-    "title": {
-      "rendered": "Staff Nurse"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Staff Nurse<br />\n<strong>Departments:</strong> ICU, NICU &amp; General Ward<br />\n<strong>Required No.:</strong> Few</p>\n<p><strong> Minimum Requirements:</strong></p>\n<ul>\n<li> PCL Nursing / Bachelor’s Degree in Nursing</li>\n<li>1 year experience preferred (Freshers are highly encouraged to apply)</li>\n<li>Registered with Nepal Nursing Council (NNC)</li>\n</ul>\n<p><strong>How to Apply:</strong></p>\n<ul>\n<li>Email your CV to: <strong>hrd.starhospital2007@gmail.com</strong></li>\n<li>Or submit your resume at the hospital reception desk</li>\n<li>Be a part of a team that delivers compassionate care with comfort.</li>\n</ul>\n",
-      "protected": false
-    },
-    "author": 1283,
-    "featured_media": 13820,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Lalitpur",
-      "_application": "hrd.starhospital2007@gmail.com",
-      "_company_name": "Star Hospital Limited",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      14
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      81
-    ],
-    "class_list": {
-      "0": "post-13818",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-lalitpur",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/13818",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/1283"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/13820"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=13818"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=13818"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=13818"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13818"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 13815,
-    "date": "2025-12-26T15:16:00",
-    "date_gmt": "2025-12-26T09:31:00",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=13815"
-    },
-    "modified": "2025-12-26T15:26:48",
-    "modified_gmt": "2025-12-26T09:41:48",
-    "slug": "campaign-nepal-rautahat-full-time-provincial-project-coordinator",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/campaign-nepal-rautahat-full-time-provincial-project-coordinator/",
-    "title": {
-      "rendered": "Provincial Project Coordinator"
-    },
-    "content": {
-      "rendered": "<p><strong>Campaign Nepal for Research &amp; Development (Campaign Nepal)</strong> is a non-political, secular, and non-profit organisation established in 2008, headquartered in Rautahat District. Campaign Nepal works primarily in the Terai region while extending its interventions nationwide. The organisation focuses on community development and humanitarian assistance in the areas of good governance, health, water and sanitation, education, livelihood promotion, and disaster risk reduction (DRR).</p>\n<p>In partnership with national and international development actors, Campaign Nepal advances social and economic justice while safeguarding the rights and dignity of vulnerable and marginalised communities, including women, children, youth, and persons with disabilities.</p>\n<p>Campaign Nepal is currently implementing the “Strengthening Civil Society for Inclusive Democracy and Human Rights (SAMA-SAMA Project)” in selected local governments of Madhesh Province:</p>\n<p><strong>Sarlahi District:</strong> Dhankaul Rural Municipality and Hariwan Municipality<br />\n<strong>Mahottari District:</strong> Manra Siswa Municipality and Ekdara Rural Municipality<br />\n<strong>Dhanusha District:</strong> Laxminiya Rural Municipality and Chhireswarnath Municipality We invite applications from qualified and motivated Nepali citizens for the following position:</p>\n<p><strong>Position:</strong> Provincial Project Coordinator (PPC) – 1 Position</p>\n<p><strong>Duty Station:</strong> Gaur, Rautahat</p>\n<p><strong>Contract Type:</strong> Fixed Term, Full-time</p>\n<p><strong>Key Responsibilities</strong></p>\n<ul>\n<li>Lead provincial-level project planning, budgeting, implementation, monitoring, and reporting.</li>\n<li>Coordinate with provincial and local governments, CSOs, and communities to strengthen inclusive governance and democratic participation.</li>\n<li>Provide technical guidance to Civic Engagement Facilitators (CEFs) and women-led CSOs.</li>\n<li>Represent the project in stakeholder forums, advocacy campaigns, and public events.</li>\n<li>Document lessons learned, success stories, and best practices.</li>\n</ul>\n<p><strong>Required Qualifications &amp; Experience</strong></p>\n<ul>\n<li>Master’s degree in Gender Studies, Sociology, Development Studies, or a related field.</li>\n<li>Minimum 5 years of progressive experience in project coordination/management in governance, gender equality, or human rights.</li>\n<li>Demonstrated ability to manage partnerships and build networks with government and civil society.</li>\n<li>Strong skills in planning, monitoring, reporting, and advocacy.</li>\n<li>Excellent communication skills in English and Nepali.</li>\n</ul>\n<p>(For detailed Terms of Reference, refer to the official <a href=\"https://drive.google.com/uc?export=download&amp;id=1cxYaOuhUGVTEIUk2vWzg0qKQJhgHo6Jm\" target=\"_blank\" rel=\"noopener\">Job Description document</a>.)</p>\n<p><strong>Application Procedure</strong></p>\n<p>Interested candidates are requested to submit the following documents to <strong>vacancy.abhiyan@gmail.com</strong> or to the office address provided below:</p>\n<p>1. An application letter clearly stating the position applied for.<br />\n2. Completed Job Application Form (available via link).<br />\n3. Updated CV including at least two professional references.<br />\n4. Copies of academic certificates and work experience letters.<br />\n5. Copy of Nepali citizenship certificate.</p>\n<p><strong>Deadline:</strong> Applications must be submitted by <strong>5:00 PM on 2 January 2026.</strong> Late submissions will not be considered. If the deadline falls on a public holiday, it will be extended to the next working day.</p>\n<p>Only shortlisted candidates will be invited to participate in written tests and interviews. Any attempt to exert undue influence during the recruitment process will result in automatic disqualification.</p>\n<p><strong>Safeguarding &amp; Diversity</strong></p>\n<p>Campaign Nepal is committed to safeguarding and promoting the welfare of children and vulnerable adults and expects all staff and partners to share this commitment. We have a zero-tolerance policy toward sexual exploitation, abuse, and harassment.</p>\n<p>We strongly encourage applications from women, Dalits, indigenous communities, persons with disabilities, and other marginalised groups. Preference will be given to candidates from the project locations with proficiency in local languages.</p>\n<p><strong>Submission Address</strong></p>\n<p>Human Resource Department</p>\n<p>Campaign Nepal for Research &amp; Development</p>\n<p>Gaur-05, Behind Om Shanti Bhawan</p>\n<p>Rautahat, Madhesh Province, Nepal</p>\n<p><strong>Phone</strong>: 055-521576</p>\n<p><strong>Email:</strong> vacancy.abhiyan@gmail.com</p>\n",
-      "protected": false
-    },
-    "author": 1282,
-    "featured_media": 13817,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Rautahat",
-      "_application": "vacancy.abhiyan@gmail.com",
-      "_company_name": "Campaign Nepal",
-      "_company_website": "https://campaignnepal.org",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      101
-    ],
-    "class_list": {
-      "0": "post-13815",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-rautahat",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/13815",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/1282"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/13817"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=13815"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=13815"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=13815"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13815"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 13810,
-    "date": "2025-12-26T14:00:33",
-    "date_gmt": "2025-12-26T08:15:33",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=13810"
-    },
-    "modified": "2025-12-26T14:12:05",
-    "modified_gmt": "2025-12-26T08:27:05",
-    "slug": "nepal-development-society-kathmandu-full-time-monitoring-evaluation-accountability-and-learning-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/nepal-development-society-kathmandu-full-time-monitoring-evaluation-accountability-and-learning-officer/",
-    "title": {
-      "rendered": "Monitoring, Evaluation, Accountability and Learning Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Monitoring, Evaluation, Accountability and Learning (MEAL) Officer<br />\n<strong>Location</strong>: Based in the Kathmandu Office with frequent travel to project locations<br />\n<strong>Contract Length:</strong> 12 months fixed term with possibility of extension</p>\n<p><strong>ORGANIZATION BRIEF</strong></p>\n<p><strong>Nepal Development Society (NeDS),</strong> established in 2013, is a leading research-focused non- governmental organization in Nepal. NeDS is implementing the ENSURE-Nepal project which is a four- year initiative supported through a cooperative agreement with the U.S. Department of State Office to Monitor and Combat Trafficking in Persons. The project aims to develop scalable interventions that reduce harm to migrants and their communities through identifying addressable risks and ameliorating them via evidence-based IDR and interventions. It uses evidence-based intervention development research to identify what works to reduce exploitation and harm faced by migrant workers.</p>\n<p><strong>JOB SUMMARY</strong></p>\n<p>The MEAL Officer is responsible for executing the Monitoring, Evaluation, Accountability and Learning system for the NeDS projects that focus on the Intervention Development for Trafficked Nepali Labor Migrants. She/he will work closely with the implementing partners, the U.S. Department of State, and their evaluation contractor NORC. The primary responsibilities of the MEAL Officer include developing and implementing the MEAL plans for the projects, ensuring that the baseline, mid-line, and end-line surveys, as well as research, periodic reviews, MEAL reports, quarterly reporting, project indicator tracking, and attended weekly collaborator meetings.</p>\n<p><strong>REPORTING MECHANISM</strong></p>\n<p>Direct Reports to Program Coordinator &#8211; Nepal</p>\n<p><strong>KEY ROLES, RESPONSIBILITIES AND ACCOUNTABILITY</strong></p>\n<p><strong>Monitoring</strong></p>\n<ul>\n<li>Develop and implement a project monitoring plan, ensuring that project objectives, timelines, and deliverables are effectively tracked.</li>\n<li>Track core program indicators, doing a meta-analysis, and communicating this monthly and quarterly to the program team.</li>\n<li>Assist in the development of the Theory of Change, Result Monitoring Plan (RMP), project log frame, and key performance indicators, particularly the targets and measurements including database management.</li>\n<li>Attend atleast bi-weekly team meetings to become informed of project activities and suggest courses of action in line with established indicators.</li>\n<li>Conduct data collection by developing necessary forms, formats and templates.</li>\n<li>Provide technical support and ensure the availability of reporting forms and tools.</li>\n<li>Establish and maintain efficient monitoring mechanisms to assess project progress and identify areas for adjustment.</li>\n<li>Conduct regular project monitoring visits and spot checks to ensure the quality and accuracy of project data.</li>\n<li>Manage and periodically update the Common Performance Indicator (CPI) document tracking progress against J/TIP indicators among all partners.</li>\n<li>Support the project team the provide necessary data, information and project reports to donors, government agencies and consortium organizations.</li>\n<li>Develop the beach mark and quality standard to ensure consistency in the similar activities of the project.</li>\n<li>Assist the monitoring visits from government agencies, social welfare councils and other organizations.</li>\n</ul>\n<p><strong>Evaluation</strong></p>\n<ul>\n<li>Oversee the execution of baseline, mid-line, and end-line surveys, ensuring they are conducted in a timely manner and align with project objectives.</li>\n<li>Collaborate with stakeholders to conduct periodic reviews, ensuring the evaluation of project effectiveness and impact.</li>\n<li>Involve with the development evaluator, NORC, directly relates to MEAL.<br />\nConduct in-depth research on trafficking issues, analyze the scope of trafficking issues, identify trends and root causes, keeping abreast of legal frameworks, policies, and best practices related to migrant workers&#8217; rights.</li>\n<li>Develop the ToR and related contractual documents for the procurement of research firms and consultancy.</li>\n<li>Assist in the evaluation works including training enumerators and coordinating with research firms and project teams.</li>\n</ul>\n<p><strong>Accountability</strong></p>\n<ul>\n<li>Ensure the organization&#8217;s accountability mechanisms are effective in addressing feedback and concerns from stakeholders.</li>\n<li>Establish and manage a feedback system to receive and respond to beneficiary input, promoting transparency and responsiveness towards the larger community.</li>\n<li>Regularly assess the impact of accountability mechanisms and recommend improvements as needed.</li>\n<li>Facilitate the investigation process of any complaints and feedback received from the stakeholders and analyse the feedback trend.</li>\n<li>Establish effective community engagement strategies, conducting Focus Group Discussions and involving migrant worker communities in project development and implementation.</li>\n<li>Follow the U.S. Department of State Award Provisions guidelines requirements for reporting<br />\nneeds.</li>\n<li>Submit quarterly reports on lessons learned, information on improving program outcomes, and how to foster the adoption of promising practices to the US Department of Labor in partnership with the Project team.</li>\n</ul>\n<p><strong>Learning</strong></p>\n<ul>\n<li>Contribute to the organization&#8217;s capacity-building efforts by sharing MEAL knowledge and best practices with colleagues.</li>\n<li>Collect, analyze, and disseminate project lessons learned effectively to enhance the organization&#8217;s knowledge base.</li>\n<li>Facilitate knowledge-sharing sessions within the organization, incorporating insights from project experiences to improve future initiatives.</li>\n<li>Actively participate in webinars and training sessions supports continuous learning.</li>\n<li>Collaborate with partners and stakeholders to promote a culture of learning and continuous improvement.</li>\n<li>Advocate for policy changes and legal reforms based on evidence generated from the project and other sources.</li>\n<li>Communicate with the Project team when issues or concerns arise, such as activities not meeting project objectives.</li>\n</ul>\n<p><strong>General</strong></p>\n<ul>\n<li>Attend the regular weekly and bi-weekly meetings with partners of different time zone including the North America, Europe, and the United Kingdom.</li>\n<li>Provide project planning and management support, ensuring clear objectives, timelines, and deliverables are met.</li>\n<li>Collaborate with the program team to prepare monthly update newsletters and manage social media for effective communication.</li>\n<li>Build and maintain strong partnerships with governmental agencies, NGOs, migrant networks, and civil society organizations, especially with the team of La Isla Network, Inc (LIN), USA to enhance project impact.</li>\n<li>Collaborate with implementing partners both in-country and internationally, ensuring effective communication and coordination.</li>\n<li>Act as a key member of the organization, providing MEAL support across various projects.</li>\n<li>Collaborate with project teams to ensure consistency in monitoring, evaluation, accountability, and learning practices.</li>\n<li>Undertake tasks as assigned by the line manager, which may include specific MEAL-related assignments or broader organizational responsibilities.</li>\n<li>Provide MEAL expertise to strengthen the development of concept notes and proposals for new<br />\nfunding opportunities, ensuring alignment with organizational goals.</li>\n<li>Collaborate with colleagues from different departments to ensure effective integration of MEAL practices.<br />\nWork collaboratively with the leadership team in organizational discussions to refine and enhance overall monitoring, evaluation, accountability, and learning strategies.</li>\n<li>Actively engage in organizational development activities, including research activities, fundraising<br />\ninitiatives, and administrative tasks.</li>\n</ul>\n<p><strong>QUALIFICATION AND EXPERIENCE</strong></p>\n<p><strong>Academic Qualification</strong></p>\n<ul>\n<li>Master’s degree in Public Health, Management, Social Science, and relevant disciplines.</li>\n</ul>\n<p><strong>Relevant Experience</strong></p>\n<ul>\n<li>At least five years of direct experience in the design and implementation of M&amp;E in national/international NGOs/UN bodies/Government</li>\n<li>Proven experience in project management and implementation, particularly in the context of human rights and modern slavery.</li>\n<li>Excellent communication and advocacy skills, with the ability to engage with diverse stakeholders.</li>\n<li>Experience in capacity building, knowledge management, and training programs.</li>\n<li>Demonstrate diplomacy in building relationships and working with<br />\ndiverse cultures, audiences, sensitive situations, and subject matter.</li>\n<li>Experience in strategic planning approaches, including needs assessment, program design, logical framework development, indicator selection, monitoring plan implementation, supporting evaluations, and data analysis.</li>\n<li>Experience in Monitoring and Evaluation methods and approaches, including quantitative, qualitative, and participatory work with historically oppressed communities.</li>\n</ul>\n<p><strong>Essential Attributes</strong></p>\n<ul>\n<li>Experience in capacity building, knowledge management, and training programs.</li>\n<li>Experience in the internet, MS Office package, data management and</li>\n<li>analysis software such as STATA, SPSS, KoBoToolbox box, and<br />\nGoogle forms.</li>\n<li>Proficient in reading, writing, and speaking in Nepali and English language.</li>\n<li>Honesty, transparent, collaborative and learning attitude</li>\n</ul>\n<p><strong>Desirable Attributes</strong></p>\n<ul>\n<li>Prior working experience in research-based projects with academic institutions consortium.</li>\n<li>Experience in conducting quantitative and qualitative data collection and analysis using Software, preferably Stata and NVivo.</li>\n<li>Familiarity with international and national legal frameworks related to human rights and labor rights</li>\n<li>Strong knowledge of issues related to migrant workers, labor migration, human trafficking and health and safety issues of the migrant workers.</li>\n</ul>\n<p><strong>Salary and Benefits</strong></p>\n<p>NeDS provides a competitive salary, with provident funds, gratuity, accidental insurance, medical insurance and opportunity for growth and development.</p>\n<ul>\n<li><strong>Basic Salary:</strong> NPR 80,000</li>\n<li><strong>Provident Fund:</strong> 10% of basic salary from Office</li>\n<li><strong>Gratuity:</strong> One month of basic salary per annum</li>\n<li><strong>Festival Allowance:</strong> One month of basic salary per annum</li>\n<li><strong>Medical Insurance:</strong> Upto NPR 260,000 for staff and family</li>\n<li><strong>Accident Insurance:</strong> Upto NPR 2,000,000</li>\n</ul>\n<p><strong>Application Process</strong></p>\n<p><strong>To apply:</strong> Please submit your CV and Cover letter, with two references at<strong> vacancy@nedsnepal.org.np</strong>, mention below subject in email application.</p>\n<p><strong>Subject</strong>: Application – MEAL Officer, ENSURE Nepal</p>\n<p><strong>Deadline for applications: January 5, 2026.</strong> We will only contact, if you have been shortlisted</p>\n<p><strong>Disclaimer:</strong></p>\n<p>Nepal Development Society (NeDS) encourages diversity of nationalities, genders, races, ethnicities, profiles, and statuses among its human resources. Therefore, it complies with the principle of non- discrimination throughout its recruitment process. Nepal Development Society (NeDS) will not charge any</p>\n<p>fees for the recruitment process, including shortlisting, interviews, tests, or training.</p>\n",
-      "protected": false
-    },
-    "author": 977,
-    "featured_media": 8310,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "vacancy@nedsnepal.org.np",
-      "_company_name": "Nepal Development Society",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-13810",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/13810",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/977"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8310"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=13810"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=13810"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=13810"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=13810"
         }
       ],
       "curies": [
