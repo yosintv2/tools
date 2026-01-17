@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>2026 Progress</title>
   <style>
-    /* Light Mode Variables (Default) */
+    /* Light Mode Variables */
     :root {
       --past:    #4ade80;
       --today:   #3b82f6;
@@ -15,38 +15,37 @@
       --bg:      #f8fafc;
       --grid-bg: rgba(0, 0, 0, 0.03);
       --border:  rgba(0, 0, 0, 0.08);
+      --card:    #ffffff;
     }
 
-    /* Dark Mode Variables (Automatic) */
+    /* Dark Mode Variables */
     @media (prefers-color-scheme: dark) {
       :root {
-        --past:    #22c55e; /* Slightly deeper green */
-        --today:   #60a5fa; /* Brighter blue for contrast */
-        --future:  #334155; /* Dark slate */
-        --text:    #f1f5f9; /* Off-white */
-        --muted:   #94a3b8; /* Muted slate */
-        --bg:      #0f172a; /* Deep navy */
+        --past:    #22c55e;
+        --today:   #60a5fa;
+        --future:  #334155;
+        --text:    #f1f5f9;
+        --muted:   #94a3b8;
+        --bg:      #0f172a;
         --grid-bg: rgba(255, 255, 255, 0.03);
         --border:  rgba(255, 255, 255, 0.1);
+        --card:    #1e293b;
       }
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       min-height: 100dvh;
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text);
-      display: grid;
-      place-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 16px;
       overflow: hidden;
-      transition: background 0.3s ease, color 0.3s ease;
     }
 
     .container {
@@ -79,35 +78,13 @@
       background: var(--grid-bg);
     }
 
-    .dot {
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: var(--future);
-    }
-
+    .dot { aspect-ratio: 1; border-radius: 50%; background: var(--future); }
     .dot.past { background: var(--past); }
-
     .dot.today {
       background: var(--today);
       transform: scale(1.3);
       box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
       position: relative;
-      z-index: 2;
-    }
-
-    .dot.today::after {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      background: var(--today);
-      opacity: 0.2;
-      animation: pulse 2s infinite ease-in-out;
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 0.2; }
-      50% { transform: scale(1.6); opacity: 0; }
     }
 
     .stats {
@@ -119,11 +96,63 @@
       border-top: 1px solid var(--border);
     }
 
-    .stats strong { color: var(--text); font-weight: 700; }
-
-    @media (max-width: 380px) {
-      .grid { grid-template-columns: repeat(15, 1fr); }
+    /* Note Button */
+    .note-btn {
+      margin-top: 10px;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: var(--grid-bg);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
+
+    /* Popup Styles */
+    #note-popup {a
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .popup-content {
+      background: var(--card);
+      width: 100%;
+      max-width: 320px;
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      margin: 15px 0;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-family: inherit;
+      resize: none;
+    }
+
+    .popup-actions { display: flex; gap: 10px; }
+    .btn { flex: 1; padding: 10px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; }
+    .btn-save { background: var(--today); color: white; }
+    .btn-close { background: var(--future); color: var(--text); }
+
+    @media (max-width: 380px) { .grid { grid-template-columns: repeat(15, 1fr); } }
   </style>
 </head>
 <body>
@@ -139,42 +168,89 @@
   <div class="grid" id="grid"></div>
 
   <div class="stats">
-    <div>Day <strong id="current">1</strong> / <strong id="total">365</strong></div>
+    <div>Day <strong id="current">1</strong></div>
     <div><strong id="remaining">0</strong> days left</div>
+  </div>
+
+  <button class="note-btn" onclick="togglePopup(true)">
+    📝 <span id="note-preview">Add Daily Note</span>
+  </button>
+</div>
+
+<div id="note-popup">
+  <div class="popup-content">
+    <h3 style="font-size: 1.1rem;">Daily Intentions</h3>
+    <p style="font-size: 0.75rem; color: var(--muted);">Note expires in 24 hours</p>
+    <textarea id="note-input" placeholder="What's on your mind today?"></textarea>
+    <div class="popup-actions">
+      <button class="btn btn-close" onclick="togglePopup(false)">Cancel</button>
+      <button class="btn btn-save" onclick="saveNote()">Save</button>
+    </div>
   </div>
 </div>
 
 <script>
-  const updateTracker = () => {
-    const now = new Date();
-    const year = now.getFullYear();
-    const start = new Date(year, 0, 1);
-    const end = new Date(year, 11, 31, 23, 59, 59);
-    
-    const msPerDay = 86400000;
-    const totalDays = Math.floor((end - start) / msPerDay) + 1;
-    const passedDays = Math.floor((now - start) / msPerDay) + 1;
-    const remaining = totalDays - passedDays;
-    const progress = (passedDays / totalDays) * 100;
+  // 1. Date Calculations
+  const now = new Date();
+  const year = now.getFullYear();
+  const start = new Date(year, 0, 1);
+  const totalDays = 365 + (year % 4 === 0 ? 1 : 0);
+  const passedDays = Math.floor((now - start) / 86400000) + 1;
+  
+  document.getElementById('percent').textContent = ((passedDays / totalDays) * 100).toFixed(1) + '%';
+  document.getElementById('current').textContent = passedDays;
+  document.getElementById('remaining').textContent = totalDays - passedDays;
 
-    document.getElementById('percent').textContent = progress.toFixed(1) + '%';
-    document.getElementById('current').textContent = passedDays;
-    document.getElementById('total').textContent = totalDays;
-    document.getElementById('remaining').textContent = remaining;
+  // 2. Generate Grid
+  const grid = document.getElementById('grid');
+  for(let day = 1; day <= totalDays; day++) {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (day < passedDays ? ' past' : day === passedDays ? ' today' : '');
+    grid.appendChild(dot);
+  }
 
-    const grid = document.getElementById('grid');
-    grid.innerHTML = ''; // Clear for re-render if needed
-    
-    for(let day = 1; day <= totalDays; day++) {
-      const dot = document.createElement('div');
-      dot.className = 'dot';
-      if (day < passedDays) dot.classList.add('past');
-      else if (day === passedDays) dot.classList.add('today');
-      grid.appendChild(dot);
+  // 3. Local Storage & Expiry Logic (1 Day)
+  const NOTE_KEY = 'daily_note_data';
+
+  function togglePopup(show) {
+    document.getElementById('note-popup').style.display = show ? 'grid' : 'none';
+    if(show) document.getElementById('note-input').focus();
+  }
+
+  function saveNote() {
+    const text = document.getElementById('note-input').value;
+    const noteData = {
+      content: text,
+      timestamp: new Date().getTime()
+    };
+    localStorage.setItem(NOTE_KEY, JSON.stringify(noteData));
+    updatePreview(text);
+    togglePopup(false);
+  }
+
+  function loadNote() {
+    const rawData = localStorage.getItem(NOTE_KEY);
+    if (!rawData) return;
+
+    const data = JSON.parse(rawData);
+    const oneDayInMs = 24 * 60 * 60 * 1000;
+
+    // Check if 24 hours have passed
+    if (new Date().getTime() - data.timestamp > oneDayInMs) {
+      localStorage.removeItem(NOTE_KEY);
+      updatePreview('');
+    } else {
+      document.getElementById('note-input').value = data.content;
+      updatePreview(data.content);
     }
-  };
+  }
 
-  updateTracker();
+  function updatePreview(text) {
+    const preview = document.getElementById('note-preview');
+    preview.textContent = text ? (text.substring(0, 20) + (text.length > 20 ? '...' : '')) : 'Add Daily Note';
+  }
+
+  loadNote();
 </script>
 </body>
 </html>
