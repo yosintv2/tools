@@ -133,13 +133,12 @@
       box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
     }
 
-    hr { border: 0; border-top: 1px solid var(--border); margin: 15px 0; }
-
     /* Checklist Section */
     .checklist-container {
-      max-height: 200px;
+      max-height: 220px;
       overflow-y: auto;
       margin-bottom: 15px;
+      padding-right: 5px;
     }
 
     .check-item {
@@ -147,17 +146,24 @@
       align-items: center;
       gap: 10px;
       font-size: 0.9rem;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       animation: fadeIn 0.2s ease-out;
+      cursor: pointer;
     }
 
     @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
     .check-item input[type="checkbox"] {
-      width: 17px;
-      height: 17px;
+      width: 18px;
+      height: 18px;
       accent-color: var(--today);
       cursor: pointer;
+    }
+
+    .check-item input:checked + span {
+      text-decoration: line-through;
+      color: var(--muted);
+      opacity: 0.7;
     }
 
     .input-group {
@@ -183,12 +189,16 @@
       padding: 0 15px;
       border-radius: 8px;
       cursor: pointer;
+      font-weight: bold;
     }
 
-    .popup-actions { display: flex; gap: 10px; }
-    .btn { flex: 1; padding: 10px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; }
+    .popup-actions { display: flex; gap: 10px; margin-top: 5px;}
+    .btn { flex: 1; padding: 12px; border-radius: 10px; border: none; cursor: pointer; font-weight: 600; }
     .btn-save { background: var(--today); color: white; }
     .btn-close { background: var(--future); color: var(--text); }
+
+    .checklist-container::-webkit-scrollbar { width: 4px; }
+    .checklist-container::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
 
     @media (max-width: 380px) { .grid { grid-template-columns: repeat(15, 1fr); } }
   </style>
@@ -211,17 +221,17 @@
   </div>
 
   <button class="note-btn" onclick="togglePopup(true)">
-    📝 <span id="note-preview">Check Daily Progress</span>
+    📝 <span id="note-preview">Daily Habits</span>
   </button>
 </div>
 
 <div id="note-popup">
   <div class="popup-content">
     <h3 style="font-size: 1.1rem; margin-bottom: 5px;">Daily Notes</h3>
-    <p style="font-size: 0.75rem; color: var(--muted); margin-bottom: 15px;">Items expire in 24 hours</p>
+    <p style="font-size: 0.75rem; color: var(--muted); margin-bottom: 15px;">Refreshes every 24 hours</p>
     
     <div class="input-group">
-        <input type="text" id="task-input" placeholder="Add a new note..." onkeypress="if(event.key === 'Enter') addTask()">
+        <input type="text" id="task-input" placeholder="Add more task..." onkeypress="if(event.key === 'Enter') addTask()">
         <button class="btn-add" onclick="addTask()">+</button>
     </div>
 
@@ -254,8 +264,9 @@
     grid.appendChild(dot);
   }
 
-  // 2. Persistent Storage Logic
-  const NOTE_STORAGE_KEY = 'daily_checkbox_notes';
+  // 2. Daily Habits Logic
+  const NOTE_STORAGE_KEY = 'daily_habits_v3';
+  const DEFAULT_TASKS = ["Work Out", "Read Book: 1 Page"];
 
   function togglePopup(show) {
     document.getElementById('note-popup').style.display = show ? 'grid' : 'none';
@@ -273,7 +284,7 @@
     label.innerHTML = `<input type="checkbox" class="task-check" ${isChecked ? 'checked' : ''}> <span>${taskText}</span>`;
     
     list.appendChild(label);
-    if (!text) input.value = ''; // clear input only if added manually
+    if (!text) input.value = '';
   }
 
   function saveData() {
@@ -297,14 +308,15 @@
 
   function loadData() {
     const raw = localStorage.getItem(NOTE_STORAGE_KEY);
-    if (!raw) return;
-
-    const data = JSON.parse(raw);
     const oneDay = 24 * 60 * 60 * 1000;
-
-    if (new Date().getTime() - data.timestamp > oneDay) {
+    
+    if (!raw || (new Date().getTime() - JSON.parse(raw).timestamp > oneDay)) {
         localStorage.removeItem(NOTE_STORAGE_KEY);
+        // Add all defaults
+        DEFAULT_TASKS.forEach(task => addTask(task, false));
+        updatePreview(DEFAULT_TASKS.map(t => ({text: t, checked: false})));
     } else {
+        const data = JSON.parse(raw);
         data.items.forEach(item => addTask(item.text, item.checked));
         updatePreview(data.items);
     }
@@ -312,12 +324,8 @@
 
   function updatePreview(items) {
     const preview = document.getElementById('note-preview');
-    if (items.length === 0) {
-        preview.textContent = "Add Daily Note";
-        return;
-    }
     const completed = items.filter(i => i.checked).length;
-    preview.textContent = `${completed}/${items.length} tasks done`;
+    preview.textContent = `${completed}/${items.length} Daily Habits`;
   }
 
   loadData();
