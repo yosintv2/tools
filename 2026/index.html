@@ -96,7 +96,6 @@
       border-top: 1px solid var(--border);
     }
 
-    /* Note Button */
     .note-btn {
       margin-top: 10px;
       padding: 12px;
@@ -114,7 +113,7 @@
     }
 
     /* Popup Styles */
-    #note-popup {a
+    #note-popup {
       display: none;
       position: fixed;
       inset: 0;
@@ -134,17 +133,56 @@
       box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
     }
 
-    textarea {
-      width: 100%;
-      height: 120px;
-      margin: 15px 0;
-      padding: 12px;
-      border-radius: 10px;
+    hr { border: 0; border-top: 1px solid var(--border); margin: 15px 0; }
+
+    /* Checklist Section */
+    .checklist-container {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 15px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+    .check-item input[type="checkbox"] {
+      width: 17px;
+      height: 17px;
+      accent-color: var(--today);
+      cursor: pointer;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    #task-input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
       border: 1px solid var(--border);
       background: var(--bg);
       color: var(--text);
-      font-family: inherit;
-      resize: none;
+      font-size: 0.85rem;
+    }
+
+    .btn-add {
+      background: var(--grid-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0 15px;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
     .popup-actions { display: flex; gap: 10px; }
@@ -173,24 +211,32 @@
   </div>
 
   <button class="note-btn" onclick="togglePopup(true)">
-    📝 <span id="note-preview">Add Daily Note</span>
+    📝 <span id="note-preview">Check Daily Progress</span>
   </button>
 </div>
 
 <div id="note-popup">
   <div class="popup-content">
-    <h3 style="font-size: 1.1rem;">Daily Intentions</h3>
-    <p style="font-size: 0.75rem; color: var(--muted);">Note expires in 24 hours</p>
-    <textarea id="note-input" placeholder="What's on your mind today?"></textarea>
+    <h3 style="font-size: 1.1rem; margin-bottom: 5px;">Daily Notes</h3>
+    <p style="font-size: 0.75rem; color: var(--muted); margin-bottom: 15px;">Items expire in 24 hours</p>
+    
+    <div class="input-group">
+        <input type="text" id="task-input" placeholder="Add a new note..." onkeypress="if(event.key === 'Enter') addTask()">
+        <button class="btn-add" onclick="addTask()">+</button>
+    </div>
+
+    <div id="notes-list" class="checklist-container">
+        </div>
+
     <div class="popup-actions">
-      <button class="btn btn-close" onclick="togglePopup(false)">Cancel</button>
-      <button class="btn btn-save" onclick="saveNote()">Save</button>
+      <button class="btn btn-close" onclick="togglePopup(false)">Close</button>
+      <button class="btn btn-save" onclick="saveData()">Save Progress</button>
     </div>
   </div>
 </div>
 
 <script>
-  // 1. Date Calculations
+  // 1. Grid Logic
   const now = new Date();
   const year = now.getFullYear();
   const start = new Date(year, 0, 1);
@@ -201,7 +247,6 @@
   document.getElementById('current').textContent = passedDays;
   document.getElementById('remaining').textContent = totalDays - passedDays;
 
-  // 2. Generate Grid
   const grid = document.getElementById('grid');
   for(let day = 1; day <= totalDays; day++) {
     const dot = document.createElement('div');
@@ -209,48 +254,73 @@
     grid.appendChild(dot);
   }
 
-  // 3. Local Storage & Expiry Logic (1 Day)
-  const NOTE_KEY = 'daily_note_data';
+  // 2. Persistent Storage Logic
+  const NOTE_STORAGE_KEY = 'daily_checkbox_notes';
 
   function togglePopup(show) {
     document.getElementById('note-popup').style.display = show ? 'grid' : 'none';
-    if(show) document.getElementById('note-input').focus();
+    if(show) document.getElementById('task-input').focus();
   }
 
-  function saveNote() {
-    const text = document.getElementById('note-input').value;
-    const noteData = {
-      content: text,
-      timestamp: new Date().getTime()
+  function addTask(text = '', isChecked = false) {
+    const input = document.getElementById('task-input');
+    const taskText = text || input.value.trim();
+    if (!taskText) return;
+
+    const list = document.getElementById('notes-list');
+    const label = document.createElement('label');
+    label.className = 'check-item';
+    label.innerHTML = `<input type="checkbox" class="task-check" ${isChecked ? 'checked' : ''}> <span>${taskText}</span>`;
+    
+    list.appendChild(label);
+    if (!text) input.value = ''; // clear input only if added manually
+  }
+
+  function saveData() {
+    const items = [];
+    document.querySelectorAll('.check-item').forEach(item => {
+        items.push({
+            text: item.querySelector('span').textContent,
+            checked: item.querySelector('input').checked
+        });
+    });
+
+    const data = {
+        items: items,
+        timestamp: new Date().getTime()
     };
-    localStorage.setItem(NOTE_KEY, JSON.stringify(noteData));
-    updatePreview(text);
+
+    localStorage.setItem(NOTE_STORAGE_KEY, JSON.stringify(data));
+    updatePreview(items);
     togglePopup(false);
   }
 
-  function loadNote() {
-    const rawData = localStorage.getItem(NOTE_KEY);
-    if (!rawData) return;
+  function loadData() {
+    const raw = localStorage.getItem(NOTE_STORAGE_KEY);
+    if (!raw) return;
 
-    const data = JSON.parse(rawData);
-    const oneDayInMs = 24 * 60 * 60 * 1000;
+    const data = JSON.parse(raw);
+    const oneDay = 24 * 60 * 60 * 1000;
 
-    // Check if 24 hours have passed
-    if (new Date().getTime() - data.timestamp > oneDayInMs) {
-      localStorage.removeItem(NOTE_KEY);
-      updatePreview('');
+    if (new Date().getTime() - data.timestamp > oneDay) {
+        localStorage.removeItem(NOTE_STORAGE_KEY);
     } else {
-      document.getElementById('note-input').value = data.content;
-      updatePreview(data.content);
+        data.items.forEach(item => addTask(item.text, item.checked));
+        updatePreview(data.items);
     }
   }
 
-  function updatePreview(text) {
+  function updatePreview(items) {
     const preview = document.getElementById('note-preview');
-    preview.textContent = text ? (text.substring(0, 20) + (text.length > 20 ? '...' : '')) : 'Add Daily Note';
+    if (items.length === 0) {
+        preview.textContent = "Add Daily Note";
+        return;
+    }
+    const completed = items.filter(i => i.checked).length;
+    preview.textContent = `${completed}/${items.length} tasks done`;
   }
 
-  loadNote();
+  loadData();
 </script>
 </body>
 </html>
