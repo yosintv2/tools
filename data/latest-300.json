@@ -30811,7 +30811,7 @@
       "_company_tagline": "",
       "_company_twitter": "",
       "_company_video": "",
-      "_filled": 0,
+      "_filled": 1,
       "_featured": 0,
       "_remote_position": 0,
       "_job_salary": "",
@@ -30832,7 +30832,8 @@
       "3": "status-publish",
       "4": "has-post-thumbnail",
       "5": "hentry",
-      "7": "job-type-full-time"
+      "7": "job-type-full-time",
+      "8": "job_position_filled"
     },
     "_links": {
       "self": [
