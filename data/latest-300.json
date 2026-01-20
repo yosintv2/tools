@@ -1,5 +1,239 @@
 [
   {
+    "id": 15621,
+    "date": "2026-01-20T20:06:08",
+    "date_gmt": "2026-01-20T14:21:08",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=15621"
+    },
+    "modified": "2026-01-20T20:07:54",
+    "modified_gmt": "2026-01-20T14:22:54",
+    "slug": "frontline-hospital-kathmandu-full-time-radio-technology",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/frontline-hospital-kathmandu-full-time-radio-technology/",
+    "title": {
+      "rendered": "Radio Technology"
+    },
+    "content": {
+      "rendered": "<p><strong>Position:</strong> Radio Technology<br />\n<strong>Required Number</strong>: Few<br />\n<strong>Qualification</strong>: BSc MIL<br />\n<strong>Experience:</strong> At least one yar working experience</p>\n<p>Interested candidates are requested to send their application along with updated CV to <strong>hrd@frontlinehospital.com.np</strong></p>\n<p><strong>Last date of CV submission:</strong> 2082/10/11</p>\n",
+      "protected": false
+    },
+    "author": 45,
+    "featured_media": 8715,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "hrd@frontlinehospital.com.np",
+      "_company_name": "Frontline Hospital",
+      "_company_website": "https://frontlinehospital.com.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      14
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-15621",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/15621",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/45"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/8715"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=15621"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=15621"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=15621"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=15621"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 15615,
     "date": "2026-01-20T17:56:49",
     "date_gmt": "2026-01-20T12:11:49",
@@ -15006,7 +15240,7 @@
       "protected": false
     },
     "author": 2,
-    "featured_media": 11270,
+    "featured_media": 0,
     "template": "",
     "meta": {
       "site-sidebar-layout": "default",
@@ -15150,10 +15384,9 @@
       "1": "job_listing",
       "2": "type-job_listing",
       "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
+      "4": "hentry",
+      "5": "job_listing_tag-kathmandu",
+      "7": "job-type-full-time"
     },
     "_links": {
       "self": [
@@ -15180,12 +15413,6 @@
         {
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/11270"
         }
       ],
       "wp:attachment": [
@@ -15240,7 +15467,7 @@
       "protected": false
     },
     "author": 1410,
-    "featured_media": 11270,
+    "featured_media": 0,
     "template": "",
     "meta": {
       "site-sidebar-layout": "default",
@@ -15384,10 +15611,9 @@
       "1": "job_listing",
       "2": "type-job_listing",
       "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-hetauda",
-      "8": "job-type-full-time"
+      "4": "hentry",
+      "5": "job_listing_tag-hetauda",
+      "7": "job-type-full-time"
     },
     "_links": {
       "self": [
@@ -15414,12 +15640,6 @@
         {
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/users/1410"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/11270"
         }
       ],
       "wp:attachment": [
@@ -36529,7 +36749,7 @@
       "protected": false
     },
     "author": 216,
-    "featured_media": 11270,
+    "featured_media": 0,
     "template": "",
     "meta": {
       "site-sidebar-layout": "default",
@@ -36673,10 +36893,9 @@
       "1": "job_listing",
       "2": "type-job_listing",
       "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-pokhara",
-      "8": "job-type-full-time"
+      "4": "hentry",
+      "5": "job_listing_tag-pokhara",
+      "7": "job-type-full-time"
     },
     "_links": {
       "self": [
@@ -36703,12 +36922,6 @@
         {
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/users/216"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/11270"
         }
       ],
       "wp:attachment": [
@@ -45194,7 +45407,7 @@
       "protected": false
     },
     "author": 1360,
-    "featured_media": 11270,
+    "featured_media": 0,
     "template": "",
     "meta": {
       "site-sidebar-layout": "default",
@@ -45337,9 +45550,8 @@
       "1": "job_listing",
       "2": "type-job_listing",
       "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "7": "job-type-full-time"
+      "4": "hentry",
+      "6": "job-type-full-time"
     },
     "_links": {
       "self": [
@@ -45366,12 +45578,6 @@
         {
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/users/1360"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/11270"
         }
       ],
       "wp:attachment": [
@@ -46587,7 +46793,7 @@
       "rendered": "Project cum Finance Officer"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Project cum Finance Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Kaski</p>\n<p><strong>Community Support Group</strong></p>\n<p><strong>Email:</strong> csg.vacancy@gmail.com<br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14797\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Community-Support-Group-job.png\" alt=\"\" width=\"712\" height=\"871\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Community-Support-Group-job.png 712w, https://merorojgari.com/wp-content/uploads/2026/01/Community-Support-Group-job-245x300.png 245w\" sizes=\"(max-width: 712px) 100vw, 712px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Project cum Finance Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Kaski</p>\n<p><strong>Community Support Group</strong></p>\n<p><strong>Email:</strong> csg.vacancy@gmail.com<br />\n<img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14797\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Community-Support-Group-job.png\" alt=\"\" width=\"712\" height=\"871\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Community-Support-Group-job.png 712w, https://merorojgari.com/wp-content/uploads/2026/01/Community-Support-Group-job-245x300.png 245w\" sizes=\"(max-width: 712px) 100vw, 712px\" /></p>\n",
       "protected": false
     },
     "author": 1357,
@@ -47759,7 +47965,7 @@
       "rendered": "Program Officer"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Program Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Parsa</p>\n<p><strong>Student Awareness Forum (BiJAM)</strong></p>\n<p><strong>Email:</strong> info@bijam.rog</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14769\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job.png\" alt=\"\" width=\"1080\" height=\"1264\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job-256x300.png 256w, https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job-875x1024.png 875w, https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job-768x899.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Program Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Parsa</p>\n<p><strong>Student Awareness Forum (BiJAM)</strong></p>\n<p><strong>Email:</strong> info@bijam.rog</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14769\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job.png\" alt=\"\" width=\"1080\" height=\"1264\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job-256x300.png 256w, https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job-875x1024.png 875w, https://merorojgari.com/wp-content/uploads/2026/01/Student-Awareness-Forum-job-768x899.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -49632,7 +49838,7 @@
       "rendered": "Myadi Prahari &#8211; 1,33,980 Vacancies"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14743\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png\" alt=\"\" width=\"1235\" height=\"1980\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png 1235w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-187x300.png 187w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-639x1024.png 639w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-768x1231.png 768w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-958x1536.png 958w\" sizes=\"(max-width: 1235px) 100vw, 1235px\" /></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14743\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png\" alt=\"\" width=\"1235\" height=\"1980\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png 1235w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-187x300.png 187w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-639x1024.png 639w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-768x1231.png 768w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-958x1536.png 958w\" sizes=\"(max-width: 1235px) 100vw, 1235px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -55262,7 +55468,7 @@
       "protected": false
     },
     "author": 216,
-    "featured_media": 11270,
+    "featured_media": 0,
     "template": "",
     "meta": {
       "site-sidebar-layout": "default",
@@ -55406,10 +55612,9 @@
       "1": "job_listing",
       "2": "type-job_listing",
       "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-lalitpur",
-      "8": "job-type-full-time"
+      "4": "hentry",
+      "5": "job_listing_tag-lalitpur",
+      "7": "job-type-full-time"
     },
     "_links": {
       "self": [
@@ -55436,12 +55641,6 @@
         {
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/users/216"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/11270"
         }
       ],
       "wp:attachment": [
@@ -55496,7 +55695,7 @@
       "protected": false
     },
     "author": 216,
-    "featured_media": 11270,
+    "featured_media": 0,
     "template": "",
     "meta": {
       "site-sidebar-layout": "default",
@@ -55640,10 +55839,9 @@
       "1": "job_listing",
       "2": "type-job_listing",
       "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-lalitpur",
-      "8": "job-type-full-time"
+      "4": "hentry",
+      "5": "job_listing_tag-lalitpur",
+      "7": "job-type-full-time"
     },
     "_links": {
       "self": [
@@ -55670,12 +55868,6 @@
         {
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/users/216"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/11270"
         }
       ],
       "wp:attachment": [
@@ -69988,241 +70180,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14318"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 14301,
-    "date": "2026-01-02T19:11:51",
-    "date_gmt": "2026-01-02T13:26:51",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14301"
-    },
-    "modified": "2026-01-02T19:25:21",
-    "modified_gmt": "2026-01-02T13:40:21",
-    "slug": "informal-sector-service-centre-insec-kathmandu-full-time-finance-officer-assistant-documentation-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/informal-sector-service-centre-insec-kathmandu-full-time-finance-officer-assistant-documentation-officer/",
-    "title": {
-      "rendered": "Finance Officer, Assistant Documentation Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Informal Sector Service Centre (INSEC)</strong> established in 1989 with the objective of protecting and promoting human rights and social justice in Nepal, requires application for the post of Finance Assistant Officer. Eligible and interested candidates are requested to apply as per the announcement.</p>\n<p><strong>Position:</strong> Finance Officer based in Kathmandu Central Office.</p>\n<p><strong>Required number:</strong> 1</p>\n<p><strong>Required Qualification, Experience and Knowledge:</strong></p>\n<ul>\n<li>Master’s Degree in Finance, Business Studies, or Accounting.</li>\n<li>Two years of working experience in related field.</li>\n<li>Good interpersonal and time management skills.</li>\n<li>Knowledge of bookkeeping and accounting skills.</li>\n</ul>\n<p><strong>Responsibilities</strong></p>\n<ul>\n<li>Support the Finance and Admin Manager in book keeping and track the day-to-day finances.</li>\n<li>Review all the supporting documents of the vouchers to ensure they are justifiable and in line with the approved budget.</li>\n<li>Complete bank reconciliation on a monthly basis.</li>\n<li>Maintain financial records and files.</li>\n<li>Collect information and documentation related to finance, administration, and logistics.</li>\n<li>Assist auditors in carrying out internal and external audits.</li>\n<li>Support in other admin-related office work assigned by Finance Officer, Management Head, and Executive Director.</li>\n<li>Additional responsibilities will be assigned as per the requirements.</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Assistant Documentation Officer for Central Office</p>\n<p><strong>Required number:</strong> 1</p>\n<p><strong>Qualification:</strong> Bachelor’s Degree in English, Human Rights, Law, Journalism or equivalent with minimum three years’ experience in human rights documentation.</p>\n<p>The Documentation Officer is responsible to ensure the validity and reliability of human rights violation or abuse data or cases from the respective provinces. Similarly, they should have to demonstrate the skills and knowledge for editing the content to publish in INSECOnline and the Nepal Human Rights Year Book.</p>\n<p>Asst. Documentation Officer under the supervision of concerned authorities at the central office and Province Coordinator will ensure proper documentation of data and reports in Nepali and English language. They should be easy going and willing to work under time pressure. The Documentation Officer must have fundamental knowledge on The Constitution of Nepal, human rights, law, and social justice.</p>\n<p><strong>Note:</strong> Applicants are requested to send their application along with a curriculum vitae and a cover letter by <strong>Jan 10, 2026</strong>, to <strong>vacancy@insec.org.np</strong>. Telephone inquiries will not be entertained. Only short-listed candidates will be called for written test and interview.</p>\n",
-      "protected": false
-    },
-    "author": 773,
-    "featured_media": 5753,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "vacancy@insec.org.np",
-      "_company_name": "Informal Sector Service Centre (INSEC)",
-      "_company_website": "https://www.insec.org.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      12,
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-14301",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14301",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/773"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/5753"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14301"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14301"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14301"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14301"
         }
       ],
       "curies": [
