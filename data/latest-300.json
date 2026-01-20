@@ -1,5 +1,239 @@
 [
   {
+    "id": 15593,
+    "date": "2026-01-20T15:10:47",
+    "date_gmt": "2026-01-20T09:25:47",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=15593"
+    },
+    "modified": "2026-01-20T15:23:59",
+    "modified_gmt": "2026-01-20T09:38:59",
+    "slug": "laxmi-group-butwal-full-time-junior-sales-officer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/laxmi-group-butwal-full-time-junior-sales-officer/",
+    "title": {
+      "rendered": "Junior Sales Officer"
+    },
+    "content": {
+      "rendered": "<p>We are looking for Sales Officer for our company:</p>\n<p><strong>Required qualification:</strong> Bachelors degree in any discipline (running can also apply)</p>\n<p><strong>Experience</strong>: 2-3 years of relevant work experience</p>\n<p><strong>Work location:</strong> Butwal</p>\n",
+      "protected": false
+    },
+    "author": 142,
+    "featured_media": 15594,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Butwal",
+      "_application": "bijay.baral@sujal.com.np",
+      "_company_name": "Laxmi Group",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      19
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      130
+    ],
+    "class_list": {
+      "0": "post-15593",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-butwal",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/15593",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/142"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/15594"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=15593"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=15593"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=15593"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=15593"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 15596,
     "date": "2026-01-20T14:28:54",
     "date_gmt": "2026-01-20T08:43:54",
@@ -23187,7 +23421,7 @@
       "rendered": "ANM, AHW"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> AHW<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Position</strong>: ANM<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> Sankhuwasabha</p>\n<p><strong>Bhotkhola Gaunpalika</strong></p>\n<p><strong>Website</strong>: https://bhotkholamun.gov.np</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-15185\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/bhotkhola-rural-municipality-job.png\" alt=\"\" width=\"737\" height=\"793\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/bhotkhola-rural-municipality-job.png 737w, https://merorojgari.com/wp-content/uploads/2026/01/bhotkhola-rural-municipality-job-279x300.png 279w\" sizes=\"(max-width: 737px) 100vw, 737px\" /><br />\n<em> Source: Himalaya Times, 14 January, 2026 </em></p>\n",
+      "rendered": "<p><strong>Position:</strong> AHW<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Position</strong>: ANM<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location:</strong> Sankhuwasabha</p>\n<p><strong>Bhotkhola Gaunpalika</strong></p>\n<p><strong>Website</strong>: https://bhotkholamun.gov.np</p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-15185\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/bhotkhola-rural-municipality-job.png\" alt=\"\" width=\"737\" height=\"793\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/bhotkhola-rural-municipality-job.png 737w, https://merorojgari.com/wp-content/uploads/2026/01/bhotkhola-rural-municipality-job-279x300.png 279w\" sizes=\"(max-width: 737px) 100vw, 737px\" /><br />\n<em> Source: Himalaya Times, 14 January, 2026 </em></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23657,7 +23891,7 @@
       "rendered": "Agricultural Engineer"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Agricultural Engineer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Lalitpur</p>\n<p><strong>Agriculture Development Office</strong></p>\n<p><strong>Email</strong>: akclalitpur@gmail.com</p>\n<p>Website: <a href=\"https://www.lalitpur.akc.gov.np/\" target=\"_blank\" rel=\"noopener\">https://www.lalitpur.akc.gov.np/</a></p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-15160\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10.png\" alt=\"\" width=\"774\" height=\"1138\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10.png 774w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10-204x300.png 204w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10-696x1024.png 696w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10-768x1129.png 768w\" sizes=\"(max-width: 774px) 100vw, 774px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-15161\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11.png\" alt=\"\" width=\"1062\" height=\"610\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11.png 1062w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11-300x172.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11-1024x588.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11-768x441.png 768w\" sizes=\"(max-width: 1062px) 100vw, 1062px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Agricultural Engineer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Lalitpur</p>\n<p><strong>Agriculture Development Office</strong></p>\n<p><strong>Email</strong>: akclalitpur@gmail.com</p>\n<p>Website: <a href=\"https://www.lalitpur.akc.gov.np/\" target=\"_blank\" rel=\"noopener\">https://www.lalitpur.akc.gov.np/</a></p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-15160\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10.png\" alt=\"\" width=\"774\" height=\"1138\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10.png 774w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10-204x300.png 204w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10-696x1024.png 696w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-10-768x1129.png 768w\" sizes=\"(max-width: 774px) 100vw, 774px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-15161\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11.png\" alt=\"\" width=\"1062\" height=\"610\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11.png 1062w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11-300x172.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11-1024x588.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Agriculture-Development-Office-Lalitpur-job-11-768x441.png 768w\" sizes=\"(max-width: 1062px) 100vw, 1062px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -24830,7 +25064,7 @@
       "rendered": "Health Assistant"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Location:</strong> Sindhupalchowk</p>\n<p><strong>Balephi Gaunpalika</strong></p>\n<p><strong>Phone No.:</strong> 9851243637, 9851136249</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-15139\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11.png\" alt=\"\" width=\"1080\" height=\"1274\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11-254x300.png 254w, https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11-868x1024.png 868w, https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11-768x906.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Location:</strong> Sindhupalchowk</p>\n<p><strong>Balephi Gaunpalika</strong></p>\n<p><strong>Phone No.:</strong> 9851243637, 9851136249</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-15139\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11.png\" alt=\"\" width=\"1080\" height=\"1274\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11-254x300.png 254w, https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11-868x1024.png 868w, https://merorojgari.com/wp-content/uploads/2026/01/Balephi-Gaunpalika-job-11-768x906.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -46589,7 +46823,7 @@
       "rendered": "Health Assistant, Staff Nurse"
     },
     "content": {
-      "rendered": "<p><strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p><strong>Location:</strong> Palpa</p>\n<p><strong>Lumbini Medical College &amp; Teaching Hospital</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14766\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2.png\" alt=\"\" width=\"1000\" height=\"1070\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2-280x300.png 280w, https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2-957x1024.png 957w, https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2-768x822.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p><strong>Location:</strong> Palpa</p>\n<p><strong>Lumbini Medical College &amp; Teaching Hospital</strong></p>\n<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14766\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2.png\" alt=\"\" width=\"1000\" height=\"1070\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2-280x300.png 280w, https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2-957x1024.png 957w, https://merorojgari.com/wp-content/uploads/2026/01/Lumbini-Medical-COllege-Teching-Hospital-job-2-768x822.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -48228,7 +48462,7 @@
       "rendered": "Myadi Prahari &#8211; 1,33,980 Vacancies"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-14743\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png\" alt=\"\" width=\"1235\" height=\"1980\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png 1235w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-187x300.png 187w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-639x1024.png 639w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-768x1231.png 768w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-958x1536.png 958w\" sizes=\"(max-width: 1235px) 100vw, 1235px\" /></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14743\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png\" alt=\"\" width=\"1235\" height=\"1980\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1.png 1235w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-187x300.png 187w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-639x1024.png 639w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-768x1231.png 768w, https://merorojgari.com/wp-content/uploads/2026/01/Myadi-Prahari-1-958x1536.png 958w\" sizes=\"(max-width: 1235px) 100vw, 1235px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -49159,7 +49393,7 @@
       "rendered": "Social Mobiliser"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14707\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job.png\" alt=\"\" width=\"843\" height=\"901\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job.png 843w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-281x300.png 281w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-768x821.png 768w\" sizes=\"(max-width: 843px) 100vw, 843px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14708\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1.png\" alt=\"\" width=\"845\" height=\"403\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1.png 845w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1-300x143.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1-768x366.png 768w\" sizes=\"(max-width: 845px) 100vw, 845px\" /></p>\n<p><a href=\"https://www.umn.org.np/wp-content/uploads/2026/01/JD_Social-Mobiliser_MDT-Nepali.docx\" target=\"_blank\" rel=\"noopener\">Download Job Description </a></p>\n<p><a href=\"https://www.umn.org.np/wp-content/uploads/2026/01/Application-Form-Nepali-SMs.docx\" target=\"_blank\" rel=\"noopener\">Download Application Form </a></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14707\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job.png\" alt=\"\" width=\"843\" height=\"901\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job.png 843w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-281x300.png 281w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-768x821.png 768w\" sizes=\"(max-width: 843px) 100vw, 843px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14708\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1.png\" alt=\"\" width=\"845\" height=\"403\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1.png 845w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1-300x143.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-To-Nepal-job-1-768x366.png 768w\" sizes=\"(max-width: 845px) 100vw, 845px\" /></p>\n<p><a href=\"https://www.umn.org.np/wp-content/uploads/2026/01/JD_Social-Mobiliser_MDT-Nepali.docx\" target=\"_blank\" rel=\"noopener\">Download Job Description </a></p>\n<p><a href=\"https://www.umn.org.np/wp-content/uploads/2026/01/Application-Form-Nepali-SMs.docx\" target=\"_blank\" rel=\"noopener\">Download Application Form </a></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69989,240 +70223,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14274"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 14273,
-    "date": "2026-01-02T13:10:31",
-    "date_gmt": "2026-01-02T07:25:31",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14273"
-    },
-    "modified": "2026-01-02T13:10:42",
-    "modified_gmt": "2026-01-02T07:25:42",
-    "slug": "skills-and-enterprise-development-manager",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/skills-and-enterprise-development-manager/",
-    "title": {
-      "rendered": "Skills and Enterprise Development Manager"
-    },
-    "content": {
-      "rendered": "<p><strong>Swisscontact</strong> is an independent non-profit development organisation established in 1959 by representatives of the Swiss private sector and civil society. Our development work focuses on private sector-led, sustainable economic development with improved quality of life for all in developing and emerging countries. A key focus is to strengthen the skills of individuals and foster the competitiveness of businesses.</p>\n<p>Swisscontact, registered as an International Non-Governmental Organisation in Nepal, has been operating in Nepal since 1991. Currently, Swisscontact in Nepal has five development programmes across all seven provinces. Swisscontact in Nepal is implementing the EU funded Creating Opportunities for Youth in Digital Economy (CODE) project in partnership with Robotics Association of Nepal and Restless Development in Gandaki and Madhesh Province. The overall objective of CODE is to contribute to inclusive and sustainable economic growth by equipping young people with the digital knowledge, skills, and opportunities necessary to participate meaningfully in the digital economy. This will be achieved through strengthening the capacities of CSOs, training service providers, schools, and local governments.</p>\n<p><strong>Position:</strong> Skills and Enterprise Development Manager (SEDM)<br />\n<strong>Location:</strong> Kathmandu (with frequent travel to project areas)<br />\n<strong>Reports to:</strong> Team Leader<br />\n<strong>Time</strong>: 100% (8 hours a day and 5 days a week)<br />\n<strong>Duration:</strong> 1 year with possible renewal</p>\n<p><strong>PURPOSE OF THE JOB</strong></p>\n<p>The SEDM will lead efforts to strengthen local systems for digital skills training and youth entrepreneurship in Nepal. The role oversees the design and delivery of market-relevant digital skills programs and supports youth-led digital start-ups through incubation, mentorship, and access to finance and markets. Working closely with CSOs, training providers, municipalities, and private sector actors, the Manager ensures interventions are embedded within local structures for sustainability and scale. This position requires a strategic leader with expertise in skills development, enterprise promotion, and ecosystem facilitation.</p>\n<p><strong>ESSENTIAL FUNCTIONS AND RESPONSIBILITIES</strong></p>\n<ul>\n<li>Lead planning, implementation, and monitoring of skills and enterprise development strategies aligned with project objectives, logframe, and outcomes.</li>\n<li>Apply a systemic approach to strengthen capacities of CSOs, training providers, municipalities, ESCs, and private sector actors.</li>\n<li> Establish innovation hubs in Madhesh and Gandaki Provinces offering incubation, seed funding, mentorship, networking, and co-working facilities; develop incubation models and mentorship frameworks.</li>\n<li> Strengthen linkages between youth, startups, markets, and investors.</li>\n<li> Organise hackathons, innovation challenges, and co-creation labs to promote digital solutions for local challenges in sectors such as tourism, green energy, agriculture, and public services.</li>\n<li>Drive technical development and validation of curricula on digital awareness, digital skills, and entrepreneurship; ensure alignment with industry requirements and emerging technologies.</li>\n<li>Oversee training delivery, Training of Trainers (ToT), and trainer capacity building.</li>\n<li>Facilitate employer engagement and ensure quality placements for trained youth.</li>\n<li>Coordinate digital job fairs, enterprise showcases, pitching events, and integration of Shramsansar for job matching in the digital economy.</li>\n<li>Embed interventions in local structures through MoUs and alignment with municipal and provincial plans.</li>\n<li> Ensure inclusive participation of underrepresented groups in skills and entrepreneurship programs.</li>\n<li> Build and maintain strong relationships with implementing partners, government agencies, private sector, CSOs, training providers, and IT firms.</li>\n<li> Manage workplans, budgets, risks, and coordinate with consortium partners for timely, quality implementation.</li>\n<li> Provide inputs to annual plans and progress reports; support monitoring, data analysis, and continuous improvement in collaboration with the M&amp;E Officer.</li>\n<li> Contribute to research, learning products, and communication materials.</li>\n<li> Ensure compliance with Swisscontact’s regulations and donor requirements; coordinate with Country Office for visibility, policy alignment, and external communications.</li>\n<li> Perform other relevant tasks as assigned by the Team Leader.</li>\n</ul>\n<p><strong>REQUIREMENTS</strong></p>\n<ul>\n<li>Master or higher degree in social sciences, economics, development studies, business administration and/or related fields.</li>\n<li>Minimum 7 years of professional experience in projects in skills development, and/or entrepreneurship development projects.</li>\n<li> Strong understanding of youth economic empowerment, youth employability challenges, and labour market trends in Nepal.</li>\n<li> Demonstrated expertise in enterprise development and strong understanding of entrepreneurial ecosystems. Experience in fostering entrepreneurship, preferably among youth, linking young entrepreneurs to finance, mentorship, and markets.</li>\n<li> Strong understanding of challenges and opportunities for start-ups, digital ventures, and support services.</li>\n<li>Expertise in design and delivery of training programs including in training methodology design, curriculum development, and manual preparation. Understanding blended training models, learner-centered training approaches is preferred.</li>\n<li> Experience in capacity building of service providers, trainers, and/or training institutes and supporting effective service delivery. Experience in building capacity of national and local CSOs.</li>\n<li>Demonstrated experience in leveraging private sector partnerships.</li>\n<li>Proven track record of working with government agencies, private sector actors, training providers, youth organisations, and local CSOs to ensure sustainability of interventions.</li>\n<li> Excellent leadership, stakeholder management, and facilitation skills.</li>\n<li> Excellent communication and facilitation skills, with fluency in English and Nepali.</li>\n<li> Commitment to Swisscontact’s values of professionalism, inclusivity, and sustainability.</li>\n</ul>\n<p><strong>Application Procedure</strong></p>\n<p>Please submit online Job Application Form by clicking the link below.</p>\n<p>Job Application Form <a href=\"https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.smartsheet.com%2Fb%2Fform%2F019b73e1394e7520b63742da45adefdb&amp;data=05%7C02%7Csangita.tamang%40swisscontact.org%7C8a1f61ae464e424f890d08de48f80721%7C3c3f86aba5ee402e8dfa4d75dbabb024%7C0%7C0%7C639028427412979511%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=mYXFuKuP7WEyuh8A2AhXC%2BEiZ94oRn0iKOponHL15Ug%3D&amp;reserved=0\" target=\"_blank\" rel=\"noopener\">Skills and Enterprise Development Manager</a></p>\n<p>The deadline for submission of the application is<strong> January 16, 2026.</strong></p>\n<p>Swisscontact will not entertain any phone enquiries or other such solicitations for these positions. Only shortlisted candidates will be contacted for the selection process. Swisscontact reserves the right to reject any<br />\nand all applications.</p>\n<p>Swisscontact is an equal opportunity employer. Women and applicants from disadvantaged groups are encouraged to apply.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 9441,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.smartsheet.com%2Fb%2Fform%2F019b73e1394e7520b63742da45adefdb&data=05%7C02%7Csangita.tamang%40swisscontact.org%7C8a1f61ae464e424f890d08de48f80721%7C3c3f86aba5ee402e8dfa4d75dbabb024%7C0%7C0%7C639028427412979511%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=mYXFuKuP7WEyuh8A2AhXC%2BEiZ94oRn0iKOponHL15Ug%3D&reserved=0",
-      "_company_name": "Swisscontact",
-      "_company_website": "https://www.swisscontact.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-14273",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14273",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/9441"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14273"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14273"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14273"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14273"
         }
       ],
       "curies": [
