@@ -1,5 +1,470 @@
 [
   {
+    "id": 17159,
+    "date": "2026-01-23T19:10:30",
+    "date_gmt": "2026-01-23T13:25:30",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17159"
+    },
+    "modified": "2026-01-23T20:05:11",
+    "modified_gmt": "2026-01-23T14:20:11",
+    "slug": "laxmi-group-kathmandu-full-time-sales-trainee",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/laxmi-group-kathmandu-full-time-sales-trainee/",
+    "title": {
+      "rendered": "Sales Trainee"
+    },
+    "content": {
+      "rendered": "<p><strong>Job Opportunity for Sales Trainee</strong></p>\n<p>Laxmi Group is looking for suitable candidates for the following position:</p>\n<p><strong>Post Title:</strong> Sales Trainee</p>\n<p><strong>Qualification:</strong> Bachelors degree (or Bachelor&#8217;s degree running)</p>\n<p>Two wheeler and license is a must.</p>\n<p><strong>Experience:</strong> Not required. Freshers can apply.</p>\n<p><strong>Work Location:</strong> Kathmandu</p>\n",
+      "protected": false
+    },
+    "author": 142,
+    "featured_media": 15594,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "bijay.baral@sujal.com.np",
+      "_company_name": "Laxmi Group",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      19
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-17159",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17159",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/142"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/15594"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17159"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17159"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17159"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17159"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 17164,
+    "date": "2026-01-23T18:27:50",
+    "date_gmt": "2026-01-23T12:42:50",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17164"
+    },
+    "modified": "2026-01-23T20:04:25",
+    "modified_gmt": "2026-01-23T14:19:25",
+    "slug": "raspberry-solution-pvt-ltd-full-time-software-developer-intern",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/raspberry-solution-pvt-ltd-full-time-software-developer-intern/",
+    "title": {
+      "rendered": "Software Developer Intern"
+    },
+    "content": {
+      "rendered": "<p><strong>Position:</strong> Software Developer Intern</p>\n<p><strong>Location:</strong> Kathmandu, Nepal (On-site)</p>\n<p><strong>No. of Requirements:</strong> 1</p>\n<p><strong>Position Overview:</strong></p>\n<p>As a Software Developer Intern, you will have the opportunity to work closely with an experienced development team on cutting-edge projects. This internship will provide you with hands-on experience in software development and exposure to industry-leading technologies.</p>\n<p><strong>Responsibilities:</strong></p>\n<ul>\n<li>Actively learn and apply software development concepts and technologies under the guidance of senior developers.</li>\n<li>Participate in code reviews to improve coding skills and gain experience with relevant programming languages, frameworks, and tools.</li>\n<li>Assist senior developers with assigned tasks, including bug fixes, feature development, testing, and software maintenance.</li>\n<li>Work on small, independent projects to build and validate your skills.</li>\n<li>Research new technologies and tools relevant to current projects.</li>\n<li>Explore best practices and innovative approaches in software development.</li>\n<li>Assist in creating and updating technical documentation.</li>\n<li>Maintain code in version control systems.</li>\n<li>Participate actively in team meetings.</li>\n<li>Communicate effectively with team members and seek guidance to enhance learning and development.</li>\n</ul>\n<p><strong>Requirements:</strong></p>\n<ul>\n<li>Basic understanding of software development (SDLC) principles and practices.</li>\n<li>Proficiency in Python, JavaScript and its associated libraries.</li>\n<li>Excellent written and verbal communication skills in English.</li>\n<li>Ability to work independently and as part of a team.</li>\n<li>Strong analytical and problem-solving skills.</li>\n<li>Knowledge of database systems, such as MySQL, PostgreSQL, is a plus.</li>\n<li>Experience with version control systems, such as Git, is a plus.</li>\n</ul>\n<p><strong>What We Offer:</strong></p>\n<ul>\n<li>Valuable experience in a professional software development environment.</li>\n<li>Learn from experienced developers and mentors.</li>\n<li>Contribute to real-world projects and participate to the team’s success.</li>\n<li>Develop your skills and knowledge in the latest software development technologies</li>\n</ul>\n<p>We appreciate all applications, but only shortlisted candidates will be contacted for an interview.</p>\n",
+      "protected": false
+    },
+    "author": 161,
+    "featured_media": 1624,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "hr@raspberry.com.np",
+      "_company_name": "Raspberry Solution Pvt. Ltd.",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      28
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-17164",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17164",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/161"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/1624"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17164"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17164"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17164"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17164"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 17154,
     "date": "2026-01-23T15:25:58",
     "date_gmt": "2026-01-23T09:40:58",
@@ -23227,7 +23692,7 @@
       "rendered": "Auxiliary Nurse Midwife (ANM)"
     },
     "content": {
-      "rendered": "<p>PHASE Nepal is a not for profit NGO established in 2006 by a group of development professionals dedicated to supporting poor communities in Humla, Bajura, Mugu, Gorkha, Kathmandu, and Sindhupalchok districts of Nepal. For the last 19 years, PHASE Nepal has been improving the livelihoods of rural people by providing immediate support through health care and education services and create opportunities in communities for self-empowerment. Currently, PHASE Nepal&#8217;s projects on health, education, and livelihoods are funded by a number of institutional and individual donors from different countries. We also implement various research projects in partnership with different universities from the UK and organizations from other Asian and African countries. PHASE Nepal is currently looking for suitable candidates for the following position:</p>\n<p><strong>Position:</strong> Auxiliary Nurse Midwife (ANM)</p>\n<p><strong>Duty Station:</strong> PHASE Nepal project locations in Humla, Mugu, and Bajura,</p>\n<p><strong>REQUIRED NUMBER</strong>: Few</p>\n<p><strong>DESIRED SKILLS AND QUALIFICATIONS:</strong></p>\n<ul>\n<li>Completed ANM course from a recognized institution and registered in the Nepal Nursing Council.</li>\n<li>At least 2 years of work experience in community health programs.</li>\n<li>Candidates who have worked independently in the government health-posts or independently running health post will be given high priority.</li>\n<li>Good written and spoken Nepali language.</li>\n<li>Ability to adapt to living and working in a remote location as well as flexibility to be redeployed, as required, to another project areas of PHASE Nepal.</li>\n<li>Willingness to learn the basic local languages to communicate with the local community.</li>\n<li>Ability to convince community people for healthy life style, improved sanitation etc.</li>\n<li>Ability to share project information with larger audience, such as group meetings, from the community and not showing fear, arrogance and or nervousness.</li>\n<li>High degree of motivation to work in the remote areas. Highly honest, reliable and confident and having great learning attitude.</li>\n<li>A good learner and able to work in a team, alone and/or without supervision.</li>\n<li>Candidates who have received SBA training and handled number of delivery cases on their own will be given priority.</li>\n</ul>\n<p><strong>Salary and Benefits per month (NRS)</strong><br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job.png\" alt=\"\" width=\"1112\" height=\"177\" class=\"alignnone size-full wp-image-15467\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job.png 1112w, https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job-300x48.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job-1024x163.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job-768x122.png 768w\" sizes=\"(max-width: 1112px) 100vw, 1112px\" /><br />\n*The food and field allowance may vary depending on the location.</p>\n<p><strong>Insurance Benefits:</strong></p>\n<p>We also offer Medical Insurance of Rs. 2,25,000/- that covers employee and his/her dependent family members up to two, and Accidental Insurance of Rs. 2,000,000/-.</p>\n<p><strong>How to Apply:</strong></p>\n<p>Interested candidates who meet the above-mentioned criteria is request to submit their application by filling the form through the link <a href=\"https://ee-eu.kobotoolbox.org/x/KVXElU3X\" target=\"_blank\" rel=\"noopener\">https://ee-eu.kobotoolbox.org/x/KVXElU3X </a>no later than <strong>24 January 2026.</strong> PHASE reserves the right to qualify/disqualify applications in any case</p>\n<p>PHASE Nepal is an equal opportunities employer and strictly follows merit-based selection. PHASE reserves the right to qualify/disqualify applications in any case.</p>\n<p>Only shortlisted candidates will be called for the further selection process.</p>\n<p><strong>No telephone inquiries will be entertained and any inappropriate recommendation will automatically disqualify the candidate for further selection process</strong></p>\n",
+      "rendered": "<p>PHASE Nepal is a not for profit NGO established in 2006 by a group of development professionals dedicated to supporting poor communities in Humla, Bajura, Mugu, Gorkha, Kathmandu, and Sindhupalchok districts of Nepal. For the last 19 years, PHASE Nepal has been improving the livelihoods of rural people by providing immediate support through health care and education services and create opportunities in communities for self-empowerment. Currently, PHASE Nepal&#8217;s projects on health, education, and livelihoods are funded by a number of institutional and individual donors from different countries. We also implement various research projects in partnership with different universities from the UK and organizations from other Asian and African countries. PHASE Nepal is currently looking for suitable candidates for the following position:</p>\n<p><strong>Position:</strong> Auxiliary Nurse Midwife (ANM)</p>\n<p><strong>Duty Station:</strong> PHASE Nepal project locations in Humla, Mugu, and Bajura,</p>\n<p><strong>REQUIRED NUMBER</strong>: Few</p>\n<p><strong>DESIRED SKILLS AND QUALIFICATIONS:</strong></p>\n<ul>\n<li>Completed ANM course from a recognized institution and registered in the Nepal Nursing Council.</li>\n<li>At least 2 years of work experience in community health programs.</li>\n<li>Candidates who have worked independently in the government health-posts or independently running health post will be given high priority.</li>\n<li>Good written and spoken Nepali language.</li>\n<li>Ability to adapt to living and working in a remote location as well as flexibility to be redeployed, as required, to another project areas of PHASE Nepal.</li>\n<li>Willingness to learn the basic local languages to communicate with the local community.</li>\n<li>Ability to convince community people for healthy life style, improved sanitation etc.</li>\n<li>Ability to share project information with larger audience, such as group meetings, from the community and not showing fear, arrogance and or nervousness.</li>\n<li>High degree of motivation to work in the remote areas. Highly honest, reliable and confident and having great learning attitude.</li>\n<li>A good learner and able to work in a team, alone and/or without supervision.</li>\n<li>Candidates who have received SBA training and handled number of delivery cases on their own will be given priority.</li>\n</ul>\n<p><strong>Salary and Benefits per month (NRS)</strong><br />\n<img fetchpriority=\"high\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job.png\" alt=\"\" width=\"1112\" height=\"177\" class=\"alignnone size-full wp-image-15467\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job.png 1112w, https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job-300x48.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job-1024x163.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Phase-Nepal-job-768x122.png 768w\" sizes=\"(max-width: 1112px) 100vw, 1112px\" /><br />\n*The food and field allowance may vary depending on the location.</p>\n<p><strong>Insurance Benefits:</strong></p>\n<p>We also offer Medical Insurance of Rs. 2,25,000/- that covers employee and his/her dependent family members up to two, and Accidental Insurance of Rs. 2,000,000/-.</p>\n<p><strong>How to Apply:</strong></p>\n<p>Interested candidates who meet the above-mentioned criteria is request to submit their application by filling the form through the link <a href=\"https://ee-eu.kobotoolbox.org/x/KVXElU3X\" target=\"_blank\" rel=\"noopener\">https://ee-eu.kobotoolbox.org/x/KVXElU3X </a>no later than <strong>24 January 2026.</strong> PHASE reserves the right to qualify/disqualify applications in any case</p>\n<p>PHASE Nepal is an equal opportunities employer and strictly follows merit-based selection. PHASE reserves the right to qualify/disqualify applications in any case.</p>\n<p>Only shortlisted candidates will be called for the further selection process.</p>\n<p><strong>No telephone inquiries will be entertained and any inappropriate recommendation will automatically disqualify the candidate for further selection process</strong></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23934,7 +24399,7 @@
       "rendered": "English Teacher"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-15454\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job.png\" alt=\"\" width=\"816\" height=\"842\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job.png 816w, https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job-291x300.png 291w, https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job-768x792.png 768w\" sizes=\"(max-width: 816px) 100vw, 816px\" /><br />\n<strong>Position:</strong> Teacher<br />\n<strong>Level:</strong> Secondary (11-12)<br />\n<strong>Subject: </strong>English<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location: </strong>Salyan</p>\n<p><strong>Jiwan Jyoti Madhyamik Vidyalaya</strong></p>\n<p><strong>Email:</strong> jiwanjyoti020@)gmail.com</p>\n<p><strong>Phone No.:</strong> 9857849093, 9668514914, 9868636501</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-15454\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job.png\" alt=\"\" width=\"816\" height=\"842\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job.png 816w, https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job-291x300.png 291w, https://merorojgari.com/wp-content/uploads/2026/01/Jiwan-Jyoti-Secondary-School-job-768x792.png 768w\" sizes=\"(max-width: 816px) 100vw, 816px\" /><br />\n<strong>Position:</strong> Teacher<br />\n<strong>Level:</strong> Secondary (11-12)<br />\n<strong>Subject: </strong>English<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location: </strong>Salyan</p>\n<p><strong>Jiwan Jyoti Madhyamik Vidyalaya</strong></p>\n<p><strong>Email:</strong> jiwanjyoti020@)gmail.com</p>\n<p><strong>Phone No.:</strong> 9857849093, 9668514914, 9868636501</p>\n",
       "protected": false
     },
     "author": 2,
@@ -24636,7 +25101,7 @@
       "rendered": "Social Teacher"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Teacher<br />\n<strong>Level:</strong> Secondary<br />\n<strong>Subject:</strong> Social<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Syangja</p>\n<p><strong>Shree Himalaya Secondary School</strong></p>\n<p><strong>Email:</strong> himalayasecondary2016@gmail.com</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-15446\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Himalaya-Secondary-school-job.jpg\" alt=\"\" width=\"720\" height=\"928\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Himalaya-Secondary-school-job.jpg 720w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Himalaya-Secondary-school-job-233x300.jpg 233w\" sizes=\"(max-width: 720px) 100vw, 720px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Teacher<br />\n<strong>Level:</strong> Secondary<br />\n<strong>Subject:</strong> Social<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Syangja</p>\n<p><strong>Shree Himalaya Secondary School</strong></p>\n<p><strong>Email:</strong> himalayasecondary2016@gmail.com</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-15446\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Himalaya-Secondary-school-job.jpg\" alt=\"\" width=\"720\" height=\"928\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Himalaya-Secondary-school-job.jpg 720w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Himalaya-Secondary-school-job-233x300.jpg 233w\" sizes=\"(max-width: 720px) 100vw, 720px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -46382,7 +46847,7 @@
       "rendered": "Psychologist"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-15031\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job.png\" alt=\"\" width=\"1194\" height=\"848\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job.png 1194w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job-300x213.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job-1024x727.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job-768x545.png 768w\" sizes=\"(max-width: 1194px) 100vw, 1194px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-15033\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1.png\" alt=\"\" width=\"1167\" height=\"680\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1.png 1167w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1-300x175.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1-1024x597.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1-768x448.png 768w\" sizes=\"(max-width: 1167px) 100vw, 1167px\" /></p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-15031\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job.png\" alt=\"\" width=\"1194\" height=\"848\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job.png 1194w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job-300x213.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job-1024x727.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job-768x545.png 768w\" sizes=\"(max-width: 1194px) 100vw, 1194px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-15033\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1.png\" alt=\"\" width=\"1167\" height=\"680\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1.png 1167w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1-300x175.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1-1024x597.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/TPO-Nepal-job1-768x448.png 768w\" sizes=\"(max-width: 1167px) 100vw, 1167px\" /></p>\n",
       "protected": false
     },
     "author": 468,
@@ -47555,7 +48020,7 @@
       "rendered": "Administration Manager, Cost Manager, Hydro Mechanical Manager, Safety Manager, Scheduler, Quality Control Manager"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Cost manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelor’s in Civil Engineering<br />\n<strong>Experience:</strong> Above 15 years</p>\n<hr />\n<p><strong>Position:</strong> EHS Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelors in related field<br />\n<strong>Experience:</strong> Above 15 years</p>\n<hr />\n<p><strong>Position</strong>: Administration Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelor in Management<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Position:</strong> Hydro Mechanical Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelors in Mechanical Engineering<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Position:</strong> Safety Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualifications:</strong> Bachelors in related subject<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Position:</strong> Scheduler<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualifications:</strong> Bachelors in Civil Engineering<br />\n<strong>Experience:</strong> Above 5 years</p>\n<hr />\n<p><strong>Position:</strong> Quality Control Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualifications:</strong> Bachelors in Civil Engineering<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Experience:</strong> Working experience required in construction field or Hydropower Development project</p>\n<p><strong>Special Qualification:</strong> Fluency in Korean and English Language- Written &amp; Spoken for position 1-4</p>\n<p><strong>Salary &amp; Benefits:</strong> Negotiable</p>\n<p><strong>DHI:</strong> Doosan Enerbility Co., Ltd, (Nepal Branch)</p>\n<p><strong>Email:</strong> doosanut1@gmail.com</p>\n<p>Fifth Floor, LS Building, Thapathali Kathmandu, Federal Democratic Republic of Nepal<br />\n<img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-15012\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job.png\" alt=\"\" width=\"1067\" height=\"671\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job.png 1067w, https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job-300x189.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job-1024x644.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job-768x483.png 768w\" sizes=\"(max-width: 1067px) 100vw, 1067px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Cost manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelor’s in Civil Engineering<br />\n<strong>Experience:</strong> Above 15 years</p>\n<hr />\n<p><strong>Position:</strong> EHS Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelors in related field<br />\n<strong>Experience:</strong> Above 15 years</p>\n<hr />\n<p><strong>Position</strong>: Administration Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelor in Management<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Position:</strong> Hydro Mechanical Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification:</strong> Bachelors in Mechanical Engineering<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Position:</strong> Safety Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualifications:</strong> Bachelors in related subject<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Position:</strong> Scheduler<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualifications:</strong> Bachelors in Civil Engineering<br />\n<strong>Experience:</strong> Above 5 years</p>\n<hr />\n<p><strong>Position:</strong> Quality Control Manager<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualifications:</strong> Bachelors in Civil Engineering<br />\n<strong>Experience:</strong> Above 10 years</p>\n<hr />\n<p><strong>Experience:</strong> Working experience required in construction field or Hydropower Development project</p>\n<p><strong>Special Qualification:</strong> Fluency in Korean and English Language- Written &amp; Spoken for position 1-4</p>\n<p><strong>Salary &amp; Benefits:</strong> Negotiable</p>\n<p><strong>DHI:</strong> Doosan Enerbility Co., Ltd, (Nepal Branch)</p>\n<p><strong>Email:</strong> doosanut1@gmail.com</p>\n<p>Fifth Floor, LS Building, Thapathali Kathmandu, Federal Democratic Republic of Nepal<br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-15012\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job.png\" alt=\"\" width=\"1067\" height=\"671\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job.png 1067w, https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job-300x189.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job-1024x644.png 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Upper-Trishuli-1-Hydropower-Project-job-768x483.png 768w\" sizes=\"(max-width: 1067px) 100vw, 1067px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -48723,7 +49188,7 @@
       "rendered": "Registering Officer, Chartered Accountant, Public Health Officer, IT Assistant, Actuary Officer, Medical Officer"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-15002\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Health-Insurance-Board-job.jpg\" alt=\"\" width=\"603\" height=\"900\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Health-Insurance-Board-job.jpg 603w, https://merorojgari.com/wp-content/uploads/2026/01/Health-Insurance-Board-job-201x300.jpg 201w\" sizes=\"(max-width: 603px) 100vw, 603px\" /></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-15002\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Health-Insurance-Board-job.jpg\" alt=\"\" width=\"603\" height=\"900\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Health-Insurance-Board-job.jpg 603w, https://merorojgari.com/wp-content/uploads/2026/01/Health-Insurance-Board-job-201x300.jpg 201w\" sizes=\"(max-width: 603px) 100vw, 603px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -49659,7 +50124,7 @@
       "rendered": "Market Representative"
     },
     "content": {
-      "rendered": "<p><strong>Position:</strong> Market Representative<br />\n<strong>No. of Vacancy:</strong> 2<br />\n<strong>Location: </strong>Pokhara</p>\n<p><strong>Peoples Saving &amp; Credit Co-operative Society Ltd.</strong><br />\nEmail: peoples2069@gmail.com<br />\nPhone No.: 061-582836, 586336, 9856037102</p>\n<p><img decoding=\"async\" class=\"alignnone size-full wp-image-14984\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job.png\" alt=\"\" width=\"814\" height=\"848\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job.png 814w, https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job-288x300.png 288w, https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job-768x800.png 768w\" sizes=\"(max-width: 814px) 100vw, 814px\" /></p>\n",
+      "rendered": "<p><strong>Position:</strong> Market Representative<br />\n<strong>No. of Vacancy:</strong> 2<br />\n<strong>Location: </strong>Pokhara</p>\n<p><strong>Peoples Saving &amp; Credit Co-operative Society Ltd.</strong><br />\nEmail: peoples2069@gmail.com<br />\nPhone No.: 061-582836, 586336, 9856037102</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14984\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job.png\" alt=\"\" width=\"814\" height=\"848\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job.png 814w, https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job-288x300.png 288w, https://merorojgari.com/wp-content/uploads/2026/01/Peoples-Alliance-Saving-Credit-Co-operative-job-768x800.png 768w\" sizes=\"(max-width: 814px) 100vw, 814px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69752,460 +70217,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14584"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 14582,
-    "date": "2026-01-06T13:24:16",
-    "date_gmt": "2026-01-06T07:39:16",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14582"
-    },
-    "modified": "2026-01-06T13:31:53",
-    "modified_gmt": "2026-01-06T07:46:53",
-    "slug": "chaudhary-group-lalitpur-full-time-fa-manager",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/chaudhary-group-lalitpur-full-time-fa-manager/",
-    "title": {
-      "rendered": "F&#038;A Manager"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: F&amp;A Manager<br />\n<strong>Location:</strong> Sanepal, Lalitpur</p>\n<p><strong>Qualifications:</strong></p>\n<ul>\n<li>Chartered Accountant Certified</li>\n<li>5-8 years experience in FP&amp;A or financial controlling roles</li>\n<li>Strong knowledge of Working Capital, Cash Flow &amp; Cost Control</li>\n<li>Experience in Margin Analysis &amp; Business Partnering</li>\n<li>FMCG background mandatory</li>\n<li>Advanced proficiency in MS Excel &amp; ERP systems</li>\n</ul>\n<p><strong>Key Responsibilities:</strong></p>\n<ul>\n<li>Lead FP&amp;A, budgeting and forecasting processes</li>\n<li>Manage working capital &amp; cash flow planning</li>\n<li>Drive cost control and margin improvement initiatives</li>\n<li>Act as a finance business partner to support management decisions</li>\n<li>Prepare monthly MIS &amp; performance reports</li>\n<li>Lead and develop the finance team</li>\n</ul>\n<p>To apply, send us your resume at <strong>vacancy@chaudharygroup.com </strong>with a well stated subject line for the position.</p>\n",
-      "protected": false
-    },
-    "author": 216,
-    "featured_media": 0,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Lalitpur",
-      "_application": "vacancy@chaudharygroup.com",
-      "_company_name": "Chaudhary Group",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      12
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      81
-    ],
-    "class_list": {
-      "0": "post-14582",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "hentry",
-      "5": "job_listing_tag-lalitpur",
-      "7": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14582",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/216"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14582"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14582"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14582"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14582"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 14580,
-    "date": "2026-01-06T12:32:46",
-    "date_gmt": "2026-01-06T06:47:46",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14580"
-    },
-    "modified": "2026-01-06T12:36:47",
-    "modified_gmt": "2026-01-06T06:51:47",
-    "slug": "chaudhary-group-lalitpur-full-time-finance-account",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/chaudhary-group-lalitpur-full-time-finance-account/",
-    "title": {
-      "rendered": "Finance and Account"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Finance &amp; Account<br />\n<strong>Location:</strong> Lalitpur</p>\n<p><strong>Qualifications:</strong></p>\n<ul>\n<li>Bachelor’s completed in Finance, Accounting or a related field</li>\n<li>1-2 years of experience in finance and accounting tasks</li>\n<li>Proficient in Swastik software, MS Office (Excel/Word), documentation, financial entries, and eager to learn advanced accounting processes and reporting</li>\n</ul>\n<p><strong>Key Responsibilities:</strong></p>\n<ul>\n<li>Maintain and organize financial documents, records, and supporting files for easy retrieval and audit purposes</li>\n<li>Assist in recording daily financial transactions, updating ledgers, and ensuring accuracy in accounting entries</li>\n<li>Support in preparing payment vouchers, processing vendor payments, and monitoring outstanding entries</li>\n<li>Support in preparing payment vouchers, processing vendor payments, and monitoring outstanding payables</li>\n<li>Assist in bank reconciliation, vendor account reconciliation, and verifying transaction accuracy</li>\n<li>Perform any additional duties assigned by the finance department to support smooth operations</li>\n</ul>\n<p>To apply, send us your resume at <strong>vacancy@chaudharygroup.com</strong> with a well stated subject line for the position.</p>\n",
-      "protected": false
-    },
-    "author": 216,
-    "featured_media": 0,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Lalitpur",
-      "_application": "vacancy@chaudharygroup.com",
-      "_company_name": "Chaudhary Group",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      12
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      81
-    ],
-    "class_list": {
-      "0": "post-14580",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "hentry",
-      "5": "job_listing_tag-lalitpur",
-      "7": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14580",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/216"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14580"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14580"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14580"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14580"
         }
       ],
       "curies": [
