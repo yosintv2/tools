@@ -1,5 +1,707 @@
 [
   {
+    "id": 17361,
+    "date": "2026-01-26T20:50:25",
+    "date_gmt": "2026-01-26T15:05:25",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17361"
+    },
+    "modified": "2026-01-26T20:51:12",
+    "modified_gmt": "2026-01-26T15:06:12",
+    "slug": "assistant-maintenance",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/assistant-maintenance/",
+    "title": {
+      "rendered": "Assistant Maintenance"
+    },
+    "content": {
+      "rendered": "<p><strong>Position:</strong> Assistant Maintenance<br />\n<strong>Number of positions:</strong> 1<br />\n<strong>Qualification:</strong> SLC/+2 , Preferably working experience.</p>\n<p>Qualified candidates interested to pursue their career in GIH can apply online.</p>\n<p>For more details please visit website’s career section <a href=\"https://www.grandehospital.com/en/career\" target=\"_blank\" rel=\"noopener\">https://www.grandehospital.com/en/more/career</a></p>\n<p>Shortlisted candidates will be called for interview<br />\n<strong><br />\nDeadline: </strong>January 30, 2026</p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 445,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "https://www.grandehospital.com/en/career",
+      "_company_name": "Grande International Hospital Pvt. Ltd.",
+      "_company_website": "https://www.grandehospital.com",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      30
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-17361",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17361",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/445"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17361"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17361"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17361"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17361"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 17359,
+    "date": "2026-01-26T20:44:25",
+    "date_gmt": "2026-01-26T14:59:25",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17359"
+    },
+    "modified": "2026-01-26T20:45:09",
+    "modified_gmt": "2026-01-26T15:00:09",
+    "slug": "cashier",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/cashier/",
+    "title": {
+      "rendered": "Cashier"
+    },
+    "content": {
+      "rendered": "<p><strong>Grande International Hospital Ltd.</strong>, Dhapasi, Kathmandu hereby invites application form highly motivated and qualified Nepalese citizens for the job position as per the minimum requirements of qualifications and experiences:</p>\n<p><strong>Position:</strong> Cashier<br />\n<strong>Number of positions</strong>: 2<br />\n<strong>Qualification:</strong> +2/Bachelor, Preferably working experience.</p>\n<p>Qualified candidates interested to pursue their career in GIH can apply online.</p>\n<p>For more details please visit website’s career section <a href=\"https://www.grandehospital.com/en/career\" target=\"_blank\" rel=\"noopener\">https://www.grandehospital.com/en/more/career</a></p>\n<p>Shortlisted candidates will be called for interview<br />\n<strong><br />\nDeadline: </strong>January 30, 2026</p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 445,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "https://www.grandehospital.com/en/career",
+      "_company_name": "Grande International Hospital Ltd",
+      "_company_website": "https://www.grandehospital.com",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      39
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-17359",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17359",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/445"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17359"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17359"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17359"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17359"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 17356,
+    "date": "2026-01-26T20:26:12",
+    "date_gmt": "2026-01-26T14:41:12",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17356"
+    },
+    "modified": "2026-01-26T20:34:43",
+    "modified_gmt": "2026-01-26T14:49:43",
+    "slug": "devdaha-medical-college-research-institute-pvt-ltd-rupandehi-full-time-cma-anm-health-assistant-staff-nurse-lab-technician-d-pharm",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/devdaha-medical-college-research-institute-pvt-ltd-rupandehi-full-time-cma-anm-health-assistant-staff-nurse-lab-technician-d-pharm/",
+    "title": {
+      "rendered": "CMA, ANM, Health Assistant, Staff Nurse, Lab Technician"
+    },
+    "content": {
+      "rendered": "<p><strong>Devdaha Medical College and Research Institute</strong>, invites application for the eligible and highly motivated professional candidates for the following position.</p>\n<p><strong>Position:</strong> Lab Technician<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification</strong>: PCL in Medical</p>\n<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification:</strong> PCL Nursing</p>\n<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification</strong>: PCL General Medicine</p>\n<p><strong>Position:</strong> ANM<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p><strong>Position</strong>: CMA<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p>Interested candidates are requested to submit an application, curriculum vitae, academic documents, training certificates, copy citizenship and 2 copies of recently taken photographs to <strong>hr.dmcri@gmail.com</strong> or drop them in to the DMC reception. Only selected candidates will be called for interview</p>\n<p><strong>For further information, please contact:</strong></p>\n<p>Devdaha Medical College and Research Institute<br />\nBhaluhi, Devdaha -09, Rupandehi<br />\nWebsite: www.devdahamedicalcollege.edu.np<br />\nContact No.: 071-403001, 071-403002<br />\n<img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-17358\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job.jpg\" alt=\"\" width=\"1280\" height=\"720\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job.jpg 1280w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-300x169.jpg 300w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-1024x576.jpg 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-768x432.jpg 768w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" /></p>\n",
+      "protected": false
+    },
+    "author": 17,
+    "featured_media": 591,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Rupandehi",
+      "_application": "hr.dmcri@gmail.com",
+      "_company_name": "Devdaha Medical College & Research Institute Pvt. Ltd.",
+      "_company_website": "https://www.devdahamedicalcollege.edu.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      14
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      105
+    ],
+    "class_list": {
+      "0": "post-17356",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-rupandehi",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17356",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/17"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/591"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17356"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17356"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17356"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17356"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 17341,
     "date": "2026-01-26T16:58:04",
     "date_gmt": "2026-01-26T11:13:04",
@@ -250,7 +952,7 @@
       "rendered": "Social Mobiliser"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-17339\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3.png\" alt=\"\" width=\"836\" height=\"903\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3.png 836w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3-278x300.png 278w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3-768x830.png 768w\" sizes=\"(max-width: 836px) 100vw, 836px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-17340\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2.png\" alt=\"\" width=\"847\" height=\"239\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2.png 847w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2-300x85.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2-768x217.png 768w\" sizes=\"(max-width: 847px) 100vw, 847px\" /></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-17339\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3.png\" alt=\"\" width=\"836\" height=\"903\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3.png 836w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3-278x300.png 278w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-3-768x830.png 768w\" sizes=\"(max-width: 836px) 100vw, 836px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-17340\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2.png\" alt=\"\" width=\"847\" height=\"239\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2.png 847w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2-300x85.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/United-Mission-to-nepal-job-1-2-768x217.png 768w\" sizes=\"(max-width: 847px) 100vw, 847px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -484,7 +1186,7 @@
       "rendered": "Social Mobiliser, Project Coordinator"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-17336\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Sundar-Dhoka-Saathi-Sewa-job.jpg\" alt=\"\" width=\"586\" height=\"849\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Sundar-Dhoka-Saathi-Sewa-job.jpg 586w, https://merorojgari.com/wp-content/uploads/2026/01/Sundar-Dhoka-Saathi-Sewa-job-207x300.jpg 207w\" sizes=\"(max-width: 586px) 100vw, 586px\" /><br />\n<strong>Position:</strong> Project Coordinator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Social Mobiliser<br />\n<strong>No. of Vacancy</strong>: 2</p>\n<p><strong>Location:</strong> Rautahat</p>\n<p><strong>Sundar Dhoka Saathi Sewa</strong></p>\n<p><strong>Email:</strong> vacancy@sundardhoka.org.np</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17336\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Sundar-Dhoka-Saathi-Sewa-job.jpg\" alt=\"\" width=\"586\" height=\"849\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Sundar-Dhoka-Saathi-Sewa-job.jpg 586w, https://merorojgari.com/wp-content/uploads/2026/01/Sundar-Dhoka-Saathi-Sewa-job-207x300.jpg 207w\" sizes=\"(max-width: 586px) 100vw, 586px\" /><br />\n<strong>Position:</strong> Project Coordinator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Social Mobiliser<br />\n<strong>No. of Vacancy</strong>: 2</p>\n<p><strong>Location:</strong> Rautahat</p>\n<p><strong>Sundar Dhoka Saathi Sewa</strong></p>\n<p><strong>Email:</strong> vacancy@sundardhoka.org.np</p>\n",
       "protected": false
     },
     "author": 1483,
@@ -69495,712 +70197,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14840"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 14838,
-    "date": "2026-01-09T10:29:25",
-    "date_gmt": "2026-01-09T04:44:25",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14838"
-    },
-    "modified": "2026-01-09T10:31:21",
-    "modified_gmt": "2026-01-09T04:46:21",
-    "slug": "health-assistant-staff-nurse-3",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/health-assistant-staff-nurse-3/",
-    "title": {
-      "rendered": "Health Assistant, Staff Nurse"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Position: </strong>Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Gulmi Hospital</strong></p>\n<p><strong>Location: </strong>Gulmi</p>\n<p><strong>Website:</strong> <a href=\"https://gulmihospital.lumbini.gov\" target=\"_blank\" rel=\"noopener\">https://gulmihospital.lumbini.gov</a>.</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14839\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/gulmi-hospital-job.png\" alt=\"\" width=\"946\" height=\"583\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/gulmi-hospital-job.png 946w, https://merorojgari.com/wp-content/uploads/2026/01/gulmi-hospital-job-300x185.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/gulmi-hospital-job-768x473.png 768w\" sizes=\"(max-width: 946px) 100vw, 946px\" /><br />\n<em> Source: Butwal Today, 9 January, 2026</em></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 27,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Gulmi",
-      "_application": "",
-      "_company_name": "Gulmi Hospital",
-      "_company_website": "https://gulmihospital.lumbini.gov",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      15,
-      14
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      70
-    ],
-    "class_list": {
-      "0": "post-14838",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-gulmi",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14838",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14838"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14838"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14838"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14838"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 14833,
-    "date": "2026-01-09T09:49:39",
-    "date_gmt": "2026-01-09T04:04:39",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14833"
-    },
-    "modified": "2026-01-09T09:49:39",
-    "modified_gmt": "2026-01-09T04:04:39",
-    "slug": "assistant-assistant-director-associate-professor-assistant-professor",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/assistant-assistant-director-associate-professor-assistant-professor/",
-    "title": {
-      "rendered": "Assistant, Assistant Director, Associate Professor, Assistant Professor"
-    },
-    "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14835\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/lumbini-bouddha-university-job-11.png\" alt=\"\" width=\"991\" height=\"1349\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/lumbini-bouddha-university-job-11.png 991w, https://merorojgari.com/wp-content/uploads/2026/01/lumbini-bouddha-university-job-11-220x300.png 220w, https://merorojgari.com/wp-content/uploads/2026/01/lumbini-bouddha-university-job-11-752x1024.png 752w, https://merorojgari.com/wp-content/uploads/2026/01/lumbini-bouddha-university-job-11-768x1045.png 768w\" sizes=\"(max-width: 991px) 100vw, 991px\" /></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 14836,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Lumbini",
-      "_application": "",
-      "_company_name": "Lumbini Bouddha University",
-      "_company_website": "https://lbu.edu.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      9
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      159
-    ],
-    "class_list": {
-      "0": "post-14833",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-lumbini",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14833",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/14836"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14833"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14833"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14833"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14833"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 14828,
-    "date": "2026-01-09T09:02:54",
-    "date_gmt": "2026-01-09T03:17:54",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=14828"
-    },
-    "modified": "2026-01-09T09:03:06",
-    "modified_gmt": "2026-01-09T03:18:06",
-    "slug": "city-police-constable-city-police-assistant-inspector-assistant-computer-operator-small-enterprise-development-facilitator-public-health-officer-medical-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/city-police-constable-city-police-assistant-inspector-assistant-computer-operator-small-enterprise-development-facilitator-public-health-officer-medical-officer/",
-    "title": {
-      "rendered": "City Police Constable, City Police Assistant Inspector, Assistant Computer Operator, Small Enterprise Development Facilitator, Public Health Officer, Medical Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Public Health Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Small Enterprise Development Facilitator<br />\n<strong>No. of Vacancy</strong>: 2</p>\n<p><strong>Position:</strong> Medical Officer<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Position:</strong> Assistant Computer Operator<br />\n<strong>No. of Vacancy</strong>: 13</p>\n<p><strong>Position:</strong> City Police Assistant Inspector<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Position:</strong> City Police Constable<br />\n<strong>No. of Vacancy</strong>: 10</p>\n<p><strong>Location:</strong> Sarlahi</p>\n<p>Balara Nagarpalika</p>\n<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-14829\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/balara-municipality-job-1.png\" alt=\"\" width=\"1000\" height=\"982\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/balara-municipality-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/balara-municipality-job-1-300x295.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/balara-municipality-job-1-768x754.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<em> Source: Annapurna Post, 9 January, 2025 </em></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 27,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Sarlahi",
-      "_application": "",
-      "_company_name": "Balara Nagarpalika",
-      "_company_website": "https://balramun.gov.np",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      36,
-      15,
-      28,
-      18
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      109
-    ],
-    "class_list": {
-      "0": "post-14828",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-sarlahi",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/14828",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=14828"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=14828"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=14828"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=14828"
         }
       ],
       "curies": [
