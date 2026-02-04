@@ -1,9 +1,71 @@
 <!DOCTYPE html>
-<html lang="ne">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nepal Election 2082 - Official Results</title>
+
+<!-- Primary Meta Tags -->
+<title>Nepal Election 2082 Results - Official Election Commission Data & Candidate Information</title>
+<meta name="title" content="Nepal Election 2082 Results - Official Election Commission Data & Candidate Information">
+<meta name="description" content="Live Nepal Election 2082 results, candidate information, voting statistics, and detailed analysis. Find election results by state, district, and constituency. Official data from Nepal Election Commission.">
+<meta name="keywords" content="Nepal Election 2082, election results, candidate information, Nepal elections, voting results, election commission, constituency results, political parties, election data, Nepal 2082 election, electoral results, candidate details, state results, district results">
+<meta name="author" content="Nepal Election Commission">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="1 day">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nepaleelection2082.com/">
+<meta property="og:title" content="Nepal Election 2082 Results - Official Election Commission Data">
+<meta property="og:description" content="Live Nepal Election 2082 results and candidate information. Official data from Nepal Election Commission covering all states, districts, and constituencies.">
+<meta property="og:image" content="https://nepaleelection2082.com/images/og-image.jpg">
+<meta property="og:site_name" content="Nepal Election 2082">
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://nepaleelection2082.com/">
+<meta property="twitter:title" content="Nepal Election 2082 Results - Official Election Commission Data">
+<meta property="twitter:description" content="Live Nepal Election 2082 results and candidate information. Official data from Nepal Election Commission.">
+<meta property="twitter:image" content="https://nepaleelection2082.com/images/twitter-image.jpg">
+
+<!-- Schema.org Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nepal Election 2082",
+  "url": "https://nepaleelection2082.com",
+  "logo": "https://nepaleelection2082.com/images/logo.png",
+  "description": "Official Nepal Election 2082 results and candidate information",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://nepaleelection2082.com/?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Nepal Election 2082 Results",
+  "url": "https://nepaleelection2082.com",
+  "description": "Nepal Election 2082 official results, candidate details, and electoral information",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://nepaleelection2082.com/?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
 <style>
 :root{
@@ -133,16 +195,6 @@ header{
   }
 }
 
-/* SUBHEADER */
-.subheader{
-  background:rgba(0,0,0,0.1);
-  padding:16px 20px;
-  text-align:center;
-  color:#fff;
-  font-size:14px;
-  border-bottom:1px solid rgba(255,255,255,0.2);
-}
-
 /* WRAPPER */
 .wrapper{
   max-width:1200px;
@@ -261,6 +313,8 @@ header{
   background:#fff;
   transition:.18s ease;
   cursor:pointer;
+  text-decoration:none;
+  color:inherit;
 }
 
 .card:hover{
@@ -334,6 +388,7 @@ header{
   cursor:pointer;
   transition:.15s;
   font-weight:600;
+  text-decoration:none;
 }
 
 .btn:hover{
@@ -360,19 +415,6 @@ header{
 
 .top .name{
   font-size:24px;
-}
-
-.ribbon{
-  position:absolute;
-  top:20px;
-  left:-5px;
-  background:var(--primary);
-  color:#fff;
-  padding:6px 15px;
-  font-size:12px;
-  font-weight:700;
-  transform:rotate(-45deg);
-  text-transform:uppercase;
 }
 
 /* MODAL */
@@ -619,15 +661,15 @@ footer{
 <!-- HEADER -->
 <header>
   <div class="header-top">
-    <a href="#" class="header-logo" onclick="openTab('results'); return false;">
+    <a href="/" class="header-logo">
       <span class="flag">🇳🇵</span>
       <h1>Election 2082</h1>
     </a>
     <nav class="header-nav" id="navMenu">
-      <a class="nav-link active" onclick="openTab('results')">Results</a>
-      <a class="nav-link" onclick="openTab('about')">About</a>
-      <a class="nav-link" onclick="openTab('faq')">FAQ</a>
-      <a class="nav-link" onclick="openTab('contact')">Contact</a>
+      <a class="nav-link active" href="/">Results</a>
+      <a class="nav-link" href="/about">About</a>
+      <a class="nav-link" href="/faq">FAQ</a>
+      <a class="nav-link" href="/contact">Contact</a>
     </nav>
     <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
       <span></span>
@@ -635,7 +677,6 @@ footer{
       <span></span>
     </div>
   </div>
-
 </header>
 
 <!-- MAIN CONTENT -->
@@ -654,19 +695,19 @@ footer{
     <!-- STATS -->
     <div class="stats" id="statsContainer">
       <div class="stat-card">
-        <p class="stat-number" id="totalCandidates">0</p>
+        <p class="stat-number" id="totalCandidates">{{ stats.total_candidates }}</p>
         <p class="stat-label">Total Candidates</p>
       </div>
       <div class="stat-card">
-        <p class="stat-number" id="totalConstituencies">0</p>
+        <p class="stat-number" id="totalConstituencies">{{ stats.total_constituencies }}</p>
         <p class="stat-label">Constituencies</p>
       </div>
       <div class="stat-card">
-        <p class="stat-number" id="totalVotes">0</p>
+        <p class="stat-number" id="totalVotes">{{ stats.total_votes }}</p>
         <p class="stat-label">Total Votes Cast</p>
       </div>
       <div class="stat-card">
-        <p class="stat-number" id="totalParties">0</p>
+        <p class="stat-number" id="totalParties">{{ stats.total_parties }}</p>
         <p class="stat-label">Political Parties</p>
       </div>
     </div>
@@ -706,49 +747,6 @@ footer{
     </div>
   </div>
 
-  <!-- ABOUT TAB -->
-  <div id="aboutTab" class="tab-content" style="display:none;">
-    <div class="section">
-      <h2>About Nepal Election 2082</h2>
-      <p>नेपाल निर्वाचन २०८२ is a historic election in Nepal. This platform provides real-time updates on election results across all states, districts, and constituencies.</p>
-      
-      <h3>Key Information</h3>
-      <p>This is a comprehensive database of all candidates, their affiliations, and voting results. The data is updated continuously as results are reported from constituencies across the nation.</p>
-    </div>
-  </div>
-
-  <!-- FAQ TAB -->
-  <div id="faqTab" class="tab-content" style="display:none;">
-    <div class="section">
-      <h2>Frequently Asked Questions</h2>
-      
-      <h3>How often is the data updated?</h3>
-      <p>Results are updated continuously as they are reported from constituencies.</p>
-
-      <h3>How can I search for a specific candidate?</h3>
-      <p>Use the search bar to find candidates by name, state, district, party, or any other information. You can also use the filters to narrow down your search.</p>
-
-      <h3>What does "Winner" badge mean?</h3>
-      <p>The Winner badge indicates the candidate with the highest number of votes in their constituency.</p>
-
-      <h3>How are constituencies organized?</h3>
-      <p>Constituencies are organized by State → District → Electoral District. Each section shows all candidates competing in that specific constituency.</p>
-    </div>
-  </div>
-
-  <!-- CONTACT TAB -->
-  <div id="contactTab" class="tab-content" style="display:none;">
-    <div class="section">
-      <h2>Contact & Support</h2>
-      <p><strong>Election Commission of Nepal</strong></p>
-      <p>Email: info@election.gov.np</p>
-      <p>Website: <a href="https://www.election.gov.np" target="_blank">www.election.gov.np</a></p>
-      
-      <h3>Report an Issue</h3>
-      <p>If you find any discrepancies in the data, please contact the Election Commission directly.</p>
-    </div>
-  </div>
-
 </div>
 
 <!-- MODAL -->
@@ -765,7 +763,7 @@ footer{
 </footer>
 
 <script>
-const API="https://yosintv.github.io/xauusd/2082.json";
+const API="/api/candidates";
 const FEATURED=[339653,341549,340990,340111];
 let data=[];
 let filteredData=[];
@@ -784,7 +782,6 @@ function fetchData(){
       data=j;
       filteredData=data;
       populateFilters();
-      updateStats();
       render();
       document.getElementById('loading').style.display='none';
       document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
@@ -796,24 +793,8 @@ function fetchData(){
 }
 
 // NAVIGATION
-function openTab(tabName){
-  document.querySelectorAll('.tab-content').forEach(el=>el.style.display='none');
-  document.getElementById(tabName+'Tab').style.display='block';
-  
-  if(tabName==='results'){
-    currentTab='all';
-    render();
-  }
-  
-  closeMobileMenu();
-}
-
 function toggleMobileMenu(){
   document.getElementById('navMenu').classList.toggle('mobile-active');
-}
-
-function closeMobileMenu(){
-  document.getElementById('navMenu').classList.remove('mobile-active');
 }
 
 // STATS
@@ -961,11 +942,12 @@ function render(){
 
 function cardHTML(c,isWinner=false){
   return `
-  <div class="card ${isWinner?'winner':''}" onclick='openModal(${JSON.stringify(c)})'>
+  <a href="/candidate/${c.CandidateID}" class="card ${isWinner?'winner':''}">
     ${isWinner?'<div class="badge">Winner</div>':''}
     <img class="photo"
       src="https://result.election.gov.np/Images/Candidate/${c.CandidateID}.jpg"
-      onerror="this.src='https://via.placeholder.com/100'">
+      onerror="this.src='https://via.placeholder.com/100'"
+      alt="${c.CandidateName}">
     <div>
       <div class="name">${c.CandidateName}</div>
       <div class="age">Age: ${c.AGE_YR}</div>
@@ -973,46 +955,8 @@ function cardHTML(c,isWinner=false){
       <div class="vote">Total votes: <b>${(c.TotalVoteReceived||0).toLocaleString()}</b></div>
       <div class="btn">View details</div>
     </div>
-  </div>`;
+  </a>`;
 }
-
-function openModal(c){
-  document.getElementById('modal').classList.add("active");
-  document.getElementById('modalBox').innerHTML=`
-    <div class="modal-top">
-      <img src="https://result.election.gov.np/Images/Candidate/${c.CandidateID}.jpg" onerror="this.src='https://via.placeholder.com/120'">
-      <div>
-        <div class="modal-name">${c.CandidateName}</div>
-        <div>${c.PoliticalPartyName}</div>
-        <div>${c.SymbolName||'N/A'}</div>
-      </div>
-    </div>
-
-    <div class="details">
-      <div><b>Age:</b> ${c.AGE_YR}</div>
-      <div><b>Gender:</b> ${c.Gender||'N/A'}</div>
-      <div><b>State:</b> ${c.StateName}</div>
-      <div><b>District:</b> ${c.DistrictName}</div>
-      <div><b>Constituency:</b> ${c.SCConstID}</div>
-      <div><b>Total votes:</b> ${(c.TotalVoteReceived||0).toLocaleString()}</div>
-      <div><b>Father's Name:</b> ${c.FATHER_NAME||'N/A'}</div>
-      <div><b>Spouse's Name:</b> ${c.SPOUCE_NAME||'N/A'}</div>
-      <div><b>Qualification:</b> ${c.QUALIFICATION||'N/A'}</div>
-      <div><b>Address:</b> ${c.ADDRESS||'N/A'}</div>
-    </div>
-
-    <div class="close">
-      <button class="close-btn" onclick="document.getElementById('modal').classList.remove('active')">Close</button>
-    </div>
-  `;
-}
-
-document.getElementById('modal').addEventListener('click', function(e){
-  if(e.target===this){
-    this.classList.remove('active');
-  }
-});
-
 </script>
 </body>
 </html>
