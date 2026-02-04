@@ -286,10 +286,6 @@ header{
   border-radius:999px;
 }
 
-.badge.featured{
-  background:var(--warning);
-}
-
 /* IMAGE */
 .photo{
   width:88px;
@@ -639,9 +635,7 @@ footer{
       <span></span>
     </div>
   </div>
-  <div class="subheader">
-    नेपाल निर्वाचन २०८२ - आधिकारिक परिणाम | Nepal Election 2082 - Official Results
-  </div>
+
 </header>
 
 <!-- MAIN CONTENT -->
@@ -912,7 +906,7 @@ function render(){
       <div class="section top">
         <div class="section-title">⭐ Top Competition</div>
         <div class="grid">
-          ${featured.map(c=>cardHTML(c,true)).join("")}
+          ${featured.map(c=>cardHTML(c,false)).join("")}
         </div>
       </div>` : "";
   } else {
@@ -966,11 +960,9 @@ function render(){
 }
 
 function cardHTML(c,isWinner=false){
-  const isFeatured=FEATURED.includes(c.CandidateID);
   return `
   <div class="card ${isWinner?'winner':''}" onclick='openModal(${JSON.stringify(c)})'>
     ${isWinner?'<div class="badge">Winner</div>':''}
-    ${isFeatured?'<div class="badge featured">Featured</div>':''}
     <img class="photo"
       src="https://result.election.gov.np/Images/Candidate/${c.CandidateID}.jpg"
       onerror="this.src='https://via.placeholder.com/100'">
