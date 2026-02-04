@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nepal Election 2082 - Official Results</title>
+
+<style>
+:root{
+  --primary:#dc2626;
+  --secondary:#1e40af;
+  --border:#e5e7eb;
+  --muted:#6b7280;
+  --ink:#111;
+  --soft:#f9fafb;
+  --success:#16a34a;
+  --warning:#f59e0b;
+}
+
+*{box-sizing:border-box}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI;
+  background:#fff;
+  color:var(--ink);
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg, var(--primary) 0%, #991b1b 100%);
+  color:#fff;
+  padding:0;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.header-logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:#fff;
+}
+
+.header-logo h1{
+  margin:0;
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+
+.flag{
+  font-size:32px;
+}
+
+.header-nav{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+.nav-link{
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.2s;
+  padding:8px 0;
+  border-bottom:2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active{
+  border-bottom-color:#fff;
+}
+
+.hamburger{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.hamburger span{
+  width:25px;
+  height:3px;
+  background:#fff;
+  border-radius:2px;
+  transition:.3s;
+}
+
+@media(max-width:768px){
+  .header-nav{
+    display:none;
+  }
+  
+  .header-nav.mobile-active{
+    display:flex;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.95);
+    flex-direction:column;
+    gap:0;
+    padding:20px;
+  }
+  
+  .header-nav.mobile-active .nav-link{
+    padding:15px 0;
+    border:none;
+  }
+  
+  .hamburger{
+    display:flex;
+  }
+}
+
+/* SUBHEADER */
+.subheader{
+  background:rgba(0,0,0,0.1);
+  padding:16px 20px;
+  text-align:center;
+  color:#fff;
+  font-size:14px;
+  border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+/* WRAPPER */
+.wrapper{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* TABS */
+.tabs{
+  display:flex;
+  gap:10px;
+  margin:30px 0;
+  border-bottom:2px solid var(--border);
+  flex-wrap:wrap;
+}
+
+.tab{
+  padding:12px 20px;
+  border:none;
+  background:none;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:600;
+  color:var(--muted);
+  border-bottom:3px solid transparent;
+  transition:.2s;
+  margin-bottom:-2px;
+}
+
+.tab.active{
+  color:var(--primary);
+  border-bottom-color:var(--primary);
+}
+
+.tab:hover{
+  color:var(--ink);
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin:30px 0;
+}
+
+.stat-card{
+  background:linear-gradient(135deg, var(--soft) 0%, #fff 100%);
+  border:2px solid var(--border);
+  border-radius:16px;
+  padding:24px;
+  text-align:center;
+}
+
+.stat-number{
+  font-size:36px;
+  font-weight:800;
+  color:var(--primary);
+  margin:0;
+}
+
+.stat-label{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:8px;
+}
+
+/* SEARCH */
+.search-wrapper{
+  margin:30px 0;
+}
+
+.search{
+  width:100%;
+  padding:15px 18px;
+  border:2px solid var(--border);
+  border-radius:16px;
+  font-size:15px;
+  transition:.2s;
+}
+
+.search:focus{
+  outline:none;
+  border-color:var(--primary);
+}
+
+/* SECTION */
+.section{
+  margin-top:46px;
+  margin-bottom:46px;
+}
+
+.section-title{
+  font-size:20px;
+  font-weight:800;
+  padding-bottom:12px;
+  border-bottom:3px solid var(--primary);
+  margin-bottom:24px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+  gap:22px;
+}
+
+/* CARD */
+.card{
+  position:relative;
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:20px;
+  display:flex;
+  gap:18px;
+  background:#fff;
+  transition:.18s ease;
+  cursor:pointer;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  border-color:var(--primary);
+  box-shadow:0 8px 16px rgba(220,38,38,0.1);
+}
+
+.card.winner{
+  border:2px solid var(--success);
+  background:rgba(22,163,74,0.03);
+}
+
+.badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:var(--success);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  padding:6px 12px;
+  border-radius:999px;
+}
+
+.badge.featured{
+  background:var(--warning);
+}
+
+/* IMAGE */
+.photo{
+  width:88px;
+  height:88px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--border);
+  flex-shrink:0;
+}
+
+/* TEXT */
+.name{
+  font-size:22px;
+  font-weight:800;
+  line-height:1.2;
+}
+
+.age{
+  font-size:14px;
+  margin-top:3px;
+  color:var(--muted);
+}
+
+.party{
+  font-size:14px;
+  color:var(--secondary);
+  margin-top:3px;
+  font-weight:600;
+}
+
+.vote{
+  margin-top:10px;
+  font-size:15px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:16px;
+  padding:10px 18px;
+  border-radius:12px;
+  border:1px solid var(--ink);
+  background:var(--ink);
+  color:#fff;
+  font-size:13px;
+  cursor:pointer;
+  transition:.15s;
+  font-weight:600;
+}
+
+.btn:hover{
+  background:var(--primary);
+  border-color:var(--primary);
+}
+
+/* TOP COMPETITION */
+.top{
+  background:linear-gradient(180deg,#fafafa,#ffffff);
+  border:3px solid var(--primary);
+  border-radius:24px;
+  padding:30px;
+}
+
+.top .card{
+  border-width:2px;
+}
+
+.top .photo{
+  width:100px;
+  height:100px;
+}
+
+.top .name{
+  font-size:24px;
+}
+
+.ribbon{
+  position:absolute;
+  top:20px;
+  left:-5px;
+  background:var(--primary);
+  color:#fff;
+  padding:6px 15px;
+  font-size:12px;
+  font-weight:700;
+  transform:rotate(-45deg);
+  text-transform:uppercase;
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(0,0,0,.55);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:20px;
+  overflow-y:auto;
+}
+
+.modal.active{
+  display:flex;
+  animation:fadeIn .2s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:scale(0.95);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+.modal-box{
+  background:#fff;
+  max-width:760px;
+  width:100%;
+  padding:30px;
+  border-radius:24px;
+  max-height:85vh;
+  overflow-y:auto;
+  margin:auto;
+  animation:slideUp .3s ease;
+}
+
+@keyframes slideUp{
+  from{
+    transform:translateY(40px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+.modal-top{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  margin-bottom:26px;
+}
+
+.modal-top img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:3px solid var(--border);
+}
+
+.modal-name{
+  font-size:26px;
+  font-weight:800;
+}
+
+.modal-top div div:nth-child(2){
+  margin-top:4px;
+  color:var(--secondary);
+  font-weight:600;
+}
+
+.modal-top div div:nth-child(3){
+  margin-top:4px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.details{
+  margin-top:26px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;
+  font-size:14px;
+}
+
+.details div{
+  background:var(--soft);
+  padding:14px;
+  border-radius:12px;
+  border-left:4px solid var(--primary);
+}
+
+.close{
+  margin-top:22px;
+  text-align:right;
+}
+
+.close-btn{
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.2s;
+}
+
+.close-btn:hover{
+  background:#991b1b;
+}
+
+/* FILTERS */
+.filters{
+  display:flex;
+  gap:15px;
+  margin:20px 0;
+  flex-wrap:wrap;
+}
+
+.filter-group{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.filter-group label{
+  font-weight:600;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.filter-group select,
+.filter-group input{
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.filter-group select:focus,
+.filter-group input:focus{
+  outline:none;
+  border-color:var(--primary);
+}
+
+/* FOOTER */
+footer{
+  background:var(--soft);
+  padding:30px 20px;
+  margin-top:50px;
+  border-top:2px solid var(--border);
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.footer-content{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .header-logo h1{
+    font-size:22px;
+  }
+  
+  .stat-number{
+    font-size:28px;
+  }
+  
+  .grid{
+    grid-template-columns:1fr;
+  }
+  
+  .modal-top{
+    flex-direction:column;
+    text-align:center;
+  }
+  
+  .filters{
+    flex-direction:column;
+  }
+  
+  .filter-group{
+    width:100%;
+  }
+}
+
+/* LOADING */
+.loading{
+  text-align:center;
+  padding:40px 20px;
+  color:var(--muted);
+}
+
+.spinner{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border:4px solid var(--border);
+  border-top:4px solid var(--primary);
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+  margin-bottom:15px;
+}
+
+@keyframes spin{
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
+}
+
+/* NO RESULTS */
+.no-results{
+  text-align:center;
+  padding:40px 20px;
+  color:var(--muted);
+}
+
+.no-results svg{
+  width:64px;
+  height:64px;
+  margin-bottom:15px;
+  opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <a href="#" class="header-logo" onclick="openTab('results'); return false;">
+      <span class="flag">🇳🇵</span>
+      <h1>Election 2082</h1>
+    </a>
+    <nav class="header-nav" id="navMenu">
+      <a class="nav-link active" onclick="openTab('results')">Results</a>
+      <a class="nav-link" onclick="openTab('about')">About</a>
+      <a class="nav-link" onclick="openTab('faq')">FAQ</a>
+      <a class="nav-link" onclick="openTab('contact')">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="subheader">
+    नेपाल निर्वाचन २०८२ - आधिकारिक परिणाम | Nepal Election 2082 - Official Results
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="wrapper">
+
+  <!-- RESULTS TAB -->
+  <div id="resultsTab" class="tab-content">
+    
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab(event, 'all')">All Results</button>
+      <button class="tab" onclick="switchTab(event, 'featured')">Top Competition</button>
+      <button class="tab" onclick="switchTab(event, 'winners')">Winners Only</button>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats" id="statsContainer">
+      <div class="stat-card">
+        <p class="stat-number" id="totalCandidates">0</p>
+        <p class="stat-label">Total Candidates</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number" id="totalConstituencies">0</p>
+        <p class="stat-label">Constituencies</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number" id="totalVotes">0</p>
+        <p class="stat-label">Total Votes Cast</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number" id="totalParties">0</p>
+        <p class="stat-label">Political Parties</p>
+      </div>
+    </div>
+
+    <!-- SEARCH & FILTERS -->
+    <div class="search-wrapper">
+      <input id="search" class="search" placeholder="🔍 Search by state, district, candidate name, or party">
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label>State:</label>
+        <select id="stateFilter" onchange="applyFilters()">
+          <option value="">All States</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>District:</label>
+        <select id="districtFilter" onchange="applyFilters()">
+          <option value="">All Districts</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Party:</label>
+        <select id="partyFilter" onchange="applyFilters()">
+          <option value="">All Parties</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="topCompetition"></div>
+    <div id="content"></div>
+    <div id="loading" class="loading" style="display:none;">
+      <div class="spinner"></div>
+      <p>Loading election data...</p>
+    </div>
+  </div>
+
+  <!-- ABOUT TAB -->
+  <div id="aboutTab" class="tab-content" style="display:none;">
+    <div class="section">
+      <h2>About Nepal Election 2082</h2>
+      <p>नेपाल निर्वाचन २०८२ is a historic election in Nepal. This platform provides real-time updates on election results across all states, districts, and constituencies.</p>
+      
+      <h3>Key Information</h3>
+      <p>This is a comprehensive database of all candidates, their affiliations, and voting results. The data is updated continuously as results are reported from constituencies across the nation.</p>
+    </div>
+  </div>
+
+  <!-- FAQ TAB -->
+  <div id="faqTab" class="tab-content" style="display:none;">
+    <div class="section">
+      <h2>Frequently Asked Questions</h2>
+      
+      <h3>How often is the data updated?</h3>
+      <p>Results are updated continuously as they are reported from constituencies.</p>
+
+      <h3>How can I search for a specific candidate?</h3>
+      <p>Use the search bar to find candidates by name, state, district, party, or any other information. You can also use the filters to narrow down your search.</p>
+
+      <h3>What does "Winner" badge mean?</h3>
+      <p>The Winner badge indicates the candidate with the highest number of votes in their constituency.</p>
+
+      <h3>How are constituencies organized?</h3>
+      <p>Constituencies are organized by State → District → Electoral District. Each section shows all candidates competing in that specific constituency.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT TAB -->
+  <div id="contactTab" class="tab-content" style="display:none;">
+    <div class="section">
+      <h2>Contact & Support</h2>
+      <p><strong>Election Commission of Nepal</strong></p>
+      <p>Email: info@election.gov.np</p>
+      <p>Website: <a href="https://www.election.gov.np" target="_blank">www.election.gov.np</a></p>
+      
+      <h3>Report an Issue</h3>
+      <p>If you find any discrepancies in the data, please contact the Election Commission directly.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box" id="modalBox"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Nepal Election 2082. All Rights Reserved.</p>
+    <p>Data Source: Election Commission of Nepal | Last Updated: <span id="lastUpdated">Loading...</span></p>
+  </div>
+</footer>
+
+<script>
+const API="https://yosintv.github.io/xauusd/2082.json";
+const FEATURED=[339653,341549,340990,340111];
+let data=[];
+let filteredData=[];
+let currentTab='all';
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function(){
+  document.getElementById('loading').style.display='block';
+  fetchData();
+});
+
+function fetchData(){
+  fetch(API)
+    .then(r=>r.json())
+    .then(j=>{
+      data=j;
+      filteredData=data;
+      populateFilters();
+      updateStats();
+      render();
+      document.getElementById('loading').style.display='none';
+      document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
+    })
+    .catch(e=>{
+      console.error('Error loading data:', e);
+      document.getElementById('loading').innerHTML='<p style="color:red;">Error loading election data. Please try again later.</p>';
+    });
+}
+
+// NAVIGATION
+function openTab(tabName){
+  document.querySelectorAll('.tab-content').forEach(el=>el.style.display='none');
+  document.getElementById(tabName+'Tab').style.display='block';
+  
+  if(tabName==='results'){
+    currentTab='all';
+    render();
+  }
+  
+  closeMobileMenu();
+}
+
+function toggleMobileMenu(){
+  document.getElementById('navMenu').classList.toggle('mobile-active');
+}
+
+function closeMobileMenu(){
+  document.getElementById('navMenu').classList.remove('mobile-active');
+}
+
+// STATS
+function updateStats(){
+  const uniqueConstituencies=new Set(data.map(c=>`${c.STATE_ID}|${c.DistrictName}|${c.SCConstID}`));
+  const uniqueParties=new Set(data.map(c=>c.PoliticalPartyName));
+  const totalVotes=data.reduce((sum,c)=>sum+(c.TotalVoteReceived||0),0);
+
+  document.getElementById('totalCandidates').textContent=data.length;
+  document.getElementById('totalConstituencies').textContent=uniqueConstituencies.size;
+  document.getElementById('totalVotes').textContent=totalVotes.toLocaleString();
+  document.getElementById('totalParties').textContent=uniqueParties.size;
+}
+
+// FILTERS
+function populateFilters(){
+  const states=new Set(data.map(c=>c.StateName));
+  const parties=new Set(data.map(c=>c.PoliticalPartyName));
+  
+  const stateSelect=document.getElementById('stateFilter');
+  states.forEach(state=>{
+    const option=document.createElement('option');
+    option.value=state;
+    option.textContent=state;
+    stateSelect.appendChild(option);
+  });
+
+  const partySelect=document.getElementById('partyFilter');
+  Array.from(parties).sort().forEach(party=>{
+    const option=document.createElement('option');
+    option.value=party;
+    option.textContent=party;
+    partySelect.appendChild(option);
+  });
+}
+
+function applyFilters(){
+  const state=document.getElementById('stateFilter').value;
+  const district=document.getElementById('districtFilter').value;
+  const party=document.getElementById('partyFilter').value;
+  const search=document.getElementById('search').value.toLowerCase();
+
+  filteredData=data.filter(c=>{
+    const matchState=!state || c.StateName===state;
+    const matchDistrict=!district || c.DistrictName===district;
+    const matchParty=!party || c.PoliticalPartyName===party;
+    const matchSearch=!search || 
+      `${c.CandidateName} ${c.StateName} ${c.DistrictName} ${c.PoliticalPartyName}`.toLowerCase().includes(search);
+    
+    return matchState && matchDistrict && matchParty && matchSearch;
+  });
+
+  // Update district filter based on selected state
+  if(state){
+    const districts=new Set(data.filter(c=>c.StateName===state).map(c=>c.DistrictName));
+    const districtSelect=document.getElementById('districtFilter');
+    const currentValue=districtSelect.value;
+    districtSelect.innerHTML='<option value="">All Districts</option>';
+    districts.forEach(d=>{
+      const option=document.createElement('option');
+      option.value=d;
+      option.textContent=d;
+      districtSelect.appendChild(option);
+    });
+    districtSelect.value=currentValue;
+  }
+
+  render();
+}
+
+document.getElementById('search').addEventListener('input',applyFilters);
+
+// TABS
+function switchTab(event, tab){
+  currentTab=tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  event.target.classList.add('active');
+  render();
+}
+
+// GROUPING
+const groupKey=c=>`${c.STATE_ID}|${c.DistrictName}|${c.SCConstID}`;
+
+function render(){
+  const featured=filteredData.filter(c=>FEATURED.includes(c.CandidateID));
+  
+  // TOP COMPETITION
+  if(currentTab==='all' || currentTab==='featured'){
+    document.getElementById('topCompetition').innerHTML = featured.length ? `
+      <div class="section top">
+        <div class="section-title">⭐ Top Competition</div>
+        <div class="grid">
+          ${featured.map(c=>cardHTML(c,true)).join("")}
+        </div>
+      </div>` : "";
+  } else {
+    document.getElementById('topCompetition').innerHTML="";
+  }
+
+  // FILTER DATA
+  let displayData=filteredData;
+  if(currentTab==='winners'){
+    displayData=displayData.filter(c=>{
+      const group=groupKey(c);
+      const sameGroup=filteredData.filter(d=>groupKey(d)===group);
+      const maxVotes=Math.max(...sameGroup.map(d=>d.TotalVoteReceived||0));
+      return c.TotalVoteReceived===maxVotes;
+    });
+  }
+
+  // GROUP
+  const groups={};
+  displayData.forEach(c=>{
+    const k=groupKey(c);
+    if(!groups[k]) groups[k]=[];
+    groups[k].push(c);
+  });
+
+  document.getElementById('content').innerHTML="";
+  
+  if(Object.keys(groups).length===0){
+    document.getElementById('content').innerHTML=`
+      <div class="no-results">
+        <p>No results found. Try adjusting your search or filters.</p>
+      </div>`;
+    return;
+  }
+
+  Object.values(groups).forEach(list=>{
+    const max=Math.max(...list.map(c=>c.TotalVoteReceived||0));
+    const singleWinner=max>0 && list.filter(c=>c.TotalVoteReceived===max).length===1;
+
+    document.getElementById('content').insertAdjacentHTML("beforeend",`
+      <div class="section">
+        <div class="section-title">
+          ${list[0].StateName} — ${list[0].DistrictName} | निर्वाचन क्षेत्र: ${list[0].SCConstID}
+        </div>
+        <div class="grid">
+          ${list.map(c=>cardHTML(c,singleWinner && c.TotalVoteReceived===max)).join("")}
+        </div>
+      </div>
+    `);
+  });
+}
+
+function cardHTML(c,isWinner=false){
+  const isFeatured=FEATURED.includes(c.CandidateID);
+  return `
+  <div class="card ${isWinner?'winner':''}" onclick='openModal(${JSON.stringify(c)})'>
+    ${isWinner?'<div class="badge">Winner</div>':''}
+    ${isFeatured?'<div class="badge featured">Featured</div>':''}
+    <img class="photo"
+      src="https://result.election.gov.np/Images/Candidate/${c.CandidateID}.jpg"
+      onerror="this.src='https://via.placeholder.com/100'">
+    <div>
+      <div class="name">${c.CandidateName}</div>
+      <div class="age">Age: ${c.AGE_YR}</div>
+      <div class="party">${c.PoliticalPartyName}</div>
+      <div class="vote">Total votes: <b>${(c.TotalVoteReceived||0).toLocaleString()}</b></div>
+      <div class="btn">View details</div>
+    </div>
+  </div>`;
+}
+
+function openModal(c){
+  document.getElementById('modal').classList.add("active");
+  document.getElementById('modalBox').innerHTML=`
+    <div class="modal-top">
+      <img src="https://result.election.gov.np/Images/Candidate/${c.CandidateID}.jpg" onerror="this.src='https://via.placeholder.com/120'">
+      <div>
+        <div class="modal-name">${c.CandidateName}</div>
+        <div>${c.PoliticalPartyName}</div>
+        <div>${c.SymbolName||'N/A'}</div>
+      </div>
+    </div>
+
+    <div class="details">
+      <div><b>Age:</b> ${c.AGE_YR}</div>
+      <div><b>Gender:</b> ${c.Gender||'N/A'}</div>
+      <div><b>State:</b> ${c.StateName}</div>
+      <div><b>District:</b> ${c.DistrictName}</div>
+      <div><b>Constituency:</b> ${c.SCConstID}</div>
+      <div><b>Total votes:</b> ${(c.TotalVoteReceived||0).toLocaleString()}</div>
+      <div><b>Father's Name:</b> ${c.FATHER_NAME||'N/A'}</div>
+      <div><b>Spouse's Name:</b> ${c.SPOUCE_NAME||'N/A'}</div>
+      <div><b>Qualification:</b> ${c.QUALIFICATION||'N/A'}</div>
+      <div><b>Address:</b> ${c.ADDRESS||'N/A'}</div>
+    </div>
+
+    <div class="close">
+      <button class="close-btn" onclick="document.getElementById('modal').classList.remove('active')">Close</button>
+    </div>
+  `;
+}
+
+document.getElementById('modal').addEventListener('click', function(e){
+  if(e.target===this){
+    this.classList.remove('active');
+  }
+});
+
+</script>
+</body>
+</html>
