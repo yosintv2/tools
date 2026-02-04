@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta Tags -->
+<title>{{ candidate.CandidateName }} - Nepal Election 2082 Candidate Results | {{ candidate.StateName }} {{ candidate.DistrictName }}</title>
+<meta name="title" content="{{ candidate.CandidateName }} - Nepal Election 2082 Candidate Results">
+<meta name="description" content="{{ candidate.CandidateName }} - Nepal Election 2082 candidate from {{ candidate.StateName }}, {{ candidate.DistrictName }}. Party: {{ candidate.PoliticalPartyName }}. Votes: {{ candidate.TotalVoteReceived }}. Rank: {{ rank }}/{{ total_in_constituency }} in constituency. View detailed election results and candidate information.">
+<meta name="keywords" content="{{ candidate.CandidateName }}, Nepal Election 2082, candidate results, {{ candidate.StateName }}, {{ candidate.DistrictName }}, {{ candidate.PoliticalPartyName }}, election results, vote count, constituency results, Nepal elections, 2082 election results, candidate information, constituency voting">
+<meta name="author" content="Nepal Election Commission">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="1 day">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nepaleelection2082.com/candidate/{{ candidate.CandidateID }}">
+<meta property="og:title" content="{{ candidate.CandidateName }} - Nepal Election 2082 Candidate Results">
+<meta property="og:description" content="Candidate: {{ candidate.CandidateName }} | Party: {{ candidate.PoliticalPartyName }} | Votes: {{ candidate.TotalVoteReceived }} | Rank: {{ rank }}/{{ total_in_constituency }}">
+<meta property="og:image" content="https://result.election.gov.np/Images/Candidate/{{ candidate.CandidateID }}.jpg">
+<meta property="og:site_name" content="Nepal Election 2082">
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://nepaleelection2082.com/candidate/{{ candidate.CandidateID }}">
+<meta property="twitter:title" content="{{ candidate.CandidateName }} - Nepal Election 2082">
+<meta property="twitter:description" content="Candidate Results - {{ candidate.CandidateName }} from {{ candidate.PoliticalPartyName }}">
+<meta property="twitter:image" content="https://result.election.gov.np/Images/Candidate/{{ candidate.CandidateID }}.jpg">
+
+<!-- Schema.org Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ candidate.CandidateName }}",
+  "image": "https://result.election.gov.np/Images/Candidate/{{ candidate.CandidateID }}.jpg",
+  "jobTitle": "Political Candidate",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "{{ candidate.PoliticalPartyName }}"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "{{ candidate.StateName }}",
+    "addressLocality": "{{ candidate.DistrictName }}",
+    "addressCountry": "NP"
+  },
+  "sameAs": [
+    "https://election.gov.np"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ candidate.CandidateName }} - Nepal Election 2082 Candidate Results",
+  "description": "Nepal Election 2082 candidate information for {{ candidate.CandidateName }} from {{ candidate.StateName }}, {{ candidate.DistrictName }}",
+  "image": "https://result.election.gov.np/Images/Candidate/{{ candidate.CandidateID }}.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Nepal Election Commission"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nepal Election 2082",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nepaleelection2082.com/images/logo.png"
+    }
+  },
+  "datePublished": "2082-01-01",
+  "dateModified": "{{ candidate.last_updated | default(now()) }}"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectionCandidate",
+  "name": "{{ candidate.CandidateName }}",
+  "affiliation": "{{ candidate.PoliticalPartyName }}",
+  "votesReceived": "{{ candidate.TotalVoteReceived }}",
+  "position": "{{ rank }}",
+  "isWinner": {{ 'true' if is_winner else 'false' }},
+  "birthDate": "",
+  "gender": "{{ candidate.Gender | default('Not specified') }}",
+  "image": "https://result.election.gov.np/Images/Candidate/{{ candidate.CandidateID }}.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NP",
+    "addressRegion": "{{ candidate.StateName }}",
+    "addressLocality": "{{ candidate.DistrictName }}",
+    "streetAddress": "{{ candidate.ADDRESS | default('') }}"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nepaleelection2082.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ candidate.StateName }}",
+      "item": "https://nepaleelection2082.com/?state={{ candidate.StateName | urlencode }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ candidate.DistrictName }}",
+      "item": "https://nepaleelection2082.com/?district={{ candidate.DistrictName | urlencode }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "{{ candidate.CandidateName }}",
+      "item": "https://nepaleelection2082.com/candidate/{{ candidate.CandidateID }}"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --primary:#dc2626;
+  --secondary:#1e40af;
+  --border:#e5e7eb;
+  --muted:#6b7280;
+  --ink:#111;
+  --soft:#f9fafb;
+  --success:#16a34a;
+  --warning:#f59e0b;
+}
+
+*{box-sizing:border-box}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI;
+  background:#fff;
+  color:var(--ink);
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg, var(--primary) 0%, #991b1b 100%);
+  color:#fff;
+  padding:0;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.header-logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:#fff;
+}
+
+.header-logo h1{
+  margin:0;
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+
+.flag{
+  font-size:32px;
+}
+
+.header-nav{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+.nav-link{
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.2s;
+  padding:8px 0;
+  border-bottom:2px solid transparent;
+}
+
+.nav-link:hover{
+  border-bottom-color:#fff;
+}
+
+/* WRAPPER */
+.wrapper{
+  max-width:1200px;
+  margin:0 auto;
+  padding:20px;
+}
+
+/* BREADCRUMB */
+.breadcrumb{
+  display:flex;
+  gap:10px;
+  margin:20px 0;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.breadcrumb a{
+  color:var(--secondary);
+  text-decoration:none;
+}
+
+.breadcrumb a:hover{
+  text-decoration:underline;
+}
+
+/* BACK LINK */
+.back-link{
+  display:inline-block;
+  margin-bottom:20px;
+  color:var(--secondary);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.back-link:hover{
+  text-decoration:underline;
+}
+
+/* CANDIDATE HEADER */
+.candidate-header{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  gap:40px;
+  margin-bottom:40px;
+  align-items:start;
+}
+
+.candidate-photo{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--primary);
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+}
+
+.candidate-info h1{
+  margin:0 0 10px 0;
+  font-size:36px;
+  font-weight:800;
+}
+
+.candidate-party{
+  font-size:18px;
+  color:var(--secondary);
+  font-weight:600;
+  margin-bottom:5px;
+}
+
+.candidate-symbol{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.status-badge{
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+  margin-top:15px;
+  margin-right:10px;
+}
+
+.status-badge.winner{
+  background:var(--success);
+  color:#fff;
+}
+
+.status-badge.leading{
+  background:var(--warning);
+  color:#fff;
+}
+
+/* STATS GRID */
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.stat{
+  background:var(--soft);
+  padding:20px;
+  border-radius:12px;
+  border-left:4px solid var(--primary);
+}
+
+.stat-value{
+  font-size:28px;
+  font-weight:800;
+  color:var(--primary);
+  margin:0;
+}
+
+.stat-label{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:5px;
+}
+
+/* SECTION */
+.section{
+  margin:40px 0;
+}
+
+.section h2{
+  font-size:24px;
+  font-weight:800;
+  margin:0 0 20px 0;
+  border-bottom:3px solid var(--primary);
+  padding-bottom:10px;
+}
+
+/* DETAILS GRID */
+.details-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.detail-item{
+  background:var(--soft);
+  padding:15px;
+  border-radius:12px;
+}
+
+.detail-label{
+  font-size:12px;
+  color:var(--muted);
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:5px;
+}
+
+.detail-value{
+  font-size:15px;
+  color:var(--ink);
+  font-weight:600;
+}
+
+/* COMPARISON TABLE */
+.comparison-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.comparison-table th{
+  background:linear-gradient(135deg, var(--primary) 0%, #991b1b 100%);
+  color:#fff;
+  padding:15px;
+  text-align:left;
+  font-weight:700;
+}
+
+.comparison-table td{
+  padding:12px 15px;
+  border-bottom:1px solid var(--border);
+}
+
+.comparison-table tr:hover{
+  background:var(--soft);
+}
+
+.comparison-table .rank-1{
+  background:rgba(22,163,74,0.1);
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:var(--soft);
+  padding:30px 20px;
+  margin-top:50px;
+  border-top:2px solid var(--border);
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.footer-content{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .candidate-header{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  
+  .candidate-photo{
+    width:150px;
+    height:150px;
+    margin:0 auto;
+  }
+  
+  .candidate-info h1{
+    font-size:24px;
+    text-align:center;
+  }
+  
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+  
+  .details-grid{
+    grid-template-columns:1fr;
+  }
+  
+  .comparison-table{
+    font-size:12px;
+  }
+  
+  .comparison-table th,
+  .comparison-table td{
+    padding:10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <a href="/" class="header-logo">
+      <span class="flag">🇳🇵</span>
+      <h1>Election 2082</h1>
+    </a>
+    <nav class="header-nav">
+      <a class="nav-link" href="/">Results</a>
+      <a class="nav-link" href="/about">About</a>
+      <a class="nav-link" href="/faq">FAQ</a>
+      <a class="nav-link" href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="wrapper">
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="/">Home</a> / 
+    <a href="/?state={{ candidate.StateName | urlencode }}">{{ candidate.StateName }}</a> / 
+    <a href="/?district={{ candidate.DistrictName | urlencode }}">{{ candidate.DistrictName }}</a> / 
+    <span>{{ candidate.CandidateName }}</span>
+  </div>
+
+  <a href="/" class="back-link">← Back to Results</a>
+
+  <!-- CANDIDATE HEADER -->
+  <div class="candidate-header">
+    <img src="https://result.election.gov.np/Images/Candidate/{{ candidate.CandidateID }}.jpg" 
+         alt="{{ candidate.CandidateName }}" 
+         class="candidate-photo"
+         onerror="this.src='https://via.placeholder.com/200'">
+    
+    <div class="candidate-info">
+      <div class="candidate-party">{{ candidate.PoliticalPartyName }}</div>
+      <h1>{{ candidate.CandidateName }}</h1>
+      <div class="candidate-symbol">{{ candidate.SymbolName | default('N/A') }}</div>
+      
+      {% if is_winner %}
+        <span class="status-badge winner">✓ WINNER</span>
+      {% elif rank <= 3 %}
+        <span class="status-badge leading">Top {{ rank }} in Constituency</span>
+      {% endif %}
+
+      <!-- STATS GRID -->
+      <div class="stats-grid">
+        <div class="stat">
+          <p class="stat-value">{{ candidate.TotalVoteReceived | default(0) | string }}</p>
+          <p class="stat-label">Total Votes</p>
+        </div>
+        <div class="stat">
+          <p class="stat-value">{{ vote_percentage }}%</p>
+          <p class="stat-label">Vote Share</p>
+        </div>
+        <div class="stat">
+          <p class="stat-value">{{ rank }}/{{ total_in_constituency }}</p>
+          <p class="stat-label">Rank in Constituency</p>
+        </div>
+        <div class="stat">
+          <p class="stat-value">{{ candidate.AGE_YR }}</p>
+          <p class="stat-label">Age</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONAL DETAILS -->
+  <div class="section">
+    <h2>Personal Information</h2>
+    <div class="details-grid">
+      <div class="detail-item">
+        <div class="detail-label">Full Name</div>
+        <div class="detail-value">{{ candidate.CandidateName }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Age</div>
+        <div class="detail-value">{{ candidate.AGE_YR }} years</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Gender</div>
+        <div class="detail-value">{{ candidate.Gender | default('N/A') }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Father's Name</div>
+        <div class="detail-value">{{ candidate.FATHER_NAME | default('N/A') }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Spouse's Name</div>
+        <div class="detail-value">{{ candidate.SPOUCE_NAME | default('N/A') }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Qualification</div>
+        <div class="detail-value">{{ candidate.QUALIFICATION | default('N/A') }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Address</div>
+        <div class="detail-value">{{ candidate.ADDRESS | default('N/A') }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ELECTORAL DETAILS -->
+  <div class="section">
+    <h2>Electoral Information</h2>
+    <div class="details-grid">
+      <div class="detail-item">
+        <div class="detail-label">State</div>
+        <div class="detail-value">{{ candidate.StateName }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">District</div>
+        <div class="detail-value">{{ candidate.DistrictName }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Constituency ID</div>
+        <div class="detail-value">{{ candidate.SCConstID }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Political Party</div>
+        <div class="detail-value">{{ candidate.PoliticalPartyName }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Party Symbol</div>
+        <div class="detail-value">{{ candidate.SymbolName | default('N/A') }}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Total Votes Received</div>
+        <div class="detail-value">{{ candidate.TotalVoteReceived | default(0) | string }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONSTITUENCY COMPARISON -->
+  <div class="section">
+    <h2>Constituency Comparison (Top 10)</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Candidate Name</th>
+          <th>Party</th>
+          <th>Votes</th>
+          <th>Vote %</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i, cand in enumerate(constituency_candidates) %}
+        <tr {% if cand.CandidateID == candidate.CandidateID %}class="rank-1"{% endif %}>
+          <td>{{ i + 1 }}</td>
+          <td>
+            {% if cand.CandidateID == candidate.CandidateID %}
+              <strong>{{ cand.CandidateName }}</strong>
+            {% else %}
+              <a href="/candidate/{{ cand.CandidateID }}">{{ cand.CandidateName }}</a>
+            {% endif %}
+          </td>
+          <td>{{ cand.PoliticalPartyName }}</td>
+          <td>{{ cand.TotalVoteReceived | default(0) | string }}</td>
+          <td>
+            {% set total_votes = constituency_candidates | map(attribute='TotalVoteReceived') | sum %}
+            {% if total_votes > 0 %}
+              {{ "%.2f" | format((cand.TotalVoteReceived or 0) / total_votes * 100) }}%
+            {% else %}
+              0%
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Nepal Election 2082. All Rights Reserved.</p>
+    <p>Data Source: Election Commission of Nepal</p>
+  </div>
+</footer>
+
+</body>
+</html>
