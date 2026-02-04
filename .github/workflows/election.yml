@@ -5,6 +5,21 @@ on:
     branches: [ main, develop ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+      deploy:
+        description: 'Deploy after tests?'
+        required: false
+        type: boolean
+        default: true
 
 jobs:
   test:
@@ -49,10 +64,19 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: |
+      (github.ref == 'refs/heads/main' && github.event_name == 'push') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.deploy == 'true')
     
     steps:
     - uses: actions/checkout@v3
+    
+    - name: Display Manual Trigger Info
+      if: github.event_name == 'workflow_dispatch'
+      run: |
+        echo "🚀 Manual Deployment Triggered!"
+        echo "Environment: ${{ github.event.inputs.environment }}"
+        echo "Deploy: ${{ github.event.inputs.deploy }}"
     
     - name: Deploy to Heroku
       uses: akhileshns/heroku-deploy@v3.12.12
@@ -61,3 +85,11 @@ jobs:
         heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
         heroku_email: ${{secrets.HEROKU_EMAIL}}
         usedocker: false
+    
+    - name: Deployment Success
+      if: success()
+      run: echo "✅ Deployment completed successfully!"
+    
+    - name: Deployment Failed
+      if: failure()
+      run: echo "❌ Deployment failed! Check logs above."
