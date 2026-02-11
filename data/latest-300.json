@@ -1,5 +1,938 @@
 [
   {
+    "id": 18394,
+    "date": "2026-02-11T17:12:29",
+    "date_gmt": "2026-02-11T11:27:29",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18394"
+    },
+    "modified": "2026-02-11T17:12:37",
+    "modified_gmt": "2026-02-11T11:27:37",
+    "slug": "enterprise-support-representative-l1",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/enterprise-support-representative-l1/",
+    "title": {
+      "rendered": "Enterprise Support Representative (L1)"
+    },
+    "content": {
+      "rendered": "<p><strong>Position: </strong>Enterprise Support Representative (L1)<br />\n<strong>Current Job Vacancies:</strong> 3<br />\n<strong>Deadline:</strong> 20 February, 2026<br />\n<strong>Functional Designation:</strong> Senior Assistant<br />\n<strong>Department:</strong> Enterprise<br />\n<strong>Location:</strong> Enterprise Branch, Kantipath</p>\n<p><strong>SKILLS &amp; RESPONSIBILITIES</strong></p>\n<ul>\n<li>Install, configure, and troubleshoot network devices including switches, routers, access points, and related equipment.</li>\n<li>Assist in configuration, monitoring, and troubleshooting of firewalls and security appliances.</li>\n<li>Perform basic site surveys and optimize AP placement, channels, and power settings.</li>\n<li>Diagnose and resolve issues related to wired and wireless network systems, ensuring minimal service downtime.</li>\n<li>Monitor network alerts, outages, and performance issues, and respond promptly to incidents.</li>\n<li>Perform field visits to customer sites to resolve technical issues when remote support is insufficient.</li>\n<li>Conduct follow-ups with clients through calls and on-site visits to confirm issue resolution and ensure customer satisfaction.</li>\n<li>Carry out routine maintenance of network and wireless equipment to ensure optimal performance and reliability.</li>\n<li>Maintain basic documentation related to network configurations, incidents, and service activities.</li>\n<li>Coordinate with internal teams and supervisors for escalation and resolution of complex issues.</li>\n<li>Perform other duties and responsibilities as assigned by supervisors or management.</li>\n</ul>\n<p><strong>QUALIFICATIONS &amp; REQUIREMENTS</strong></p>\n<ul>\n<li>Bachelors running (preferred in IT, Science or Engineering) with at least six months experience.</li>\n<li>Good understanding of OSI Model and TCP/IP protocal suite.</li>\n<li>Knowledge of IP addressing and subnetting, Routing &amp; Switching.</li>\n<li>Basic configuration of devices : Cisco, Fortigate, etc.</li>\n<li>Familiar with Network Monitoring tools like Nagios.</li>\n<li>Eagerness to learn and develop technical skills.</li>\n<li>Ability to work on 24*7 rotation shift</li>\n<li>Flexible to work beyond standard hours during outages or critical incidents.</li>\n<li>Strong problem-solving and analytical skills.</li>\n<li>Team-oriented with a proactive and customer-focused mindset.</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 17393,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "https://worldlink.com.np/career/enterprise-support-representative-2/",
+      "_company_name": "WorldLink Communications Ltd",
+      "_company_website": "https://worldlink.com.np",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      27,
+      28
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-18394",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18394",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/17393"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18394"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18394"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18394"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18394"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 18392,
+    "date": "2026-02-11T17:06:48",
+    "date_gmt": "2026-02-11T11:21:48",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18392"
+    },
+    "modified": "2026-02-11T17:08:02",
+    "modified_gmt": "2026-02-11T11:23:02",
+    "slug": "enterprise-support-representative",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/enterprise-support-representative/",
+    "title": {
+      "rendered": "Enterprise Support Representative (VAS)"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: Enterprise Support Representative ( VAS)<br />\n<strong>Current Job Vacancies:</strong> 5<br />\n<strong>Deadline</strong>: 20 February, 2026<br />\n<strong>Department</strong>: Enterprise<br />\n<strong>Location:</strong> Enterprise Branch</p>\n<p><strong>SKILLS &amp; RESPONSIBILITIES</strong></p>\n<ul>\n<li>Proactively monitor customer circuits and network services on a 24×7 shift basis and respond promptly to any issues or outages.</li>\n<li>Handle inbound and outbound customer service calls, providing timely and effective technical support.</li>\n<li>Proactively monitor IPLC links, Nagios, and other network monitoring systems to ensure service availability and performance.</li>\n<li>Perform remote troubleshooting and coordinate field visits when required to resolve customer-reported issues.</li>\n<li>Initiate appropriate actions in response to customer requests and communicate changes to relevant teams, branches, and offices nationwide.</li>\n<li>Follow up on issues and escalate to concerned teams or departments to ensure timely resolution and customer satisfaction.</li>\n<li>Manage and follow up on all customer support tickets, including during off-hours, weekends, and public holidays.</li>\n<li>Monitor real-time system performance, analyze alerts, and respond quickly to incidents to minimize service impact.</li>\n<li>Identify recurring or major issues affecting multiple customers and escalate to the Team Leader, support teams, sales, or resolver groups as required.</li>\n<li>Maintain daily task reports, incident logs, and assist in updating technical documentation and SOPs.</li>\n<li>Ensure proper communication with customers regarding issue status, progress, and resolution.</li>\n<li>Follow company policies, procedures, and security guidelines while performing operational tasks.</li>\n<li>Perform any other duties assigned by the supervisor or management.</li>\n</ul>\n<p><strong>QUALIFICATIONS &amp; REQUIREMENTS</strong></p>\n<ul>\n<li>Bachelor’s Degree in any discipline with 2+ years of experience in support function.</li>\n<li>Experience with a diverse range for Monitoring Suites not limited to Nagios &amp; Cacti</li>\n<li>Good problem management, troubleshooting and analytical skills.</li>\n<li>Highly motivated and able to meet scheduled deadlines in a fast-paced, service-driven environment.</li>\n<li>Proven strong customer service oriented.</li>\n<li>Willingness to undertake additional projects and responsibilities.</li>\n<li>Flexibility with working hours (On / Off hours as required)</li>\n<li>Willing to visit customers extensively (for meetings &amp; troubleshoot)</li>\n<li>Ability to communicate and engage effectively, verbally and in writing, in English with customers and colleagues.</li>\n<li>Should have Two wheeler.</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 636,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://worldlink.com.np/career/enterprise-support-representative/",
+      "_company_name": "WorldLink Communications Ltd",
+      "_company_website": "https://worldlink.com.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      39
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-18392",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18392",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/636"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18392"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18392"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18392"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18392"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 18391,
+    "date": "2026-02-11T16:57:27",
+    "date_gmt": "2026-02-11T11:12:27",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18391"
+    },
+    "modified": "2026-02-11T16:57:27",
+    "modified_gmt": "2026-02-11T11:12:27",
+    "slug": "hr-and-finance-administrator-3",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/hr-and-finance-administrator-3/",
+    "title": {
+      "rendered": "HR and Finance Administrator"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: HR and Finance Administrator<br />\n<strong>Current Job Vacancies:</strong> 1<br />\n<strong>Department:</strong> HR and Finance<br />\n<strong>Location:</strong> Kusma</p>\n<p><strong>SKILLS &amp; RESPONSIBILITIES</strong></p>\n<ul>\n<li>Act as the primary HR focal point at the branch level, handling recruitment, onboarding, training, employee engagement, and exit processes in coordination with RHO.</li>\n<li>Maintain and update employee records, attendance, leave balances, payroll reports and performance management documentation while ensuring strict confidentiality.</li>\n<li>Ensure proper communication of HR policies, guidelines, and updates to branch staff.</li>\n<li>Manage grievance handling, conflict resolution, and employee welfare activities in coordination with branch head and RHO.</li>\n<li>Accurately record, verify, and reconcile all financial transactions within the ERP system and file or upload supporting documents in the system.</li>\n<li>Supervise billing staff, review daily collections, and perform daily reconciliation of revenue across all payment methods against the billing system.</li>\n<li>Coordinate with the Regional Finance Officer for monthly financial reporting, budget monitoring, and expense reconciliation.</li>\n<li>Perform accurate monthly closings, ensuring all transactions are recorded in the correct period. Prepare schedules for all carry-forward balances and conduct reconciliations for cash on hand, bank accounts, and various digital payment methods.</li>\n<li>Actively track Asset Recovery processes / devices of disabled customers.</li>\n<li>Promptly escalate any discrepancies noted in the accounting or inventory software to the Regional Finance Officer for necessary updates.</li>\n<li>Manage the vendor onboarding process and ensure timely scheduling of vendor payments.</li>\n<li>Oversee daily branch logistics operations, including procurement, management with timely inventory consumption and timely verifications.</li>\n<li>Maintain warehouse and aging reports of inventory.</li>\n<li>Conduct timely Inventory projections to facilitate timely receiving and return of Inventories.</li>\n<li>Insurance Intimation to Regional team and H.O. team.</li>\n</ul>\n<p><strong>QUALIFICATIONS &amp; REQUIREMENTS</strong></p>\n<ul>\n<li>Bachelor’s degree in management or related field with 1 year of experience or Intermediate with 5 years of experience in related field. (For external, BBA/BBS/BBM preferred)</li>\n<li>Knowledge of HR and financial management practices.</li>\n<li>Proficiency in MS Office Suite (Word, Excel, PowerPoint) and HR/finance software.</li>\n<li>Excellent interpersonal, organizational, and problem-solving skills.</li>\n<li>Strong ethical standards and ability to maintain confidentiality of sensitive HR and financial data with strong emotional resilience.</li>\n<li>Ability to multitask and work under tight deadlines.</li>\n</ul>\n<p><strong>Deadline:</strong> 20 February, 2026</p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 17393,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kusma",
+      "_application": "https://worldlink.com.np/career/hr-and-finance-administrator/",
+      "_company_name": "WorldLink Communications Ltd.",
+      "_company_website": "https://worldlink.com.np",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      12,
+      30,
+      32
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      169
+    ],
+    "class_list": {
+      "0": "post-18391",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kusma",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18391",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/17393"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18391"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18391"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18391"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18391"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 18387,
+    "date": "2026-02-11T16:31:57",
+    "date_gmt": "2026-02-11T10:46:57",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18387"
+    },
+    "modified": "2026-02-11T16:42:38",
+    "modified_gmt": "2026-02-11T10:57:38",
+    "slug": "hamro-palo-kathmandu-full-time-learning-and-documentation-officer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/hamro-palo-kathmandu-full-time-learning-and-documentation-officer/",
+    "title": {
+      "rendered": "Learning and Documentation Officer"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: Learning and Documentation Officer (Mid-Level)</p>\n<p><strong>Organization</strong>: Hamro Palo</p>\n<p><strong>Location</strong>: Kathmandu, with frequent travel to districts within Bagmati Province</p>\n<p><strong>Reports to:</strong> Project/Program Coordinator</p>\n<p><strong>Supervises:</strong> Project Assistants</p>\n<p><strong>Contract Duration: </strong>1 year, renewable for up to 2 additional years based on performance</p>\n<p><strong>About Us</strong></p>\n<p><strong>Hamro Palo</strong> is a non-profit organization that intentionally invests in adolescents in rural communities through education and empowerment initiatives, equipping them to make informed, healthy decisions about their lives.</p>\n<p>Our work strengthens adolescents&#8217; confidence, skills, and sense of agency so they can actively contribute to their communities. Through focused investment in education, health and well-being, life skills, and leadership development, we strive to advance gender equality and build a more just and inclusive society.</p>\n<p>For more information, visit: www.hamropalo.org.np</p>\n<p><strong>Key Responsibilities</strong></p>\n<ul>\n<li>Support the documentation and reporting of project activities, achievements, and lessons learned.</li>\n<li>Collect, organize, and analyze program data to track outcomes and impact.</li>\n<li>Prepare reports, case studies, and success stories for internal and external stakeholders.</li>\n<li>Support the development of program learning materials, knowledge products, and resource tools.</li>\n<li>Assist in monitoring and evaluating program implementation and effectiveness.</li>\n<li>Collaborate with Project/Program Coordinators to ensure accurate and timely information sharing.</li>\n<li>Support communication and storytelling initiatives that highlight program successes and challenges.</li>\n<li>Assist in organizing workshops, learning sessions, and reflection meetings for program staff and participants.</li>\n<li>Ensure all documentation is systematic, accurate, and aligned with organizational standards and priorities.</li>\n<li>Supervise Project Assistants to support effective documentation and learning processes.</li>\n</ul>\n<p><strong>Qualifications</strong></p>\n<p><strong>Education and Experience</strong></p>\n<ul>\n<li>Bachelor’s degree in a relevant discipline</li>\n<li>Minimum 3 years of experience in program/project implementation, including at least 2 years in an officer-level position</li>\n<li>Experience in documentation, reporting, and data management</li>\n<li>Strong interpersonal, communication, and organizational skills</li>\n</ul>\n<p><strong>Desired Skills and Competencies</strong></p>\n<ul>\n<li>Proficiency in both Nepali and English (spoken and written)</li>\n<li>Strong writing and analytical skills for reports, case studies, and presentations</li>\n<li>Ability to manage data collection, analysis, and reporting processes effectively</li>\n<li>Skilled in creating knowledge products and learning materials</li>\n<li>Proficient in essential IT tools (MS Office, spreadsheets, and data visualization tools)</li>\n<li>Ability to work collaboratively with program teams and stakeholders</li>\n<li>Strong attention to detail and organizational skills</li>\n<li>Proactive, solution-oriented, and committed to continuous learning</li>\n</ul>\n<p><strong>Personal Attributes</strong></p>\n<ul>\n<li>Bold and confident, with the ability to take initiative and lead in dynamic environments</li>\n<li>Decisive, able to assess situations quickly and make sound, timely decisions</li>\n<li>Highly proactive, solution-oriented, and accountable</li>\n<li>Results-driven, focused on delivering outcomes rather than seeking excuses</li>\n<li>Resilient and composed when working in challenging or resource-constrained settings</li>\n<li>Positive, adaptable, and willing to go the extra mile to ensure program effectiveness</li>\n</ul>\n<p><strong>Values and Commitment</strong></p>\n<ul>\n<li>Genuine care for children and adolescents, particularly in rural communities</li>\n<li>Willingness to travel and work in rural villages</li>\n<li>Strong alignment with Hamro Palo’s mission to promote gender equality and empower girls</li>\n</ul>\n<p><strong>Important Note</strong></p>\n<ul>\n<li>This position is demanding and requires resilience and endurance, as it involves working in rural communities and managing challenging situations. The</li>\n<li>Learning and Documentation Officer will supervise Project Assistants. Applicants who do not meet the required qualifications are encouraged not to apply. The role is designed for mid-level professionals seeking growth within the organization.</li>\n</ul>\n<p><strong>Application Process</strong></p>\n<p><strong>Applicants must submit:</strong></p>\n<ul>\n<li>A cover letter including expected gross monthly salary and earliest joining date</li>\n<li>An updated CV with contact details of at least two referees (one must be the immediate supervisor)</li>\n</ul>\n<p>Send applications to:<strong>info@hamropalo.org.np</strong></p>\n<p>Subject line: <strong>“Application for Learning and Documentation Officer”</strong></p>\n<p><strong>Deadline:</strong> 20 February 2026</p>\n<p>Applications will be reviewed on a rolling basis. Incomplete applications or those not meeting the requirements will be automatically disqualified. Only shortlisted candidates will be contacted for a written exam and interview. All forms of inquiry, including by phone, email, or social media, will not be entertained. Canvassing at any stage will result in automatic disqualification.</p>\n<p>Hamro Palo reserves the right to cancel or postpone the recruitment process and to make the final selection.</p>\n",
+      "protected": false
+    },
+    "author": 1628,
+    "featured_media": 18384,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "info@hamropalo.org.np",
+      "_company_name": "Hamro Palo",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      11
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-18387",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18387",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1628"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/18384"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18387"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18387"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18387"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18387"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 18383,
     "date": "2026-02-11T16:17:50",
     "date_gmt": "2026-02-11T10:32:50",
@@ -22433,7 +23366,7 @@
       "rendered": "Assistant (Dark Room)"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17931\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11.png\" alt=\"\" width=\"1000\" height=\"1054\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11-285x300.png 285w, https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11-972x1024.png 972w, https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11-768x809.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position</strong>: Assistant (Dark Room)<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Jhapa</p>\n<p><strong>AMDA Mechi Hospital</strong></p>\n<p><strong>Email:</strong> amd.dhulabari@amda.org.np</p>\n<p><strong>Phone No.:</strong> 023-564550</p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-17931\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11.png\" alt=\"\" width=\"1000\" height=\"1054\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11-285x300.png 285w, https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11-972x1024.png 972w, https://merorojgari.com/wp-content/uploads/2026/02/AMDA-Mechi-Hospital-job-11-768x809.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position</strong>: Assistant (Dark Room)<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Jhapa</p>\n<p><strong>AMDA Mechi Hospital</strong></p>\n<p><strong>Email:</strong> amd.dhulabari@amda.org.np</p>\n<p><strong>Phone No.:</strong> 023-564550</p>\n",
       "protected": false
     },
     "author": 2,
@@ -24304,7 +25237,7 @@
       "rendered": "Cashier, Receptionist, Market Representative, Service Center Head, Market Manager"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-17907\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job.png\" alt=\"\" width=\"946\" height=\"659\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job.png 946w, https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job-300x209.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job-768x535.png 768w\" sizes=\"(max-width: 946px) 100vw, 946px\" /><br />\n<strong>Position</strong>: Service Center Head<br />\n<strong>No. of Vacancies:</strong> 1</p>\n<p><strong>Position:</strong> Market Manager<br />\n<strong>No. of Vacancies</strong>: 1</p>\n<p><strong>Position:</strong> Cashier<br />\n<strong>No. of Vacancies</strong>: 1</p>\n<p><strong>Position:</strong> Receptionist<br />\n<strong>No. of Vacancies</strong>: 1</p>\n<p><strong>Position:</strong> Market Representative<br />\n<strong>No. of Vacancies:</strong> 7</p>\n<p><strong>Location:</strong> Pokhara</p>\n<p><strong>Samriddha Nepal Agriculture Co-operative Ltd.</strong></p>\n<p><strong>Phone No.:</strong> 061-501403, 9856010883<br />\n<strong>Email:</strong> samriddhacoop.pokhara007@gmail.com</p>\n<p><em> Source: Adarsha Samaj National Daily, 3 February, 2026  </em></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-17907\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job.png\" alt=\"\" width=\"946\" height=\"659\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job.png 946w, https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job-300x209.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Samriddha-Nepal-Agriculture-Co-operative-job-768x535.png 768w\" sizes=\"(max-width: 946px) 100vw, 946px\" /><br />\n<strong>Position</strong>: Service Center Head<br />\n<strong>No. of Vacancies:</strong> 1</p>\n<p><strong>Position:</strong> Market Manager<br />\n<strong>No. of Vacancies</strong>: 1</p>\n<p><strong>Position:</strong> Cashier<br />\n<strong>No. of Vacancies</strong>: 1</p>\n<p><strong>Position:</strong> Receptionist<br />\n<strong>No. of Vacancies</strong>: 1</p>\n<p><strong>Position:</strong> Market Representative<br />\n<strong>No. of Vacancies:</strong> 7</p>\n<p><strong>Location:</strong> Pokhara</p>\n<p><strong>Samriddha Nepal Agriculture Co-operative Ltd.</strong></p>\n<p><strong>Phone No.:</strong> 061-501403, 9856010883<br />\n<strong>Email:</strong> samriddhacoop.pokhara007@gmail.com</p>\n<p><em> Source: Adarsha Samaj National Daily, 3 February, 2026  </em></p>\n",
       "protected": false
     },
     "author": 2,
@@ -27114,7 +28047,7 @@
       "rendered": "Staff Nurse, ANM &#8211; 31 Vacancies"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-17865\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1.png\" alt=\"\" width=\"1000\" height=\"1204\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1-249x300.png 249w, https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1-850x1024.png 850w, https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1-768x925.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position</strong>: Staff Nurse<br />\n<strong>Required No.:</strong> 13</p>\n<p><strong>Position</strong>: ANM<br />\n<strong>Required No.:</strong> 18</p>\n<p><strong>Location:</strong> Dhangadhi</p>\n<p><strong>Seti Provincial Hospital</strong></p>\n<p><strong>Phone No.:</strong> 091-525911</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17865\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1.png\" alt=\"\" width=\"1000\" height=\"1204\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1-249x300.png 249w, https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1-850x1024.png 850w, https://merorojgari.com/wp-content/uploads/2026/02/Seti-Provincial-Hospital-Dhangadhi-job-1-768x925.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position</strong>: Staff Nurse<br />\n<strong>Required No.:</strong> 13</p>\n<p><strong>Position</strong>: ANM<br />\n<strong>Required No.:</strong> 18</p>\n<p><strong>Location:</strong> Dhangadhi</p>\n<p><strong>Seti Provincial Hospital</strong></p>\n<p><strong>Phone No.:</strong> 091-525911</p>\n",
       "protected": false
     },
     "author": 2,
@@ -46302,7 +47235,7 @@
       "rendered": "Loan Assistant"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17453\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job.png\" alt=\"\" width=\"781\" height=\"837\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job.png 781w, https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job-280x300.png 280w, https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job-768x823.png 768w\" sizes=\"(max-width: 781px) 100vw, 781px\" /><br />\n<strong>Position:</strong> Loan Assistant<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Location:</strong> Jhapa</p>\n<p><strong>Bhagawati Saving &amp; Credit Co-Operative Ltd.</strong></p>\n<p><strong>Phone No.;</strong> 023-552285</p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-17453\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job.png\" alt=\"\" width=\"781\" height=\"837\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job.png 781w, https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job-280x300.png 280w, https://merorojgari.com/wp-content/uploads/2026/01/Bhagawati-Saving-Credit-Co-Operative-Ltd.-job-768x823.png 768w\" sizes=\"(max-width: 781px) 100vw, 781px\" /><br />\n<strong>Position:</strong> Loan Assistant<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Location:</strong> Jhapa</p>\n<p><strong>Bhagawati Saving &amp; Credit Co-Operative Ltd.</strong></p>\n<p><strong>Phone No.;</strong> 023-552285</p>\n",
       "protected": false
     },
     "author": 2,
@@ -46536,7 +47469,7 @@
       "rendered": "Social Teacher, English Teacher"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17449\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1.png\" alt=\"\" width=\"1093\" height=\"1423\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1.png 1093w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1-230x300.png 230w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1-787x1024.png 787w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1-768x1000.png 768w\" sizes=\"(max-width: 1093px) 100vw, 1093px\" /><br />\n<strong>Position:</strong> Teacher<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject</strong>: English<br />\n<strong>Level:</strong> Secondary</p>\n<p><strong>Position:</strong> Teacher<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject:</strong> Social<br />\n<strong>Level:</strong> Lower Secondary</p>\n<p><strong>Location:</strong> Bara</p>\n<p><strong>Shree Nepal National Secondary School</strong></p>\n<p><strong>Email:</strong> tangiyabasti2056@gmail.com<br />\n<strong>Phone No.:</strong> 9845699060, 9845059893</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-17449\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1.png\" alt=\"\" width=\"1093\" height=\"1423\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1.png 1093w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1-230x300.png 230w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1-787x1024.png 787w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Nepal-National-Secodary-School-job-1-768x1000.png 768w\" sizes=\"(max-width: 1093px) 100vw, 1093px\" /><br />\n<strong>Position:</strong> Teacher<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject</strong>: English<br />\n<strong>Level:</strong> Secondary</p>\n<p><strong>Position:</strong> Teacher<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject:</strong> Social<br />\n<strong>Level:</strong> Lower Secondary</p>\n<p><strong>Location:</strong> Bara</p>\n<p><strong>Shree Nepal National Secondary School</strong></p>\n<p><strong>Email:</strong> tangiyabasti2056@gmail.com<br />\n<strong>Phone No.:</strong> 9845699060, 9845059893</p>\n",
       "protected": false
     },
     "author": 2,
@@ -46770,7 +47703,7 @@
       "rendered": "Science Teacher"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-17447\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1.png\" alt=\"\" width=\"1000\" height=\"1485\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1-202x300.png 202w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1-690x1024.png 690w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1-768x1140.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position:</strong> Teacher<br />\n<strong>Subject</strong>: Science<br />\n<strong>Level</strong>: Lower Secondary<br />\n<strong>Location:</strong> Parbat</p>\n<p><strong>Shree Swadharma Madhyamik Vidyalaya</strong><br />\nPhone No.; 9857631126, 9856022770<br />\nEmail: swadharmamavi2021@gmail.com</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-17447\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1.png\" alt=\"\" width=\"1000\" height=\"1485\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1-202x300.png 202w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1-690x1024.png 690w, https://merorojgari.com/wp-content/uploads/2026/01/Shree-Swadharma-Secondary-School-job-1-768x1140.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position:</strong> Teacher<br />\n<strong>Subject</strong>: Science<br />\n<strong>Level</strong>: Lower Secondary<br />\n<strong>Location:</strong> Parbat</p>\n<p><strong>Shree Swadharma Madhyamik Vidyalaya</strong><br />\nPhone No.; 9857631126, 9856022770<br />\nEmail: swadharmamavi2021@gmail.com</p>\n",
       "protected": false
     },
     "author": 2,
@@ -48174,7 +49107,7 @@
       "rendered": "Project cum Office Officer"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-17418\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1.png\" alt=\"\" width=\"1080\" height=\"1259\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1-257x300.png 257w, https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1-878x1024.png 878w, https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1-768x895.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n<p><strong>Position:</strong> Project cum Office Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Tanahun</p>\n<p><strong>Community Support Group</strong></p>\n<p><strong>Phone No.:</strong> 065565627, 9846148323</p>\n<p><strong>Email:</strong> csg.vacancy@gmail.com</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17418\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1.png\" alt=\"\" width=\"1080\" height=\"1259\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1.png 1080w, https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1-257x300.png 257w, https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1-878x1024.png 878w, https://merorojgari.com/wp-content/uploads/2026/01/community-support-group-job-1-768x895.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /></p>\n<p><strong>Position:</strong> Project cum Office Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Tanahun</p>\n<p><strong>Community Support Group</strong></p>\n<p><strong>Phone No.:</strong> 065565627, 9846148323</p>\n<p><strong>Email:</strong> csg.vacancy@gmail.com</p>\n",
       "protected": false
     },
     "author": 2,
@@ -53316,7 +54249,7 @@
       "rendered": "CMA, ANM, Health Assistant, Staff Nurse, Lab Technician"
     },
     "content": {
-      "rendered": "<p><strong>Devdaha Medical College and Research Institute</strong>, invites application for the eligible and highly motivated professional candidates for the following position.</p>\n<p><strong>Position:</strong> Lab Technician<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification</strong>: PCL in Medical</p>\n<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification:</strong> PCL Nursing</p>\n<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification</strong>: PCL General Medicine</p>\n<p><strong>Position:</strong> ANM<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p><strong>Position</strong>: CMA<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p>Interested candidates are requested to submit an application, curriculum vitae, academic documents, training certificates, copy citizenship and 2 copies of recently taken photographs to <strong>hr.dmcri@gmail.com</strong> or drop them in to the DMC reception. Only selected candidates will be called for interview</p>\n<p><strong>For further information, please contact:</strong></p>\n<p>Devdaha Medical College and Research Institute<br />\nBhaluhi, Devdaha -09, Rupandehi<br />\nWebsite: www.devdahamedicalcollege.edu.np<br />\nContact No.: 071-403001, 071-403002<br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-17358\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job.jpg\" alt=\"\" width=\"1280\" height=\"720\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job.jpg 1280w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-300x169.jpg 300w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-1024x576.jpg 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-768x432.jpg 768w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" /></p>\n",
+      "rendered": "<p><strong>Devdaha Medical College and Research Institute</strong>, invites application for the eligible and highly motivated professional candidates for the following position.</p>\n<p><strong>Position:</strong> Lab Technician<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification</strong>: PCL in Medical</p>\n<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification:</strong> PCL Nursing</p>\n<p><strong>Position:</strong> Health Assistant<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification</strong>: PCL General Medicine</p>\n<p><strong>Position:</strong> ANM<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p><strong>Position</strong>: CMA<br />\n<strong>No. of Vacancy:</strong> Few</p>\n<p>Interested candidates are requested to submit an application, curriculum vitae, academic documents, training certificates, copy citizenship and 2 copies of recently taken photographs to <strong>hr.dmcri@gmail.com</strong> or drop them in to the DMC reception. Only selected candidates will be called for interview</p>\n<p><strong>For further information, please contact:</strong></p>\n<p>Devdaha Medical College and Research Institute<br />\nBhaluhi, Devdaha -09, Rupandehi<br />\nWebsite: www.devdahamedicalcollege.edu.np<br />\nContact No.: 071-403001, 071-403002<br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17358\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job.jpg\" alt=\"\" width=\"1280\" height=\"720\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job.jpg 1280w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-300x169.jpg 300w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-1024x576.jpg 1024w, https://merorojgari.com/wp-content/uploads/2026/01/Devdaha-Medical-College-job-768x432.jpg 768w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" /></p>\n",
       "protected": false
     },
     "author": 17,
@@ -69190,944 +70123,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17061"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17060,
-    "date": "2026-01-22T14:18:12",
-    "date_gmt": "2026-01-22T08:33:12",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17060"
-    },
-    "modified": "2026-01-22T14:18:12",
-    "modified_gmt": "2026-01-22T08:33:12",
-    "slug": "senior-finance-manager-2",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/senior-finance-manager-2/",
-    "title": {
-      "rendered": "Senior Finance Manager"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Senior Finance Manager<br />\n<strong>Location:</strong> Kathmandu, Nepal</p>\n<p>Senior Finance Manager will be responsible to ensure maintaining the Country Office financial management and accounting system through accurate accounting, timely reporting, reconciliations, and payments as well as budget forecasting, expenditure tracking and financial analysis in accordance with FHI 360 and agreed financial control policies and procedures as well as local statutory and regulatory and funders’ requirements. S/he will also be responsible ensuring adherence with FHI 360 global and Nepal policy, systems and procedural guidelines as well as local statutory and regulatory, and funders’ requirements.</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Oversee country office financial and accounts management.</li>\n<li>Manage day-to-day financial operations, including accounts payable/receivable, bank reconciliations, journal entries, and documentation.</li>\n<li>Ensure timely and accurate financial data entry into accounting systems—Global Financing and Administration System (GFAS) and tracking tools.</li>\n<li>Ensure maintaining financial records in compliance with FHI 360 policy, and funders’ and local statutory and regulatory requirements.</li>\n<li>Ensure proper functioning of GFAS accounting system and coordinate with HQ/APRH for updates.</li>\n<li>Ensure monthly cash flow statements and timely payments/reimbursements for consultants, implementing partners, and vendors.</li>\n<li>Prepare and submit accurate monthly, quarterly, and annual financial reports to HQ, APRH, and donors.</li>\n<li>Assist in preparing annual workplan and budget as well as budget for new proposals/applications.</li>\n<li>Prepare pipeline/forecasting and track project expenditures against budgets, monitor burn rates, and support management and technical teams on budget realignments.</li>\n<li>Implement internal control systems and monitor financial risk exposure and implement mitigation measures.</li>\n<li>Ensure accuracy of checking accounts, VAT receivable/payable reconciliations, and advance reconciliations.</li>\n<li>Prepare and process monthly payroll and cost allocations.</li>\n<li>Ensure accurate and timely submission of statutory deductions, tax filings, and government tax clearance.</li>\n<li>Perform Social Welfare Council (SWC) related functions as required.</li>\n<li>Carry out internal and external audit functions and ensure timely resolution of audit findings.</li>\n<li>Supervise finance team members, ensuring clarity of roles and adherence to deadlines.</li>\n<li>Perform other related tasks as assigned by the Supervisor, Country Representative, or Project Director.</li>\n</ul>\n<p><strong>REQUIREMENTS</strong></p>\n<ul>\n<li>Master’s degree in finance, accounting, business administration, or a related field with five to seven years of leadership experience in financial management, budgeting, and accounting for complex programs; or a bachelor’s degree with seven to ten years of relevant experience as mentioned.</li>\n<li>Knowledge and experience with finance and grant management system</li>\n<li>Experience with United State Government (USG) and other funders’ financial management as well as contract and grants management</li>\n<li>Proactive in managing multiple tasks, managing and working in the virtual work environment, and flexible and open to managing time working with different teams in different time zones as needed.</li>\n<li>Excellent interpersonal, organizational, communication, coordination and collaboration, team building and management, and problem-solving skills.</li>\n<li>Experience using Microsoft Office tools (Word, Excel, PowerPoint, Teams, Outlook, SharePoint, etc.) an advantage.</li>\n<li>Excellent oral and written English and Nepali including documentation skills.</li>\n<li>Applications are limited to Nepali citizens who meet the eligibility criteria.</li>\n</ul>\n<p>Final deadline for application is<strong> January 29, 2026.</strong></p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a <a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\">competitive benefits package</a>, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click <a href=\"https://fhi.wd1.myworkdayjobs.com/FHI_360_External_Career_Portal\" target=\"_blank\" rel=\"noopener\">here</a> to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/Senior-Finance-Manager_Requisition-2026200088",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      12,
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-17060",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17060",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17060"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17060"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17060"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17060"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17057,
-    "date": "2026-01-22T14:03:21",
-    "date_gmt": "2026-01-22T08:18:21",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17057"
-    },
-    "modified": "2026-01-22T14:03:21",
-    "modified_gmt": "2026-01-22T08:18:21",
-    "slug": "finance-accounts-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/finance-accounts-officer/",
-    "title": {
-      "rendered": "Finance/ Accounts Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Finance/ Accounts Officer<br />\n<strong>Location:</strong> Kathmandu</p>\n<p>The Finance /Accounts Officer manages financial transactions, reconciliations, and reporting for FHI 360 Nepal, ensuring compliance with organizational policies, donor agreements, and statutory and regulatory requirements. The role processes payments, reviews invoices and travel claims, maintains accounts, supports audits, and provides timely financial information to support management decisions.</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Review vouchers/invoices submitted to FHI 360 Nepal in order to verify items claimed are in accordance with an agreement and actually delivered or performed.</li>\n<li>Payment process in Digital Process Automation (DPA) system and Global Finance and Administration System (GFAS).</li>\n<li>Prepare and review wire payment details of payee in online banking system Straight to Bank (S2B).</li>\n<li>Review &amp; ensure accuracy of accounts maintained in S2B.</li>\n<li>Develop monthly and quarterly financial reports for submission to FHI 360 Asia Pacific Regional Hub (APRH) &amp; Headquarters (HQ)</li>\n<li>Ensure proper functioning of FHI 360 GFAS accounting system and coordinates with HQ &amp; APRH as required for ongoing updates.</li>\n<li>Prepare monthly bank reconciliation statement and balance sheet reconciliation for the monthly closing of GFAS</li>\n<li>Upload balance sheet reconciliation in Share point.</li>\n<li>Ensure timely submission of GFAS report to HQ with all supporting documents.</li>\n<li>Preparing weekly cash flow request.</li>\n<li>Update monthly progress indicator.</li>\n<li>Ensure timely payments and reimbursements made for consultants.</li>\n<li>Ensure timely reimbursement for FHI 360 implementing partners agencies in accordance with FHI 360 and funders agreement/contract.</li>\n<li>Maintain regular contacts with the bank, vendors and service contractors as required.</li>\n<li>Review travel claims for correction and verification that the claim conforms with travel authorizations and regulations regarding route, perdiem, accommodation, and use of proper transportation, determining if a travel advance was issued and computing the amount due to the traveler or FHI 360 Nepal.</li>\n<li>Initiate correspondence to verify data, answer queries and obtain additional information on financial transaction as required.</li>\n<li>Assist in carrying out internal and external auditing functions.</li>\n<li>Perform other related duties as assigned by supervisor or Associate Director Finance and Grants/Contracts or Country Representative.</li>\n</ul>\n<p><strong>REQUIREMENTS</strong></p>\n<ul>\n<li>Bachelor’s degree in accounting, finance, or business management with at least three years of relevant work experience. A master’s degree in a related field with relevant experience will be preferred.</li>\n<li>Excellent knowledge and experience with accounting and financial system</li>\n<li>Experience in computerized accounting systems.</li>\n<li>Knowledge of donor compliance and financial regulations, including experience with USG or similar donor-funded projects.</li>\n<li>Ability to assist in internal and external audits, ensuring proper documentation and timely responses to audit queries.</li>\n<li>Experience in preparing and analyzing financial reports, cash flow projections, and reconciliations to support management decision-making.</li>\n<li>Proactive in managing multiple tasks, managing, and working in virtual work environment, and flexible and open for managing time for working with different teams in different time zones as needed.</li>\n<li>Excellent interpersonal, organizational, communication, team building and management, and problem-solving skills.</li>\n<li>Good verbal and written English and Nepali including documentation skills</li>\n<li>Applications are limited to Nepali citizens who meet the eligibility criteria.</li>\n</ul>\n<p>Final deadline for application is <strong>January 29, 2026.</strong></p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a<a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\"> competitive benefits package</a>, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click<a href=\"https://fhi.wd1.myworkdayjobs.com/FHI_360_External_Career_Portal\" target=\"_blank\" rel=\"noopener\"> here </a>to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/Finance--Accounts-Officer_Requisition-2026200090",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      12,
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-17057",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17057",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17057"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17057"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17057"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17057"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17055,
-    "date": "2026-01-22T13:52:02",
-    "date_gmt": "2026-01-22T08:07:02",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17055"
-    },
-    "modified": "2026-01-22T13:52:02",
-    "modified_gmt": "2026-01-22T08:07:02",
-    "slug": "finance-account-specialist",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/finance-account-specialist/",
-    "title": {
-      "rendered": "Finance/ Account Specialist"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Finance/ Account Specialist<br />\n<strong>Location:</strong> Kathmandu</p>\n<p>The Finance/Accounts Specialist supports effective financial management and compliance for FHI 360 Nepal by ensuring accurate accounting, timely reporting, reconciliations, and payments in line with FHI 360, funders’ and local statutory and regulatory requirements. The role supports Global Financing and Administration System (GFAS) operations, and audit processes while coordinating with internal teams, partners, and external stakeholders.</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Review vouchers/invoices submitted to FHI 360 Nepal in order to verify items claimed are in accordance with an agreement and actually delivered or performed.</li>\n<li>Verify and ensure accuracy of maintained checking accounts</li>\n<li>Develop monthly and quarterly financial reports for submission to FHI 360 Asia Pacific Regional Hub (APRH) and finders.</li>\n<li>Assist Finance Manager in developing country office budgets and develop report for management decision-making process.</li>\n<li>Ensure proper functioning of FHI 360 GFAS accounting system and coordinates with HQ &amp; APRH as required for ongoing updates.</li>\n<li>Prepare monthly bank reconciliation statement, VAT receivable and payable reconciliation and advance reconciliation for the monthly closing of GFAS.</li>\n<li>Ensure timely submission of GFAS report to HQ with all supporting documents.</li>\n<li>Prepare monthly cash flow statement.</li>\n<li>Ensure timely payments and reimbursements made for consultants.</li>\n<li>Ensure timely reimbursement for FHI 360 implementing agencies in accordance with FHI 360 and finders’ agreement.</li>\n<li>Maintain regular contacts with the bank, vendors and service contractors as required.</li>\n<li>Review travel claims for correction and verification that the claim conforms with travel authorizations and regulations regarding route, per-diem, accommodation, and use of proper transportation, determining if a travel advance was issued and computing the amount due to the traveler or FHI 360 Nepal.</li>\n<li>Initiates correspondence to verify data, answer queries and obtain additional information on financial transactions as required.</li>\n<li>Review and comments on Sub-awardee Financial Report (SFR) submitted by recipient organization and process for internal review and approval in timely manner.<br />\nEnsure timely update of sub-agreement and amendment budget, monthly SFR and reimbursement into the web-based tracking system.</li>\n<li>Assist in carrying out internal and external auditing functions.<br />\nPerform other related duties as assigned by Supervisor and Country Representative.</li>\n</ul>\n<p><strong>MINIMUM REQUIREMENTS</strong></p>\n<ul>\n<li>Master’s degree in finance, accounting, commerce, business administration, or a related field with three to five years of experience; or a bachelor’s degree with over five years of experience in related field.</li>\n<li>Knowledge and experience with accounting and financial system.</li>\n<li>Proactive in managing multiple tasks, managing and working in the virtual work environment, and flexible and open to managing time working with different teams in different time zones as needed.</li>\n<li>Excellent interpersonal, organizational, communication, coordination and collaboration, team building and management, and problem-solving skills.</li>\n<li>Experience using Microsoft Office tools (Word, Excel, PowerPoint, Teams, Outlook, SharePoint, etc.) an advantage.</li>\n<li>Excellent oral and written English and Nepali including documentation skills)</li>\n<li>Applications are limited to Nepali citizens who meet the eligibility criteria.</li>\n</ul>\n<p>Final deadline for application is<strong> January 29, 2026.</strong></p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a <a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\">competitive benefits package</a>, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click <a href=\"https://fhi.wd1.myworkdayjobs.com/FHI_360_External_Career_Portal\" target=\"_blank\" rel=\"noopener\">here</a> to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/Finance--Account-Specialist_Requisition-2026200091",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-17055",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17055",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17055"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17055"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17055"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17055"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17054,
-    "date": "2026-01-22T13:45:26",
-    "date_gmt": "2026-01-22T08:00:26",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17054"
-    },
-    "modified": "2026-01-22T13:45:26",
-    "modified_gmt": "2026-01-22T08:00:26",
-    "slug": "grants-contracts-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/grants-contracts-officer/",
-    "title": {
-      "rendered": "Grants/Contracts Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Grants/Contracts Officer<br />\n<strong>Location:</strong> Kathmandu</p>\n<p>The Grants/Contracts Officer is responsible for supporting the grants management process, including conducting pre-award assessments, assisting in the development and modification of sub-award packages, and reviewing implementing partners’ financial reports. The role also provides orientation and capacity-building support to partners, ensures compliance with sub-award terms and conditions, and assists partners in addressing accounting and administrative issues to promote effective program implementation.</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Perform pre-award reviews by visiting organization for assessing the organization’s financial and management capacity.</li>\n<li>Review FHI 360’s policies and procedures; and funders’ and local rules, regulations and requirements and ensure adherence with these policies, rules, regulations and requirements.</li>\n<li>Assist to develop sub-agreement budget following FHI 360 standard formats and requirements, review cost in the basis of allocability, reasonability and allowability.</li>\n<li>Prepare slides for financial management and reporting system and provide orientation/training to implementing partners (IPs) as and when required.</li>\n<li>Prepare/maintain checklist and complete file of implementing agencies for Grants/Contracts Unit that includes agreement including modifications, pre-award, financial and administrative review checklist, policies, and procedures of the organization etc.</li>\n<li>Ensure IPs submit the Sub-awardee Monthly Financial Report (SFR) in timely manner, reviews, and comments on monthly SFRs submitted by implementing agency for country office approval and reimbursement of funds.</li>\n<li>Maintains financial information on fund received and monthly expenditure by the implementing agencies and ensures IPs have good fund management system, have sufficient balance in hand and review IPs cash flow projection and their expenditures trends.</li>\n<li>Compile, review and prepare annual inventory report for IPs and maintain details of VAT bills, and forward to Admin unit on monthly basis.</li>\n<li>Conduct financial monitoring visit to examine compliance at IPs level using FHI 360 standard tool, share observation and obtain management response, work with IPs to liquidate the observations, update issue action matrix and subrecipient monitoring tracking sheet.</li>\n<li>Review IPs administrative/operation policy and make sure the policy is applied consistently and complied with the FHI 360, funders and statutory and regulatory requirements.</li>\n<li>Assists in carrying out internal and external auditing functions, draft report for management as required for internal and external sharing.</li>\n<li>Oversees/prepare implementing agencies inventory control system and maintain details of VAT bills submitted by implementing agencies.</li>\n<li>Update Sub Award Tracking (SAT), Digital Process Automation (DPA) and other files as necessary in the document repository.</li>\n<li>Extend support to Country Office Accounts unit in reviewing documents as required for payment processing.</li>\n<li>Perform other related duties as assigned by supervisor or Associate Director Finance and Grants/Contracts or Country Representative.</li>\n</ul>\n<p><strong>REQUIREMENTS</strong></p>\n<ul>\n<li>Bachelor’s degree in accounting or business management with three years of work experience in a relevant field. Master’s degree with experience relevant field preferable.</li>\n<li>Knowledge and experience with finance and grant management system.</li>\n<li>Experience with Unites State Government (USG) contract and grants management.</li>\n<li>Experience in working effectively across various teams within the project and organization, and building and sustaining positive working relationships with NGOs, private sectors, government, and other stakeholders.</li>\n<li>Knowledge of donor compliance requirements, including USG rules and regulations, and ability to ensure sub-award adherence to these requirements.</li>\n<li>Experience in conducting pre-award assessments, financial monitoring, and capacity-building activities for implementing partners.</li>\n<li>Strong analytical skills with attention to detail, including the ability to review and interpret financial reports and budgets to support effective grants management.</li>\n<li>Proactive in managing multiple tasks, managing and working in the virtual work environment, and flexible and open to managing time working with different teams in different time zones as needed.</li>\n<li>Excellent interpersonal, organizational, communication, coordination and collaboration, team building and management, and problem-solving skills.</li>\n<li>Experience using Microsoft Office tools (Word, Excel, PowerPoint, Teams, Outlook, SharePoint, etc.) an advantage.</li>\n<li>Excellent oral and written English and Nepali including documentation skills</li>\n<li>Applications are limited to Nepali citizens who meet the eligibility criteria.</li>\n</ul>\n<p>Final Deadline for application is <strong>January 29, 2026.</strong></p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a <a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\">competitive benefits package</a>, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click <a href=\"https://fhi.wd1.myworkdayjobs.com/FHI_360_External_Career_Portal\" target=\"_blank\" rel=\"noopener\">here </a>to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/Grants-Contracts-Officer_Requisition-2026200083",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-17054",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17054",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17054"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17054"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17054"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17054"
         }
       ],
       "curies": [
