@@ -1,5 +1,239 @@
 [
   {
+    "id": 18961,
+    "date": "2026-02-20T11:47:52",
+    "date_gmt": "2026-02-20T06:02:52",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18961"
+    },
+    "modified": "2026-02-20T11:48:01",
+    "modified_gmt": "2026-02-20T06:03:01",
+    "slug": "professor-associate-professor",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/professor-associate-professor/",
+    "title": {
+      "rendered": "Professor/Associate Professor"
+    },
+    "content": {
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-18962\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/shahid-dashrath-chand-health-science-university-job-job-1.jpg\" alt=\"\" width=\"625\" height=\"983\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/shahid-dashrath-chand-health-science-university-job-job-1.jpg 625w, https://merorojgari.com/wp-content/uploads/2026/02/shahid-dashrath-chand-health-science-university-job-job-1-191x300.jpg 191w\" sizes=\"(max-width: 625px) 100vw, 625px\" /></p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 18963,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kailali",
+      "_application": "",
+      "_company_name": "Martyr Dasharath Chand University of Health Science (MDCUHS)",
+      "_company_website": "https://www.dcuhs.edu.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      9
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      76
+    ],
+    "class_list": {
+      "0": "post-18961",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kailali",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18961",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/18963"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18961"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18961"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18961"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18961"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 18960,
     "date": "2026-02-20T11:22:29",
     "date_gmt": "2026-02-20T05:37:29",
@@ -715,7 +949,7 @@
       "rendered": "ANM, Pharmacy Assistant, Security Guard, Office Helper, Sweeper, Medical Lab Technologist, Public Health Officer, Medical Officer, Nepali Teacher"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-18953\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1.png\" alt=\"\" width=\"711\" height=\"1123\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1.png 711w, https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1-190x300.png 190w, https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1-648x1024.png 648w\" sizes=\"(max-width: 711px) 100vw, 711px\" /></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-18953\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1.png\" alt=\"\" width=\"711\" height=\"1123\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1.png 711w, https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1-190x300.png 190w, https://merorojgari.com/wp-content/uploads/2026/02/Parsa-Gaupalika-Sarlahi-job-1-648x1024.png 648w\" sizes=\"(max-width: 711px) 100vw, 711px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -1416,7 +1650,7 @@
       "rendered": "Job in Nepal Telecom &#8211; 80 Vacancies"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-18946\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy.png\" alt=\"\" width=\"920\" height=\"684\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy.png 920w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy-300x223.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy-768x571.png 768w\" sizes=\"(max-width: 920px) 100vw, 920px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-17556\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job.png\" alt=\"\" width=\"1264\" height=\"5225\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job.png 1264w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job-248x1024.png 248w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job-768x3175.png 768w\" sizes=\"(max-width: 1264px) 100vw, 1264px\" /><br />\n<em> Source: Gorkhapatra, 30 January, 2025</em></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-18946\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy.png\" alt=\"\" width=\"920\" height=\"684\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy.png 920w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy-300x223.png 300w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-Extends-Vacancy-768x571.png 768w\" sizes=\"(max-width: 920px) 100vw, 920px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-17556\" src=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job.png\" alt=\"\" width=\"1264\" height=\"5225\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job.png 1264w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job-248x1024.png 248w, https://merorojgari.com/wp-content/uploads/2026/01/Nepal-Telecom-job-768x3175.png 768w\" sizes=\"(max-width: 1264px) 100vw, 1264px\" /><br />\n<em> Source: Gorkhapatra, 30 January, 2025</em></p>\n",
       "protected": false
     },
     "author": 2,
@@ -46583,7 +46817,7 @@
       "rendered": "Assistant Accountant"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-18055\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job.png\" alt=\"\" width=\"774\" height=\"570\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job.png 774w, https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job-300x221.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job-768x566.png 768w\" sizes=\"(max-width: 774px) 100vw, 774px\" /><br />\n<strong>Position:</strong> Assistant Accountant<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Jhapa</p>\n<p><strong>Kankai Multiple Campus</strong><br />\n<strong>Phone No.:</strong> 023-552153, 552853, 9842786416</p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-18055\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job.png\" alt=\"\" width=\"774\" height=\"570\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job.png 774w, https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job-300x221.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/kankai-multiple-campus-job-768x566.png 768w\" sizes=\"(max-width: 774px) 100vw, 774px\" /><br />\n<strong>Position:</strong> Assistant Accountant<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Jhapa</p>\n<p><strong>Kankai Multiple Campus</strong><br />\n<strong>Phone No.:</strong> 023-552153, 552853, 9842786416</p>\n",
       "protected": false
     },
     "author": 2,
@@ -47051,7 +47285,7 @@
       "rendered": "Government Job in Lumbini Pradesh &#8211; 4th Level Assistant"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job.png\" alt=\"\" width=\"1229\" height=\"5332\" class=\"alignnone size-full wp-image-18050\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job.png 1229w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-69x300.png 69w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-236x1024.png 236w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-768x3332.png 768w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-354x1536.png 354w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-472x2048.png 472w\" sizes=\"(max-width: 1229px) 100vw, 1229px\" /><br />\n<em> Source: Gorkhapatra, 6 February, 2026 </em></p>\n",
+      "rendered": "<p><img decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job.png\" alt=\"\" width=\"1229\" height=\"5332\" class=\"alignnone size-full wp-image-18050\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job.png 1229w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-69x300.png 69w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-236x1024.png 236w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-768x3332.png 768w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-354x1536.png 354w, https://merorojgari.com/wp-content/uploads/2026/02/lumbini-pradesh-lok-sewa-aayog-job-472x2048.png 472w\" sizes=\"(max-width: 1229px) 100vw, 1229px\" /><br />\n<em> Source: Gorkhapatra, 6 February, 2026 </em></p>\n",
       "protected": false
     },
     "author": 2,
@@ -49388,7 +49622,7 @@
       "rendered": "Officer / Managerial Level"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-18015\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10.png\" alt=\"\" width=\"1000\" height=\"881\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10-300x264.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10-768x677.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position:</strong> Officer / Managerial Level<br />\n<strong>Vacancies:</strong> Few<br />\n<strong>Qualification:</strong> CA / CPA / ACCA or equivalent<br />\n<strong>Age:</strong> 21–40 years<br />\n<strong>Salary &amp; Benefits:</strong> As per institution rules</p>\n<p><strong>How to Apply:</strong></p>\n<p>Download the application form from</p>\n<p><a href=\"https://www.nationalmicrofinance.com.np/career\" target=\"_blank\" rel=\"noopener\">https://www.nationalmicrofinance.com.np/career</a></p>\n<p>Send the completed form with required documents within 15 days to:<br />\n<strong>nationalmfvacancy@gmail.com</strong></p>\n<p>National Laghubitta Bittiya Sanstha Ltd.<br />\n011-665572 / 665573</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-18015\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10.png\" alt=\"\" width=\"1000\" height=\"881\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10-300x264.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/National-Laghubitta-Bittiya-Sanstha-Ltd-job-10-768x677.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><br />\n<strong>Position:</strong> Officer / Managerial Level<br />\n<strong>Vacancies:</strong> Few<br />\n<strong>Qualification:</strong> CA / CPA / ACCA or equivalent<br />\n<strong>Age:</strong> 21–40 years<br />\n<strong>Salary &amp; Benefits:</strong> As per institution rules</p>\n<p><strong>How to Apply:</strong></p>\n<p>Download the application form from</p>\n<p><a href=\"https://www.nationalmicrofinance.com.np/career\" target=\"_blank\" rel=\"noopener\">https://www.nationalmicrofinance.com.np/career</a></p>\n<p>Send the completed form with required documents within 15 days to:<br />\n<strong>nationalmfvacancy@gmail.com</strong></p>\n<p>National Laghubitta Bittiya Sanstha Ltd.<br />\n011-665572 / 665573</p>\n",
       "protected": false
     },
     "author": 2,
@@ -69946,240 +70180,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17570"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17565,
-    "date": "2026-01-30T09:15:17",
-    "date_gmt": "2026-01-30T03:30:17",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17565"
-    },
-    "modified": "2026-01-30T09:21:22",
-    "modified_gmt": "2026-01-30T03:36:22",
-    "slug": "kathmandu-cancer-center-bhaktapur-full-time-staff-nurse-assistant-pharmacist",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/kathmandu-cancer-center-bhaktapur-full-time-staff-nurse-assistant-pharmacist/",
-    "title": {
-      "rendered": "Staff Nurse, Assistant Pharmacist"
-    },
-    "content": {
-      "rendered": "<p>We are seeking a skilled Staff Nurse and Assistant Pharmacist to join our oncology tam and support the delivery of high-quality, compassionate patient care</p>\n<p><strong>Position:</strong> Assistant Pharmacist<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification:</strong> Must have valid Nepal pharmacy Council License</p>\n<hr />\n<p><strong>Position:</strong> Staff Nurse<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Qualification</strong>: NNC Registered Nurse</p>\n<p>SEND YOUR CV TO: <strong>hr@kccrc.org</strong></p>\n<p><strong>or more information:</strong></p>\n<p>Nala Road, Tathali- Bhaktapur<br />\n+977-9818226237, 01-50901629<br />\nwww.kccrc.org</p>\n<p><strong>Application Deadline:</strong> 29th February, 2026</p>\n",
-      "protected": false
-    },
-    "author": 1077,
-    "featured_media": 17567,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Bhaktapur",
-      "_application": "hr@kccrc.org",
-      "_company_name": "Kathmandu Cancer Center",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      14
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      61
-    ],
-    "class_list": {
-      "0": "post-17565",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-bhaktapur",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17565",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/1077"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/17567"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17565"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17565"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17565"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17565"
         }
       ],
       "curies": [
