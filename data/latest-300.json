@@ -1,5 +1,237 @@
 [
   {
+    "id": 19081,
+    "date": "2026-02-22T10:31:00",
+    "date_gmt": "2026-02-22T04:46:00",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=19081"
+    },
+    "modified": "2026-02-22T10:31:00",
+    "modified_gmt": "2026-02-22T04:46:00",
+    "slug": "finance-head",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/finance-head/",
+    "title": {
+      "rendered": "Finance Head"
+    },
+    "content": {
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-19082\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Laxmi-laghubitta-job-1.png\" alt=\"\" width=\"747\" height=\"925\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Laxmi-laghubitta-job-1.png 747w, https://merorojgari.com/wp-content/uploads/2026/02/Laxmi-laghubitta-job-1-242x300.png 242w\" sizes=\"(max-width: 747px) 100vw, 747px\" /></p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 9935,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://laxmilaghu.com.np/career/",
+      "_company_name": "Laxmi Laghubitta Bittiya Sanstha Limited",
+      "_company_website": "https://laxmilaghu.com.np",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      12,
+      26
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-19081",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/19081",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/9935"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=19081"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=19081"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=19081"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=19081"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 19077,
     "date": "2026-02-22T09:42:38",
     "date_gmt": "2026-02-22T03:57:38",
@@ -484,7 +716,7 @@
       "rendered": "Chief Financial Officer, Deputy Department Manager, Department Manager, Commercial Management Post, Secretary of News and Publicity Post"
     },
     "content": {
-      "rendered": "<p><strong>Position</strong>: Department Manager of Commercial Management<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 3 years of relevant experience in Commercial management</p>\n<hr />\n<p><strong>Position:</strong> Deputy Department Manager of Safety and Environment Management<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 1 years of relevant experience</p>\n<hr />\n<p><strong>Position</strong>: Chief Financial Officer<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualification &amp; Experience</strong>: Charter Accountant/Associate Degree or Equivalent,5 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Commercial Management Post<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 2 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Engineering Management Post<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s in Engineering/Associate Degree or equivalent, 2-3 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Contract Management Post<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 1-2 years of relevant experience with any academic degree</p>\n<hr />\n<p><strong>Position:</strong> Department Manager of Electromechanical and Material Management<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience</strong>: Bachelor’s in Engineering/Associate Degree or Equivalent, 3 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Secretary of News and Publicity Post<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualification &amp; Experience</strong>: Bachelor’s/Associate Degree or Equivalent, 1-2 years of relevant experience</p>\n<hr />\n<p><strong>Note:</strong> Fluent in Chines and English language would be highly preferable</p>\n<p><strong>Manang Marsyangdi Hydropower Project</strong></p>\n<p>Sanepa 02, Lalitpur, Nepal</p>\n<p><strong>Email</strong>: Address: hrmcps05@gmail.com<br />\n<img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-19073\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job.png\" alt=\"\" width=\"927\" height=\"781\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job.png 927w, https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job-300x253.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job-768x647.png 768w\" sizes=\"(max-width: 927px) 100vw, 927px\" /></p>\n",
+      "rendered": "<p><strong>Position</strong>: Department Manager of Commercial Management<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 3 years of relevant experience in Commercial management</p>\n<hr />\n<p><strong>Position:</strong> Deputy Department Manager of Safety and Environment Management<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 1 years of relevant experience</p>\n<hr />\n<p><strong>Position</strong>: Chief Financial Officer<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualification &amp; Experience</strong>: Charter Accountant/Associate Degree or Equivalent,5 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Commercial Management Post<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 2 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Engineering Management Post<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s in Engineering/Associate Degree or equivalent, 2-3 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Contract Management Post<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience:</strong> Bachelor’s/Associate Degree or Equivalent, 1-2 years of relevant experience with any academic degree</p>\n<hr />\n<p><strong>Position:</strong> Department Manager of Electromechanical and Material Management<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification &amp; Experience</strong>: Bachelor’s in Engineering/Associate Degree or Equivalent, 3 years of relevant experience</p>\n<hr />\n<p><strong>Position:</strong> Secretary of News and Publicity Post<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Qualification &amp; Experience</strong>: Bachelor’s/Associate Degree or Equivalent, 1-2 years of relevant experience</p>\n<hr />\n<p><strong>Note:</strong> Fluent in Chines and English language would be highly preferable</p>\n<p><strong>Manang Marsyangdi Hydropower Project</strong></p>\n<p>Sanepa 02, Lalitpur, Nepal</p>\n<p><strong>Email</strong>: Address: hrmcps05@gmail.com<br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-19073\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job.png\" alt=\"\" width=\"927\" height=\"781\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job.png 927w, https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job-300x253.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Manang-Marsyangdi-Hydropower-Project-job-768x647.png 768w\" sizes=\"(max-width: 927px) 100vw, 927px\" /></p>\n",
       "protected": false
     },
     "author": 1692,
@@ -957,7 +1189,7 @@
       "rendered": "Principal"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-19066\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Nepal-Army-job.png\" alt=\"\" width=\"531\" height=\"862\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Nepal-Army-job.png 531w, https://merorojgari.com/wp-content/uploads/2026/02/Nepal-Army-job-185x300.png 185w\" sizes=\"(max-width: 531px) 100vw, 531px\" /><br />\n<em> Source: Gorkhapatra, 22 February, 2026 </em></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-19066\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Nepal-Army-job.png\" alt=\"\" width=\"531\" height=\"862\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Nepal-Army-job.png 531w, https://merorojgari.com/wp-content/uploads/2026/02/Nepal-Army-job-185x300.png 185w\" sizes=\"(max-width: 531px) 100vw, 531px\" /><br />\n<em> Source: Gorkhapatra, 22 February, 2026 </em></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69939,238 +70171,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17774"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17768,
-    "date": "2026-02-02T09:52:01",
-    "date_gmt": "2026-02-02T04:07:01",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17768"
-    },
-    "modified": "2026-02-02T09:52:30",
-    "modified_gmt": "2026-02-02T04:07:30",
-    "slug": "administrative-officer-3",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/administrative-officer-3/",
-    "title": {
-      "rendered": "Administrative Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position:</strong> Administrative Officer (GSS Category I)<br />\n<strong>No. of vacancy:</strong> One</p>\n<p>Interested candidates are requested to apply for the post with submition of a cover letter, hard copies of applications form in STAC Format, an updated CV with one recent passport size photograph, attested educational certificates b Dept. of Consular Service, MOFA and other relevant testimonials to<strong> director@saarctb.org</strong> on or before <strong>2nd March 2026.</strong> The applications may be addressed to the Director, SAARC Tuberculosis and HIV/AIDS Centre, Thimi, Bhaktapur.</p>\n<p><strong>Note</strong>: No telephone inquiries/untoward influences will be entertained. If your application is a good fit, we will follow up with you directly for the further process.</p>\n<p>Who already applied for the position, advertised dated 3rd Dec. 2025, no need to re-apply again.</p>\n<p>All rights are reserved by the STAC. Only Shortlisted candidates will be called for further selection processes defined by internal selection committee.<br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/SAARC-job.png\" alt=\"\" width=\"704\" height=\"366\" class=\"alignnone size-full wp-image-17769\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/SAARC-job.png 704w, https://merorojgari.com/wp-content/uploads/2026/02/SAARC-job-300x156.png 300w\" sizes=\"(max-width: 704px) 100vw, 704px\" /></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 5643,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "",
-      "_application": "",
-      "_company_name": "SAARC Tuberculosis and HIV/AIDS Centre (STAC)",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      30,
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [],
-    "class_list": {
-      "0": "post-17768",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "7": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17768",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/5643"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17768"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17768"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17768"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17768"
         }
       ],
       "curies": [
