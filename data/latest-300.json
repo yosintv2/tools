@@ -1,13 +1,483 @@
 [
   {
+    "id": 19299,
+    "date": "2026-02-25T14:48:15",
+    "date_gmt": "2026-02-25T09:03:15",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=19299"
+    },
+    "modified": "2026-02-25T14:48:15",
+    "modified_gmt": "2026-02-25T09:03:15",
+    "slug": "realignment-technician",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/realignment-technician/",
+    "title": {
+      "rendered": "Realignment Technician"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: Realignment Technician<br />\n<strong>Location:</strong> Narayanghat</p>\n<p><strong>Job Description</strong></p>\n<ul>\n<li>Install DTH antenna for new customer connections.</li>\n<li>Attend onsite service requests as assigned by the support team.</li>\n<li>Perform antenna realignment and troubleshooting for existing customers.</li>\n<li>Visit sub-dealers regularly and submit activity reports.</li>\n<li>Handle MDU (Multi Dwelling Unit) service calls as required.</li>\n<li>Coordinate daily work assignments with shift supervisors.</li>\n<li>Ensure timely reporting and proper documentation of completed tasks.</li>\n</ul>\n<p><strong>Job Specification:</strong></p>\n<ul>\n<li>Minimum +2 completed (Bachelor’s running preferred).</li>\n<li>Freshers are encouraged to apply.</li>\n<li>Prior experience in DTH/ISP/Field Technical Support is an advantage.</li>\n<li>Must have a valid two-wheeler driving license and own vehicle.</li>\n<li>Good communication and customer handling skills.</li>\n<li>Ability to manage multiple field tasks efficiently.</li>\n<li>Willingness to travel within assigned territory.</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 248,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Narayanghat",
+      "_application": "https://dishhome.rigojobs.com/job-detail?jobId=86",
+      "_company_name": "Dish Media Network Limited",
+      "_company_website": "https://dishhome.com.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      25
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      144
+    ],
+    "class_list": {
+      "0": "post-19299",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-narayanghat",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/19299",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/248"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=19299"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=19299"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=19299"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=19299"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 19297,
+    "date": "2026-02-25T14:33:15",
+    "date_gmt": "2026-02-25T08:48:15",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=19297"
+    },
+    "modified": "2026-02-25T14:41:37",
+    "modified_gmt": "2026-02-25T08:56:37",
+    "slug": "creasion-kathmandu-full-time-admin-and-finance-officer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/creasion-kathmandu-full-time-admin-and-finance-officer/",
+    "title": {
+      "rendered": "Admin and Finance Officer"
+    },
+    "content": {
+      "rendered": "<p><strong>Title</strong>: Admin and Finance Officer</p>\n<p><strong>Organization: </strong>CREASION</p>\n<p><strong>Duty Station:</strong> Kathmandu, Nepal</p>\n<p><strong>Reports To:</strong> Program Director</p>\n<p><strong>Employment Type</strong>: Full-Time</p>\n<p><strong>Position Summary</strong></p>\n<p>The Admin and Finance Officer will be responsible for managing the organization’s financial systems, ensuring compliance with donor and statutory requirements, and overseeing administrative operations. The position requires strong financial management skills, attention to detail, and the ability to maintain transparency and accountability in all processes.</p>\n<p><strong>Key Responsibilities</strong></p>\n<p><strong>A. Financial Management</strong></p>\n<ul>\n<li>Maintain accurate financial records in accordance with organizational policies and donor requirements.</li>\n<li>Prepare vouchers (payment, receipt, journal) and ensure proper documentation and filing.</li>\n<li>Manage cash flow, bank transactions, and reconciliations.</li>\n<li>Prepare monthly, quarterly, and annual financial reports.</li>\n<li>Support budget preparation and budget monitoring for projects.</li>\n<li>Ensure compliance with donor financial guidelines and reporting requirements.</li>\n<li>Process staff salary, tax deductions, and statutory payments.</li>\n<li>Coordinate annual audits and respond to audit queries.</li>\n<li>Maintain fixed asset register and inventory records.</li>\n<li>Ensure timely submission of tax, ETDS, and other statutory obligations.</li>\n</ul>\n<p><strong>B. Administrative Management</strong></p>\n<ul>\n<li>Oversee daily administrative operations of the office.</li>\n<li>Maintain HR records including contracts, leave records, and personnel files.</li>\n<li>Support recruitment processes (vacancy announcements, documentation, contracts).</li>\n<li>Manage office procurement processes ensuring transparency and competitiveness.</li>\n<li>Maintain inventory and office supplies management.</li>\n<li>Coordinate logistics for meetings, workshops, and events.</li>\n<li>Ensure compliance with Social Welfare Council (SWC) and other regulatory requirements.</li>\n<li>Manage service contracts (rent, utilities, vendors).</li>\n<li>Support documentation and compliance for project approvals and renewals.</li>\n</ul>\n<p><strong>C. Compliance &amp; Governance</strong></p>\n<ul>\n<li>Ensure adherence to internal financial policies and procedures.</li>\n<li>Maintain proper documentation for grants and agreements.</li>\n<li>Support organizational governance documentation and board meetings logistics.</li>\n</ul>\n<p><strong>Required Qualifications and Experience</strong></p>\n<ul>\n<li>Bachelor’s degree in Finance, Accounting, Business Administration, or related field (Master’s preferred).</li>\n<li>Minimum 3 years of experience in finance and administration, preferably in NGO/INGO sector.</li>\n<li>Strong knowledge of accounting software (e.g., Tally, QuickBooks, or similar).</li>\n<li>Good understanding of Nepal tax laws, VAT, and statutory compliance.</li>\n<li>Experience working with donor-funded projects.</li>\n<li>Strong organizational and time management skills.</li>\n<li>Proficiency in MS Office (Excel, Word, Outlook).</li>\n<li>Excellent written and verbal communication skills in English and Nepali.</li>\n</ul>\n<p><strong>Core Competencies</strong></p>\n<ul>\n<li>High level of integrity and accountability.</li>\n<li>Strong analytical and problem-solving skills.</li>\n<li>Attention to detail.</li>\n<li>Ability to work under pressure and meet deadlines.</li>\n<li>Team-oriented with good interpersonal skills.</li>\n<li>Commitment to CREASION’s mission and values.</li>\n</ul>\n<p>Please submit your CV and Cover letter at<strong> jobs@creasion.org</strong> before<strong> 10th March, 2026</strong></p>\n",
+      "protected": false
+    },
+    "author": 1028,
+    "featured_media": 9136,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "",
+      "_company_name": "Creasion",
+      "_company_website": "https://creasion.org/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      12,
+      30,
+      11
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-19297",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/19297",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1028"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/9136"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=19297"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=19297"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=19297"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=19297"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 19295,
     "date": "2026-02-25T14:15:52",
     "date_gmt": "2026-02-25T08:30:52",
     "guid": {
       "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=19295"
     },
-    "modified": "2026-02-25T14:22:55",
-    "modified_gmt": "2026-02-25T08:37:55",
+    "modified": "2026-02-25T14:28:37",
+    "modified_gmt": "2026-02-25T08:43:37",
     "slug": "shangri-la-development-association-makwanpur-full-time-technical-officer",
     "status": "publish",
     "type": "job_listing",
@@ -16,7 +486,7 @@
       "rendered": "Technical Officer"
     },
     "content": {
-      "rendered": "<p><strong>Background:</strong> Shangri-La Development Association (SDA) is a non-government, non-profit, youth-led organization established in 2014 with the aim of promoting inclusive community development. SDA has implemented multiple integrated development initiatives including the Shangri-La Sustainable Local Initiative (SSLI Phase I to V), Reconstruction Projects, COVID response initiatives and various One-time Support Projects. SSLI is the multi-sector project that integrates education, health, agriculture and support for vulnerable groups.</p>\n<p>The SSLI project is implemented in Kailash Rural Municipality (wards 3, 4 and 7) of Makwanpur District, and in Karnali Secondary School, Anamnagar, Jumla, targeting approximately 1800 Chepang individuals in Makwanpur and 40 deaf children in Jumla.</p>\n<p>As part of its program implementation, the organization plans to undertake repairment of 34 houses reconstructed under the Shangri-La Reconstruction and Development Project (SRDP), and carry out construction of Agricultural Learning Center (ALC) at its own land.</p>\n<p>To ensure technical quality, cost-effectiveness, and compliance with national standards, the organization intends to engage a qualified and experienced individual personnel.</p>\n<p><strong>Position Title</strong>: Technical Officer</p>\n<p><strong>Duty Station:</strong> Field Office, SDA, Kailash Rural Municipality, Makwanpur District</p>\n<p><strong>Contract Type:</strong> Consultant</p>\n<p><strong>Contract Period:</strong> Initially for 6 months’ subject to extension based on project requirement</p>\n<p><strong>Position Overview:</strong> The technical officer will provide technical leadership in planning, design, BoQ, bid document preparation, contractor selection, supervision and quality &amp; cost control of repair of reconstructed houses and agriculture learning center projects. The technical officer will work closely with the field and head office team along with local government to ensure successful implementation of the planned infrastructure projects.</p>\n<p><strong>Major Duties and Responsibilities:</strong></p>\n<ul>\n<li>Provide design, cost estimation, specifications and schedules of the planned infrastructure projects.</li>\n<li>Preparation of bid documents and support in contractor selection.</li>\n<li>Day-to-day supervision of the works in accordance with the drawings and technical specification.</li>\n<li>Provide technical support to the contractor and house owners for the repair of the houses.</li>\n<li>Manage time, cost, and quality aspects of the work done by the contractor/house owners.</li>\n<li>Verify the quality and quantities of materials and ensure that materials and equipment required in the field for the construction are well receipts, stored and delivered safely to the site.</li>\n<li>Solve the technical issues and challenges during the construction of work.</li>\n<li>Prepare and/or verify necessary construction and financial documents.</li>\n<li>Produce decent-quality progress update pictures and final Before-After pictures of the house repair works.</li>\n<li>Prepare monitoring reports, progress reports, and work completion reports for SDA management, stakeholders and donor reporting.</li>\n<li>Perform any other duties related to the scope of the assignment as determined by the Supervisor.</li>\n<li>Terms of Payment: Consultant&#8217;s fee will be paid as per the contract rate, which will be taxable. The payment will be done after the completion of the assignment monthly.</li>\n</ul>\n<p>Please mention your gross salary expectation in the application.</p>\n<p><strong>Qualifications and Experience:</strong> Bachelor degree in civil engineering with minimum of 1 year of experience or diploma in civil engineering with minimum of 4 years of experience. Experience in design, estimation and supervision of building infrastructure projects. Experience in engaging external stakeholders is desired.</p>\n<p><strong>Skills and Abilities:</strong></p>\n<ul>\n<li>Commanding skills in Auto-CAD and MS Office Packages.</li>\n<li>Knowledge of Public Procurement Act/Regulations, Construction Norms &amp; Standards and Computational Techniques.</li>\n<li>Excellent communication, negotiation, and interpersonal skills.</li>\n<li>Ability to work independently and collaboratively in a multidisciplinary environment.</li>\n<li>Strong organizational skills with the ability to manage multiple projects and deadlines.</li>\n<li>Able to communicate and write quality reports in English.\n<p><strong>Application Procedure</strong>: To apply for this role please send a copy of your <strong>CV (maximum two pages) and a cover letter (maximum one page) </strong>outlining why you feel you are right for this role.</li>\n</ul>\n<p>Please send your application to <strong>hr@sdanepal.org</strong> with the subject line Technical Officer – YOUR NAME.</p>\n<p>Only Short-listed candidates will be contacted for a written exam and interview. The organization reserves the right to cancel or reject any application. Written exam and interviews will be at SDA’s Office, Lalitpur, or will be held on an online platform.</p>\n",
+      "rendered": "<p><strong>Background:</strong> Shangri-La Development Association (SDA) is a non-government, non-profit, youth-led organization established in 2014 with the aim of promoting inclusive community development. SDA has implemented multiple integrated development initiatives including the Shangri-La Sustainable Local Initiative (SSLI Phase I to V), Reconstruction Projects, COVID response initiatives and various One-time Support Projects. SSLI is the multi-sector project that integrates education, health, agriculture and support for vulnerable groups.</p>\n<p>The SSLI project is implemented in Kailash Rural Municipality (wards 3, 4 and 7) of Makwanpur District, and in Karnali Secondary School, Anamnagar, Jumla, targeting approximately 1800 Chepang individuals in Makwanpur and 40 deaf children in Jumla.</p>\n<p>As part of its program implementation, the organization plans to undertake repairment of 34 houses reconstructed under the Shangri-La Reconstruction and Development Project (SRDP), and carry out construction of Agricultural Learning Center (ALC) at its own land.</p>\n<p>To ensure technical quality, cost-effectiveness, and compliance with national standards, the organization intends to engage a qualified and experienced individual personnel.</p>\n<p><strong>Position Title</strong>: Technical Officer</p>\n<p><strong>Duty Station:</strong> Field Office, SDA, Kailash Rural Municipality, Makwanpur District</p>\n<p><strong>Contract Type:</strong> Consultant</p>\n<p><strong>Contract Period:</strong> Initially for 6 months’ subject to extension based on project requirement</p>\n<p><strong>Position Overview:</strong> The technical officer will provide technical leadership in planning, design, BoQ, bid document preparation, contractor selection, supervision and quality &amp; cost control of repair of reconstructed houses and agriculture learning center projects. The technical officer will work closely with the field and head office team along with local government to ensure successful implementation of the planned infrastructure projects.</p>\n<p><strong>Major Duties and Responsibilities:</strong></p>\n<ul>\n<li>Provide design, cost estimation, specifications and schedules of the planned infrastructure projects.</li>\n<li>Preparation of bid documents and support in contractor selection.</li>\n<li>Day-to-day supervision of the works in accordance with the drawings and technical specification.</li>\n<li>Provide technical support to the contractor and house owners for the repair of the houses.</li>\n<li>Manage time, cost, and quality aspects of the work done by the contractor/house owners.</li>\n<li>Verify the quality and quantities of materials and ensure that materials and equipment required in the field for the construction are well receipts, stored and delivered safely to the site.</li>\n<li>Solve the technical issues and challenges during the construction of work.</li>\n<li>Prepare and/or verify necessary construction and financial documents.</li>\n<li>Produce decent-quality progress update pictures and final Before-After pictures of the house repair works.</li>\n<li>Prepare monitoring reports, progress reports, and work completion reports for SDA management, stakeholders and donor reporting.</li>\n<li>Perform any other duties related to the scope of the assignment as determined by the Supervisor.</li>\n<li>Terms of Payment: Consultant&#8217;s fee will be paid as per the contract rate, which will be taxable. The payment will be done after the completion of the assignment monthly.</li>\n</ul>\n<p>Please mention your gross salary expectation in the application.</p>\n<p><strong>Qualifications and Experience:</strong> Bachelor degree in civil engineering with minimum of 1 year of experience or diploma in civil engineering with minimum of 4 years of experience. Experience in design, estimation and supervision of building infrastructure projects. Experience in engaging external stakeholders is desired.</p>\n<p><strong>Skills and Abilities:</strong></p>\n<ul>\n<li>Commanding skills in Auto-CAD and MS Office Packages.</li>\n<li>Knowledge of Public Procurement Act/Regulations, Construction Norms &amp; Standards and Computational Techniques.</li>\n<li>Excellent communication, negotiation, and interpersonal skills.</li>\n<li>Ability to work independently and collaboratively in a multidisciplinary environment.</li>\n<li>Strong organizational skills with the ability to manage multiple projects and deadlines.</li>\n<li>Able to communicate and write quality reports in English.</li>\n</ul>\n<p><strong>Application Procedure</strong>: To apply for this role please send a copy of your <strong>CV (maximum two pages) and a cover letter (maximum one page) </strong>outlining why you feel you are right for this role.</p>\n<p>Please send your application to <strong>hr@sdanepal.org</strong> with the subject line Technical Officer – YOUR NAME.</p>\n<p>Only Short-listed candidates will be contacted for a written exam and interview. The organization reserves the right to cancel or reject any application. Written exam and interviews will be at SDA’s Office, Lalitpur, or will be held on an online platform.</p>\n",
       "protected": false
     },
     "author": 800,
@@ -69737,468 +70207,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17967"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17966,
-    "date": "2026-02-05T06:57:29",
-    "date_gmt": "2026-02-05T01:12:29",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17966"
-    },
-    "modified": "2026-02-05T06:57:29",
-    "modified_gmt": "2026-02-05T01:12:29",
-    "slug": "officer-marketing",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/officer-marketing/",
-    "title": {
-      "rendered": "Officer &#8211; Marketing"
-    },
-    "content": {
-      "rendered": "<p><strong> Junior Officer/ Officer / Senior Officer – (Few)</strong></p>\n<ul>\n<li> Inside Valley &amp; Outside Valley Branches</li>\n<li>Should be graduate in any discipline</li>\n<li>Should have 3-5 years of experience in insurance sector, MNCS or Similar field</li>\n<li>Candidate should possess sound knowledge of non-life insurance sector and its Products</li>\n<li>Knowledge of current marketing trends, techniques, and best practices</li>\n</ul>\n<p><strong>Other Specification:</strong></p>\n<ul>\n<li>Excellent interpersonal communication skills and ability to make the teamwork</li>\n<li>Sales Oriented and Target-driven with good influence both internal and external stakeholders</li>\n<li>Sales-driven with a target-oriented approach. Be Customer Focused and a relationship Builder</li>\n<li>Ability to adjust strategies based on market trends and customer needs.</li>\n<li>Should be a two-wheeler license Holder</li>\n</ul>\n<p><strong>Employment Type:</strong> Full Time</p>\n<p><strong>Offered Salary:</strong> As Per Company rules</p>\n<p><strong>Job Description:</strong></p>\n<ul>\n<li>Identify the target customer, schedule and follow through on calls and visit to the perspective customer</li>\n<li>Maintain Client data and Prepare daily and monthly reports for managements review</li>\n<li>Provide ongoing support to clients by answering queries, resolving issues, and advising on the best insurance solutions.</li>\n<li> Regularly follow up with customers to ensure satisfaction and retention.</li>\n<li>Meet or exceed sales targets as set by management.</li>\n</ul>\n<p><strong>Application ends February 24, 2026</strong></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 2958,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "",
-      "_application": "https://siddharthapremier.rigojobs.com/job-detail?jobId=40",
-      "_company_name": "Siddhartha Premier Insurance Limited",
-      "_company_website": "https://siddharthapremier.com.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      39
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [],
-    "class_list": {
-      "0": "post-17966",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "7": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17966",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/2958"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17966"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17966"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17966"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17966"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 17958,
-    "date": "2026-02-05T06:52:36",
-    "date_gmt": "2026-02-05T01:07:36",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=17958"
-    },
-    "modified": "2026-02-05T06:52:36",
-    "modified_gmt": "2026-02-05T01:07:36",
-    "slug": "assistant-level-marketing-2",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/assistant-level-marketing-2/",
-    "title": {
-      "rendered": "Assistant Level &#8211; Marketing"
-    },
-    "content": {
-      "rendered": "<p><strong>Assistant Level &#8211; Marketing</strong></p>\n<p><strong>Job Description</strong></p>\n<p><strong>Junior Assistant- (Few)</strong></p>\n<ul>\n<li> Inside Valley &amp; Outside Valley Branches</li>\n<li>Candidates Pursuing Bachelor’s Degree in any discipline</li>\n<li> Fresher’s are encouraged to apply</li>\n<li>Experience in Similar field would be added advantage</li>\n</ul>\n<p><strong>Assistant/ Senior Assistant- (Few)</strong></p>\n<ul>\n<li> Inside Valley &amp; Outside Valley Branches</li>\n<li>Candidates Pursuing Bachelor’s Degree in any discipline</li>\n<li>Prior experience in insurance sector, MNCS would be added advantage</li>\n</ul>\n<p><strong>Other Specification:</strong></p>\n<ul>\n<li>Excellent interpersonal communication skills and ability to make the teamwork</li>\n<li>Sales Oriented and Target-driven with good influence both internal and external stakeholders</li>\n<li>Sales-driven with a target-oriented approach. Be Customer Focused and a relationship Builder</li>\n<li>Ability to adjust strategies based on market trends and customer needs.</li>\n<li>Should be a two-wheeler license Holder</li>\n</ul>\n<p><strong>Employment Type:</strong> Full Time</p>\n<p><strong>Offered Salary:</strong> As Per Company rules</p>\n<p><strong>Job Description:</strong></p>\n<ul>\n<li> Identify the target customer, schedule and follow through on calls and visit to the perspective customer</li>\n<li> Maintain Client data and Prepare daily and monthly reports for managements review</li>\n<li>Provide ongoing support to clients by answering queries, resolving issues, and advising on the best insurance solutions.</li>\n<li>Regularly follow up with customers to ensure satisfaction and retention.</li>\n<li>Meet or exceed sales targets as set by management.</li>\n</ul>\n<p><strong>Application ends February 24, 2026</strong></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 17959,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "",
-      "_application": "https://siddharthapremier.rigojobs.com/job-detail?jobId=39",
-      "_company_name": "Siddhartha Premier Insurance Limited",
-      "_company_website": "https://siddharthapremier.com.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      26
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [],
-    "class_list": {
-      "0": "post-17958",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "7": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/17958",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/17959"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=17958"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=17958"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=17958"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=17958"
         }
       ],
       "curies": [
