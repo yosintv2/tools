@@ -1,5 +1,929 @@
 [
   {
+    "id": 20041,
+    "date": "2026-03-12T13:46:25",
+    "date_gmt": "2026-03-12T08:01:25",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=20041"
+    },
+    "modified": "2026-03-12T13:46:33",
+    "modified_gmt": "2026-03-12T08:01:33",
+    "slug": "data-scientist",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/data-scientist/",
+    "title": {
+      "rendered": "Data Scientist"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: Data Scientist (For AI Projects)- Officer Level (O/O1/O2)<br />\n<strong>Job code :</strong> DATA-SCI-03-2026</p>\n<p><strong>Job Summary:</strong></p>\n<p>The Data Scientist will be responsible for applying advanced analytical methods to extract valuable insights, predict market trends, detect fraud and develop predictive models crucial for the bank&#8217;s new AI services.</p>\n<p><strong>Key Responsibilities:</strong></p>\n<ul>\n<li>Model Development: Design, build, train and evaluate machine learning models (e.g., predictive analytics, NLP, deep learning) to solve key business problems (e.g., credit scoring, personalized banking, risk assessment).</li>\n<li>Exploratory Data Analysis (EDA): Perform in-depth statistical analysis to understand complex data structures and identify critical features.</li>\n<li>MLeOps Support: Collaborate with Data Engineers and System Administrators to facilitate the operationalization and monitoring of models in a production environment.</li>\n<li>Stakeholder Communication: Present complex findings and model outcomes clearly to non-technical audiences and business leaders.</li>\n</ul>\n<p><strong>Required Skills &amp; Competencies:</strong></p>\n<ul>\n<li>Master&#8217;s or Ph.D. in a quantitative field (Statistics, Computer Science, Mathematics, or equivalent).</li>\n<li>Strong foundation in statistical modeling, machine learning algorithms and experimental design.</li>\n<li>Proficiency in Python (libraries like Pandas, Scikit-learn, TensorFlow/PyTorch) and R.</li>\n<li>Experience in a regulated industry like banking or finance is a plus.</li>\n<li>Ability to translate business requirements into specific, solvable data science problems.</li>\n</ul>\n<p><strong>Prerequisites for applying:</strong></p>\n<ul>\n<li>Minimum 2.5 CGPA or 2nd Division in Master&#8217;s or Ph.D. in a quantitative field in Computer Science/ Mathematics/ Statistics / Information System/Computer Applications or any IT / quantitative related or equivalent degree from a recognized University.</li>\n<li>Age not exceeding 40 years as of 26th March 2026.</li>\n<li>Minimum 3 years of relevant work experience in supervisory role in Bank and Financial Institution / Fintech Companies or related field.</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 5361,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://www.nabilbank.com/career/detail/data-scientist-for-ai-projects-officer-level",
+      "_company_name": "Nabil Bank Limited",
+      "_company_website": "https://www.nabilbank.com/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      26
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-20041",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/20041",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/5361"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=20041"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=20041"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=20041"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=20041"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 20039,
+    "date": "2026-03-12T13:41:42",
+    "date_gmt": "2026-03-12T07:56:42",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=20039"
+    },
+    "modified": "2026-03-12T13:41:51",
+    "modified_gmt": "2026-03-12T07:56:51",
+    "slug": "data-engineer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/data-engineer/",
+    "title": {
+      "rendered": "Data Engineer"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: Data Engineer Officer Level (O/O1/O2)</p>\n<p><strong>Job code</strong> : DATA-ENG-03-2026</p>\n<p><strong>Job Summary:</strong></p>\n<p>The Data Engineer will be the foundational pillar of our AI initiatives, responsible for designing, building and maintaining the scalable data pipelines and infrastructure required to fuel our machine learning models.</p>\n<p><strong>Key Responsibilities:</strong></p>\n<ul>\n<li>ETL/ELT Development: Design, construct and manage data pipelines (ETL/ELT) using technologies like Python, SQL and cloud services to ingest, transform and load high-volume, heterogeneous data.</li>\n<li>Data Lake/Warehouse Management: Build and optimize our data lake and data warehouse infrastructure (e.g., Snowflake, AWS Redshift, Hadoop) for performance and reliability.</li>\n<li>Data Governance: Ensure data quality, security and compliance standards are met throughout the data lifecycle.</li>\n<li>Collaboration: Work closely with Data Scientists to prepare datasets for model training, validation and deployment.</li>\n</ul>\n<p><strong>Required Skills &amp; Competencies:</strong></p>\n<ul>\n<li>Bachelor&#8217;s or Master&#8217;s degree in Computer Science, Engineering, or a related quantitative field.</li>\n<li>Proven experience in building and optimizing big data pipelines.</li>\n<li>Expertise in SQL and Python (or Scala/Java).</li>\n<li>Experience with cloud platforms (AWS, Azure, or GCP) and related data services.</li>\n<li>Knowledge of workflow management tools (e.g., Apache Airflow)</li>\n</ul>\n<p><strong>Prerequisites for applying:</strong></p>\n<ul>\n<li>Minimum 2.5 CGPA or 2nd Division in Bachelor’s or Master’s degree in Computer Science/ Information Technology/ Information System/Computer</li>\n<li>Applications or any IT / quantitative related or equivalent degree from a recognized University.</li>\n<li>Age not exceeding 40 years as of 26th March 2026.</li>\n<li>Minimum 3 years of relevant work experience in supervisory role in Bank and Financial Institution / Fintech Companies or related field.</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 5361,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://www.nabilbank.com/career/detail/data-engineer-officer-level",
+      "_company_name": "Nabil Bank Limited",
+      "_company_website": "https://www.nabilbank.com/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      26
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-20039",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/20039",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/5361"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=20039"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=20039"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=20039"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=20039"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 20038,
+    "date": "2026-03-12T13:34:04",
+    "date_gmt": "2026-03-12T07:49:04",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=20038"
+    },
+    "modified": "2026-03-12T13:34:04",
+    "modified_gmt": "2026-03-12T07:49:04",
+    "slug": "system-administrator-for-system-monitoring-infrastructure-support-officer-level",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/system-administrator-for-system-monitoring-infrastructure-support-officer-level/",
+    "title": {
+      "rendered": "System Administrator (For System Monitoring &#038; Infrastructure Support) &#8211; Officer Level"
+    },
+    "content": {
+      "rendered": "<p><strong>System Administrator (For System Monitoring &amp; Infrastructure Support) &#8211; Officer Level (O/O1/O2)</strong></p>\n<p><strong>Job code : </strong>SYS-ADM-AI-03-2026</p>\n<p><strong>Job Summary:</strong></p>\n<p>The System Administrator will ensure the stability, security and high performance of all internal systems, with a specific focus on supporting the infrastructure required for our new AI projects and maintaining crucial system monitoring tools.</p>\n<p><strong>Key Responsibilities:</strong></p>\n<ul>\n<li>System Monitoring &amp; Maintenance: Proactively monitor critical bank systems, network performance and AI-specific production environments to ensure 24/7 availability and troubleshoot complex issues.</li>\n<li>Infrastructure Management: Administer, configure and maintain Linux/Windows servers, virtualization environments (VMware/Hyper-V) and containerization technologies (Docker, Kubernetes).</li>\n<li>AI/ML Environment Support: Manage the compute resources (e.g., GPU clusters, specialized servers) and dependencies required for data scientists and engineers.</li>\n<li>Security &amp; Backups: Implement and maintain robust security protocols, access controls and disaster recovery/backup strategies.</li>\n</ul>\n<p><strong>Required Skills &amp; Competencies:</strong></p>\n<ul>\n<li>3+ years of experience as a System Administrator or in a DevOps role.</li>\n<li>Strong expertise in Linux and Windows Server administration.</li>\n<li>Familiarity with network protocols, firewall management and virtualization.</li>\n<li>Experience with monitoring tools (e.g., Prometheus, Grafana, Nagios, ELK Stack) and scripting for automation (Bash/PowerShell).</li>\n</ul>\n<p><strong>Prerequisites for applying:</strong></p>\n<ul>\n<li>Minimum 2.5 CGPA or 2nd Division in Bachelor’s or Master’s degree in Computer Science/ Information Technology/ Information System/ Computer</li>\n<li>Engineering /Computer Applications or any IT related or equivalent degree from a recognized University.</li>\n<li>Age not exceeding 40 years as of 26th March 2026.</li>\n<li>Minimum 3 years of relevant work experience in supervisory role in Bank and Financial Institution / Fintech Companies or related field.</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 5361,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://www.nabilbank.com/career/detail/system-administrator-for-system-monitoring--infrastructure-support--officer-level",
+      "_company_name": "Nabil Bank Limited",
+      "_company_website": "https://www.nabilbank.com/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      26
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-20038",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/20038",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/5361"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=20038"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=20038"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=20038"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=20038"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 20037,
+    "date": "2026-03-12T13:29:36",
+    "date_gmt": "2026-03-12T07:44:36",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=20037"
+    },
+    "modified": "2026-03-12T13:30:11",
+    "modified_gmt": "2026-03-12T07:45:11",
+    "slug": "gold-tester",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/gold-tester/",
+    "title": {
+      "rendered": "Gold Tester"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: Gold Tester (Contract)</p>\n<p><strong>Job code</strong> : Gold Tester March 2026</p>\n<p><strong>Job Summary:</strong></p>\n<p>The Gold Tester will be responsible for assessing the quality and authenticity of gold items, ensuring accuracy and compliance with the Bank&#8217;s or organization&#8217;s standards and procedures. This role requires precision, attention to detail, and expertise in testing techniques and tools.</p>\n<p><strong>Key Responsibilities:</strong></p>\n<ul>\n<li>Conduct tests to determine the purity, weight, and authenticity of gold and other precious metals.</li>\n<li>Use appropriate testing equipment such as acid tests, electronic gold testers, and XRF machines.</li>\n<li>Maintain accurate records of test results and prepare required reports.</li>\n<li>Ensure compliance with organizational standards and regulatory guidelines during all testing procedures.</li>\n<li>Safeguard and maintain the integrity of gold items during testing.</li>\n<li>Provide expert advice on gold quality and valuations to stakeholders.</li>\n<li>Identify and report counterfeit or substandard gold items.</li>\n</ul>\n<p><strong>Required Job Knowledge Competencies</strong></p>\n<ul>\n<li>Conduct tests to determine the purity, weight, and authenticity of gold and other precious metals.</li>\n<li>Use appropriate equipment and methods, such as acid tests, electronic gold testers, and XRF machines.</li>\n<li>Maintain accurate records of test results and prepare reports as required.</li>\n<li>Ensure compliance with organizational standards and regulatory guidelines in all testing procedures.</li>\n<li>Safeguard and maintain the integrity of all gold items during testing.</li>\n<li>Provide expert advice on gold quality and valuations to relevant stakeholders.</li>\n<li>Identify and report counterfeit or substandard items.</li>\n<li>Strong knowledge of gold testing techniques and tools.</li>\n<li>Familiarity with industry standards for gold purity and valuation.</li>\n<li>Attention to detail and precision in handling precious items.</li>\n<li>Good understanding of safety measures and proper handling procedures.</li>\n<li>Proficiency in record keeping and report preparation.</li>\n<li>Ability to work independently and manage time effectively.</li>\n<li>Strong ethical standards and trustworthiness.</li>\n</ul>\n<p><strong>Prerequisites for applying:</strong></p>\n<ul>\n<li>Minimum Education Qualification &#8211; SEE/SLC.</li>\n<li>Age exceeding 30 years as of 26th March 2026.</li>\n<li>Candidate must possess working experience as a Gold tester in A, B or C class Bank and Financial Institutions licensed by Nepal Rastra Bank for Minimum 5 years.</li>\n<li>Candidates must be proficient in handling PC.</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 5361,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://www.nabilbank.com/career/detail/gold-tester-contract",
+      "_company_name": "Nabil Bank Limited",
+      "_company_website": "https://www.nabilbank.com",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      26
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-20037",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/20037",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/5361"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=20037"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=20037"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=20037"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=20037"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 20036,
     "date": "2026-03-12T13:17:41",
     "date_gmt": "2026-03-12T07:32:41",
@@ -22478,7 +23402,7 @@
       "rendered": "IT Officer, Librarian, Security Guard, Nurse, School Floor Assistant, Kitchen Helper, Teacher &#8211; English , Mathematics, Science, Nepali, Computer"
     },
     "content": {
-      "rendered": "<p><strong>ADMIN</strong></p>\n<p><strong>Position</strong>: IT Officer<br />\n<strong>Position</strong>: Librarian<br />\n<strong>Position</strong>: Security Guard<br />\n<strong>Position</strong>: Nurse<br />\n<strong>Position</strong>: Kitchen Helper<br />\n<strong>Position</strong>: School Floor Assistant</p>\n<p><strong>ECA | CCA</strong></p>\n<p><strong>Position</strong>: Sports Teacher (Specialist in Swimming, Basketball, and Futsal)<br />\n<strong>Position</strong>: Music Teacher | Danch Teacher<br />\n<strong>Position</strong>: Art and Crafts Teacher – having knowledge of pottery<br />\n<strong>Position</strong>: Language Teachers (Sanskrit, Chinese and French)</p>\n<p>(Minimum 3 years of experience in similar roles)</p>\n<p><strong>TEACHERS</strong></p>\n<p><strong>Position</strong>: Grade Teachers from PG to UKG (Montessori Trained with experience)<br />\n<strong>Position</strong>: Preschool Incharge (Montessori Trained with experience in similar role)<br />\n<strong>Position</strong>: Grade Teachers from grade 1 to grade 3</p>\n<p>(Minimum Bachelor’s with at least 3 years of working experience in similar roles)</p>\n<p><strong>Position</strong>: Subject Teachers (Basic Level) English | Mathematics | Science | Nepali | Computer</p>\n<p>(Minimum Bachelors degree with at least 3 years experience. Experience in progressive schools will be given priority)</p>\n<p><strong>Subject Teachers</strong> (Secondary) English | Nepali | Social | Studies | Mathematics | Science | Computer | Accountancy</p>\n<p>(Minimum Master’s Degree with 3 years of experience. Graduates of STEAM Education will be given priority for Science and Mathematics teachers)</p>\n<p><strong>APPLY NOW</strong></p>\n<p>CV &amp; Covering Letter Submission Deadline: 29th Falgun, 2082</p>\n<p>Budhanilkantha-8, Bhangal</p>\n<p><strong>Phone No.:</strong> 01-5924906, 5924907</p>\n<p><strong>Email:</strong> hr@samyakschool.edu.np<br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-19535\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10.png\" alt=\"\" width=\"1000\" height=\"1343\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10-223x300.png 223w, https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10-762x1024.png 762w, https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10-768x1031.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>ADMIN</strong></p>\n<p><strong>Position</strong>: IT Officer<br />\n<strong>Position</strong>: Librarian<br />\n<strong>Position</strong>: Security Guard<br />\n<strong>Position</strong>: Nurse<br />\n<strong>Position</strong>: Kitchen Helper<br />\n<strong>Position</strong>: School Floor Assistant</p>\n<p><strong>ECA | CCA</strong></p>\n<p><strong>Position</strong>: Sports Teacher (Specialist in Swimming, Basketball, and Futsal)<br />\n<strong>Position</strong>: Music Teacher | Danch Teacher<br />\n<strong>Position</strong>: Art and Crafts Teacher – having knowledge of pottery<br />\n<strong>Position</strong>: Language Teachers (Sanskrit, Chinese and French)</p>\n<p>(Minimum 3 years of experience in similar roles)</p>\n<p><strong>TEACHERS</strong></p>\n<p><strong>Position</strong>: Grade Teachers from PG to UKG (Montessori Trained with experience)<br />\n<strong>Position</strong>: Preschool Incharge (Montessori Trained with experience in similar role)<br />\n<strong>Position</strong>: Grade Teachers from grade 1 to grade 3</p>\n<p>(Minimum Bachelor’s with at least 3 years of working experience in similar roles)</p>\n<p><strong>Position</strong>: Subject Teachers (Basic Level) English | Mathematics | Science | Nepali | Computer</p>\n<p>(Minimum Bachelors degree with at least 3 years experience. Experience in progressive schools will be given priority)</p>\n<p><strong>Subject Teachers</strong> (Secondary) English | Nepali | Social | Studies | Mathematics | Science | Computer | Accountancy</p>\n<p>(Minimum Master’s Degree with 3 years of experience. Graduates of STEAM Education will be given priority for Science and Mathematics teachers)</p>\n<p><strong>APPLY NOW</strong></p>\n<p>CV &amp; Covering Letter Submission Deadline: 29th Falgun, 2082</p>\n<p>Budhanilkantha-8, Bhangal</p>\n<p><strong>Phone No.:</strong> 01-5924906, 5924907</p>\n<p><strong>Email:</strong> hr@samyakschool.edu.np<br />\n<img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-19535\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10.png\" alt=\"\" width=\"1000\" height=\"1343\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10-223x300.png 223w, https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10-762x1024.png 762w, https://merorojgari.com/wp-content/uploads/2026/03/Samyak-School-job-10-768x1031.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 1731,
@@ -23182,7 +24106,7 @@
       "rendered": "Research Assistant"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-19527\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job.png\" alt=\"\" width=\"1321\" height=\"815\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job.png 1321w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-300x185.png 300w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1024x632.png 1024w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-768x474.png 768w\" sizes=\"(max-width: 1321px) 100vw, 1321px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-19528\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1.png\" alt=\"\" width=\"1271\" height=\"774\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1.png 1271w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1-300x183.png 300w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1-1024x624.png 1024w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1-768x468.png 768w\" sizes=\"(max-width: 1271px) 100vw, 1271px\" /><br />\n<strong>Position</strong>: Research Assistant<br />\n<strong>No. of Vacancy:</strong> 4<br />\n<strong>Location</strong>: Chitwan</p>\n<p><strong>TPO Nepal</strong></p>\n<p><strong>Email</strong>: hrtponepal@tponepal.org.np</p>\n<p><strong>Phone No.:</strong> 9860937293, 9841760038</p>\n<p><strong>Application Deadline:</strong> 14 March, 2026</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-19527\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job.png\" alt=\"\" width=\"1321\" height=\"815\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job.png 1321w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-300x185.png 300w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1024x632.png 1024w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-768x474.png 768w\" sizes=\"(max-width: 1321px) 100vw, 1321px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-19528\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1.png\" alt=\"\" width=\"1271\" height=\"774\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1.png 1271w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1-300x183.png 300w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1-1024x624.png 1024w, https://merorojgari.com/wp-content/uploads/2026/03/TPO-Nepal-job-1-768x468.png 768w\" sizes=\"(max-width: 1271px) 100vw, 1271px\" /><br />\n<strong>Position</strong>: Research Assistant<br />\n<strong>No. of Vacancy:</strong> 4<br />\n<strong>Location</strong>: Chitwan</p>\n<p><strong>TPO Nepal</strong></p>\n<p><strong>Email</strong>: hrtponepal@tponepal.org.np</p>\n<p><strong>Phone No.:</strong> 9860937293, 9841760038</p>\n<p><strong>Application Deadline:</strong> 14 March, 2026</p>\n",
       "protected": false
     },
     "author": 468,
@@ -23416,7 +24340,7 @@
       "rendered": "Grade Teacher, English Teacher"
     },
     "content": {
-      "rendered": "<p><strong>Position</strong>: Grade Teacher (Grade 1)</p>\n<p><strong>Position</strong>: English Teacher (Grade 4-7)</p>\n<p>Interested candidates may apply along with a covering letter stating the position, an updated CV with a photograph, and a full contact detail by email at <strong>kanjirowa.careers@gmail.com</strong> or drop in person at the given address by <strong>17 hrs. 30 Falgun 2082.</strong></p>\n<p><strong>Salary</strong>: No bar for deserving candidates</p>\n<p><strong>Location</strong>: Koteshwor, Kathmandu</p>\n<p><strong>Contact No.:</strong> 01-5100433, 5100479<br />\n<img fetchpriority=\"high\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1.png\" alt=\"\" width=\"1000\" height=\"1000\" class=\"alignnone size-full wp-image-19517\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1-300x300.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1-768x768.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>Position</strong>: Grade Teacher (Grade 1)</p>\n<p><strong>Position</strong>: English Teacher (Grade 4-7)</p>\n<p>Interested candidates may apply along with a covering letter stating the position, an updated CV with a photograph, and a full contact detail by email at <strong>kanjirowa.careers@gmail.com</strong> or drop in person at the given address by <strong>17 hrs. 30 Falgun 2082.</strong></p>\n<p><strong>Salary</strong>: No bar for deserving candidates</p>\n<p><strong>Location</strong>: Koteshwor, Kathmandu</p>\n<p><strong>Contact No.:</strong> 01-5100433, 5100479<br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1.png\" alt=\"\" width=\"1000\" height=\"1000\" class=\"alignnone size-full wp-image-19517\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1-300x300.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/02/Kanjirowa-National-Secondary-School-job-1-768x768.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 1582,
@@ -26226,7 +27150,7 @@
       "rendered": "Teacher &#8211; Art, English, Maths, Nepali, Social Studies, Sports and ECA Coaches"
     },
     "content": {
-      "rendered": "<p><strong>Teachers for Primary Level School</strong></p>\n<p><strong>Subject</strong>: Art, English, Maths, Nepali, Social Studies</p>\n<p><strong>Teacher For Middle School</strong></p>\n<p><strong>Subject</strong>: English, Maths, Nepali</p>\n<p><strong>Sports and ECA Coaches</strong></p>\n<p>Badminton, E0sports, Swimming, Volleyball</p>\n<p><strong>Email</strong>: career@gems.edu.np</p>\n<p>Application Deadline: <strong>March 13, 2026</strong><br />\n<img decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1.png\" alt=\"\" width=\"1000\" height=\"1250\" class=\"alignnone size-full wp-image-19486\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1-240x300.png 240w, https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1-819x1024.png 819w, https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1-768x960.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>Teachers for Primary Level School</strong></p>\n<p><strong>Subject</strong>: Art, English, Maths, Nepali, Social Studies</p>\n<p><strong>Teacher For Middle School</strong></p>\n<p><strong>Subject</strong>: English, Maths, Nepali</p>\n<p><strong>Sports and ECA Coaches</strong></p>\n<p>Badminton, E0sports, Swimming, Volleyball</p>\n<p><strong>Email</strong>: career@gems.edu.np</p>\n<p>Application Deadline: <strong>March 13, 2026</strong><br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1.png\" alt=\"\" width=\"1000\" height=\"1250\" class=\"alignnone size-full wp-image-19486\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1-240x300.png 240w, https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1-819x1024.png 819w, https://merorojgari.com/wp-content/uploads/2026/02/GEMS-School-job-1-768x960.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 1727,
@@ -26460,7 +27384,7 @@
       "rendered": "Accountant, Office Assistant, Librarian, Science Lab Assistant, ECA Coordinator, Child Psychologist, Computer Operator, Front Desk Officer, Teacher &#8211; English, Nepali, Mathematics, Science (Physics/Chemistry/Biology), Social Studies, Computer Science"
     },
     "content": {
-      "rendered": "<p><strong>Pathshala Nepal Foundation</strong> invites applications from motivated, qualified, and committed professionals to join our progressive academic team for the following teaching positions:</p>\n<p><strong>Teaching Positions</strong></p>\n<p><strong>Basic Level (Grades 1–8) and Pre-Uni / Secondary Level (Grades 9–12)</strong><br />\n<strong>Subjects:</strong> English, Nepali, Mathematics, Science (Physics/Chemistry/Biology), Social Studies, Computer Science</p>\n<p><strong>Qualifications &amp; Requirements</strong></p>\n<ul>\n<li>Bachelor’s Degree in the relevant subject (Master’s Degree preferred for Pre-Uni level)</li>\n<li>Minimum 2 years of teaching experience in a recognized institution</li>\n<li>Strong command of English and Nepali</li>\n<li>Sound knowledge of curriculum planning, assessment practices, and classroom management</li>\n<li>Ability to integrate technology effectively in teaching and learning</li>\n<li>Commitment to continuous professional development and participation in training programs</li>\n<li>Strong teamwork, communication skills, and professional ethics</li>\n</ul>\n<p><strong>Other Positions</strong></p>\n<p><strong>Office Assistant:</strong> Support daily administrative operations, maintain records, and ensure smooth office functioning.<br />\n<strong>Librarian:</strong> Manage library resources, promote reading culture, and assist students in research.<br />\n<strong>Science Lab Assistant:</strong> Prepare lab materials, assist in practical classes, and ensure laboratory safety and maintenance.<br />\n<strong>ECA Coordinator:</strong> Plan and supervise extracurricular activities that foster holistic student development.<br />\n<strong>Child Psychologist:</strong> Provide emotional and behavioral support to students through assessment, counseling, and collaboration with parents and teachers.<br />\n<strong>Computer Operator:</strong> Maintain digital records, manage school software systems, and provide basic technical support.<br />\n<strong>Front Desk Officer:</strong> Manage front office operations, welcome visitors, and handle inquiries and appointments professionally.<br />\n<strong>Accountant:</strong> Maintain accurate financial records, manage billing and payroll, prepare reports, and ensure compliance with financial regulations.</p>\n<p>Interested candidates are requested to submit their updated CV along with testimonials before the deadline.</p>\n<p><strong>Deadline:</strong> 27 February 2026 (Online submission accepted until 7 March 2026)</p>\n<p>Email: <strong>pnflalitpur@pathshala.edu.np | pnfbaneshwor@pathshala.edu.np</strong></p>\n<p><strong>In-person submission</strong>: 8:30 AM – 5:00 PM</p>\n<p><strong>Address:</strong></p>\n<p><strong>Baneshwor School</strong></p>\n<p>New Baneshwor, Kathmandu, Nepal</p>\n<p>M8VM+Q4 Kathmandu</p>\n<p>pnfbaneshwor@pathshala.edu.np,</p>\n<p>01-5244451, 01-5244653, 9851444451</p>\n<p>Bagdol School<br />\nBagdol, Lalitpur, Nepal</p>\n<p>M893+H5 Lalitpur</p>\n<p>pnflalitpur@pathshala.edu.np</p>\n<p>01-5190010, 01-5191044, 9851491044<br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-19482\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10.png\" alt=\"\" width=\"1000\" height=\"1000\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10-300x300.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10-768x768.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
+      "rendered": "<p><strong>Pathshala Nepal Foundation</strong> invites applications from motivated, qualified, and committed professionals to join our progressive academic team for the following teaching positions:</p>\n<p><strong>Teaching Positions</strong></p>\n<p><strong>Basic Level (Grades 1–8) and Pre-Uni / Secondary Level (Grades 9–12)</strong><br />\n<strong>Subjects:</strong> English, Nepali, Mathematics, Science (Physics/Chemistry/Biology), Social Studies, Computer Science</p>\n<p><strong>Qualifications &amp; Requirements</strong></p>\n<ul>\n<li>Bachelor’s Degree in the relevant subject (Master’s Degree preferred for Pre-Uni level)</li>\n<li>Minimum 2 years of teaching experience in a recognized institution</li>\n<li>Strong command of English and Nepali</li>\n<li>Sound knowledge of curriculum planning, assessment practices, and classroom management</li>\n<li>Ability to integrate technology effectively in teaching and learning</li>\n<li>Commitment to continuous professional development and participation in training programs</li>\n<li>Strong teamwork, communication skills, and professional ethics</li>\n</ul>\n<p><strong>Other Positions</strong></p>\n<p><strong>Office Assistant:</strong> Support daily administrative operations, maintain records, and ensure smooth office functioning.<br />\n<strong>Librarian:</strong> Manage library resources, promote reading culture, and assist students in research.<br />\n<strong>Science Lab Assistant:</strong> Prepare lab materials, assist in practical classes, and ensure laboratory safety and maintenance.<br />\n<strong>ECA Coordinator:</strong> Plan and supervise extracurricular activities that foster holistic student development.<br />\n<strong>Child Psychologist:</strong> Provide emotional and behavioral support to students through assessment, counseling, and collaboration with parents and teachers.<br />\n<strong>Computer Operator:</strong> Maintain digital records, manage school software systems, and provide basic technical support.<br />\n<strong>Front Desk Officer:</strong> Manage front office operations, welcome visitors, and handle inquiries and appointments professionally.<br />\n<strong>Accountant:</strong> Maintain accurate financial records, manage billing and payroll, prepare reports, and ensure compliance with financial regulations.</p>\n<p>Interested candidates are requested to submit their updated CV along with testimonials before the deadline.</p>\n<p><strong>Deadline:</strong> 27 February 2026 (Online submission accepted until 7 March 2026)</p>\n<p>Email: <strong>pnflalitpur@pathshala.edu.np | pnfbaneshwor@pathshala.edu.np</strong></p>\n<p><strong>In-person submission</strong>: 8:30 AM – 5:00 PM</p>\n<p><strong>Address:</strong></p>\n<p><strong>Baneshwor School</strong></p>\n<p>New Baneshwor, Kathmandu, Nepal</p>\n<p>M8VM+Q4 Kathmandu</p>\n<p>pnfbaneshwor@pathshala.edu.np,</p>\n<p>01-5244451, 01-5244653, 9851444451</p>\n<p>Bagdol School<br />\nBagdol, Lalitpur, Nepal</p>\n<p>M893+H5 Lalitpur</p>\n<p>pnflalitpur@pathshala.edu.np</p>\n<p>01-5190010, 01-5191044, 9851491044<br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-19482\" src=\"https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10.png\" alt=\"\" width=\"1000\" height=\"1000\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10.png 1000w, https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10-300x300.png 300w, https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/02/Pathshala-Nepal-Foundation-job-10-768x768.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></p>\n",
       "protected": false
     },
     "author": 1726,
@@ -69317,942 +70241,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18711"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 18708,
-    "date": "2026-02-16T15:38:48",
-    "date_gmt": "2026-02-16T09:53:48",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18708"
-    },
-    "modified": "2026-02-16T15:38:48",
-    "modified_gmt": "2026-02-16T09:53:48",
-    "slug": "zoonotic-advisor",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/zoonotic-advisor/",
-    "title": {
-      "rendered": "Zoonotic Advisor"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Zoonotic Advisor<br />\n<strong>Location</strong>: Kathmandu, Nepal</p>\n<p>FHI 360 is a global organization that mobilizes research, resources and relationships so that people everywhere can access the opportunities they need to lead full, healthy lives. For more than 50 years, we have worked to develop bold solutions to global challenges and create measurable results through research and application of scientific breakthroughs. We listen to, learn from and work with communities to expand social and economic opportunity, improve health and well-being, respond to humanitarian crises.</p>\n<p>Since 1977, FHI 360 Nepal has been a trusted partner in transforming the country’s health and development landscape. Leveraging a blend of global expertise and local insights, we have consistently strengthened community capacities, enhanced systems, and reinforced institutional frameworks for sustainable impact. In close partnership with the Government of Nepal (GoN), civil society, academia, and the private sector, FHI 360 Nepal delivers integrated programs across critical sectors. Our initiatives span essential health services—including HIV, maternal, newborn and child health (MNCH) and nutrition—procurement and supply chain management (PSM) for life-saving drugs, global health security (GHS)—including laboratory strengthening, antimicrobial resistance (AMR), disease surveillance, evidence-based public health messaging and community engagement, and health emergency management—and air quality management.</p>\n<p>The U.S. government’s (USG) GHS program provides life-saving assistance to prevent, detect, and respond to infectious disease threats which pose risks for public health outbreaks that could cost lives. As part of the USG’s GHS program, the STRengthening Infectious disease DEtection Systems (STRIDES) Activity advances cross-sectoral efforts to successfully identify, manage, and respond to infectious disease threats; detect and prevent further outbreaks; and instill confidence and trust in a country’s disease detection and surveillance structures and services.</p>\n<p><strong>POSITION : Zoonotic Advisor</strong></p>\n<p>The Zoonotic Advisor will provide applied technical leadership and implementation support for STRIDES activities related to the prevention, detection, and response to priority zoonotic and emerging infectious diseases. The position focuses on operationalizing multisectoral interventions on the ground, translating national strategies and technical guidance into practical actions at regional, local, and facility levels. Working under the overall technical leadership of the Technical Director and in collaboration with other technical advisors and technical specialists, the Advisor will support the delivery of zoonotic disease activities across surveillance, laboratory systems, biosafety and biosecurity (BSBS), emergency preparedness, and outbreak response—particularly in strategic-depth areas with elevated zoonotic, cross-border, wildlife, and animal–human interface risks. The role emphasizes field implementation, coordination with subnational counterparts, and hands-on technical support, rather than national policy formulation. The Advisor will work closely with local government agencies such as the Central Veterinary Laboratory (CVL), other laboratories, and implementing partners to ensure that zoonotic disease interventions are coherent, timely, and operationally effective.</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Support implementation of zoonotic disease prevention, detection, and response activities aligned with the STRIDES Nepal workplan, including those related to priority pathogens with epidemic or pandemic potential with a focus on operationalizing multisectoral approaches at national and subnational levels<br />\nAssist in operationalizing multisectoral approaches at the national, regional and local levels, strengthening coordination among human health, animal health, wildlife, and other relevant sectors through technical working groups and platforms.</li>\n<li>Support coordination with local agencies to harmonize surveillance, outbreak response, and information sharing workflows and mechanisms<br />\nSupport field-based surveillance and response activities at human–animal–wildlife interfaces, including high-risk production systems, markets, ports of entry, and border areas.</li>\n<li>Provide technical and operational support to zoonotic disease surveillance activities, including Community Event-based Surveillance (CESR), sentinel surveillance, and outbreak investigation, in coordination with surveillance technical leads</li>\n<li>Support linkage between epidemiologic data, laboratory, and genomic surveillance in close coordination with relevant local bodies.</li>\n<li>Support operational rollout of genomic surveillance activities for zoonotic diseases by strengthening specimen referral pathways, field coordination, data and metadata capture, sequencing analysis, reporting, and integration of results into public health response</li>\n<li>Support implementation of biosafety and biosecurity-related activities in laboratories and facilities handling zoonotic pathogens, ensuring alignment with national standards and STRIDES priorities.</li>\n<li>Assist in mapping and prioritization of laboratories with multi-disease diagnostic capacity supporting priority zoonotic diseases, to guide strengthening interventions in collaboration with lab technical leads</li>\n<li>Support field-level assessments and follow-up actions related to biosafety practices, specimen handling, and infection risk mitigation</li>\n<li>Support after-action reviews (AARs), development of improvement plans, and documentation of implementation models</li>\n<li>Provide technical support to outbreak investigations and response activities involving zoonotic threats, under the direction of the Technical Advisor and Project leadership.</li>\n<li>Support Rapid Response Teams (RRTs) by contributing zoonotic and One Health technical input during preparedness and response operations.</li>\n<li>Support delivery of practical capacity-building activities for regional and local counterparts, including mentoring, on-the-job coaching, and targeted trainings related to zoonotic disease detection, surveillance, outbreak response, and genomic surveillance.</li>\n<li>Contribute to development and adaptation of technical tools, SOPs, job aids, and guidance materials related to zoonotic detection, response, surveillance, and coordination.</li>\n<li>Support the delivery of trainings and learning activities</li>\n<li>Coordinate closely with other technical teams (Surveillance, Laboratory &amp; Diagnostics, Health Emergency Management, and Evidence-based Public Health</li>\n<li>Messaging and Community Engagement) to ensure integrated implementation of zoonotic activities.</li>\n<li>Contribute technical inputs for workplans, activity designs, progress reports, presentations, and other project deliverables related to zoonotic disease components.</li>\n<li>Support preparation of technical briefs, learning products, and presentations for government and other stakeholders.</li>\n<li>Document lessons learned, field experiences, implementation challenges, and good practices to inform project learning and reporting.</li>\n<li>Support monitoring of assigned activities to ensure alignment with approved workplans, timelines, and donor requirements.</li>\n<li>Respond to technical requests and inquiries from project leadership and partners as assigned.</li>\n<li>Perform other duties as assigned by the supervisor, Project Director and Country Representative.</li>\n</ul>\n<p><strong>REQUIREMENTS:</strong></p>\n<ul>\n<li>Bachelor’s degree or its international equivalent in Public Health, Epidemiology, Allied Health, Veterinary Medicine, Medicine, Infectious Diseases</li>\n<li>Formal training in Field Epidemiology or One Health programs is preferred and an advantage</li>\n<li>Previous experience in One Health or Animal Health is preferred and an advantage.</li>\n<li>Minimum of 6 years working in health or any social development sector on project implementation.</li>\n<li>Substantial previous experience in working with government, private sector, and partners supporting zoonotic disease detection, surveillance, and outbreak investigation</li>\n<li>Practical experience supporting or coordinating multisectoral and One Health initiatives is preferred and an advantage</li>\n<li>Demonstrated experience supporting surveillance, outbreak investigation, or field implementation activities related to infectious or zoonotic diseases</li>\n<li>Experience delivering capacity-building activities for national and subnational counterparts</li>\n<li>Experience in any health emergency response project is an advantage.</li>\n<li>Experience collaborating on projects and coordinating efforts with other program staff, other international health agencies, and private and non-profit organizations.</li>\n<li>Proficiency in English and Nepali (read, write, and speak)</li>\n<li>Prior work experience in a non-governmental organization (NGO), government agency, or private organization</li>\n<li>Experience on US Government-funded projects is an advantage</li>\n<li>Ability to travel domestically at least 25%</li>\n</ul>\n<p>The final deadline for application is <strong>5:00 p.m. February 22, 2026.</strong></p>\n<p>This job description summarizes the primary duties of the job. It neither prescribes nor restricts the exact tasks assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a competitive benefits package, professional development, and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>FHI 360 is an<a href=\"http://www.fhi360.org/careers/eeo\" target=\"_blank\" rel=\"noopener\"> equal employment and affirmative action employer</a> whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, disability, veteran status, genetic information or any other status or characteristic protected under applicable law.</p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a <a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\">competitive benefits package</a>, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click <a href=\"https://fhi.wd1.myworkdayjobs.com/FHI_360_External_Career_Portal\" target=\"_blank\" rel=\"noopener\">here</a> to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/Zoonotic-Advisor_Requisition-2026200274",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-18708",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18708",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18708"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18708"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18708"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18708"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 18706,
-    "date": "2026-02-16T15:28:31",
-    "date_gmt": "2026-02-16T09:43:31",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18706"
-    },
-    "modified": "2026-02-16T15:28:31",
-    "modified_gmt": "2026-02-16T09:43:31",
-    "slug": "laboratory-and-diagnostic-advisor",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/laboratory-and-diagnostic-advisor/",
-    "title": {
-      "rendered": "Laboratory and Diagnostic Advisor"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Laboratory and Diagnostic Advisor<br />\n<strong>Location</strong>: Kathmandu</p>\n<p>FHI 360 is a global organization that mobilizes research, resources and relationships so that people everywhere can access the opportunities they need to lead full, healthy lives. For more than 50 years, we have worked to develop bold solutions to global challenges and create measurable results through research and application of scientific breakthroughs. We listen to, learn from and work with communities to expand social and economic opportunity, improve health and well-being, respond to humanitarian crises.</p>\n<p>Since 1977, FHI 360 Nepal has been a trusted partner in transforming the country’s health and development landscape. Leveraging a blend of global expertise and local insights, we have consistently strengthened community capacities, enhanced systems, and reinforced institutional frameworks for sustainable impact. In close partnership with the Government of Nepal (GoN), civil society, academia, and the private sector, FHI 360 Nepal delivers integrated programs across critical sectors. Our initiatives span essential health services—including HIV, maternal, newborn and child health (MNCH) and nutrition—procurement and supply chain management (PSM) for life-saving drugs, global health security (GHS)—including laboratory strengthening, antimicrobial resistance (AMR), disease surveillance, evidence-based public health messaging and community engagement, and health emergency management—and air quality management.</p>\n<p>The U.S. government’s (USG) GHS program provides life-saving assistance to prevent, detect, and respond to infectious disease threats which pose risks for public health outbreaks that could cost lives. As part of the USG’s GHS program, the STRengthening Infectious disease DEtection Systems (STRIDES) Activity advances cross-sectoral efforts to successfully identify, manage, and respond to infectious disease threats; detect and prevent further outbreaks; and instill confidence and trust in a country’s disease detection and surveillance structures and services.</p>\n<p><strong>POSITION</strong> : <strong>Laboratory and Diagnostics Advisor</strong></p>\n<p>The Laboratory and Diagnostics Advisor will provide technical leadership and guidance to support the staff and projects for the US Department of State (DOS)-funded STRengthening Infectious disease DEtection Systems (STRIDES Activity for the laboratory and diagnostic components in Nepal. Lead and manage the development, implementation, and monitoring of strategic and technical initiatives to strengthen laboratory systems and diagnostic capacities. Provide technical guidance around the issues, challenges, and strategies for building laboratory capacity in Nepal and improving access to quality diagnostic testing related to project activities. Work closely with country-level teams, including the project management team, project technical providers, and key stakeholders, to ensure the provision of technical assistance to achieve effective, high-quality, and reliable laboratory services. Lead the development of guidelines and policies for laboratory diagnostic network strengthening activities, provide technical thought leadership at the regional and country levels, and contribute to the development of project statements of work, work plan development, monitoring and evaluation systems, technical reporting, and other administrative elements of the project. This position is based in Kathmandu with frequent field visits (around 50 percent) in different parts of Nepal.</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Provides technical leadership and strategic guidance to project staff for the laboratory and diagnostic services component of the project, including coordination with other GHS technical areas (e.g., surveillance, data, etc.) to ensure synergy.</li>\n<li>Monitors and maintains project protocols, instruments, data sets, manuals, training materials, and reports related to the technical area of expertise.</li>\n<li>Works in close collaboration with national, regional, and local counterparts to provide technical assistance required to fulfill project objectives and targets, primarily related to strengthening laboratory systems and diagnostic services.</li>\n<li>Leads or contributes to the development and writing of technical briefs, reports, or other necessary materials to facilitate assessments, best practices, policies, and procedures.</li>\n<li>Provides subject matter expertise to guide the implementation of laboratory and diagnostic network strengthening activities (e.g., specimen referral, quality assurance, laboratory information management system, training, etc.) across relevant GHS technical areas, including antimicrobial resistance, zoonotic diseases, biosafety/biosecurity, diagnostic networks, and surveillance.</li>\n<li>Provides technical oversight and support in the scale-up and optimization of new diagnostic tools.</li>\n<li>Provides mentorship to support capacity building for more junior project team members and subcontractors.</li>\n<li>Leads diagnostic network and laboratory capacity assessments, including the reporting of findings and recommendations.</li>\n<li>Leads or contributes to research initiatives to improve laboratory practices and diagnostic outcomes.</li>\n<li>Participates in client and stakeholder meetings and drafts reports/presentations.</li>\n<li>Promotes adopting and integrating new diagnostic technologies, tools, and methodologies based on the country&#8217;s needs and priorities for project implementation.</li>\n<li>Works closely with the country team, project management, subcontractors, and stakeholders to align laboratory and diagnostic activities with overall project goals.</li>\n<li>Develops and monitors implementation of technical components of project work plans, along with associated budgets and resources, with a focus on project activities and sub-activities related to laboratory and diagnostic-related components.</li>\n<li>Conducts analysis of project implementation to identify areas for improvement and proposes appropriate technical strategies to manage risks, overcome barriers, and advance project objectives.</li>\n<li>Monitors project activities, results, and deliverables.</li>\n<li>Builds productive working relationships internally and externally by fostering collaboration with national and international organizations, government agencies, academia, and other relevant entities.</li>\n<li>Leads the preparation and drafting of the technical/laboratory and diagnostic portion of work plans, presentations, and reports for the DOS and other key stakeholders.</li>\n<li>Participate and represent the project in meetings and forums as required.</li>\n<li>Ensure project activities are on track with work plans, with technical expertise informing project implementation.</li>\n<li>Oversees project timelines and budgets. This includes monitoring of project activities to ensure they are on track with approved work plans, the spending on technical scope under broad supervision, and the collection of data for financial and technical reporting.</li>\n<li>Monitors project activities, results, deliverables and regularly reports to management.</li>\n<li>Oversees procurement as needed, coordinating with DOS and suppliers.</li>\n<li>Prepares reports and papers summarizing project results and analyzing data sets, including technical assessment findings.</li>\n<li>Establishes and maintains SOW and budget tracking systems.</li>\n<li>Serves as a primary author for relevant technical deliverables (e.g., reports, presentations, manuscripts) from STRIDES Nepal.<br />\nDevelops in-depth knowledge of quality standards through formalized system that documents processes, procedures, and responsibilities for achieving quality policies and objectives.</li>\n<li>Coordinates and direct activities to meet client/funder and regulatory requirements.</li>\n<li>Perform other relevant duties assigned by supervisor, Project Director, and the Country Representative.</li>\n</ul>\n<p><strong>REQUIREMENTS</strong></p>\n<ul>\n<li>Master’s degree in microbiology or other relevant subject in biological sciences within a clinical or diagnostic discipline or specialty.</li>\n<li>8+ years of experience in working with infectious disease diagnostics and/or in laboratory systems strengthening (preferably including microbiology, AMR/AMU or disease surveillance).</li>\n<li>Prior work experience with USG-funded projects and familiarity with USG regulations and reporting requirements is preferred.</li>\n<li>Extensive knowledge of laboratory practices, diagnostic techniques, quality assurance systems, and laboratory information management systems in human, veterinary, and/or environmental health sectors.</li>\n<li>Knowledge and understanding of infectious diseases, their transmission, and the application of methods and procedures to safely control infectious materials.</li>\n<li>Demonstrated ability to design, implement, and manage laboratory strengthening initiatives.</li>\n<li>Demonstrated experience in capacity-building activities such as training and mentoring laboratory personnel.</li>\n<li>Proven experience working with government agencies and GHS stakeholders is highly desirable to support strategy development, implementation plans, and decision-making.</li>\n<li>Strong organizational, analytical, and problem-solving skills.</li>\n<li>Sensitivity to cultural differences and understanding of the ethical issues surrounding research and surveillance.</li>\n<li>Willing and able to travel locally and regionally up to 50% of the time.</li>\n<li>Proactive in managing multiple tasks, managing, and working in the virtual work environment, and flexible and open to managing time for working with different teams in different time zones as needed.</li>\n<li>Excellent interpersonal, organizational, communication, team building and management, and problem-solving skills.</li>\n<li>Excellent oral and written English and Nepali including documentation skills.</li>\n</ul>\n<p>The final deadline for application is <strong>5:00 p.m. February 22, 2026.</strong></p>\n<p>This job description summarizes the primary duties of the job. It neither prescribes nor restricts the exact tasks assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a <a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\">competitive benefits package</a>, professional development, and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>FHI 360 is an <a href=\"http://www.fhi360.org/careers/eeo\" target=\"_blank\" rel=\"noopener\">equal employment and affirmative action employer</a> whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, disability, veteran status, genetic information or any other status or characteristic protected under applicable law.</p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a competitive benefits package, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click <a href=\"https://fhi.wd1.myworkdayjobs.com/FHI_360_External_Career_Portal\" target=\"_blank\" rel=\"noopener\">here </a>to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/Laboratory-and-Diagnostic-Advisor_Requisition-2026200273",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-18706",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18706",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18706"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18706"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18706"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18706"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 18705,
-    "date": "2026-02-16T15:03:57",
-    "date_gmt": "2026-02-16T09:18:57",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18705"
-    },
-    "modified": "2026-02-16T15:05:16",
-    "modified_gmt": "2026-02-16T09:20:16",
-    "slug": "project-manager",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/project-manager/",
-    "title": {
-      "rendered": "Project Manager"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Project Manager</p>\n<p><strong>Location</strong>: Kathmandu</p>\n<p>FHI 360 is a global organization that mobilizes research, resources and relationships so that people everywhere can access the opportunities they need to lead full, healthy lives. For more than 50 years, we have worked to develop bold solutions to global challenges and create measurable results through research and application of scientific breakthroughs. We listen to, learn from and work with communities to expand social and economic opportunity, improve health and well-being, respond to humanitarian crises.</p>\n<p>Since 1977, FHI 360 Nepal has been a trusted partner in transforming the country’s health and development landscape. Leveraging a blend of global expertise and local insights, we have consistently strengthened community capacities, enhanced systems, and reinforced institutional frameworks for sustainable impact. In close partnership with the Government of Nepal (GoN), civil society, academia, and the private sector, FHI 360 Nepal delivers integrated programs across critical sectors. Our initiatives span essential health services—including HIV, maternal, newborn and child health (MNCH) and nutrition—procurement and supply chain management (PSM) for life-saving drugs, global health security (GHS)—including laboratory strengthening, antimicrobial resistance (AMR), disease surveillance, evidence-based public health messaging and community engagement, and health emergency management—and air quality management.</p>\n<p>The U.S. government’s (USG) GHS program provides life-saving assistance to prevent, detect, and respond to infectious disease threats which pose risks for public health outbreaks that could cost lives. As part of the USG’s GHS program, the STRengthening Infectious disease DEtection Systems (STRIDES) Activity advances cross-sectoral efforts to successfully identify, manage, and respond to infectious disease threats; detect and prevent further outbreaks; and instill confidence and trust in a country’s disease detection and surveillance structures and services.</p>\n<p><strong>POSITION SUMMARY</strong></p>\n<p>The Project Manager, STRIDES will provide overall management, operations and coordination support for the implementation of the STRengthening Infectious disease DEtection Systems (STRIDES) Activity in the Nepal Reporting to the Project Director, the Project Manager will support day-to-day project operations and management to ensure that all activities are executed efficiently, on schedule, within budget, and in compliance with donor and organizational requirements. S/he will oversee subcontractor planning, budgeting, implementation while ensuring alignment with STRIDES’ objectives to strengthen infectious disease detection, surveillance, and response systems. The Project Manager will coordinate closely with technical teams, sub-award partners, and relevant government and stakeholder counterparts to ensure integrated, high-quality, and timely delivery of project outcomes. Key responsibilities include supporting the implementation of work plans and deliverables, supporting risk and compliance management, monitoring progress against performance indicators, and facilitating effective communication among internal and external stakeholders. The incumbent will also support adaptive management by promoting learning, documentation of best practices, and continuous improvement in program implementation. The Project Manager plays a central role in ensuring STRIDES contributes to advancing the country’s global health security agenda by strengthening systems to detect, prevent, and respond to infectious disease threats in a sustainable and coordinated manner.</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Coordinates and ensures the development and implementation of subcontractor activities from initiation to completion based on the established project scope, goals, and deliverables.</li>\n<li>Supports implementation of the project workplan, and ensures overall progress</li>\n<li>Supports documentation and reporting, ensures accuracy and presents updates to stakeholders</li>\n<li>Leads communications with partners/subcontractors, ensuring alignment and addressing concerns</li>\n<li>Coordinates team members to ensure project objectives and deliverables are met, fostering a collaborative work environment.</li>\n<li>Provide guidance and monitoring for project staff and subcontractors/sub-award partners, ensuring clarity over project plans and priorities, and encouraging effective teamwork.</li>\n<li>Develops best practices and tools for project execution and management.</li>\n<li>Evaluates the progress of planned activities on a regular basis.</li>\n<li>Builds, develops, and grows partnerships with partners vital to the success of the project.</li>\n<li>Ensures budgets are reflective of the activities in the project workplan and reforecast as changes are made to the workplan and in alignment with the scope of the project</li>\n<li>Manages the operational and tactical aspects of program activities in a matrix environment.</li>\n<li>Manages the development of project teams to ensure compliance with policies and procedures; also, to develop and implement process improvement plans.</li>\n<li>Keeps abreast of the latest strategies, tools and terminologies used in project management worldwide to adopt and increase productivity</li>\n<li>Ensure proper donor and organizational approvals are obtained prior to work being initiated.</li>\n<li>Proactively identify potential risks that could impact project successes, including financial, operational, technical and external risks.</li>\n<li>Develop and implement risk mitigation strategies, including contingency plans to address potential issues before they arise, and report on risk status to stakeholders.</li>\n<li>Establish a communication schedule to update stakeholders, including appropriate staff in the organization on the progress of the project.</li>\n<li>Collaborate with and support to Admin and Operations/Procurement team for consultant hiring</li>\n<li>Oversee the execution of sub-awards and consultants, ensuring all agreements are properly documented and aligned with project goals and donor requirements</li>\n<li>Collaborate with and support to Contracts and Grant management unit sub-award design and is responsible for sub-award monitoring.</li>\n<li>Monitor sub awardees to ensure compliance with terms and conditions, including collaborating with contracts/grants manager and finance manager on monitoring financial reporting, and performance obligations</li>\n<li>Develop a schedule for completion of subcontractor activities that effectively allocates the resources to the activities.</li>\n<li>Review the project schedule with project senior management and project staff and revise the schedule as required.</li>\n<li>Author reports (i.e., deliverables) on the project for management and donor.</li>\n<li>Builds, develops, and grows partnerships vital to the success of the project.</li>\n<li>Identifies partnerships, opportunities, and information to present to management to help achieve strategic goals of the project.</li>\n<li>Collaborate with the finance manager to determine the resources (time, money, equipment, etc.) required to complete activities.</li>\n<li>Collaborating with finance manager to monitor budgeted project expenditures in accordance with the workplan and what has been budgeted/forecasted; serves as backstop for approving financial expenditures.</li>\n<li>Collaborate with finance manager to ensure that all financial records for the project are up to date.</li>\n<li>Collaborate with and support to Admin &amp; Operations/Procurement team and facilitate procurement, distribution, and tracking of supplies, materials, and equipment under the project.</li>\n<li>Collaborate with and support to Admin &amp; Operations/Procurement team and Project team to manage, and monitor various events and activities for capacity strengthening, review and planning. Ensures financial reports and supporting documentation for subcontractors is complete as outlined in funding agreement.</li>\n<li>Coaches, mentors, and manages project officer, project assistant, and country program staff to ensure quality, efficiency and compliance with project and company</li>\n<li>Develop tools and techniques for delegating tasks according to the skills of project management office team members and evaluate the performance of project management office team members.</li>\n<li>Ensure that all project personnel receive an appropriate orientation to the organization and the project.</li>\n<li>Perform other programmatic, administrative, and coordination duties as assigned by the Program Manager, Project Director, or and Country Representative.</li>\n</ul>\n<p><strong>REQUIREMENTS</strong></p>\n<ul>\n<li>Master’s degree (or equivalent) in Public Health, Epidemiology, Health Administration, Project Management, International Development, or a related field.</li>\n<li>Professional training or certification in Project Management (e.g., PMP, PRINCE2) or related areas will be an added advantage.</li>\n<li>Typically requires a minimum of 8+ years of relevant experience with projects management principles and practices, 2+ years of line management experience required.</li>\n<li>Having experience of managing staff/subcontractors/consultants with strong networking and team mobilization skills.</li>\n<li>Prior work experience in a non-governmental organization (NGO), government agency, or private organization, and experience managing United States government (USG) funded awards.</li>\n<li>Experience managing and/or supporting complex USG contract/acquisition mechanisms required.</li>\n<li>Familiar with USG rules and regulations.</li>\n<li>International or domestic (US) program development or project management experience preferred.</li>\n<li>Understanding of the state’s new restructuring system Federal, Provincial and Local level government and especially good understanding of Nepal health system, Ministry, Department and Divisions/Centers.</li>\n<li>Ability to work independently on several tasks with minimal supervision and ability to work with multiple stakeholders.</li>\n<li>Computer skills (MS Word, Excel &amp; PPT), including conducting virtual meetings/webinar.</li>\n<li>Proactive in managing multiple tasks, managing and working in virtual work environment, and flexible and open for managing time for working with different teams in different time zones as needed.</li>\n<li>Excellent interpersonal, organizational, communication, team building and management, and problem-solving skills.</li>\n<li>Excellent oral and written English and Nepali including documentation skills.</li>\n</ul>\n<p>The final deadline for application is<strong> 5:00 p.m. February 22, 2026.</strong></p>\n<p>This job description summarizes the primary duties of the job. It neither prescribes nor restricts the exact tasks assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a competitive benefits package, professional development, and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>FHI 360 is an <a href=\"http://www.fhi360.org/careers/eeo\" target=\"_blank\" rel=\"noopener\">equal employment and affirmative action employer</a> whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, disability, veteran status, genetic information or any other status or characteristic protected under applicable law.</p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a <a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\">competitive benefits package</a>, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click <a href=\"https://fhi.wd1.myworkdayjobs.com/FHI_360_External_Career_Portal\" target=\"_blank\" rel=\"noopener\">here</a> to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/Project-Manager_Requisition-2026200276",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-18705",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18705",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18705"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18705"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18705"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18705"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 18704,
-    "date": "2026-02-16T14:46:35",
-    "date_gmt": "2026-02-16T09:01:35",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=18704"
-    },
-    "modified": "2026-02-16T14:46:35",
-    "modified_gmt": "2026-02-16T09:01:35",
-    "slug": "mel-data-analyst",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/mel-data-analyst/",
-    "title": {
-      "rendered": "MEL Data Analyst"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: MEL Data Analyst<br />\n<strong>Location</strong>: Kathmandu, Nepal</p>\n<p><strong>ABOUT FHI 360:</strong></p>\n<p>FHI 360 is a global organization that mobilizes research, resources and relationships so that people everywhere can access the opportunities they need to lead full, healthy lives. For more than 50 years, we have worked to develop bold solutions to global challenges and create measurable results through research and application of scientific breakthroughs. We listen to, learn from and work with communities to expand social and economic opportunity, improve health and well-being, respond to humanitarian crises.</p>\n<p>Since 1977, FHI 360 Nepal has been a trusted partner in transforming the country’s health and development landscape. Leveraging a blend of global expertise and local insights, we have consistently strengthened community capacities, enhanced systems, and reinforced institutional frameworks for sustainable impact. In close partnership with the Government of Nepal (GoN), civil society, academia, and the private sector, FHI 360 Nepal delivers integrated programs across critical sectors. Our initiatives span essential health services—including HIV, maternal, newborn and child health (MNCH) and nutrition—procurement and supply chain management (PSM) for life-saving drugs, global health security (GHS)—including laboratory strengthening, antimicrobial resistance (AMR), disease surveillance, evidence-based public health messaging and community engagement, and health emergency management—and air quality management.</p>\n<p>The U.S. government’s (USG) GHS program provides life-saving assistance to prevent, detect, and respond to infectious disease threats which pose risks for public health outbreaks that could cost lives. As part of the USG’s GHS program, the STRengthening Infectious disease DEtection Systems (STRIDES) Activity advances cross-sectoral efforts to successfully identify, manage, and respond to infectious disease threats; detect and prevent further outbreaks; and instill confidence and trust in a country’s disease detection and surveillance structures and services.</p>\n<p><strong>POSITION </strong>: MEL Data Analyst</p>\n<p>The Monitoring, Evaluation, and Learning (MEL) Data Analyst will support the implementation of the STRengthening Infectious Disease DEtection Systems (STRIDES) project in Nepal by maintaining and implementing the monitoring and evaluation processes and practices of the project. They will train program staff to ensure that performance indicators and data related to outcomes, achievements, and impact are properly prepared and collected in targeted geographic areas and sectors. They will provide basic technical support and guidance to staff and partners in the country office, draft technical portions of proposals and project design, based on the design and direction set by technical leadership, implement and monitor technical strengthening initiatives. They will develop adoption and/or training strategy, designs and conduct training or adoption activities for a specific technical area. Creates scientific or technical material in the area of expertise and evaluates programmatic effectiveness and provides technical assessment reports. They will provide administrative support on core project operations (e.g., updating manuals, assisting with proposals, and budget tracking).</p>\n<p><strong>KEY RESPONSIBILITIES</strong></p>\n<ul>\n<li>Assists in providing technical support in the development and dissemination of tools, materials, reports, papers, and intervention for projects.</li>\n<li>Assists with technical troubleshooting, perform data analysis various statistical tools and application of data.</li>\n<li>Provides quality control and quality assurance support.</li>\n<li>Contribute to development and sharing of lessons, knowledge, innovations, and best practices.</li>\n<li>Provides support to work planning and workplan preparation and finalization.</li>\n<li>Supports technical aspects of projects including staff and partner capacity building</li>\n<li>Works closely with assigned team to ensure activities are implemented according to standard operating procedures (SOP’s).</li>\n<li>Monitors and maintains protocols, instruments, data sets, manuals, training materials and reports.</li>\n<li>Participates in client / funder meetings.</li>\n<li>Prepares Requests for Proposals for technical, administrative, and other service needs.</li>\n<li>Responds to requests and inquiries from internal and external staff.</li>\n<li>Provides administrative and logistic support to technical team, training, events, meetings, and other activities.</li>\n<li>Supports preparation of quarterly and annual reports, and other documents.</li>\n<li>Writes and edits technical reports and documents.</li>\n<li>Gathers information, data and statistics needed to provide evidence to reports, presentations, papers, and other documentation produced.</li>\n<li>Participates in data review and support data use for decision making.</li>\n<li>Ensures the documentation and reporting of appropriate services rendered to clients is done in the relevant service registers.</li>\n<li>Assist with compiling technical content (e.g., reports, presentations, manuscripts).</li>\n<li>Works on problems of moderate scope that require analysis or interpretation of various factors.</li>\n<li>Exercises judgment within defined procedures and practices to determine appropriate action.</li>\n<li>Builds rapport with internal and external staff.</li>\n<li>Receives general instructions on routine work, detailed instructions on new assignments or projects.</li>\n<li>Performs other duties as assigned by the supervisor, Project Director and Country Representative</li>\n</ul>\n<p><strong>Requirements</strong>:</p>\n<ul>\n<li>Bachelor’s degree or its international equivalent in social science, Statistics, Biostatistics, Public Health/Epidemiology, Data Science, or related field.</li>\n<li>Typically requires 5+ years of relevant experience managing data collection, monitoring, evaluation, capacity strengthening in the country, and technical assistance experience.</li>\n<li>Prior work experience in a non-governmental organization (NGO), government agency, or private company.</li>\n<li>Proficiency with database management software and on-line search tools required.</li>\n<li>Development of scope of work and deliverables for partners, consultants, etc.</li>\n<li>Has sensitivity to cultural diversity and understanding of the political, contextual, and ethical issues in assigned areas.</li>\n<li>Proactive in managing multiple tasks, managing and working in virtual work environment, and flexible and open for managing time for working with different teams in different time zones as needed.</li>\n<li>Articulate, professional, and able to communicate in a clear, positive manner with clients and staff.</li>\n<li>Basic working knowledge of concepts, practices, and procedures with providing technical support for technical research studies.</li>\n<li>Data visualization skills.</li>\n<li>Excellent oral and written communication skills.</li>\n<li>Excellent organizational and analytical skills.</li>\n<li>Demonstrated proficiency with using Microsoft Office Suite required.</li>\n<li>Proficiency in data management and analytic software (e.g., Microsoft Excel, PowerBI, Tableau, Stata, SAS, SPSS, or R) preferred</li>\n<li>Ability to analyze and interpret data, identify errors, and prepare reports.</li>\n<li>Ability to solve problems and implement corrective action as needed.</li>\n<li>Must be able to read, write, and speak fluent English and Nepali.</li>\n<li>Ability to travel domestically up to 25%</li>\n</ul>\n<p>The final deadline for application is <strong>5:00 p.m. February 22, 2026.</strong></p>\n<p>This job description summarizes the primary duties of the job. It neither prescribes nor restricts the exact tasks assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a <a href=\"https://www.fhi360.org/node/689\" target=\"_blank\" rel=\"noopener\">competitive benefits package</a>, professional development, and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>FHI 360 is an <a href=\"http://www.fhi360.org/careers/eeo\" target=\"_blank\" rel=\"noopener\">equal employment and affirmative action employer </a>whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, disability, veteran status, genetic information or any other status or characteristic protected under applicable law.</p>\n<p>This job posting summarizes the main duties of the job. It neither prescribes nor restricts the exact tasks that may be assigned to carry out these duties. This document should not be construed in any way to represent a contract of employment. Management reserves the right to review and revise this document at any time.</p>\n<p>FHI 360 is an equal opportunity and affirmative action employer whereby we do not engage in practices that discriminate against any person employed or seeking employment based on race, color, religion, sex, sexual orientation, gender identity, national or ethnic origin, age, marital status, physical or mental disability, protected Veteran status, or any other characteristic protected under applicable law.</p>\n<p>Our values and commitments to safeguarding: FHI 360 is committed to preventing any type of abuse, exploitation and harassment in our work environments and programs, including sexual abuse, exploitation and harassment. FHI 360 takes steps to safeguard the welfare of everyone who engages with our organization and programs and requires that all personnel, including staff members and volunteers, share this commitment and sign our code of conduct. All offers of employment will be subject to appropriate screening checks, including reference, criminal record and terrorism finance checks. FHI 360 also participates in the Inter-Agency Misconduct Disclosure Scheme (MDS), facilitated by the Steering Committee for Humanitarian Response. In line with the MDS, we will request information from job applicants’ previous employers about any substantiated findings of sexual abuse, exploitation and/or harassment during the applicant’s tenure with previous employers. By applying, job applicants confirm their understanding of these recruitment procedures and consent to these screening checks.</p>\n<p>FHI 360 will consider for employment all qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable state and local laws.</p>\n<p>FHI 360 will never ask you for your career site username or password, and we will never request money, goods or services during the application, recruitment or employment process. If you have questions or concerns about correspondence from us, please email CareerCenterSupport@fhi360.org.</p>\n<p>FHI 360 fosters the strength and health of its workforce through a competitive benefits package, professional development and policies and programs that support a healthy work/life balance. Join our global workforce to make a positive difference for others — and yourself.</p>\n<p>Please click here to continue searching FHI 360&#8217;s Career Portal.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8314,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://fhi.wd1.myworkdayjobs.com/en-US/FHI_360_External_Career_Portal/details/MEL-Data-Analyst_Requisition-2026200272",
-      "_company_name": "FHI 360 Nepal",
-      "_company_website": "https://www.fhi360.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": {
-      "0": "post-18704",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-kathmandu",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/18704",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8314"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=18704"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=18704"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=18704"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=18704"
         }
       ],
       "curies": [
