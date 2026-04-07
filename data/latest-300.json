@@ -1,5 +1,471 @@
 [
   {
+    "id": 22783,
+    "date": "2026-04-07T15:21:22",
+    "date_gmt": "2026-04-07T09:36:22",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=22783"
+    },
+    "modified": "2026-04-07T15:23:56",
+    "modified_gmt": "2026-04-07T09:38:56",
+    "slug": "laxmi-group-full-time-brand-officer-marketing-assistant",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/laxmi-group-full-time-brand-officer-marketing-assistant/",
+    "title": {
+      "rendered": "Brand Officer, Marketing Assistant"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: Brand Officer</p>\n<p><strong>Qualification</strong>: MBA with specialization in Marketing<br />\n<strong>Mandatory</strong>: Must possess a two-wheeler with a valid license<br />\n<strong>Note</strong>: Candidates awaiting results are welcome to apply</p>\n<hr />\n<p><strong>Position</strong>: Marketing Assistant</p>\n<p><strong>Qualification</strong>: Bachelor’s degree in any discipline</p>\n<p><strong>Mandatory</strong>: Must possess a two-wheeler with a valid license</p>\n<p>Send Your CV To: <strong>vacancy@laxmigroup.com.np</strong></p>\n",
+      "protected": false
+    },
+    "author": 1794,
+    "featured_media": 19923,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "vacancy@laxmigroup.com.np",
+      "_company_name": "Laxmi Group",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      30
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": {
+      "0": "post-22783",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "7": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/22783",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1794"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/19923"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=22783"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=22783"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=22783"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=22783"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 22779,
+    "date": "2026-04-07T14:43:09",
+    "date_gmt": "2026-04-07T08:58:09",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=22779"
+    },
+    "modified": "2026-04-07T15:07:45",
+    "modified_gmt": "2026-04-07T09:22:45",
+    "slug": "society-of-deafblind-parents-rupandehi-rupandehi-full-time-finance-officer-physiotherapist-home-based-educators",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/society-of-deafblind-parents-rupandehi-rupandehi-full-time-finance-officer-physiotherapist-home-based-educators/",
+    "title": {
+      "rendered": "Finance Officer, Physiotherapist, Home-based Educators"
+    },
+    "content": {
+      "rendered": "<p><strong>Society of deafblind Parents Repandehi (SDBP_R</strong>) is Society o organization of, by and for the Deafblindness People in Rupandehi SDBP_R was established in 2022 by the joint effort and collaboration of the local governments and formally registered as non- governmental organization in District Administration Office, Rupandehi and Social Welfare Council. Currently SDBP_R is having listed with 3 municipalities in Rupandehi District.</p>\n<p>SDBP_R is working Under the project “CADiR – Collective Action for Disability Rights,” implemented in partnership with NDFN (Signo), SDBP R Rupandehi is implementing the project. SDBP_R is currently working towards strengthening the educational status of children with deafblindness in Rupandehi district (Tilottama and Siddhrathanagar Municipality) to address the needs of persons with multiple disability and deafblindness in district. SDBP_R is seeking the potential candidates for the position of so We are looking for a self-driven, dynamic and result-oriented candidate for our vacant position.</p>\n<p><strong>Position</strong>: Finance Officer<br />\n<strong>Basic Job Information</strong><br />\n<strong>Job Level:</strong> Mid-Level<br />\n<strong>No. of Vacancy/s:</strong> [ 1]<br />\n<strong>Employment Type:</strong> Full Time/Contract Basis<br />\n<strong>Reporting to:</strong> Finance Officer<br />\n<strong>Tenure</strong>: 2 years with possible extension<br />\n<strong>Job Location:</strong> Tilottama and Siddharthanagar municipality in Rupandehi with limited visit to Project.<br />\n<strong>Offered Salary:</strong> Negotiable<br />\n<strong><br />\nApply Before (Deadline)</strong>: 13 April, 2026 (5 pm Nepali time)</p>\n<p><strong>Job Specification</strong></p>\n<p><strong>Education Level</strong>: Bachelor degree in Business studies or equivalent.</p>\n<p><strong>Experience Required:</strong> More than or equals to 2 years</p>\n<p><strong>Other Specification</strong></p>\n<ul>\n<li>Good understanding of financial transaction.</li>\n<li>Ability to keep record of the transaction.</li>\n<li>Good understanding of the tax policies and laws.</li>\n<li>Good communication skills and ability to support partner on financial obligation. Excel skills and MS package will be required.</li>\n<li>Prior experience working in with organization of persons with Disabilities will be an advantage</li>\n<li>Preference would be given to candidates with ability to communicate in Nepali Sign language and other form of communication like braille, tactile communication etc.</li>\n<li>Respect to the diversity in particular to the poor marginalized, vulnerable and disability population.</li>\n</ul>\n<p><strong>Job Description</strong></p>\n<ul>\n<li>The Finance Officer should work directly and closely with the Board and the Project Coordinator (PC) rather than reporting to a Finance Manager.</li>\n<li>Provide support to the district project offices and other National Resource center partners on financial management.</li>\n<li>Manage E-TDS of staffs, resource persons and related parties.</li>\n<li>Book and monitor financial transaction on accounting system and reconcile the bank and account in monthly basis.</li>\n<li>Develop necessary document on procurement and other financial transaction.</li>\n<li>Work to implement and make necessary amendment in the financial policy of organization.</li>\n<li>Liaison with board, Project manager and Finance manager on preparing budget and financial planning.</li>\n<li>Provide Logistic management support to the organization.</li>\n<li>Ensure the reports are on time and are in line with the Partners reporting criteria.</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Physiotherapist<br />\n<strong>Job Level:</strong> Mid-Level<br />\n<strong>No. of Vacancy/s:</strong> [ 2] (Tilottama Municipality :1 and Siddharthanagar Municipality:1)<br />\n<strong>Employment Type:</strong> Full Time-Contract Basis.<br />\n<strong>Reporting to</strong>: Project Coordinator<br />\n<strong>Tenure</strong>: 3 years with possible extension<br />\n<strong>Job Location:</strong> Rupandehi district (Tilottama and Siddharthanagar Municipality) with frequent home visits and community-based rehabilitation services.<br />\n<strong>Offered Salary</strong>: Negotiable<br />\n<strong>Apply Before (Deadline):</strong> 13 April, 2026 (5 pm Nepali time)</p>\n<p><strong>Job Specification</strong></p>\n<p><strong>Education Level:</strong> Diploma in Physiotherapy</p>\n<p><strong>Experience Required:</strong> Minimum 1 year of relevant experience</p>\n<p><strong>Other Specification</strong></p>\n<p><strong>Skills and Competencies:</strong></p>\n<ul>\n<li>Knowledge of disability, rehabilitation, and community-based approaches</li>\n<li>Strong training and facilitation skills</li>\n<li>Counseling skills for working with families</li>\n<li>Basic computer skills (MS Office)</li>\n<li>Good communication skills in Nepali and English</li>\n<li>Ability to work in a team and under pressure</li>\n</ul>\n<p><strong>Desirable:</strong></p>\n<ul>\n<li>Two-wheeler driving license</li>\n</ul>\n<p><strong>Preferred</strong>:</p>\n<ul>\n<li>Experience working with children with disabilities</li>\n</ul>\n<p><strong>Working Conditions</strong></p>\n<ul>\n<li>Field-based role with travel required</li>\n<li>Flexible working hours depending on service needs</li>\n<li>Coordination with multiple stakeholders</li>\n</ul>\n<p><strong>Job Description</strong></p>\n<p><strong>A. Service Planning &amp; Delivery</strong></p>\n<ul>\n<li>Provide physiotherapy services in home-based and resource class settings</li>\n<li>Develop individualized physiotherapy plans aligned with IEPs</li>\n<li>Support early intervention and rehabilitation needs of children</li>\n</ul>\n<p><strong>B. Technical Support &amp; Capacity Building</strong></p>\n<ul>\n<li>Train home-based educators, resource teachers, and caregivers on basic physiotherapy techniques</li>\n<li>Develop simple manuals/guidelines for home-based physiotherapy support</li>\n<li>Provide ongoing technical guidance and supervision</li>\n</ul>\n<p><strong>C. Coordination &amp; Collaboration</strong></p>\n<ul>\n<li>Work closely with project team, educators, and senior physiotherapist</li>\n<li>Coordinate with service providers for treatment and assistive devices</li>\n<li>Support integration of physiotherapy into education and care plans</li>\n</ul>\n<p><strong>D. Monitoring &amp; Documentation</strong></p>\n<ul>\n<li>Maintain records of physiotherapy sessions and progress</li>\n<li>Monitor quality of services provided by educators and caregivers</li>\n<li>Prepare regular reports and update documentation tools</li>\n</ul>\n<p><strong>E. Support to Rehabilitation &amp; Livelihood Linkages</strong></p>\n<ul>\n<li>Identify opportunities for vocational and rehabilitation support</li>\n<li>Link families with relevant services and institutions</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Home-based Educators</p>\n<p><strong>Basic Job Information</strong><br />\n<strong>Job Level:</strong> Mid-Level<br />\n<strong>No. of Vacancy/s: </strong>[ 4] (Tilottama Municipality :2 and Siddharthanagar Municipality:2)<br />\n<strong>Employment Type</strong>: Full Time-Contract Basis.<br />\n<strong>Reporting to</strong>: Project Coordinator<br />\n<strong>Tenure</strong>: 3 years with possible extension<br />\n<strong>Job Location</strong>: Rupandehi district (Tilottama and Siddharthanagar Municipality) with frequent home visits and community-based rehabilitation services.<br />\n<strong>Offered Salary:</strong> Negotiable<br />\n<strong>Apply Before (Deadline):</strong> 13 April, 2026 (5 pm Nepali time)</p>\n<p><strong>Job Specification</strong></p>\n<p><strong>Education Level</strong>: B.Ed in education or equivalent.</p>\n<p><strong>Experience Required</strong>: More than or equals to 1 year</p>\n<p><strong>Other Specification</strong></p>\n<ul>\n<li>Bachelor in Education or relative filed with at least 1 year of work experience in field of disability, especially sensory impairment. (continuing Bachelor with more than 3 years&#8217; experience on community-based rehabilitation program will also be considered)</li>\n<li>Good understanding on disability-related National (disability right act inclusive education policy, Health policies) and International laws and policies (UNCRPD, SDG)</li>\n<li>Familiar with current socio-political context and change process</li>\n<li>Strong verbal and written communication skills in Nepali language (English will add value)</li>\n<li>Good understanding of the safeguarding policy of Country and organization level along with understanding on its implementation in the ground level will be required.</li>\n<li>Prior experience working as community-based rehabilitation program and project with home-based support to the children with disabilities and working experience with organization of persons with Disabilities will be an advantage</li>\n<li>Preference would be given to candidates with ability to communicate in Nepali Sign language and other forms of communication like braille, tactile communication etc</li>\n<li>Respect to the diversity in particular to the poor marginalized, vulnerable and disability population</li>\n</ul>\n<p><strong>Job Description</strong></p>\n<ul>\n<li>Be able to work hands on with the children and should be able to plan proper Individual Education Plan (IEP) and activities as per the need of the child.</li>\n<li>The candidate should be able to develop rapport with the family members of the children.</li>\n<li>Work closely with the project team on various events, awareness campaigns, conduct trainings and workshops.</li>\n<li>The candidate should be able to conduct/be part of team conducting functional assessments of special needs of the children (preferably deafblindness, Visual</li>\n<li>Impairment, Hearing Impairment, Intellectual disabilities)</li>\n<li>Be able to produce written reports on child’s progress.</li>\n<li>The candidate should be able to modify classroom/home set-up, and help children participate in educational activities.</li>\n</ul>\n<p><strong>Selection Process:</strong></p>\n<p>shortlist, written and interview</p>\n<p><strong>Applying Procedure:</strong></p>\n<p>Interested candidates can email their Educational certificate, citizenship and CV (CV should include at-least 2 references with detail) along with a cover letter describing suitability for the position by <strong>13th April 2026</strong> to<strong> pcsdbprupandehi2022@gmail.com</strong> referencing the position title<strong> &#8220;Finance Officer&#8221;, &#8220;Home-based educator&#8221; or &#8220;Physiotherapist&#8221;</strong> in the subject line. Last date of vacancy <strong>April 13th 2026.</strong></p>\n<p>Two-wheeler vehicle with driving licensee is compulsory for the all post.</p>\n<p>SDBP_R treats the safeguarding of all beneficiaries, staff and volunteers seriously, prioritizing the well-being and safety of everyone who comes into contact with our organisation. We will keep the people we support safe from harm by checking that applicants for this job are suitable to work with children and vulnerable adults.</p>\n<p>SDBP_R promotes the inclusion and encourages person with disabilities and their parents (with deafblindness) and person representing ethnical groups, women, Dalit&#8217;s, Madhesi and other back warded community to apply.</p>\n<p>Phone call will be not be entertained and only shortlisted candidates will be contacted for further process. The organization reserves the right to reject any/all applications without assigning any reasons.</p>\n<p>Phone call will be not be entertained and only shortlisted candidates will be contacted for further process. The organization reserves the right to reject any/all applications without assigning any reasons.</p>\n<p>Society of deaf blind Parents Rupandehi</p>\n<p>Tilottama-5, Manigram</p>\n",
+      "protected": false
+    },
+    "author": 1891,
+    "featured_media": 22782,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Rupandehi",
+      "_application": "pcsdbprupandehi2022@gmail.com",
+      "_company_name": "Society of Deafblind Parents Rupandehi",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      12,
+      11
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      105
+    ],
+    "class_list": {
+      "0": "post-22779",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-rupandehi",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/22779",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1891"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/22782"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=22779"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=22779"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=22779"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=22779"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 22774,
     "date": "2026-04-07T13:42:44",
     "date_gmt": "2026-04-07T07:57:44",
@@ -46640,7 +47106,7 @@
       "rendered": "School Nurse, Computer Operator, Basketball Coach, Cricket Coach, Computer Science Teacher, Science Teacher"
     },
     "content": {
-      "rendered": "<p><strong>Radiant Readers Academy</strong>, a leading educational institution in Lalitpur, Nepal, is inviting passionate, qualified, and dedicated professionals to join our growing team, Be part of a progressive learning environment focused on holistic student development</p>\n<p><strong>Social Studies Teacher (Grade 3 &amp; 4 ) -1 Lady)</strong><br />\n<strong>Nepali Teacher (Grade 3 &amp; 4) -1 Lady)</strong><br />\n<strong>Science Teacher (Grade 3 &amp; 4 ) -1 (Lady)</strong><br />\n<strong>Computer Science Teacher (Grade -5 &amp; 6 -1 (Lady)</strong><br />\n<strong>School Nurse -1</strong><br />\n<strong>Cricket Coach-1</strong><br />\n<strong>Basketball Coach-1</strong><br />\n<strong>Computer Operator-1</strong></p>\n<p><strong>Ideal Candidate Profile:</strong></p>\n<p><strong>For Teachers (All Subject):</strong></p>\n<ul>\n<li>Bachelor’s/Master’s degree in relevant subject</li>\n<li>Minimum 3-5 years commitment</li>\n<li>Strong classroom management &amp; Communication skills</li>\n</ul>\n<p><strong>School Nurse:</strong></p>\n<ul>\n<li>Certified Nursing degree (PCL/Bachelor)</li>\n<li>Experience in child care &amp; first aid</li>\n</ul>\n<p><strong>Sports Coaches (Cricket &amp; Basketball):</strong></p>\n<ul>\n<li>Relevant coaching certification or experience</li>\n</ul>\n<p><strong>Sports Coaches (Cricket &amp; Basketball):</strong></p>\n<ul>\n<li>Relevant coaching certification or experience</li>\n<li>Ability to train and motivate students</li>\n</ul>\n<p><strong>Documentation Officer:</strong></p>\n<ul>\n<li>Bachelor’s degree in Management/IT related field</li>\n<li>Strong documentation, reporting &amp; computer skills</li>\n</ul>\n<p><strong>How To Apply:</strong></p>\n<p>Send your CV, cover letter, and relevant documents:<strong> radiantschool2026@gmail.com</strong></p>\n<p><strong>Phone No.:</strong> 9851247902, 9851247903<br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job.jpg\" alt=\"\" width=\"959\" height=\"1600\" class=\"alignnone size-full wp-image-21925\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job.jpg 959w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-180x300.jpg 180w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-614x1024.jpg 614w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-768x1281.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-921x1536.jpg 921w\" sizes=\"(max-width: 959px) 100vw, 959px\" /></p>\n",
+      "rendered": "<p><strong>Radiant Readers Academy</strong>, a leading educational institution in Lalitpur, Nepal, is inviting passionate, qualified, and dedicated professionals to join our growing team, Be part of a progressive learning environment focused on holistic student development</p>\n<p><strong>Social Studies Teacher (Grade 3 &amp; 4 ) -1 Lady)</strong><br />\n<strong>Nepali Teacher (Grade 3 &amp; 4) -1 Lady)</strong><br />\n<strong>Science Teacher (Grade 3 &amp; 4 ) -1 (Lady)</strong><br />\n<strong>Computer Science Teacher (Grade -5 &amp; 6 -1 (Lady)</strong><br />\n<strong>School Nurse -1</strong><br />\n<strong>Cricket Coach-1</strong><br />\n<strong>Basketball Coach-1</strong><br />\n<strong>Computer Operator-1</strong></p>\n<p><strong>Ideal Candidate Profile:</strong></p>\n<p><strong>For Teachers (All Subject):</strong></p>\n<ul>\n<li>Bachelor’s/Master’s degree in relevant subject</li>\n<li>Minimum 3-5 years commitment</li>\n<li>Strong classroom management &amp; Communication skills</li>\n</ul>\n<p><strong>School Nurse:</strong></p>\n<ul>\n<li>Certified Nursing degree (PCL/Bachelor)</li>\n<li>Experience in child care &amp; first aid</li>\n</ul>\n<p><strong>Sports Coaches (Cricket &amp; Basketball):</strong></p>\n<ul>\n<li>Relevant coaching certification or experience</li>\n</ul>\n<p><strong>Sports Coaches (Cricket &amp; Basketball):</strong></p>\n<ul>\n<li>Relevant coaching certification or experience</li>\n<li>Ability to train and motivate students</li>\n</ul>\n<p><strong>Documentation Officer:</strong></p>\n<ul>\n<li>Bachelor’s degree in Management/IT related field</li>\n<li>Strong documentation, reporting &amp; computer skills</li>\n</ul>\n<p><strong>How To Apply:</strong></p>\n<p>Send your CV, cover letter, and relevant documents:<strong> radiantschool2026@gmail.com</strong></p>\n<p><strong>Phone No.:</strong> 9851247902, 9851247903<br />\n<img fetchpriority=\"high\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job.jpg\" alt=\"\" width=\"959\" height=\"1600\" class=\"alignnone size-full wp-image-21925\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job.jpg 959w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-180x300.jpg 180w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-614x1024.jpg 614w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-768x1281.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/03/Radiant-Readers-Academy-job-921x1536.jpg 921w\" sizes=\"(max-width: 959px) 100vw, 959px\" /></p>\n",
       "protected": false
     },
     "author": 1859,
@@ -48281,7 +48747,7 @@
       "rendered": "Trainee Assistant, Junior Assistant, Senior Assistant, Junior Officer"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-21892\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job.jpg\" alt=\"\" width=\"963\" height=\"1600\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job.jpg 963w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-181x300.jpg 181w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-616x1024.jpg 616w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-768x1276.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-924x1536.jpg 924w\" sizes=\"(max-width: 963px) 100vw, 963px\" /><br />\n<strong>Position</strong>: Junior Officer<br />\n<strong>No of Vacancy:</strong> 2</p>\n<p><strong>Position:</strong> Senior Assistant<br />\n<strong>No of Vacancy:</strong> 4</p>\n<p><strong>Position:</strong> Junior Assistant<br />\n<strong>No of Vacancy: </strong>Few<br />\n<strong><br />\nPosition:</strong> Trainee Assistant<br />\n<strong>No of Vacancy:</strong> Few</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-21892\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job.jpg\" alt=\"\" width=\"963\" height=\"1600\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job.jpg 963w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-181x300.jpg 181w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-616x1024.jpg 616w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-768x1276.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/03/Janautthan-Samudayic-Laghubitta-Bittiya-Sanstha-Limited-job-924x1536.jpg 924w\" sizes=\"(max-width: 963px) 100vw, 963px\" /><br />\n<strong>Position</strong>: Junior Officer<br />\n<strong>No of Vacancy:</strong> 2</p>\n<p><strong>Position:</strong> Senior Assistant<br />\n<strong>No of Vacancy:</strong> 4</p>\n<p><strong>Position:</strong> Junior Assistant<br />\n<strong>No of Vacancy: </strong>Few<br />\n<strong><br />\nPosition:</strong> Trainee Assistant<br />\n<strong>No of Vacancy:</strong> Few</p>\n",
       "protected": false
     },
     "author": 2,
@@ -48751,7 +49217,7 @@
       "rendered": "Project Officer, Sub-Engineer, Water Resources Technician"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-21883\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10.png\" alt=\"\" width=\"838\" height=\"1154\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10.png 838w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10-218x300.png 218w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10-744x1024.png 744w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10-768x1058.png 768w\" sizes=\"(max-width: 838px) 100vw, 838px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-21881\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11.png\" alt=\"\" width=\"835\" height=\"913\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11.png 835w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11-274x300.png 274w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11-768x840.png 768w\" sizes=\"(max-width: 835px) 100vw, 835px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-21882\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12.png\" alt=\"\" width=\"802\" height=\"872\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12.png 802w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12-276x300.png 276w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12-768x835.png 768w\" sizes=\"(max-width: 802px) 100vw, 802px\" /><br />\n<strong>Position</strong>: Project Officer<br />\n<strong>No of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Sub-Engineer<br />\n<strong>No of vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Water Resources Technician<br />\n<strong>No of Vacancy:</strong> 2</p>\n<p><strong>Location:</strong> Surkhet</p>\n<p><strong>Barahatal Gaunpalika</strong></p>\n<p>Website: <a href=\"http://www.barahatalmun.gov.np\" target=\"_blank\" rel=\"noopener\">www.barahatalmun.gov.np</a>, <a href=\"http://www.laccp.org.np\" target=\"_blank\" rel=\"noopener\">www.laccp.org.np</a></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-21883\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10.png\" alt=\"\" width=\"838\" height=\"1154\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10.png 838w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10-218x300.png 218w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10-744x1024.png 744w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-10-768x1058.png 768w\" sizes=\"(max-width: 838px) 100vw, 838px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-21881\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11.png\" alt=\"\" width=\"835\" height=\"913\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11.png 835w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11-274x300.png 274w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-11-768x840.png 768w\" sizes=\"(max-width: 835px) 100vw, 835px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-21882\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12.png\" alt=\"\" width=\"802\" height=\"872\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12.png 802w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12-276x300.png 276w, https://merorojgari.com/wp-content/uploads/2026/03/barahatal-rural-municipality-job-12-768x835.png 768w\" sizes=\"(max-width: 802px) 100vw, 802px\" /><br />\n<strong>Position</strong>: Project Officer<br />\n<strong>No of Vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Sub-Engineer<br />\n<strong>No of vacancy:</strong> 1</p>\n<p><strong>Position:</strong> Water Resources Technician<br />\n<strong>No of Vacancy:</strong> 2</p>\n<p><strong>Location:</strong> Surkhet</p>\n<p><strong>Barahatal Gaunpalika</strong></p>\n<p>Website: <a href=\"http://www.barahatalmun.gov.np\" target=\"_blank\" rel=\"noopener\">www.barahatalmun.gov.np</a>, <a href=\"http://www.laccp.org.np\" target=\"_blank\" rel=\"noopener\">www.laccp.org.np</a></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69779,476 +70245,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=21407"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 21402,
-    "date": "2026-03-18T13:06:58",
-    "date_gmt": "2026-03-18T07:21:58",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=21402"
-    },
-    "modified": "2026-03-18T13:12:10",
-    "modified_gmt": "2026-03-18T07:27:10",
-    "slug": "sales-berry-pokhara-full-time-operation-manager",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/sales-berry-pokhara-full-time-operation-manager/",
-    "title": {
-      "rendered": "Operation Manager"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Operations Manager<br />\n<strong>Location:</strong> Pokhara Region</p>\n<p>Sales Berry Department Store is one of Nepal’s largest supermarket chains, with 35+ stores and 600+ employees nationwide, Originating in Pokhara as Saleways, we now operate 10 stores in the Pokhara Region and are looking for a strong Operations Manager to lead regional performance end to end</p>\n<p>This role wens sales execution cost control, store discipline, people leadership and customer experience, with full support from central teams (HR), Finance, Supply Chain IT, Marketing)</p>\n<p><strong>Success in the role will be measured by:</strong></p>\n<ul>\n<li>Same-store sales growth &amp; regional profitability</li>\n<li>Inventory, accuracy, shrinkage control &amp; stock availability</li>\n<li>Store hygiene, VM, and customer experience scores</li>\n<li>Cluster and Store Managers capability, retention &amp; discipline</li>\n<li>SOP compliance and reporting consistency</li>\n</ul>\n<p><strong>Apply here:</strong> career@salesberry.com.np</p>\n",
-      "protected": false
-    },
-    "author": 823,
-    "featured_media": 9109,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Pokhara",
-      "_application": "career@salesberry.com.np",
-      "_company_name": "Sales Berry",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      13
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      121
-    ],
-    "class_list": {
-      "0": "post-21402",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-pokhara",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/21402",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/823"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/9109"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=21402"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=21402"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=21402"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=21402"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 21396,
-    "date": "2026-03-18T12:32:37",
-    "date_gmt": "2026-03-18T06:47:37",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=21396"
-    },
-    "modified": "2026-03-18T12:33:02",
-    "modified_gmt": "2026-03-18T06:48:02",
-    "slug": "civil-engineer-3",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/civil-engineer-3/",
-    "title": {
-      "rendered": "Civil Engineer"
-    },
-    "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-21397\" src=\"https://merorojgari.com/wp-content/uploads/2026/03/bideha-municipality-job.png\" alt=\"\" width=\"938\" height=\"637\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/03/bideha-municipality-job.png 938w, https://merorojgari.com/wp-content/uploads/2026/03/bideha-municipality-job-300x204.png 300w, https://merorojgari.com/wp-content/uploads/2026/03/bideha-municipality-job-768x522.png 768w\" sizes=\"(max-width: 938px) 100vw, 938px\" /><br />\n<strong>Position</strong>: Civil Engineer<br />\n<strong>No of Vacancy:</strong> 1<br />\n<strong>Location:</strong> Dhanusha</p>\n<p>Bideha Nagarpalika</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 27,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Dhanusha",
-      "_application": "",
-      "_company_name": "Bideha Nagarpalika",
-      "_company_website": "https://bidehamun.gov.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      27,
-      15,
-      18
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      66
-    ],
-    "class_list": {
-      "0": "post-21396",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-dhanusha",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/21396",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=21396"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=21396"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=21396"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=21396"
         }
       ],
       "curies": [
