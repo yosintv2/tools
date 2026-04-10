@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Holiday Calendar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .calendar-container {
+            background: #ffffff;
+            width: 320px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .month-year {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #2d3436;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-btn {
+            background: #fdfdfd;
+            color: #e74c3c;
+            border: 1px solid #eee;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #e74c3c;
+            color: white;
+            border-color: #e74c3c;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            text-align: center;
+        }
+
+        .day-name {
+            font-weight: bold;
+            color: #b2bec3;
+            font-size: 0.7rem;
+            padding-bottom: 15px;
+        }
+
+        .date-cell {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            color: #636e72;
+            margin: auto;
+        }
+
+        /* --- FIXED RED CIRCLE CSS --- */
+        .holiday {
+            background-color: transparent;
+            border: 2px solid #e74c3c; /* Red border */
+            color: #e74c3c;           /* Red text */
+            font-weight: bold;
+            border-radius: 50%;       /* Makes it a circle */
+            width: 32px;              /* Fixed width */
+            height: 32px;             /* Fixed height */
+            display: flex;            /* Center text inside circle */
+            align-items: center;      /* Vertical center */
+            justify-content: center;  /* Horizontal center */
+            box-sizing: border-box;   /* Includes border in width/height */
+        }
+
+        .empty { visibility: hidden; }
+    </style>
+</head>
+<body>
+
+<div class="calendar-container">
+    <div class="header">
+        <button class="nav-btn" onclick="changeMonth(-1)">&#8249;</button>
+        <div class="month-year" id="monthDisplay"></div>
+        <button class="nav-btn" onclick="changeMonth(1)">&#8250;</button>
+    </div>
+    <div class="grid" id="calendarGrid"></div>
+</div>
+
+<script>
+    // Current date is April 2026
+    let currentDate = new Date(2026, 3, 1); 
+
+    function renderCalendar() {
+        const grid = document.getElementById('calendarGrid');
+        const display = document.getElementById('monthDisplay');
+        grid.innerHTML = ''; 
+
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth();
+        const monthNames = ["January", "February", "March", "April", "May", "June", 
+                            "July", "August", "September", "October", "November", "December"];
+        
+        display.innerText = `${monthNames[month]} ${year}`;
+
+        ["M", "T", "W", "T", "F", "S", "S"].forEach(d => {
+            const div = document.createElement('div');
+            div.className = 'day-name';
+            div.innerText = d;
+            grid.appendChild(div);
+        });
+
+        const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        for (let i = 0; i < firstDay; i++) {
+            const empty = document.createElement('div');
+            empty.className = 'date-cell empty';
+            grid.appendChild(empty);
+        }
+
+        let satCount = 0;
+        let sunCount = 0;
+
+        for (let day = 1; day <= daysInMonth; day++) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'date-cell';
+            
+            const dateObj = new Date(year, month, day);
+            const dayOfWeek = dateObj.getDay(); // 0=Sun, 6=Sat
+
+            let isHoliday = false;
+
+            if (dayOfWeek === 6) { // Saturday
+                satCount++;
+                if (satCount === 2 || satCount === 4) isHoliday = true;
+            } else if (dayOfWeek === 0) { // Sunday
+                isHoliday = true;
+            }
+
+            if (isHoliday) {
+                const circle = document.createElement('div');
+                circle.className = 'holiday';
+                circle.innerText = day;
+                wrapper.appendChild(circle);
+            } else {
+                wrapper.innerText = day;
+            }
+
+            grid.appendChild(wrapper);
+        }
+    }
+
+    function changeMonth(offset) {
+        currentDate.setMonth(currentDate.getMonth() + offset);
+        renderCalendar();
+    }
+
+    renderCalendar();
+</script>
+
+</body>
+</html>
