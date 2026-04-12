@@ -6,8 +6,8 @@
     "guid": {
       "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=23086"
     },
-    "modified": "2026-04-12T18:05:46",
-    "modified_gmt": "2026-04-12T12:20:46",
+    "modified": "2026-04-12T19:22:52",
+    "modified_gmt": "2026-04-12T13:37:52",
     "slug": "communications-officer-2",
     "status": "publish",
     "type": "job_listing",
@@ -20,7 +20,7 @@
       "protected": false
     },
     "author": 2,
-    "featured_media": 0,
+    "featured_media": 23089,
     "template": "",
     "meta": {
       "site-sidebar-layout": "default",
@@ -164,9 +164,10 @@
       "1": "job_listing",
       "2": "type-job_listing",
       "3": "status-publish",
-      "4": "hentry",
-      "5": "job_listing_tag-surkhet",
-      "7": "job-type-full-time"
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-surkhet",
+      "8": "job-type-full-time"
     },
     "_links": {
       "self": [
@@ -193,6 +194,12 @@
         {
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/23089"
         }
       ],
       "wp:attachment": [
