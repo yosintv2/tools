@@ -1,5 +1,473 @@
 [
   {
+    "id": 23967,
+    "date": "2026-04-26T17:31:50",
+    "date_gmt": "2026-04-26T11:46:50",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=23967"
+    },
+    "modified": "2026-04-26T17:33:14",
+    "modified_gmt": "2026-04-26T11:48:14",
+    "slug": "maw-enterprises-pvt-ltd-kathmandu-full-time-crm-officer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/maw-enterprises-pvt-ltd-kathmandu-full-time-crm-officer/",
+    "title": {
+      "rendered": "CRM Officer"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: CRM Officer<br />\n<strong>Location:</strong> Kathmandu</p>\n<p><strong>Requirements</strong>:</p>\n<ul>\n<li>Bachelor’s degree</li>\n<li>Minimum 3 to 4 years of relevant experience in automobile industry</li>\n</ul>\n<p>Interested Candidates may send their application and resume to<strong> hrd@mawnepal.com</strong></p>\n",
+      "protected": false
+    },
+    "author": 1359,
+    "featured_media": 19652,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "hrd@mawnepal.com",
+      "_company_name": "MAW Enterprises Pvt. Ltd.",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      30
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-23967",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/23967",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1359"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/19652"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=23967"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=23967"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=23967"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=23967"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 23965,
+    "date": "2026-04-26T17:25:25",
+    "date_gmt": "2026-04-26T11:40:25",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=23965"
+    },
+    "modified": "2026-04-26T17:28:34",
+    "modified_gmt": "2026-04-26T11:43:34",
+    "slug": "maw-enterprises-pvt-ltd-kathmandu-full-time-mis-officer-banking-insurance",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/maw-enterprises-pvt-ltd-kathmandu-full-time-mis-officer-banking-insurance/",
+    "title": {
+      "rendered": "MIS Officer &#8211; Banking &amp; Insurance"
+    },
+    "content": {
+      "rendered": "<p><strong>Position</strong>: MIS Officer &#8211; Banking &amp; Insurance<br />\n<strong>Location</strong>: Kathmandu</p>\n<p><strong>Requirements</strong>:</p>\n<ul>\n<li>Bachelor’s degree</li>\n<li>Minimum 3to 4 years of relevant experience in automobile industry</li>\n</ul>\n<p>Interested Candidates may send their application and resume to <strong>hrd@mawnepal.com</strong></p>\n",
+      "protected": false
+    },
+    "author": 1359,
+    "featured_media": 19652,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "hrd@mawnepal.com",
+      "_company_name": "MAW Enterprises Pvt. Ltd.",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      26
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-23965",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/23965",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1359"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/19652"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=23965"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=23965"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=23965"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=23965"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 23936,
     "date": "2026-04-26T12:35:07",
     "date_gmt": "2026-04-26T06:50:07",
@@ -22985,7 +23453,7 @@
       "rendered": "ANM, AHW"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-23442\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1.png\" alt=\"\" width=\"1213\" height=\"1603\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1.png 1213w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-227x300.png 227w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-775x1024.png 775w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-768x1015.png 768w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-1162x1536.png 1162w\" sizes=\"(max-width: 1213px) 100vw, 1213px\" /><br />\n<strong>Position</strong>: ANM<br />\n<strong>No .of Vacancy:</strong> 4</p>\n<p><strong>Position</strong>: AHW<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Gorkha</p>\n<p>Aarughat Gaunpalika</p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-23442\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1.png\" alt=\"\" width=\"1213\" height=\"1603\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1.png 1213w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-227x300.png 227w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-775x1024.png 775w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-768x1015.png 768w, https://merorojgari.com/wp-content/uploads/2026/04/Aarughat-Rural-Municipality-job-1-1162x1536.png 1162w\" sizes=\"(max-width: 1213px) 100vw, 1213px\" /><br />\n<strong>Position</strong>: ANM<br />\n<strong>No .of Vacancy:</strong> 4</p>\n<p><strong>Position</strong>: AHW<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Gorkha</p>\n<p>Aarughat Gaunpalika</p>\n",
       "protected": false
     },
     "author": 2,
@@ -23221,7 +23689,7 @@
       "rendered": "Program Assistant, Program Coordinator, Program Officer, Monitoring and Evaluation Officer, Admin and Finance Officer, Field Supervisor, Community Mobilizer"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-23438\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job.png\" alt=\"\" width=\"949\" height=\"774\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job.png 949w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-300x245.png 300w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-768x626.png 768w\" sizes=\"(max-width: 949px) 100vw, 949px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-23439\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1.png\" alt=\"\" width=\"950\" height=\"741\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1.png 950w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1-300x234.png 300w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1-768x599.png 768w\" sizes=\"(max-width: 950px) 100vw, 950px\" /><br />\n<strong>Position</strong>: Program Coordinator<br />\n<strong>No .of Vacancy</strong>: 1</p>\n<p><strong>Position</strong>: Program Officer<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Monitoring and Evaluation Officer<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Admin and Finance Officer<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Field Supervisor<br />\n<strong>No .of Vacancy:</strong> 8</p>\n<p><strong>Position</strong>: Community Mobilizer<br />\n<strong>No .of Vacancy:</strong> 8</p>\n<p><strong>Position</strong>: Program Assistant<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Butwal, Rupandehi</p>\n<p><strong>Seto Gurans Child Development Service</strong></p>\n<p><strong>Email</strong>: recruitment.humanresource23@gmail.com</p>\n<p><strong>Phone No.:</strong> 071-531632</p>\n<p>Website: <a href=\"https://setoguransrupandehi.org.np\" target=\"_blank\" rel=\"noopener\">https://setoguransrupandehi.org.np</a></p>\n<p><em> Source: Butwal Today, 19 April, 2026 </em></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-23438\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job.png\" alt=\"\" width=\"949\" height=\"774\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job.png 949w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-300x245.png 300w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-768x626.png 768w\" sizes=\"(max-width: 949px) 100vw, 949px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-23439\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1.png\" alt=\"\" width=\"950\" height=\"741\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1.png 950w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1-300x234.png 300w, https://merorojgari.com/wp-content/uploads/2026/04/seto-gurans-child-development-service-job-1-768x599.png 768w\" sizes=\"(max-width: 950px) 100vw, 950px\" /><br />\n<strong>Position</strong>: Program Coordinator<br />\n<strong>No .of Vacancy</strong>: 1</p>\n<p><strong>Position</strong>: Program Officer<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Monitoring and Evaluation Officer<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Admin and Finance Officer<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Field Supervisor<br />\n<strong>No .of Vacancy:</strong> 8</p>\n<p><strong>Position</strong>: Community Mobilizer<br />\n<strong>No .of Vacancy:</strong> 8</p>\n<p><strong>Position</strong>: Program Assistant<br />\n<strong>No .of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Butwal, Rupandehi</p>\n<p><strong>Seto Gurans Child Development Service</strong></p>\n<p><strong>Email</strong>: recruitment.humanresource23@gmail.com</p>\n<p><strong>Phone No.:</strong> 071-531632</p>\n<p>Website: <a href=\"https://setoguransrupandehi.org.np\" target=\"_blank\" rel=\"noopener\">https://setoguransrupandehi.org.np</a></p>\n<p><em> Source: Butwal Today, 19 April, 2026 </em></p>\n",
       "protected": false
     },
     "author": 1945,
@@ -23456,7 +23924,7 @@
       "rendered": "Trainee Facilitator"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-23430\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd.png\" alt=\"\" width=\"884\" height=\"1014\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd.png 884w, https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd-262x300.png 262w, https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd-768x881.png 768w\" sizes=\"(max-width: 884px) 100vw, 884px\" /><br />\n<strong>Position</strong>: Trainee Facilitator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Gulmi</p>\n<p><strong>Suryodaya Womi Laghubitaa Bittiya Sanstha Ltd. </strong></p>\n<p><strong>Phone No.:</strong> 9802895163, 079-410125</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-23430\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd.png\" alt=\"\" width=\"884\" height=\"1014\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd.png 884w, https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd-262x300.png 262w, https://merorojgari.com/wp-content/uploads/2026/04/Suryodaya-Womi-Laghubitaa-Bittiya-Sanstha-Ltd-768x881.png 768w\" sizes=\"(max-width: 884px) 100vw, 884px\" /><br />\n<strong>Position</strong>: Trainee Facilitator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Gulmi</p>\n<p><strong>Suryodaya Womi Laghubitaa Bittiya Sanstha Ltd. </strong></p>\n<p><strong>Phone No.:</strong> 9802895163, 079-410125</p>\n",
       "protected": false
     },
     "author": 2,
@@ -23926,7 +24394,7 @@
       "rendered": "Social Mobilizer, Monitoring and Evaluation Officer"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-23422\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1.png\" alt=\"\" width=\"562\" height=\"1080\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1.png 562w, https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1-156x300.png 156w, https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1-533x1024.png 533w\" sizes=\"(max-width: 562px) 100vw, 562px\" /><br />\n<strong>Position</strong>: Social Mobilizer</p>\n<p><strong>Jajarkot (Kuse Gaunpalika) -1</strong><br />\n<strong>Jajarkot (Junichande Gaunpalika)-1</strong><br />\n<strong>Paschim Rukum (Aathbiskot Nagarpalika)-1</strong><br />\n<strong>Paschim Rukum (Sanibheri Gaunpalika)-1</strong><br />\n<strong>Paschim Rukum (Banphikot Gaunpalika) -1</strong></p>\n<p><strong>Position</strong>: Monitoring and Evaluation Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>(Jajarkot, Paschim Rukum)</strong></p>\n<p><strong>Email</strong>: info@flooking.org.np, surya@flooking.org.np</p>\n<p><strong>Phone No.:</strong> 01- 5010523, 5010730</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-23422\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1.png\" alt=\"\" width=\"562\" height=\"1080\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1.png 562w, https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1-156x300.png 156w, https://merorojgari.com/wp-content/uploads/2026/04/forward-looking-organization-job-1-533x1024.png 533w\" sizes=\"(max-width: 562px) 100vw, 562px\" /><br />\n<strong>Position</strong>: Social Mobilizer</p>\n<p><strong>Jajarkot (Kuse Gaunpalika) -1</strong><br />\n<strong>Jajarkot (Junichande Gaunpalika)-1</strong><br />\n<strong>Paschim Rukum (Aathbiskot Nagarpalika)-1</strong><br />\n<strong>Paschim Rukum (Sanibheri Gaunpalika)-1</strong><br />\n<strong>Paschim Rukum (Banphikot Gaunpalika) -1</strong></p>\n<p><strong>Position</strong>: Monitoring and Evaluation Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>(Jajarkot, Paschim Rukum)</strong></p>\n<p><strong>Email</strong>: info@flooking.org.np, surya@flooking.org.np</p>\n<p><strong>Phone No.:</strong> 01- 5010523, 5010730</p>\n",
       "protected": false
     },
     "author": 1944,
@@ -24629,7 +25097,7 @@
       "rendered": "Secondary Level Social Teacher, Basic Level Teacher"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-23401\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20.png\" alt=\"\" width=\"928\" height=\"1387\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20.png 928w, https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20-201x300.png 201w, https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20-685x1024.png 685w, https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20-768x1148.png 768w\" sizes=\"(max-width: 928px) 100vw, 928px\" /><br />\n<strong>Position</strong>: Teacher<br />\n<strong>Level</strong>: Basic<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Position</strong>: Teacher</p>\n<p><strong>Level</strong>: Secondary<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject:</strong> Social<br />\n<strong>Location</strong>: Bara<br />\n<strong>Phone No.:</strong> 9855049768</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-23401\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20.png\" alt=\"\" width=\"928\" height=\"1387\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20.png 928w, https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20-201x300.png 201w, https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20-685x1024.png 685w, https://merorojgari.com/wp-content/uploads/2026/04/shree-nepal-rastriya-secondary-school-job20-768x1148.png 768w\" sizes=\"(max-width: 928px) 100vw, 928px\" /><br />\n<strong>Position</strong>: Teacher<br />\n<strong>Level</strong>: Basic<br />\n<strong>No. of Vacancy</strong>: 1<br />\n<strong>Position</strong>: Teacher</p>\n<p><strong>Level</strong>: Secondary<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject:</strong> Social<br />\n<strong>Location</strong>: Bara<br />\n<strong>Phone No.:</strong> 9855049768</p>\n",
       "protected": false
     },
     "author": 2,
@@ -46383,7 +46851,7 @@
       "rendered": "Psychosocial Counselor"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-23005\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1.png\" alt=\"\" width=\"1332\" height=\"1733\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1.png 1332w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-231x300.png 231w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-787x1024.png 787w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-768x999.png 768w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-1181x1536.png 1181w\" sizes=\"(max-width: 1332px) 100vw, 1332px\" /><br />\n<strong>Position</strong>: Psychosocial Counselor<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location: </strong>Siraha</p>\n<p>Bariyarpatti Gaunpalika</p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-23005\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1.png\" alt=\"\" width=\"1332\" height=\"1733\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1.png 1332w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-231x300.png 231w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-787x1024.png 787w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-768x999.png 768w, https://merorojgari.com/wp-content/uploads/2026/04/Bariyarpatti-Rural-Municipality-job-1-1181x1536.png 1181w\" sizes=\"(max-width: 1332px) 100vw, 1332px\" /><br />\n<strong>Position</strong>: Psychosocial Counselor<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location: </strong>Siraha</p>\n<p>Bariyarpatti Gaunpalika</p>\n",
       "protected": false
     },
     "author": 2,
@@ -46619,7 +47087,7 @@
       "rendered": "Case Manager (Health Assistant)"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-22997\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job.jpg\" alt=\"\" width=\"1350\" height=\"1350\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job.jpg 1350w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-300x300.jpg 300w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-1024x1024.jpg 1024w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-150x150.jpg 150w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-768x768.jpg 768w\" sizes=\"(max-width: 1350px) 100vw, 1350px\" /><br />\n<strong>Position</strong>: Case Manager (Health Assistant)<br />\n<strong>Location:</strong> Dhanusha<br />\n<strong>Email:</strong> vacancy.sparsha@gmail.com</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-22997\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job.jpg\" alt=\"\" width=\"1350\" height=\"1350\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job.jpg 1350w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-300x300.jpg 300w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-1024x1024.jpg 1024w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-150x150.jpg 150w, https://merorojgari.com/wp-content/uploads/2026/04/SPARSHA-Nepal-job-768x768.jpg 768w\" sizes=\"(max-width: 1350px) 100vw, 1350px\" /><br />\n<strong>Position</strong>: Case Manager (Health Assistant)<br />\n<strong>Location:</strong> Dhanusha<br />\n<strong>Email:</strong> vacancy.sparsha@gmail.com</p>\n",
       "protected": false
     },
     "author": 1116,
@@ -46853,7 +47321,7 @@
       "rendered": "Engineer, Health Assistant, Enterprise Development Facilitator, Light Vehicle Driver"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-22994\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/gosai-kunda-Gaunpalika-job-1.png\" alt=\"\" width=\"627\" height=\"835\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/gosai-kunda-Gaunpalika-job-1.png 627w, https://merorojgari.com/wp-content/uploads/2026/04/gosai-kunda-Gaunpalika-job-1-225x300.png 225w\" sizes=\"(max-width: 627px) 100vw, 627px\" /><br />\n<strong>Position</strong>: Engineer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Health Assistant<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Position</strong>: Enterprise Development Facilitator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Light Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Gosaikunda Gaunpalika</strong></p>\n<p><strong>Location:</strong> Rasuwa</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-22994\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/gosai-kunda-Gaunpalika-job-1.png\" alt=\"\" width=\"627\" height=\"835\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/gosai-kunda-Gaunpalika-job-1.png 627w, https://merorojgari.com/wp-content/uploads/2026/04/gosai-kunda-Gaunpalika-job-1-225x300.png 225w\" sizes=\"(max-width: 627px) 100vw, 627px\" /><br />\n<strong>Position</strong>: Engineer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Health Assistant<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Position</strong>: Enterprise Development Facilitator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Light Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Gosaikunda Gaunpalika</strong></p>\n<p><strong>Location:</strong> Rasuwa</p>\n",
       "protected": false
     },
     "author": 2,
@@ -47089,7 +47557,7 @@
       "rendered": "Branch Manager, Compliance Officer, Risk Officer, Operation &#038; Credit Department"
     },
     "content": {
-      "rendered": "<p><strong>Narayani Development Bank Ltd.(NDBL).</strong> a Regional Level Development Bank having its Central Office at Bharatpur Metropolitan City-10. Chitwan. Nepal. invites applications from highly competent, self-motivated, dynamic, and result-oriented Nepalese citizens who have a passion to excel in the banking industry for the following positions at its Central Office. Chitwan:</p>\n<p><strong>Position</strong>: Risk Officer<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Position Level:</strong> Officer to Managerial Level</p>\n<p><strong>General Requirements:</strong></p>\n<ul>\n<li>Minimum Master’s Degree in Management from a recognized University. Candidates having CA/Semi-CA/ACCA qualification will be given preference</li>\n<li>Sound knowledge of NRB Directives, Banking Operations and Risk Assessment (Operational, Credit &amp; Overall Banking Risk)</li>\n<li>Minimum 5 years of banking experience, currently working in at least one level lower position in any Bank or Financial Institution (BFI)</li>\n<li>Age: Not exceeding 40 years as on application deadline</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Compliance Officer<br />\n<strong>Required No.</strong>: Few<br />\n<strong>Level:</strong> Officer Level</p>\n<p><strong>General Requirements</strong></p>\n<ul>\n<li> Minimum Bachelor&#8217;s Degree in Management from a recognized University. Candidates having CA / Semi-CA/ACCA qualification will be given preference.</li>\n<li> Minimum 5 years of banking experience, currently working in at position in any Bank or Financial Institution (BFI).</li>\n<li>least one level lower Ince related rules &amp; arcane</li>\n<li> Sound knowledge of NRB Directives, Banking Ac Act &amp; Compliance regulation for the position.</li>\n<li> Age: Not exceeding 40 years as on application deadline.</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Branch Manager<br />\n<strong>Required No.:</strong> Few<br />\n<strong>Level:</strong> Officer Level</p>\n<p><strong>General Requirements</strong></p>\n<ul>\n<li>Minimum Bachelor&#8217;s degree (preferably Master&#8217;s Degree) in management from a recognized university. haste</li>\n<li> Minimum 5 years&#8217; Banking experience in relevant field and currently working in at least immediate lower position in any A, B or C class bank and financial institution and must have sound knowledge of credit &amp; Branch operations.</li>\n<li> Age not exceeding 40 years as on application deadline.</li>\n<li> Priority will be given to the local candidates having 2 wheeler driving license.</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Operation &amp; Credit Department</p>\n<p><strong>Required No.:</strong> Few</p>\n<p><strong>Level:</strong> Assistant Level</p>\n<p><strong>General Requirements</strong></p>\n<ul>\n<li>Minimum +2 up to Bachelor&#8217;s Degree in management from a recognized university.</li>\n<li>Minimum 2 years Banking experience for Assistant Level in relevant field and currently working in at least immediate lower position in any A, B or C class bank and financial institution. Fresher candidate may also be entertain best on their activities &amp; level of Knowledge.</li>\n<li>Age not exceeding 35 years as on application deadline.</li>\n<li>Must have knowledge of basic computer (i.e. Microsoft of Excel, Microsoft of Word)</li>\n<li>Must be fluent in English language both written and spoken.</li>\n<li>Priority will be given to the local candidates having 2 wheeler driving license.</li>\n</ul>\n<p>Eligible and interested candidates are requested to send their application Letter, Updated CV, Recent passport-size Photograph, copies of academic certificates and work experience letter at email: <strong>vacancy.narayani@gmail.com</strong> not later than <strong>5:00 PM on 24th April, 2026</strong> clearly mentioning the position applied for in the subject line.<br />\n<img decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1.png\" alt=\"\" width=\"519\" height=\"1033\" class=\"alignnone size-full wp-image-22981\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1.png 519w, https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1-151x300.png 151w, https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1-514x1024.png 514w\" sizes=\"(max-width: 519px) 100vw, 519px\" /></p>\n",
+      "rendered": "<p><strong>Narayani Development Bank Ltd.(NDBL).</strong> a Regional Level Development Bank having its Central Office at Bharatpur Metropolitan City-10. Chitwan. Nepal. invites applications from highly competent, self-motivated, dynamic, and result-oriented Nepalese citizens who have a passion to excel in the banking industry for the following positions at its Central Office. Chitwan:</p>\n<p><strong>Position</strong>: Risk Officer<br />\n<strong>No. of Vacancy:</strong> Few<br />\n<strong>Position Level:</strong> Officer to Managerial Level</p>\n<p><strong>General Requirements:</strong></p>\n<ul>\n<li>Minimum Master’s Degree in Management from a recognized University. Candidates having CA/Semi-CA/ACCA qualification will be given preference</li>\n<li>Sound knowledge of NRB Directives, Banking Operations and Risk Assessment (Operational, Credit &amp; Overall Banking Risk)</li>\n<li>Minimum 5 years of banking experience, currently working in at least one level lower position in any Bank or Financial Institution (BFI)</li>\n<li>Age: Not exceeding 40 years as on application deadline</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Compliance Officer<br />\n<strong>Required No.</strong>: Few<br />\n<strong>Level:</strong> Officer Level</p>\n<p><strong>General Requirements</strong></p>\n<ul>\n<li> Minimum Bachelor&#8217;s Degree in Management from a recognized University. Candidates having CA / Semi-CA/ACCA qualification will be given preference.</li>\n<li> Minimum 5 years of banking experience, currently working in at position in any Bank or Financial Institution (BFI).</li>\n<li>least one level lower Ince related rules &amp; arcane</li>\n<li> Sound knowledge of NRB Directives, Banking Ac Act &amp; Compliance regulation for the position.</li>\n<li> Age: Not exceeding 40 years as on application deadline.</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Branch Manager<br />\n<strong>Required No.:</strong> Few<br />\n<strong>Level:</strong> Officer Level</p>\n<p><strong>General Requirements</strong></p>\n<ul>\n<li>Minimum Bachelor&#8217;s degree (preferably Master&#8217;s Degree) in management from a recognized university. haste</li>\n<li> Minimum 5 years&#8217; Banking experience in relevant field and currently working in at least immediate lower position in any A, B or C class bank and financial institution and must have sound knowledge of credit &amp; Branch operations.</li>\n<li> Age not exceeding 40 years as on application deadline.</li>\n<li> Priority will be given to the local candidates having 2 wheeler driving license.</li>\n</ul>\n<hr />\n<p><strong>Position</strong>: Operation &amp; Credit Department</p>\n<p><strong>Required No.:</strong> Few</p>\n<p><strong>Level:</strong> Assistant Level</p>\n<p><strong>General Requirements</strong></p>\n<ul>\n<li>Minimum +2 up to Bachelor&#8217;s Degree in management from a recognized university.</li>\n<li>Minimum 2 years Banking experience for Assistant Level in relevant field and currently working in at least immediate lower position in any A, B or C class bank and financial institution. Fresher candidate may also be entertain best on their activities &amp; level of Knowledge.</li>\n<li>Age not exceeding 35 years as on application deadline.</li>\n<li>Must have knowledge of basic computer (i.e. Microsoft of Excel, Microsoft of Word)</li>\n<li>Must be fluent in English language both written and spoken.</li>\n<li>Priority will be given to the local candidates having 2 wheeler driving license.</li>\n</ul>\n<p>Eligible and interested candidates are requested to send their application Letter, Updated CV, Recent passport-size Photograph, copies of academic certificates and work experience letter at email: <strong>vacancy.narayani@gmail.com</strong> not later than <strong>5:00 PM on 24th April, 2026</strong> clearly mentioning the position applied for in the subject line.<br />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1.png\" alt=\"\" width=\"519\" height=\"1033\" class=\"alignnone size-full wp-image-22981\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1.png 519w, https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1-151x300.png 151w, https://merorojgari.com/wp-content/uploads/2026/04/Narayani-Dev-Bank-job-1-514x1024.png 514w\" sizes=\"(max-width: 519px) 100vw, 519px\" /></p>\n",
       "protected": false
     },
     "author": 1904,
@@ -48025,7 +48493,7 @@
       "rendered": "Government Job in Sudurpashchim &#8211; Technical Level 4"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-22963\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job.png\" alt=\"\" width=\"1248\" height=\"5549\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job.png 1248w, https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job-230x1024.png 230w, https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job-768x3415.png 768w\" sizes=\"(max-width: 1248px) 100vw, 1248px\" /></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-22963\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job.png\" alt=\"\" width=\"1248\" height=\"5549\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job.png 1248w, https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job-230x1024.png 230w, https://merorojgari.com/wp-content/uploads/2026/04/Sudurpashchim-Lok-Sewa-Aayog-job-768x3415.png 768w\" sizes=\"(max-width: 1248px) 100vw, 1248px\" /></p>\n",
       "protected": false
     },
     "author": 2,
@@ -69815,474 +70283,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=22619"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 22616,
-    "date": "2026-04-05T07:32:45",
-    "date_gmt": "2026-04-05T01:47:45",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=22616"
-    },
-    "modified": "2026-04-05T07:32:45",
-    "modified_gmt": "2026-04-05T01:47:45",
-    "slug": "staff-nurse-dental-hygienist-ambulance-driver",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/staff-nurse-dental-hygienist-ambulance-driver/",
-    "title": {
-      "rendered": "Staff Nurse, Dental Hygienist, Ambulance Driver"
-    },
-    "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-22617\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Province-Hospital-job-10.png\" alt=\"\" width=\"652\" height=\"1019\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Province-Hospital-job-10.png 652w, https://merorojgari.com/wp-content/uploads/2026/04/Province-Hospital-job-10-192x300.png 192w\" sizes=\"(max-width: 652px) 100vw, 652px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-22618\" src=\"https://merorojgari.com/wp-content/uploads/2026/04/Province-Hospital-job-2.png\" alt=\"\" width=\"634\" height=\"393\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/04/Province-Hospital-job-2.png 634w, https://merorojgari.com/wp-content/uploads/2026/04/Province-Hospital-job-2-300x186.png 300w\" sizes=\"(max-width: 634px) 100vw, 634px\" /><br />\n<strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy</strong>: 4</p>\n<p><strong>Position</strong>: Dental Hygienist<br />\n<strong>No. of Vacancy: </strong>1</p>\n<p><strong>Position:</strong> Ambulance Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Gorkha</p>\n<p><strong>Province Hospital Gorkha</strong></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 27,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Gorkha",
-      "_application": "",
-      "_company_name": "Province Hospital Gorkha",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      14
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      69
-    ],
-    "class_list": {
-      "0": "post-22616",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-gorkha",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/22616",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=22616"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=22616"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=22616"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=22616"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 22614,
-    "date": "2026-04-05T06:42:34",
-    "date_gmt": "2026-04-05T00:57:34",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=22614"
-    },
-    "modified": "2026-04-05T06:42:48",
-    "modified_gmt": "2026-04-05T00:57:48",
-    "slug": "supporting-staff-secondary-level-english-teacher",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/supporting-staff-secondary-level-english-teacher/",
-    "title": {
-      "rendered": "Supporting Staff, Secondary Level English Teacher"
-    },
-    "content": {
-      "rendered": "<p><strong>Anjuli Secondary Boarding School</strong>, a well established school in Pokhara needs a highly qualified, experienced, dedicated and punctual candidate for the following academic position :</p>\n<p><strong>Position:</strong> Secondary Level English Teacher<br />\n<strong>Position:</strong> Supporting Staff, Male/Female 2</p>\n<p><strong>Qualification:</strong> M.A. or equivalent (M. English)</p>\n<p><strong>Note :</strong> Only well-qualified and experience candidate having a good command over the language and the subject matter can apply.</p>\n<p>Only short-listed candidates will be called for the interview and class observation.</p>\n<p>Candidates are requested to submit their C.V. by<strong> 28th Chaitra, 2082</strong>. For further details contact at office.</p>\n<p><strong>Principal ANJULI SECONDARY BOARDING SCHOOL</strong></p>\n<p>Pokhara-1, Bagar</p>\n<p><strong>Ph</strong>. 061-580258, 9804183125</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 7940,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Pokhara",
-      "_application": "",
-      "_company_name": "Anjuli Secondary Boarding School",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      9
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      121
-    ],
-    "class_list": {
-      "0": "post-22614",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "6": "job_listing_tag-pokhara",
-      "8": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/22614",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/7940"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=22614"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=22614"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=22614"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=22614"
         }
       ],
       "curies": [
