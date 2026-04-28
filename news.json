@@ -1,11 +1,539 @@
 [
     {
+        "title": "Simeone confirms Arsenal interest in Alvarez",
+        "link": "https://www.skysports.com/football/news/11095/13537576/julian-alvarez-diego-simeone-says-arsenal-interested-in-signing-atletico-madrid-forward-along-with-psg-and-barcelona",
+        "description": "Arsenal are interested in Atletico Madrid forward Julian Alvarez but face competition to sign him from Paris Saint-Germain and Barcelona, according to Diego Simeone.",
+        "pubDate": "Tue, 28 Apr 2026 13:25:00 BST",
+        "source": "SkySports | News",
+        "image": ""
+    },
+    {
+        "title": "Stones to leave Man City this summer",
+        "link": "https://www.skysports.com/football/news/11095/13537595/john-stones-man-city-defender-to-follow-bernardo-silva-out-the-exit-door-this-summer",
+        "description": "John Stones has announced he will leave Manchester City at the end of the season.",
+        "pubDate": "Tue, 28 Apr 2026 13:23:00 BST",
+        "source": "SkySports | News",
+        "image": ""
+    },
+    {
+        "title": "Brighton set for first purpose-built stadium for women's football in UK and Europe",
+        "link": "https://www.skysports.com/football/news/11095/13537492/brighton-wsl-team-reveal-plans-for-first-purpose-built-stadium-for-womens-football-in-the-uk-and-europe",
+        "description": "Brighton have revealed their plans for the first purpose-built stadium for women's football in the UK and Europe.",
+        "pubDate": "Tue, 28 Apr 2026 13:00:00 BST",
+        "source": "SkySports | News",
+        "image": ""
+    },
+    {
+        "title": "नेपाल माइक्रो इन्स्योरेन्सका अध्यक्ष आशिष श्रेष्ठ पक्राउ",
+        "link": "https://www.setopati.com/social/387767",
+        "description": "",
+        "pubDate": "Tue, 28 Apr 2026 18:35:28 +0545",
+        "source": "Setopati",
+        "image": ""
+    },
+    {
+        "title": "रास्वपाकै प्रबल बहुमत रहेको संसद् नबोलाएर अध्यादेश किन ? रविको पुरानो स्टाटस सम्झनामा",
+        "link": "https://www.nepalpress.com/2026/04/28/718647/why-the-ordinance-without-calling-a-parliament-where-the-rsp-has-a-strong-majority-remembering-ravis-old-status/",
+        "description": "सरकारले गुपचुप रूपमा दुईवटा अध्यादेश ल्याउन राष्ट्रपति समक्ष सिफारिस गरेपछि विवाद निम्तिएको छ । चुनावबाट झण्डै दुई तिहाइ बहुमत पाएको सरकारले संसद बोलाएर कानून बनाउनुको साटो किन अध्यादेशको बाटो लिनु आश्चर्यजनक कदम हो ।",
+        "pubDate": "Tue, 28 Apr 2026 12:47:11 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/rabi-3-1024x512.jpg"
+    },
+    {
+        "title": "'I lived all my dreams' - Stones to leave Man City",
+        "link": "https://www.bbc.com/sport/football/articles/clypwjeydnjo?at_medium=RSS&at_campaign=rss",
+        "description": "England defender John Stones says he \"lived all my dreams out\" at Manchester City after confirming he will leave at the end of the season.",
+        "pubDate": "Tue, 28 Apr 2026 12:46:09 GMT",
+        "source": "BBC Sport",
+        "image": ""
+    },
+    {
+        "title": "अध्यादेश अभ्यास लोकतान्त्रिक मूल्यविपरीत: कांग्रेस",
+        "link": "https://newsofnepal.com/2026/04/28/765957/",
+        "description": "काठमाडौँ। सरकारले संसद् स्थगित गरी अध्यादेशमार्फत कानुन निर्माण गर्न लागेको भन्दै नेपाली कांग्रेसले गम्भीर ध्यानाकर्षण जनाएको छ। कांग्रेसका प्रवक्ता देवराज चालीसेले आज विज्ञप्तिमा जारी गरी संसद् स्थगित गरेर अध्यादेशमार्फत कानुन निर्माण गर्ने अभ्यास ल",
+        "pubDate": "Tue, 28 Apr 2026 12:45:45 +0000",
+        "source": "News of Nepal",
+        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/devraj-chalise-150x150.jpg"
+    },
+    {
+        "title": "अमेरिका र इरानबीच चलिरहेको फलाँस खेल!",
+        "link": "https://www.setopati.com/politics/387764",
+        "description": "आणविक हतियार कार्यक्रमका कारण सहमति रोकिए पनि फलाँस भने &#039;स्ट्रेट अफ हर्मुज&#039; को विषयमा चलिरहेको छ।",
+        "pubDate": "Tue, 28 Apr 2026 18:27:47 +0545",
+        "source": "Setopati",
+        "image": ""
+    },
+    {
+        "title": "‘संविधानप्रदत्त दलित अधिकार कार्यान्वयन कमजोर’",
+        "link": "https://nepalnews.com/2026/04/28/implementation-of-constitutionally-guaranteed-dalit-rights-is-weak/",
+        "description": "काठमाडौँ। संविधानमा दलित अधिकार सुनिश्चित भए पनि कानुन नबन्दा कार्यान्वयन पक्ष कमजोर रहेको संविधानविद् तथा अधिकारकर्मीले बताएका छन्। जागरण मिडिया सेन्टरले मंगलबार काठमाडौँमा आयोजना गरेको ‘संवैधानिक व्यवस्था, संविधान संशोधनमा दलितका सवाल विषयक अन्तरसं",
+        "pubDate": "Tue, 28 Apr 2026 12:39:43 +0000",
+        "source": "नेपाल न्युज",
+        "image": ""
+    },
+    {
+        "title": "सभामुख अर्याल र चिनियाँ राजदूतबीच भेटवार्ता",
+        "link": "https://lokaantar.com/story/318245/2026/4/28/current-affairs/aryal-bhet-",
+        "description": "प्रतिनिधिसभाका सभामुख डोलप्रसाद (डीपी) अर्यालसँग नेपालका लागि चिनियाँ राजदूत चाङ माओमिङले भेटवार्ता गरेका छन् ।\n\nआज भएको भेटमा द्विपक्षीय सम्बन्ध, संसदीय सहकार्य, विकास साझेदारी र क्षेत्रीय तथा अन्तर्राष्ट्रिय विषयमा विचार आदानप्रदान भएको थियो ।\n\nभेट",
+        "pubDate": "Tue, 28 Apr 2026 12:35:35 +0000",
+        "source": "LOKAANTAR SANCHAR",
+        "image": ""
+    },
+    {
+        "title": "धरानको एक क्याफेलाई अखडा बनाएर वनएक्सबेट खेल्ने/खेलाउने १० जना पक्राउ",
+        "link": "https://techpana.com/2026/156396/10-arrested-for-1xbet-online-gambling-in-dharan-cafe",
+        "description": "काठमाडौँ । धरान उपमहानगरपालिकास्थित एक क्याफेलाई अखडा बनाएर प्रतिबन्धित अनलाइन जुवा &amp;#39;वनएक्सबेट&amp;#39; खेल्ने र खेलाउने १० जनालाई प्रहरीले नियन्त्रणमा लिएको छ ।\n\nधरान-१३, लक्ष्मी सडकस्थित मण्डला क्याफेमा अनलाइन जुवा भइरहेको विशेष सूचनाका आधा",
+        "pubDate": "Tue, 28 Apr 2026 12:34:20 +0000",
+        "source": "Techpana",
+        "image": ""
+    },
+    {
+        "title": "रूस र युक्रेनबीचको आक्रमणमा चार जनाको मृत्यु",
+        "link": "https://nepalnews.com/2026/04/28/four-killed-in-clashes-between-russia-and-ukraine/",
+        "description": "मस्को। बेलगोरोडको रूसी सीमा क्षेत्रमा मंगलबार भएको युक्रेनी ड्रोन आक्रमणमा तीन जनाको र रूसी आक्रमणले मध्य युक्रेनमा एक जनाको मृत्यु भएको स्थानीय अधिकारीहरूले बताएका छन्। दक्षिणी रूसको प्रमुख तेल प्रशोधन केन्द्रमा युक्रनी आक्रमण पछि आगलागी भएको जनाइएक",
+        "pubDate": "Tue, 28 Apr 2026 12:32:35 +0000",
+        "source": "नेपाल न्युज",
+        "image": ""
+    },
+    {
+        "title": "बसपार्क बन्दा वास उठ्ने पीर",
+        "link": "https://nepalnews.com/2026/04/28/the-pain-of-being-stranded-when-a-bus-park-is-built/",
+        "description": "गोरखाबाट ३५ वर्षअगाडि परिवारसँग आएकी बिस्ना गुरुङ पोखरा-९ स्थित गणतान्त्रिक टोलमा बस्छिन्। १३ वैशाखको मध्याह्नमा उनी दैलोछेउ टुसुक्क बसेर टोलाइरहेकी थिइन्। उनलाई सरकारको डोजर आफ्नो बस्तीमा पनि आइपुग्ने हो कि भन्ने डर रहेछ। उनले भनिन्, “थातथलो छोडेर ह",
+        "pubDate": "Tue, 28 Apr 2026 12:31:55 +0000",
+        "source": "नेपाल न्युज",
+        "image": "http://nepalnews.com/wp-content/uploads/2026/04/1000148824-scaled.jpg"
+    },
+    {
+        "title": "३७ वटा मुद्दा खेपिरहेका युवक चाेरीकाे आराेपमा पक्राउ",
+        "link": "https://www.nepalpress.com/2026/04/28/718642/youth-facing-37-cases-arrested-on-theft-charges/",
+        "description": "प्रहरीले ३७ वटा मुद्दा खेपिरहेका एक युवकलाई चोरीको आरोपमा पक्राउ गरेको छ ।",
+        "pubDate": "Tue, 28 Apr 2026 12:28:40 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/37-mudda-ma-pakrau-1024x768.jpg"
+    },
+    {
+        "title": "नेपाल माइक्रो इन्स्योरेन्सका अध्यक्ष पक्राउ",
+        "link": "https://lokaantar.com/story/318244/2026/4/28/crime/ashish-shrestha-",
+        "description": "नेपाल माइक्रो इन्स्योरेन्स कम्पनी लिमिटेडका&amp;nbsp;अध्यक्ष आशिष श्रेष्ठ पक्राउ परेका छन् ।&amp;nbsp;\n\n&amp;#39;बीमा ऐन, २०७९&amp;#39; अन्तर्गतको कसुरमा ४६ वर्षीय&amp;nbsp;श्रेष्ठलाई मंगलबार&amp;nbsp;काठमाडौंको&amp;nbsp;कागेश्वरी मनहरा नगरपालिका ५ ब",
+        "pubDate": "Tue, 28 Apr 2026 12:28:12 +0000",
+        "source": "LOKAANTAR SANCHAR",
+        "image": ""
+    },
+    {
+        "title": "ओमानविरूद्ध यस्तो छ नेपालको हेड टु हेड",
+        "link": "https://www.setopati.com/sports/cricket/387766",
+        "description": "आइसिसी विश्वकप लिग-२ अन्तर्गत ओमान र युएईविरूद्धको त्रिकोणात्मक एकदिवसीय सिरिजमा नेपालले बुधबार आफ्नो दोस्रो खेल खेल्दैछ।",
+        "pubDate": "Tue, 28 Apr 2026 18:12:00 +0545",
+        "source": "Setopati",
+        "image": ""
+    },
+    {
+        "title": "John Stones to leave Manchester City at end of season after 10-year spell",
+        "link": "https://www.theguardian.com/football/2026/apr/28/john-stones-leave-manchester-city-end-season",
+        "description": "England defender joined City from Everton in 2016Stones will sign off from Etihad Stadium in summerJohn Stones is to leave Manchester City at the end of the season after a decade at the club. City confirmed the news on Tuesday, with the 31-year-old d",
+        "pubDate": "Tue, 28 Apr 2026 12:21:19 GMT",
+        "source": "Football | The Guardian",
+        "image": "https://i.guim.co.uk/img/media/589b07f1bba94568b4f212f9abcdbb825e5d8644/720_651_2687_2149/master/2687.jpg?width=140&quality=85&auto=format&fit=max&s=bab58243eff93242bfa1d98258e67bc2"
+    },
+    {
+        "title": "कोशीमा पनि सुकुमबासी बस्तीमा डोजर चलाउने तयारी, विवरण संकलन गर्दै सीडीओ कार्यालय",
+        "link": "https://www.nepalpress.com/2026/04/28/718634/preparations-to-use-dozers-in-squatter-settlements-in-koshi-as-well-cdo-office-collecting-details/",
+        "description": "विराटनगर । कोशी प्रदेशका जिल्लामा सुकुमबासीको विवरण संकलन अभियान थालिएको छ । जिल्ला प्रशासन कार्यालयहरूले पालिकाहरूलाई सुकुमबासी बस्तीहरूको विवरण पठाउन भनेका छन् । जिल्लाहरूमा जोखिमयुक्त क्षेत्र छुट्याउनुपर्ने र मनसुन नजिकिँदै गर्दा भोलि विपद् व्यवस्",
+        "pubDate": "Tue, 28 Apr 2026 12:19:14 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/manohari-sukumbasi-dozer-1024x512.jpg"
+    },
+    {
+        "title": "नेकपाको निष्कर्ष- सरकारको कदम अपरिपक्व, सुकुम्वासी जनतामा आतंक सिर्जना गर्‍यो (पूर्णपाठ)",
+        "link": "https://www.nepalpress.com/2026/04/28/718635/ncps-conclusion-governments-steps-are-immature-created-panic-among-the-squatter-population-full-text/",
+        "description": "काठमाडौं । नेपाली कम्युनिस्ट पार्टीको केन्द्रीय कार्य संयोजन समितिको बैठकबाट समसामयिक प्रस्ताव पारित गरेको छ। आज सकिएको बैठकले १९ बुँदे प्रस्ताव पारित गरेको प्रवक्ता प्रकाश ज्वालाले बताए। नेकपाले भदौ २३ र २४ गतेको घटनाको छानबिन गर्न गठित कार्की आयोगक",
+        "pubDate": "Tue, 28 Apr 2026 12:16:58 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2025/12/madhav-prachanda-jhalanath-1024x586.jpg"
+    },
+    {
+        "title": "वाम एकताका लागि नेकपाको आह्वान",
+        "link": "https://www.nepalpress.com/2026/04/28/718637/ncps-call-for-left-unity/",
+        "description": "नेपाली कम्युनिस्ट पार्टीले वाम एकताको लागि आह्वान गरेको छ।",
+        "pubDate": "Tue, 28 Apr 2026 12:16:19 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/nekapa-1-1024x683.png"
+    },
+    {
+        "title": "रूपन्देहीको मोतिपुर र बाँकेको नौवस्ता औद्योगिक क्षेत्रमा बनेका अवैध संरचना हटाउन निर्देशन",
+        "link": "https://lokaantar.com/story/318243/2026/4/28/current-affairs/illegal-structure-",
+        "description": "औद्योगिक क्षेत्र व्यवस्थापन लिमिटेडले रूपन्देहीको मोतिपुर र बाँकेको नौवस्ता&amp;nbsp;औद्योगिक क्षेत्रमा बनेका&amp;nbsp;अवैध&amp;nbsp;संरचना हटाउन&amp;nbsp;निर्देशन दिएको छ ।&amp;nbsp;\n\nअव्यवस्थित बस्ती र भौतिक संरचना हटाउन जिल्लास्थित निकायलाई आग्रह ",
+        "pubDate": "Tue, 28 Apr 2026 12:15:26 +0000",
+        "source": "LOKAANTAR SANCHAR",
+        "image": ""
+    },
+    {
+        "title": "३७ पटक मुद्दा खेपिसकेका सन्तोष फेरि चोरी आरोपमा पक्राउ",
+        "link": "https://www.setopati.com/social/387765",
+        "description": "",
+        "pubDate": "Tue, 28 Apr 2026 18:00:00 +0545",
+        "source": "Setopati",
+        "image": ""
+    },
+    {
+        "title": "‘Not time to panic’: Piyush Chawla warns Delhi Capitals’ dropped points may haunt playoff push",
+        "link": "https://www.hindustantimes.com/cricket/not-time-to-panic-piyush-chawla-warns-delhi-capitals-dropped-points-may-haunt-playoff-push-101777377822590.html",
+        "description": "Delhi Capitals started the season strongly with back-to-back wins, but have managed just one victory in their next six matches",
+        "pubDate": "Tue, 28 Apr 2026 17:42:27 +0530",
+        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
+        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/RCB-Vrs-DC-IPL-Match-45_1777377881837_1777377971866.jpg"
+    },
+    {
+        "title": "'Batters no longer hold back': Bhuvneshwar Kumar on the biggest change in modern T20 batting",
+        "link": "https://www.indiatvnews.com/sports/cricket/batters-no-longer-hold-back-bhuvneshwar-kumar-on-the-biggest-change-in-modern-t20-batting-2026-04-28-1039213",
+        "description": "Royal Challengers Bengaluru fast bowler Bhuvneshwar Kumar opened up on the biggest shift in the modern-day T20 batting, stating that the batters don't hold back now, as compared to the times, they used to respect the first few overs. Modern-day batte",
+        "pubDate": "Tue, 28 Apr 2026 17:40:52 +0530",
+        "source": "IndiaTV Sports: Google News Feed",
+        "image": ""
+    },
+    {
+        "title": "David Warner shuts down fan suggestion to leave the PSL for IPL with blunt ‘No need for that’",
+        "link": "https://www.hindustantimes.com/cricket/david-warner-shuts-down-fan-suggestion-to-leave-the-psl-for-ipl-with-blunt-no-need-for-that-101777377945549.html",
+        "description": "David Warner, captain of Karachi Kings, reflects on the team's PSL campaign after failing to qualify for the playoffs.",
+        "pubDate": "Tue, 28 Apr 2026 17:39:45 +0530",
+        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
+        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/CRICKET-PAK-PSL-T20-KARACHI-QUETTA-5_1777377992107_1777378006150.jpg"
+    },
+    {
+        "title": "Rangers have more chance of title than Celtic - Sutton",
+        "link": "https://www.bbc.com/sport/football/articles/c152gw55e40o?at_medium=RSS&at_campaign=rss",
+        "description": "Former Celtic striker Chris Sutton believes arch-rivals Rangers have more chance of winning the Scottish Premiership this season than the Parkhead club.",
+        "pubDate": "Tue, 28 Apr 2026 12:07:35 GMT",
+        "source": "BBC Sport",
+        "image": ""
+    },
+    {
+        "title": "CAN Federation Opens Applications for UA Hackathon Nepal 2026",
+        "link": "https://techpana.com/2026/156395/can-federation-opens-applications-for-ua-hackathon-nepal-2026",
+        "description": "Kathmandu. The Computer Association of Nepal (CAN) Federation has opened applications for &amp;lsquo;UA Hackathon Nepal 2026,&amp;rsquo; to be held on the occasion of the Global campaign for Universal Acceptance (UA) and National Information and Comm",
+        "pubDate": "Tue, 28 Apr 2026 12:06:21 +0000",
+        "source": "Techpana",
+        "image": ""
+    },
+    {
+        "title": "घरेलु टोली रुवान्डामाथि नेपालको जित",
+        "link": "https://nepalnews.com/2026/04/28/nepal-wins-over-home-team-rwanda/",
+        "description": "काठमाडौँ। रुवान्डामा जारी आइसिसी महिला च्यालेन्स ट्रफी क्रिकेट प्रतियोगितामा नेपालले घरेलु टोली रुवान्डालाई ३८ रनले पराजित गरेको छ। नेपालले दिएको १०४ रनको लक्ष्य पछ्याएको रुवान्डा १७ दशमलव चार ओभरमा सबै विकेट गुमाउँदै ६५ रनमा समेटिएको हो। रुवान्डाका ",
+        "pubDate": "Tue, 28 Apr 2026 12:05:13 +0000",
+        "source": "नेपाल न्युज",
+        "image": ""
+    },
+    {
+        "title": "सरकारले अध्यादेश अगाडि बढाएकोप्रति नेकपाको आपत्ति, संसद्को बैठक आह्वान गर्न माग",
+        "link": "https://www.nepalpress.com/2026/04/28/718632/ncp-objects-to-government-moving-forward-with-ordinance-demands-convening-of-parliament-meeting/",
+        "description": "काठमाडौं । नेपाली कम्युनिस्ट पार्टीले सरकारले संसद् अधिवेशन स्थगित गरेर अध्यादेश अगाडि बढाएकोप्रति आपत्ति जनाएको छ। सरकारले संवैधानिक परिषद् काम, कर्तव्य र अधिकारसम्बन्धी र सहकारी समस्या समाधान सम्बन्धी गरी २ वटा अध्यादेश स्वीकृतिका लागि राष्ट्रपति क",
+        "pubDate": "Tue, 28 Apr 2026 12:04:48 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/02/nekapa-1024x576.jpg"
+    },
+    {
+        "title": "सरकारी गाडी प्रयोगमा कडाइ, ६२२ सवारी साधन फिर्ता",
+        "link": "https://newsofnepal.com/2026/04/28/765953/",
+        "description": "काठमाडौँ। सरकारले राज्यको सीमित स्रोत साधनमाथिको दोहन अन्त्य गर्न सरकारी सवारी प्रयोगमा कडाइ गरेको छ । प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालयले प्रचलित कानुन विपरीत पहुँचका भरमा सरकारी सवारी साधनको सुविधा लिइरहेका कर्मचारी तथा पदाधिकारीहरूबाट सवा",
+        "pubDate": "Tue, 28 Apr 2026 12:04:03 +0000",
+        "source": "News of Nepal",
+        "image": "https://newsofnepal.com/wp-content/uploads/2024/09/pradhanmantri-tatha-mantriparisadko-karyalaya-150x150.jpg"
+    },
+    {
+        "title": "सरकारले सीमामा कडाइ गरेसँगै नक्कली पाट्र्सविरुद्ध सिप्रदीको सचेतना अभियान, वर्कशपमै पुगेर सिकाइँदै ‘सक्कली चिन्ने तरिका’",
+        "link": "https://newsofnepal.com/2026/04/28/765952/",
+        "description": "काठमाडौँसरकारले सीमा नाकामा हुने अवैध आयात तथा नक्कली सामानको चोरी पैठारीमा कडाइ गरेसँगै अटोमोबाइल क्षेत्रमा पनि त्यसको सकारात्मक प्रभाव देखिन थालेको छ । बजारमा नक्कली पाट्र्सको प्रवेशमा कमी आउने अपेक्षासहित नेपालका लागि टाटा जेन्युइन पाट्र्सको आधिका",
+        "pubDate": "Tue, 28 Apr 2026 12:03:16 +0000",
+        "source": "News of Nepal",
+        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/sipradi-2-150x150.jpg"
+    },
+    {
+        "title": "Atletico Madrid vs. Arsenal prediction: Champions League semifinal first leg best bets from proven expert",
+        "link": "https://www.cbssports.com/betting/news/atletico-madrid-vs-arsenal-prediction-champions-league-semifinal-first-leg-best-bets-from-proven-expert/",
+        "description": "SportsLine soccer expert Martin Green has analyzed Wednesday's Champions League semifinal between Atletico and Arsenal and locked in his best bets",
+        "pubDate": "Tue, 28 Apr 2026 12:00:44 +0000",
+        "source": "CBS Sports Headlines",
+        "image": ""
+    },
+    {
+        "title": "Brighton plan Europe's first purpose-built women's stadium",
+        "link": "https://www.bbc.com/sport/football/articles/ce8p01x34pyo?at_medium=RSS&at_campaign=rss",
+        "description": "Brighton and Hove Albion release plans for Europe's first purpose-built women's football stadium.",
+        "pubDate": "Tue, 28 Apr 2026 12:00:08 GMT",
+        "source": "BBC Sport",
+        "image": ""
+    },
+    {
+        "title": "Otter’s new feature lets users search across their enterprise tools",
+        "link": "https://techcrunch.com/2026/04/28/otters-new-feature-lets-users-search-across-their-enterprise-tools/",
+        "description": "Otter is also releasing a new Windows app that can capture meeting notes without joining one",
+        "pubDate": "Tue, 28 Apr 2026 12:00:00 +0000",
+        "source": "TechCrunch",
+        "image": ""
+    },
+    {
+        "title": "शिवम् सिमेन्टले गर्‍यो विशेष क्षमता भएका रोल्पाका सन्देश बुढा मगरलाई सहयोग",
+        "link": "https://www.setopati.com/kinmel/others/387763",
+        "description": "",
+        "pubDate": "Tue, 28 Apr 2026 17:44:00 +0545",
+        "source": "Setopati",
+        "image": ""
+    },
+    {
+        "title": "सरकारले अध्यादेशको बाटो रोजेपछि राप्रपा प्रवक्ताको टिप्पणी- दुई तिहाइको जनमतको हुर्मत लिँदैछन्",
+        "link": "https://www.nepalpress.com/2026/04/28/718628/rpp-spokespersons-comment-after-the-government-chose-the-ordinance-route-they-are-taking-the-respect-of-two-thirds-of-the-public-opinion/",
+        "description": "काठमाडौं । राप्रपाका प्रवक्ता मोहन श्रेष्ठले सरकारले संसद् रोकेर अध्यादेश ल्याएकोप्रति आपत्ति जनाएका छन्। सरकारले संवैधानिक परिषद् काम, कर्तव्य र अधिकारसम्बन्धी र सहकारी समस्या समाधान सम्बन्धी गरी २ वटा अध्यादेश स्वीकृतिका लागि राष्ट्रपति कार्यालयमा ",
+        "pubDate": "Tue, 28 Apr 2026 11:57:28 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/03/mohan_shrestha-1024x546.jpg"
+    },
+    {
+        "title": "Vivo Y600 Pro launched with massive 10,200mAh battery and 50MP camera",
+        "link": "https://www.indiatvnews.com/technology/news/vivo-y600-pro-launched-with-massive-10-200mah-battery-and-50mp-camera-2026-04-28-1039211",
+        "description": "Vivo has recently unleashed the new Y600 Pro in the Chinese market, adding another option to its Y-series lineup. This one is hard to miss, mainly because of its absolutely massive 10,200mAh battery&mdash;the kind of feature that makes it stand out i",
+        "pubDate": "Tue, 28 Apr 2026 17:25:57 +0530",
+        "source": "IndiaTV Technology: Google News Feed",
+        "image": ""
+    },
+    {
+        "title": "Corteen-Coleman named in England Women's T20 World Cup squad",
+        "link": "https://www.espncricinfo.com/ci/content/story/1534141.html?ex_cid=OTC-RSS",
+        "description": "England name 15-player squad with Sciver-Brunt captaining, and Wyatt-Hodge retained for eighth campaign",
+        "pubDate": "Tue, 28 Apr 2026 11:55:27 GMT",
+        "source": "Cricket news from ESPN Cricinfo.com",
+        "image": "http://p.imgci.com/db/PICTURES/CMS/415900/415962.jpg"
+    },
+    {
+        "title": "सन् २०३० सम्म नेपालमा ९०% ईभी गुडाउने लक्ष्य, मन्त्रालयको प्रतिवेदनले औंल्यायो यी चुनौती",
+        "link": "https://techpana.com/2026/156394/nepal-targets-90-percent-ev-adoption-by-2035-challenges-highlighted",
+        "description": "काठमाडौँ । नेपालमा गुड्ने निजी सवारी साधनमध्ये सन् २०३५ सम्म ९० प्रतिशत विद्युतीय (ईभी) बनाउने लक्ष्य पूरा गर्न पूर्वाधार र नीतिगत स्पष्टता मुख्य बाधक देखिएको छ । भौतिक पूर्वाधार तथा यातायात मन्त्रालयद्वारा गठित कार्यदलले बुझाएको अध्ययन प्रतिवेदनले न",
+        "pubDate": "Tue, 28 Apr 2026 11:55:19 +0000",
+        "source": "Techpana",
+        "image": ""
+    },
+    {
+        "title": "सरकारले अध्यादेशको बाटो रोज्नु खतरनाक संकेत : कांग्रेस",
+        "link": "https://nepalnews.com/2026/04/28/governments-choice-of-ordinance-path-is-a-dangerous-sign-congress/",
+        "description": "काठमाडौँ। नेपाल सरकारद्वारा संसद् स्थगित गरी अध्यादेशमार्फत कानुन निर्माण गर्ने कदमप्रति नेपाली कांग्रेसले गम्भीर ध्यानाकर्षण भएको जनाएको छ। कांग्रेस प्रवक्ता देवराज चालिसेले मंगलबार एक प्रेस विज्ञप्ति जारी गर्दै सरकारको यस प्रकारको अभ्यास लोकतान्त्र",
+        "pubDate": "Tue, 28 Apr 2026 11:55:01 +0000",
+        "source": "नेपाल न्युज",
+        "image": "http://nepalnews.com/wp-content/uploads/2026/04/683760074_1534121244742124_9205068330064197334_n.jpg"
+    },
+    {
+        "title": "सन नेपाल लाइफ इन्स्योरेन्सद्वारा अभिकर्ता सशक्तिकरण कार्यक्रम सम्पन्न",
+        "link": "https://newsofnepal.com/2026/04/28/765949/",
+        "description": "काठमाडौँसन नेपाल लाइफ इन्स्योरेन्स कम्पनी लिमिटेडले आफ्ना अभिकर्ताको क्षमता अभिवृद्धि, उत्प्रेरणा तथा सम्मानका उद्देश्यले “प्रयत्न निरन्तर सम्मान र सबलीकरणको अवसर” शीर्षकमा एक दिने विशेष कार्यक्रम भव्य रूपमा सम्पन्न गरेको छ । लुम्बिनी प्रदेश अन्तर्गत",
+        "pubDate": "Tue, 28 Apr 2026 11:52:13 +0000",
+        "source": "News of Nepal",
+        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-08.27.09-150x150.jpeg"
+    },
+    {
+        "title": "अध्यादेश सिफारिश गरेर सरकारले संसद्‌प्रतिको अविश्वास उजागर गरेको कांग्रेसको आरोप, फिर्ता गर्न माग",
+        "link": "https://lokaantar.com/story/318242/2026/4/28/politics/congress-",
+        "description": "नेपाली कांग्रेसले सरकारले अध्यादेशमार्फत् कानून निर्माण गर्न लागेको प्रति&amp;nbsp;पार्टीको&amp;nbsp;ध्यानाकर्षण भएको जनाएको छ ।\n\nप्रवक्ता देवराज चालिसेले मंगलबार विज्ञप्तिमार्फत्&amp;nbsp;संसद् स्थगित गरी अध्यादेशमार्फत्&amp;nbsp;कानून निर्माण गर्ने",
+        "pubDate": "Tue, 28 Apr 2026 11:51:44 +0000",
+        "source": "LOKAANTAR SANCHAR",
+        "image": ""
+    },
+    {
+        "title": "‘लालीबजार’ को प्रदर्शन रोकिएपछि अस्मिता वादी- संवादबाटै समाधान खोज, सृजनालाई अदालतसम्म नपुर्‍याऊ",
+        "link": "https://www.nepalpress.com/2026/04/28/718618/asmita-bhatti-a-plaintiff-after-the-performance-of-lalibazar-was-stopped-sought-a-solution-through-dialogue-and-did-not-take-srijana-to-court/",
+        "description": "काठमाडौं । आउँदो शुक्रबारबाट प्रदर्शनको तयारीमा रहेको नेपाली चलचित्र ‘लालीबजार’को प्रदर्शन २२ गतेसम्म रोक्न अदालतले अल्पकालीन दिएको छ । बादी समुदायको आत्मसम्मानमा ठेस पुगेको दाबी गर्दै डाक्टर रोशनी नेपाली वादीले दायर गरेको रिट निवेदनका आधारमा अदालतले",
+        "pubDate": "Tue, 28 Apr 2026 11:50:42 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/laliba.jpg"
+    },
+    {
+        "title": "सभामुखसँग चिनियाँ राजदूतले राखे ताइवान र तिब्बतसम्बन्धी नेपालको नीतिमा चासो",
+        "link": "https://www.nepalpress.com/2026/04/28/718621/chinese-ambassador-expresses-interest-in-nepals-policy-on-taiwan-and-tibet-to-speaker/",
+        "description": "काठमाडौं । प्रतिनिधिसभाका सभामुख डीपी अर्यालसँग नेपालका लागि चिनियाँ राजदूत झाङ माओमिङलेले शिष्टाचार भेटवार्ता गरेका छन्। भेटमा द्विपक्षीय सम्बन्ध, संसदीय सहकार्य, विकास साझेदारी र क्षेत्रीय तथा अन्तर्राष्ट्रिय विषयमा विचार आदानप्रदान भएको सभामुख सचि",
+        "pubDate": "Tue, 28 Apr 2026 11:47:13 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/dp-aryal-1024x682.png"
+    },
+    {
+        "title": "Shashank Singh, the face of dropped catches in IPL 2026, flips the table: PBKS linger at bottom of catching efficiency",
+        "link": "https://www.hindustantimes.com/cricket/shashank-singh-the-face-of-dropped-catches-in-ipl-2026-flips-the-table-pbks-linger-at-bottom-of-catching-efficiency-101777374963546.html",
+        "description": "In IPL 2026, dropped catches have become a critical issue, particularly for Delhi Capitals and Punjab Kings.",
+        "pubDate": "Tue, 28 Apr 2026 17:15:36 +0530",
+        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
+        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/CRICKET-IPL-PBKS-LSG--39_1777376315663_1777376380955.JPG"
+    },
+    {
+        "title": "Vinesh Phogat accuses WFI of 'deliberate attempt' to block her return to professional wrestling",
+        "link": "https://www.indiatvnews.com/sports/other/vinesh-phogat-accuses-wfi-of-deliberate-attempt-to-block-her-return-to-professional-wrestling-2026-04-28-1039212",
+        "description": "Vinesh Phogat’s return to wrestling has been delayed, as the former world medallist alleges obstacles in her attempt to enter the upcoming National Open Ranking tournament. The event is seen as a perfect preparation ground for athletes aiming to re-e",
+        "pubDate": "Tue, 28 Apr 2026 17:13:54 +0530",
+        "source": "IndiaTV Sports: Google News Feed",
+        "image": ""
+    },
+    {
+        "title": "ट्रकको ठक्करबाट पैदलयात्रुको मृत्यु",
+        "link": "https://nepalnews.com/2026/04/28/pedestrian-dies-after-being-hit-by-truck/",
+        "description": "काठमाडौँ। काठमाडौँ महानगरपालिका-२६ ठमेलमा ट्रकको ठक्करबाट पैदलयात्रुको मृत्यु भएको छ। ठमेल पक्नाजोलस्थित सडकमा बा३क २३३९ नम्बरको ट्रकको ठक्करबाट पैदलयात्री ठमेलमा डेरा गरी बस्ने बारा निजगढ नगरपालिका–१३ का ४० वर्षीय किरण घलानको मृत्यु भएको हो। ठक्करबा",
+        "pubDate": "Tue, 28 Apr 2026 11:43:47 +0000",
+        "source": "नेपाल न्युज",
+        "image": ""
+    },
+    {
+        "title": "नेपाल ब्यवस्थापन संघद्धारा २०८३\\८४ को बजेटपूूर्व छलफल कार्यक्रम सम्पन्न",
+        "link": "https://newsofnepal.com/2026/04/28/765946/",
+        "description": "काठमाडौँनेपाल ब्यवस्थापन संघद्धारा २०८३÷८४ को बजेटपूूर्ण छलफल कार्यक्रम आयोजना गरेको छ । बजेटपूर्व छलफलः समृद्धिको मार्ग नाम दिईएको उक्त छलफल कार्यक्रम संघका अध्यक्ष हेमा कुमारी अधिकारीको अध्यक्षतामा भएको थियो भने कार्यक्रमको प्रमुख अतिथिमा राष्ट्रिय",
+        "pubDate": "Tue, 28 Apr 2026 11:42:36 +0000",
+        "source": "News of Nepal",
+        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/MAN-Picture-150x150.jpeg"
+    },
+    {
+        "title": "ट्रकको ठक्करबाट पैदलयात्रुको मृत्यु",
+        "link": "https://newsofnepal.com/2026/04/28/765944/",
+        "description": "काठमाडौँ। काठमाडौँ महानगरपालिका–२६ ठमेलमा ट्रकको ठक्करबाट आज एक पैदलयात्रुको मृत्यु भएको छ । ठमेल पक्नाजोलस्थित सडकमा बा३क २३३९ नम्बरको ट्रकको ठक्करबाट पैदलयात्री ठमेलमा डेरा गरी बस्ने बारा निजगढ नगरपालिका–१३ का ४० वर्षीय किरण घलानको मृत्यु भएको प्रह",
+        "pubDate": "Tue, 28 Apr 2026 11:37:40 +0000",
+        "source": "News of Nepal",
+        "image": "https://newsofnepal.com/wp-content/uploads/2026/03/accident-150x150.jpg"
+    },
+    {
+        "title": "PBKS vs RR IPL 2026 LIVE Score: Jaiswal, Sooryavanshi vs Prabhsimran, Priyansh in battle of explosive openers",
+        "link": "https://www.hindustantimes.com/cricket/pbks-vs-rr-live-cricket-score-ipl-2026-match-40-punjab-kings-vs-rajasthan-royals-today-28-april-latest-scorecard-101777375566962.html",
+        "description": "PBKS vs RR IPL 2026 LIVE Score: Punjab Kings host Rajasthan Royals on Monday in Mullanpur, and both sides will be looking to get a win. PBKS are unbeaten thiss season. Meanwhile, RR have lost three of their last four games.",
+        "pubDate": "Tue, 28 Apr 2026 17:07:11 +0530",
+        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
+        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/ANI-20260425350-0_1777375876751_1777375890543.jpg"
+    },
+    {
+        "title": "Oliver Glasner has found success at Palace. But will he fall into the Thomas Frank trap?",
+        "link": "https://www.theguardian.com/football/2026/apr/28/oliver-glasner-has-found-success-at-palace-but-will-he-fall-into-the-thomas-frank-trap",
+        "description": "The Crystal Palace manager delivered the club’s first major trophy and could add a European title this season. But a bigger team will present fresh challengesWhen Oliver Glasner took over from Roy Hodgson at Crystal Palace in February 2024, the club ",
+        "pubDate": "Tue, 28 Apr 2026 11:37:05 GMT",
+        "source": "Football | The Guardian",
+        "image": "https://i.guim.co.uk/img/media/1e63cd64d3330e89a3eda26cf5dfd02bcd7de035/714_0_4286_3430/master/4286.jpg?width=140&quality=85&auto=format&fit=max&s=12f124f457b0dc98a6822fa102c58d52"
+    },
+    {
+        "title": "हुन्डी कारोबार गर्नेको सूचना गोप्य रूपमा पठाउन नेपाली राजदूतावासको आग्रह",
+        "link": "https://www.nepalpress.com/2026/04/28/718616/nepali-embassy-urges-to-send-information-on-hundi-transactions-confidentially/",
+        "description": "काठमाडौं । नेपाली राजदूतावास आबुधाबीले दुबई लगायतका क्षेत्रमा रहेर गैरकानुनी रूपमा हुन्डी (अनौपचारिक विप्रेषण) को कारोबार गर्ने व्यक्ति तथा संस्थाहरूको निगरानी बढाउँदै गएको छ । त्यसको कारोबारको विवरण सरकारलाई उपलब्ध गराउन सुरु गरेको हो । सम्पत्ति शुद",
+        "pubDate": "Tue, 28 Apr 2026 11:35:13 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2025/03/uae-nepali-embassy1-1024x497.jpg"
+    },
+    {
+        "title": "फेसनल होल्डिङ्स् (साविक प्रोफेसनल एजुकेटर्स लिमिटेड)को वार्षिक साधारण सभा सम्पन्न",
+        "link": "https://newsofnepal.com/2026/04/28/765941/",
+        "description": "काठमाडौँप्रोफेसनल होल्डिङ्स्लिमिटेड (साविक प्रोफेसनल एजुकेटर्स लिमिटेड)का शेयरधनी को २०औँ वार्षिक साधारण सभा मिति २०८२ चैत्र २८ गते दिउँसो २ः०० बजे ग्लोबल कलेज, बानेश्वर, काठमाडौंमा कुल शेयरधनीमध्ये ८२.३४ प्रतिशतको गरिमामय उपस्थितिमा सम्पन्न भयो । उक",
+        "pubDate": "Tue, 28 Apr 2026 11:32:09 +0000",
+        "source": "News of Nepal",
+        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/logo.jpg-150x150.jpeg"
+    },
+    {
+        "title": "Samsung Galaxy Glasses leak reveals Ray-Ban Meta Style design with Gemini AI features",
+        "link": "https://www.indiatvnews.com/technology/news/samsung-galaxy-glasses-leak-reveals-ray-ban-meta-style-design-with-gemini-ai-features-2026-04-28-1039205",
+        "description": "Samsung looks ready to jump into the smart glasses scene. As per the recent leaks, the company works on its first pair of Galaxy Glasses – a wearable packed with AI features that is made for day-to-day life.",
+        "pubDate": "Tue, 28 Apr 2026 17:00:39 +0530",
+        "source": "IndiaTV Technology: Google News Feed",
+        "image": ""
+    },
+    {
+        "title": "Shakhtar Donetsk’s European odyssey heads to Palace after marathon campaign",
+        "link": "https://www.theguardian.com/football/2026/apr/28/shakhtar-donetsks-european-odyssey-heads-to-palace-after-marathon-campaign",
+        "description": "Conference League semi-finals pit Ukrainian side against Premier League opposition, with the club still reeling from the affects of warSerhii Palkin wasn’t sure whether Arda Turan, having played for Barcelona and Atlético Madrid, would be up for taki",
+        "pubDate": "Tue, 28 Apr 2026 11:30:08 GMT",
+        "source": "Football | The Guardian",
+        "image": "https://i.guim.co.uk/img/media/f25813cd5f61ae32063e0fa9c47722862b3a6fa1/566_266_4589_3671/master/4589.jpg?width=140&quality=85&auto=format&fit=max&s=40ecb3370274d717ff1e30015f940fe1"
+    },
+    {
+        "title": "सभामुख अर्यालसँग चिनियाँ राजदूतको शिष्टचार भेट",
+        "link": "https://nepalnews.com/2026/04/28/chinese-ambassador-pays-courtesy-call-on-speaker-aryal/",
+        "description": "काठमाडौं। प्रतिनिधिसभाका सभामुख डोल प्रसाद (डीपी) अर्यालसँग नेपालका लागि चिनियाँ राजदूत चाङ माओमिङले शिष्टाचार भेटवार्ता गरेका छन्। भेटमा द्विपक्षीय सम्बन्ध, संसदीय सहकार्य, विकास साझेदारी र क्षेत्रीय तथा अन्तर्राष्ट्रिय विषयमा विचार आदानप्रदान भएको ",
+        "pubDate": "Tue, 28 Apr 2026 11:29:30 +0000",
+        "source": "नेपाल न्युज",
+        "image": ""
+    },
+    {
+        "title": "ठमेलमा ट्रकको ठक्करबाट पैदलयात्रुको मृत्यु",
+        "link": "https://lokaantar.com/story/318240/2026/4/28/current-affairs/accident-",
+        "description": "काठमाडौं&amp;nbsp;महानगरपालिका&amp;ndash;२६ ठमेलमा ट्रकको ठक्करबाट पैदलयात्रुको मृत्यु भएको छ ।\n\nआज ठमेल पक्नाजोलस्थित सडकमा बा ३ क २३३९ नम्बरको ट्रकको ठक्करबाट पैदलयात्री ठमेलमा डेरा गरी बस्ने बारा निजगढ नगरपालिका&amp;ndash;१३ का ४० वर्षीय किरण घलान",
+        "pubDate": "Tue, 28 Apr 2026 11:28:45 +0000",
+        "source": "LOKAANTAR SANCHAR",
+        "image": ""
+    },
+    {
+        "title": "सुकुमबासीको लगत संकलन गर्दै सेना, प्रवक्ता भन्छन्- मनसुनको पूर्वतयारीका लागि हो",
+        "link": "https://www.nepalpress.com/2026/04/28/718608/army-collecting-data-on-squatters-spokesperson-says-it-is-for-monsoon-preparation/",
+        "description": "सरकारले सुकुमबासी बस्तीमा डोजर अभियान चलाइरहँदा नेपाली सेनाले देशका विभिन्न ठाउँमा सुकुमबासीको लगत संकलन थालेको छ ।",
+        "pubDate": "Tue, 28 Apr 2026 11:26:55 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/sukumbasi-data-army-1024x512.jpg"
+    },
+    {
+        "title": "कांग्रेसले भन्यो- सदनमा बहुमत हुँदाहुँदै अध्यादेशको बाटो रोज्नु खतरनाक संकेत",
+        "link": "https://www.nepalpress.com/2026/04/28/718612/congress-says-choosing-the-path-of-ordinance-despite-having-a-majority-in-the-house-is-a-dangerous-sign/",
+        "description": "काठमाडौं । प्रमुख प्रतिपक्षी दल नेपाली कांग्रेसले सरकारको संसद् स्थगित गरी अध्यादेशमार्फत कानुन निर्माण गर्ने कदमप्रति आपत्ति जनाएको छ। प्रवक्ता देवराज चालिसेले विज्ञप्ति जारी गर्दै अध्यादेशमार्फत कानुन बनाउने अभ्यास लोकतान्त्रिक मूल्य, संसदीय मर्याद",
+        "pubDate": "Tue, 28 Apr 2026 11:26:54 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2026/01/devraj-chalise-1024x576.jpg"
+    },
+    {
+        "title": "अध्यादेशमार्फत् सरकार सञ्चालन गर्नु प्रजातान्त्रिक र संसदीय अभ्यासविपरीत कदम : ज्ञानेन्द्र शाही",
+        "link": "https://lokaantar.com/story/318239/2026/4/28/politics/gyanendra-shahi-",
+        "description": "राष्ट्रिय प्रजातन्त्र पार्टी (राप्रपा) संसदीय दलका नेता ज्ञानेन्द्र शाहीले अध्यादेशमार्फत्&amp;nbsp;विधेयक ल्याएर&amp;nbsp;सरकार सञ्चालन गर्नु प्रजातान्त्रिक र संसदीय अभ्यासविपरीत कदम भएको बताएका छन् ।\n\nमंगलबार सामाजिक सञ्जालमार्फत्&amp;nbsp;प्रधानमन",
+        "pubDate": "Tue, 28 Apr 2026 11:25:46 +0000",
+        "source": "LOKAANTAR SANCHAR",
+        "image": ""
+    },
+    {
+        "title": "पहुँचका आधारमा कर्मचारीले लिएको चारपांग्रे सुविधा फिर्ता लिने प्रक्रिया सुरु",
+        "link": "https://nepalnews.com/2026/04/28/process-to-withdraw-four-wheeler-facility-taken-by-employees-based-on-accessibility-begins/",
+        "description": "काठमाडौँ। प्रधानमन्त्री वालेन्द्र शाह नेतृत्वको सरकारले राज्यको सीमित स्रोत र साधनमाथि वर्षौँदेखि हुँदै आएको चरम दोहन र प्रशासनिक बेथिति अन्त्यका लागि सुशासनको ठोस कदम चालेको छ। प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालयले प्रचलित कानुन विपरीत पहुँचक",
+        "pubDate": "Tue, 28 Apr 2026 11:22:12 +0000",
+        "source": "नेपाल न्युज",
+        "image": ""
+    },
+    {
+        "title": "कैलालीमा गहुँ खरिद गर्न सुरु गर्‍यो खाद्य कम्पनीले",
+        "link": "https://www.nepalpress.com/2026/04/28/718607/food-company-starts-purchasing-wheat-in-kailali/",
+        "description": "कैलाली । खाद्य व्यवस्था तथा व्यापार कम्पनी लिमिटेड प्रादेशिक कार्यालय धनगढीले कैलालीमा गहुँ खरिद सुरु गरेको छ । कम्पनीले आजबाट जिल्लाका दुई स्थानबाट किसान तथा कृषिसम्बन्धी सहकारीबाट गहुँ खरिद सुरु गरेको हो । जिल्लाको मोहनपुर र टीकापुर गोदामबाट सरकारल",
+        "pubDate": "Tue, 28 Apr 2026 11:18:07 +0000",
+        "source": "Nepal Press",
+        "image": "https://www.nepalpress.com/wp-content/uploads/2025/01/gahu.webp"
+    },
+    {
+        "title": "Greater than Virat Kohli? Shaun Pollock makes boldest Rajat Patidar claim yet amid RCB’s IPL 2026 surge: ‘The GOAT’",
+        "link": "https://www.hindustantimes.com/cricket/greater-than-virat-kohli-shaun-pollock-makes-boldest-rajat-patidar-claim-yet-amid-rcb-s-ipl-2026-surge-the-goat-101777374258915.html",
+        "description": "Cricket legend Shaun Pollock dissected how Rajat Patidar's appointment as RCB captain changed their fortunes.",
+        "pubDate": "Tue, 28 Apr 2026 16:46:29 +0530",
+        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
+        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/PTI04-27-2026-000325A-0_1777374724575_1777374738706.jpg"
+    },
+    {
+        "title": "Nepal register third win in ICC Women’s Challenge trophy",
+        "link": "https://english.onlinekhabar.com/nepal-register-third-win-in-icc-womens-challenge-trophy.html",
+        "description": "Kathmandu, April 28 The Nepal women’s cricket team secured their third victory in the ICC Women’s Challenge Trophy, defeating hosts Rwanda by 38 runs on Tuesday. Chasing a target of 104 runs, Rwanda were bowled out for 65 runs in 17.4 overs. Mary Bim",
+        "pubDate": "Tue, 28 Apr 2026 11:14:42 +0000",
+        "source": "OnlineKhabar English News",
+        "image": "http://english.onlinekhabar.com/wp-content/uploads/2026/04/FB_IMG_1777372078072-1024x682.jpg"
+    },
+    {
+        "title": "England name squad for Women's T20 World Cup 2026, 18-year-old Corteen-Coleman included",
+        "link": "https://www.indiatvnews.com/sports/cricket/england-name-squad-for-womens-t20-world-cup-2026-18-year-old-corteen-coleman-included-2026-04-28-1039204",
+        "description": "Hosts England have named their squad for the upcoming Women's T20 World Cup 2026, with the 18-year-old Tilly Corteen-Coleman being a stand-out inclusion. The tournament will be the first ICC event that England will be hosting since winning the ODI Wo",
+        "pubDate": "Tue, 28 Apr 2026 16:40:59 +0530",
+        "source": "IndiaTV Sports: Google News Feed",
+        "image": ""
+    },
+    {
         "title": "Everest icefall deadlock clears, route rixing resumes",
         "link": "https://english.onlinekhabar.com/everest-icefall-deadlock-clears-route-rixing-resumes.html",
         "description": "Kathmandu, April 28 A weeks-long obstruction above Everest Base Camp has cleared, allowing route-fixing teams, known as “Icefall Doctors,” to resume work on the main climbing route to the summit of Mount Everest. The team had been halted for nearly t",
         "pubDate": "Tue, 28 Apr 2026 11:08:39 +0000",
         "source": "OnlineKhabar English News",
         "image": "http://english.onlinekhabar.com/wp-content/uploads/2026/04/Khumbu-Icefall-1024x683-1.jpg"
+    },
+    {
+        "title": "'Axar Patel has done nothing in ages': Srikkanth unloads on DC in 'gone case' rant after batting meltdown vs RCB",
+        "link": "https://www.hindustantimes.com/cricket/axar-patel-has-done-nothing-in-ages-srikkanth-unloads-on-dc-in-gone-case-rant-after-batting-meltdown-vs-rcb-101777373373467.html",
+        "description": "Delhi Capitals were folded for just 75 runs in 16.3 overs on Monday. RCB chased it down in 6.3 overs",
+        "pubDate": "Tue, 28 Apr 2026 16:37:12 +0530",
+        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
+        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/CRICKET-IPL-DC-RCB--25_1777373467689_1777373477810.JPG"
     },
     {
         "title": "इजरायली सेना प्रमुख भन्छन्– विभिन्न मोर्चामा लडाइँ जारी, थप सैनिक आवश्यक",
@@ -32,12 +560,12 @@
         "image": ""
     },
     {
-        "title": "नर्सिङ र एचए पढाउने गण्डकी प्रदेश सरकारको तयारी",
-        "link": "https://www.setopati.com/politics/387758",
-        "description": "",
-        "pubDate": "Tue, 28 Apr 2026 16:46:20 +0545",
-        "source": "Setopati",
-        "image": ""
+        "title": "Benjamin Sesko bemoans Manchester United’s impending loss of Casemiro",
+        "link": "https://www.theguardian.com/football/2026/apr/28/benjamin-sesko-bemoans-manchester-uniteds-impending-loss-of-casemiro",
+        "description": "Sesko hails influence of veteran ‘working machine’Striker backs Michael Carrick to stay on as managerBenjamin Sesko has said Casemiro will be a big loss for Manchester United next season given the influence of the “working machine” on and off the pit",
+        "pubDate": "Tue, 28 Apr 2026 11:01:08 GMT",
+        "source": "Football | The Guardian",
+        "image": "https://i.guim.co.uk/img/media/90533d13c4ee5ab353244c910c3f1ee1af6d1652/383_61_3386_2709/master/3386.jpg?width=140&quality=85&auto=format&fit=max&s=2b475f960dcf72008117d5e4ab5412af"
     },
     {
         "title": "एमसिएले गर्‍यो एफडीआर प्रविधिबाट धानखोला-लमही सडक स्तरोन्नतिको तयारी",
@@ -48,36 +576,12 @@
         "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/lumbini-cm-1024x683.jpg"
     },
     {
-        "title": "'We started to believe a long time ago!' - Braga confident of Hearts title chances",
-        "link": "https://www.skysports.com/football/news/11095/13537524/claudio-braga-hearts-forward-confident-of-scottish-premiership-title-chances-we-started-to-believe-a-long-time-ago",
-        "description": "\"We just started to believe a long time ago, but just couldn't say.\"",
-        "pubDate": "Tue, 28 Apr 2026 11:00:00 BST",
-        "source": "SkySports | News",
-        "image": ""
-    },
-    {
-        "title": "World Cup 2026 news: FIFA to propose second yellow card amnesty",
-        "link": "https://www.skysports.com/football/live-blog/11095/13509050/world-cup-2026-news-and-live-updates-usa-canada-and-mexico-build-up-plus-latest-on-trump-tickets-and-fans",
-        "description": "",
-        "pubDate": "Tue, 28 Apr 2026 11:00:00 BST",
-        "source": "SkySports | News",
-        "image": ""
-    },
-    {
-        "title": "हिरासतमा मृत्यु भएका कृष्णकी आमाको जाहेरी प्रहरीले दर्ता गर्न मानेनन्",
+        "title": "हिरासतमा मृत्यु भएका कृष्णकी आमाको जाहेरी प्रहरीले दर्ता गर्न मानेन",
         "link": "https://nepalnews.com/2026/04/28/police-refuse-to-register-complaint-against-mother-of-krishna-who-died-in-custody/",
-        "description": "काठमाडौँ। सिन्धुलीको सुनकोसी गाउँपालिका ३, जुम्लेडाँडाका २२ वर्षीय श्रीकृष्ण विकको प्रहरीको हिरासतमै मृत्यु भएको घटनामा प्रहरीले किटानी जाहेरी दर्ता गर्न अस्वीकार गरेको छ। हिरासतभित्र ७ वैशाखमा छोराको मृत्यु भएपछि यातना तथा ज्यानसम्बन्धी कसुरमा मंगलब",
+        "description": "काठमाडौँ। सिन्धुलीको सुनकोसी गाउँपालिका-३ जुम्लेडाँडाका २२ वर्षीय श्रीकृष्ण विकको प्रहरी हिरासतमै मृत्यु भएको घटनामा प्रहरीले किटानी जाहेरी दर्ता गर्न अस्वीकार गरेको छ। हिरासतभित्र ७ वैशाखमा छोराको मृत्यु भएपछि श्रीकृष्णकी आमा विन्दामाया विश्वकर्माले",
         "pubDate": "Tue, 28 Apr 2026 10:59:09 +0000",
         "source": "नेपाल न्युज",
-        "image": ""
-    },
-    {
-        "title": "Corteen-Coleman named in England Women's T20 World Cup squad",
-        "link": "https://www.espncricinfo.com/ci/content/story/1534141.html?ex_cid=OTC-RSS",
-        "description": "England name 15-player squad with Sciver-Brunt captaining, and Wyatt-Hodge retained for eighth campaign",
-        "pubDate": "Tue, 28 Apr 2026 10:54:01 GMT",
-        "source": "Cricket news from ESPN Cricinfo.com",
-        "image": "http://p.imgci.com/db/PICTURES/CMS/415900/415962.jpg"
+        "image": "http://nepalnews.com/wp-content/uploads/2026/04/Krishna-BK-Ujuri.jpg"
     },
     {
         "title": "सेप्टेम्बरदेखि यी पुराना फोनमा ह्वाट्सएप नचल्ने, तपाईँको डिभाइस पनि पर्‍यो कि ?",
@@ -112,22 +616,6 @@
         "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/pakrau-1024x512.jpg"
     },
     {
-        "title": "स्पष्ट बहुमत हुँदाहुँदै अध्यादेशको बाटो रोज्नु शक्ति केन्द्रीकरण तर्फको खतरनाक संकेत हो- कांग्रेस",
-        "link": "https://www.setopati.com/politics/387757",
-        "description": "",
-        "pubDate": "Tue, 28 Apr 2026 16:32:00 +0545",
-        "source": "Setopati",
-        "image": ""
-    },
-    {
-        "title": "कानुन विपरीत कर्मचारी/पदाधिकारीले चढ्दै आएका ६२२ सवारी साधन फिर्ता",
-        "link": "https://www.setopati.com/politics/387756",
-        "description": "कानुन विपरित कर्मचारी तथा पदाधिकारीहरूले चढ्दै आएका ६२२ वटा सवारीसाधन प्रधानमन्त्री तथ मन्त्रिपरिषद कार्यालयमा फिर्ता भएको छ।",
-        "pubDate": "Tue, 28 Apr 2026 16:26:48 +0545",
-        "source": "Setopati",
-        "image": ""
-    },
-    {
         "title": "गैरीगाउँ क्षेत्रमा अतिक्रमण गरी बनाएका सबै ठूला घर भत्काइयो",
         "link": "https://www.nepalpress.com/2026/04/28/718592/all-large-houses-built-encroaching-on-the-gairigaun-area-were-demolished/",
         "description": "काठमाडौं । गैरीगाउँ क्षेत्रमा अतिक्रमण गरी निर्माण गरिएका सबै ठूला घर तथा स्थायी संरचना पूर्ण रूपमा भत्काइएको छ । काठमाडौँ महानगरपालिका–९ अन्तर्गत सञ्चालन गरिएको उक्त अभियान सोमबार रातिसम्म निरन्तर जारी राखी ठूला संरचना हटाउने कार्य सम्पन्न गरिएको मह",
@@ -157,14 +645,6 @@
         "description": "काठमाडौँ। गैरीगाउँ क्षेत्रमा अतिक्रमण गरी निर्माण गरिएका सबै ठूला घर तथा स्थायी संरचना पूर्ण रूपमा भत्काइएको छ। काठमाडौँ महानगरपालिका-९ अन्तर्गत सञ्चालन गरिएको उक्त अभियान सोमबार रातिसम्म निरन्तर जारी राखी ठूला संरचना हटाउने कार्य सम्पन्न गरिएको महान",
         "pubDate": "Tue, 28 Apr 2026 10:36:16 +0000",
         "source": "नेपाल न्युज",
-        "image": ""
-    },
-    {
-        "title": "आह्वान भइसकेको संसद अधिवेशन स्थगित गरेर सरकारले ल्यायो दुई वटा अध्यादेश",
-        "link": "https://www.setopati.com/politics/387755",
-        "description": "सरकारले संसदीय प्रक्रिया छल्न आह्वान भइसकेको संसद अधिवेशन स्थगित गरी दुईवटा अध्यादेश ल्याएको छ।",
-        "pubDate": "Tue, 28 Apr 2026 16:20:00 +0545",
-        "source": "Setopati",
         "image": ""
     },
     {
@@ -202,7 +682,7 @@
     {
         "title": "David Squires on … Chelsea’s Wembley trip amid more managerial chaos",
         "link": "https://www.theguardian.com/football/picture/2026/apr/28/david-squires-on-chelsea-wembley-fa-cup-trip-amid-managerial-chaos-cartoon",
-        "description": "Our cartoonist on Blueco’s ‘self-reflection’ as another normal week ended with a place in the FA Cup finalBuy a cartoon here | His favourites from 2025And his latest book, Chaos in the Box: get it now Continue reading...",
+        "description": "Our cartoonist on BlueCo’s ‘self-reflection’ as another normal week ended with a place in the FA Cup finalBuy a cartoon here | His favourites from 2025And his latest book, Chaos in the Box: get it now Continue reading...",
         "pubDate": "Tue, 28 Apr 2026 10:30:30 GMT",
         "source": "Football | The Guardian",
         "image": "https://i.guim.co.uk/img/media/63f05db624c5eb65607b8d79e1be922cd291deb7/1021_72_914_731/master/914.jpg?width=140&quality=85&auto=format&fit=max&s=0e32a3f96b7e4d65dae1eeb211d23e5b"
@@ -216,18 +696,10 @@
         "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/bhim-ranjita-1024x512.jpg"
     },
     {
-        "title": "सात वर्ष पुरानो नजिर देखाएर 'लालीबजार' को प्रदर्शन रोक्न अन्तरकालिन अन्तरिम आदेश",
-        "link": "https://www.setopati.com/art/art-activity/387740",
-        "description": "उच्च अदालत पाटनले लाली बजार सिनेमालाई प्रदर्शन नगर्न अल्पकालीन अन्तरिम आदेश जारी गरेको छ।",
-        "pubDate": "Tue, 28 Apr 2026 16:14:00 +0545",
-        "source": "Setopati",
-        "image": ""
-    },
-    {
-        "title": "Virat Kohli revealed as RCB's silent strategic masterplanner: ‘Before a match, he says something tatical and it works’",
+        "title": "Virat Kohli revealed as RCB's silent strategic masterplanner: ‘Before a match, he says something tactical and it works’",
         "link": "https://www.hindustantimes.com/cricket/virat-kohli-revealed-as-rcbs-silent-strategic-masterplanner-before-a-match-he-says-something-tatical-and-it-works-101777371124012.html",
         "description": "Bhuvneshwar Kumar praises Virat Kohli's tactical influence despite not holding a captaincy title.",
-        "pubDate": "Tue, 28 Apr 2026 15:58:10 +0530",
+        "pubDate": "Tue, 28 Apr 2026 15:58:09 +0530",
         "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
         "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/CRICKET-IPL-DC-RCB--16_1777371336679_1777371360196.JPG"
     },
@@ -248,28 +720,12 @@
         "image": ""
     },
     {
-        "title": "२४ घण्टामा ट्राफिक प्रहरीद्वारा दुई हजार ७४६ जना कारबाहीमा",
-        "link": "https://nepalnews.com/2026/04/28/traffic-police-take-action-against-2746-people-in-24-hours/",
-        "description": "काठमाडौँ। ट्राफिक प्रहरीले पछिल्लो चौबीस घण्टामा दुई हजार ७४६ वटा सवारीसाधनका चालकलाई कारबाही गरेको छ। मंगलबार बिहानसम्म काठमाडौँ उपत्यकाका विभिन्न स्थानमा ट्राफिक प्रहरीले सञ्चालन गरेको जाँचका क्रममा मादक पदार्थ (मापसे) सेवन गरी सवारी चलाउने ७९, राइ",
-        "pubDate": "Tue, 28 Apr 2026 10:20:23 +0000",
-        "source": "नेपाल न्युज",
-        "image": ""
-    },
-    {
         "title": "उच्च अदालतको आदेशपछि ‘लाली बजार’को प्रिमियर स्थगित",
         "link": "https://lokaantar.com/story/318234/2026/4/28/cinema/lali-bazar-",
         "description": "आगामी&amp;nbsp;शुक्रबारदेखि प्रदर्शनमा आउने तयारीमा रहेको&amp;nbsp;चलचित्र&amp;nbsp;&amp;lsquo;लाली बजार&amp;rsquo;को&amp;nbsp;प्रिमियर स्थगित गरिएको छ ।\n\nउच्च अदालत पाटनले &amp;lsquo;लाली बजार&amp;rsquo;को&amp;nbsp;प्रदर्शनमा रोक लगाएसँगै आजको&amp;n",
         "pubDate": "Tue, 28 Apr 2026 10:20:08 +0000",
         "source": "LOKAANTAR SANCHAR",
         "image": ""
-    },
-    {
-        "title": "२६.१६ अंकले घट्यो नेप्से‚ साढे ६ अर्बको कारोबार",
-        "link": "https://nepalnews.com/2026/04/28/nepse-drops-by-26-16-points-turnover-of-rs-6-5-billion/",
-        "description": "काठमाडौँ। साताको दोस्रो कारोबार दिन आज (मंगलबार) नेपाल स्टक एक्सचेन्ज (नेप्से) २६.१६ अंकले घटेको छ। अघिल्लो कारोबार दिनको तुलनामा ०.९३ प्रतिशतले घटेको नेप्से २७७०.२६ विन्दुमा अडिएको छ। आजको दिनमा सेन्सेटिभ इन्डेक्स पनि २.१४ अंकले घटेर ४६७.५७ विन्दुमा",
-        "pubDate": "Tue, 28 Apr 2026 10:17:17 +0000",
-        "source": "नेपाल न्युज",
-        "image": "http://nepalnews.com/wp-content/uploads/2026/04/Nepse-16.jpg"
     },
     {
         "title": "संविधान संशोधन कार्यदल ठोस बहस पत्र तयार गर्न वरिष्ठ अधिवक्ताहरूसँग छलफलमा",
@@ -288,36 +744,12 @@
         "image": ""
     },
     {
-        "title": "नेप्से परिसूचक २६ अंकले घट्यो, ६ अर्बको मात्रै कारोबार",
-        "link": "https://www.nepalpress.com/2026/04/28/718575/nepse-index-drops-by-26-points-turnover-of-only-rs-6-billion/",
-        "description": "काठमाडौं । नेपाल स्टक एक्सचेञ्ज नेप्से परिसूचक २६ दशमलव १६ अङ्कले घटेर दुई हजार ७७० दशमलव २६ बिन्दुमा कायम भएको छ । आज ३४९ कम्पनीको एक करोड ४० लाख १३ हजार १६७ कित्ता शेयर एक लाख ५१ हजार २८६ पटक खरिदबिक्री हुँदा  ६ अर्ब ५२ करोड ८० लाख ७७ हजार ९७६ बराब",
-        "pubDate": "Tue, 28 Apr 2026 10:00:27 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2021/09/share-market-nepse.jpg"
-    },
-    {
         "title": "IPL 2026: Cheteshwar Pujara reveals ‘best game-plan’ for Rajasthan Royals to stop in-form Shreyas Iyer",
         "link": "https://crickettimes.com/2026/04/ipl-2026-cheteshwar-pujara-reveals-best-game-plan-for-rajasthan-royals-to-stop-in-form-shreyas-iyer/",
         "description": "Shreyas Iyer has emerged as one of the biggest talking points of IPL 2026, not just for his explosive batting but also for the calm authority with which he has led Punjab Kings to the top of the points table. Ahead of Punjab Kings’ crucial clash agai",
         "pubDate": "Tue, 28 Apr 2026 10:00:12 +0000",
         "source": "Cricket Times",
         "image": "https://crickettimes.com/wp-content/uploads/2026/04/Cheteshwar-Pujara-reveals-game-plan-to-dismiss-Shreyas-Iyer.webp"
-    },
-    {
-        "title": "How Dortmund revamped their academy",
-        "link": "https://www.skysports.com/football/news/11095/13524720/borussia-dortmund-academy-chief-paul-schaffran-explains-how-bio-banding-and-a-strategy-shift-has-transformed-bvb",
-        "description": "Just before the hour against Augsburg, in front of the usual packed house of 81,365 supporters, Luca Reggiani scored for Borussia Dortmund. The sheer joy on the 18-year-old defender&#8217;s face resonated with Paul Schaffran back at the academy.",
-        "pubDate": "Tue, 28 Apr 2026 10:00:00 BST",
-        "source": "SkySports | News",
-        "image": ""
-    },
-    {
-        "title": "१५ औँ महाधिवेशनलाई एकताको बनाउन देउवा पक्षको शर्त- सम्मानजनक सहभागिता हुनुपर्छ",
-        "link": "https://www.nepalpress.com/2026/04/28/718574/deubas-condition-for-making-the-15th-general-convention-a-united-one-respectful-participation-is-required/",
-        "description": "काठमाडौं । नेपाली कांग्रेसका नेता मीनबहादुर विश्वकर्माले पूर्वसभापति शेरबहादुर देउवा पक्षको विस्तारित भेला पार्टीभित्र देखिएको विवाद समाधान गर्दै एकता कायम गर्ने मुख्य उद्देश्यसहित छलफल भइरहेको बताएका छन्। भेलाका क्रममा सञ्चारकर्मीहरूसँग कुरा गर्दै ब",
-        "pubDate": "Tue, 28 Apr 2026 09:58:17 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/Nepali-Congress_-694-1024x682.jpg"
     },
     {
         "title": "‘We are not happy’: Chiamaka Nnadozie on Wafcon debacle, boomboxes and Brighton",
@@ -334,14 +766,6 @@
         "pubDate": "Tue, 28 Apr 2026 15:23:48 +0530",
         "source": "IndiaTV Technology: Google News Feed",
         "image": ""
-    },
-    {
-        "title": "‘लालीबजार’ विरूद्ध रिट हाल्ने डा. राेशनी वादी भन्छिन्- याे चलचित्र प्रदर्शन गर्नै हुन्न",
-        "link": "https://www.nepalpress.com/2026/04/28/718570/dr-rashni-who-filed-a-writ-petition-against-lalibazar-says-that-this-film-should-not-be-screened/",
-        "description": "काठमाडौं । शुक्रवारबाट प्रदर्शनमा आउन लागेको चलचित्र ‘लालीबजार’ को रिलिज २२ गतेसम्मलाई रोक्न उच्च अदालत पाटनले अल्पकालीन अन्तरिम आदेश दिएको छ । डा. रोशनी नेपाली वादी लगायत वादी समुदायका केही अभियान्ताहरुले चलचित्रविरुद्ध रिट निवेदन हालेका थिए । ‘लाली",
-        "pubDate": "Tue, 28 Apr 2026 09:53:21 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/dr.-roshani-nepali-1024x512.jpg"
     },
     {
         "title": "झापाको हिमालय माविका प्रधानाध्यापक र लेखापालविरुद्ध भ्रष्टाचार मुद्दा",
@@ -368,36 +792,12 @@
         "image": ""
     },
     {
-        "title": "राष्ट्रिय गौरवका आयोजनाबारे अध्ययन गर्न उपसमिति गठन",
-        "link": "https://www.nepalpress.com/2026/04/28/718567/subcommittee-formed-to-study-projects-of-national-pride/",
-        "description": "काठमाडौं । संसदीय समितिले राष्ट्रिय गौरवका आयोजनाहरूको वर्तमान अवस्था, सञ्चालनमा देखिएका समस्या र समाधानका उपायकाबारे अध्ययन गर्न उपसमिति गठन गरेको छ । सिंहदरबारमा मंगलबार बसेको प्रतिनिधिसभा अन्तर्गतको पूर्वाधार विकास समिति बैठकले राष्ट्रिय गौरवका आय",
-        "pubDate": "Tue, 28 Apr 2026 09:39:47 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/03/aashish-gajurel-1024x539.jpg"
-    },
-    {
         "title": "Bangladesh target series win in rainy Chattogram",
         "link": "https://www.espncricinfo.com/ci/content/story/1534139.html?ex_cid=OTC-RSS",
         "description": "If Latham fails to recover from injury in time, Kelly will captain NZ once again",
         "pubDate": "Tue, 28 Apr 2026 09:37:44 GMT",
         "source": "Cricket news from ESPN Cricinfo.com",
         "image": "http://p.imgci.com/db/PICTURES/CMS/403300/403359.jpg"
-    },
-    {
-        "title": "नेपालगन्ज विमानस्थलमा आजदेखि निःशुल्क ट्रलीबस सेवा सुरु",
-        "link": "https://www.nepalpress.com/2026/04/28/718552/free-trolleybus-service-starts-at-nepalgunj-airport-from-today/",
-        "description": "जानकी । नेपालगन्ज विमानस्थलमा आजदेखि यात्रुहरूका लागि निःशुल्क ट्रलीबस सेवा सञ्चालनमा ल्याइएको छ । नागरिक उड्डयन प्राधिकरणद्वारा उक्त सेवा सञ्चालनमा ल्याइएको हो । विमानस्थलदेखि राँझा चोकसम्म करिब दुई किलोमिटर दूरीमा यात्रुलाई आवतजावत सहज बनाउने उद्दे",
-        "pubDate": "Tue, 28 Apr 2026 09:31:27 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/trolley-bus-1024x576.jpg"
-    },
-    {
-        "title": "दुई अध्यादेश ल्याउँदै सरकार, परामर्शमा राष्ट्रपति",
-        "link": "https://www.nepalpress.com/2026/04/28/718560/government-to-bring-two-ordinances-president-in-consultation/",
-        "description": "काठमाडौं । सरकारले २ वटा अध्यादेश स्वीकृतिका लागि राष्ट्रपतिसमक्ष पत्र पठाएको छ । हिजोको मन्त्रिपरिषद् बैठकको निर्णय बमोजिम संवैधानिक परिषद् काम, कर्तव्य र अधिकारसम्बन्धी र सहकारी समस्या समाधान सम्बन्धी गरी २ वटा अध्यादेश स्वीकृतिका लागि पठाइएको स्रो",
-        "pubDate": "Tue, 28 Apr 2026 09:30:34 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/cabinet-14-baisakh-1024x512.jpg"
     },
     {
         "title": "टेरेन्स लुइस 'सेलिब्रेटी ग्रान्ड जज' रहेको वर्ल्ड अफ डान्स नेपालको दोस्रो सिजनको सहभागिता सिटिपेमार्फत् हुने",
@@ -432,36 +832,12 @@
         "image": "https://newsofnepal.com/wp-content/uploads/2026/04/t2-2-150x150.jpg"
     },
     {
-        "title": "‘लालीबजार’ को रिलिज २२ गतेसम्म रोक्न अदालतको अल्पकालीन आदेश",
-        "link": "https://www.nepalpress.com/2026/04/28/718554/court-issues-short-term-order-to-stop-release-of-lalibazar-until-22nd/",
-        "description": "काठमाडौं । शुक्रबारबाट प्रदर्शनमा आउन लागेको चलचित्र ‘लालीबजार’ को रिलिज रोक्न उच्च अदालत पाटनले अल्पकालीन अन्तरिम आदेश दिएको छ । बादी समूदायका केही अभियन्ताले उक्त चलचित्रविरुद्ध रिट हालेका थिए । उच्च अदालतले अगामी २२ गते दुवै पक्षलाई छलफलका लागि बो",
-        "pubDate": "Tue, 28 Apr 2026 09:21:54 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/lali-bazzar-swastima-1024x512.jpg"
-    },
-    {
-        "title": "होल्डिङ सेन्टरमा राखिएका नागरिकलाई मानवोचित व्यवहार गर्न इन्सेकको आग्रह",
-        "link": "https://www.nepalpress.com/2026/04/28/718551/insec-urges-humane-treatment-of-citizens-held-in-holding-centers/",
-        "description": "काठमाडौं । काठमाडौँका विभिन्न सुकुम्वासी बस्तीबाट हटाइ होल्डिङ सेन्टरमा राखिएका नागरिकलाई मानवोचित व्यवहार गर्न इन्सेकले सरकारसँग आग्रह गरेको छ । इन्सेकका अध्यक्ष विजयराज गौतमद्वारा हस्ताक्षरित विज्ञप्तिमा होल्डिङ सेन्टरमा इन्सेकले गरेको अनुगमनका क्र",
-        "pubDate": "Tue, 28 Apr 2026 09:20:41 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/Slum-screening_Dasharath-Rangashala_-633-1024x683.jpg"
-    },
-    {
         "title": "Nepal’s Rapid Tech Expansion Yet to Bridge Digital Inequality, Government Report Finds",
         "link": "https://techpana.com/2026/156390/nepals-rapid-tech-expansion-yet-to-bridge-digital-inequality-government-report-finds",
         "description": "Kathmandu. Despite the rapid expansion of technology in Nepal, the government has said digital inequality remains a major challenge. The Ministry of Finance, in its report &amp;lsquo;Current Economic&amp;nbsp;Status of Nepal, 2083,&amp;rsquo; states ",
         "pubDate": "Tue, 28 Apr 2026 09:19:20 +0000",
         "source": "Techpana",
         "image": ""
-    },
-    {
-        "title": "२४ घण्टामा २७ सय ४६ जना ट्राफिक प्रहरीको कारबाहीमा",
-        "link": "https://www.nepalpress.com/2026/04/28/718549/traffic-police-take-action-against-2746-people-in-24-hours/",
-        "description": "काठमाडौं । ट्राफिक प्रहरीले पछिल्लो चौबीस घण्टामा दुई हजार ७४६ वटा सवारीसाधनका चालकलाई कारबाही गरेको छ । आज बिहानसम्म काठमाडौँ उपत्यकाका विभिन्न स्थानमा ट्राफिक प्रहरीले सञ्चालन गरेको जाँचका क्रममा मादक पदार्थ (मापसे) सेवन गरी सवारी चलाउने ७९, राइड स",
-        "pubDate": "Tue, 28 Apr 2026 09:15:01 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2022/03/1-8.jpg"
     },
     {
         "title": "पनौतीमा यस्तो बन्दैछ अत्याधुनिक प्रहरी तालिम केन्द्र, कहिले पूरा हुन्छ ३ दशक पुरानो सपना ?",
@@ -496,14 +872,6 @@
         "image": ""
     },
     {
-        "title": "देउवा समूहको भेलामा नेताहरूले भने- पार्टीलाई एकताबद्ध बनाउने पहल सभापतिले नै गर्नुपर्छ",
-        "link": "https://www.nepalpress.com/2026/04/28/718543/leaders-at-deuba-group-meeting-say-the-chairman-should-take-the-initiative-to-unite-the-party/",
-        "description": "नेपाली कांग्रेसका नेता पूर्णबहादुर खड्काले राखेको बेलामा अहिले नेताहरूले बोल्ने क्रम जारी छ। नेता खड्काको ब्रिफिङपछि अहिले नेताहरूले धारणा राख्ने क्रम चलिरहेको छ।",
-        "pubDate": "Tue, 28 Apr 2026 09:06:18 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/Nepali-Congress_-694-1024x682.jpg"
-    },
-    {
         "title": "NAS-IT Announces Nepal Tech Roadshow Across The United States in May",
         "link": "https://techpana.com/2026/156389/nas-it-announces-nepal-tech-roadshow-across-united-states-in-may",
         "description": "Kathmandu. With the aim of promoting Nepal&amp;rsquo;s software and information technology sector&amp;nbsp;on an international level, the &amp;lsquo;Nepal Tech Roadshow 2026&amp;rsquo; is set to be held in multiple cities across the United States in ",
@@ -528,44 +896,12 @@
         "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/Axar_Patel_1777366291437_1777366291616.JPG"
     },
     {
-        "title": "मे दिवसको पूर्वसन्ध्यामा जीफन्टको घोषणापत्र- सीप क्रान्तिमा जोड (पूर्णपाठ)",
-        "link": "https://www.nepalpress.com/2026/04/28/718539/gefonts-manifesto-on-the-eve-of-may-day-emphasis-on-the-skills-revolution-full-text/",
-        "description": "काठमाडौं । नेपाल ट्रेड युनियन महासंघ (जीफन्ट) ले १३७औं अन्तर्राष्ट्रिय श्रमिक दिवस (मे दिवस) को पूर्वसन्ध्यामा घोषणापत्र सार्वजनिक गरेको छ । &#8220;कामको अधिकार, श्रमको सम्मान, सीपको अभिवृद्धि; प्रविधिसँग प्रगति, श्रमिकसँग समृद्धि !&#8221; भन्ने मूल ",
-        "pubDate": "Tue, 28 Apr 2026 09:00:30 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/g-font-1024x512.jpg"
-    },
-    {
-        "title": "नदीमा माछा पाइन छाडेपछि पुर्ख्यौली पेसा संकटमा",
-        "link": "https://nepalnews.com/2026/04/28/ancestral-profession-in-crisis-after-river-fishing-stopped/",
-        "description": "चौतारा। यहाँको इन्द्रावती गाउँपालिका-११ भिमटारका बाटुले माझी ४५ वर्षको भए। उनको माछा मार्ने पुर्ख्यौली पेसा अहिले संकटमा परेको छ। पछिल्लो समय अव्यवस्थित क्रसर उद्योग, विषादी, विस्फोटक पदार्थको प्रयोग बढेसँगै नदीमा पर्याप्त मात्रामा माछा पाइनै छाडेपछि",
-        "pubDate": "Tue, 28 Apr 2026 09:00:02 +0000",
-        "source": "नेपाल न्युज",
-        "image": ""
-    },
-    {
         "title": "Delhi cop who created green corridor for Lungi Ngidi, once played with Virat Kohli, Gautam Gambhir: ‘He wasn’t moving’",
         "link": "https://www.hindustantimes.com/cricket/delhi-cop-who-created-green-corridor-for-lungi-ngidi-once-played-with-virat-kohli-gautam-gambhir-he-wasn-t-moving-101777360491548.html",
         "description": "Lungi Ngidi is stable now. But when the injury first happened, there was a sense of dread after the ambulance entered the playing field area.",
         "pubDate": "Tue, 28 Apr 2026 14:25:38 +0530",
         "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
         "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/image_1777366474097_1777366479674.png"
-    },
-    {
-        "title": "नेपालगन्ज विमानस्थलमा निःशुल्क बस सेवा सुरु",
-        "link": "https://nepalnews.com/2026/04/28/free-bus-service-launched-at-nepalgunj-airport/",
-        "description": "बाँके। नेपालगन्ज विमानस्थलमा मंगलबारदेखि यात्रुहरूका लागि निःशुल्क ट्रलीबस सेवा सञ्चालनमा ल्याइएको छ। नागरिक उड्डयन प्राधिकरणद्वारा उक्त सेवा सञ्चालनमा ल्याइएको हो। विमानस्थलदेखि राँझा चोकसम्म करिब दुई किलोमिटर दूरीमा यात्रुलाई आवतजावत सहज बनाउने उद्",
-        "pubDate": "Tue, 28 Apr 2026 08:53:06 +0000",
-        "source": "नेपाल न्युज",
-        "image": ""
-    },
-    {
-        "title": "गौरीघाटका रैथानेको आशंका-फेवा मापदण्डका नाममा प्रभावशालीहरूको व्यापारिक चलखेल",
-        "link": "https://www.nepalpress.com/2026/04/28/718535/raithane-of-gaurighat-suspects-business-dealings-of-influential-people-in-the-name-of-fewa-standards/",
-        "description": "फेवातालको किनार गौरीघाटमा ६५ मिटर खाली गर्दा विस्थापित हुने व्यवासायी तथा स्थानीयले काठमाडौंमा पत्रकार सम्मेलन गर्दै ठूलो लगानीमा भवनहरू बनाउन अगाडिका संरचना हटाउन खोजिएको बताए ।",
-        "pubDate": "Tue, 28 Apr 2026 08:48:03 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/fewa-1-1024x512.jpg"
     },
     {
         "title": "नेपालगञ्ज विमानस्थलमा आजदेखि निःशुल्क बस सेवा",
@@ -582,14 +918,6 @@
         "pubDate": "Tue, 28 Apr 2026 08:45:16 +0000",
         "source": "News of Nepal",
         "image": "https://newsofnepal.com/wp-content/uploads/2026/04/arthik1-150x150.jpg"
-    },
-    {
-        "title": "भेरी अस्पतालमा बिरामीको मृत्युपछि चिकित्सकमाथि दुर्व्यवहार, रोकियो सेवा",
-        "link": "https://www.nepalpress.com/2026/04/28/718529/services-at-bheri-hospital-suspended-after-patient-dies-alleging-abuse-against-doctors/",
-        "description": "रूपन्देही । उपचारका क्रममा एक महिलाको मृत्यु भएपछि बाँकेको भेरी अस्पतालमा तनाव सिर्जना भएको छ । मृतकका आफन्तले चिकित्सकमाथि अभद्र व्यवहार गरेको भन्दै अस्पतालका चिकित्सकले कामकाज बन्द गरेका छन् । बाँकेको बैजनाथ गाउँपालिका–६ निवासी ६२ वर्षीया दिलसरा वि",
-        "pubDate": "Tue, 28 Apr 2026 08:43:50 +0000",
-        "source": "Nepal Press",
-        "image": "https://www.nepalpress.com/wp-content/uploads/2026/04/hospita-1024x768.jpg"
     },
     {
         "title": "Threads of Thought exhibition opens in Kathmandu",
@@ -624,28 +952,12 @@
         "image": ""
     },
     {
-        "title": "शेखर गोल्छालाई २४ घण्टाभित्र अदालतमा उपस्थित गराउन सर्वोच्चको आदेश",
-        "link": "https://newsofnepal.com/2026/04/28/765920/",
-        "description": "काठमाडौं । नेपाल उद्योग वाणिज्य महासंघका पूर्वअध्यक्ष शेखर गोल्छालाई थुनामा राखिएको विषयमा सर्वोच्च अदालतले २४ घण्टाभित्र अदालतमा उपस्थित गराउन आदेश दिएको छ। सोमबार गोल्छाका तर्फबाट उनकी पत्नी सीमा गोल्छाले सर्वोच्च अदालतमा बन्दीप्रत्यक्षीकरण रिट दर्",
-        "pubDate": "Tue, 28 Apr 2026 08:23:01 +0000",
-        "source": "News of Nepal",
-        "image": "https://newsofnepal.com/wp-content/uploads/2024/04/sarbacho-150x150.jpg"
-    },
-    {
         "title": "Arshdeep Singh handed blueprint to dismiss Vaibhav Sooryavanshi: ‘Try to keep hitting that channel’",
         "link": "https://www.hindustantimes.com/cricket/arshdeep-singh-handed-blueprint-to-dismiss-vaibhav-sooryavanshi-try-to-keep-hitting-that-channel-101777363669655.html",
         "description": "Pujara has broken down the key tactical battle that could shape the contest between Arshdeep Singh and Vaibhav Sooryavanshi in the upcoming PBKS vs RR clash.",
         "pubDate": "Tue, 28 Apr 2026 13:49:45 +0530",
         "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
         "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/Arshdeep_Vaibhav_1777364241064_1777364248103.jpg"
-    },
-    {
-        "title": "वायु गुणस्तर सुधार्न नयाँ मापदण्ड",
-        "link": "https://nepalnews.com/2026/04/28/new-standards-to-improve-air-quality/",
-        "description": "गत १० वैशाखमा काठमाडौँ उपत्यकाको वायुमण्डलमा विषाक्त हावाको मात्रा ह्वात्तै बढेको थियो। केही दिनयता बढेको डढेलो र छिमेकी देश भारतबाट प्रदूषित हावा नेपाल भित्रिँदा वायु प्रदूषण बढेको हो। वैशाख लागेदेखि नेपाल र भारतको वन र निकुञ्ज क्षेत्रमा डढेलो बढ्दा",
-        "pubDate": "Tue, 28 Apr 2026 08:15:55 +0000",
-        "source": "नेपाल न्युज",
-        "image": "http://nepalnews.com/wp-content/uploads/2026/04/Pollution_Swoyambhu_NPL_PCT-9.JPG.jpeg"
     },
     {
         "title": "IPL 2026: Yuzvendra Chahal indulges in playful banter with Preity Zinta, PBKS owner responds in style",
@@ -680,22 +992,6 @@
         "image": "http://english.onlinekhabar.com/wp-content/uploads/2026/04/manohara-sukumbasi-basti_drone-view-6-1024x768-1.jpg"
     },
     {
-        "title": "व्यवसायी गोल्छालाई २४ घण्टाभित्र उपस्थित गराउन आदेश",
-        "link": "https://nepalnews.com/2026/04/28/businessman-golchha-ordered-to-appear-within-24-hours/",
-        "description": "काठमाडौँ। सर्वोच्च अदालतले व्यवसायी शेखर गोल्छालाई सूचना म्याद पाएका मितिले २४ घण्टाभित्र महान्यायाधिवक्ताको कार्यालयमार्फत बन्दीसहित लिखित जवाफ पेस गर्न आदेश गरेको छ। न्यायाधीश नृपध्वज निरौलाको एकल इजलासले आज बन्दीप्रत्यक्षीकरणको रिट निवेदनमा आधार र",
-        "pubDate": "Tue, 28 Apr 2026 07:59:11 +0000",
-        "source": "नेपाल न्युज",
-        "image": ""
-    },
-    {
-        "title": "संयुक्त विद्यार्थी आन्दोलनद्वारा त्रिभुवन विश्वविद्यालय परिसरमा‍ मार्चपास",
-        "link": "https://nepalnews.com/2026/04/28/united-student-movement-holds-march-on-tribhuvan-university-campus/",
-        "description": "काठमाडौँ। संयुक्त विद्यार्थी आन्दोलनले विभिन्न राजनीतिक दलसँग सम्बद्ध विद्यार्थी संगठनहरूमाथि प्रतिबन्ध लगाउने सरकारको तयारीको विरोधमा त्रिभुवन विश्वविद्यालय परिसरमा मार्चपास गरेको छ। त्रिभुवन विश्वविद्यालय घण्टाघरदेखि टी.यू गेटसम्म मार्चपास गर्दै वि",
-        "pubDate": "Tue, 28 Apr 2026 07:56:39 +0000",
-        "source": "नेपाल न्युज",
-        "image": "http://nepalnews.com/wp-content/uploads/2026/04/Student-andolan-at-tu-npl-15-scaled.jpg"
-    },
-    {
         "title": "‘He has to shut up’: Former BCCI chairman of selectors tells Delhi Capitals coach Hemang Badani to ‘mind his job’",
         "link": "https://www.hindustantimes.com/cricket/he-has-to-shut-up-former-bcci-chairman-of-selectors-tells-delhi-capitals-coach-hemang-badani-to-mind-his-job-101777362146858.html",
         "description": "Delhi Capitals faced a massive defeat against RCB on Monday and head coach Hemang Badani is now dealing with severe criticism.",
@@ -720,14 +1016,6 @@
         "image": ""
     },
     {
-        "title": "दुई स्थानीय तहले राष्ट्रिय परिचयपत्र वितरण गर्दै",
-        "link": "https://nepalnews.com/2026/04/28/two-local-levels-distributing-national-identity-cards/",
-        "description": "चितवन। चितवनका दुई स्थानीय तहले राष्ट्रिय परिचयपत्र वितरण गर्ने भएको छ। भरतपुर महानगरपालिका र माडी नगरपालिकाले स्थानीय तहबाटै राष्ट्रिय परिचयपत्र वितरण गर्न लागेको हो। जिल्ला प्रशासन कार्यालय चितवनका सूचना अधिकारी मदन लामा थिङका अनुसार इलाका प्रशासन ",
-        "pubDate": "Tue, 28 Apr 2026 07:47:57 +0000",
-        "source": "नेपाल न्युज",
-        "image": ""
-    },
-    {
         "title": "Croatia confident of Modric recovery for World Cup",
         "link": "https://www.bbc.com/sport/football/articles/cqjpl4zj0ezo?at_medium=RSS&at_campaign=rss",
         "description": "Croatia coach Zlatko Dalic says he believes Luka Modric will be fit to lead his side at this summer's World Cup after the AC Milan midfielder had surgery on a broken cheekbone.",
@@ -744,60 +1032,12 @@
         "image": ""
     },
     {
-        "title": "देशका अधिकांश शहरी क्षेत्रमा वर्षाको सम्भावना",
-        "link": "https://lokaantar.com/story/318224/2026/4/28/current-affairs/rain-",
-        "description": "जल तथा मौसम विज्ञान विभाग अन्तर्गतको मौसम पूर्वानुमान महाशाखाले आज देशका अधिकांश स्थानमा मेघगर्जन तथा चट्याङसहित वर्षा हुने सम्भावना रहेको जनाएको छ ।\n\nमहाशाखाका अनुसार विभिन्न शहरको अद्यावधिक मौसम विवरणअनुसार तराईदेखि पहाड तथा हिमाली भूभागसम्म वर्षाक",
-        "pubDate": "Tue, 28 Apr 2026 07:20:03 +0000",
-        "source": "LOKAANTAR SANCHAR",
-        "image": ""
-    },
-    {
-        "title": "भारत र जर्मनीबीच आठ अर्ब डलरको पन्डुब्बी सम्झौता अन्तिम चरणमा",
-        "link": "https://lokaantar.com/story/318223/2026/4/28/current-affairs/india-germany-",
-        "description": "भारत र जर्मनीबीचको रणनीतिक साझेदारीमा नयाँ आयाम थप्दै ८ अर्ब डलर बराबरको अत्याधुनिक पन्डुब्बी निर्माण सम्झौता चाँडै सम्पन्न हुने भएको छ । जर्मन रक्षामन्त्री बोरिस पिस्टोरियसले आगामी तीन महिनाभित्र यो सम्झौतामा हस्ताक्षर हुने विश्वास व्यक्त गरेको टाइम",
-        "pubDate": "Tue, 28 Apr 2026 07:20:03 +0000",
-        "source": "LOKAANTAR SANCHAR",
-        "image": ""
-    },
-    {
-        "title": "तेस्रो त्रैमासमा वाणिज्य बैंकहरूको नाफा १९% वृद्धि, सुधारको संकेत तर असमान प्रदर्शन कायम",
-        "link": "https://newsofnepal.com/2026/04/28/765918/",
-        "description": "काठमाडौं । चालु आर्थिक वर्ष २०८२/८३ को तेस्रो त्रैमाससम्ममा नेपाली वाणिज्य बैंकहरूको वित्तीय प्रदर्शनमा सुधारको संकेत देखिएको छ । सार्वजनिक अपरिष्कृत वित्तीय विवरणअनुसार बैंकिङ क्षेत्रमा क्रमशः रिकभरी हुँदै गएको संकेत देखिएको छ, यद्यपि सबै बैंकको अवस",
-        "pubDate": "Tue, 28 Apr 2026 07:16:19 +0000",
-        "source": "News of Nepal",
-        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/bank-bittiya-sastha-150x150.png"
-    },
-    {
-        "title": "प्रोफेसनल होल्डिङ्स्‌ले चुक्ता पुँजीको ५० प्रतिशत बोनस शेयर वितरण गर्ने​​​",
-        "link": "https://lokaantar.com/story/318221/2026/4/28/economy/prefessional-holdings-",
-        "description": "प्रोफेसनल होल्डिङ्स् लिमिटेड (साविक प्रोफेसनल एजुकेटर्स लिमिटेड)ले&amp;nbsp;चुक्ता पुँजीको ५० प्रतिशत&amp;nbsp;बोनस शेयर वितरण गर्ने भएको छ ।​\n\nगत&amp;nbsp;चैतमा सम्पन्न​&amp;nbsp;२०औँ वार्षिक साधारणसभाले&amp;nbsp;हाल कायम चुक्ता पुँजीको ५० प्रतिशत&a",
-        "pubDate": "Tue, 28 Apr 2026 07:12:02 +0000",
-        "source": "LOKAANTAR SANCHAR",
-        "image": ""
-    },
-    {
         "title": "‘People said I would never fix it’: Shreyas Iyer fires back on short-ball doubts, leans on ABD, Rohit & Kohli blueprint",
         "link": "https://www.hindustantimes.com/cricket/people-said-i-would-never-fix-it-shreyas-iyer-fires-back-on-short-ball-doubts-leans-on-abd-rohit-kohli-blueprint-101777359564366.html",
         "description": "Shreyas Iyer explained how past criticism motivated him to improve and silence the naysayers who questioned his ability against the short balls.",
         "pubDate": "Tue, 28 Apr 2026 12:39:33 +0530",
         "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
         "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/IPL-58_1777359873734_1777359887677.jpg"
-    },
-    {
-        "title": "विद्युत्: खपत र निर्यात बढाउने रणनीति तयार",
-        "link": "https://newsofnepal.com/2026/04/28/765893/",
-        "description": "काठमाडौं । आर्थिक रूपान्तरणको प्रमुख आधार ऊर्जा क्षेत्रलाई बनाउने उद्देश्यसहित ‘ऊर्जा खपत वृद्धि तथा निर्यात रणनीति, २०८३’ मस्यौदा ऊर्जा, जलस्रोत तथा सिँचाइ मन्त्रालयले सार्वजनिक गरेको छ । मन्त्रालयले तयार गरेको मस्यौदामा सरोकारवालाहरूबाट सुझावको अपे",
-        "pubDate": "Tue, 28 Apr 2026 07:06:09 +0000",
-        "source": "News of Nepal",
-        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/Untitled-design-6-13-150x150.png"
-    },
-    {
-        "title": "धुम्बाराहीमा पूर्णबहादुर पक्षको भेला, गच्छदार र सुजाता पनि सहभागी",
-        "link": "https://lokaantar.com/story/318220/2026/4/28/main-news/congress-",
-        "description": "नेपाली&amp;nbsp;कांग्रेसका निवर्तमान कार्यवाहक सभापति पूर्णबहादुर खड्काको समूहको भेला धुम्बाराहीमा शुरू भएको छ । होटलमा जारी बैठकमा समूहका शीर्ष नेता, १४औँ महाधिवेशनबाट निर्वाचित केन्द्रीय सदस्य, जिल्ला सभापतिहरू तथा उपत्यकामा उपलब्ध क्षेत्रीय सभापति",
-        "pubDate": "Tue, 28 Apr 2026 07:03:57 +0000",
-        "source": "LOKAANTAR SANCHAR",
-        "image": ""
     },
     {
         "title": "AFC Champions League gets finale fitting of fundamentally flawed tournament | John Duerden",
@@ -832,14 +1072,6 @@
         "image": ""
     },
     {
-        "title": "शेखर गोल्छालाई २४ घण्टाभित्र अदालतमा पेश गर्न सर्वोच्चको आदेश",
-        "link": "https://lokaantar.com/story/318219/2026/4/28/governance/shekhar-golchha",
-        "description": "नेपाल उद्योग वाणिज्य महासंघका पूर्व अध्यक्ष एवं गोल्छा समूहका अध्यक्ष शेखर गोल्छालाई पक्राउ गरिएको विषयमा सर्वोच्च अदालतले लिखित जवाफ मागेको छ ।\n\nबन्दी प्रत्यक्षीकरण रिटमा मंगलबार सुनुवाइ गर्दै न्यायाधीश नृपध्वज निरौलाको एकल&amp;nbsp;इजलासले लिखित जव",
-        "pubDate": "Tue, 28 Apr 2026 06:58:32 +0000",
-        "source": "LOKAANTAR SANCHAR",
-        "image": ""
-    },
-    {
         "title": "Delhi Capitals co-owner Parth Jindal reacts after their agonizing defeat to RCB in IPL 2026 encounter",
         "link": "https://crickettimes.com/2026/04/delhi-capitals-co-owner-parth-jindal-reacts-after-their-agonizing-defeat-to-rcb-in-ipl-2026-encounter/",
         "description": "The 39th match of the Indian Premier League (IPL) 2026 at the Arun Jaitley Stadium on Monday, will be remembered for all the wrong reasons by the home faithful. In a season that has redefined T20 power-hitting, the Delhi Capitals (DC) plummeted to a ",
@@ -856,38 +1088,6 @@
         "image": ""
     },
     {
-        "title": "कर प्रणालीलाई सरल बनाउन सुझाव",
-        "link": "https://newsofnepal.com/2026/04/28/765891/",
-        "description": "काठमाडौं । आगामी आर्थिक वर्ष २०८३÷८४ को बजेट निर्माणलाई लक्षित गर्दै अर्थ मन्त्रालय र नेपाल चार्टर्ड अकाउन्टेन्ट्स संघबीच आर्थिक तथा कर प्रणाली सुधारका विषयमा उच्चस्तरीय प्रि बजेट छलफल भएको छ । सरकारले बजेट तयारीलाई तीव्र बनाइरहेका बेला आयोजित उक्त छ",
-        "pubDate": "Tue, 28 Apr 2026 06:52:05 +0000",
-        "source": "News of Nepal",
-        "image": "https://newsofnepal.com/wp-content/uploads/2021/06/mof-artha-mantralaya-150x150.jpg"
-    },
-    {
-        "title": "ऊर्जा, कृषि, पर्यटन र सूचना प्रविधिमार्फत आर्थिक रूपान्तरणको लक्ष्य",
-        "link": "https://newsofnepal.com/2026/04/28/765888/",
-        "description": "काठमाडौं । चुनौतीबीच पनि आर्थिक रूपान्तरणका प्रशस्त सम्भावना रहेको औंल्याउँदै अर्थ मन्त्रालयले एक दर्जन अवसरहरू पहिचान गरेको छ । अर्थमन्त्री डा. स्वर्णिम वाग्लेले बजेट लेख्नुअघि देशको वर्तमान आर्थिक अवस्थाबारे जानकारी दिन सोमवार सार्वजनिक गरिएको ‘नेप",
-        "pubDate": "Tue, 28 Apr 2026 06:50:31 +0000",
-        "source": "News of Nepal",
-        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/Untitled-design-5-15-150x150.png"
-    },
-    {
-        "title": "चालु आर्थिक वर्षमा नेपालको आर्थिक वृद्धिदर ३.८५ प्रतिशत हुने प्रक्षेपण",
-        "link": "https://lokaantar.com/story/318218/2026/4/28/economy/economic-growth-rate-",
-        "description": "चालु&amp;nbsp;आर्थिक वर्षमा नेपालको आर्थिक वृद्धिदर ३.८५ प्रतिशत हुने प्रक्षेपण गरिएको छ ।\n\nमंगलबार राष्ट्रिय तथ्याङ्क कार्यालयले पत्रकार सम्मेलन गर्दै आर्थिक वर्ष २०८२/८३ मा आर्थिक वृद्धिदर ३.८४ प्रतिशत रहने जनाएको हो ।\n\nकार्यालयका अनुसार चालु&amp;n",
-        "pubDate": "Tue, 28 Apr 2026 06:49:28 +0000",
-        "source": "LOKAANTAR SANCHAR",
-        "image": ""
-    },
-    {
-        "title": "बैंकले भन्यो– खातावालालाई ल्याऊः दिदीको कंकाल बोकेर पैसा निकाल्न पुगे भाइ",
-        "link": "https://newsofnepal.com/2026/04/28/765914/",
-        "description": "काठमाडौं। भारतको उडिसा राज्यको केओंझर जिल्लाबाट एउटा यस्तो घटना बाहिर आएको छ जुन सुन्दा फिल्मको पटकथा जस्तो लाग्छ। तर यसको पछाडिको गरिबी, अशिक्षा र असहायता गहिरो र मार्मिक कथा छ। जिल्लाको पटना क्षेत्रमा एक व्यक्तिले आफ्नी मृत दिदीको कंकाललाई काँधमा ब",
-        "pubDate": "Tue, 28 Apr 2026 06:48:30 +0000",
-        "source": "News of Nepal",
-        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/Gateway-monument-India-entrance-Mumbai-Harbour-coast-1-150x150.jpg"
-    },
-    {
         "title": "Garena Free Fire MAX redeem codes for April 28, 2026: Free gun skins, loot crates and more",
         "link": "https://www.indiatvnews.com/technology/gaming/garena-free-fire-max-redeem-codes-for-april-28-2026-free-gun-skins-loot-crates-and-more-2026-04-28-1039162",
         "description": "Free Fire MAX, a popular battle royale game from Garena which has gained popularity over the period, has rolled out the new redeem codes for today (April 28, 2026). If you play the game and love to stack up various in-game rewards like skins, grab lo",
@@ -902,14 +1102,6 @@
         "pubDate": "Tue, 28 Apr 2026 06:35:10 +0000",
         "source": "Techpana",
         "image": ""
-    },
-    {
-        "title": "सावेले राखे विश्व कीर्तिमान म्याराथन दौड २ घण्टाभन्दा कम समयमा पूरा",
-        "link": "https://newsofnepal.com/2026/04/28/765884/",
-        "description": "लन्डन, (एजेन्सी) । केन्याका सेबास्टियन सावेले पुरुषको म्याराथन दौड २ घण्टाभन्दा कम समयमा पूरा गर्दै विश्व कीर्तिमान राखेका छन् । उनी २ घण्टाभन्दा कम समयमा म्याराथन दौड (४२.१९५ किलोमिटरको दूरी) पूरा गर्ने विश्वका पहिलो धावकसमेत बने । विश्व एथ्लेटिक्सअ",
-        "pubDate": "Tue, 28 Apr 2026 06:27:55 +0000",
-        "source": "News of Nepal",
-        "image": "https://newsofnepal.com/wp-content/uploads/2026/04/Untitled-design-4-16-150x150.png"
     },
     {
         "title": "Owl festival in Dang on May 1-2",
@@ -1032,14 +1224,6 @@
         "image": "http://p.imgci.com/db/PICTURES/CMS/416300/416307.jpg"
     },
     {
-        "title": "PBKS vs RR Pitch Report: How will surface at Maharaja Yadavindra Singh Stadium in Mullanpur play?",
-        "link": "https://www.indiatvnews.com/sports/cricket/pbks-vs-rr-pitch-report-how-will-surface-at-maharaja-yadavindra-singh-stadium-in-mullanpur-play-2026-04-28-1039147",
-        "description": "The stage is set for game 40 of the ongoing IPL (Indian Premier League) 2026. The clash will see Punjab Kings taking on Rajasthan Royals at the Maharaja Yadavindra Singh International Cricket Stadium in Mullanpur on April 28. It is worth noting that ",
-        "pubDate": "Tue, 28 Apr 2026 09:34:53 +0530",
-        "source": "IndiaTV Sports: Google News Feed",
-        "image": ""
-    },
-    {
         "title": "Mac wants to 'earn' place in Wrexham history",
         "link": "https://www.bbc.com/sport/football/articles/c39327e892jo?at_medium=RSS&at_campaign=rss",
         "description": "TV star and Wrexham co-owner Rob Mac is impressed as he tours the Football Museum of Wales which opens later this year and wants own section.",
@@ -1070,14 +1254,6 @@
         "pubDate": "Tue, 28 Apr 2026 09:11:19 +0530",
         "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
         "image": "https://www.hindustantimes.com/ht-img/img/2026/04/28/1600x900/logo/dhoni_1777347428129_1777347428251.jpg"
-    },
-    {
-        "title": "Royal Challengers Bengaluru enter elite list alongside MI, CSK after dominant victory over Delhi Capitals",
-        "link": "https://www.indiatvnews.com/sports/cricket/royal-challengers-bengaluru-enter-elite-list-alongside-mi-csk-after-dominant-victory-over-delhi-capitals-2026-04-28-1039143",
-        "description": "The 39th game of the ongoing IPL (Indian Premier League) 2026 saw Royal Challengers Bengaluru taking on Delhi Capitals. The two sides locked horns at the Arun Jaitley Stadium in Delhi on April 28, and the defending champions put forth a brilliant sho",
-        "pubDate": "Tue, 28 Apr 2026 09:04:13 +0530",
-        "source": "IndiaTV Sports: Google News Feed",
-        "image": ""
     },
     {
         "title": "PBKS vs RR, IPL 2026: Maharaja Yadavindra Singh Stadium Pitch Report and Mullanpur Weather Forecast",
@@ -1149,14 +1325,6 @@
         "description": "काठमाडौँ । चीन सरकारले अमेरिकी प्रविधि जायन्ट मेटालाई आर्टिफिसियल इन्टेलिजेन्स (एआई) स्टार्टअप मानुस (Manus) को अधिग्रहण प्रक्रिया पूर्ण रूपमा खारेज गर्न आदेश दिएको छ । २ अर्ब डलरभन्दा बढी मूल्यको यो सम्झौतालाई चीनको शक्तिशाली आर्थिक योजना निकाय, राष",
         "pubDate": "Tue, 28 Apr 2026 02:10:29 +0000",
         "source": "Techpana",
-        "image": ""
-    },
-    {
-        "title": "New Zealand Cricket announces Geoff Allot as the new chief executive after Scott Weenink's resignation",
-        "link": "https://www.indiatvnews.com/sports/cricket/new-zealand-cricket-announces-geoff-allot-as-the-new-chief-executive-after-scott-weenink-s-resignation-2026-04-28-1039137",
-        "description": "In a major development for NZC (New Zealand Cricket), the board has come forward and appointed former pacer Geoff Allot as their new chief executive. The decision was made after Scott Weenink resigned from the post late last year. At 54 years old, Al",
-        "pubDate": "Tue, 28 Apr 2026 07:35:52 +0530",
-        "source": "IndiaTV Sports: Google News Feed",
         "image": ""
     },
     {
@@ -1304,14 +1472,6 @@
         "image": ""
     },
     {
-        "title": "Brentford latest: Team doing everything we can to get results, says Andrews",
-        "link": "https://www.skysports.com/football/live-blog/11095/13279280/brentford-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-        "description": "",
-        "pubDate": "Mon, 27 Apr 2026 22:48:00 BST",
-        "source": "SkySports | News",
-        "image": ""
-    },
-    {
         "title": "Carra: Carrick will be Man Utd boss next season",
         "link": "https://www.skysports.com/football/news/11095/13537402/man-utd-michael-carrick-will-be-boss-at-old-trafford-next-season-after-sensational-results-says-jamie-carragher",
         "description": "Michael Carrick will be Manchester United manager next season, according to Jamie Carragher.",
@@ -1363,14 +1523,6 @@
         "title": "Man Utd edge closer to Champions League return after Brentford win",
         "link": "https://www.skysports.com/football/manchester-united-vs-brentford/report/531465",
         "description": "Manchester United are within touching distance of returning to the Champions League after beating Brentford 2-1 at Old Trafford.",
-        "pubDate": "Mon, 27 Apr 2026 22:00:00 BST",
-        "source": "SkySports | News",
-        "image": ""
-    },
-    {
-        "title": "Papers: Rashford happy to take pay cut to seal Barca move",
-        "link": "https://www.skysports.com/football/news/11095/13537371/andoni-iraola-marco-silva-and-xabi-alonso-emerge-as-contenders-for-chelsea-job-paper-talk",
-        "description": "The top stories and transfer rumours from Tuesday's newspapers...",
         "pubDate": "Mon, 27 Apr 2026 22:00:00 BST",
         "source": "SkySports | News",
         "image": ""
@@ -1472,7 +1624,7 @@
         "image": ""
     },
     {
-        "title": "Arsenal latest: 'Positive Havertz injury update emerges'",
+        "title": "Arsenal latest: Calafiori, Eze in Gunners training but others missing",
         "link": "https://www.skysports.com/football/live-blog/11095/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
         "description": "",
         "pubDate": "Mon, 27 Apr 2026 19:15:00 BST",
@@ -1504,7 +1656,7 @@
         "image": "https://i.guim.co.uk/img/media/22f3cabd6c51c0a9549583b3316fd23b372ec38d/323_75_3243_2595/master/3243.jpg?width=140&quality=85&auto=format&fit=max&s=6b5d30643c8776e4747a9b1aa3a55bfa"
     },
     {
-        "title": "Chelsea latest: 'Days of top, top managers at Blues over,' says Merson",
+        "title": "Chelsea latest: Fernandez spotted in Madrid after flirting with Real move",
         "link": "https://www.skysports.com/football/live-blog/11095/13025497/chelsea-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
         "description": "",
         "pubDate": "Mon, 27 Apr 2026 18:54:00 BST",
@@ -1550,14 +1702,6 @@
         "pubDate": "Mon, 27 Apr 2026 18:05:08 +0000",
         "source": "CBS Sports Headlines",
         "image": ""
-    },
-    {
-        "title": "Bhuvi, Hazlewood show T20 can be a bowler’s game too",
-        "link": "https://www.hindustantimes.com/cricket/bhuvi-hazlewood-show-t20-can-be-a-bowler-s-game-too-101777312500742.html",
-        "description": "RCB's bowlers Bhuvneshwar and Hazlewood dominated, leading to a historic collapse by Delhi Capitals, who posted the lowest IPL PowerPlay score.",
-        "pubDate": "Mon, 27 Apr 2026 23:33:09 +0530",
-        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
-        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/27/1600x900/logo/RCB-s-Bhuvneshwar-Kumar--C--and-Josh-Hazlewood-dur_1777312498467.jpg"
     },
     {
         "title": "OpenAI ends Microsoft legal peril over its $50B Amazon deal",
@@ -1664,14 +1808,6 @@
         "image": ""
     },
     {
-        "title": "Axar Patel refuses to take defeat seriously after RCB beat Delhi Capitals to a pulp, broadcaster says ‘sorry’",
-        "link": "https://www.hindustantimes.com/cricket/axar-patel-refuses-to-take-defeat-seriously-after-rcb-beat-delhi-capitals-to-a-pulp-broadcaster-says-sorry-101777308359303.html",
-        "description": "Axar Patel's post-match remarks after the RCB game focused on moving on, but the severity of the loss raised questions.",
-        "pubDate": "Mon, 27 Apr 2026 22:20:26 +0530",
-        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
-        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/27/1600x900/logo/India-IPL-Cricket-43_1777308458441_1777308484485.jpg"
-    },
-    {
         "title": "Who will win the Champions League? Place your vote",
         "link": "https://www.bbc.com/sport/football/articles/c1mkvzlnk2ro?at_medium=RSS&at_campaign=rss",
         "description": "Thirty-two teams have fallen in this season's Champions League and four remain - so who will become kings of Europe on 30 May? BBC Sport delves into the stats, while experts make predictions.",
@@ -1702,30 +1838,6 @@
         "pubDate": "Mon, 27 Apr 2026 16:36:51 GMT",
         "source": "Cricket news from ESPN Cricinfo.com",
         "image": "http://p.imgci.com/db/PICTURES/CMS/415200/415207.jpg"
-    },
-    {
-        "title": "Leading by example: Growing into the IPL captaincy",
-        "link": "https://www.hindustantimes.com/cricket/leading-by-example-growing-into-the-ipl-captaincy-101777307458877.html",
-        "description": "They aren’t international regulars, but some franchises are trusting them with leadership roles nevertheless",
-        "pubDate": "Mon, 27 Apr 2026 22:00:58 +0530",
-        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
-        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/27/1600x900/logo/Mumbai-Indians--captain-Hardik-Pandya--L--and-Punj_1777307456875.jpg"
-    },
-    {
-        "title": "Rinku Singh rises to the challenge for Kolkata Knight Riders",
-        "link": "https://www.hindustantimes.com/cricket/rinku-singh-rises-to-the-challenge-for-kolkata-knight-riders-101777306918575.html",
-        "description": "Rinku Singh's stellar 83 not out led KKR to a Super Over victory against LSG, showcasing his maturity and all-round skills under pressure.",
-        "pubDate": "Mon, 27 Apr 2026 21:51:58 +0530",
-        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
-        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/27/1600x900/logo/Kolkata-Knight-Riders--Rinku-Singh-celebrates-afte_1777306916591.jpg"
-    },
-    {
-        "title": "Keshav Maharaj replaces injured Mitchell Santner in Mumbai Indians’ squad",
-        "link": "https://www.hindustantimes.com/cricket/keshav-maharaj-replaces-injured-mitchell-santner-in-mumbai-indians-squad-101777306498766.html",
-        "description": "Mitchell Santner has been ruled out owing to a shoulder injury which he sustained during the team's last match at the Wankhede Stadium",
-        "pubDate": "Mon, 27 Apr 2026 21:47:05 +0530",
-        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
-        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/27/1600x900/logo/PTI04-20-2026-000598B-0_1777306546675_1777306563207.jpg"
     },
     {
         "title": "Investors back Skye’s AI home screen app for iPhone ahead of launch",
@@ -1774,14 +1886,6 @@
         "pubDate": "Mon, 27 Apr 2026 15:59:23 GMT",
         "source": "Football | The Guardian",
         "image": "https://i.guim.co.uk/img/media/4c7e3c078a4f73f25d417b1d6b9776d1cb52b166/789_479_3252_2602/master/3252.jpg?width=140&quality=85&auto=format&fit=max&s=db68340a6cf0f9978e9fa3860f969244"
-    },
-    {
-        "title": "Delhi Capitals all out for 75 against RCB: Where does it rank in the list of lowest IPL totals of all time",
-        "link": "https://www.hindustantimes.com/cricket/delhi-capitals-all-out-for-75-against-rcb-where-does-it-rank-in-the-list-of-lowest-ipl-totals-of-all-time-101777303487768.html",
-        "description": "This was Delhi’s third-lowest IPL total, after scores of 66 and 67 against Mumbai Indians and Kings XI Punjab, respectively, both in 2017",
-        "pubDate": "Mon, 27 Apr 2026 21:23:34 +0530",
-        "source": "Cricket: Latest Cricket News | Today Cricket Live | Cricket Breaking News | Hindustan Times",
-        "image": "https://www.hindustantimes.com/ht-img/img/2026/04/27/1600x900/logo/PTI04-27-2026-000344B-0_1777303564920_1777303578476.jpg"
     },
     {
         "title": "WATCH: Bhuvneshwar Kumar cleans up Sahil Parakh with a toe-crushing yorker in DC vs RCB IPL 2026 clash",
@@ -1936,14 +2040,6 @@
         "image": ""
     },
     {
-        "title": "WhatsApp may soon add Android Notification Bubbles: Reply to chats without opening the app",
-        "link": "https://www.indiatvnews.com/technology/news/whatsapp-may-soon-add-android-notification-bubbles-reply-to-chats-without-opening-the-app-2026-04-27-1039062",
-        "description": "WhatsApp is getting ready to make life a bit easier for Android users. Thye are working on Notification Bubbles&mdash;a feature that lets your chats pop up as floating icons right on your screen. So, you could reply to messages without ever leaving Y",
-        "pubDate": "Mon, 27 Apr 2026 19:30:01 +0530",
-        "source": "IndiaTV Technology: Google News Feed",
-        "image": ""
-    },
-    {
         "title": "Four ways to tackle football's frustrating 'tactical timeout'",
         "link": "https://www.bbc.com/sport/football/articles/c62j21pdx2qo?at_medium=RSS&at_campaign=rss",
         "description": "Next season, leagues will be allowed to select from a series of trials to try to stop the goalkeeper tactical time-out. BBC Sport looks at the proposals.",
@@ -2080,14 +2176,6 @@
         "image": ""
     },
     {
-        "title": "Junction X Kathmandu Set for May 29 to 31, Featuring Hackathon and Tech Expo",
-        "link": "https://techpana.com/2026/156376/junction-x-kathmandu-set-for-may-29-to-31-featuring-hackathon-and-tech-expo",
-        "description": "Kathmandu. &amp;lsquo;Junction X Kathmandu&amp;rsquo; is set to take place from May 29 to 31, to bring together people active in information technology and innovation on a common platform. SUMS Nepal and Finland&amp;rsquo;s Cogknit are jointly organi",
-        "pubDate": "Mon, 27 Apr 2026 12:06:00 +0000",
-        "source": "Techpana",
-        "image": ""
-    },
-    {
         "title": "Spotify’s next frontier: Fitness content",
         "link": "https://techcrunch.com/2026/04/27/spotifys-next-frontier-fitness-content/",
         "description": "Spotify is adding fitness as its next major category, launching workout videos, playlists, and Peloton classes inside the app for free and Premium users.",
@@ -2096,11 +2184,11 @@
         "image": ""
     },
     {
-        "title": "Case Filed Against UK-Based Nepali Woman Over TikTok Harassment of Journalist",
-        "link": "https://techpana.com/2026/156375/case-filed-against-uk-based-nepali-woman-over-tiktok-harassment-of-journalist",
-        "description": "Kathmandu. A case has been filed at the Sunsari District Court against Subina Rai, also known as Urmila, on charges of defaming a female journalist and inciting sexual violence against her through TikTok.&amp;nbsp;\n\nThe District Government Attorney&a",
-        "pubDate": "Mon, 27 Apr 2026 11:52:56 +0000",
-        "source": "Techpana",
+        "title": "Luis Enrique, Nuno Mendes and why versatility is football's new superpower",
+        "link": "https://www.skysports.com/football/news/11095/13535966/nuno-mendes-dominik-szoboszlai-harry-kane-and-nico-oreilly-among-players-showing-versatility-is-footballs-new-superpower-as-game-evolves",
+        "description": "Luis Enrique sprang some tactical surprises during Paris Saint-Germain's meeting with Nice last month. Left-back Nuno Mendes was moved to left wing, centre-back Lucas Beraldo played in midfield, and left winger Khvicha Kvaratskhelia went up front.",
+        "pubDate": "Mon, 27 Apr 2026 12:00:00 BST",
+        "source": "SkySports | News",
         "image": ""
     },
     {
@@ -2125,14 +2213,6 @@
         "description": "Tottenham and Netherlands attacking midfielder Xavi Simons is \"heartbroken\" to have injured his anterior cruciate ligament.",
         "pubDate": "Mon, 27 Apr 2026 11:44:40 GMT",
         "source": "BBC Sport",
-        "image": ""
-    },
-    {
-        "title": "सरकारको निष्कर्ष- ‘नेपालमा इन्टरनेट मनोरञ्जनमै सीमित, उत्पादकत्वमा कमजोर’",
-        "link": "https://techpana.com/2026/156374/nepal-internet-penetration-144-percent-digital-divide-challenge",
-        "description": "काठमाडौँ । नेपालमा प्रविधिको विस्तार तीव्र गतिमा भए तापनि डिजिटल असमानता (डिजिटल डिभाइड) अझै पनि प्रमुख चुनौतीको रूपमा रहेको सरकारले औँल्याएको छ । अर्थ मन्त्रालयले सार्वजनिक गरेको &amp;lsquo;नेपालको वर्तमान आर्थिक स्थितिपत्र, २०८३&amp;rsquo; ले प्रवि",
-        "pubDate": "Mon, 27 Apr 2026 11:40:25 +0000",
-        "source": "Techpana",
         "image": ""
     },
     {
@@ -2278,14 +2358,6 @@
         "pubDate": "Mon, 27 Apr 2026 07:00:36 GMT",
         "source": "Football | The Guardian",
         "image": "https://i.guim.co.uk/img/media/e854584e5b742b1c9fd25e770f92ace89a20f289/456_0_4560_3648/master/4560.jpg?width=140&quality=85&auto=format&fit=max&s=6635db5fb3e1d3014823a224db22412e"
-    },
-    {
-        "title": "Jio launches Youth and Gaming Plan at Rs 459: Get Snapchat+, FanCode, Gemini Pro and 2GB daily data",
-        "link": "https://www.indiatvnews.com/technology/news/jio-launches-youth-and-gaming-plan-at-rs-459-get-snapchat-fancode-gemini-pro-and-2gb-daily-data-2026-04-27-1039050",
-        "description": "Jio has just rolled out the new Youth and Gaming Plan, which costs Rs 459. The plan clearly aims at younger users who are glued to their phones &ndash; gaming, streaming, scrolling through social media, or playing around with AI tools. This is not ju",
-        "pubDate": "Mon, 27 Apr 2026 12:09:28 +0530",
-        "source": "IndiaTV Technology: Google News Feed",
-        "image": ""
     },
     {
         "title": "SEE break: A crucial turning point for students’ future paths",
@@ -2872,14 +2944,6 @@
         "image": "https://i.guim.co.uk/img/media/4f702c087d9be24848371f8bc84ee48a3e590c41/406_0_3462_2769/master/3462.jpg?width=140&quality=85&auto=format&fit=max&s=82cec4bfb02c2efb33b01e1a74e15b16"
     },
     {
-        "title": "TechCrunch Mobility: Elon’s admission",
-        "link": "https://techcrunch.com/2026/04/26/techcrunch-mobility-elons-admission/",
-        "description": "Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.",
-        "pubDate": "Sun, 26 Apr 2026 16:03:00 +0000",
-        "source": "TechCrunch",
-        "image": ""
-    },
-    {
         "title": "Taylor five-for helps Worcestershire wrap up innings win over Kent",
         "link": "https://www.espncricinfo.com/ci/content/story/1533897.html?ex_cid=OTC-RSS",
         "description": "Chris Benjamin shines with 77 but can't prevent defeat as visitors continue struggling start to season",
@@ -3078,14 +3142,6 @@
         "pubDate": "Sun, 26 Apr 2026 07:25:19 +0000",
         "source": "OnlineKhabar English News",
         "image": "http://english.onlinekhabar.com/wp-content/uploads/2026/04/Manohara-Sukukmbasi-Basti-Rescue-by-Nepal-Police-1-1024x683-1.jpg"
-    },
-    {
-        "title": "Scholarship scheme for promoting women’s access to higher education implemented",
-        "link": "https://english.onlinekhabar.com/scholarship-scheme-for-promoting-womens-access-to-higher-education-implemented.html",
-        "description": "Kanchanpur, April 26 The Bhimdatta Municipality has implemented the &#8216;Daughter-in-law Higher Education Scholarship&#8217; programme aimed at increasing women&#8217;s access to higher education. The municipality has implemented this programme to ",
-        "pubDate": "Sun, 26 Apr 2026 07:21:59 +0000",
-        "source": "OnlineKhabar English News",
-        "image": "http://english.onlinekhabar.com/wp-content/uploads/2023/09/Metro-college-tulsipur-student-3-2-1024x683-2.jpg"
     },
     {
         "title": "Quiet confidence, then tears - but 'unsinkable' Coventry are back",
@@ -3838,37 +3894,5 @@
         "pubDate": "Sat, 25 Apr 2026 13:07:41 GMT",
         "source": "Football | The Guardian",
         "image": "https://i.guim.co.uk/img/media/44ec3f91c1a0898392f9ad77735e26772b7b6f1a/251_116_1343_1074/master/1343.jpg?width=140&quality=85&auto=format&fit=max&s=3a589c80f8e5cc3ad480da57f9d8402d"
-    },
-    {
-        "title": "Fulham v Aston Villa: Premier League – live",
-        "link": "https://www.theguardian.com/football/live/2026/apr/25/fulham-v-aston-villa-premier-league-live",
-        "description": "⚽ Premier League updates from the 12.30pm BST kick-off⚽ Live scores | Table | Follow us on Bluesky | And mail Tim2 min The first foul is committed by Morgan Rogers, needlessly, on Sander Berge – they were in the centre circle.1 min Fulham kick off an",
-        "pubDate": "Sat, 25 Apr 2026 12:24:11 GMT",
-        "source": "Football | The Guardian",
-        "image": "https://i.guim.co.uk/img/media/3e1fc7c5e32efc4b4acf1acf9c2b32a0417e38dd/262_105_2434_1949/master/2434.jpg?width=140&quality=85&auto=format&fit=max&s=ec7ca953af2c4ae22b64d6844c895f25"
-    },
-    {
-        "title": "Chelsea vs. Leeds United prediction, odds, expert picks for FA Cup semifinal on Sunday, April 26",
-        "link": "https://www.cbssports.com/betting/news/chelsea-vs-leeds-united-prediction-odds-expert-picks-for-fa-cup-semifinal-on-sunday-april-26/",
-        "description": "SportsLine soccer expert Jon Eimer reveals his top plays for Sunday's FA Cup semifinal on Sunday, April 26",
-        "pubDate": "Sat, 25 Apr 2026 12:01:07 +0000",
-        "source": "CBS Sports Headlines",
-        "image": ""
-    },
-    {
-        "title": "Uncapped Sarmin included in Bangladesh's squad for T20Is against SL",
-        "link": "https://www.espncricinfo.com/ci/content/story/1533573.html?ex_cid=OTC-RSS",
-        "description": "Uncapped top-order batter replaces Fergana Hoque for the three-match series that starts on Tuesday",
-        "pubDate": "Sat, 25 Apr 2026 11:39:25 GMT",
-        "source": "Cricket news from ESPN Cricinfo.com",
-        "image": "http://p.imgci.com/db/PICTURES/CMS/406900/406934.jpg"
-    },
-    {
-        "title": "PSL 2026 final to be played in front of fans in Lahore",
-        "link": "https://www.espncricinfo.com/ci/content/story/1533568.html?ex_cid=OTC-RSS",
-        "description": "The final will be played at the Gaddafi Stadium in Lahore on May 3",
-        "pubDate": "Sat, 25 Apr 2026 11:22:44 GMT",
-        "source": "Cricket news from ESPN Cricinfo.com",
-        "image": "http://p.imgci.com/db/PICTURES/CMS/286300/286350.jpg"
     }
 ]
