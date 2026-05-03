@@ -1,5 +1,239 @@
 [
   {
+    "id": 24366,
+    "date": "2026-05-03T21:32:27",
+    "date_gmt": "2026-05-03T15:47:27",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=24366"
+    },
+    "modified": "2026-05-03T21:45:45",
+    "modified_gmt": "2026-05-03T16:00:45",
+    "slug": "laxmi-group-kathmandu-full-time-sales-executive-2",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/laxmi-group-kathmandu-full-time-sales-executive-2/",
+    "title": {
+      "rendered": "Sales Executive"
+    },
+    "content": {
+      "rendered": "<p>Join our dynamic team and be part of a leading industry player ! We are looking for talented and motivated individuals to fill the following positions for our Commercial Vehicles</p>\n<p><strong>Position</strong>: Sales Executive (Bus)<br />\n<strong>Location:</strong> Kathmandu<br />\n<strong>Qualification</strong>: Bachelors Completed<br />\n<strong>Experience:</strong> 2-3 years</p>\n<p>Interested candidates are highly encouraged to drop their updated resume at<strong> vacancy@laxmiautocomp.com</strong> mentioning the position they are applying for in the subject line</p>\n",
+      "protected": false
+    },
+    "author": 18,
+    "featured_media": 10204,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "vacancy@laxmiautocomp.com",
+      "_company_name": "LXG Motors Pvt. Ltd.",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      30
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": {
+      "0": "post-24366",
+      "1": "job_listing",
+      "2": "type-job_listing",
+      "3": "status-publish",
+      "4": "has-post-thumbnail",
+      "5": "hentry",
+      "6": "job_listing_tag-kathmandu",
+      "8": "job-type-full-time"
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/24366",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/18"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/10204"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=24366"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=24366"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=24366"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=24366"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 24357,
     "date": "2026-05-03T16:25:00",
     "date_gmt": "2026-05-03T10:40:00",
@@ -69992,237 +70226,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=22908"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 22906,
-    "date": "2026-04-09T15:44:10",
-    "date_gmt": "2026-04-09T09:59:10",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=22906"
-    },
-    "modified": "2026-04-09T15:44:10",
-    "modified_gmt": "2026-04-09T09:59:10",
-    "slug": "research-officer-public-health",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/research-officer-public-health/",
-    "title": {
-      "rendered": "Research Officer &#8211; Public Health"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Research Officer &#8211; Public Health</p>\n<p><strong>Job Description</strong></p>\n<p><strong>Position Overview:</strong></p>\n<p>The Research Officer will support the design, implementation, and management of a mixed-methods research studies being carried out under TLMN. The role involves both quantitative and qualitative research activities, including field data collection, supervision, data analysis, and report writing, ensuring adherence to research protocols, ethical standards, and data quality requirements.</p>\n<p><strong>Key Task &amp; Responsibilities:</strong></p>\n<p><strong>Research Implementation</strong></p>\n<ul>\n<li>Support the implementation of mixed-methods research (quantitative and qualitative components)</li>\n<li>Coordinate and conduct field data collection activities (surveys, interviews, FGDs, KIIs)</li>\n<li>Ensure adherence to study protocols, tools, and timelines</li>\n<li>Supervise enumerators and field staff during data collection</li>\n</ul>\n<p><strong>Data Management and Analysis</strong></p>\n<ul>\n<li>Ensure high-quality data collection, entry, validation, and cleaning</li>\n<li>Conduct quantitative data analysis using software such as SPSS/Stata/R</li>\n<li>Conduct qualitative data analysis using software such as NVivo/Atlas.ti/manual thematic analysis</li>\n<li>Triangulate qualitative and quantitative findings</li>\n</ul>\n<p><strong>Ethics and Compliance</strong></p>\n<ul>\n<li>Assist in preparation and submission of ethical approval documents to the Nepal Health Research Council (NHRC)</li>\n<li>Ensure compliance with ethical standards and informed consent procedures</li>\n<li>Maintain confidentiality and data protection standards</li>\n</ul>\n<p><strong>Documentation and Reporting</strong></p>\n<ul>\n<li>Prepare field reports, progress reports, and research documentation</li>\n<li>Contribute to report writing, manuscript development, and dissemination activities</li>\n<li>Maintain proper documentation of study processes and outputs Coordination and Communication</li>\n<li>Coordinate with local stakeholders, health facilities, and community leaders</li>\n<li>Liaise with program teams and external partners</li>\n<li>Report progress, challenges, and field updates to the Research Manager</li>\n</ul>\n<p><strong>Other Responsibilities ·</strong></p>\n<ul>\n<li>Support other ongoing research activities within TLMN as required ·</li>\n<li>Travel frequently to study sites, including remote areas</li>\n<li>Any other job as assigned by Line Manager</li>\n</ul>\n<p><strong>Job Specification:</strong></p>\n<p><strong>Required Qualification</strong></p>\n<ul>\n<li>Master’s Degree in Public Health (MPH)</li>\n<li>Experience Minimum 2 years of experience in mixed-methods research, including: ·</li>\n<li>Quantitative data collection and analysis ·</li>\n<li>Qualitative research (IDIs, FGDs, KIIs) ·</li>\n<li>Field-based research implementation</li>\n</ul>\n<p><strong>Required Skills &amp; Competencies ·</strong></p>\n<ul>\n<li>Strong understanding of mixed-methods research design and implementation ·</li>\n<li>Proficiency in data analysis software (SPSS/Stata/R; NVivo/Atlas.ti is an asset) ·</li>\n<li>Experience in tool development and field testing ·</li>\n<li>Knowledge of ethical research processes and NHRC submission procedures ·</li>\n<li>Strong analytical, report writing, and documentation skills ·</li>\n<li>Good communication and interpersonal skills ·</li>\n<li>Ability to work independently and in multidisciplinary teams ·</li>\n<li>Attention to detail and commitment to data quality Additional Requirements ·</li>\n<li>Willingness to travel frequently to field sites ·</li>\n<li>Ability to work in remote and resource-limited settings ·</li>\n<li>Familiarity with digital data collection platforms (e.g., KOBO, REDCap).</li>\n</ul>\n<p><strong>Preferred</strong></p>\n<ul>\n<li>Experience working in Neglected Tropical Diseases (NTDs) programs</li>\n<li>Prior experience in Lymphatic Filariasis or similar public health research</li>\n<li>Experience in community-based research in Nepal</li>\n</ul>\n<p>TLM Nepal has a zero-tolerance policy towards any abuse, neglect and exploitation to all people. The post holder should have signed and must comply with all TLMN organisational policies, including the Safeguarding People Code of Conduct and the Safeguarding People Policy and Procedures.</p>\n<p><strong>Application ends April 23, 2026</strong></p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 2581,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "",
-      "_application": "https://tlmnepal.rigojobs.com/job-detail?jobId=64",
-      "_company_name": "The Leprosy Mission Nepal",
-      "_company_website": "https://www.leprosymission.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [],
-    "class_list": {
-      "0": "post-22906",
-      "1": "job_listing",
-      "2": "type-job_listing",
-      "3": "status-publish",
-      "4": "has-post-thumbnail",
-      "5": "hentry",
-      "7": "job-type-full-time"
-    },
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/22906",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/2581"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=22906"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=22906"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=22906"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=22906"
         }
       ],
       "curies": [
