@@ -1,5 +1,12 @@
 [
     {
+        "title": "Google Password Manager on Android appears to be getting passkey import and export support",
+        "link": "https://www.gsmarena.com/google_password_manager_on_android_appears_to_be_getting_passkey_import_and_export_support-news-72863.php",
+        "pubDate": "Sun, 17 May 2026 18:02:02 +0200",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/05/android-google-password-manager-passkey-migration/-184x111/gsmarena_001.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Passkeys are pretty great. The tech is solid, based on well-established, secure cryptographic principles, and the ease of use is through the roof compared to remembering traditional passwords. In case you are not in the know, the passkey paradigm has you generating a secure private key that you keep locally on your device and a corresponding public key that you give out to websites/services/apps you want to log into. Once you actually want to log in, all you need to do is authenticate on your device securely through something like a biometric lock (fingerprint, Face ID) to “prove” that you...</p>",
+        "category": "news"
+    },
+    {
         "title": "Meta’s Ray-Ban Display gets typing through air gestures in latest update",
         "link": "https://www.gsmarena.com/metas_rayban_display_gets_typing_through_air_gestures_in_latest_update-news-72862.php",
         "pubDate": "Sun, 17 May 2026 15:33:02 +0200",
@@ -130,13 +137,6 @@
         "link": "https://www.gsmarena.com/samsungs_exynos_2700_soc_for_galaxy_s27_series_to_reportedly_ditch_wlp_technology-news-72852.php",
         "pubDate": "Sat, 16 May 2026 02:01:02 +0200",
         "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/05/samsung-exynos-2700-sbs-packaging-tech/-184x111/gsmarena_00.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Samsung’s next-generation flagship chipset, the Exynos 2700, could adopt a new packaging design, according to a recent report. The company is reportedly planning to move away from Fan-Out Wafer-Level Packaging (FOWLP) technology for the upcoming SoC.\n\nFan-Out Wafer-Level Packaging (FOWLP), which Samsung has used since the Exynos 2400, reportedly helped improve thermal performance. However, the technology is said to have been less profitable for the company due to its complex and costly manufacturing process.\n\n\n\nAccording to the report, which cites an industry official, Samsung plans to...</p>",
-        "category": "news"
-    },
-    {
-        "title": "Kuo: Apple is testing iPhone chipset production at Intel",
-        "link": "https://www.gsmarena.com/kuo_apple_is_testing_iphone_chipset_production_at_intel-news-72836.php",
-        "pubDate": "Fri, 15 May 2026 23:58:02 +0200",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/05/kuo-apple-intel-chip-trial-production/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Earlier this month, we saw a report which claimed that Apple is looking to diversify its chip production away from TSMC with Intel and Samsung as potential partners. Noted Apple analyst Ming Chi-Kuo’s latest post also backs up these claims alongside a few more details.\n\nApple and Intel have apparently kicked off legacy Apple silicon chip production on Intel’s 18A-P process, which is equivalent to TSMC’s process used on the A18 Pro chip. According to the report, these are low-end chips set to be used in iPhone, iPads and Macs, and Kuo estimates that 80% of the chips are meant for iPhone....</p>",
         "category": "news"
     }
 ]
