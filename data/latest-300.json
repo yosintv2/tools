@@ -1,5 +1,239 @@
 [
   {
+    "id": 28438,
+    "date": "2026-06-27T19:23:42",
+    "date_gmt": "2026-06-27T13:38:42",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=28438"
+    },
+    "modified": "2026-06-27T19:23:51",
+    "modified_gmt": "2026-06-27T13:38:51",
+    "slug": "engineer",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/engineer/",
+    "title": {
+      "rendered": "Engineer"
+    },
+    "content": {
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-28439\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Industrial-District-Management-Limited-job.jpg\" alt=\"\" width=\"700\" height=\"772\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Industrial-District-Management-Limited-job.jpg 700w, https://merorojgari.com/wp-content/uploads/2026/06/Industrial-District-Management-Limited-job-272x300.jpg 272w\" sizes=\"(max-width: 700px) 100vw, 700px\" /><br />\n<strong>Position</strong>: Engineer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Kathmandu<br />\n<strong>Website:</strong><a href=\"http://www.izml.gov.np\" target=\"_blank\" rel=\"noopener\"> www.izml.gov.np </a></p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 28440,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "",
+      "_company_name": "Industrial District Management Limited",
+      "_company_website": "http://www.izml.gov.np",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      27
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": [
+      "post-28438",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job_listing_tag-kathmandu",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/28438",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/28440"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=28438"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=28438"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=28438"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=28438"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 28436,
     "date": "2026-06-27T18:52:06",
     "date_gmt": "2026-06-27T13:07:06",
@@ -250,7 +484,7 @@
       "rendered": "Assistant Computer Operator, Field Assistant, Surveyor, Survey Officer, Computer Operator"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-28433\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10.png\" alt=\"\" width=\"1148\" height=\"1374\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10.png 1148w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10-251x300.png 251w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10-856x1024.png 856w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10-768x919.png 768w\" sizes=\"(max-width: 1148px) 100vw, 1148px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-28434\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112.png\" alt=\"\" width=\"1393\" height=\"1405\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112.png 1393w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-297x300.png 297w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-1015x1024.png 1015w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-768x775.png 768w\" sizes=\"(max-width: 1393px) 100vw, 1393px\" /><br />\n<strong>Position</strong>: Survey Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Surveyor<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Assistant Computer Operator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Computer Operator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Field Assistant<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Location</strong>: Jhapa</p>\n<p><strong>Jhapa Gaunpalika</strong></p>\n<p>Website:<a href=\"https://jhapamun.gov.np/\" target=\"_blank\" rel=\"noopener\"> https://jhapamun.gov.np/</a></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-28433\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10.png\" alt=\"\" width=\"1148\" height=\"1374\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10.png 1148w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10-251x300.png 251w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10-856x1024.png 856w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-10-768x919.png 768w\" sizes=\"(max-width: 1148px) 100vw, 1148px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-28434\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112.png\" alt=\"\" width=\"1393\" height=\"1405\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112.png 1393w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-297x300.png 297w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-1015x1024.png 1015w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/06/Jhapa-Gaunpalika-job-112-768x775.png 768w\" sizes=\"(max-width: 1393px) 100vw, 1393px\" /><br />\n<strong>Position</strong>: Survey Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Surveyor<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Assistant Computer Operator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Computer Operator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Field Assistant<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Location</strong>: Jhapa</p>\n<p><strong>Jhapa Gaunpalika</strong></p>\n<p>Website:<a href=\"https://jhapamun.gov.np/\" target=\"_blank\" rel=\"noopener\"> https://jhapamun.gov.np/</a></p>\n",
       "protected": false
     },
     "author": 2,
@@ -950,7 +1184,7 @@
       "rendered": "Employment Coordinator, Assistant Computer Operator, Lab Technician, Cleaner"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-28427\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job.jpg\" alt=\"\" width=\"1449\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job.jpg 1449w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-212x300.jpg 212w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-725x1024.jpg 725w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-768x1085.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-1087x1536.jpg 1087w\" sizes=\"(max-width: 1449px) 100vw, 1449px\" /><br />\n<strong>Position</strong>: Employment Coordinator<br />\n<strong>No. of Vacancy: </strong>1</p>\n<p><strong>Position</strong>: Assistant Computer Operator<br />\n<strong>No. of Vacancy: </strong>3</p>\n<p><strong>Position</strong>: Lab Technician<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Position</strong>: Cleaners<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Syangja<br />\n<strong><br />\nPutalibazar Nagarpalika </strong></p>\n<p>Website: <a href=\"https://putalibazarmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://putalibazarmun.gov.np/</a></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-28427\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job.jpg\" alt=\"\" width=\"1449\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job.jpg 1449w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-212x300.jpg 212w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-725x1024.jpg 725w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-768x1085.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/06/putalibazar-municipality-job-1087x1536.jpg 1087w\" sizes=\"(max-width: 1449px) 100vw, 1449px\" /><br />\n<strong>Position</strong>: Employment Coordinator<br />\n<strong>No. of Vacancy: </strong>1</p>\n<p><strong>Position</strong>: Assistant Computer Operator<br />\n<strong>No. of Vacancy: </strong>3</p>\n<p><strong>Position</strong>: Lab Technician<br />\n<strong>No. of Vacancy</strong>: 1</p>\n<p><strong>Position</strong>: Cleaners<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Syangja<br />\n<strong><br />\nPutalibazar Nagarpalika </strong></p>\n<p>Website: <a href=\"https://putalibazarmun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://putalibazarmun.gov.np/</a></p>\n",
       "protected": false
     },
     "author": 2,
@@ -1175,8 +1409,8 @@
     "guid": {
       "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=28419"
     },
-    "modified": "2026-06-27T10:58:21",
-    "modified_gmt": "2026-06-27T05:13:21",
+    "modified": "2026-06-27T20:07:11",
+    "modified_gmt": "2026-06-27T14:22:11",
     "slug": "project-supply-chain-officer",
     "status": "publish",
     "type": "job_listing",
@@ -1185,7 +1419,7 @@
       "rendered": "Project Supply Chain Officer"
     },
     "content": {
-      "rendered": "<p><strong>Posiiton</strong>: Project Supply Chain Officer<br />\n<strong>Location</strong>: Hasanpur, Nepal</p>\n<p><strong>End Date:</strong> July 5, 2026</p>\n<p>With 75 years of experience, our focus is on helping the most vulnerable children overcome poverty and experience fullness of life. We help children of all backgrounds, even in the most dangerous places, inspired by our Christian faith.</p>\n<p>Come join our 31,000+ staff working in nearly 100 countries and share the joy of transforming vulnerable children’s life stories!</p>\n<p><strong>Employee Contract Type:</strong></p>\n<p>Local &#8211; Fixed Term Employee (Fixed Term)</p>\n<p><strong>Job Description:</strong></p>\n<p>To effectively handle supply chain activities in line with WVI Nepal’s procedures in order to timely implement WVIN’s programs/projects in the most effective and efficient manner and achieve targeted child well-being outcomes.</p>\n<p>The position will be based in Dhangadi (Sudurpaschim Province).</p>\n<p>This is a one-year fixed-term position.</p>\n<p><strong>JOB RESPONSIBILITIES</strong></p>\n<p><strong>Planning</strong></p>\n<ul>\n<li>Lead procurement planning, developing sourcing strategies for the project.</li>\n<li>Advise and seek approval of internal customers of modifications from original requests.</li>\n<li>Facilitates across all parties the timely resolution of issues that could impact meeting the needs of the requestor and communities.</li>\n<li>Identify alternative supply sources for materials / services not under contract</li>\n<li>Work with Logistics to ensure safe delivery and receipt of ordered materials</li>\n<li>Resolve conflicts with deliveries and suppliers.</li>\n</ul>\n<p><strong>Strategic Sourcing</strong></p>\n<ul>\n<li>Identifying viable alternatives and facilitating access to the ‘best value for money’ for assigned GWS.</li>\n<li>Ensure the grants procurement requirement before the procurement execution.</li>\n<li>Execute the market assessment and supplier pre-qualification process as per the set guidelines based on the guidelines set for the assigned categories.</li>\n<li>Lead the RFQ/RFP process, including baselines &amp; price survey methodologies as per the approved framework for the assigned categories.</li>\n<li>Lead negotiations for the assigned categories</li>\n<li>Identifying viable alternatives and facilitating access to the ‘best value for money’ for assigned GWS.</li>\n<li>Ensure the grant procurement requirement before the procurement execution.</li>\n<li>Execute the market assessment and supplier pre-qualification process as per the set guidelines based on the guidelines set for the assigned categories.</li>\n<li>Lead the RFQ/RFP process, including baselines &amp; price survey methodologies as per the approved framework for the assigned categories.</li>\n<li>Lead negotiations for the assigned categories</li>\n<li>Assist to increase cost saving through healthy negotiation and ensure effective and efficient services and flexibility</li>\n<li>Preparation of Procurement Committee submission documents to ensure their comprehensiveness to allow an informed decision-making process. (Quotation registration form, sealed bids, sample verification report, etc.)</li>\n<li>Develop a commodity catalogue for relevant categories/sub-categories</li>\n</ul>\n<p><strong>Supplier Contract and Relationship Management</strong></p>\n<ul>\n<li>Accurately complete the master data management form (or contract/supplier register) utilizing the supply chain (SCAI) system.</li>\n<li>Monitor and complete contract close-out, renewal, or retender, as appropriate for the assigned commodities.</li>\n<li>Ensure that contractual conditions and performance indicators are understood by the suppliers.</li>\n<li>Identify and resolve or escalate contract-related issues both internally and externally.</li>\n<li>Analyze supplier performance based on customer feedback information &amp; other sources and coordinate with the supplier for improvement.</li>\n<li>Maintain the supplier’s intimacy without compromising the ethics and value of WVIN.</li>\n<li>Ensure supply chain risk and create awareness of anti-fraud and corruption among the suppliers by vendor orientation and due-diligence process.</li>\n</ul>\n<p><strong>Procurement Execution</strong></p>\n<ul>\n<li>Lead the sourcing process from PR to GRN and analyze the spending quality of each category.</li>\n<li>Follow procurement policies and guidelines in supplier award decisions under the applicable threshold.</li>\n<li>Manage PO Change requests, pricing revisions, order cancellation and invoice discrepancies by coordinating with Requesters, budget owners, and Suppliers</li>\n<li>Ensure standard sourcing event execution (PR-PO-GRN-Invoices) and submit for the payments to finance on time.</li>\n<li>Reconciles processed work by verifying entries and comparing system reports to balances;</li>\n<li>Consolidates all required documentation for presentation to Finance for timely supplier payment for materials and services delivered.</li>\n<li>Ensure a zero-tolerance policy in fraud and corruption in sourcing three steps (pre-bid, during bid, and post-bid).</li>\n<li>Flag and report immediately any suspicious activities regarding fraud and corruption.</li>\n</ul>\n<p><strong>Process, Procedure and Policy</strong></p>\n<ul>\n<li>Conduct all procurement-related tasks as per the approved procurement policies, processes, and guidelines.</li>\n<li>Prepare comparison sheets and share relevant information with PC for their review and prepare necessary documentation.</li>\n<li>Advice management regarding any challenge / risks / impractical guidelines</li>\n<li>Collect customer feedback relating to the policies, processes, and guidelines and report to NO management for improvements or changes.</li>\n</ul>\n<p><strong>Control and Compliance</strong></p>\n<ul>\n<li>Conduct supplier pre-qualification for all new suppliers and maintain records.</li>\n<li>Maintain proper filing and recordkeeping as per the guidelines set by the management and/or as per audit standards.</li>\n<li>Ensure the Block Party Screening (BPS) before the process of procurement as per the WVIN procurement manual.</li>\n<li>Ensure WVIN compliance with the 7R</li>\n<li>Participate in the development of risk identification &amp; assessment tools, registers, and other tools and assess SCM and contractual risks for procurements of goods, works, or services.</li>\n<li>Coordinate with Requesters to close out open POs in a timely manner.</li>\n<li>Implementation of agreed audit recommendations in the procurement process as per the guidance given by the SCM &amp; Admin Manager.</li>\n<li>Prepare half-yearly/yearly supplier’s performance evaluation and update the supplier database/consultant roster accordingly.</li>\n<li>Maintain and align all supply chain process of the project as per the US government grants compliance and regulations</li>\n</ul>\n<p><strong>Training and Capacity Building</strong></p>\n<ul>\n<li>Understand the department&#8217;s business requirements and apply them in the day-to-day work.</li>\n<li>Educate self, team and partners on US government grant-specific requirements and emerging SCM trends, including the challenging the future sourcing process to address the needs of the projects</li>\n<li>Coordinate, participate in, and/or train supply chain staff within WVI and PNGO levels on WVI procurement policies, processes, and systems.</li>\n<li>Any other duties assigned by supervisor.</li>\n</ul>\n<p><strong>KNOWLEDGE/QUALIFICATIONS FOR THE ROLE</strong></p>\n<p><strong>Required Professional Experience</strong></p>\n<ul>\n<li>At least 2 years’ experience in Procurement or Supply Chain</li>\n<li>Demonstrated Supply Chain Management experience</li>\n<li>Strong knowledge of Procure-to-Pay processes.</li>\n<li>Effective communication and negotiation skills</li>\n<li>Knowledge of Microsoft Office, particularly Excel, Word, and Power Point</li>\n<li>Demonstrated collaboration &amp; team-building skills</li>\n<li>Strong analytical skills</li>\n</ul>\n<p><strong>Required Education, training, license, registration and certification</strong></p>\n<ul>\n<li>Bachelor’s degree in business administration, procurement, or similar degree, or equivalent professional qualification</li>\n</ul>\n<p><strong>Preferred Knowledge and Qualifications</strong></p>\n<ul>\n<li>Committed to World Vision ethos, mission, vision, and core values.</li>\n<li>Understanding and experience about Nepal Government’s strategies, policies, guidelines, plans about Procurement Management</li>\n<li>Ability to identify the Procurement Management issues at various levels at the national level</li>\n<li>The position may involve travel and fieldwork as required.</li>\n</ul>\n<p>“World Vision is committed to achieving diversity, as the diversity of our teams is critical to our overall success. WV welcomes applications from qualified professionals all over Nepal. Women, people with disability, and members from other marginalized groups are strongly encouraged to apply.”</p>\n<p>“Children and vulnerable adults who come into contact with WV as a result of our activities must be safeguarded to the maximum possible extent from deliberate or inadvertent actions and failings that place them at risk of abuse, sexual exploitation, injury, and any other harm. One of the ways that WVI Nepal shows this on-going commitment to safeguarding is to include rigorous background and reference checks in the selection process for all candidates, in accordance to its Child and Adult Safeguarding Policy. WVI Nepal has zero tolerance to child rights’ violations, by employees and/or affiliates.”</p>\n<p>WVI Nepal reserves all rights to qualify/disqualify applications in any case.</p>\n<p><strong>Applicant Types Accepted:</strong> Local Applicants Only</p>\n",
+      "rendered": "<p><strong>Posiiton</strong>: Project Supply Chain Officer<br />\n<strong>Location</strong>: Dhangadhi</p>\n<p><strong>End Date:</strong> July 5, 2026</p>\n<p>With 75 years of experience, our focus is on helping the most vulnerable children overcome poverty and experience fullness of life. We help children of all backgrounds, even in the most dangerous places, inspired by our Christian faith.</p>\n<p>Come join our 31,000+ staff working in nearly 100 countries and share the joy of transforming vulnerable children’s life stories!</p>\n<p><strong>Employee Contract Type:</strong></p>\n<p>Local &#8211; Fixed Term Employee (Fixed Term)</p>\n<p><strong>Job Description:</strong></p>\n<p>To effectively handle supply chain activities in line with WVI Nepal’s procedures in order to timely implement WVIN’s programs/projects in the most effective and efficient manner and achieve targeted child well-being outcomes.</p>\n<p>The position will be based in Dhangadi (Sudurpaschim Province).</p>\n<p>This is a one-year fixed-term position.</p>\n<p><strong>JOB RESPONSIBILITIES</strong></p>\n<p><strong>Planning</strong></p>\n<ul>\n<li>Lead procurement planning, developing sourcing strategies for the project.</li>\n<li>Advise and seek approval of internal customers of modifications from original requests.</li>\n<li>Facilitates across all parties the timely resolution of issues that could impact meeting the needs of the requestor and communities.</li>\n<li>Identify alternative supply sources for materials / services not under contract</li>\n<li>Work with Logistics to ensure safe delivery and receipt of ordered materials</li>\n<li>Resolve conflicts with deliveries and suppliers.</li>\n</ul>\n<p><strong>Strategic Sourcing</strong></p>\n<ul>\n<li>Identifying viable alternatives and facilitating access to the ‘best value for money’ for assigned GWS.</li>\n<li>Ensure the grants procurement requirement before the procurement execution.</li>\n<li>Execute the market assessment and supplier pre-qualification process as per the set guidelines based on the guidelines set for the assigned categories.</li>\n<li>Lead the RFQ/RFP process, including baselines &amp; price survey methodologies as per the approved framework for the assigned categories.</li>\n<li>Lead negotiations for the assigned categories</li>\n<li>Identifying viable alternatives and facilitating access to the ‘best value for money’ for assigned GWS.</li>\n<li>Ensure the grant procurement requirement before the procurement execution.</li>\n<li>Execute the market assessment and supplier pre-qualification process as per the set guidelines based on the guidelines set for the assigned categories.</li>\n<li>Lead the RFQ/RFP process, including baselines &amp; price survey methodologies as per the approved framework for the assigned categories.</li>\n<li>Lead negotiations for the assigned categories</li>\n<li>Assist to increase cost saving through healthy negotiation and ensure effective and efficient services and flexibility</li>\n<li>Preparation of Procurement Committee submission documents to ensure their comprehensiveness to allow an informed decision-making process. (Quotation registration form, sealed bids, sample verification report, etc.)</li>\n<li>Develop a commodity catalogue for relevant categories/sub-categories</li>\n</ul>\n<p><strong>Supplier Contract and Relationship Management</strong></p>\n<ul>\n<li>Accurately complete the master data management form (or contract/supplier register) utilizing the supply chain (SCAI) system.</li>\n<li>Monitor and complete contract close-out, renewal, or retender, as appropriate for the assigned commodities.</li>\n<li>Ensure that contractual conditions and performance indicators are understood by the suppliers.</li>\n<li>Identify and resolve or escalate contract-related issues both internally and externally.</li>\n<li>Analyze supplier performance based on customer feedback information &amp; other sources and coordinate with the supplier for improvement.</li>\n<li>Maintain the supplier’s intimacy without compromising the ethics and value of WVIN.</li>\n<li>Ensure supply chain risk and create awareness of anti-fraud and corruption among the suppliers by vendor orientation and due-diligence process.</li>\n</ul>\n<p><strong>Procurement Execution</strong></p>\n<ul>\n<li>Lead the sourcing process from PR to GRN and analyze the spending quality of each category.</li>\n<li>Follow procurement policies and guidelines in supplier award decisions under the applicable threshold.</li>\n<li>Manage PO Change requests, pricing revisions, order cancellation and invoice discrepancies by coordinating with Requesters, budget owners, and Suppliers</li>\n<li>Ensure standard sourcing event execution (PR-PO-GRN-Invoices) and submit for the payments to finance on time.</li>\n<li>Reconciles processed work by verifying entries and comparing system reports to balances;</li>\n<li>Consolidates all required documentation for presentation to Finance for timely supplier payment for materials and services delivered.</li>\n<li>Ensure a zero-tolerance policy in fraud and corruption in sourcing three steps (pre-bid, during bid, and post-bid).</li>\n<li>Flag and report immediately any suspicious activities regarding fraud and corruption.</li>\n</ul>\n<p><strong>Process, Procedure and Policy</strong></p>\n<ul>\n<li>Conduct all procurement-related tasks as per the approved procurement policies, processes, and guidelines.</li>\n<li>Prepare comparison sheets and share relevant information with PC for their review and prepare necessary documentation.</li>\n<li>Advice management regarding any challenge / risks / impractical guidelines</li>\n<li>Collect customer feedback relating to the policies, processes, and guidelines and report to NO management for improvements or changes.</li>\n</ul>\n<p><strong>Control and Compliance</strong></p>\n<ul>\n<li>Conduct supplier pre-qualification for all new suppliers and maintain records.</li>\n<li>Maintain proper filing and recordkeeping as per the guidelines set by the management and/or as per audit standards.</li>\n<li>Ensure the Block Party Screening (BPS) before the process of procurement as per the WVIN procurement manual.</li>\n<li>Ensure WVIN compliance with the 7R</li>\n<li>Participate in the development of risk identification &amp; assessment tools, registers, and other tools and assess SCM and contractual risks for procurements of goods, works, or services.</li>\n<li>Coordinate with Requesters to close out open POs in a timely manner.</li>\n<li>Implementation of agreed audit recommendations in the procurement process as per the guidance given by the SCM &amp; Admin Manager.</li>\n<li>Prepare half-yearly/yearly supplier’s performance evaluation and update the supplier database/consultant roster accordingly.</li>\n<li>Maintain and align all supply chain process of the project as per the US government grants compliance and regulations</li>\n</ul>\n<p><strong>Training and Capacity Building</strong></p>\n<ul>\n<li>Understand the department&#8217;s business requirements and apply them in the day-to-day work.</li>\n<li>Educate self, team and partners on US government grant-specific requirements and emerging SCM trends, including the challenging the future sourcing process to address the needs of the projects</li>\n<li>Coordinate, participate in, and/or train supply chain staff within WVI and PNGO levels on WVI procurement policies, processes, and systems.</li>\n<li>Any other duties assigned by supervisor.</li>\n</ul>\n<p><strong>KNOWLEDGE/QUALIFICATIONS FOR THE ROLE</strong></p>\n<p><strong>Required Professional Experience</strong></p>\n<ul>\n<li>At least 2 years’ experience in Procurement or Supply Chain</li>\n<li>Demonstrated Supply Chain Management experience</li>\n<li>Strong knowledge of Procure-to-Pay processes.</li>\n<li>Effective communication and negotiation skills</li>\n<li>Knowledge of Microsoft Office, particularly Excel, Word, and Power Point</li>\n<li>Demonstrated collaboration &amp; team-building skills</li>\n<li>Strong analytical skills</li>\n</ul>\n<p><strong>Required Education, training, license, registration and certification</strong></p>\n<ul>\n<li>Bachelor’s degree in business administration, procurement, or similar degree, or equivalent professional qualification</li>\n</ul>\n<p><strong>Preferred Knowledge and Qualifications</strong></p>\n<ul>\n<li>Committed to World Vision ethos, mission, vision, and core values.</li>\n<li>Understanding and experience about Nepal Government’s strategies, policies, guidelines, plans about Procurement Management</li>\n<li>Ability to identify the Procurement Management issues at various levels at the national level</li>\n<li>The position may involve travel and fieldwork as required.</li>\n</ul>\n<p>“World Vision is committed to achieving diversity, as the diversity of our teams is critical to our overall success. WV welcomes applications from qualified professionals all over Nepal. Women, people with disability, and members from other marginalized groups are strongly encouraged to apply.”</p>\n<p>“Children and vulnerable adults who come into contact with WV as a result of our activities must be safeguarded to the maximum possible extent from deliberate or inadvertent actions and failings that place them at risk of abuse, sexual exploitation, injury, and any other harm. One of the ways that WVI Nepal shows this on-going commitment to safeguarding is to include rigorous background and reference checks in the selection process for all candidates, in accordance to its Child and Adult Safeguarding Policy. WVI Nepal has zero tolerance to child rights’ violations, by employees and/or affiliates.”</p>\n<p>WVI Nepal reserves all rights to qualify/disqualify applications in any case.</p>\n<p><strong>Applicant Types Accepted:</strong> Local Applicants Only</p>\n",
       "protected": false
     },
     "author": 2,
@@ -1305,7 +1539,7 @@
         }
       },
       "_promoted": "",
-      "_job_location": "",
+      "_job_location": "Dhangadhi",
       "_application": "https://worldvision.wd1.myworkdayjobs.com/en-US/WorldVisionInternational/details/Project-Supply-Chain-Officer_JR50880?locationCountry=96ff60d458734174895a1e037e1eab3c",
       "_company_name": "World Vision International Nepal",
       "_company_website": "https://www.wvi.org/",
@@ -1325,7 +1559,9 @@
     "job-types": [
       2
     ],
-    "job_listing_tag": [],
+    "job_listing_tag": [
+      127
+    ],
     "class_list": [
       "post-28419",
       "job_listing",
@@ -1333,6 +1569,7 @@
       "status-publish",
       "has-post-thumbnail",
       "hentry",
+      "job_listing_tag-dhangadhi",
       "job-type-full-time"
     ],
     "_links": {
@@ -23163,7 +23400,7 @@
       "rendered": "Primary Level Teacher"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-27985\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40.png\" alt=\"\" width=\"1075\" height=\"1424\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40.png 1075w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40-226x300.png 226w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40-773x1024.png 773w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40-768x1017.png 768w\" sizes=\"(max-width: 1075px) 100vw, 1075px\" /></p>\n<p><strong>Position</strong>: Teacher<br />\n<strong>Level:</strong> Primary<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Mustang</p>\n<p><strong>Shree Chhairo Adharbhut Vidyalaya</strong><br />\n<strong></p>\n<p>Phone No.:</strong> 9843655473, 9867848341</p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-27985\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40.png\" alt=\"\" width=\"1075\" height=\"1424\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40.png 1075w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40-226x300.png 226w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40-773x1024.png 773w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Chhairo-Basic-School-job-40-768x1017.png 768w\" sizes=\"(max-width: 1075px) 100vw, 1075px\" /></p>\n<p><strong>Position</strong>: Teacher<br />\n<strong>Level:</strong> Primary<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Mustang</p>\n<p><strong>Shree Chhairo Adharbhut Vidyalaya</strong><br />\n<strong></p>\n<p>Phone No.:</strong> 9843655473, 9867848341</p>\n",
       "protected": false
     },
     "author": 2,
@@ -23397,7 +23634,7 @@
       "rendered": "Account Teacher"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-27983\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1.png\" alt=\"\" width=\"1050\" height=\"1479\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1.png 1050w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1-213x300.png 213w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1-727x1024.png 727w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1-768x1082.png 768w\" sizes=\"(max-width: 1050px) 100vw, 1050px\" /></p>\n<p><strong>Position</strong>: Teacher<br />\n<strong>Level:</strong> Secondary<br />\n<strong>Subject:</strong> Account<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Dang</p>\n<p><strong>Shree Amar Madhyamik Vidyalaya</strong></p>\n<p><strong>Phone No.:</strong> 082-422016, 9847940206, 9847865607</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-27983\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1.png\" alt=\"\" width=\"1050\" height=\"1479\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1.png 1050w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1-213x300.png 213w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1-727x1024.png 727w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Amar-Secondary-School-job-1-768x1082.png 768w\" sizes=\"(max-width: 1050px) 100vw, 1050px\" /></p>\n<p><strong>Position</strong>: Teacher<br />\n<strong>Level:</strong> Secondary<br />\n<strong>Subject:</strong> Account<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Dang</p>\n<p><strong>Shree Amar Madhyamik Vidyalaya</strong></p>\n<p><strong>Phone No.:</strong> 082-422016, 9847940206, 9847865607</p>\n",
       "protected": false
     },
     "author": 2,
@@ -25032,7 +25269,7 @@
       "rendered": "Child Development Facilitator"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-27964\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job.jpg\" alt=\"\" width=\"1200\" height=\"1800\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job.jpg 1200w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-200x300.jpg 200w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-683x1024.jpg 683w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-768x1152.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-1024x1536.jpg 1024w\" sizes=\"(max-width: 1200px) 100vw, 1200px\" /><br />\n<strong>Position</strong>: Child Development Facilitator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: 10+2<br />\n<strong>Location</strong>: Myagdi</p>\n<p><strong>Shree Niskot Madhyamik Vidyalaya</strong></p>\n<p><strong>Email</strong>: niskotsecondary@gmail.com</p>\n<p><strong>Phone No.:</strong> 987738888, 9863229730</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-27964\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job.jpg\" alt=\"\" width=\"1200\" height=\"1800\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job.jpg 1200w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-200x300.jpg 200w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-683x1024.jpg 683w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-768x1152.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Niskot-secondary-school-job-1024x1536.jpg 1024w\" sizes=\"(max-width: 1200px) 100vw, 1200px\" /><br />\n<strong>Position</strong>: Child Development Facilitator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: 10+2<br />\n<strong>Location</strong>: Myagdi</p>\n<p><strong>Shree Niskot Madhyamik Vidyalaya</strong></p>\n<p><strong>Email</strong>: niskotsecondary@gmail.com</p>\n<p><strong>Phone No.:</strong> 987738888, 9863229730</p>\n",
       "protected": false
     },
     "author": 2,
@@ -69946,240 +70183,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=27062"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 27059,
-    "date": "2026-06-07T16:01:51",
-    "date_gmt": "2026-06-07T10:16:51",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=27059"
-    },
-    "modified": "2026-06-07T16:11:35",
-    "modified_gmt": "2026-06-07T10:26:35",
-    "slug": "kedia-eye-hospital-birgunj-full-time-administrative-officer-store-assistant-optician",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/kedia-eye-hospital-birgunj-full-time-administrative-officer-store-assistant-optician/",
-    "title": {
-      "rendered": "Administrative Officer, Store Assistant, Optician"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Administrative Officer<br />\n<strong>Required No:</strong> 1 (Male/Female)<br />\n<strong>Job Type:</strong> On Contract<br />\n<strong>Level</strong>: Officer 3<br />\n<strong>Job Location:</strong> RMKEH Network<br />\n<strong>Age:</strong> 30-40 Years (As of 30th of Jestha 2083)<br />\n<strong>Qualification:</strong> Seeking Nepali candidate who has passed Bachelor in Health Care Management from recognized institution with minimum 5 Years of relevant experience. Good computer knowledge is required with fluency in English and Nepali typing. Master&#8217;s in Health Care Management will be preferred.</p>\n<hr />\n<p><strong>Position</strong>: Store Assistant<br />\n<strong>Required No:</strong> 1 (Male)<br />\n<strong>Job Type:</strong> 1 Year Contract (Possible to extension)<br />\n<strong>Job Location:</strong> RMKEH Network<br />\n<strong>Age</strong>: 18-30 Years (30th of Jestha 2083)<br />\n<strong>Qualification:</strong> Seeking Nepali candidate who has passed 10+2 or equivalent from recognized institution with good computer knowledge and fluency in English and Nepali typing. Experience in related field will be preferred.</p>\n<hr />\n<p><strong>Position</strong>: Optician<br />\n<strong>Required No:</strong> Few (Male/Female)<br />\n<strong>Job Type:</strong> 1 Year Contract (Possible to extension)<br />\n<strong>Job Location:</strong> RMKEH Network<br />\n<strong>Age</strong>: 18-30 Years (30th of Jestha 2083)<br />\n<strong>Qualification</strong>: Seeking Nepali candidate who has passed SEE/SLC with minimum of 3 months optician training. Basic computer knowledge is required. Experienced will be preferred.</p>\n<p>Qualified candidates should apply along with Covering letter, CV and copy of all certificates before <strong>2083/03/07 (21st June 2026, Sunday)</strong> in administration department of R. M. Kedia Eye Hospital from 9:00 am to 5:00 pm (working Day). Candidate can also apply through E-mail: <strong>vacancy@kediaeyes.org</strong></p>\n<p><strong>Salaries &amp; Other benefits:</strong> According to Hospital Rules.<br />\n<strong>Selection Criteria:</strong> Written, Interview and Practical.</p>\n<p>Appointments will be taken on merit basis and any source/influences will be considered as disqualified.</p>\n<p>Recruitment Committee</p>\n<p>Nepal Netra Jyoti Sangh</p>\n<p>Ramkumar Mahabir Prasad</p>\n<p>Kedia Eye Hospital</p>\n<p>Kedia Seva Gram<br />\nParwanipur-4, Birganj, Nepal</p>\n<p>Telephone Enquiry will be not entertained</p>\n",
-      "protected": false
-    },
-    "author": 2182,
-    "featured_media": 7940,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Birgunj",
-      "_application": "vacancy@kediaeyes.org",
-      "_company_name": "Kedia Eye Hospital",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      30
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      123
-    ],
-    "class_list": [
-      "post-27059",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-birgunj",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/27059",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2182"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/7940"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=27059"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=27059"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=27059"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=27059"
         }
       ],
       "curies": [
