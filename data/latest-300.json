@@ -1,5 +1,239 @@
 [
   {
+    "id": 29535,
+    "date": "2026-07-14T21:17:52",
+    "date_gmt": "2026-07-14T15:32:52",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=29535"
+    },
+    "modified": "2026-07-14T21:20:24",
+    "modified_gmt": "2026-07-14T15:35:24",
+    "slug": "laxmi-group-kathmandu-full-time-sales-support-assistant",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/laxmi-group-kathmandu-full-time-sales-support-assistant/",
+    "title": {
+      "rendered": "Sales Support Assistant"
+    },
+    "content": {
+      "rendered": "<p>&#8216;Join our dynamic team and be part of a leading industry player ! We are looking for talented and motivated individuals to fill the following positions</p>\n<p><strong>Position</strong>: Sales Support Assistant<br />\n<strong>Location</strong>: Kathmandu<br />\n<strong>Qualifications</strong>: Bachelors in Management Field (Running/Completed)<br />\n<strong>Experience</strong>: 1 years+</p>\n<p>Interested candidates are highly encouraged to drop their updated resume at <strong>vacancy@laxmiautocomp.com </strong>mentioning the position they are applying for in the subject line</p>\n",
+      "protected": false
+    },
+    "author": 18,
+    "featured_media": 10204,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "vacancy@laxmiautocomp.com",
+      "_company_name": "Laxmi Group",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      19
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      79
+    ],
+    "class_list": [
+      "post-29535",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job_listing_tag-kathmandu",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/29535",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/18"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/10204"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=29535"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=29535"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=29535"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=29535"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 29524,
     "date": "2026-07-14T18:16:21",
     "date_gmt": "2026-07-14T12:31:21",
@@ -46605,7 +46839,7 @@
       "rendered": "English Teacher"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-28612\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1.png\" alt=\"\" width=\"1240\" height=\"1888\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1.png 1240w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-197x300.png 197w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-673x1024.png 673w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-768x1169.png 768w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-1009x1536.png 1009w\" sizes=\"(max-width: 1240px) 100vw, 1240px\" /><br />\n<strong>Position</strong>: Teacher<br />\n<strong>Level</strong>: Secondary<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject:</strong> English<br />\n<strong>Location</strong>: Rolpa</p>\n<p><strong>Shree Bir Balbhadra Model Madhyamik Vidyalaya</strong></p>\n<p><strong>Phone No.:</strong> 9849042760, 9847845626, 9860065579</p>\n<p><strong>Email:</strong> balbhadraschool2015@gmail.com</p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-28612\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1.png\" alt=\"\" width=\"1240\" height=\"1888\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1.png 1240w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-197x300.png 197w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-673x1024.png 673w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-768x1169.png 768w, https://merorojgari.com/wp-content/uploads/2026/06/Shree-Bir-Balbhadra-Model-Secondary-School-job-1-1009x1536.png 1009w\" sizes=\"(max-width: 1240px) 100vw, 1240px\" /><br />\n<strong>Position</strong>: Teacher<br />\n<strong>Level</strong>: Secondary<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Subject:</strong> English<br />\n<strong>Location</strong>: Rolpa</p>\n<p><strong>Shree Bir Balbhadra Model Madhyamik Vidyalaya</strong></p>\n<p><strong>Phone No.:</strong> 9849042760, 9847845626, 9860065579</p>\n<p><strong>Email:</strong> balbhadraschool2015@gmail.com</p>\n",
       "protected": false
     },
     "author": 2,
@@ -47775,7 +48009,7 @@
       "rendered": "Nutrition Facilitator, Baidhy, Science Teacher"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-28585\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1.png\" alt=\"\" width=\"1403\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1.png 1403w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-206x300.png 206w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-702x1024.png 702w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-768x1121.png 768w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-1052x1536.png 1052w\" sizes=\"(max-width: 1403px) 100vw, 1403px\" /><br />\n<strong>Position</strong>: Baidhy<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Nutrition Facilitator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Science Teacher<br />\n<strong>Level:</strong> Basic<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Mustang</p>\n<p><strong>Lo Ghekar Damodar Kunda Gaunpalika</strong></p>\n<p><strong>Email:</strong> loghekardamodarkundamun@gmail.com</p>\n<p><strong>Phone No.:</strong> 9857639999</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-28585\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1.png\" alt=\"\" width=\"1403\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1.png 1403w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-206x300.png 206w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-702x1024.png 702w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-768x1121.png 768w, https://merorojgari.com/wp-content/uploads/2026/06/lo-ghekar-damodar-kunda-rural-municipality-job0-1-1052x1536.png 1052w\" sizes=\"(max-width: 1403px) 100vw, 1403px\" /><br />\n<strong>Position</strong>: Baidhy<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Nutrition Facilitator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Science Teacher<br />\n<strong>Level:</strong> Basic<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Mustang</p>\n<p><strong>Lo Ghekar Damodar Kunda Gaunpalika</strong></p>\n<p><strong>Email:</strong> loghekardamodarkundamun@gmail.com</p>\n<p><strong>Phone No.:</strong> 9857639999</p>\n",
       "protected": false
     },
     "author": 2,
@@ -48244,7 +48478,7 @@
       "rendered": "Chief Executive Officer"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-28572\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob.jpg\" alt=\"\" width=\"680\" height=\"1542\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob.jpg 680w, https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob-132x300.jpg 132w, https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob-452x1024.jpg 452w, https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob-677x1536.jpg 677w\" sizes=\"(max-width: 680px) 100vw, 680px\" /><br />\n<strong>Position</strong>: Chief Executive Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Hetauda-11, Nawalpur</p>\n<p><strong>Email:</strong> nawayuwasahakari11@gmail.com</p>\n<p><strong> Phone No.:</strong> 057-524734, 9851118348</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-28572\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob.jpg\" alt=\"\" width=\"680\" height=\"1542\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob.jpg 680w, https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob-132x300.jpg 132w, https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob-452x1024.jpg 452w, https://merorojgari.com/wp-content/uploads/2026/06/Nawayuba-Bachat-tatha-Rin-Sahakari-Sanstha-Limited-jkob-677x1536.jpg 677w\" sizes=\"(max-width: 680px) 100vw, 680px\" /><br />\n<strong>Position</strong>: Chief Executive Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Hetauda-11, Nawalpur</p>\n<p><strong>Email:</strong> nawayuwasahakari11@gmail.com</p>\n<p><strong> Phone No.:</strong> 057-524734, 9851118348</p>\n",
       "protected": false
     },
     "author": 2330,
@@ -69960,241 +70194,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=28188"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 28181,
-    "date": "2026-06-24T05:44:19",
-    "date_gmt": "2026-06-23T23:59:19",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=28181"
-    },
-    "modified": "2026-06-24T05:47:35",
-    "modified_gmt": "2026-06-24T00:02:35",
-    "slug": "madhesh-university-birgunj-parsa-full-time-account-assistant-assistant-computer-operator-administration-assistant-computer-operator-library-officer-administration-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/madhesh-university-birgunj-parsa-full-time-account-assistant-assistant-computer-operator-administration-assistant-computer-operator-library-officer-administration-officer/",
-    "title": {
-      "rendered": "Account Assistant, Assistant Computer Operator, Administration Assistant, Computer Operator, Library Officer, Administration Officer"
-    },
-    "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-28183\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-10.png\" alt=\"\" width=\"924\" height=\"1289\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-10.png 924w, https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-10-215x300.png 215w, https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-10-734x1024.png 734w, https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-10-768x1071.png 768w\" sizes=\"(max-width: 924px) 100vw, 924px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-28184\" src=\"https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-11.png\" alt=\"\" width=\"993\" height=\"875\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-11.png 993w, https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-11-300x264.png 300w, https://merorojgari.com/wp-content/uploads/2026/06/madhesh-university-job-11-768x677.png 768w\" sizes=\"(max-width: 993px) 100vw, 993px\" /></p>\n",
-      "protected": false
-    },
-    "author": 2300,
-    "featured_media": 28182,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Birgunj, Parsa",
-      "_application": "",
-      "_company_name": "Madhesh University",
-      "_company_website": "https://madheshuniversity.edu.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      12,
-      30
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      123
-    ],
-    "class_list": [
-      "post-28181",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-birgunj",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/28181",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2300"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/28182"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=28181"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=28181"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=28181"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=28181"
         }
       ],
       "curies": [
