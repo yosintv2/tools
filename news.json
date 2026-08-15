@@ -216,22 +216,6 @@
         "image": ""
     },
     {
-        "title": "Swansea strike back to win at Stoke",
-        "link": "https://www.skysports.com/football/stoke-city-vs-swansea-city/report/560506",
-        "description": "Super-sub Adam Idah snatched the winner with his first touch of the game as Swansea bravely battled back from a goal down to stun Stoke 2-1.",
-        "pubDate": "Sat, 15 Aug 2026 17:00:00 BST",
-        "source": "SkySports | News",
-        "image": ""
-    },
-    {
-        "title": "West Brom earn controversial win at Norwich",
-        "link": "https://www.skysports.com/football/norwich-city-vs-west-bromwich-albion/report/560503",
-        "description": "West Brom launched a smash-and-grab raid to open their Championship campaign with a hard-fought 2-1 win at Norwich.",
-        "pubDate": "Sat, 15 Aug 2026 17:00:00 BST",
-        "source": "SkySports | News",
-        "image": ""
-    },
-    {
         "title": "Charlton hit back to beat Derby",
         "link": "https://www.skysports.com/football/charlton-athletic-vs-derby-county/report/560501",
         "description": "Tyreece Campbell's impressive start to the new season continued as his 80th-minute goal earned Charlton a 2-1 victory over Derby at The Valley.",
@@ -243,6 +227,14 @@
         "title": "Chair double fires QPR to victory",
         "link": "https://www.skysports.com/football/portsmouth-vs-queens-park-rangers/report/560504",
         "description": "Ilias Chair scored twice as QPR came from behind to beat Portsmouth 3-1 and claim their first win at Fratton Park in 26 years.",
+        "pubDate": "Sat, 15 Aug 2026 17:00:00 BST",
+        "source": "SkySports | News",
+        "image": ""
+    },
+    {
+        "title": "Spence completes £30m Inter move from Spurs",
+        "link": "https://www.skysports.com/football/news/11095/13573504/djed-spence-transfer-news-tottenham-defender-completes-30m-inter-milan-move",
+        "description": "Inter Milan have completed a &#163;30m deal for England defender Djed Spence from Tottenham.",
         "pubDate": "Sat, 15 Aug 2026 17:00:00 BST",
         "source": "SkySports | News",
         "image": ""
@@ -458,10 +450,18 @@
     {
         "title": "Championship roundup: Middlesbrough seal comeback win; West Brom beat Norwich",
         "link": "https://www.theguardian.com/football/2026/aug/15/championship-efl-bolton-preston-middlesbrough-lincoln-sheffield-united-birmingham",
-        "description": "Lankshear ends Lincoln’s nine-month unbeaten runMillwall start with 2-0 win over 10-man Bristol CityWill Lankshear scored a fine second-half double on his debut as Middlesbrough fought back to kick off their Championship bid with a hard-fought 2-1 vi",
+        "description": "Lankshear ends Lincoln’s nine-month unbeaten runMillwall start with 2-0 win over 10-man Bristol CityWill Lankshear scored a second-half double on his debut as Middlesbrough fought back to kick off their Championship campaign with a hard-fought 2-1 vi",
         "pubDate": "Sat, 15 Aug 2026 16:37:44 GMT",
         "source": "Football | The Guardian",
         "image": "https://i.guim.co.uk/img/media/f766d07c25c130028da04fac973497349e59b542/160_0_3684_2947/master/3684.jpg?width=140&quality=85&auto=format&fit=max&s=a6ef2878efd811319e87080523848e6c"
+    },
+    {
+        "title": "‘Even I was at fault’: Mehidy Hasan Miraz reveals the truce with Mitchell Starc after the fiery incident on day two",
+        "link": "https://www.hindustantimes.com/cricket/even-i-was-at-fault-mehidy-hasan-miraz-reveals-the-truce-with-mitchell-starc-after-the-fiery-incident-on-day-two-101786811131468.html",
+        "description": "Seems like Mitchell Starc has offered an olive branch to the Bangladeshi allrounder after their fiery altercation on day two of the first Test match.",
+        "pubDate": "Sat, 15 Aug 2026 22:05:20 +0530",
+        "source": "Cricket News Today, Cricket Match Today Updates, Live Cricket Score | Cricket News | Hindustan Times",
+        "image": "https://www.hindustantimes.com/ht-img/img/2026/08/15/1600x900/logo/Australia-Bangladesh-Cricket-5_1786811188578_1786811217271_a6c0aec8-68de-459f-96be-997acc2ccd81.jpg"
     },
     {
         "title": "Aston Villa latest: Villa working on Suzuki deal - plunging Martinez future into doubt",
@@ -768,7 +768,7 @@
         "image": ""
     },
     {
-        "title": "Tottenham latest: Spence pens Spurs goodbye as Inter move confirmed",
+        "title": "Tottenham latest: Spence sends farewell message to Spurs",
         "link": "https://www.skysports.com/football/live-blog/11095/13025489/tottenham-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
         "description": "",
         "pubDate": "Sat, 15 Aug 2026 14:40:00 BST",
@@ -816,7 +816,7 @@
         "image": ""
     },
     {
-        "title": "Man Utd collapse to concede FOUR against Amorim's Milan LIVE!",
+        "title": "Reaction as Man Utd lose final pre-season friendly LIVE!",
         "link": "https://www.skysports.com/football/manchester-united-vs-ac-milan/live/556661",
         "description": "",
         "pubDate": "Sat, 15 Aug 2026 14:15:00 BST",
@@ -1288,7 +1288,7 @@
         "image": "https://crickettimes.com/wp-content/uploads/2026/08/Devdutt-Padikkal-hits-maiden-Test-century-in-Galle.webp"
     },
     {
-        "title": "Sheff Utd vs Birmingham on Sky LIVE!",
+        "title": "Birmingham denied penalty at Sheff Utd LIVE!",
         "link": "https://www.skysports.com/football/sheffield-united-vs-birmingham-city/live/560505",
         "description": "",
         "pubDate": "Sat, 15 Aug 2026 11:30:00 BST",
@@ -2310,14 +2310,6 @@
         "pubDate": "Fri, 14 Aug 2026 13:38:41 GMT",
         "source": "BBC Sport",
         "image": ""
-    },
-    {
-        "title": "Need to win around 6 or 7 Tests for WTC final: Gill",
-        "link": "https://www.hindustantimes.com/cricket/need-to-win-around-6-or-7-tests-for-wtc-final-gill-101786714302157.html",
-        "description": "That preparation for the SL Tests has been notably longer than the rushed build-ups India endured last year",
-        "pubDate": "Fri, 14 Aug 2026 19:01:41 +0530",
-        "source": "Cricket News Today, Cricket Match Today Updates, Live Cricket Score | Cricket News | Hindustan Times",
-        "image": "https://www.hindustantimes.com/ht-img/img/2026/08/14/1600x900/logo/Galle--India-s-Captain-Shubman-Gill--right--along-_1786714299573.jpg"
     },
     {
         "title": "US courts will start publishing how often the government uses spyware",
