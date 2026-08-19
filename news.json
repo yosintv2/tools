@@ -56,6 +56,14 @@
         "image": "https://www.eyefootball.com/imghold/thumbEzri_Konsa.jpg"
     },
     {
+        "title": "UEFA Champions League",
+        "link": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
+        "description": "Featuring Celtic v LASK and six more matches",
+        "pubDate": "Wed, 19 Aug 2026 22:26:45 GMT",
+        "source": "BBC Sport",
+        "image": ""
+    },
+    {
         "title": "Papers: Man City set to bid for Fernandez despite missing Chelsea deadline",
         "link": "https://www.skysports.com/football/news/11095/13574860/man-city-transfer-news-enzo-fernandez-bid-incoming-despite-missing-chelsea-deadline-paper-talk",
         "description": "The top stories and transfer rumours from Thursday's newspapers...",
@@ -64,11 +72,59 @@
         "image": ""
     },
     {
-        "title": "Duran hits stunning double as Celtic edge towards CL return",
+        "title": "Cognition CEO denies report that SpaceX tried to acquire the startup",
+        "link": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
+        "description": "SpaceX was reportedly in talks to buy AI coding startup Cognition. SpaceX has already acquired Cursor as it races to catch up to rivals like OpenAI and Anthropic in enterprise AI.",
+        "pubDate": "Wed, 19 Aug 2026 21:51:23 +0000",
+        "source": "TechCrunch",
+        "image": ""
+    },
+    {
+        "title": "Duran, Duran! Celtic earn thumping CL win after new star's double",
         "link": "https://www.skysports.com/football/celtic-vs-linz-ask/report/577265",
         "description": "Celtic took a huge step towards a return to the Champions League with stunning goals from Benjamin Nygren and Camilo Duran.",
         "pubDate": "Wed, 19 Aug 2026 21:50:00 BST",
         "source": "SkySports | News",
+        "image": ""
+    },
+    {
+        "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
+        "link": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
+        "description": "After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.",
+        "pubDate": "Wed, 19 Aug 2026 21:48:24 +0000",
+        "source": "TechCrunch",
+        "image": ""
+    },
+    {
+        "title": "Robinson happy to split the spoils after stellar Test return",
+        "link": "https://www.cricinfo.com/ci/content/story/1550722.html?ex_cid=OTC-RSS",
+        "description": "Five-wicket haul on comeback goes hand-in-hand with Tongue's exceptional docking of the tail",
+        "pubDate": "Wed, 19 Aug 2026 21:44:53 GMT",
+        "source": "Cricket news from Cricinfo.com",
+        "image": "http://p.imgci.com/db/PICTURES/CMS/421400/421428.jpg"
+    },
+    {
+        "title": "Hapoel Be'er Sheva earn comeback win over Sabah",
+        "link": "https://www.bbc.co.uk/sport/football/videos/cy74z3zzvm1o?at_medium=RSS&at_campaign=rss",
+        "description": "Hapoel Be'er Sheva fight back from a goal down to beat Sabah in the first leg of their Champions League play-off.",
+        "pubDate": "Wed, 19 Aug 2026 21:42:50 GMT",
+        "source": "BBC Sport",
+        "image": ""
+    },
+    {
+        "title": "Man City join Man Utd in Kone race - Thursday's gossip",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cn0n4qlxyq7o?at_medium=RSS&at_campaign=rss",
+        "description": "Manchester City look set to rival neighbours Manchester United for Manu Kone, Aston Villa interested in Tosin Adarabioyo and Tottenham in talks over Man City duo.",
+        "pubDate": "Wed, 19 Aug 2026 21:30:46 GMT",
+        "source": "BBC Sport",
+        "image": ""
+    },
+    {
+        "title": "Bodo/Glimt in strong position following first-leg win at NEC",
+        "link": "https://www.bbc.co.uk/sport/football/videos/c62v4v90yd9o?at_medium=RSS&at_campaign=rss",
+        "description": "Last season's Champions League fairytale side Bodo/Glimt look set to qualify for this year's edition of the competition after winning 3-1 away at NEC Nijmegen of the Netherlands.",
+        "pubDate": "Wed, 19 Aug 2026 21:29:50 GMT",
+        "source": "BBC Sport",
         "image": ""
     },
     {
@@ -166,14 +222,6 @@
         "pubDate": "Wed, 19 Aug 2026 20:56:13 GMT",
         "source": "Football | The Guardian",
         "image": "https://i.guim.co.uk/img/media/b3c1d6a66a6aef17f3ad6e364fe34798855c08b4/392_0_5683_4546/master/5683.jpg?width=140&quality=85&auto=format&fit=max&s=dd3b958e67b9655557017bc0dc1ae0a4"
-    },
-    {
-        "title": "Robinson happy to split the spoils after stellar Test return",
-        "link": "https://www.cricinfo.com/ci/content/story/1550722.html?ex_cid=OTC-RSS",
-        "description": "Five-wicket haul on comeback goes hand-in-hand with Tongue's exceptional docking of the tail",
-        "pubDate": "Wed, 19 Aug 2026 20:27:01 GMT",
-        "source": "Cricket news from Cricinfo.com",
-        "image": "http://p.imgci.com/db/PICTURES/CMS/421400/421428.jpg"
     },
     {
         "title": "Rillet raises $100M Series C at $1B valuation — 2 years after emerging from stealth",
@@ -1470,22 +1518,6 @@
         "pubDate": "Wed, 19 Aug 2026 12:00:00 +0000",
         "source": "OnlineKhabar English News",
         "image": "http://english.onlinekhabar.com/wp-content/uploads/2026/08/Dipendra-Agrawal.png"
-    },
-    {
-        "title": "AI isn’t close to curing cancer. This startup says it knows what it will take.",
-        "link": "https://techcrunch.com/2026/08/19/ai-isnt-close-to-curing-cancer-this-startup-says-it-knows-what-it-will-take/",
-        "description": "It's the data, stupid.",
-        "pubDate": "Wed, 19 Aug 2026 12:00:00 +0000",
-        "source": "TechCrunch",
-        "image": ""
-    },
-    {
-        "title": "You can Venmo your college tuition, for some reason",
-        "link": "https://techcrunch.com/2026/08/19/you-can-venmo-your-college-tuition-for-some-reason/",
-        "description": "Kids these days don't know how good they have it.",
-        "pubDate": "Wed, 19 Aug 2026 12:00:00 +0000",
-        "source": "TechCrunch",
-        "image": ""
     },
     {
         "title": "‘रास्वपाको आन्तरिक सत्ता संघर्षले राष्ट्रियतामाथि गम्भीर खतरा’",
