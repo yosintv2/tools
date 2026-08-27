@@ -1,5 +1,237 @@
 [
   {
+    "id": 33071,
+    "date": "2026-08-27T19:23:08",
+    "date_gmt": "2026-08-27T13:38:08",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=33071"
+    },
+    "modified": "2026-08-27T19:23:41",
+    "modified_gmt": "2026-08-27T13:38:41",
+    "slug": "finance-manager-2",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/finance-manager-2/",
+    "title": {
+      "rendered": "Finance Manager"
+    },
+    "content": {
+      "rendered": "<p><strong>ADRA Nepal</strong> invites applications from qualified and experienced Nepalese citizens for the following position:</p>\n<p><strong>1. Finance Manager: One</strong></p>\n<p>Based in the Country Office with frequent field visits.</p>\n<p><strong>Duration: </strong>Short-term (September – December, 2026)<br />\n<strong> Deadline:</strong> September -1, 2026</p>\n<p><strong>Qualifications &amp; Experience:</strong></p>\n<ul>\n<li>Master’s degree in Business Studies or Business Administration from a recognized university.</li>\n<li>Minimum 5 years of relevant professional experience in I/NGOs, preferably in organizations managing multi-donor agencies and multi-currency projects.</li>\n<li>Proven skills in project management, stakeholder coordination, analysis, and report writing</li>\n</ul>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 12798,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "",
+      "_application": "https://adranepal.org/get-involved/join-our-team/",
+      "_company_name": "ADRA Nepal",
+      "_company_website": "https://adranepal.org/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      12,
+      11
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": [
+      "post-33071",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/33071",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/12798"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=33071"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=33071"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=33071"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=33071"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 33065,
     "date": "2026-08-27T16:56:19",
     "date_gmt": "2026-08-27T11:11:19",
@@ -1887,8 +2119,8 @@
     "guid": {
       "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=33036"
     },
-    "modified": "2026-08-27T13:11:19",
-    "modified_gmt": "2026-08-27T07:26:19",
+    "modified": "2026-08-27T21:44:19",
+    "modified_gmt": "2026-08-27T15:59:19",
     "slug": "a-reputed-ngo-hetauda-full-time-project-coordinator",
     "status": "publish",
     "type": "job_listing",
@@ -2035,7 +2267,7 @@
       11
     ],
     "job-types": [
-      2
+      3
     ],
     "job_listing_tag": [
       131
@@ -2048,7 +2280,7 @@
       "has-post-thumbnail",
       "hentry",
       "job_listing_tag-hetauda",
-      "job-type-full-time"
+      "job-type-part-time"
     ],
     "_links": {
       "self": [
@@ -23189,7 +23421,7 @@
       "rendered": "Auxiliary Nurse Midwife (ANM)"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-32609\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1.png\" alt=\"\" width=\"995\" height=\"1346\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1.png 995w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1-222x300.png 222w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1-757x1024.png 757w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1-768x1039.png 768w\" sizes=\"(max-width: 995px) 100vw, 995px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-32610\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2.png\" alt=\"\" width=\"1080\" height=\"672\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2.png 1080w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2-300x187.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2-1024x637.png 1024w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2-768x478.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /><br />\n<strong>Position</strong>: Auxiliary Nurse Midwife (ANM)<br />\n<strong>No. of Vacancy: </strong>5</p>\n<p><strong>Position</strong>: Auxiliary Nurse Midwife (SBA)<br />\n<strong>No. of Vacancy: </strong>1</p>\n<p><strong>Location</strong>: Mahottari</p>\n<p><strong>Bhangaha Nagarpalika </strong></p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-32609\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1.png\" alt=\"\" width=\"995\" height=\"1346\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1.png 995w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1-222x300.png 222w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1-757x1024.png 757w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-1-768x1039.png 768w\" sizes=\"(max-width: 995px) 100vw, 995px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-32610\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2.png\" alt=\"\" width=\"1080\" height=\"672\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2.png 1080w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2-300x187.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2-1024x637.png 1024w, https://merorojgari.com/wp-content/uploads/2026/08/Bhangaha-Nagarpalika-job-job-2-768x478.png 768w\" sizes=\"(max-width: 1080px) 100vw, 1080px\" /><br />\n<strong>Position</strong>: Auxiliary Nurse Midwife (ANM)<br />\n<strong>No. of Vacancy: </strong>5</p>\n<p><strong>Position</strong>: Auxiliary Nurse Midwife (SBA)<br />\n<strong>No. of Vacancy: </strong>1</p>\n<p><strong>Location</strong>: Mahottari</p>\n<p><strong>Bhangaha Nagarpalika </strong></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23423,7 +23655,7 @@
       "rendered": "Auxiliary Nurse Midwife (ANM), Lab Assistant"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-32606\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400.png\" alt=\"\" width=\"1974\" height=\"1823\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400.png 1974w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-300x277.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-1024x946.png 1024w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-768x709.png 768w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-1536x1419.png 1536w\" sizes=\"(max-width: 1974px) 100vw, 1974px\" /><br />\n<strong>Position</strong>: Auxiliary Nurse Midwife (ANM)<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Lab Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Jhapa</p>\n<p><strong>Health Office</strong></p>\n<p><strong>Website</strong>:<a href=\"http://www.ho.jhapa.koshi.gov.np\" target=\"_blank\" rel=\"noopener\"> www.ho.jhapa.koshi.gov.np </a></p>\n<p><strong>Phone No.:</strong> 023523016, 9852675746</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-32606\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400.png\" alt=\"\" width=\"1974\" height=\"1823\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400.png 1974w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-300x277.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-1024x946.png 1024w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-768x709.png 768w, https://merorojgari.com/wp-content/uploads/2026/08/Health-Office-job-400-1536x1419.png 1536w\" sizes=\"(max-width: 1974px) 100vw, 1974px\" /><br />\n<strong>Position</strong>: Auxiliary Nurse Midwife (ANM)<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Lab Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Jhapa</p>\n<p><strong>Health Office</strong></p>\n<p><strong>Website</strong>:<a href=\"http://www.ho.jhapa.koshi.gov.np\" target=\"_blank\" rel=\"noopener\"> www.ho.jhapa.koshi.gov.np </a></p>\n<p><strong>Phone No.:</strong> 023523016, 9852675746</p>\n",
       "protected": false
     },
     "author": 2,
@@ -24126,7 +24358,7 @@
       "rendered": "Assistant Trainee &#8211; 50 Vacancies"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-32579\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1.png\" alt=\"\" width=\"1301\" height=\"1848\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1.png 1301w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-211x300.png 211w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-721x1024.png 721w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-768x1091.png 768w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-1081x1536.png 1081w\" sizes=\"(max-width: 1301px) 100vw, 1301px\" /></p>\n<p><strong>Position</strong>: Assistant Trainee</p>\n<p><strong>No. of Vacancy:</strong> 50</p>\n<p><a href=\"https://www.deproscbank.com.np/assets/uploads/files/media/8045a-training-application-form.pdf?fbclid=IwY2xjawT1GphwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMUdDUHVFTTQwWU9vM2FvcHJzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe2J8nArMV38hnQP8erW8lnRJHbZAkmluYrAGtQU75-r84rKyI-bueBan9TFs_aem__4cXSqsJeW4MFNrp5vgCeg\" target=\"_blank\" rel=\"noopener\">Download Application Form</a></p>\n<p><strong>Email</strong>: vacancy@deproscbank.com.np</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-32579\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1.png\" alt=\"\" width=\"1301\" height=\"1848\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1.png 1301w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-211x300.png 211w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-721x1024.png 721w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-768x1091.png 768w, https://merorojgari.com/wp-content/uploads/2026/08/Deprosc-Laghubitta-Bittiya-Sanstha-Limited-job-1-1081x1536.png 1081w\" sizes=\"(max-width: 1301px) 100vw, 1301px\" /></p>\n<p><strong>Position</strong>: Assistant Trainee</p>\n<p><strong>No. of Vacancy:</strong> 50</p>\n<p><a href=\"https://www.deproscbank.com.np/assets/uploads/files/media/8045a-training-application-form.pdf?fbclid=IwY2xjawT1GphwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMUdDUHVFTTQwWU9vM2FvcHJzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe2J8nArMV38hnQP8erW8lnRJHbZAkmluYrAGtQU75-r84rKyI-bueBan9TFs_aem__4cXSqsJeW4MFNrp5vgCeg\" target=\"_blank\" rel=\"noopener\">Download Application Form</a></p>\n<p><strong>Email</strong>: vacancy@deproscbank.com.np</p>\n",
       "protected": false
     },
     "author": 2,
@@ -24359,7 +24591,7 @@
       "rendered": "Staff Nurse, NWASH Ganak, ANM, Light Vehicle Driver, Office Helper, Heavy Vehicle Driver"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-32536\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20.png\" alt=\"\" width=\"1403\" height=\"1882\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20.png 1403w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-224x300.png 224w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-763x1024.png 763w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-768x1030.png 768w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-1145x1536.png 1145w\" sizes=\"(max-width: 1403px) 100vw, 1403px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-32535\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21.png\" alt=\"\" width=\"1357\" height=\"962\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21.png 1357w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21-300x213.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21-1024x726.png 1024w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21-768x544.png 768w\" sizes=\"(max-width: 1357px) 100vw, 1357px\" /><br />\n<strong>Position</strong>: Medical Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Public Health Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: ANM<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: NWASH Ganak<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Heavy Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Light Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Gorkha</p>\n<p><strong>Bhimsen Thapa Gaunpalika</strong></p>\n<p><strong>Website</strong>: <a href=\"https://bhimsenthapamun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://bhimsenthapamun.gov.np</a></p>\n<p><strong>Phone No.:</strong> 9856004037, 9856004039</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-32536\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20.png\" alt=\"\" width=\"1403\" height=\"1882\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20.png 1403w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-224x300.png 224w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-763x1024.png 763w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-768x1030.png 768w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-20-1145x1536.png 1145w\" sizes=\"(max-width: 1403px) 100vw, 1403px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-32535\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21.png\" alt=\"\" width=\"1357\" height=\"962\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21.png 1357w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21-300x213.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21-1024x726.png 1024w, https://merorojgari.com/wp-content/uploads/2026/08/BhimsenThapa-Rural-Municipality-job-21-768x544.png 768w\" sizes=\"(max-width: 1357px) 100vw, 1357px\" /><br />\n<strong>Position</strong>: Medical Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Public Health Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: ANM<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: NWASH Ganak<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Heavy Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Light Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Gorkha</p>\n<p><strong>Bhimsen Thapa Gaunpalika</strong></p>\n<p><strong>Website</strong>: <a href=\"https://bhimsenthapamun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://bhimsenthapamun.gov.np</a></p>\n<p><strong>Phone No.:</strong> 9856004037, 9856004039</p>\n",
       "protected": false
     },
     "author": 2,
@@ -46639,7 +46871,7 @@
       "rendered": "Biomedical Technician"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-31984\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10.png\" alt=\"\" width=\"1088\" height=\"1363\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10.png 1088w, https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10-239x300.png 239w, https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10-817x1024.png 817w, https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10-768x962.png 768w\" sizes=\"(max-width: 1088px) 100vw, 1088px\" /><br />\n<strong>Position</strong>: Biomedical Technician<br />\n<strong>No. of Vacancy: </strong>Few<br />\n<strong>Location</strong>: Chitwan<br />\n<strong>Website</strong>:<a href=\"https://bharatpurhospital.gov.np/\" target=\"_blank\" rel=\"noopener\"> https://bharatpurhospital.gov.np/</a></p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-31984\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10.png\" alt=\"\" width=\"1088\" height=\"1363\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10.png 1088w, https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10-239x300.png 239w, https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10-817x1024.png 817w, https://merorojgari.com/wp-content/uploads/2026/08/Bharatpur-Hospital-job-10-768x962.png 768w\" sizes=\"(max-width: 1088px) 100vw, 1088px\" /><br />\n<strong>Position</strong>: Biomedical Technician<br />\n<strong>No. of Vacancy: </strong>Few<br />\n<strong>Location</strong>: Chitwan<br />\n<strong>Website</strong>:<a href=\"https://bharatpurhospital.gov.np/\" target=\"_blank\" rel=\"noopener\"> https://bharatpurhospital.gov.np/</a></p>\n",
       "protected": false
     },
     "author": 2,
@@ -47339,7 +47571,7 @@
       "rendered": "Staff Nurse &#8211; 135 Vacancies"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-31975\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job.png\" alt=\"\" width=\"927\" height=\"824\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job.png 927w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-300x267.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-768x683.png 768w\" sizes=\"(max-width: 927px) 100vw, 927px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-31976\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1.png\" alt=\"\" width=\"925\" height=\"516\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1.png 925w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1-300x167.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1-768x428.png 768w\" sizes=\"(max-width: 925px) 100vw, 925px\" /><br />\n<strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 135<br />\n<strong>Email</strong>: vacancy@bpkihs.edu<br />\n<strong>Website</strong>: <a href=\"http://www.bpkihs.edu\" target=\"_blank\" rel=\"noopener\">www.bpkihs.edu</a><br />\n<strong>Phone No.: </strong>9842031005</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-31975\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job.png\" alt=\"\" width=\"927\" height=\"824\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job.png 927w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-300x267.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-768x683.png 768w\" sizes=\"(max-width: 927px) 100vw, 927px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-31976\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1.png\" alt=\"\" width=\"925\" height=\"516\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1.png 925w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1-300x167.png 300w, https://merorojgari.com/wp-content/uploads/2026/08/B.P.-Koirala-Institute-of-Health-Sciences-job-1-768x428.png 768w\" sizes=\"(max-width: 925px) 100vw, 925px\" /><br />\n<strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 135<br />\n<strong>Email</strong>: vacancy@bpkihs.edu<br />\n<strong>Website</strong>: <a href=\"http://www.bpkihs.edu\" target=\"_blank\" rel=\"noopener\">www.bpkihs.edu</a><br />\n<strong>Phone No.: </strong>9842031005</p>\n",
       "protected": false
     },
     "author": 2533,
@@ -48041,7 +48273,7 @@
       "rendered": "Professor/Associate Professor/Assistant Professor/Lecturer"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-31959\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job.png\" alt=\"\" width=\"923\" height=\"1225\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job.png 923w, https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job-226x300.png 226w, https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job-772x1024.png 772w, https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job-768x1019.png 768w\" sizes=\"(max-width: 923px) 100vw, 923px\" /><br />\n<strong>Advertisement No.:</strong> 01/083/084<br />\n<strong>Department:</strong> CTVS<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number</strong>: 1</p>\n<p><strong>Advertisement No.:</strong> 02/083/084<br />\n<strong>Department</strong>: Pathologist<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number:</strong> 2</p>\n<p><strong>Advertisement No.:</strong> 03/083/084<br />\n<strong>Department</strong>: Anesthesia<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number:</strong> 2 (two)</p>\n<p><strong>Advertisement No.</strong>: 04/083/084<br />\n<strong>Department</strong>: Medical Surgical Nursing<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number:</strong> 1 (one)</p>\n<p><strong>Madhesh Institute of Health Sciences</strong></p>\n<p>Website: <a href=\"https://mihs.edu.np/\" target=\"_blank\" rel=\"noopener\">https://mihs.edu.np/</a></p>\n<p><em> Source: Gorkhapatra, 14 August, 2026</em></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-31959\" src=\"https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job.png\" alt=\"\" width=\"923\" height=\"1225\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job.png 923w, https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job-226x300.png 226w, https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job-772x1024.png 772w, https://merorojgari.com/wp-content/uploads/2026/08/Madhesh-Institute-of-Health-Sciences-MIHS-job-768x1019.png 768w\" sizes=\"(max-width: 923px) 100vw, 923px\" /><br />\n<strong>Advertisement No.:</strong> 01/083/084<br />\n<strong>Department:</strong> CTVS<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number</strong>: 1</p>\n<p><strong>Advertisement No.:</strong> 02/083/084<br />\n<strong>Department</strong>: Pathologist<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number:</strong> 2</p>\n<p><strong>Advertisement No.:</strong> 03/083/084<br />\n<strong>Department</strong>: Anesthesia<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number:</strong> 2 (two)</p>\n<p><strong>Advertisement No.</strong>: 04/083/084<br />\n<strong>Department</strong>: Medical Surgical Nursing<br />\n<strong>Position</strong>: Professor/Associate Professor/Assistant Professor/Lecturer<br />\n<strong>Required Number:</strong> 1 (one)</p>\n<p><strong>Madhesh Institute of Health Sciences</strong></p>\n<p>Website: <a href=\"https://mihs.edu.np/\" target=\"_blank\" rel=\"noopener\">https://mihs.edu.np/</a></p>\n<p><em> Source: Gorkhapatra, 14 August, 2026</em></p>\n",
       "protected": false
     },
     "author": 2,
@@ -70047,240 +70279,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=31450"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 31446,
-    "date": "2026-08-09T07:50:24",
-    "date_gmt": "2026-08-09T02:05:24",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=31446"
-    },
-    "modified": "2026-08-09T07:50:36",
-    "modified_gmt": "2026-08-09T02:05:36",
-    "slug": "copywriter-brand-storyteller",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/copywriter-brand-storyteller/",
-    "title": {
-      "rendered": "Copywriter / Brand Storyteller"
-    },
-    "content": {
-      "rendered": "<p><strong>Posiiton</strong>: Copywriter / Brand Storyteller<br />\n<strong>Location</strong>: Pulchowk, lalitpur<br />\n<strong> Application Deadline:</strong> Aug 31, 2026</p>\n<p>The Copywriter is responsible for bringing eSewa brand to life through impactful storytelling and compelling copy that inspires action and builds emotional connections with customers. The role goes beyond writing as it requires translating marketing strategies into meaningful narratives that seamlessly connect visuals with words, ensuring every communication reflects eSewa&#8217;s brand promise.</p>\n<p>Working closely with designers, marketers, product teams, and business stakeholders, the Copywriter will create audience-centric communication that resonates across customer segments, occasions, and platforms.</p>\n<p><strong>Qualification and Experience</strong></p>\n<ul>\n<li>Bachelor&#8217;s degree in Marketing, Mass Communication, Journalism, English, Business Administration, or a related field.</li>\n<li>1–3 years of experience in copywriting, content writing, advertising, digital marketing, or brand communication.</li>\n<li>Experience in fintech, banking, technology, consumer brands, or advertising agencies will be an added advantage.</li>\n</ul>\n<p><strong>Job Description</strong></p>\n<ul>\n<li>Develop compelling copy for integrated marketing campaigns, product launches, seasonal campaigns, and always-on brand communication.</li>\n<li>Craft engaging content for social media, digital advertisements, app banners, landing pages, websites, blogs, emailers, SMS, push notifications (FCM), in-app communication, video scripts, press releases, and other marketing assets.</li>\n<li>Partner closely with designers to ensure copy and visuals work together to tell a cohesive, emotionally engaging story rather than functioning as separate elements.</li>\n<li>Translate eSewa&#8217;s brand promise, &#8220;Sabai Sadhai Sangai,&#8221; into meaningful customer communication that consistently reflects the brand&#8217;s warmth, reliability, and everyday relevance.</li>\n<li>Create human-centric stories that highlight real customer experiences, aspirations, and everyday moments, making financial services feel simple, relatable, and accessible.</li>\n<li>Tailor messaging based on customer personas, audience segments, regional nuances, cultural moments, and festive occasions to maximize relevance and engagement.</li>\n<li>Collaborate with Brand, Customer Service, Digital Marketing, Business, and Creative teams to develop communication strategies that support business objectives while strengthening brand equity.</li>\n<li>Ensure consistency in tone of voice, messaging hierarchy, and brand identity across every customer touchpoint.</li>\n<li>Proofread and edit content to maintain the highest standards of clarity, accuracy, creativity, and brand compliance.</li>\n<li>Research consumer behavior, cultural trends, market insights, and competitor communication to continuously evolve content and identify new storytelling opportunities.</li>\n<li>Contribute creative ideas for campaigns, content series, employer branding, and corporate communication initiatives.</li>\n<li>Continuously refine messaging using campaign insights, customer feedback, and performance data to improve engagement and conversion.</li>\n</ul>\n<p><strong>Required Skills</strong></p>\n<p><strong>Required Skills</strong></p>\n<ul>\n<li>Exceptional writing and editing skills in both Nepali and English.</li>\n<li>Strong storytelling ability with the capability to transform product features into emotionally compelling customer narratives.</li>\n<li>Excellent understanding of how copy complements visual design across digital and offline communication.</li>\n<li>Ability to adapt writing style based on audience, platform, customer journey, and communication objective.</li>\n<li>Strong conceptual thinking with the ability to develop campaign ideas, taglines, and brand narratives.</li>\n<li>Deep understanding of digital communication across social media, websites, CRM channels, mobile apps, and performance marketing.</li>\n<li>Excellent proofreading skills with meticulous attention to detail.</li>\n<li>Ability to manage multiple campaigns and deadlines in a dynamic environment.</li>\n<li>Familiarity with SEO principles and AI-assisted writing tools is an added advantage.</li>\n<li>Strong collaboration and presentation skills.</li>\n</ul>\n<p><strong>Core Competencies</strong></p>\n<ul>\n<li>Storytelling</li>\n<li>Language Proficiency</li>\n<li>Creative Thinking</li>\n<li>Brand Communication</li>\n<li>Consumer Empathy</li>\n<li>Visual Communication</li>\n<li>Cultural Awareness</li>\n<li>Collaboration</li>\n<li>Adaptability</li>\n<li>Attention to Detail</li>\n<li>Learning Agility</li>\n</ul>\n<p><strong>Benefits of Working at eSewa</strong></p>\n<ul>\n<li> Stellar opportunity to work with the rising company</li>\n<li>The amazing and passionate young team, beautiful office space</li>\n<li>Trust of biggest FinTech company.</li>\n<li> One-of-a-kind company culture and growth opportunities to accelerate your career progression.</li>\n</ul>\n<p><strong>How to apply?</strong></p>\n<p>We are always keen to meet energetic and talented professionals who would like to join our team. Click on the button below and submit your application to apply for the post.</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 149,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Lalitpur",
-      "_application": "https://career.f1soft.com/jobs/copywriter-brand-storyteller",
-      "_company_name": "eSewa",
-      "_company_website": "https://esewa.com.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      42
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      81
-    ],
-    "class_list": [
-      "post-31446",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-lalitpur",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/31446",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/149"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=31446"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=31446"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=31446"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=31446"
         }
       ],
       "curies": [
