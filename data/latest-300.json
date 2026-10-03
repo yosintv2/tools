@@ -1,5 +1,240 @@
 [
   {
+    "id": 38810,
+    "date": "2026-10-03T18:47:43",
+    "date_gmt": "2026-10-03T13:02:43",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=38810"
+    },
+    "modified": "2026-10-03T18:48:37",
+    "modified_gmt": "2026-10-03T13:03:37",
+    "slug": "data-collector",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/data-collector/",
+    "title": {
+      "rendered": "Data Collector"
+    },
+    "content": {
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-38811\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/Lalitpur-Mahanagarpalika-job.jpg\" alt=\"\" width=\"1426\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/Lalitpur-Mahanagarpalika-job.jpg 1426w, https://merorojgari.com/wp-content/uploads/2026/10/Lalitpur-Mahanagarpalika-job-209x300.jpg 209w, https://merorojgari.com/wp-content/uploads/2026/10/Lalitpur-Mahanagarpalika-job-713x1024.jpg 713w, https://merorojgari.com/wp-content/uploads/2026/10/Lalitpur-Mahanagarpalika-job-768x1103.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/10/Lalitpur-Mahanagarpalika-job-1070x1536.jpg 1070w\" sizes=\"(max-width: 1426px) 100vw, 1426px\" /></p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 27,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Lalitpur",
+      "_application": "",
+      "_company_name": "Lalitpur Mahanagarpalika",
+      "_company_website": "https://lmc.gov.np/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      15,
+      18
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      81
+    ],
+    "class_list": [
+      "post-38810",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job_listing_tag-lalitpur",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/38810",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=38810"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=38810"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=38810"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=38810"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 38801,
     "date": "2026-10-03T17:56:31",
     "date_gmt": "2026-10-03T12:11:31",
@@ -16,7 +251,7 @@
       "rendered": "Office Helper"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-3130\" src=\"https://ingojobs.com/wp-content/uploads/2026/10/Aandhikhola-Gaunpalika-job-1.png\" alt=\"\" width=\"1281\" height=\"1691\" /><br />\n<strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Syangja</p>\n<p><strong> Aandhikhola Gaunpalika </strong></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-3130\" src=\"https://ingojobs.com/wp-content/uploads/2026/10/Aandhikhola-Gaunpalika-job-1.png\" alt=\"\" width=\"1281\" height=\"1691\" /><br />\n<strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Syangja</p>\n<p><strong> Aandhikhola Gaunpalika </strong></p>\n",
       "protected": false
     },
     "author": 2,
@@ -1188,7 +1423,7 @@
       "rendered": "Radiographer"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-38780\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/Dhangadhimai-Nagarpalika-job1.png\" alt=\"\" width=\"672\" height=\"825\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/Dhangadhimai-Nagarpalika-job1.png 672w, https://merorojgari.com/wp-content/uploads/2026/10/Dhangadhimai-Nagarpalika-job1-244x300.png 244w\" sizes=\"(max-width: 672px) 100vw, 672px\" /><br />\n<strong>Position</strong>: Radiographer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Dhangadhi, Siraha<br />\n<strong>Website</strong>: <a href=\"https://dhangadhimaimun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://dhangadhimaimun.gov.np/</a></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-38780\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/Dhangadhimai-Nagarpalika-job1.png\" alt=\"\" width=\"672\" height=\"825\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/Dhangadhimai-Nagarpalika-job1.png 672w, https://merorojgari.com/wp-content/uploads/2026/10/Dhangadhimai-Nagarpalika-job1-244x300.png 244w\" sizes=\"(max-width: 672px) 100vw, 672px\" /><br />\n<strong>Position</strong>: Radiographer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Dhangadhi, Siraha<br />\n<strong>Website</strong>: <a href=\"https://dhangadhimaimun.gov.np/\" target=\"_blank\" rel=\"noopener\">https://dhangadhimaimun.gov.np/</a></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23232,7 +23467,7 @@
       "rendered": "Project Coordinator"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-37578\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Deaf-Blind-Guardians-Society-job.png\" alt=\"\" width=\"702\" height=\"753\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Deaf-Blind-Guardians-Society-job.png 702w, https://merorojgari.com/wp-content/uploads/2026/09/Deaf-Blind-Guardians-Society-job-280x300.png 280w\" sizes=\"(max-width: 702px) 100vw, 702px\" /><br />\n<strong>Position</strong>: Project Coordinator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Email:</strong> rupandehi.deafblind@gmail.com</p>\n<p><strong>Deaf-Blind Guardians Society &#8211; Rupandehi</strong></p>\n<p><strong>Address</strong>: Tilottama &#8211; 5, Manigram</p>\n<p><strong>Location Note:</strong> (Opposite of Shree Shanti Namuna Secondary School)</p>\n<p><em> Source: Butwal Today, 28 September, 2026</em></p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-37578\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Deaf-Blind-Guardians-Society-job.png\" alt=\"\" width=\"702\" height=\"753\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Deaf-Blind-Guardians-Society-job.png 702w, https://merorojgari.com/wp-content/uploads/2026/09/Deaf-Blind-Guardians-Society-job-280x300.png 280w\" sizes=\"(max-width: 702px) 100vw, 702px\" /><br />\n<strong>Position</strong>: Project Coordinator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Email:</strong> rupandehi.deafblind@gmail.com</p>\n<p><strong>Deaf-Blind Guardians Society &#8211; Rupandehi</strong></p>\n<p><strong>Address</strong>: Tilottama &#8211; 5, Manigram</p>\n<p><strong>Location Note:</strong> (Opposite of Shree Shanti Namuna Secondary School)</p>\n<p><em> Source: Butwal Today, 28 September, 2026</em></p>\n",
       "protected": false
     },
     "author": 3082,
@@ -23466,7 +23701,7 @@
       "rendered": "Public Health Officer, Assistant Sub-Engineer, Deputy Technical Assistant"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-37570\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101.png\" alt=\"\" width=\"1015\" height=\"1275\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101.png 1015w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101-239x300.png 239w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101-815x1024.png 815w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101-768x965.png 768w\" sizes=\"(max-width: 1015px) 100vw, 1015px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-37571\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11.png\" alt=\"\" width=\"1010\" height=\"665\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11.png 1010w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11-300x198.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11-768x506.png 768w\" sizes=\"(max-width: 1010px) 100vw, 1010px\" /><br />\n<strong>Position</strong>: Public Health Officer<br />\nNo. of Vacancy: 1</p>\n<p><strong>Position</strong>: Assistant Sub -Engineer<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Position</strong>: Deputy Technical Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Makadum, Ramechhap</p>\n<p><strong>Email</strong>: khandadevimun@gmail.com</p>\n<p><strong>khandadevi Gaunpalika</strong></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-37570\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101.png\" alt=\"\" width=\"1015\" height=\"1275\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101.png 1015w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101-239x300.png 239w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101-815x1024.png 815w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-101-768x965.png 768w\" sizes=\"(max-width: 1015px) 100vw, 1015px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-37571\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11.png\" alt=\"\" width=\"1010\" height=\"665\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11.png 1010w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11-300x198.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/khandadevi-Gaunpalika-job-11-768x506.png 768w\" sizes=\"(max-width: 1010px) 100vw, 1010px\" /><br />\n<strong>Position</strong>: Public Health Officer<br />\nNo. of Vacancy: 1</p>\n<p><strong>Position</strong>: Assistant Sub -Engineer<br />\n<strong>No. of Vacancy:</strong> 2</p>\n<p><strong>Position</strong>: Deputy Technical Assistant<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Makadum, Ramechhap</p>\n<p><strong>Email</strong>: khandadevimun@gmail.com</p>\n<p><strong>khandadevi Gaunpalika</strong></p>\n",
       "protected": false
     },
     "author": 2,
@@ -23701,7 +23936,7 @@
       "rendered": "Executive Director"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-37567\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40.png\" alt=\"\" width=\"1956\" height=\"1955\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40.png 1956w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-300x300.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-1024x1024.png 1024w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-768x768.png 768w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-1536x1536.png 1536w\" sizes=\"(max-width: 1956px) 100vw, 1956px\" /><br />\n<em> Source: Gorkhapatra, 28 September, 2026</em></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-37567\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40.png\" alt=\"\" width=\"1956\" height=\"1955\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40.png 1956w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-300x300.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-1024x1024.png 1024w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-150x150.png 150w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-768x768.png 768w, https://merorojgari.com/wp-content/uploads/2026/09/Nagar-Bikash-Kosh-job-40-1536x1536.png 1536w\" sizes=\"(max-width: 1956px) 100vw, 1956px\" /><br />\n<em> Source: Gorkhapatra, 28 September, 2026</em></p>\n",
       "protected": false
     },
     "author": 2,
@@ -70032,240 +70267,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=36547"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 36546,
-    "date": "2026-09-18T13:34:07",
-    "date_gmt": "2026-09-18T07:49:07",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=36546"
-    },
-    "modified": "2026-09-18T13:34:07",
-    "modified_gmt": "2026-09-18T07:49:07",
-    "slug": "enumerator-health-assistant",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/enumerator-health-assistant/",
-    "title": {
-      "rendered": "Enumerator (Health Assistant)"
-    },
-    "content": {
-      "rendered": "<p><strong>Dhulikhel Hospital,</strong> Kathmandu University Hospital invites applications to work in fixed term contract basis from energetic, confident, hardworking and committed candidates.</p>\n<p><strong>Position</strong>: Enumerator (Health Assistant)<br />\n<strong>Number</strong>: One</p>\n<p><strong>Qualification</strong>:</p>\n<ul>\n<li>Nepalese Citizen with Health Assistant from recognized institution.</li>\n<li> Preference will be given to those who have prior experience working in the Hospital settings.</li>\n<li>Having Two-wheeler license is an advantage.</li>\n</ul>\n<p><strong>Required competencies:</strong></p>\n<ul>\n<li>Ability to perform heavy work on patient management that may include Traction of Heavy legs, Plaster application, Plaster removal, Big wound care and dressing.</li>\n<li> Committed to invest the required time and flexible to work long hours sometimes and often needing prolonged standing.</li>\n<li> Excellent communication skills in English and Nepali (verbal and written).</li>\n<li>Good knowledge of Computer skill (preferably MS Excel, Google drive, Google form and Email handling and Preference will be given to those having basic knowledge of any statistical software as SPSS).</li>\n</ul>\n<p><strong> Key responsibilities:</strong></p>\n<ul>\n<li> Keeping patients records/census at OPD, Procedure room and wards.</li>\n<li>Record keeping and documentation and follow up of the patients.</li>\n<li>Assist in clinical work, census preparation and paper work working along with other staff in the department.</li>\n<li>Work as a team and support with patient care and provide support in various orthopedic procedures.</li>\n</ul>\n<p><strong> Job Type:</strong> Fixed Term Contract</p>\n<p><strong>Note</strong>: Previous candidates applied on 31st August, 2026 should not reapply for the position.</p>\n<p>Interested candidates are requested to submit their application with following documents to the<strong> &#8220;Human Resource Department&#8221;</strong> of Dhulikhel Hospital by <strong>30th September, 2026</strong> within the office hour. Late and incomplete application will not be considered.</p>\n<p><strong>Required Documents:</strong></p>\n<ul>\n<li>Cover letter addressing to the Administrative Director.</li>\n<li> Updated resume with 2 references.</li>\n<li> Copy of:<br />\no Academic certificates<br />\no Respective council registration certificates<br />\no Citizenship card</li>\n<li> Any experience letters and other supporting documents for this position.</li>\n<li> Original copy of Bank Voucher of Rs. 500 (Five Hundred Only) Non-refundable.</li>\n</ul>\n<p>o<strong> Bank Account Name</strong>: Dhulikhel Hospital, CHP<br />\n<strong>o Account Number</strong>: 1030245752400003<br />\n<strong>o Bank Name:</strong> Kumari Bank Ltd</p>\n<ul>\n<li> <strong>Selection Process:</strong> Only shortlisted candidates based on the documents provided will be notified for the further process.</li>\n<li> <strong>Selection Method:</strong> Written, Interview or both.</li>\n</ul>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 118,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "default",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Dhulikhel",
-      "_application": "",
-      "_company_name": "Dhulikhel Hospital",
-      "_company_website": "https://dhulikhelhospital.org/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      14
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      205
-    ],
-    "class_list": [
-      "post-36546",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-dhulikhel",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/36546",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/118"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=36546"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=36546"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=36546"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=36546"
         }
       ],
       "curies": [
