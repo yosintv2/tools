@@ -1,13 +1,950 @@
 [
   {
+    "id": 39975,
+    "date": "2026-10-11T11:18:21",
+    "date_gmt": "2026-10-11T05:33:21",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39975"
+    },
+    "modified": "2026-10-11T11:18:21",
+    "modified_gmt": "2026-10-11T05:33:21",
+    "slug": "assistant-2",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/assistant-2/",
+    "title": {
+      "rendered": "Assistant"
+    },
+    "content": {
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-39976\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy.jpeg\" alt=\"\" width=\"1463\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy.jpeg 1463w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-214x300.jpeg 214w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-732x1024.jpeg 732w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-768x1075.jpeg 768w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-1097x1536.jpeg 1097w\" sizes=\"(max-width: 1463px) 100vw, 1463px\" /></p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 39977,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Simara, Rajbiraj",
+      "_application": "",
+      "_company_name": "National Life Insurance Company Limited",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      31
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": [
+      "post-39975",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39975",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/39977"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39975"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39975"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39975"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39975"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 39906,
+    "date": "2026-10-11T08:38:52",
+    "date_gmt": "2026-10-11T02:53:52",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39906"
+    },
+    "modified": "2026-10-11T09:25:03",
+    "modified_gmt": "2026-10-11T03:40:03",
+    "slug": "safaa-kathmandu-nepal-fresher-full-time-business-development-associate",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/safaa-kathmandu-nepal-fresher-full-time-business-development-associate/",
+    "title": {
+      "rendered": "Business Development Associate"
+    },
+    "content": {
+      "rendered": "<p><strong>About SAFAA</strong></p>\n<p>Safaa is a company specializing in waterless vehicle cleaning services. Our mission is to provide an eco-friendly alternative to traditional vehicle washes by using innovative, biodegradable cleaning solutions that eliminate the need for water, reduce environmental impact, and save precious natural resources.</p>\n<p><strong>About the Opportunity</strong></p>\n<p>The Business Development Associate will support Safaa&#8217;s business development and sales activities by identifying potential customers, generating leads, building client relationships, and promoting Safaa&#8217;s waterless vehicle cleaning services. The role will involve customer outreach, field activities, lead generation, follow-ups, market research, and supporting the business development team in expanding Safaa&#8217;s customer base.</p>\n<p><strong>Key Responsibilities</strong></p>\n<ul>\n<li>Identify potential individual and corporate customers for Safaa&#8217;s services.</li>\n<li>Generate new leads through field visits, calls, networking, referrals, and other channels.</li>\n<li>Promote Safaa&#8217;s waterless and eco-friendly vehicle cleaning services.</li>\n<li>Contact potential customers and introduce Safaa&#8217;s services.</li>\n<li>Follow up with leads and maintain regular communication with prospective customers.</li>\n<li>Assist in acquiring new individual and corporate customers.</li>\n<li>Identify potential fleet owners, dealerships, rental companies, businesses, and other B2B customers.</li>\n<li>Support client meetings, presentations, demonstrations, and sales activities.</li>\n<li>Build and maintain positive relationships with existing and potential customers.</li>\n<li>Assist in preparing quotations, proposals, and other sales materials when required.</li>\n<li>Conduct basic market research and identify new business opportunities.</li>\n<li>Monitor customer feedback, competitor activities, and market trends.</li>\n<li>Maintain an updated record of leads, prospects, customer interactions, and sales activities.</li>\n<li>Coordinate with the operations and marketing teams to support smooth customer service.</li>\n<li>Assist in developing strategies to increase customer acquisition and sales.</li>\n<li>Achieve assigned lead generation, customer acquisition, and sales targets.</li>\n<li>Prepare regular updates and reports on business development activities.</li>\n<li>Perform other duties related to sales and business development as assigned by management.</li>\n</ul>\n<p><strong>Submit CV</strong> from here : <a href=\"https://go.forms.app/safaasafachat/bda-application-cv\" target=\"_blank\" rel=\"noopener\">https://go.forms.app/safaasafachat/bda-application-cv</a></p>\n<p><em>or</em></p>\n<p><strong>Apply</strong> from here : <a href=\"https://go.forms.app/safaasafachat/bda-application\" target=\"_blank\" rel=\"noopener\">https://go.forms.app/safaasafachat/bda-application</a></p>\n",
+      "protected": false
+    },
+    "author": 2769,
+    "featured_media": 39907,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "https://go.forms.app/safaasafachat/bda-application",
+      "_company_name": "Safaa",
+      "_company_website": "https://safaanp.com/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      147,
+      19
+    ],
+    "job-types": [
+      38,
+      2
+    ],
+    "job_listing_tag": [
+      216,
+      79
+    ],
+    "class_list": [
+      "post-39906",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job_listing_tag-bagmati-pradesh",
+      "job_listing_tag-kathmandu",
+      "job-type-fresher",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39906",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2769"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/39907"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39906"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39906"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39906"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39906"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 39899,
+    "date": "2026-10-11T08:07:12",
+    "date_gmt": "2026-10-11T02:22:12",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39899"
+    },
+    "modified": "2026-10-11T09:27:47",
+    "modified_gmt": "2026-10-11T03:42:47",
+    "slug": "soaltee-foam-house-chipledhunga-09pokharakaskinepal-full-time-receiptionist",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/soaltee-foam-house-chipledhunga-09pokharakaskinepal-full-time-receiptionist/",
+    "title": {
+      "rendered": "Receptionist"
+    },
+    "content": {
+      "rendered": "<p><strong><span style=\"text-decoration: underline;\">Key Roles and Responsibilities</span></strong></p>\n<ul>\n<li>Welcome and greet customers, visitors, and business representatives professionally.</li>\n<li>Attend incoming telephone calls and transfer them to the concerned department or staff.</li>\n<li>Provide basic information about the company’s products, services, and showroom facilities.</li>\n<li>Direct customers to the appropriate sales staff or concerned department.</li>\n<li>Maintain visitor records, incoming and outgoing communication, and other front-desk registers.</li>\n<li>Receive and distribute letters, documents, parcels, and other deliveries.</li>\n<li>Coordinate with the HR, Sales, Accounts, and other departments as required.</li>\n<li>Assist in preparing, organizing, and maintaining documents and office records.</li>\n<li>Ensure the reception area remains clean, organized, and presentable.</li>\n<li>Handle customer inquiries politely and refer complaints or complex issues to the concerned personnel.</li>\n<li>Maintain confidentiality of company information and follow company rules and procedures.</li>\n<li>Perform other reception and administrative duties assigned by the management.</li>\n</ul>\n<p><strong><span style=\"text-decoration: underline;\">Qualification and Experience</span></strong></p>\n<ul>\n<li>Minimum +2 (Intermediate) or equivalent qualification.</li>\n<li>Experience in reception, customer service, or office administration will be an advantage.</li>\n<li>Freshers with good communication skills may also apply.</li>\n</ul>\n<p><strong><span style=\"text-decoration: underline;\">Required Skills and Competencies</span></strong></p>\n<ul>\n<li>Good communication and interpersonal skills.</li>\n<li>Polite, friendly, and professional behavior.</li>\n<li>Basic computer knowledge, including MS Word, Excel, and email.</li>\n<li>Good telephone handling and customer service skills.</li>\n<li>Punctual, organized, responsible, and presentable.</li>\n<li>Ability to coordinate effectively with different departments.</li>\n</ul>\n<p><strong>Location:</strong> Chipledhunga-09, Pokhara</p>\n",
+      "protected": false
+    },
+    "author": 3512,
+    "featured_media": 39902,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Pokhara",
+      "_application": "hr.soalteefoam@gmail.com",
+      "_company_name": "Soaltee Foam House",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      29
+    ],
+    "job-types": [
+      38,
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": [
+      "post-39899",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job-type-fresher",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39899",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/3512"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/39902"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39899"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39899"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39899"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39899"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 39956,
+    "date": "2026-10-11T07:18:01",
+    "date_gmt": "2026-10-11T01:33:01",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39956"
+    },
+    "modified": "2026-10-11T07:18:01",
+    "modified_gmt": "2026-10-11T01:33:01",
+    "slug": "auxiliary-nurse-midwife-anm-11",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/auxiliary-nurse-midwife-anm-11/",
+    "title": {
+      "rendered": "Auxiliary Nurse Midwife (ANM)"
+    },
+    "content": {
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-39957\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10.png\" alt=\"\" width=\"1240\" height=\"1614\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10.png 1240w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-230x300.png 230w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-787x1024.png 787w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-768x1000.png 768w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-1180x1536.png 1180w\" sizes=\"(max-width: 1240px) 100vw, 1240px\" /><br />\n<strong>Position</strong>: Auxiliary Nurse Midwife (ANM)<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Jomsom , Mustang<br />\n<strong>Qualification</strong>: Passed ANM (Auxiliary Nurse Midwife) or equivalent from a recognized educational institution.<br />\n<strong>Application Fee:</strong> 500</p>\n<p><strong>Gharapjhong Gaunpalika</strong></p>\n<p>For additional information, you can contact the office telephone number<strong> 069-440016</strong> or the Health Section Chief&#8217;s contact number <strong>9857650034</strong></p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 27,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Mustang",
+      "_application": "",
+      "_company_name": "Gharapjhong Gaunpalika",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      14
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      86
+    ],
+    "class_list": [
+      "post-39956",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job_listing_tag-mustang",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39956",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39956"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39956"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39956"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39956"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 39953,
     "date": "2026-10-11T06:43:21",
     "date_gmt": "2026-10-11T00:58:21",
     "guid": {
       "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39953"
     },
-    "modified": "2026-10-11T06:43:21",
-    "modified_gmt": "2026-10-11T00:58:21",
+    "modified": "2026-10-11T07:22:58",
+    "modified_gmt": "2026-10-11T01:37:58",
     "slug": "medical-officer-staff-nurse-radiographer-lab-technician-office-helper",
     "status": "publish",
     "type": "job_listing",
@@ -16,7 +953,7 @@
       "rendered": "Medical Officer, Staff Nurse, Radiographer, Lab Technician, Office Helper"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-39954\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1.png\" alt=\"\" width=\"1061\" height=\"1212\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1.png 1061w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1-263x300.png 263w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1-896x1024.png 896w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1-768x877.png 768w\" sizes=\"(max-width: 1061px) 100vw, 1061px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-39955\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1.png\" alt=\"\" width=\"900\" height=\"765\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1.png 900w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1-300x255.png 300w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1-768x653.png 768w\" sizes=\"(max-width: 900px) 100vw, 900px\" /><br />\n<strong>Position</strong>: Medical Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed MBBS from a recognized educational institution and registered with the respective council.</p>\n<p><strong>Position</strong>: Medical Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed MBBS from a recognized educational institution and registered with the respective council.</p>\n<p><strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed Staff Nurse course from a recognized educational institution and registered with the respective council.</p>\n<p><strong>Position</strong>: Lab Technician<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed Proficiency Certificate Level in Health Lab from a recognized educational institution and registered with the<br />\nrespective council.</p>\n<p><strong>Position</strong>: Radiographer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed Certificate Level in Radiography from a recognized institution and registered with the respective council</p>\n<p><strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 5<br />\n<strong>Qualification</strong>: Passed SEE (Secondary Education Examination) or equivalent.</p>\n<p><strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 2<br />\n<strong>Qualification</strong>: Passed SEE (Secondary Education Examination) or equivalent.</p>\n<p><strong>Location</strong>: kapilvastu</p>\n<p><strong>Note</strong>: For more information, you can visit the website of Maharajgunj Municipality or contact <strong>076-400050.</strong></p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-39954\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1.png\" alt=\"\" width=\"1061\" height=\"1212\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1.png 1061w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1-263x300.png 263w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1-896x1024.png 896w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-10-1-768x877.png 768w\" sizes=\"(max-width: 1061px) 100vw, 1061px\" /><br />\n<img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-39955\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1.png\" alt=\"\" width=\"900\" height=\"765\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1.png 900w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1-300x255.png 300w, https://merorojgari.com/wp-content/uploads/2026/10/maharajgunj-municipality-job-11-1-768x653.png 768w\" sizes=\"(max-width: 900px) 100vw, 900px\" /><br />\n<strong>Position</strong>: Medical Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed MBBS from a recognized educational institution and registered with the respective council.</p>\n<p><strong>Position</strong>: Medical Officer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed MBBS from a recognized educational institution and registered with the respective council.</p>\n<p><strong>Position</strong>: Staff Nurse<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed Staff Nurse course from a recognized educational institution and registered with the respective council.</p>\n<p><strong>Position</strong>: Lab Technician<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed Proficiency Certificate Level in Health Lab from a recognized educational institution and registered with the<br />\nrespective council.</p>\n<p><strong>Position</strong>: Radiographer<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Qualification</strong>: Passed Certificate Level in Radiography from a recognized institution and registered with the respective council</p>\n<p><strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 5<br />\n<strong>Qualification</strong>: Passed SEE (Secondary Education Examination) or equivalent.</p>\n<p><strong>Position</strong>: Office Helper<br />\n<strong>No. of Vacancy:</strong> 2<br />\n<strong>Qualification</strong>: Passed SEE (Secondary Education Examination) or equivalent.</p>\n<p><strong>Location</strong>: Kapilvastu</p>\n<p><strong>Note</strong>: For more information, you can visit the website of Maharajgunj Municipality or contact <strong>076-400050.</strong></p>\n",
       "protected": false
     },
     "author": 2,
@@ -250,7 +1187,7 @@
       "rendered": "Farmer Registration Facilitator"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-39936\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy.jpeg\" alt=\"\" width=\"1448\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy.jpeg 1448w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-212x300.jpeg 212w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-724x1024.jpeg 724w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-768x1086.jpeg 768w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-1086x1536.jpeg 1086w\" sizes=\"(max-width: 1448px) 100vw, 1448px\" /></p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-39936\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy.jpeg\" alt=\"\" width=\"1448\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy.jpeg 1448w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-212x300.jpeg 212w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-724x1024.jpeg 724w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-768x1086.jpeg 768w, https://merorojgari.com/wp-content/uploads/2026/10/jahada-gaupalika-morang-job-vacancy-1086x1536.jpeg 1086w\" sizes=\"(max-width: 1448px) 100vw, 1448px\" /></p>\n",
       "protected": false
     },
     "author": 1,
@@ -1650,8 +2587,8 @@
     "guid": {
       "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39873"
     },
-    "modified": "2026-10-10T08:31:06",
-    "modified_gmt": "2026-10-10T02:46:06",
+    "modified": "2026-10-11T09:15:10",
+    "modified_gmt": "2026-10-11T03:30:10",
     "slug": "police-assistant-inspector-police-hawaldar-police-jawan",
     "status": "publish",
     "type": "job_listing",
@@ -1780,7 +2717,7 @@
         }
       },
       "_promoted": "",
-      "_job_location": "kailali",
+      "_job_location": "Kailali",
       "_application": "",
       "_company_name": "Bhajani Nagarpalika",
       "_company_website": "http://www.bhajanimun.gov.np",
@@ -46041,7 +46978,7 @@
       "rendered": "Enterprise Development Facilitator"
     },
     "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-37836\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70.png\" alt=\"\" width=\"2230\" height=\"3186\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70.png 2230w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-210x300.png 210w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-717x1024.png 717w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-768x1097.png 768w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-1075x1536.png 1075w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-1433x2048.png 1433w\" sizes=\"(max-width: 2230px) 100vw, 2230px\" /><br />\n<strong>Position</strong>: Enterprise Development Facilitator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Biratnagar, Morang<br />\nWebsite:<a href=\"https://biratnagarmun.gov.np/\" target=\"_blank\" rel=\"noopener\"> https://biratnagarmun.gov.np/</a></p>\n",
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-37836\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70.png\" alt=\"\" width=\"2230\" height=\"3186\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70.png 2230w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-210x300.png 210w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-717x1024.png 717w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-768x1097.png 768w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-1075x1536.png 1075w, https://merorojgari.com/wp-content/uploads/2026/09/Biratnagar-Mahanagarpalika-job-70-1433x2048.png 1433w\" sizes=\"(max-width: 2230px) 100vw, 2230px\" /><br />\n<strong>Position</strong>: Enterprise Development Facilitator<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Biratnagar, Morang<br />\nWebsite:<a href=\"https://biratnagarmun.gov.np/\" target=\"_blank\" rel=\"noopener\"> https://biratnagarmun.gov.np/</a></p>\n",
       "protected": false
     },
     "author": 2,
@@ -47682,7 +48619,7 @@
       "rendered": "Heavy Vehicle Driver"
     },
     "content": {
-      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-37821\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job.png\" alt=\"\" width=\"991\" height=\"727\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job.png 991w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-300x220.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-768x563.png 768w\" sizes=\"(max-width: 991px) 100vw, 991px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-37822\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1.png\" alt=\"\" width=\"1006\" height=\"519\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1.png 1006w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1-300x155.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1-768x396.png 768w\" sizes=\"(max-width: 1006px) 100vw, 1006px\" /><br />\n<strong>Position</strong>: Heavy Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong> Prithvi Narayan Campus</strong></p>\n<p>General Administration Branch</p>\n<p>Bhimkalipatan, Pokhara</p>\n",
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-37821\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job.png\" alt=\"\" width=\"991\" height=\"727\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job.png 991w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-300x220.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-768x563.png 768w\" sizes=\"(max-width: 991px) 100vw, 991px\" /><br />\n<img decoding=\"async\" class=\"alignnone size-full wp-image-37822\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1.png\" alt=\"\" width=\"1006\" height=\"519\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1.png 1006w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1-300x155.png 300w, https://merorojgari.com/wp-content/uploads/2026/09/Prithvi-Narayan-Campus-job-1-768x396.png 768w\" sizes=\"(max-width: 1006px) 100vw, 1006px\" /><br />\n<strong>Position</strong>: Heavy Vehicle Driver<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong> Prithvi Narayan Campus</strong></p>\n<p>General Administration Branch</p>\n<p>Bhimkalipatan, Pokhara</p>\n",
       "protected": false
     },
     "author": 2,
@@ -47916,7 +48853,7 @@
       "rendered": "Deputy Chief Executive Officer"
     },
     "content": {
-      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-37816\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job.jpg\" alt=\"\" width=\"1637\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job.jpg 1637w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-240x300.jpg 240w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-819x1024.jpg 819w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-768x961.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-1228x1536.jpg 1228w\" sizes=\"(max-width: 1637px) 100vw, 1637px\" /><br />\n<strong> Advertisement No.:</strong> 1/083/84<br />\n<strong>Position: </strong>Deputy Chief Executive Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Email</strong>: dceovacancy@swmfi.com.np</p>\n<p><strong>Phone No.:</strong> 01-5912752/53</p>\n",
+      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-37816\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job.jpg\" alt=\"\" width=\"1637\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job.jpg 1637w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-240x300.jpg 240w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-819x1024.jpg 819w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-768x961.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/09/Suryodaya-Womi-Laghubitta-Bittiya-Sanstha-job-1228x1536.jpg 1228w\" sizes=\"(max-width: 1637px) 100vw, 1637px\" /><br />\n<strong> Advertisement No.:</strong> 1/083/84<br />\n<strong>Position: </strong>Deputy Chief Executive Officer<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Email</strong>: dceovacancy@swmfi.com.np</p>\n<p><strong>Phone No.:</strong> 01-5912752/53</p>\n",
       "protected": false
     },
     "author": 3117,
@@ -69423,942 +70360,6 @@
           "taxonomy": "job_listing_tag",
           "embeddable": true,
           "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=37287"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 37280,
-    "date": "2026-09-25T11:56:50",
-    "date_gmt": "2026-09-25T06:11:50",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=37280"
-    },
-    "modified": "2026-09-25T11:56:50",
-    "modified_gmt": "2026-09-25T06:11:50",
-    "slug": "assistant-computer-operator-financial-literacy-facilitator",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/assistant-computer-operator-financial-literacy-facilitator/",
-    "title": {
-      "rendered": "Assistant Computer Operator, Financial Literacy Facilitator"
-    },
-    "content": {
-      "rendered": "<p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-37282\" src=\"https://merorojgari.com/wp-content/uploads/2026/09/Ratnanagar-Municipality-job401.jpg\" alt=\"\" width=\"1606\" height=\"1995\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/09/Ratnanagar-Municipality-job401.jpg 1606w, https://merorojgari.com/wp-content/uploads/2026/09/Ratnanagar-Municipality-job401-242x300.jpg 242w, https://merorojgari.com/wp-content/uploads/2026/09/Ratnanagar-Municipality-job401-824x1024.jpg 824w, https://merorojgari.com/wp-content/uploads/2026/09/Ratnanagar-Municipality-job401-768x954.jpg 768w, https://merorojgari.com/wp-content/uploads/2026/09/Ratnanagar-Municipality-job401-1236x1536.jpg 1236w\" sizes=\"(max-width: 1606px) 100vw, 1606px\" /><br />\n<strong>Position</strong>: Financial Literacy Facilitator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Position</strong>: Assistant Computer Operator<br />\n<strong>No. of Vacancy:</strong> 1</p>\n<p><strong>Location</strong>: Ratnanagar, Chitwan</p>\n<p>Ratnanagar Nagarpalika</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 27,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "default",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Chitwan",
-      "_application": "",
-      "_company_name": "Ratnanagar Nagarpalika",
-      "_company_website": "https://ratnanagarmun.gov.np/",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      28
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      63
-    ],
-    "class_list": [
-      "post-37280",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-chitwan",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/37280",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=37280"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=37280"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=37280"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=37280"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 37279,
-    "date": "2026-09-25T11:18:30",
-    "date_gmt": "2026-09-25T05:33:30",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=37279"
-    },
-    "modified": "2026-09-25T21:03:01",
-    "modified_gmt": "2026-09-25T15:18:01",
-    "slug": "senior-communication-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/senior-communication-officer/",
-    "title": {
-      "rendered": "Senior Communication Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Senior Communication Officer<br />\n<strong>Vacancy No.:</strong> S18649<br />\n<strong>Category of Contract</strong>: National<br />\n<strong>Position Type:</strong> National<br />\n<strong>Application Deadline:</strong> 10/10/2026<br />\n<strong>Duty Station</strong>: Kathmandu, Nepal<br />\n<strong>Country</strong>: NEPAL<br />\n<strong>Grade</strong>: National Staff<br />\n<strong>Duty Station Status</strong>: N/A<br />\n<strong>Accompanied Status:</strong> N/A<br />\n<strong>Duration</strong>: 12 months</p>\n<p><strong>Organizational Context</strong></p>\n<p>The International Federation of Red Cross and Red Crescent Societies (IFRC) is the world’s largest humanitarian network, with 191 member National Red Cross and Red Crescent Societies. IFRC uses the Triple R – response, resilience and respect – to deliver on Strategy 2030. IFRC responds to disasters and crises, ensuring timely, coordinated and locally led humanitarian action. IFRC supports its members in building community resilience in the areas of climate and environment, health and wellbeing, and migration and displacement. IFRC promotes respect for our fundamental principles of humanity, impartiality, neutrality, independence, voluntary service, unity, and universality, including in our work on values, power and inclusion. The IFRC focuses throughout on our core mandate – our raison d’être – of strategic and operational coordination, humanitarian diplomacy, National Society development, and accountability.</p>\n<p>IFRC is led by its Secretary General and has its Headquarters in Geneva and five regional offices in Africa (Nairobi); the Americas (Panama); Asia Pacific (Kuala Lumpur); Europe (Budapest); and MENA (Beirut) as well as representation offices, service centres and delegations across the globe.</p>\n<p>The IFRC has a zero-tolerance policy on conduct that is incompatible with the aims and objectives of the Red Cross and Red Crescent Movement, including sexual exploitation and abuse, sexual harassment and other forms of harassment, abuse of authority, discrimination, and lack of integrity (including but not limited to financial misconduct). IFRC also adheres to strict child safeguarding principles.</p>\n<p>The IFRC is currently present in Nepal through a Country Delegation (CD &#8211; first established in 1965 with a presence through regional representation at times), providing support to Nepal Red Cross Society (NRCS) programmes and National Society development (NSD) amongst as well as emergency response, other areas. The longer-term mission of the Nepal Delegation is to facilitate organisational growth, technical capacities, partnerships, and resource mobilisation that enable Nepal Red Cross Society to deliver on its humanitarian mandate in the country through the provision of technical support, advocacy, representation and coordination functions, in accordance with Strategy 2030, the IFRC Renewal and annual Operational Plans.</p>\n<p>The Country Delegation also provides integration services to six IFRC members with a presence in Nepal.</p>\n<p>On 26 August 2026, a major ice-rock avalanche occurred in the upper Bhote Koshi watershed near the China–Nepal border, resulting in an historically powerful flash flood that advanced from the border down the entire length of Nepal along the Bhote Koshi and Trishuli River basins.</p>\n<p>Due to the evolving operational requirements of the Rasuwa Flash Flood 2026 response operation, this role profile provides an overview of the principal responsibilities and functions associated with this position within a Federation-coordinated operation.</p>\n<p><strong>Job Purpose</strong></p>\n<p>Sr. Officer, Communications will coordinate communications and media activities to highlight the humanitarian situation and needs on the ground, as well as the National Society’s response, supported by IFRC and its network, through compelling content on relevant communication channels to reach target audiences. This involves crafting impactful communication key messages about the humanitarian situation in country, outlining the roles of the IFRC network in supporting the host National Society.</p>\n<p>Additionally, the role involves enhancing the visibility and public image of the host National Society and IFRC, with a specific focus on emergency and crisis responses, in the international media. The role holder will create or commission high-quality communication materials that give a voice to populations affected by disasters and crises, showcasing the impact of the host National Society’s operations and programmes, contributing to resource mobilization efforts and reporting to partners and stakeholders.</p>\n<p>Sr. Officer, Communications also supports the host National Society in coordinating communication activities within the Red Cross Red Crescent Movement, including the development of key messages for public advocacy. Furthermore, the incumbent will provide technical assistance and support to the NS in further developing and strengthening their communication capacity and systems.</p>\n<p><strong>Job Duties and Responsibilities</strong></p>\n<p>Sr. Officer, Communications is responsible for supporting the NS and the wider network through:</p>\n<ul>\n<li>In collaboration with the host National Society, develop and implement a communications strategy and plan of action, that supports programmatic and policy priorities, covering the various aspects of communications including public and media relations, corporate communication, social media, and advocacy.</li>\n<li>Coordinate the production of communication products to support IFRC network advocacy, marketing, and fundraising efforts.</li>\n<li>Create human interest stories, high-quality photography and videography materials to support donor reporting.</li>\n<li>Develop and update external-facing key messages for use by IFRC and the wider Red Cross and Red Crescent communications network. Share any communications material created with the IFRC communications team for wider distribution and use among the IFRC communications network.</li>\n<li>Ensure strong visibility in international media through producing stories and content pitching story ideas about Red Cross and Red Crescent operations. Arrange media visits to field operations, act as a spokesperson (when applicable) with international media, ensure the availability of in-country well-briefed spokespeople for media. Produce communication materials for media and external audiences and support the IFRC/NS</li>\n<li>spokes persons in media engagements.</li>\n<li>Ensure strong social media engagement through proposing and producing content for IFRC channels such as Facebook, Instagram and X and tracking audience engagement with social media.</li>\n<li>Ensure comprehensive and effective communication of major milestones for the emergency response using diverse people-centered content, including video footage, photos with extended captions, and content generated by community engagement activities, such as feedback/concerns from affected communities.</li>\n<li>In coordination with the IFRC technical focal persons, create high quality content demonstrating the positive impact on affected populations of programmes and operations implemented by the host National Society with the support from IFRC, for further resource mobilization, reporting and general profiling and awareness raising purposes.</li>\n<li>Work closely with the host National Society and the IFRC regional/in-country Strategic Partnership and Resource Mobilization focal point to create materials that support resource mobilization interventions.</li>\n<li>Support the host National Society in the coordination of media and communications initiatives among the Movement partners to ensure an aligned Movement approach to public communications, and consistent messaging including coordination of key messages, reactive lines, where required, for different situations.</li>\n<li>Facilitate visits/ field trips by media, Partner National Societies’ (PNS) communicators.</li>\n<li>Supporting the management of reputational issues through monitoring, advising on, and responding to developments and issues with possible reputational consequences in close coordination with the Head of Delegation and the Risk Management delegate/focal point.</li>\n<li>Supporting the capacity-building of the host National Society’s communications team, including through providing opportunities for learning, coaching, skills transfer, mentoring and facilitation of peer-to-peer exchanges, in coordination and collaboration with the IFRC regional and country team.</li>\n<li>Coordinate with PNS bi-lateral and multilateral communications teams in-country<br />\n<strong>.</strong><br />\n<strong>Job Duties and Responsibilities (continued)</strong></li>\n</ul>\n<p><strong>Other</strong></p>\n<ul>\n<li>Under the direction of the line manager, support the annual strategy and work plan of the IFRC Country Delegation Communications as well as the IFRC Global Communications strategy</li>\n<li>As applicable, mentor the NRCS communication team in relevant fields of communication (social media, website, exposure stories, media engagement, etc.).</li>\n<li>Coordinate with the Country Delegation team, NRCS team and IFRC Asia Pacific regional team in ensuring consistency of IFRC image is maintained</li>\n<li>Ensure all IFRC communications activities including the IFRC members in Nepal are well-coordinated with NRCS while also contributing to the enhancement of their capacities.</li>\n<li>Undertake field missions to support local communications as relevant.</li>\n<li>Support the line manager and the Head of Delegation in preparing for and organizing public speaking engagements with the preparation of background materials and speaking points.</li>\n<li>Support Unified Planning process as required.</li>\n<li>Other relevant tasks that can be assigned by the line manager.</li>\n</ul>\n<p><strong>Education</strong></p>\n<ul>\n<li>Master&#8217;s degree in communication, Journalism, Media Studies, digital media, or any other media-related field or equivalent higher education degree.</li>\n<li>Technical training courses linked to the post.</li>\n</ul>\n<p><strong>Experience</strong></p>\n<p><strong>Required:</strong></p>\n<ul>\n<li>6-7 years of demonstrable experience in Communication for a humanitarian or development organization</li>\n<li>Demonstrated experience in social media account management</li>\n<li>A skilled photographer with demonstrated skills in digital video editing</li>\n<li>Experience in the humanitarian or development sector, with a focus on Communications</li>\n<li>Possesses creative and analytical skills</li>\n<li>Demonstrated professional credibility in the sector and experience working in an international or cross-cultural environment.</li>\n</ul>\n<p>Prefered:</p>\n<ul>\n<li>Experience working in a Red Cross or Red Crescent National Society and/or IFRC or ICRC</li>\n<li>Knowledge, Skills and Languages</li>\n<li>Ability to prioritize, meet deadlines, and achieve results through collaboration</li>\n<li>Proactive, innovative, willing, and committed to stay and travel in the remote areas to work with vulnerable communities.</li>\n</ul>\n<p><strong>Programme and project management</strong></p>\n<ul>\n<li>Results-oriented and demand-driven individual, entrepreneurial, ability to lead in unprecedented and/or ambiguous situations.</li>\n<li>Demonstrated track record in innovating, contributing to a learning culture, sharing knowledge and new approaches to engaging partners.</li>\n<li>Professional credibility, able to work effectively at all levels across the organisation</li>\n<li>Proven good judgment and ability to work with complete integrity and confidentiality</li>\n<li>Demonstrated core proficiency in (a) digital communication &amp; collaboration, (b) basic digital content creation, (c) digital safety &amp; security, (d) data literacy, and (e) problem solving with technology (including responsible use of AI assistants.</li>\n<li>Understanding of and commitment to IFRC’s mission and values.</li>\n</ul>\n<p><strong>Competencies, Values and Comments</strong></p>\n<p><strong>Values</strong>: Respect for diversity; Integrity; Professionalism; Accountability</p>\n<p><strong>Core competencies: </strong>Communication; Collaboration and teamwork; Judgement and decision-making; National society and customer relations; Creativity and innovation; Building trust</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 36950,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "default",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "https://careers.ifrc.org/lumesse_jobdescription.html?jobId=161148&jobTitle=Senior+Communication+Officer",
-      "_company_name": "International Federation of Red Cross (IFRC)",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": [
-      "post-37279",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-kathmandu",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/37279",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/36950"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=37279"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=37279"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=37279"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=37279"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 37272,
-    "date": "2026-09-25T10:28:39",
-    "date_gmt": "2026-09-25T04:43:39",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=37272"
-    },
-    "modified": "2026-09-25T10:48:36",
-    "modified_gmt": "2026-09-25T05:03:36",
-    "slug": "jagdamba-motors-pvt-ltd-kathmandu-full-time-logistics-officer",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/jagdamba-motors-pvt-ltd-kathmandu-full-time-logistics-officer/",
-    "title": {
-      "rendered": "Logistics Officer"
-    },
-    "content": {
-      "rendered": "<p><strong>Position</strong>: Logistics Officer<br />\n<strong>Division</strong>: 4W<br />\n<strong>Location</strong>: Kathmandu, Nepal</p>\n<p><strong>Key Responsibilities:</strong></p>\n<ul>\n<li>Coordinate inbound vehicle logistics from OEM/importer to designated locations.</li>\n<li>Track vehicle dispatch, transit, arrival and delivery schedules.</li>\n<li>Coordinate vehicle allocation and dispatch to dealers/branches.</li>\n<li>Monitor logistics documentation, transportation costs and delivery timelines.</li>\n<li>Coordinate with OEM, transporters, dealers, Sales and Finance teams.</li>\n<li>Maintain accurate logistics records, reports and vehicle movement trackers.</li>\n<li>Identify and resolve delays or issues in vehicle transportation and delivery.</li>\n</ul>\n<p><strong>Requirements</strong>:</p>\n<ul>\n<li>Bachelor&#8217;s degree in Management, Logistics, Supply Chain or related field.</li>\n<li>Experience in automotive logistics, vehicle transportation or supply chain will be preferred.</li>\n<li>Strong coordination, follow-up, reporting and problem-solving skills.</li>\n<li>Good knowledge of MS Excel and logistics/ERP systems.</li>\n</ul>\n<p>Interested candidates can send their updated CV to: <strong>vacancy@jagdambamotors.com</strong></p>\n",
-      "protected": false
-    },
-    "author": 93,
-    "featured_media": 9796,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "default",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Kathmandu",
-      "_application": "vacancy@jagdambamotors.com",
-      "_company_name": "Jagdamba Motors Pvt. Ltd",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      21
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      79
-    ],
-    "class_list": [
-      "post-37272",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-kathmandu",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/37272",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/93"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/9796"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=37272"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=37272"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=37272"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=37272"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 37270,
-    "date": "2026-09-25T10:13:15",
-    "date_gmt": "2026-09-25T04:28:15",
-    "guid": {
-      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=37270"
-    },
-    "modified": "2026-09-25T10:14:11",
-    "modified_gmt": "2026-09-25T04:29:11",
-    "slug": "senior-coordinator-2",
-    "status": "publish",
-    "type": "job_listing",
-    "link": "https://merorojgari.com/job/senior-coordinator-2/",
-    "title": {
-      "rendered": "Senior Coordinator"
-    },
-    "content": {
-      "rendered": "<p><strong>Save the Children</strong> believes every child deserves a future. In Bhutan and around the world, we give children a healthy start in life, the opportunity to learn and protection from harm. We do whatever it takes for children – every day and in times of crisis – transforming their lives and future we share. Save the Children expects that anyone associated with it abides by its Safeguarding and other Zero Tolerance Policies.</p>\n<p>Reference Check will be done for all candidates- so the application to include reference details. The selected candidate needs to be ready to join within 24 hours of offer.</p>\n<p><strong>JOB TITLE:</strong> Senior Coordinator, Food Security, Livelihood, and CVA</p>\n<p><strong>TEAM/PROGRAMME:</strong> POD<br />\n<strong>LOCATION:</strong> Nuwakot<br />\n<strong>GRADE:</strong> 3+<br />\n<strong>CONTRACT TYPE:</strong> 6 months with possible of extension</p>\n<p>Child Safeguarding Level 3 &#8211; the responsibilities of the post holder may require having a regular contact with or access to children or young people because the position holder works in the implementation of the country programme and are visiting programme frequently.</p>\n<p><strong>ROLE PURPOSE:</strong></p>\n<p>Save the Children is the leading independent organization for children. We save children’s lives; we fight for their rights; we help them fulfill their potential. We work together, with our partners from civil society and government, to inspire breakthroughs in the way the world treats children and to achieve immediate and lasting change in their lives.</p>\n<p>The Senior Coordinator – FSL and CVA will provide technical oversight, coordination, regular FSL and market situation update and reporting for food security, livelihoods, Cash and Voucher Assistance, and early recovery interventions within the emergency response and recovery. The position will ensure that affected households and communities receive timely, appropriate, and evidence-based support to address immediate food needs while strengthening recovery of livelihood. The role will support in assessments, programme design and take lead in implementation, coordination, monitoring, and recovery planning in accordance with humanitarian standards and organizational priorities.</p>\n<p><strong>SCOPE OF ROLE:</strong></p>\n<p><strong>Position reports to:</strong> Field Operations Lead</p>\n<p><strong>Technical Reporting:</strong> Livelihood Specialist</p>\n<p><strong>Staff directly reporting to this post</strong>: None.</p>\n<p><strong>Staff indirectly reporting to this post:</strong> None.</p>\n<p><strong>Scheme of Delegation:</strong></p>\n<p><strong>Close coordination with:</strong></p>\n<p><strong>Budget Responsibility:</strong></p>\n<p><strong>KEY AREAS OF ACCOUNTABILITY:</strong></p>\n<ul>\n<li>With guidance support from Livelihood Specialist, take lead field assessments of food security and livelihood needs among affected households and communities to identify priority populations, geographic areas, vulnerabilities, market situation and response gaps.</li>\n<li>Assess the impact of the emergency on different aspects of livelihoods such as household income, markets, agriculture, livestock, and other productive livelihood assets.</li>\n<li>Collect, analyze and regularly update data on food security conditions, livelihood disruptions, coping mechanisms, market functionality, and community priorities.</li>\n<li>Contribute sector-specific information and analysis to situation reports, humanitarian assessments, and program planning processes.</li>\n<li>Conduct market assessments to determine the feasibility of Cash and Voucher Assistance (CVA) in flood-affected areas across SCI interventions where CVA is considered an appropriate delivery approach.</li>\n<li>From market assessment finding, recommend appropriate CVA interventions modality useful across SCI CVA programming.</li>\n<li>Provide technical guidance on the transition from immediate food-security assistance to livelihood recovery and to development</li>\n<li>Ensure FSL interventions are evidence-based, inclusive, gender-responsive and appropriately targeted to the most vulnerable households and contributing to children’s wellbeing.</li>\n<li>Participate actively in relevant FSL Cluster meetings, technical working groups, and coordination forums organized at field level and ensure Save the Children’s progress update</li>\n<li>Support joint assessments, analyses, and response planning initiatives with partners and coordination bodies.</li>\n<li>Regularly collect local market information and provide update in situation and progress update meeting</li>\n<li>Strengthen collaboration and information sharing among stakeholders to maximize response effectiveness and avoid duplication.</li>\n<li>Provide technical guidance, and mentoring to field teams, partners, and community-based groups involved in food security and livelihood interventions.</li>\n<li>Support to build staff and partner capacity on food security and livelihood assessments, livelihoods programming, market-based approaches, CVA, and emergency response standards.</li>\n<li>Ensure programmes uphold the dignity, rights, and safety of affected individuals and communities.</li>\n<li>Ensure FSL is integrated across the wider humanitarian response, including education, child protection, WASH, health &amp; nutrition and shelter/settlement, and other sectoral interventions.</li>\n<li>Ensure field information is collected using approved tools, formats, and reporting templates.</li>\n<li>Verify information from multiple sources before sharing with internal and external stakeholders.</li>\n<li>Ensure sensitive information is handled appropriately and in accordance with data protection requirements and SCI’s principles</li>\n<li>Comply with Save the Children policies and practice with respect to child protection, code of conduct, health and safety, equal opportunities and other relevant policies and procedures.</li>\n</ul>\n<p><strong>Counter Fraud and Safeguarding Responsibilities:</strong></p>\n<ul>\n<li>Take all necessary and appropriate steps to prevent abuse, exploitation, neglect, harm and modern slavery within their areas of responsibility, and in the way they conduct themselves, report and respond to all incidents and concerns whether online or in person, and comply with the Safeguarding Policy and Procedure.</li>\n<li>Take all necessary and appropriate steps to prevent fraud, bribery, and corruption within their areas of responsibility, report and respond to all incidents and concerns and comply with the Counter-Fraud, Bribery and Corruption Policy and Procedure. All types of fraud, bribery, and corruption must be prevented, including where it benefits the organisation (SCI).</li>\n</ul>\n<p><strong>SKILLS AND BEHAVIOURS (our Values in Practice)</strong></p>\n<p><strong>Accountability:</strong></p>\n<ul>\n<li>Holds self-accountable for making decisions, managing resources efficiently, achieving and role modelling Save the Children values</li>\n<li>Holds the team and partners accountable to deliver on their responsibilities &#8211; giving them the freedom to deliver in the best way they see fit, providing the necessary development to improve performance and applying appropriate consequences when results are not achieved</li>\n<li>Sets ambitious and challenging goals for themselves and their team, takes responsibility for their own personal development and encourages others to do the same</li>\n<li>Widely shares their personal vision for Save the Children, engages and motivates others</li>\n<li>Future orientated, thinks strategically.</li>\n<li>Builds and maintains effective relationships, with their team, colleagues, Members and external partners and supporters</li>\n<li>Values diversity, sees it as a source of competitive strength</li>\n<li>Approachable, good listener, easy to talk to</li>\n<li>Develops and encourages new and innovative solutions</li>\n<li>Willing to take disciplined risks</li>\n<li>Honest, encourages openness and transparency</li>\n</ul>\n<p><strong>Ambition</strong>:</p>\n<p><strong>Collaboration</strong>:</p>\n<p><strong>Creativity:</strong></p>\n<p><strong>Integrity:</strong></p>\n<p><strong>QUALIFICATION:</strong></p>\n<ul>\n<li>A minimum of 4 years’ (3 years for GSI ) experience in emergency food security and livelihood programming and implementation support or related areas with the master’s degree in agriculture, rural development, social science or relevant areas or 6 years ( 4 years for GSI group) of experience in food security and livelihood programming and implementation support with bachelor’s degree in agriculture, rural development, social science or relevant areas</li>\n</ul>\n<p><strong>EXPERIENCE AND SKILLS</strong></p>\n<ul>\n<li>Strong technical expertise in emergency food security, livelihoods, and market-based programming with key expertise on CVA</li>\n<li>Experience coordinating with government authorities, humanitarian coordination mechanisms, and partner organizations.</li>\n<li>Strong experience in assessments, analysis, reporting, and information management.</li>\n<li>Knowledge of international child protection frameworks, safeguarding standards, and humanitarian principles.</li>\n<li>Ability to travel extensively to flood-affected and remote locations.</li>\n<li>Fluency in English and Nepali, both written and spoken</li>\n<li>Ability to collect and verify information under tight deadlines.</li>\n<li>Commitment to the aims and principles of SCI in particular, a good understanding of the SCI mandate and child focus and an ability to ensure this continues to underpin our support</li>\n<li>Ability to establish good working relationships and positively contribute to a team</li>\n<li>Ability to work in a stressful and changing environment with limited resources</li>\n</ul>\n<p><strong>Additional Job Responsibilities:</strong></p>\n<ul>\n<li>The duties and responsibilities as set out above are not exhaustive and the role holder may be required to carry out additional duties within reasonableness of their level of skills and experience.</li>\n</ul>\n<p><strong>Equal Opportunities:</strong></p>\n<ul>\n<li>The role holder is required to carry out the duties in accordance with the SCI Equal Opportunities and Diversity policies and procedures.</li>\n</ul>\n<p><strong>Safeguarding obligation:</strong></p>\n<p>We need to keep children, adult at risk and community safe. The position holder is responsible to ensure that The position holder conduct is in line with the SCI’s Safeguarding policies. Hence our selection process includes rigorous background checks, reflects our commitment to the protection of children, adult at risk and community from abuse, exploitation, and harassment.</p>\n<p><strong>Health and Safety:</strong></p>\n<p>The role holder is required to carry out the duties in accordance with SCI Health and Safety policies and procedures.</p>\n<p><strong>Safeguarding our Staff:</strong></p>\n<p>The post holder is required to carry out the duties in accordance with the SCI anti-harassment policy.</p>\n<p><strong>Counter Fraud</strong></p>\n<p>The role holder is required to take all necessary and appropriate steps to prevent fraud, bribery, and corruption within their areas of responsibility, report and respond to all incidents and concerns and comply with the Counter-Fraud, Bribery and Corruption Policy and Procedure. All types of fraud, bribery, and corruption must be prevented, including where it benefits the organisation (SCI).</p>\n<p><strong>The Organisation</strong></p>\n<p>We employ approximately 25,000 people across the globe and work on the ground in over 100 countries to help children affected by crises, or those that need better healthcare, education and child protection. We also campaign and advocate at the highest levels to realise the right of children and to ensure their voices are heard.</p>\n<p>We are working towards three breakthroughs in how the world treats children by 2030:</p>\n<ul>\n<li>No child dies from preventable causes before their 5th birthday</li>\n<li>All children learn from a quality basic education and that,</li>\n<li>Violence against children is no longer tolerated</li>\n</ul>\n<p>We know that great people make a great organization, and that our employees play a crucial role in helping us achieve our ambitions for children. We value our people and offer a meaningful and rewarding career, along with a collaborative and inclusive workplace where ambition, creativity, and integrity are highly valued.</p>\n<p><strong>Application Information</strong></p>\n<p>Please apply using a cover letter and up-to-date CV as a single document. Please also include details of your current remuneration and salary expectations.</p>\n<p>We need to keep children safe so our selection process, which includes rigorous background checks, reflects our commitment to the protection of children from abuse.</p>\n<p>All employees are expected to carry out their duties in accordance with our global anti-harassment policy.</p>\n<p>Save the Children does not charge a fee at any stage of the recruitment process.</p>\n<p>Reference Check will be done for all candidates- so the application to include reference details. The selected candidate needs to be ready to join within 24 hours of offer.</p>\n<p><strong>Job Info</strong></p>\n<p><strong>Job Identification:</strong> 17757<br />\n<strong>Job Category:</strong> Business Support<br />\n<strong>Apply Before:</strong> 09/26/2026, 11:59 PM<br />\n<strong>Job Schedule:</strong> Full time<br />\n<strong>Locations</strong>: FO &#8211; Nuwakot</p>\n",
-      "protected": false
-    },
-    "author": 2,
-    "featured_media": 8841,
-    "template": "",
-    "meta": {
-      "site-sidebar-layout": "default",
-      "site-content-layout": "",
-      "ast-site-content-layout": "default",
-      "site-content-style": "default",
-      "site-sidebar-style": "default",
-      "ast-global-header-display": "",
-      "ast-banner-title-visibility": "",
-      "ast-main-header-display": "",
-      "ast-hfb-above-header-display": "",
-      "ast-hfb-below-header-display": "",
-      "ast-hfb-mobile-header-display": "",
-      "site-post-title": "",
-      "ast-breadcrumbs-content": "",
-      "ast-featured-img": "",
-      "footer-sml-layout": "",
-      "ast-disable-related-posts": "",
-      "theme-transparent-header-meta": "default",
-      "adv-header-id-meta": "",
-      "stick-header-meta": "default",
-      "header-above-stick-meta": "",
-      "header-main-stick-meta": "",
-      "header-below-stick-meta": "",
-      "astra-migrate-meta-layouts": "set",
-      "ast-page-background-enabled": "default",
-      "ast-page-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-5)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "ast-content-background-meta": {
-        "desktop": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "tablet": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        },
-        "mobile": {
-          "background-color": "var(--ast-global-color-4)",
-          "background-image": "",
-          "background-repeat": "repeat",
-          "background-position": "center center",
-          "background-size": "auto",
-          "background-attachment": "scroll",
-          "background-type": "",
-          "background-media": "",
-          "overlay-type": "",
-          "overlay-color": "",
-          "overlay-opacity": "",
-          "overlay-gradient": ""
-        }
-      },
-      "_promoted": "",
-      "_job_location": "Nuwakot",
-      "_application": "https://hcri.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/17757",
-      "_company_name": "Save the Children",
-      "_company_website": "",
-      "_company_tagline": "",
-      "_company_twitter": "",
-      "_company_video": "",
-      "_filled": 0,
-      "_featured": 0,
-      "_remote_position": 0,
-      "_job_salary": "",
-      "_job_salary_currency": "",
-      "_job_salary_unit": ""
-    },
-    "job-categories": [
-      11
-    ],
-    "job-types": [
-      2
-    ],
-    "job_listing_tag": [
-      92
-    ],
-    "class_list": [
-      "post-37270",
-      "job_listing",
-      "type-job_listing",
-      "status-publish",
-      "has-post-thumbnail",
-      "hentry",
-      "job_listing_tag-nuwakot",
-      "job-type-full-time"
-    ],
-    "_links": {
-      "self": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/37270",
-          "targetHints": {
-            "allow": [
-              "GET"
-            ]
-          }
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
-        }
-      ],
-      "author": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
-        }
-      ],
-      "wp:featuredmedia": [
-        {
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/media/8841"
-        }
-      ],
-      "wp:attachment": [
-        {
-          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=37270"
-        }
-      ],
-      "wp:term": [
-        {
-          "taxonomy": "job_listing_category",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=37270"
-        },
-        {
-          "taxonomy": "job_listing_type",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=37270"
-        },
-        {
-          "taxonomy": "job_listing_tag",
-          "embeddable": true,
-          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=37270"
         }
       ],
       "curies": [

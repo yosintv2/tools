@@ -1,5 +1,942 @@
 [
   {
+    "id": 39975,
+    "date": "2026-10-11T11:18:21",
+    "date_gmt": "2026-10-11T05:33:21",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39975"
+    },
+    "modified": "2026-10-11T11:18:21",
+    "modified_gmt": "2026-10-11T05:33:21",
+    "slug": "assistant-2",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/assistant-2/",
+    "title": {
+      "rendered": "Assistant"
+    },
+    "content": {
+      "rendered": "<p><img fetchpriority=\"high\" decoding=\"async\" class=\"alignnone size-full wp-image-39976\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy.jpeg\" alt=\"\" width=\"1463\" height=\"2048\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy.jpeg 1463w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-214x300.jpeg 214w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-732x1024.jpeg 732w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-768x1075.jpeg 768w, https://merorojgari.com/wp-content/uploads/2026/10/national-life-insurance-company-limited-job-vacancy-1097x1536.jpeg 1097w\" sizes=\"(max-width: 1463px) 100vw, 1463px\" /></p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 39977,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Simara, Rajbiraj",
+      "_application": "",
+      "_company_name": "National Life Insurance Company Limited",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      31
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": [
+      "post-39975",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39975",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/39977"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39975"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39975"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39975"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39975"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 39906,
+    "date": "2026-10-11T08:38:52",
+    "date_gmt": "2026-10-11T02:53:52",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39906"
+    },
+    "modified": "2026-10-11T09:25:03",
+    "modified_gmt": "2026-10-11T03:40:03",
+    "slug": "safaa-kathmandu-nepal-fresher-full-time-business-development-associate",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/safaa-kathmandu-nepal-fresher-full-time-business-development-associate/",
+    "title": {
+      "rendered": "Business Development Associate"
+    },
+    "content": {
+      "rendered": "<p><strong>About SAFAA</strong></p>\n<p>Safaa is a company specializing in waterless vehicle cleaning services. Our mission is to provide an eco-friendly alternative to traditional vehicle washes by using innovative, biodegradable cleaning solutions that eliminate the need for water, reduce environmental impact, and save precious natural resources.</p>\n<p><strong>About the Opportunity</strong></p>\n<p>The Business Development Associate will support Safaa&#8217;s business development and sales activities by identifying potential customers, generating leads, building client relationships, and promoting Safaa&#8217;s waterless vehicle cleaning services. The role will involve customer outreach, field activities, lead generation, follow-ups, market research, and supporting the business development team in expanding Safaa&#8217;s customer base.</p>\n<p><strong>Key Responsibilities</strong></p>\n<ul>\n<li>Identify potential individual and corporate customers for Safaa&#8217;s services.</li>\n<li>Generate new leads through field visits, calls, networking, referrals, and other channels.</li>\n<li>Promote Safaa&#8217;s waterless and eco-friendly vehicle cleaning services.</li>\n<li>Contact potential customers and introduce Safaa&#8217;s services.</li>\n<li>Follow up with leads and maintain regular communication with prospective customers.</li>\n<li>Assist in acquiring new individual and corporate customers.</li>\n<li>Identify potential fleet owners, dealerships, rental companies, businesses, and other B2B customers.</li>\n<li>Support client meetings, presentations, demonstrations, and sales activities.</li>\n<li>Build and maintain positive relationships with existing and potential customers.</li>\n<li>Assist in preparing quotations, proposals, and other sales materials when required.</li>\n<li>Conduct basic market research and identify new business opportunities.</li>\n<li>Monitor customer feedback, competitor activities, and market trends.</li>\n<li>Maintain an updated record of leads, prospects, customer interactions, and sales activities.</li>\n<li>Coordinate with the operations and marketing teams to support smooth customer service.</li>\n<li>Assist in developing strategies to increase customer acquisition and sales.</li>\n<li>Achieve assigned lead generation, customer acquisition, and sales targets.</li>\n<li>Prepare regular updates and reports on business development activities.</li>\n<li>Perform other duties related to sales and business development as assigned by management.</li>\n</ul>\n<p><strong>Submit CV</strong> from here : <a href=\"https://go.forms.app/safaasafachat/bda-application-cv\" target=\"_blank\" rel=\"noopener\">https://go.forms.app/safaasafachat/bda-application-cv</a></p>\n<p><em>or</em></p>\n<p><strong>Apply</strong> from here : <a href=\"https://go.forms.app/safaasafachat/bda-application\" target=\"_blank\" rel=\"noopener\">https://go.forms.app/safaasafachat/bda-application</a></p>\n",
+      "protected": false
+    },
+    "author": 2769,
+    "featured_media": 39907,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Kathmandu",
+      "_application": "https://go.forms.app/safaasafachat/bda-application",
+      "_company_name": "Safaa",
+      "_company_website": "https://safaanp.com/",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      147,
+      19
+    ],
+    "job-types": [
+      38,
+      2
+    ],
+    "job_listing_tag": [
+      216,
+      79
+    ],
+    "class_list": [
+      "post-39906",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job_listing_tag-bagmati-pradesh",
+      "job_listing_tag-kathmandu",
+      "job-type-fresher",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39906",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2769"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/39907"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39906"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39906"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39906"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39906"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 39899,
+    "date": "2026-10-11T08:07:12",
+    "date_gmt": "2026-10-11T02:22:12",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39899"
+    },
+    "modified": "2026-10-11T09:27:47",
+    "modified_gmt": "2026-10-11T03:42:47",
+    "slug": "soaltee-foam-house-chipledhunga-09pokharakaskinepal-full-time-receiptionist",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/soaltee-foam-house-chipledhunga-09pokharakaskinepal-full-time-receiptionist/",
+    "title": {
+      "rendered": "Receptionist"
+    },
+    "content": {
+      "rendered": "<p><strong><span style=\"text-decoration: underline;\">Key Roles and Responsibilities</span></strong></p>\n<ul>\n<li>Welcome and greet customers, visitors, and business representatives professionally.</li>\n<li>Attend incoming telephone calls and transfer them to the concerned department or staff.</li>\n<li>Provide basic information about the company’s products, services, and showroom facilities.</li>\n<li>Direct customers to the appropriate sales staff or concerned department.</li>\n<li>Maintain visitor records, incoming and outgoing communication, and other front-desk registers.</li>\n<li>Receive and distribute letters, documents, parcels, and other deliveries.</li>\n<li>Coordinate with the HR, Sales, Accounts, and other departments as required.</li>\n<li>Assist in preparing, organizing, and maintaining documents and office records.</li>\n<li>Ensure the reception area remains clean, organized, and presentable.</li>\n<li>Handle customer inquiries politely and refer complaints or complex issues to the concerned personnel.</li>\n<li>Maintain confidentiality of company information and follow company rules and procedures.</li>\n<li>Perform other reception and administrative duties assigned by the management.</li>\n</ul>\n<p><strong><span style=\"text-decoration: underline;\">Qualification and Experience</span></strong></p>\n<ul>\n<li>Minimum +2 (Intermediate) or equivalent qualification.</li>\n<li>Experience in reception, customer service, or office administration will be an advantage.</li>\n<li>Freshers with good communication skills may also apply.</li>\n</ul>\n<p><strong><span style=\"text-decoration: underline;\">Required Skills and Competencies</span></strong></p>\n<ul>\n<li>Good communication and interpersonal skills.</li>\n<li>Polite, friendly, and professional behavior.</li>\n<li>Basic computer knowledge, including MS Word, Excel, and email.</li>\n<li>Good telephone handling and customer service skills.</li>\n<li>Punctual, organized, responsible, and presentable.</li>\n<li>Ability to coordinate effectively with different departments.</li>\n</ul>\n<p><strong>Location:</strong> Chipledhunga-09, Pokhara</p>\n",
+      "protected": false
+    },
+    "author": 3512,
+    "featured_media": 39902,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Pokhara",
+      "_application": "hr.soalteefoam@gmail.com",
+      "_company_name": "Soaltee Foam House",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      29
+    ],
+    "job-types": [
+      38,
+      2
+    ],
+    "job_listing_tag": [],
+    "class_list": [
+      "post-39899",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job-type-fresher",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39899",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/3512"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/39902"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39899"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39899"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39899"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39899"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 39956,
+    "date": "2026-10-11T07:18:01",
+    "date_gmt": "2026-10-11T01:33:01",
+    "guid": {
+      "rendered": "https://merorojgari.com/?post_type=job_listing&#038;p=39956"
+    },
+    "modified": "2026-10-11T07:18:01",
+    "modified_gmt": "2026-10-11T01:33:01",
+    "slug": "auxiliary-nurse-midwife-anm-11",
+    "status": "publish",
+    "type": "job_listing",
+    "link": "https://merorojgari.com/job/auxiliary-nurse-midwife-anm-11/",
+    "title": {
+      "rendered": "Auxiliary Nurse Midwife (ANM)"
+    },
+    "content": {
+      "rendered": "<p><img decoding=\"async\" class=\"alignnone size-full wp-image-39957\" src=\"https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10.png\" alt=\"\" width=\"1240\" height=\"1614\" srcset=\"https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10.png 1240w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-230x300.png 230w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-787x1024.png 787w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-768x1000.png 768w, https://merorojgari.com/wp-content/uploads/2026/10/gharapjhong-Gaunpalika-job-10-1180x1536.png 1180w\" sizes=\"(max-width: 1240px) 100vw, 1240px\" /><br />\n<strong>Position</strong>: Auxiliary Nurse Midwife (ANM)<br />\n<strong>No. of Vacancy:</strong> 1<br />\n<strong>Location</strong>: Jomsom , Mustang<br />\n<strong>Qualification</strong>: Passed ANM (Auxiliary Nurse Midwife) or equivalent from a recognized educational institution.<br />\n<strong>Application Fee:</strong> 500</p>\n<p><strong>Gharapjhong Gaunpalika</strong></p>\n<p>For additional information, you can contact the office telephone number<strong> 069-440016</strong> or the Health Section Chief&#8217;s contact number <strong>9857650034</strong></p>\n",
+      "protected": false
+    },
+    "author": 2,
+    "featured_media": 27,
+    "template": "",
+    "meta": {
+      "site-sidebar-layout": "default",
+      "site-content-layout": "",
+      "ast-site-content-layout": "default",
+      "site-content-style": "default",
+      "site-sidebar-style": "default",
+      "ast-global-header-display": "",
+      "ast-banner-title-visibility": "",
+      "ast-main-header-display": "",
+      "ast-hfb-above-header-display": "",
+      "ast-hfb-below-header-display": "",
+      "ast-hfb-mobile-header-display": "",
+      "site-post-title": "",
+      "ast-breadcrumbs-content": "",
+      "ast-featured-img": "",
+      "footer-sml-layout": "",
+      "ast-disable-related-posts": "",
+      "theme-transparent-header-meta": "default",
+      "adv-header-id-meta": "",
+      "stick-header-meta": "default",
+      "header-above-stick-meta": "",
+      "header-main-stick-meta": "",
+      "header-below-stick-meta": "",
+      "astra-migrate-meta-layouts": "set",
+      "ast-page-background-enabled": "default",
+      "ast-page-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-5)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "ast-content-background-meta": {
+        "desktop": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "tablet": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        },
+        "mobile": {
+          "background-color": "var(--ast-global-color-4)",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "",
+          "background-media": "",
+          "overlay-type": "",
+          "overlay-color": "",
+          "overlay-opacity": "",
+          "overlay-gradient": ""
+        }
+      },
+      "_promoted": "",
+      "_job_location": "Mustang",
+      "_application": "",
+      "_company_name": "Gharapjhong Gaunpalika",
+      "_company_website": "",
+      "_company_tagline": "",
+      "_company_twitter": "",
+      "_company_video": "",
+      "_filled": 0,
+      "_featured": 0,
+      "_remote_position": 0,
+      "_job_salary": "",
+      "_job_salary_currency": "",
+      "_job_salary_unit": ""
+    },
+    "job-categories": [
+      14
+    ],
+    "job-types": [
+      2
+    ],
+    "job_listing_tag": [
+      86
+    ],
+    "class_list": [
+      "post-39956",
+      "job_listing",
+      "type-job_listing",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "job_listing_tag-mustang",
+      "job-type-full-time"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings/39956",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-listings"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/types/job_listing"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/users/2"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/media/27"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://merorojgari.com/wp-json/wp/v2/media?parent=39956"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "job_listing_category",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-categories?post=39956"
+        },
+        {
+          "taxonomy": "job_listing_type",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job-types?post=39956"
+        },
+        {
+          "taxonomy": "job_listing_tag",
+          "embeddable": true,
+          "href": "https://merorojgari.com/wp-json/wp/v2/job_listing_tag?post=39956"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 39953,
     "date": "2026-10-11T06:43:21",
     "date_gmt": "2026-10-11T00:58:21",
