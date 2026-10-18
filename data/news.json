@@ -1,5 +1,465 @@
 [
   {
+    "id": 596334,
+    "date": "2026-10-18T07:00:00",
+    "date_gmt": "2026-10-18T01:15:00",
+    "guid": {
+      "rendered": "https://english.onlinekhabar.com/?p=596334"
+    },
+    "modified": "2026-10-17T16:46:12",
+    "modified_gmt": "2026-10-17T11:01:12",
+    "slug": "mathocalypse-openais-result",
+    "status": "publish",
+    "type": "post",
+    "link": "https://english.onlinekhabar.com/mathocalypse-openais-result.html",
+    "title": {
+      "rendered": "Is this the \u2018mathocalypse\u2019? Why OpenAI\u2019s latest results dump has left mathematicians in\u00a0shock"
+    },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"911\" height=\"512\" src=\"http://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI.jpg\" alt=\"\" class=\"wp-image-596335\" srcset=\"https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI.jpg 911w, https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI-300x169.jpg 300w, https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI-768x432.jpg 768w\" sizes=\"auto, (max-width: 911px) 100vw, 911px\" /></figure>\n\n\n\n<p class=\"wp-block-paragraph\">Earlier this week, OpenAI <a href=\"https://openai.com/index/sharing-ai-progress-in-mathematics/\" target=\"_blank\" rel=\"noopener\">published</a> a <a href=\"https://github.com/openai/math/tree/main\" target=\"_blank\" rel=\"noopener\">trove of hundreds of mathematical results</a> it claimed could \u201cpush the frontier of human knowledge\u201d. Produced largely by an unreleased artificial intelligence (AI) model, the 722 papers relate to 372 open problems covering everything from algebra and geometry to theoretical computer science.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Several papers have since been <a href=\"https://github.com/openai/math/blob/main/history.md\" target=\"_blank\" rel=\"noopener\">retracted or amended</a>, but the sheer scale and form of the release \u2013 variously described as a <a href=\"https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github\" target=\"_blank\" rel=\"noopener\">drop</a>, a <a href=\"https://www.science.org/content/article/watch-what-s-deal-openai-s-massive-dump-math-papers\" target=\"_blank\" rel=\"noopener\">dump</a>, a <a href=\"https://www.theatlantic.com/technology/2026/10/openai-math-proofs-future/688940/\" target=\"_blank\" rel=\"noopener\">carpet bombing</a> and a <a href=\"https://scottaaronson.blog/?p=10169\" target=\"_blank\" rel=\"noopener\">mathocalypse</a> \u2013 have sent shockwaves through the mathematical community.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Some papers claim significant advances on high-profile, long-standing problems including the <a href=\"https://en.wikipedia.org/wiki/Riemann_hypothesis\" target=\"_blank\" rel=\"noopener\">Riemann hypothesis</a> and the <a href=\"https://en.wikipedia.org/wiki/Birch_and_Swinnerton-Dyer_conjecture\" target=\"_blank\" rel=\"noopener\">Birch\u2013Swinnerton-Dyer conjecture</a>, each of which carries a bounty of US$1 million (A$1.4 million) if solved as one of the seven <a href=\"https://www.claymath.org/millennium-problems/\" target=\"_blank\" rel=\"noopener\">Millenium Prize Problems</a>.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Why has OpenAI done this? And can we trust the claimed solutions are correct? Neither of these questions seem to have particularly obvious answers.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A strange way to enable progress</h2>\n\n\n\n<p class=\"wp-block-paragraph\">OpenAI <a href=\"https://openai.com/index/sharing-ai-progress-in-mathematics/\" target=\"_blank\" rel=\"noopener\">says</a> its motivation in releasing the huge trove of results is to \u201cenable further progress in mathematics\u201d. However, the manner of the release is not necessarily conducive to this goal.</p>\n\n\n\n<p class=\"wp-block-paragraph\">A senior colleague of mine found one of his favourite problems among those solved and attempted to read the accompanying paper. He told me it was so unintelligible that, had he received it as an editor at a mathematics journal, \u201cit would have gone straight into the bin\u201d.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Even OpenAI\u2019s own large language model ChatGPT (GPT-5.6 Sol, to be precise) was skeptical when I asked it, describing at least one of the high-profile results as \u201ca serious hallucination \u2026 [which] should never be cited, submitted, or circulated as a proof without a complete expert audit\u201d.</p>\n\n\n\n<p class=\"wp-block-paragraph\">In other words, despite the groundbreaking nature of some of the results obtained, the way at least some of the accompanying papers are written is not comprehensible even to experts.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Changing the conversation</h2>\n\n\n\n<p class=\"wp-block-paragraph\">OpenAI also may be seeking to move the discussion on from its last big mathematical publication. In September, the company published a controversial claimed solution of a case of the <a href=\"https://theconversation.com/openai-claims-another-huge-mathematical-result-amid-fights-over-credit-ethics-and-privacy-291575\" target=\"_blank\" rel=\"noopener\">Navier-Stokes problem</a>, another $1,000,000 Millenium Problem.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Mathematicians Tristan Buckmaster and Levent Alp\u00f6ge, who had been working on the problem themselves, <a href=\"https://cims.nyu.edu/%7Etristanb/statement.pdf\" target=\"_blank\" rel=\"noopener\">alleged</a> OpenAI had accessed their data and used their ideas, then devoted some US$15 million of computing power to find a solution. OpenAI has <a href=\"https://openai.com/index/navier-stokes-solution/\" target=\"_blank\" rel=\"noopener\">denied</a> these allegations.</p>\n\n\n\n<p class=\"wp-block-paragraph\">One other possible broader motivation for OpenAI is the hot topic of artificial general intelligence (AGI). This is a hypothetical type of AI that could <a href=\"https://theconversation.com/what-is-ai-superintelligence-could-it-destroy-humanity-and-is-it-really-almost-here-240682\" target=\"_blank\" rel=\"noopener\">surpass humans in basically all cognitive tasks</a>.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Mathematics \u2013 especially pure, abstract mathematics \u2013 is a discipline that largely relies on often very complex arguments to prove the truth of mathematical statements. It is often seen as a subject that is very difficult for most people.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Hence, the ability of OpenAI\u2019s models to do research-level mathematics may lend credence to the idea the models are approaching the grail of AGI. This idea could benefit OpenAI ahead of the company\u2019s planned stock market launch. The company reportedly hopes to achieve <a href=\"https://finance.yahoo.com/technology/ai/articles/openai-targets-30-billion-mega-203449336.html\" target=\"_blank\" rel=\"noopener\">a valuation of up to US$1.4 trillion</a> \u2013 about 4% of the entire US gross domestic product.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How can we trust the mathematics is correct?</h2>\n\n\n\n<p class=\"wp-block-paragraph\">One of the key features of mathematics (pure mathematics especially) is its foundation in objective truth. Statements are either true or false, and there is almost never any ambiguity.</p>\n\n\n\n<p class=\"wp-block-paragraph\">For centuries, we have agreed mathematical truth by consensus among mathematicians. In particular, new work is refereed by experts who check it is correct before it is published and becomes part of the \u201cliterature\u201d.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This process can be very time consuming. Some longer, technical papers can take years to review.</p>\n\n\n\n<p class=\"wp-block-paragraph\">So the eventual test of OpenAI\u2019s results will be what the mathematical community makes of them after proper examination.</p>\n\n\n\n<p class=\"wp-block-paragraph\">OpenAI has already <a href=\"https://github.com/openai/math/blob/main/history.md\" target=\"_blank\" rel=\"noopener\">retracted three of the papers</a> due to an elementary error and amended several others due to mistakes that invalidated their results. This suggests, at the least, a lack of sufficient vetting before publication.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Machines checking machines</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Over the past decade or more, there has been a push to \u201cformalise\u201d results with software systems such as <a href=\"https://lean-lang.org/\" target=\"_blank\" rel=\"noopener\">Lean</a>. These systems build up mathematics from basic principles or axioms, which means the software can check each step of logic in a result.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Until recently, formalisation efforts were largely focused towards theory and problems that had already been solved. One early example was the 2008 formalisation of the decades-old <a href=\"https://www.ams.org/notices/200811/tx081101382p.pdf\" target=\"_blank\" rel=\"noopener\">four colour theorem</a> in graph theory, about the minimum number of colours required to colour a map.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Formalising a result takes a lot of knowledge and effort. However, AI systems are now being used for \u201cautoformalisation\u201d \u2013 automatically translating a result into a machine-checkable proof.</p>\n\n\n\n<p class=\"wp-block-paragraph\">To encourage confidence in the correctness of its results, OpenAI claims to have <a href=\"https://github.com/openai/math/blob/main/lean/formalization.yaml\" target=\"_blank\" rel=\"noopener\">formalised</a> 300 of the main results at the time of writing.</p>\n\n\n\n<p class=\"wp-block-paragraph\">However, not all formalisations are implemented correctly \u2013 and <a href=\"https://arxiv.org/pdf/2610.08144\" target=\"_blank\" rel=\"noopener\">there is past evidence of problems</a> with AI-generated formalisations, including that of the Navier-Stokes problem. It is currently unclear whether the mathematical community will accept OpenAI\u2019s formalisations.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Excitement \u2013 and concern</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Reactions to the OpenAI drop have been mixed, ranging <a href=\"https://x.com/__alpoge__/status/2107616859595981117\">from</a> \u201cobviously the most significant moment in mathematical history\u201d <a href=\"https://x.com/gro_tsen/status/2108217461577294035\">to</a> \u201cmathematicians aren\u2019t so thrilled at this giant pile of turd dumped at our doorstep\u201d.</p>\n\n\n\n<p class=\"wp-block-paragraph\">There is certainly great excitement about progress towards important mathematical problems in a variety of fields as experts attempt go over the results with a fine-toothed comb.</p>\n\n\n\n<p class=\"wp-block-paragraph\">For many, this excitement is also mixed with uncertainty and concern: what does the volume and speed of these discoveries mean for the future of mathematics research, and how we are contributing to it? And who should carry the labour of trying to make sense of arguments that initially read as AI slop?</p>\n\n\n\n<p class=\"wp-block-paragraph\">These papers, along with other AI-assisted developments, have forced the mathematical community to reflect on what we value. This is particularly important for students and early career researchers, who must confront the idea of their research being scooped by an ambitious AI user, or how their work will be valued.</p>\n\n\n\n<p class=\"wp-block-paragraph\">And that conversation will continue long after the dust has settled on this latest tranche of discoveries.</p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n\n\n\n<p class=\"wp-block-paragraph\">This article is republished from <a href=\"https://theconversation.com/\" target=\"_blank\" rel=\"noopener\">The Conversation</a> under a Creative Commons license. Read the <a href=\"https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837\" target=\"_blank\" rel=\"noreferrer noopener\">original article</a>.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Earlier this week, OpenAI published a trove of hundreds of mathematical results it claimed could \u201cpush the frontier of human knowledge\u201d. Produced largely by an unreleased artificial intelligence (AI) model, the 722 papers relate to 372 open problems covering everything from algebra and geometry to theoretical computer science. Several papers have since been retracted or [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 17,
+    "featured_media": 596335,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "footnotes": ""
+    },
+    "categories": [
+      40401,
+      29
+    ],
+    "tags": [
+      4682,
+      41516
+    ],
+    "class_list": [
+      "post-596334",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-international",
+      "category-just-in",
+      "tag-artificial-intelligence",
+      "tag-open-ai"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596334",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/17"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=596334"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596334/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 596336,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596334/revisions/596336"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/596335"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media?parent=596334"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories?post=596334"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags?post=596334"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 17,
+          "name": "Shashwat Pant",
+          "url": "",
+          "description": "",
+          "link": "https://english.onlinekhabar.com/author/shashwat",
+          "slug": "shashwat",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/22aafcf18f0f5f1574f3f6e956d4bf414ba70194c50db1012f3fe14922ffda1e?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/22aafcf18f0f5f1574f3f6e956d4bf414ba70194c50db1012f3fe14922ffda1e?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/22aafcf18f0f5f1574f3f6e956d4bf414ba70194c50db1012f3fe14922ffda1e?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/17",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 596335,
+          "date": "2026-10-17T12:39:23",
+          "slug": "open-ai",
+          "type": "attachment",
+          "link": "https://english.onlinekhabar.com/mathocalypse-openais-result.html/open-ai",
+          "title": {
+            "rendered": "Open AI"
+          },
+          "author": 17,
+          "featured_media": 0,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "OpenAI",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 911,
+            "height": 512,
+            "file": "2026/10/Open-AI.jpg",
+            "filesize": 36189,
+            "sizes": {
+              "medium": {
+                "file": "Open-AI-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 6494,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI-300x169.jpg"
+              },
+              "thumbnail": {
+                "file": "Open-AI-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3712,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "Open-AI-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 22554,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI-768x432.jpg"
+              },
+              "full": {
+                "file": "Open-AI.jpg",
+                "width": 911,
+                "height": 512,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": [],
+              "alt": ""
+            }
+          },
+          "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/Open-AI.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/596335",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/17"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=596335"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 596334,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596334"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 29,
+            "link": "https://english.onlinekhabar.com/category/just-in",
+            "name": "Cover",
+            "slug": "just-in",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/29",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=29"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 40401,
+            "link": "https://english.onlinekhabar.com/category/international",
+            "name": "International",
+            "slug": "international",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/40401",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=40401"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "id": 4682,
+            "link": "https://english.onlinekhabar.com/tag/artificial-intelligence",
+            "name": "artificial intelligence",
+            "slug": "artificial-intelligence",
+            "taxonomy": "post_tag",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags/4682",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?tags=4682"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 41516,
+            "link": "https://english.onlinekhabar.com/tag/open-ai",
+            "name": "Open AI",
+            "slug": "open-ai",
+            "taxonomy": "post_tag",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags/41516",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?tags=41516"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
     "id": 596339,
     "date": "2026-10-17T16:37:33",
     "date_gmt": "2026-10-17T10:52:33",
