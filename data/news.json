@@ -1,5 +1,845 @@
 [
   {
+    "id": 596454,
+    "date": "2026-10-22T10:01:00",
+    "date_gmt": "2026-10-22T04:16:00",
+    "guid": {
+      "rendered": "https://english.onlinekhabar.com/?p=596454"
+    },
+    "modified": "2026-10-22T10:01:01",
+    "modified_gmt": "2026-10-22T04:16:01",
+    "slug": "ai-major-php-vulnerabilities",
+    "status": "publish",
+    "type": "post",
+    "link": "https://english.onlinekhabar.com/ai-major-php-vulnerabilities.html",
+    "title": {
+      "rendered": "AI discovers major PHP vulnerabilities, government websites in various countries including Nepal shut down"
+    },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"574\" src=\"http://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1.jpg\" alt=\"\" class=\"wp-image-596455\" srcset=\"https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1.jpg 1024w, https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1-300x168.jpg 300w, https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1-768x431.jpg 768w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /><figcaption class=\"wp-element-caption\">AI-generated image </figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">Kathmandu, October 22 s</p>\n\n\n\n<p class=\"wp-block-paragraph\">Government websites in various countries, including Nepal, have gone offline after researchers found two serious cybersecurity vulnerabilities in <a href=\"https://www.php.net/\" data-type=\"link\" data-id=\"https://www.php.net/\" target=\"_blank\" rel=\"noreferrer noopener\">PHP</a>, the programming language.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Cybersecurity agencies had urged the organisations concerned to apply PHP\u2019s security updates immediately and, if they could not, to temporarily keep their websites shut down.</p>\n\n\n\n<p class=\"wp-block-paragraph\">A security update fixing the vulnerabilities was released on Wednesday afternoon. However, organisations that could not update in time were advised to take their websites offline temporarily.</p>\n\n\n\n<p class=\"wp-block-paragraph\">As of this Thursday morning, Nepal\u2019s .gov.np websites are not opening. The websites of the Office of the President, the Office of the Prime Minister, various ministries and municipalities are not accessible.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Citing the security risk, the Finnish government has also temporarily shut down its public web services. In the UK, the City of Edinburgh Council and the BBC have taken some of their web pages offline. The Netherlands\u2019 cybersecurity agency has also said it is temporarily taking its website down because of the risk.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The US National Security Agency (NSA) has likewise advised, via the social media platform X, that organisations unable to apply the security update keep their systems offline.</p>\n\n\n\n<p class=\"wp-block-paragraph\">According to the NSA, the vulnerabilities could give attackers direct access to a server\u2019s file system or database. This carries the risk of sensitive information being stolen or unauthorised access to the system being established.</p>\n\n\n\n<h2 class=\"wp-block-heading\">AI found the serious vulnerabilities</h2>\n\n\n\n<p class=\"wp-block-paragraph\">The two security flaws were discovered with the help of artificial intelligence (AI). The cybersecurity company Wiz has described them as among the most serious vulnerabilities yet found using AI.</p>\n\n\n\n<p class=\"wp-block-paragraph\">With the rapid advance of AI, the field of cybersecurity is also undergoing major change. AI is helping identify vulnerabilities hidden in software. But it is equally important to take timely security measures to prevent such vulnerabilities from being exploited.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Meanwhile, the White House has said that US federal agencies are working with leading AI labs to resolve the security problem. The collaboration aims to reduce risk and speed up the rollout of security updates.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Cybersecurity agencies have urged the organisations concerned to apply PHP\u2019s security update immediately and, if they cannot, to temporarily take vulnerable systems offline.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Kathmandu, October 22 s Government websites in various countries, including Nepal, have gone offline after researchers found two serious cybersecurity vulnerabilities in PHP, the programming language. Cybersecurity agencies had urged the organisations concerned to apply PHP\u2019s security updates immediately and, if they could not, to temporarily keep their websites shut down. A security update fixing [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 10,
+    "featured_media": 596455,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "footnotes": ""
+    },
+    "categories": [
+      29,
+      3989
+    ],
+    "tags": [
+      41525
+    ],
+    "class_list": [
+      "post-596454",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-just-in",
+      "category-technology",
+      "tag-php"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596454",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/10"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=596454"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596454/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 596457,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596454/revisions/596457"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/596455"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media?parent=596454"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories?post=596454"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags?post=596454"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 10,
+          "name": "Prasun Sangroula",
+          "url": "",
+          "description": "",
+          "link": "https://english.onlinekhabar.com/author/prasun",
+          "slug": "prasun",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/a511bd5608dd401602a205eb324821bf7d7614448abdff2148bb2117aacd6785?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/a511bd5608dd401602a205eb324821bf7d7614448abdff2148bb2117aacd6785?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/a511bd5608dd401602a205eb324821bf7d7614448abdff2148bb2117aacd6785?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/10",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 596455,
+          "date": "2026-10-22T09:59:17",
+          "slug": "no-internet-1024x574",
+          "type": "attachment",
+          "link": "https://english.onlinekhabar.com/ai-major-php-vulnerabilities.html/no-internet-1024x574",
+          "title": {
+            "rendered": "No-Internet-1024&#215;574"
+          },
+          "author": 10,
+          "featured_media": 0,
+          "caption": {
+            "rendered": "<p>AI generated image </p>\n"
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1024,
+            "height": 574,
+            "file": "2026/10/No-Internet-1024x574-1.jpg",
+            "filesize": 74095,
+            "sizes": {
+              "medium": {
+                "file": "No-Internet-1024x574-1-300x168.jpg",
+                "width": 300,
+                "height": 168,
+                "filesize": 11936,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1-300x168.jpg"
+              },
+              "thumbnail": {
+                "file": "No-Internet-1024x574-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 6149,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "No-Internet-1024x574-1-768x431.jpg",
+                "width": 768,
+                "height": 431,
+                "filesize": 47054,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1-768x431.jpg"
+              },
+              "full": {
+                "file": "No-Internet-1024x574-1.jpg",
+                "width": 1024,
+                "height": 574,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": [],
+              "alt": ""
+            }
+          },
+          "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/10/No-Internet-1024x574-1.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/596455",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/10"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=596455"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 596454,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596454"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 29,
+            "link": "https://english.onlinekhabar.com/category/just-in",
+            "name": "Cover",
+            "slug": "just-in",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/29",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=29"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 3989,
+            "link": "https://english.onlinekhabar.com/category/technology",
+            "name": "Technology",
+            "slug": "technology",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/3989",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=3989"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "id": 41525,
+            "link": "https://english.onlinekhabar.com/tag/php",
+            "name": "php",
+            "slug": "php",
+            "taxonomy": "post_tag",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags/41525",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?tags=41525"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "id": 596452,
+    "date": "2026-10-22T09:51:40",
+    "date_gmt": "2026-10-22T04:06:40",
+    "guid": {
+      "rendered": "https://english.onlinekhabar.com/?p=596452"
+    },
+    "modified": "2026-10-22T09:51:40",
+    "modified_gmt": "2026-10-22T04:06:40",
+    "slug": "rain-likely-in-many-parts",
+    "status": "publish",
+    "type": "post",
+    "link": "https://english.onlinekhabar.com/rain-likely-in-many-parts.html",
+    "title": {
+      "rendered": "Rain likely in many parts of Nepal from next week"
+    },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"668\" src=\"http://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1.jpg\" alt=\"rain, rainfall, rains\" class=\"wp-image-592200\" srcset=\"https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1.jpg 1024w, https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1-300x196.jpg 300w, https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1-768x501.jpg 768w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p class=\"wp-block-paragraph\">Kathmandu, October 22 </p>\n\n\n\n<p class=\"wp-block-paragraph\">Meteorologists have indicated that rain is likely in many parts of Nepal from next week. The chance of rain stems from the influence of a low-pressure system that has developed in the Bay of Bengal.</p>\n\n\n\n<p class=\"wp-block-paragraph\">According to meteorologist Dr Binod Pokhrel, various weather forecast models show that rain could fall for about a week starting next Tuesday.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Sharing the average forecast chart of four weather models on Facebook, he said there are signs of heavy rain in some places.</p>\n\n\n\n<p class=\"wp-block-paragraph\">He said the models give differing estimates of where the rain will fall and how much. It is therefore difficult at this point to say exactly how much rain will fall in which place. As the forecast may change in the coming days, he said people should keep an eye on the latest updates.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Advice to harvest paddy early</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Given the likelihood of rain, he has advised farmers preparing to harvest paddy to plan according to the weather forecast.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Farmers who had planned to start harvesting from next Tuesday should, if possible, cut and safely store the paddy before then, or prepare to harvest only after the rain stops, he said.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The meteorologist also said farmers should be extra cautious, as hailstorms may accompany the rain in some places.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Similarly, as adverse weather in the Himalayan region could raise risks, those heading out on journeys or treks have been urged to take special care. Those preparing to travel or trek have been advised to plan based on regular weather forecasts and official information.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Because the forecast may still change, farmers, travellers and residents of the concerned areas need to follow the latest weather updates to protect themselves from the possible effects of the rain.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Kathmandu, October 22 Meteorologists have indicated that rain is likely in many parts of Nepal from next week. The chance of rain stems from the influence of a low-pressure system that has developed in the Bay of Bengal. According to meteorologist Dr Binod Pokhrel, various weather forecast models show that rain could fall for about [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 10,
+    "featured_media": 592200,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "footnotes": ""
+    },
+    "categories": [
+      29,
+      12014
+    ],
+    "tags": [
+      7857
+    ],
+    "class_list": [
+      "post-596452",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-just-in",
+      "category-climate",
+      "tag-rain"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596452",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/10"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=596452"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596452/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 596453,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/596452/revisions/596453"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/592200"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media?parent=596452"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories?post=596452"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags?post=596452"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 10,
+          "name": "Prasun Sangroula",
+          "url": "",
+          "description": "",
+          "link": "https://english.onlinekhabar.com/author/prasun",
+          "slug": "prasun",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/a511bd5608dd401602a205eb324821bf7d7614448abdff2148bb2117aacd6785?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/a511bd5608dd401602a205eb324821bf7d7614448abdff2148bb2117aacd6785?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/a511bd5608dd401602a205eb324821bf7d7614448abdff2148bb2117aacd6785?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/10",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 592200,
+          "date": "2026-09-23T12:51:22",
+          "slug": "rainfall-raining-1024x668",
+          "type": "attachment",
+          "link": "https://english.onlinekhabar.com/rains-get-for-kathmandu.html/rainfall-raining-1024x668",
+          "title": {
+            "rendered": "Rainfall-Raining-1024&#215;668"
+          },
+          "author": 10,
+          "featured_media": 0,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "rain, rainfall, rains",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1024,
+            "height": 668,
+            "file": "2026/09/Rainfall-Raining-1024x668-1.jpg",
+            "filesize": 137354,
+            "sizes": {
+              "medium": {
+                "file": "Rainfall-Raining-1024x668-1-300x196.jpg",
+                "width": 300,
+                "height": 196,
+                "filesize": 18413,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1-300x196.jpg"
+              },
+              "thumbnail": {
+                "file": "Rainfall-Raining-1024x668-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 8123,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "Rainfall-Raining-1024x668-1-768x501.jpg",
+                "width": 768,
+                "height": 501,
+                "filesize": 84757,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1-768x501.jpg"
+              },
+              "full": {
+                "file": "Rainfall-Raining-1024x668-1.jpg",
+                "width": 1024,
+                "height": 668,
+                "mime_type": "image/jpeg",
+                "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": [],
+              "alt": ""
+            }
+          },
+          "source_url": "https://english.onlinekhabar.com/wp-content/uploads/2026/09/Rainfall-Raining-1024x668-1.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media/592200",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/users/10"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/comments?post=592200"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 592196,
+                "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts/592196"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 12014,
+            "link": "https://english.onlinekhabar.com/category/nature/climate",
+            "name": "Climate &amp; weather",
+            "slug": "climate",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/12014",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/11841"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=12014"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 29,
+            "link": "https://english.onlinekhabar.com/category/just-in",
+            "name": "Cover",
+            "slug": "just-in",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories/29",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?categories=29"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "id": 7857,
+            "link": "https://english.onlinekhabar.com/tag/rain",
+            "name": "rain",
+            "slug": "rain",
+            "taxonomy": "post_tag",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags/7857",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/tags"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://english.onlinekhabar.com/wp-json/wp/v2/posts?tags=7857"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
     "id": 596433,
     "date": "2026-10-21T15:00:00",
     "date_gmt": "2026-10-21T09:15:00",
