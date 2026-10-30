@@ -1,5 +1,33 @@
 [
     {
+        "title": "A new vulnerability can brick your Android phone when receiving the SMS of Death",
+        "link": "https://www.gsmarena.com/a_new_android_vulnerability_can_leave_your_phone_unusable_when_receiving_the_sms_of_death-news-75288.php",
+        "pubDate": "Fri, 30 Oct 2026 21:03:02 +0100",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/25/02/google-messages-whatsapp-video-call/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Security researcher Mark Blaszczyk found a new scary vulnerability that affects phones running Android 12 or later. It involves receiving a specially crafted WAP Push SMS message that Android's telephony framework cannot properly process.\n\n\n\nThe tricky part is that instead of displaying the message in the inbox, Android tries to process it in the background. This triggers an error that can cause all sorts of issues. Active phone calls start to disconnect, the device temporarily loses cellular service, and when receiving multiple messages like this, the device can even become unusable....</p>",
+        "category": "news"
+    },
+    {
+        "title": "Oppo Find X10 review",
+        "link": "https://www.gsmarena.com/oppo_find_x10-review-3007.php",
+        "pubDate": "Fri, 30 Oct 2026 20:39:07 +0100",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"151\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/reviews/26/oppo-find-x10/-347x151/gsmarena_001.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"348\" /> <p></p>",
+        "category": "reviews"
+    },
+    {
+        "title": "Samsung announces another record-breaking quarter, driven by its memory business",
+        "link": "https://www.gsmarena.com/samsung_announces_another_recordbreaking_quarter_driven_by_its_memory_business-news-75291.php",
+        "pubDate": "Fri, 30 Oct 2026 19:31:02 +0100",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/samsung-q3-report/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Samsung Electronics just announced another all-time high quarterly result – revenue grew by 14% quarter-on-quarter (compared to Q3). The press release claims that Samsung Electronics is the world’s first tech company to exceed KRW 100 trillion in quarterly operating profit – specifically, it took in KRW 107.4 trillion in operating profit.\n\nDevice Solutions (DS), the division that makes memory chips, is at the heart of all this growth. It posted KRW 147.1 trillion in consolidated revenue and a whopping KRW 106.5 trillion in operating profit – another record-breaking quarter for the DS...</p>",
+        "category": "news"
+    },
+    {
+        "title": "Oppo Reno17 series confirmed to launch next month, blind pre-orders go live",
+        "link": "https://www.gsmarena.com/oppo_reno17_series_confirmed_to_launch_next_month_blind_preorders_go_live-news-75287.php",
+        "pubDate": "Fri, 30 Oct 2026 18:02:02 +0100",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/oppo-reno17-pad-air-6-watch-5-launch/-184x111/gsmarena_00.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Oppo’s upcoming Reno17 series has been the subject of several leaks and rumors over the past few weeks. While a recent rumor pointed to a launch next month, Oppo has now officially confirmed the timeline.\n\nIn a post on Weibo, Oppo's official account confirmed that the Reno17 series will launch in China next month, although the company has yet to announce an exact date. Interested buyers can already visit Oppo's online store to pre-reserve the upcoming smartphones.\n\n\n\nAlongside the Reno17 series, Oppo will also introduce its new Watch 5 smartwatch and Pad Air 6 tablet. Both devices are...</p>",
+        "category": "news"
+    },
+    {
         "title": "The new iPad mini's battery capacity is no longer a mystery",
         "link": "https://www.gsmarena.com/the_new_ipad_minis_battery_capacity_is_no_longer_a_mystery-news-75283.php",
         "pubDate": "Fri, 30 Oct 2026 16:38:02 +0100",
@@ -45,7 +73,7 @@
         "title": "vivo S70's full camera details emerge in new leak",
         "link": "https://www.gsmarena.com/vivo_s70s_full_camera_details_emerge_in_new_leak-news-75279.php",
         "pubDate": "Fri, 30 Oct 2026 09:04:02 +0100",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/vivo-s70-camera-specs/-184x111/gsmarena_00.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Last week, a rumour claimed that vivo was preparing to launch the V70 in China with a 64MP Sony periscope telephoto camera and support for a teleconverter. Now, a new leak has revealed the handset's complete camera specifications.\n\nAccording to tipster Digital Chat Station, the vivo V70 will feature a 50MP primary rear sensor and an 8MP ultrawide camera alongside the 64MP periscope telephoto unit.\n\n\nvivo S60 also offers a triple-rear camera setup.\n\nThe tipster also revealed that the phone will feature a horizontally aligned large rear camera module, likely similar to the vivo...</p>",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/vivo-s70-camera-specs/-184x111/gsmarena_00.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Last week, a rumour claimed that vivo was preparing to launch the S70 in China with a 64MP Sony periscope telephoto camera and support for a teleconverter. Now, a new leak has revealed the handset's complete camera specifications.\n\nAccording to tipster Digital Chat Station, the vivo S70 will feature a 50MP primary rear sensor and an 8MP ultrawide camera alongside the 64MP periscope telephoto unit.\n\n\nvivo S60 also offers a triple-rear camera setup.\n\nThe tipster also revealed that the phone will feature a horizontally aligned large rear camera module, likely similar to the vivo...</p>",
         "category": "news"
     },
     {
@@ -109,34 +137,6 @@
         "link": "https://www.gsmarena.com/trump_mobile_t1_phone_teardown_video_confirms_everyones_suspicions-news-75265.php",
         "pubDate": "Thu, 29 Oct 2026 19:31:02 +0100",
         "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/trump-mobile-t1-phone-teardown/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>After having been announced all the way back in June of last year, the Trump Mobile T1 Phone finally became available in June of this year, with a new design and changed specs that still aren't anywhere near high-end. Oh, and the price has jumped from $499 to $749 at some point since the release.\n\nFor that amount of cash you get a 6.78-inch AMOLED screen with a 120Hz refresh rate, the Snapdragon 7 Gen 3 chipset, 512GB of storage, a 50MP main camera, an 8MP ultrawide, and 50MP telephoto camera with 2x optical zoom, a 50MP selfie camera, and a 5,000 mAh battery. If you've ever wanted to see...</p>",
-        "category": "news"
-    },
-    {
-        "title": "OnePlus Ace 7 and Ace 7 Pro announced with cooling fans and 185Hz displays",
-        "link": "https://www.gsmarena.com/oneplus_ace_7_and_ace_7_pro_announced_in_china_with_cooling_fans_and_185hz_displays-news-75273.php",
-        "pubDate": "Thu, 29 Oct 2026 18:18:01 +0100",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/oneplus-ace-7-series-offic/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>OnePlus announced the Ace 7 series, comprising two phones: the Ace 7 and the Ace 7 Pro. Some believe that the vanilla Ace 7 is going to be rebadged as the OnePlus 16R for markets outside of China. The party trick of the two phones is that they feature fans to keep the powerful chipsets running cooler during long gaming sessions. After all, the Ace 7 series are gaming-oriented devices.\n\n\n\nLet's start with the OnePlus Ace 7 Pro, which is powered by the Snapdragon 8 Elite Gen 5 chipset paired with either 12GB or 16GB of RAM. The available storage options start at 256GB and cap at 1TB, which...</p>",
-        "category": "news"
-    },
-    {
-        "title": "Amazon launches the Echo Show 16, Echo Time, Alexa Photo Frame, and new Echo speakers",
-        "link": "https://www.gsmarena.com/amazon_launches_the_echo_show_16_echo_time_alexa_photo_frame_and_new_echo_speakers-news-75267.php",
-        "pubDate": "Thu, 29 Oct 2026 17:21:02 +0100",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/amazon-new-echo-devices-with-alexa/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Amazon has refreshed its Alexa hardware lineup with five new devices: the redesigned Echo Show 16 smart display, a new Echo Dot, the Echo Studio with Home Camera, the Echo Time smart clock, and the Alexa Photo Frame. All of them come with the latest version of Alexa+, which the company says can now hold more natural conversations, ask clarifying questions, and handle complex multi-step requests. As a reminder, Alexa+ is free for Prime members.\n\nCompared to the Echo Show 15, the Echo Show 16 has a 16-inch Full HD screen with 10% more viewing area, set in an anodized aluminum frame that's...</p>",
-        "category": "news"
-    },
-    {
-        "title": "The Samsung W27 goes official in China",
-        "link": "https://www.gsmarena.com/the_samsung_w27_goes_official_in_china-news-75268.php",
-        "pubDate": "Thu, 29 Oct 2026 16:19:02 +0100",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/samsung-w27-ofic/-184x111/gsmarena_00.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Samsung has unveiled the W27, its latest W-series foldable smartphone, in China. The handset is essentially a Galaxy Z Fold8 Ultra with a luxury makeover, featuring gold accents and a more premium finish.\n\nThe Samsung W27 sports a dual-tone design in red and blue, colors traditionally associated with Chinese culture. The gold finish extends to the frame, hinge, rear camera module, and camera lens rings.\n\n\n\nThe rear panel also features the signature gold ‘Heart to the World’ logo. Both the front and rear panels are protected by Corning Gorilla Glass Ceramic 3.\n\nSamsung is also bundling...</p>",
-        "category": "news"
-    },
-    {
-        "title": "Honor X9e s launched",
-        "link": "https://www.gsmarena.com/honor_x9e_s_launched_-news-75264.php",
-        "pubDate": "Thu, 29 Oct 2026 15:19:02 +0100",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/honor-x9e-s-ofic/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Honor’s latest addition to its X-series is now official with the Honor X9e s. The device is already available across the Middle East with a starting price of SAR 1,499 ($400) for the single 8/256GB trim. It may look familiar, and there’s good reason why: the X9e s is a rebadged Honor Turbo, which came out back in August.\n\n\n\nHonor X9e s\n\nThe X9e s comes in the same Dawn Orange, Midnight Black and Glacier White colors. It’s built around a 6.79 AMOLED screen with FHD+ resolution, a 120Hz refresh rate and 1,800 nits peak brightness. You also get Qualcomm’s Snapdragon 6 Gen 4 chip with 8GB...</p>",
         "category": "news"
     }
 ]
