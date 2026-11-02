@@ -1,5 +1,19 @@
 [
     {
+        "title": "Xiaomi 18 Pro series is going global this month",
+        "link": "https://www.gsmarena.com/xiaomi_18_pro_series_is_going_global_this_month-news-75305.php",
+        "pubDate": "Mon, 02 Nov 2026 06:30:02 +0100",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/11/xiaomi-18-pro-max-global-launch-timeline/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>The Xiaomi 18 Pro and Xiaomi 18 Pro Max debuted in China in September, with Xiaomi subsequently confirming plans for a global launch. The company has now begun teasing their international debut, offering a tentative launch timeline.\n\nIn a social media post, the company confirmed that the Xiaomi 18 Pro series will make its global debut later this month.\n\n\n\nNotably, the phones were recently spotted on Italian retailer Epto’s online store, revealing their specifications, colour options, and European pricing.\n\nAccording to the listings, the Xiaomi 18 Pro will start at €1,398.90 for the...</p>",
+        "category": "news"
+    },
+    {
+        "title": "Sennheiser Momentum True Wireless 5 review",
+        "link": "https://www.gsmarena.com/sennheiser_momentum_true_wireless_5_review-news-75302.php",
+        "pubDate": "Mon, 02 Nov 2026 02:31:02 +0100",
+        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/sennheiser-momentum-true-wireless-5-review/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>The Sennheiser Momentum True Wireless 5 are the company’s latest flagship true wireless earbuds. They are a major overhaul of the previous generation Momentum True Wireless 4 in nearly every way, with the company claiming improved design, comfort, audio quality, noise cancellation, and microphone performance. And they also happen to be Sennheiser’s first wireless earbuds with user-replaceable batteries.\n\n\n\n\n\nThe Momentum True Wireless 5 are priced at $300 and go up against fierce competition in the form of the Apple AirPods Pro 3 and the Sony WF-1000XM6. How do they perform? Let’s find...</p>",
+        "category": "news"
+    },
+    {
         "title": "Deals: the Pixel 11 series is on sale and so is the Galaxy S26 series",
         "link": "https://www.gsmarena.com/deals_the_pixel_11_series_is_on_sale_and_so_is_the_galaxy_s26_series-news-75282.php",
         "pubDate": "Sun, 01 Nov 2026 22:31:02 +0100",
@@ -124,19 +138,5 @@
         "pubDate": "Fri, 30 Oct 2026 22:31:02 +0100",
         "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/26/10/samsung-galaxy-s27-ultra-new-chipset-twist/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Which chipset the Galaxy S27 Ultra will use has turned into quite the saga over the past few months. Back in July, the Ultra was said to be getting a Snapdragon chip globally, while the rest of the lineup would use the Exynos 2700 outside of North America. Then in early September, insiders claimed that Samsung was building Exynos 2700-powered S27 Ultras for Korea and Europe.\n\nIn early October, Samsung reportedly started mass producing the Exynos 2700, with the decision for the Ultra still up in the air, and a few days later a new insider tip claimed that the S27 Ultra would only be...</p>",
         "category": "news"
-    },
-    {
-        "title": "A new vulnerability can brick your Android phone when receiving the SMS of Death",
-        "link": "https://www.gsmarena.com/a_new_android_vulnerability_can_leave_your_phone_unusable_when_receiving_the_sms_of_death-news-75288.php",
-        "pubDate": "Fri, 30 Oct 2026 21:03:02 +0100",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"111\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/news/25/02/google-messages-whatsapp-video-call/-184x111/gsmarena_000.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"184\" /> <p>Security researcher Mark Blaszczyk found a new scary vulnerability that affects phones running Android 12 or later. It involves receiving a specially crafted WAP Push SMS message that Android's telephony framework cannot properly process.\n\n\n\nThe tricky part is that instead of displaying the message in the inbox, Android tries to process it in the background. This triggers an error that can cause all sorts of issues. Active phone calls start to disconnect, the device temporarily loses cellular service, and when receiving multiple messages like this, the device can even become unusable....</p>",
-        "category": "news"
-    },
-    {
-        "title": "Oppo Find X10 review",
-        "link": "https://www.gsmarena.com/oppo_find_x10-review-3007.php",
-        "pubDate": "Fri, 30 Oct 2026 20:39:07 +0100",
-        "description": "<img align=\"left\" alt=\"\" border=\"0\" height=\"151\" hspace=\"3\" src=\"https://fdn.gsmarena.com/imgroot/reviews/26/oppo-find-x10/-347x151/gsmarena_001.jpg\" style=\"background: #333333; padding: 0px; margin: 0px 4px 0px 0px; border-style: solid; border-color: #aaaaaa; border-width: 1px;\" width=\"348\" /> <p></p>",
-        "category": "reviews"
     }
 ]
